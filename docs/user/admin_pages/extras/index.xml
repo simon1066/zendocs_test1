@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Extras</title>
-    <link>/user/admin_pages/extras/</link>
+    <link>/zendocs_test1/user/admin_pages/extras/</link>
     <description>Recent content in Extras on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin_pages/extras/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin_pages/extras/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Record Artists</title>
-      <link>/user/admin_pages/extras/record_artists/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/record_artists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/record_artists/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/record_artists/</guid>
       <description>
         
         
@@ -49,10 +49,10 @@
     
     <item>
       <title>User: Record Companies</title>
-      <link>/user/admin_pages/extras/record_companies/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/record_companies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/record_companies/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/record_companies/</guid>
       <description>
         
         
@@ -83,10 +83,10 @@
     
     <item>
       <title>User: Music Genre</title>
-      <link>/user/admin_pages/extras/music_genre/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/music_genre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/music_genre/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/music_genre/</guid>
       <description>
         
         
@@ -115,10 +115,10 @@
     
     <item>
       <title>User: Media Manager</title>
-      <link>/user/admin_pages/extras/media_manager/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/media_manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/media_manager/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/media_manager/</guid>
       <description>
         
         
@@ -162,10 +162,10 @@
     
     <item>
       <title>User: Media Types</title>
-      <link>/user/admin_pages/extras/media_types/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/media_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/media_types/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/media_types/</guid>
       <description>
         
         
@@ -195,10 +195,10 @@
     
     <item>
       <title>User: Removing Music related menu items</title>
-      <link>/user/admin_pages/extras/remove_music/</link>
+      <link>/zendocs_test1/user/admin_pages/extras/remove_music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/extras/remove_music/</guid>
+      <guid>/zendocs_test1/user/admin_pages/extras/remove_music/</guid>
       <description>
         
         

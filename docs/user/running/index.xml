@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Running</title>
-    <link>/user/running/</link>
+    <link>/zendocs_test1/user/running/</link>
     <description>Recent content in Running on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/running/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/running/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,24 +15,24 @@
     
     <item>
       <title>User: Regular Periodic Maintenance</title>
-      <link>/user/running/regular_maintenance/</link>
+      <link>/zendocs_test1/user/running/regular_maintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/regular_maintenance/</guid>
+      <guid>/zendocs_test1/user/running/regular_maintenance/</guid>
       <description>
         
         
         &lt;p&gt;This is a partial list of regular maintenance activities you should do on your store.  You will want to to do these things between once a week and once a month, depending on how busy your store is.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Make a &lt;a href=&#34;/user/running/backup/&#34;&gt;database backup&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Handle &lt;a href=&#34;/user/admin_pages/admins/admin_activity_logs/&#34;&gt;old admin activity logs&lt;/a&gt; - archive them first, then purge them.&lt;/li&gt;
-&lt;li&gt;Investigate any &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug logs&lt;/a&gt; which are present in your &lt;code&gt;/logs&lt;/code&gt; folder.  If you are unfamiliar with handling debug logs, &lt;a href=&#34;/user/troubleshooting/blank_page/#working-with-debug-logs&#34;&gt;read this first&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make a &lt;a href=&#34;/zendocs_test1/user/running/backup/&#34;&gt;database backup&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Handle &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/&#34;&gt;old admin activity logs&lt;/a&gt; - archive them first, then purge them.&lt;/li&gt;
+&lt;li&gt;Investigate any &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug logs&lt;/a&gt; which are present in your &lt;code&gt;/logs&lt;/code&gt; folder.  If you are unfamiliar with handling debug logs, &lt;a href=&#34;/zendocs_test1/user/troubleshooting/blank_page/#working-with-debug-logs&#34;&gt;read this first&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Monitor the &lt;a href=&#34;https://docs.zen-cart.com/user/about_us/announcements/&#34;&gt;Zen Cart Announcements&lt;/a&gt; for security release notices.&lt;/li&gt;
-&lt;li&gt;Check to see if there is a &lt;a href=&#34;/user/admin_pages/admin_new_version_available/&#34;&gt;new Zen Cart version available&lt;/a&gt;.  If there is, schedule your &lt;a href=&#34;/user/upgrading/&#34;&gt;upgrade&lt;/a&gt; to be sure you can get it done soon. It&amp;rsquo;s also a good practice to keep track of &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; so you know when the &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;PHP version you are running&lt;/a&gt; is at or near end of life.&lt;/li&gt;
-&lt;li&gt;Check your SSL certificate - they do expire and need to be renewed once a year.  If there&amp;rsquo;s a glitch (like your credit card expiring), you will have the dreaded &lt;a href=&#34;/user/running/broken_padlock/&#34;&gt;broken padlock&lt;/a&gt; issue.&lt;/li&gt;
-&lt;li&gt;Check your &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries&lt;/a&gt;. Be sure you&amp;rsquo;re not running a version with known vulnerabilities.&lt;/li&gt;
-&lt;li&gt;Use &lt;a href=&#34;/user/running/inspect/&#34;&gt;Google Chrome Inspect&lt;/a&gt; or &lt;a href=&#34;https://developers.google.com/speed/pagespeed/insights&#34;&gt;PageSpeed Insights&lt;/a&gt; to test the performance of your site and look for problems.  Many other web page speed testing tools exist; try them too.&lt;/li&gt;
-&lt;li&gt;Optional: Run &amp;ldquo;Optimize Database&amp;rdquo; from &lt;a href=&#34;/user/admin_pages/tools/store_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Store Manager&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Check to see if there is a &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_new_version_available/&#34;&gt;new Zen Cart version available&lt;/a&gt;.  If there is, schedule your &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;upgrade&lt;/a&gt; to be sure you can get it done soon. It&amp;rsquo;s also a good practice to keep track of &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; so you know when the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;PHP version you are running&lt;/a&gt; is at or near end of life.&lt;/li&gt;
+&lt;li&gt;Check your SSL certificate - they do expire and need to be renewed once a year.  If there&amp;rsquo;s a glitch (like your credit card expiring), you will have the dreaded &lt;a href=&#34;/zendocs_test1/user/running/broken_padlock/&#34;&gt;broken padlock&lt;/a&gt; issue.&lt;/li&gt;
+&lt;li&gt;Check your &lt;a href=&#34;/zendocs_test1/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries&lt;/a&gt;. Be sure you&amp;rsquo;re not running a version with known vulnerabilities.&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;/zendocs_test1/user/running/inspect/&#34;&gt;Google Chrome Inspect&lt;/a&gt; or &lt;a href=&#34;https://developers.google.com/speed/pagespeed/insights&#34;&gt;PageSpeed Insights&lt;/a&gt; to test the performance of your site and look for problems.  Many other web page speed testing tools exist; try them too.&lt;/li&gt;
+&lt;li&gt;Optional: Run &amp;ldquo;Optimize Database&amp;rdquo; from &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/store_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Store Manager&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cleaning-up-disk-space&#34;&gt;Cleaning Up Disk Space&lt;/h2&gt;
 &lt;p&gt;Periodically deleting from your website server all files that are no longer needed can go a long way to keeping your site running speedily and not triggering &amp;ldquo;out of disk space/quote&amp;rdquo; issues with your account.&lt;/p&gt;
@@ -65,24 +65,24 @@
     
     <item>
       <title>User: Adding an order status</title>
-      <link>/user/running/order_status/</link>
+      <link>/zendocs_test1/user/running/order_status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/order_status/</guid>
+      <guid>/zendocs_test1/user/running/order_status/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/admin_pages/localization/orders_status/&#34;&gt;Orders Status&lt;/a&gt; for instructions on adding a new order status.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/orders_status/&#34;&gt;Orders Status&lt;/a&gt; for instructions on adding a new order status.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Adding Google Analytics or Google Tag Manager</title>
-      <link>/user/running/external_javascript_services/</link>
+      <link>/zendocs_test1/user/running/external_javascript_services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/external_javascript_services/</guid>
+      <guid>/zendocs_test1/user/running/external_javascript_services/</guid>
       <description>
         
         
@@ -113,10 +113,10 @@ in the following way. Remember: this REPLACES the basic snippet file mentioned f
     
     <item>
       <title>User: Additional Software</title>
-      <link>/user/running/additional_software/</link>
+      <link>/zendocs_test1/user/running/additional_software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/additional_software/</guid>
+      <guid>/zendocs_test1/user/running/additional_software/</guid>
       <description>
         
         
@@ -129,10 +129,10 @@ in the following way. Remember: this REPLACES the basic snippet file mentioned f
 &lt;p&gt;Zen Cart can pass a PCI security scan done by an ASV (Approved Scanning Vendor).  Many other software packages cannot do this, so if you deploy them, you will fail a scan.  &lt;strong&gt;At any time&lt;/strong&gt;, your payment processor can demand that you run a scan and can cut you off if you cannot prove that you have passed.  And you cannot simply go to another provider if this occurs, because they report these situations to the regulators in your jurisdiction, who can impose fines.  PCI imposes a much higher level of security requirement than the average website requires, and because you handle payments, you are subject to this requirement.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If you still want to blog, see &lt;a href=&#34;/user/running/blogging/&#34;&gt;blogging&lt;/a&gt; for alternatives to installing WordPress on your Zen Cart server.&lt;/p&gt;
+&lt;p&gt;If you still want to blog, see &lt;a href=&#34;/zendocs_test1/user/running/blogging/&#34;&gt;blogging&lt;/a&gt; for alternatives to installing WordPress on your Zen Cart server.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If your additional software is for sending email (such as phpList), consider migrating to a paid email service provider. The FAQ on &lt;a href=&#34;/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt; provides some suggestions.&lt;/p&gt;
+&lt;p&gt;If your additional software is for sending email (such as phpList), consider migrating to a paid email service provider. The FAQ on &lt;a href=&#34;/zendocs_test1/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt; provides some suggestions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -141,26 +141,26 @@ in the following way. Remember: this REPLACES the basic snippet file mentioned f
     
     <item>
       <title>User: Admin Activity Logs warning message</title>
-      <link>/user/running/admin_activity_logs/</link>
+      <link>/zendocs_test1/user/running/admin_activity_logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/admin_activity_logs/</guid>
+      <guid>/zendocs_test1/user/running/admin_activity_logs/</guid>
       <description>
         
         
         &lt;p&gt;If you are receiving the message, &amp;ldquo;The Admin Activity Logs table has records over 2 months old and should be archived to conserve space&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_activity_log.png&#34; alt=&#34;Zen Cart Admin Activity Log button&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Follow the &lt;a href=&#34;/user/admin_pages/admins/admin_activity_logs/#purging-logs&#34;&gt;procedure to purge old logs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_activity_log.png&#34; alt=&#34;Zen Cart Admin Activity Log button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Follow the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/#purging-logs&#34;&gt;procedure to purge old logs&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Backups - how do I do a site backup?</title>
-      <link>/user/running/backup/</link>
+      <link>/zendocs_test1/user/running/backup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/backup/</guid>
+      <guid>/zendocs_test1/user/running/backup/</guid>
       <description>
         
         
@@ -174,12 +174,12 @@ in the following way. Remember: this REPLACES the basic snippet file mentioned f
 &lt;ul&gt;
 &lt;li&gt;open cPanel, and open File Manager. Drill down to your site.  If your site is at the top level of your hosting account, this will likely be right under &lt;code&gt;public_html&lt;/code&gt;.  Select all files and right click, and choose &amp;ldquo;Compress.&amp;rdquo;  This will create a Zip file when the operation completes.  Select that file, right click and choose &amp;ldquo;Download.&amp;rdquo;  Once the Download completes, remove the zip file from your server; you don&amp;rsquo;t want it lying around there.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/file_manager_backup.png&#34; alt=&#34;File Manager Backup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/file_manager_backup.png&#34; alt=&#34;File Manager Backup&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;b-if-your-site-does-not-have-cpanel&#34;&gt;B) If your site does &lt;em&gt;not&lt;/em&gt; have cPanel:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Use your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer.&lt;/li&gt;
+&lt;li&gt;Use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/filezilla_backup.png&#34; alt=&#34;Filezilla Backup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/filezilla_backup.png&#34; alt=&#34;Filezilla Backup&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When you save files to your computer, the directory/folder on your computer should be named by today&amp;rsquo;s date so that you can distinguish between backups.&lt;/p&gt;
 &lt;p&gt;Having this gives you not only an up-to-date set of files on your server, but also a reference point for either making changes or for making comparisons in case something gets compromised or damaged on your webserver. You can either use this set of files to restore the program back to your website, or to diagnose a problem if one occurs.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Keeping multiple separate versions on your computer is prudent, in case something is changed unexpectedly or accidentally. So, archiving these downloaded files is wise, to a USB key or cloud based backup.&lt;/p&gt;
@@ -202,10 +202,10 @@ in the following way. Remember: this REPLACES the basic snippet file mentioned f
 &lt;p&gt;5. Click &lt;strong&gt;Go&lt;/strong&gt; to do the export. It will give you the option to save the file to your PC. BE SURE TO SAVE IT to an appropriate spot on your PC. 
 To have a redundant backup, save a copy to a thumb drive or upload it to a cloud account such as 
 Google Drive.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/phpMyAdmin_backup.png&#34; alt=&#34;phpMyAdmin Backup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/phpMyAdmin_backup.png&#34; alt=&#34;phpMyAdmin Backup&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;b-using-cpanel-backup&#34;&gt;B) Using cPanel Backup&lt;/h3&gt;
 &lt;p&gt;If your cPanel has a &amp;ldquo;Backup&amp;rdquo; utility, scroll down to &amp;ldquo;Download a MySQL Database Backup&amp;rdquo; and click the link corresponding to your database.  This will download a compressed database backup.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/cpanel_backup.png&#34; alt=&#34;cPanel Backup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/cpanel_backup.png&#34; alt=&#34;cPanel Backup&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;c-using-the-backup-mysql-plugin&#34;&gt;C) Using the Backup MySQL Plugin&lt;/h3&gt;
 &lt;p&gt;On hosts that permit the use of &lt;code&gt;exec()&lt;/code&gt;, you can use the 
 &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL Plugin&lt;/a&gt;
@@ -214,11 +214,11 @@ from &lt;code&gt;YOURADMIN/backups&lt;/code&gt; to your local computer.  Again, 
 want to save a copy to a thumb drive or upload your backup to a cloud account so that you have 
 redundancy. 
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/mysql_backup.png&#34; alt=&#34;Backup MySQL Backup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/mysql_backup.png&#34; alt=&#34;Backup MySQL Backup&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;setting-up-your-cart-on-your-own-computer&#34;&gt;Setting up your cart on your own computer&lt;/h2&gt;
 &lt;p&gt;Now that you have a fresh copy of your database and files, it&amp;rsquo;s the 
-ideal time to &lt;a href=&#34;/user/running/local_testing/&#34;&gt;create a local development environment&lt;/a&gt;.&lt;/p&gt;
+ideal time to &lt;a href=&#34;/zendocs_test1/user/running/local_testing/&#34;&gt;create a local development environment&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;restoring-a-database&#34;&gt;Restoring a Database&lt;/h2&gt;
 &lt;ul&gt;
@@ -236,25 +236,25 @@ ideal time to &lt;a href=&#34;/user/running/local_testing/&#34;&gt;create a loca
     
     <item>
       <title>User: Blogging</title>
-      <link>/user/running/blogging/</link>
+      <link>/zendocs_test1/user/running/blogging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/blogging/</guid>
+      <guid>/zendocs_test1/user/running/blogging/</guid>
       <description>
         
         
         &lt;p&gt;Running a blog (WordPress), a forum (phpBB, Simple Machines), a CMS (Drupal, Joomla) or a wiki (WikiMedia) on the website where you run your shopping cart is something many Zen Cart users find attractive.&lt;/p&gt;
 &lt;p&gt;The problem is, these software packages don&amp;rsquo;t maintain themselves.  You need to keep them updated or &lt;strong&gt;you run the risk of being hacked&lt;/strong&gt;.  Even if you keep them updated, sometimes plugins are compromised by bad guys to enable sites to be hacked.  This is not just a theoretical risk - companies like Securi get most of their business from WordPress installations that have been hacked.&lt;/p&gt;
-&lt;p&gt;So: you can do this, many people do this, but it has a cost and you&amp;rsquo;ll need to devote more energy to maintenance and updates if you want go down this path. Proceed with caution.  This topic is discussed in more depth in &lt;a href=&#34;/user/running/additional_software/&#34;&gt;installing additional software packages&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Most people who deploy blogs or other tools use &lt;a href=&#34;/user/first_steps/deployment_configurations/&#34;&gt;deployment model 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So: you can do this, many people do this, but it has a cost and you&amp;rsquo;ll need to devote more energy to maintenance and updates if you want go down this path. Proceed with caution.  This topic is discussed in more depth in &lt;a href=&#34;/zendocs_test1/user/running/additional_software/&#34;&gt;installing additional software packages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most people who deploy blogs or other tools use &lt;a href=&#34;/zendocs_test1/user/first_steps/deployment_configurations/&#34;&gt;deployment model 2&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;What are some alternative options to running a blog with your Zen Cart installation?&lt;/p&gt;
 &lt;h3 id=&#34;create-content-using-ez-pages&#34;&gt;Create content using EZ-Pages&lt;/h3&gt;
-&lt;p&gt;The Zen Cart &lt;a href=&#34;/user/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site.   You can even organize your pages into chapters and have a table of contents.&lt;/p&gt;
+&lt;p&gt;The Zen Cart &lt;a href=&#34;/zendocs_test1/user/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site.   You can even organize your pages into chapters and have a table of contents.&lt;/p&gt;
 &lt;h3 id=&#34;use-news-box-manager&#34;&gt;Use News Box Manager&lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2264&#34;&gt;News Box Manager&lt;/a&gt; plugin allows you to create new pages for your site.&lt;/p&gt;
 &lt;h3 id=&#34;create-and-send-a-newsletter-regularly&#34;&gt;Create and send a newsletter regularly&lt;/h3&gt;
-&lt;p&gt;Creating and building an email list using a &lt;a href=&#34;/user/email/newsletters/&#34;&gt;newsletter&lt;/a&gt; is a great way to develop a community.&lt;/p&gt;
+&lt;p&gt;Creating and building an email list using a &lt;a href=&#34;/zendocs_test1/user/email/newsletters/&#34;&gt;newsletter&lt;/a&gt; is a great way to develop a community.&lt;/p&gt;
 &lt;p&gt;Tools like MailChimp have inexpensive offerings for small businesses that allow you to stay in touch with your customers.  You can even preserve your content in a &lt;a href=&#34;https://mailchimp.com/help/about-email-campaign-archives-and-pages/&#34;&gt;campaign archive&lt;/a&gt; so customers who come along after you sent it can still see it.&lt;/p&gt;
 &lt;h3 id=&#34;use-a-static-site-generator&#34;&gt;Use a static site generator&lt;/h3&gt;
 &lt;p&gt;Static Site Generators (SSGs) like &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; allow you to build a sophisticated website using a tool, and output raw HTML which can run without a database or code interpretation.  Since  the final output of these tools is HTML-only, it is much less risky than WordPress (which has both PHP and MySQL as potential attack surfaces).&lt;/p&gt;
@@ -270,40 +270,40 @@ ideal time to &lt;a href=&#34;/user/running/local_testing/&#34;&gt;create a loca
     
     <item>
       <title>User: Broken Padlock</title>
-      <link>/user/running/broken_padlock/</link>
+      <link>/zendocs_test1/user/running/broken_padlock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/broken_padlock/</guid>
+      <guid>/zendocs_test1/user/running/broken_padlock/</guid>
       <description>
         
         
         &lt;p&gt;A &lt;em&gt;broken padlock&lt;/em&gt; is what you get when your website is not fully secured. 
 It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers used to show an image of a broken padlock in the address bar.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ff_broken_padlock.png&#34; alt=&#34;Firefox Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ff_broken_padlock.png&#34; alt=&#34;Firefox Insecure Cart&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Some browsers will simply display a message saying &amp;ldquo;Not Secure&amp;rdquo; like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/insecure_cart.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/insecure_cart.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;common-causes-of-broken-padlock&#34;&gt;Common Causes of broken padlock.&lt;/h2&gt;
 &lt;h4 id=&#34;mixed-content&#34;&gt;Mixed Content&lt;/h4&gt;
 &lt;p&gt;Mixed content means although the page is being referenced using SSL (i.e. it starts with &lt;code&gt;https://&lt;/code&gt;), some of the internal references are non-SSL.  Generally this indicates that you are loading images, fonts, CSS or JavaScript over &lt;code&gt;http&lt;/code&gt; rather than &lt;code&gt;https&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you see a &amp;ldquo;Not Secure&amp;rdquo; message, but click on the message and see a valid certificate, the problem might be caused by mixed content.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/not_secure_mixed.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/not_secure_mixed.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you do a &amp;ldquo;View Source&amp;rdquo; in your browser and search for &amp;ldquo;http://&amp;rdquo; you can often find the root cause quickly.  If you need more help, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2197&#34;&gt;find http references&lt;/a&gt; plugin builds a report on issues like this.&lt;/p&gt;
 &lt;h4 id=&#34;expired-ssl-certificate&#34;&gt;Expired SSL Certificate&lt;/h4&gt;
 &lt;p&gt;SSL certificates must be renewed, and you forget to renew (or the credit card you use to auto-renew is expired). You&amp;rsquo;ll get a broken padlock.&lt;/p&gt;
 &lt;p&gt;Clicking on the message will show a dialog like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/not_secure_invalid.png&#34; alt=&#34;Insecure Cart - invalid cert&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/not_secure_invalid.png&#34; alt=&#34;Insecure Cart - invalid cert&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Clicking on the Certificate line will show a dialog like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/expired_certificate.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/expired_certificate.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Colon Separated Pair configuration</title>
-      <link>/user/running/colon-separated-pairs/</link>
+      <link>/zendocs_test1/user/running/colon-separated-pairs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/colon-separated-pairs/</guid>
+      <guid>/zendocs_test1/user/running/colon-separated-pairs/</guid>
       <description>
         
         
@@ -320,10 +320,10 @@ It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers us
     
     <item>
       <title>User: Down for Maintenance</title>
-      <link>/user/running/down_for_maintenance/</link>
+      <link>/zendocs_test1/user/running/down_for_maintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/down_for_maintenance/</guid>
+      <guid>/zendocs_test1/user/running/down_for_maintenance/</guid>
       <description>
         
         
@@ -331,20 +331,20 @@ It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers us
 &lt;ul&gt;
 &lt;li&gt;Performing backups&lt;/li&gt;
 &lt;li&gt;Disruption of business due to personal emergency&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/installing/change_hoster/&#34;&gt;Moving your website to another hoster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updating your stock counts if you &lt;a href=&#34;/user/running/stock/&#34;&gt;track inventory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/installing/change_hoster/&#34;&gt;Moving your website to another hoster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating your stock counts if you &lt;a href=&#34;/zendocs_test1/user/running/stock/&#34;&gt;track inventory&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The configuration screen &lt;a href=&#34;/user/admin_pages/configuration/configuration_websitemaintenance/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/a&gt; allows you to put your store in maintenance mode and controls how your store appears to customers when it is down for maintenance.&lt;/p&gt;
+&lt;p&gt;The configuration screen &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_websitemaintenance/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/a&gt; allows you to put your store in maintenance mode and controls how your store appears to customers when it is down for maintenance.&lt;/p&gt;
 &lt;p&gt;The behavior of a store which is down for maintenance is as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Customers will only see your home page; they are not permitted to browse.&lt;/li&gt;
 &lt;li&gt;You may restrict their view of the store further if desired.  For example, you can turn off sideboxes or hide prices as well; see the possibilities on the Website Maintenance configuration page.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here&amp;rsquo;s what a site might look like in down for maintenance mode:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/dfm1.png&#34; alt=&#34;Down for Maintenance&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/dfm1.png&#34; alt=&#34;Down for Maintenance&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;You could turn off the sideboxes during down for maintenance, and it would look like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/dfm2.png&#34; alt=&#34;Down for Maintenance - no sideboxes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/dfm2.png&#34; alt=&#34;Down for Maintenance - no sideboxes&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As the storeowner, you may want to still be able to browse your store while it is in maintenance mode.  To do so, go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/code&gt;, and add your IP to the list in the &lt;code&gt;Down For Maintenance (exclude this IP-Address)&lt;/code&gt; field.&lt;/p&gt;
 
       </description>
@@ -352,10 +352,10 @@ It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers us
     
     <item>
       <title>User: Fixing a Mis-typed Email Address</title>
-      <link>/user/running/mistyped_email/</link>
+      <link>/zendocs_test1/user/running/mistyped_email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/mistyped_email/</guid>
+      <guid>/zendocs_test1/user/running/mistyped_email/</guid>
       <description>
         
         
@@ -366,7 +366,7 @@ It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers us
 &lt;li&gt;Update their Email Address to the correct value, and press Save at the bottom of the screen&lt;/li&gt;
 &lt;li&gt;The customer will now be able to login to their account using their actual email address&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A mistyped email is one of many possible causes of &lt;a href=&#34;/user/email/emails_not_received/#symptom-emails-sent-from-the-cart-are-not-arriving&#34;&gt;undeliverable mail&lt;/a&gt;.  Frequently you will see typos like the following:&lt;/p&gt;
+&lt;p&gt;A mistyped email is one of many possible causes of &lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/#symptom-emails-sent-from-the-cart-are-not-arriving&#34;&gt;undeliverable mail&lt;/a&gt;.  Frequently you will see typos like the following:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -396,37 +396,37 @@ It&amp;rsquo;s called a &amp;ldquo;broken padlock&amp;rdquo; because browsers us
     
     <item>
       <title>User: Fixing Physical Addresses</title>
-      <link>/user/running/fixing_addresses/</link>
+      <link>/zendocs_test1/user/running/fixing_addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/fixing_addresses/</guid>
+      <guid>/zendocs_test1/user/running/fixing_addresses/</guid>
       <description>
         
         
         &lt;p&gt;Sometimes customers enter the wrong shipping address.  Often this is caused by a browser accidentally autofilling a field, and sometimes it&amp;rsquo;s just finger trouble.&lt;/p&gt;
 &lt;p&gt;Go to &lt;code&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/code&gt;, and search for the customer&amp;rsquo;s record.
 If you see a link next to the customer&amp;rsquo;s id, it means they have multiple address book records.  In other words, the billing and shipping addresses might be different.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/customer_search.png&#34; alt=&#34;Customer Addresses&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/customer_search.png&#34; alt=&#34;Customer Addresses&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you need to edit their billing address, just edit the customer record.&lt;/p&gt;
 &lt;p&gt;If they have a different shipping address, and you need to edit it, the best way to do this is to login as the customer.&lt;/p&gt;
-&lt;p&gt;If the &lt;code&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/code&gt; screen has a &lt;em&gt;Place Order&lt;/em&gt; button on the right hand side in the sidebox, press it.  Login as the customer and go to the My Account Page, and click the link titled &lt;code&gt;View or change entries in my address book&lt;/code&gt;.  See &lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;login as customer&lt;/a&gt; for more details on how to do this.&lt;/p&gt;
-&lt;p&gt;If you do not have a &lt;em&gt;Place Order&lt;/em&gt; button, you will need to install and use one of the &lt;a href=&#34;/user/admin/master_password/&#34;&gt;Master Password&lt;/a&gt; plugins.  Login using the customer&amp;rsquo;s email address and the master password, and edit their address book.&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/code&gt; screen has a &lt;em&gt;Place Order&lt;/em&gt; button on the right hand side in the sidebox, press it.  Login as the customer and go to the My Account Page, and click the link titled &lt;code&gt;View or change entries in my address book&lt;/code&gt;.  See &lt;a href=&#34;/zendocs_test1/user/running/login_as_customer/&#34;&gt;login as customer&lt;/a&gt; for more details on how to do this.&lt;/p&gt;
+&lt;p&gt;If you do not have a &lt;em&gt;Place Order&lt;/em&gt; button, you will need to install and use one of the &lt;a href=&#34;/zendocs_test1/user/admin/master_password/&#34;&gt;Master Password&lt;/a&gt; plugins.  Login using the customer&amp;rsquo;s email address and the master password, and edit their address book.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Google Chrome Inspect</title>
-      <link>/user/running/inspect/</link>
+      <link>/zendocs_test1/user/running/inspect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/inspect/</guid>
+      <guid>/zendocs_test1/user/running/inspect/</guid>
       <description>
         
         
         &lt;p&gt;Google Chrome&amp;rsquo;s &amp;ldquo;Inspect&amp;rdquo; tool is a tremendous help to anyone creating websites.&lt;/p&gt;
 &lt;p&gt;In Google Chrome, right click and select &amp;ldquo;Inspect.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A dialog will come up with a number of options on the top menu bar.
 Here are some things to explore:&lt;/p&gt;
 &lt;ul&gt;
@@ -434,7 +434,7 @@ Here are some things to explore:&lt;/p&gt;
 &lt;p&gt;Clicking &amp;ldquo;Console&amp;rdquo; will show you reports of any missing or unavailable files (JavaScript, CSS, etc.)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Clicking &amp;ldquo;Lighthouse&amp;rdquo; will perform a test that will analyze your site speed and whether you are using &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;outdated JavaScript libraries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clicking &amp;ldquo;Lighthouse&amp;rdquo; will perform a test that will analyze your site speed and whether you are using &lt;a href=&#34;/zendocs_test1/user/upgrading/javascript_updates/&#34;&gt;outdated JavaScript libraries&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Clicking &amp;ldquo;Elements&amp;rdquo; will show you the CSS rules that apply to each part of your site, enabling you to try changes right from your browser&lt;/p&gt;
@@ -443,7 +443,7 @@ Here are some things to explore:&lt;/p&gt;
 &lt;p&gt;Other browsers have similar built-in developer tools; pick your favorite and learn as much as you can about it to keep your site in tip-top shape!&lt;/p&gt;
 &lt;h2 id=&#34;example-issues-shown-in-the-console-by-inspect&#34;&gt;Example issues shown in the Console by Inspect&lt;/h2&gt;
 &lt;h3 id=&#34;mixed-content&#34;&gt;Mixed Content&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/images/mixed_content.png&#34; alt=&#34;Mixed Content&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/mixed_content.png&#34; alt=&#34;Mixed Content&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you get a mixed content warning, it means something is being loaded over &lt;code&gt;http&lt;/code&gt; instead of &lt;code&gt;https&lt;/code&gt;.  In this case, for example, if you check &lt;code&gt;includes/templates/YOURTEMPLATE/common/html_header.php&lt;/code&gt;, you will see something like&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;link href=&amp;#39;http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;amp;amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic&amp;#39; rel=&amp;#39;stylesheet&amp;#39; type=&amp;#39;text/css&amp;#39;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;just make this load over &lt;code&gt;https&lt;/code&gt; by changing it to&lt;/p&gt;
@@ -454,17 +454,17 @@ Here are some things to explore:&lt;/p&gt;
     
     <item>
       <title>User: PHP Memory Limit</title>
-      <link>/user/running/memory_limit/</link>
+      <link>/zendocs_test1/user/running/memory_limit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/memory_limit/</guid>
+      <guid>/zendocs_test1/user/running/memory_limit/</guid>
       <description>
         
         
-        &lt;p&gt;The PHP Memory Limit is the amount of memory a script is allowed to allocate, per the &lt;a href=&#34;https://www.php.net/manual/en/ini.core.php#ini.memory-limit&#34;&gt;PHP Documentation on this setting&lt;/a&gt;.  Suggestions on setting this value are provided in &lt;a href=&#34;/user/first_steps/server_requirements/#php-memory-recommendations&#34;&gt;PHP memory limit and Zen Cart&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In some environments, changing your PHP version can reset your memory limit setting.  Go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit.&lt;/p&gt;
+        &lt;p&gt;The PHP Memory Limit is the amount of memory a script is allowed to allocate, per the &lt;a href=&#34;https://www.php.net/manual/en/ini.core.php#ini.memory-limit&#34;&gt;PHP Documentation on this setting&lt;/a&gt;.  Suggestions on setting this value are provided in &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-memory-recommendations&#34;&gt;PHP memory limit and Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In some environments, changing your PHP version can reset your memory limit setting.  Go to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit.&lt;/p&gt;
 &lt;p&gt;The process of updating your PHP memory is server-specific, 
-depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other mechanism. See &lt;a href=&#34;/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more information on setting PHP configuration.&lt;/p&gt;
+depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other mechanism. See &lt;a href=&#34;/zendocs_test1/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more information on setting PHP configuration.&lt;/p&gt;
 &lt;p&gt;Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed.&lt;/p&gt;
 
       </description>
@@ -472,10 +472,10 @@ depending on whether your hoster uses PHP Selector, MultiPHP Manager or some oth
     
     <item>
       <title>User: Place Order</title>
-      <link>/user/running/login_as_customer/</link>
+      <link>/zendocs_test1/user/running/login_as_customer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/login_as_customer/</guid>
+      <guid>/zendocs_test1/user/running/login_as_customer/</guid>
       <description>
         
         
@@ -496,8 +496,8 @@ There are 3 settings that can be configured to allow Login As Customer:&lt;/p&gt
 &lt;li&gt;Customer PLACE ORDER: Admin ProfileID&lt;/li&gt;
 &lt;li&gt;Customer PLACE ORDER: Passwordless Login&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The ProfileID is shown in the &lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; screen. 
-The AdminID is shown in the &lt;a href=&#34;/user/admin_pages/admins/admin_users/&#34;&gt;Admin Users&lt;/a&gt; screen.&lt;/p&gt;
+&lt;p&gt;The ProfileID is shown in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; screen. 
+The AdminID is shown in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admin Users&lt;/a&gt; screen.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Single Admin ID&lt;/strong&gt; allows the Admin User ID (Admin &amp;gt; Admins &amp;gt; Admin Users ) to log in to the customer’s account using the password associated with that admin ID as long as the Admin Profile for that Admin ID allows access to Customers &amp;gt; Customers in the admin profile setup.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Admin ProfileID&lt;/strong&gt; allows any Admin Profile ID (Admin &amp;gt; Admins &amp;gt; Admin Profiles ) to login to the customer’s account as long as the Admin Profile is allowed access to Customers/Customers in the admin profile setup.  Setting this value to 1 (where 1 is the default admin profile ID for SuperUser) will allow all superusers to login as customers.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Passwordless Login&lt;/strong&gt; True allows direct access to the customer’s account from within Admin without using a password. This may have PCI security concerns, so use with caution. The default setting is FALSE.&lt;/p&gt;
@@ -506,7 +506,7 @@ The AdminID is shown in the &lt;a href=&#34;/user/admin_pages/admins/admin_users
 If the logged in Admin person is not allowed access due to the admin profile, there will be no “Place Order” button shown.&lt;/p&gt;
 &lt;h4 id=&#34;using&#34;&gt;Using&lt;/h4&gt;
 &lt;p&gt;Admins can access any customer’s account directly from the Admin Customers list by using the “Place Order” button that is shown in the sidebar of Admin &amp;gt; Customers &amp;gt; Customers.&lt;/p&gt;
-&lt;img src=&#34;/images/login_as_customer.png&#34; alt=&#34;Login as Customer&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/login_as_customer.png&#34; alt=&#34;Login as Customer&#34; /&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;p&gt;Admins can login as customer directly from the public website using the customer&amp;rsquo;s email address and any Admin password that is associated with an admin profile that allows access.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -524,7 +524,7 @@ If the logged in Admin person is not allowed access due to the admin profile, th
 &lt;h2 id=&#34;what-if-the-user-doesnt-have-an-account&#34;&gt;What if the user doesn&amp;rsquo;t have an account?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;If they have an email address, you can simply create an account for them in the storefront using their email address and a randomly chosen password&lt;/li&gt;
-&lt;li&gt;If they do not have an email address, you can just use an email address on your domain with a random password just to satisfy the requirement for an email address.  For example, if your customer&amp;rsquo;s name was Scott Wilson, you could create an account with the email &lt;a href=&#34;mailto:scott.wilson@YOURDOMAIN.com&#34;&gt;scott.wilson@YOURDOMAIN.com&lt;/a&gt;.  Just be sure to turn off newsletters and other emails going to this account, since they will all bounce.  See &lt;a href=&#34;/user/email/fabricating_email_addresses/&#34;&gt;fabricating email addresses&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If they do not have an email address, you can just use an email address on your domain with a random password just to satisfy the requirement for an email address.  For example, if your customer&amp;rsquo;s name was Scott Wilson, you could create an account with the email &lt;a href=&#34;mailto:scott.wilson@YOURDOMAIN.com&#34;&gt;scott.wilson@YOURDOMAIN.com&lt;/a&gt;.  Just be sure to turn off newsletters and other emails going to this account, since they will all bounce.  See &lt;a href=&#34;/zendocs_test1/user/email/fabricating_email_addresses/&#34;&gt;fabricating email addresses&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -532,14 +532,14 @@ If the logged in Admin person is not allowed access due to the admin profile, th
     
     <item>
       <title>User: Removing debug logs</title>
-      <link>/user/running/removing_debug_logs/</link>
+      <link>/zendocs_test1/user/running/removing_debug_logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/removing_debug_logs/</guid>
+      <guid>/zendocs_test1/user/running/removing_debug_logs/</guid>
       <description>
         
         
-        &lt;p&gt;You can purge most of the &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug logs&lt;/a&gt; that Zen Cart produces from the &lt;a href=&#34;/user/admin_pages/tools/store_manager/&#34;&gt;Store Manager&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;You can purge most of the &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug logs&lt;/a&gt; that Zen Cart produces from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/store_manager/&#34;&gt;Store Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;But what if your cart has debug logs from a plugin or other modification?&lt;/p&gt;
 &lt;p&gt;Modify &lt;code&gt;admin/store_manager.php&lt;/code&gt; and look for &lt;code&gt;case &#39;clean_debug_files&#39;:&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll see the regular expression that identifies debug logs. Add an entry for your particular log.&lt;/p&gt;
@@ -549,23 +549,23 @@ If the logged in Admin person is not allowed access due to the admin profile, th
     
     <item>
       <title>User: Resend Order Confirmation Email</title>
-      <link>/user/running/resend_order_email/</link>
+      <link>/zendocs_test1/user/running/resend_order_email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/resend_order_email/</guid>
+      <guid>/zendocs_test1/user/running/resend_order_email/</guid>
       <description>
         
         
         &lt;p&gt;Sometimes customers need you to send an invoice or a copy of their checkout confirmation email.&lt;/p&gt;
 &lt;p&gt;This can happen for a variety of reasons:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;the customer created an account but &lt;a href=&#34;/user/running/mistyped_email/&#34;&gt;mis-typed their email&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;the customer created an account but &lt;a href=&#34;/zendocs_test1/user/running/mistyped_email/&#34;&gt;mis-typed their email&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;they need an invoice for tax or record keeping purposes.&lt;/li&gt;
-&lt;li&gt;your cart has an &lt;a href=&#34;/user/email/emails_not_received/&#34;&gt;email deliverability issue&lt;/a&gt; so they never received their original order confirmation.&lt;/li&gt;
+&lt;li&gt;your cart has an &lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;email deliverability issue&lt;/a&gt; so they never received their original order confirmation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here are a few ways you can get them the information they need.&lt;/p&gt;
 &lt;h2 id=&#34;forward-them-the-admin-order-confirmation&#34;&gt;Forward them the Admin order confirmation&lt;/h2&gt;
-&lt;p&gt;The administrator gets a confirmation email for each order, as long as the &lt;em&gt;Send Copy of Order Confirmation Emails To&lt;/em&gt; field in &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Email Settings&lt;/a&gt; is set.&lt;/p&gt;
+&lt;p&gt;The administrator gets a confirmation email for each order, as long as the &lt;em&gt;Send Copy of Order Confirmation Emails To&lt;/em&gt; field in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Email Settings&lt;/a&gt; is set.&lt;/p&gt;
 &lt;p&gt;Note that the administrator copy of the confirmation email has additional content at the bottom, which you may want to trim prior to forwarding.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-pdf-invoice-from-admin&#34;&gt;Creating a PDF Invoice from Admin&lt;/h2&gt;
 &lt;ol&gt;
@@ -576,23 +576,23 @@ If the logged in Admin person is not allowed access due to the admin profile, th
 &lt;li&gt;A dialog will come up, and prompt you to select a printer.  Select &amp;ldquo;Save as PDF&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Email the customer the resultant PDF of their order.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/save_as_pdf.png&#34; alt=&#34;Save as PDF&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/save_as_pdf.png&#34; alt=&#34;Save as PDF&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;encouraging-self-service&#34;&gt;Encouraging self service&lt;/h2&gt;
 &lt;p&gt;Tell the customer to login to their account and click the &amp;ldquo;My Account&amp;rdquo; link, where they can see all their past orders, and click through to the specific one.
 They can print that screen, either to paper or PDF (see above).&lt;/p&gt;
 &lt;p&gt;If your store needs to let customers make a PDF on a regular basis, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2111&#34;&gt;Catalog Invoice&lt;/a&gt; plugin might be of interest.&lt;/p&gt;
 &lt;h2 id=&#34;using-the-email-archive-manager&#34;&gt;Using the Email Archive Manager&lt;/h2&gt;
-&lt;p&gt;If you had &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active&#34;&gt;email archiving&lt;/a&gt; turned on at the time the order was placed, you can use the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; to resend the email.&lt;/p&gt;
+&lt;p&gt;If you had &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active&#34;&gt;email archiving&lt;/a&gt; turned on at the time the order was placed, you can use the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; to resend the email.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Resetting the Downloads Counter on completed orders</title>
-      <link>/user/running/downloads_counter/</link>
+      <link>/zendocs_test1/user/running/downloads_counter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/downloads_counter/</guid>
+      <guid>/zendocs_test1/user/running/downloads_counter/</guid>
       <description>
         
         
@@ -605,10 +605,10 @@ They can print that screen, either to paper or PDF (see above).&lt;/p&gt;
     
     <item>
       <title>User: Setting up a test environment</title>
-      <link>/user/running/local_testing/</link>
+      <link>/zendocs_test1/user/running/local_testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/local_testing/</guid>
+      <guid>/zendocs_test1/user/running/local_testing/</guid>
       <description>
         
         
@@ -625,7 +625,7 @@ on a test store.&lt;/p&gt;
 &lt;p&gt;Using &lt;a href=&#34;https://www.apachefriends.org/&#34;&gt;XAMPP&lt;/a&gt; (Windows, Mac, Linux) or &lt;a href=&#34;https://www.mamp.info/&#34;&gt;MAMP&lt;/a&gt; (Windows, Mac), you can create a test environment on your own computer for your Zen Cart.&lt;/p&gt;
 &lt;p&gt;For the remainder of this document, these tools will be referred to as &lt;strong&gt;AMP&lt;/strong&gt; for convenience.&lt;/p&gt;
 &lt;h2 id=&#34;1-make-a-backup-of-your-files-and-database&#34;&gt;1. Make a backup of your files and database&lt;/h2&gt;
-&lt;p&gt;Follow the procedure specified in &lt;a href=&#34;/user/running/backup/&#34;&gt;how do I backup my store?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow the procedure specified in &lt;a href=&#34;/zendocs_test1/user/running/backup/&#34;&gt;how do I backup my store?&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-set-your-store-on-your-local-computer&#34;&gt;2. Set your store on your local computer.&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Put your files at the webroot defined in your &lt;strong&gt;AMP&lt;/strong&gt;.&lt;/li&gt;
@@ -640,7 +640,7 @@ on a test store.&lt;/p&gt;
 &lt;p&gt;This is not as good as a local test environment, but better than putting untested changes on your live site and potentially breaking your store.&lt;/p&gt;
 &lt;h2 id=&#34;1-create-a-new-test-store-on-your-server&#34;&gt;1. Create a new test store on your server&lt;/h2&gt;
 &lt;p&gt;Create a NEW database in cPanel called &lt;code&gt;test_store&lt;/code&gt;. Create a database user that has full permissions to access this database.&lt;/p&gt;
-&lt;p&gt;Use the backup that you just made from your live site to fill the database with data. (See &lt;a href=&#34;/user/running/backup/#to-restore-your-database&#34;&gt;restoring the database&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Use the backup that you just made from your live site to fill the database with data. (See &lt;a href=&#34;/zendocs_test1/user/running/backup/#to-restore-your-database&#34;&gt;restoring the database&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;Create a new folder on your server called  &lt;code&gt;test_store&lt;/code&gt;.  Copy the files from your live store directory into this folder&lt;/p&gt;
 &lt;h2 id=&#34;2-prepare-the-configurephp-files&#34;&gt;2. Prepare the configure.php files&lt;/h2&gt;
 &lt;p&gt;In your &lt;code&gt;test_store&lt;/code&gt; folder, update the &lt;code&gt;includes/configure.php&lt;/code&gt; and &lt;code&gt;admin/includes/dist-configure.php&lt;/code&gt; files:&lt;/p&gt;
@@ -655,15 +655,15 @@ on a test store.&lt;/p&gt;
     
     <item>
       <title>User: Tracking Inventory</title>
-      <link>/user/running/stock/</link>
+      <link>/zendocs_test1/user/running/stock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/stock/</guid>
+      <guid>/zendocs_test1/user/running/stock/</guid>
       <description>
         
         
         &lt;p&gt;Many options exist for inventory tracking.  See 
-&lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt; for details.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;Common configurations are:&lt;/p&gt;
 &lt;h3 id=&#34;1-dont-track-stock&#34;&gt;1. Don&amp;rsquo;t track stock&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check stock level = false 
@@ -681,7 +681,7 @@ Subtract stock = true
 Allow Checkout  = false
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This configuration would be a good match for stores that sell unique or limited quantity products, such as artisan produced goods.&lt;/p&gt;
 &lt;h3 id=&#34;status-handling-for-subtract-stock--true&#34;&gt;Status handling for Subtract stock = true&lt;/h3&gt;
-&lt;p&gt;Stores that track stock (i.e. have Subtract stock = true) also need to decide on whether changes are required to the &lt;a href=&#34;/user/products/products_status/&#34;&gt;status of a product&lt;/a&gt; when the quantity in stock goes to zero.&lt;/p&gt;
+&lt;p&gt;Stores that track stock (i.e. have Subtract stock = true) also need to decide on whether changes are required to the &lt;a href=&#34;/zendocs_test1/user/products/products_status/&#34;&gt;status of a product&lt;/a&gt; when the quantity in stock goes to zero.&lt;/p&gt;
 &lt;p&gt;The configuration setting &lt;code&gt;Products status in Catalog when out of stock should be set to&lt;/code&gt; controls this.  When set to 0, a product will change status to Disabled when the last one is sold.  When set to 1, no status change will occur.&lt;/p&gt;
 &lt;h2 id=&#34;what-about-variant-stock&#34;&gt;What about Variant Stock?&lt;/h2&gt;
 &lt;p&gt;At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt&amp;rsquo;s stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as 
@@ -692,10 +692,10 @@ the &lt;a href=&#34;https://vinosdefrutastropicales.com/product_extra_files/opti
     
     <item>
       <title>User: Traffic</title>
-      <link>/user/running/traffic/</link>
+      <link>/zendocs_test1/user/running/traffic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/traffic/</guid>
+      <guid>/zendocs_test1/user/running/traffic/</guid>
       <description>
         
         
@@ -705,34 +705,34 @@ the &lt;a href=&#34;https://vinosdefrutastropicales.com/product_extra_files/opti
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Build a Google Sitemap and tell Google about your site:
-The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=367&#34;&gt;sitemap plugin&lt;/a&gt; allows you to build an &lt;a href=&#34;/user/search/xml_site_map/&#34;&gt;XML sitemap&lt;/a&gt; in the format Google uses. Once you have done that, go to &lt;a href=&#34;https://www.google.com/webmasters/tools/siteoverview&#34;&gt;Google Webmaster Tools&lt;/a&gt;, create an account and submit your sitemap.  Note: don&amp;rsquo;t confuse the Google Sitemap (which is created in XML for consumption by computers) with the &lt;a href=&#34;/user/storefront_pages/site_map/&#34;&gt;built-in sitemap&lt;/a&gt; for your Zen Cart (which is created in HTML for consumption by humans).&lt;/p&gt;
+The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=367&#34;&gt;sitemap plugin&lt;/a&gt; allows you to build an &lt;a href=&#34;/zendocs_test1/user/search/xml_site_map/&#34;&gt;XML sitemap&lt;/a&gt; in the format Google uses. Once you have done that, go to &lt;a href=&#34;https://www.google.com/webmasters/tools/siteoverview&#34;&gt;Google Webmaster Tools&lt;/a&gt;, create an account and submit your sitemap.  Note: don&amp;rsquo;t confuse the Google Sitemap (which is created in XML for consumption by computers) with the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/site_map/&#34;&gt;built-in sitemap&lt;/a&gt; for your Zen Cart (which is created in HTML for consumption by humans).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Build a community around your content: The &lt;a href=&#34;/user/running/blogging/&#34;&gt;blogging&lt;/a&gt; page offers some suggestions on doing this.&lt;/p&gt;
+&lt;p&gt;Build a community around your content: The &lt;a href=&#34;/zendocs_test1/user/running/blogging/&#34;&gt;blogging&lt;/a&gt; page offers some suggestions on doing this.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Participate in forums in your area of business, and add your URL to your forum signature. For example, if you sell plants, participate actively in gardening forums.  Just be sure to follow community standards (don&amp;rsquo;t spam the forum with ads for your products, for example).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Also be sure you have done all the possible &lt;a href=&#34;/user/search/optimizing_seo/&#34;&gt;SEO Optimization&lt;/a&gt; possible for your site.&lt;/p&gt;
+&lt;p&gt;Also be sure you have done all the possible &lt;a href=&#34;/zendocs_test1/user/search/optimizing_seo/&#34;&gt;SEO Optimization&lt;/a&gt; possible for your site.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Your Store Logo</title>
-      <link>/user/running/logos/</link>
+      <link>/zendocs_test1/user/running/logos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/running/logos/</guid>
+      <guid>/zendocs_test1/user/running/logos/</guid>
       <description>
         
         
         &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/change_header_logo/&#34;&gt;Changing the logo in your header&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/orders/high_res_logo/&#34;&gt;Adding your logo to Invoices and Packing Slips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/logo/&#34;&gt;Logos in HTML Email&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/remove_logo/&#34;&gt;Removing your logo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/new_user_topics/change_header_logo/&#34;&gt;Changing the logo in your header&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/orders/high_res_logo/&#34;&gt;Adding your logo to Invoices and Packing Slips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/logo/&#34;&gt;Logos in HTML Email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/new_user_topics/remove_logo/&#34;&gt;Removing your logo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

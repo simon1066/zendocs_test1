@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Miscellaneous</title>
-    <link>/user/miscellaneous/</link>
+    <link>/zendocs_test1/user/miscellaneous/</link>
     <description>Recent content in Miscellaneous on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Can Zen Cart do this?</title>
-      <link>/user/miscellaneous/can_zen_cart/</link>
+      <link>/zendocs_test1/user/miscellaneous/can_zen_cart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/can_zen_cart/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/can_zen_cart/</guid>
       <description>
         
         
@@ -33,34 +33,34 @@
 In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&amp;id=2095) plugin has a built-in guest checkout feature which might meet your needs.
 &lt;hr&gt;
 &lt;h3 id=&#34;can-products-be-in-multiple-categories&#34;&gt;Can products be in multiple categories?&lt;/h3&gt;
-&lt;p&gt;Yes.  See &lt;a href=&#34;/user/products/linked_product/&#34;&gt;Linked Products&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yes.  See &lt;a href=&#34;/zendocs_test1/user/products/linked_product/&#34;&gt;Linked Products&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;does-zen-cart-support-my-preferred-shipper&#34;&gt;Does Zen Cart support my preferred shipper?&lt;/h3&gt;
-&lt;p&gt;Zen Cart supports UPS, USPS, Canada Post, and &lt;a href=&#34;/user/shipping/&#34;&gt;many other shippers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zen Cart supports UPS, USPS, Canada Post, and &lt;a href=&#34;/zendocs_test1/user/shipping/&#34;&gt;many other shippers&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-i-set-my-own-shipping-rates-with-zen-cart&#34;&gt;Can I set my own shipping rates with Zen Cart?&lt;/h3&gt;
-&lt;p&gt;You may offer &lt;a href=&#34;/user/shipping/free_shipping/&#34;&gt;free shipping&lt;/a&gt; or price shipping according to a variety of factors, such as the number or weight of items in an order.  See &lt;a href=&#34;/user/shipping/shipping/#available-shipping-modules&#34;&gt;Available Shipping Modules&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;You may offer &lt;a href=&#34;/zendocs_test1/user/shipping/free_shipping/&#34;&gt;free shipping&lt;/a&gt; or price shipping according to a variety of factors, such as the number or weight of items in an order.  See &lt;a href=&#34;/zendocs_test1/user/shipping/shipping/#available-shipping-modules&#34;&gt;Available Shipping Modules&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-create-shipping-labels&#34;&gt;Can Zen Cart create shipping labels?&lt;/h3&gt;
-&lt;p&gt;No, but Zen Cart is supported by &lt;a href=&#34;https://www.shipstation.com&#34;&gt;ShipStation&lt;/a&gt;, which is a popular postage and label creation solution.  Some other options are discussed in the &lt;a href=&#34;/user/shipping/labels/&#34;&gt;shipping labels FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No, but Zen Cart is supported by &lt;a href=&#34;https://www.shipstation.com&#34;&gt;ShipStation&lt;/a&gt;, which is a popular postage and label creation solution.  Some other options are discussed in the &lt;a href=&#34;/zendocs_test1/user/shipping/labels/&#34;&gt;shipping labels FAQ&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;does-zen-cart-support-my-preferred-payment-provider&#34;&gt;Does Zen Cart support my preferred payment provider?&lt;/h3&gt;
-&lt;p&gt;Zen Cart supports PayPal, Authorize, Square, and &lt;a href=&#34;/user/payment/&#34;&gt;many other payment processors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zen Cart supports PayPal, Authorize, Square, and &lt;a href=&#34;/zendocs_test1/user/payment/&#34;&gt;many other payment processors&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-discount-products&#34;&gt;Can Zen Cart discount products?&lt;/h3&gt;
 &lt;p&gt;Zen Cart supports a number of discounting mechanisms:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;per product discounts called &lt;a href=&#34;/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;per category discounts called &lt;a href=&#34;/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/order_total/coupons/&#34;&gt;Coupons&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/order_total/group_pricing/&#34;&gt;Group Discounts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/quantity_discounts/&#34;&gt;per-product Quantity Discounts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;and &lt;a href=&#34;/user/order_total/&#34;&gt;other discounting methods&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;per product discounts called &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;per category discounts called &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;Coupons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/group_pricing/&#34;&gt;Group Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;per-product Quantity Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and &lt;a href=&#34;/zendocs_test1/user/order_total/&#34;&gt;other discounting methods&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-offer-tiered-customer-specific-or-bundled-pricing&#34;&gt;Can Zen Cart offer tiered, customer specific or bundled pricing?&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Tiered pricing is available on a per product basis using &lt;a href=&#34;/user/products/quantity_discounts/&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tiered pricing is available on a per product basis using &lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Customer specific pricing is not available natively but can be performed with plugins.&lt;/li&gt;
 &lt;li&gt;Bundled pricing (sometimes called kit or package pricing) is not available natively but can be performed with plugins.&lt;/li&gt;
 &lt;/ul&gt;
@@ -70,16 +70,16 @@ In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?
 &lt;ul&gt;
 &lt;li&gt;A Low Order Fee can be assessed on orders below a certain value.&lt;/li&gt;
 &lt;li&gt;A Payment module fee/discount can be added to an order based on the payment method chosen using the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1279&#34;&gt;Ceon Payment Surcharges/Discounts&lt;/a&gt; plugin.&lt;/li&gt;
-&lt;li&gt;You can also add fees when you assign attributes to products.  See &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You can also add fees when you assign attributes to products.  See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/order_total/order_total/&#34;&gt;Order Total Modules&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/order_total/order_total/&#34;&gt;Order Total Modules&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-track-my-inventory&#34;&gt;Can Zen Cart track my inventory?&lt;/h3&gt;
-&lt;p&gt;Zen Cart offers basic inventory management (quantity in stock), with related settings like whether to allow checkout when stock is not sufficient to fill an order.  See &lt;a href=&#34;/user/running/stock/&#34;&gt;tracking inventory&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Zen Cart offers basic inventory management (quantity in stock), with related settings like whether to allow checkout when stock is not sufficient to fill an order.  See &lt;a href=&#34;/zendocs_test1/user/running/stock/&#34;&gt;tracking inventory&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;Note that full cost-of-goods sold (COGS) tracking is not part of Zen  Cart, and would require an external system, such as an Enterprise Resource Planning (ERP) tool.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-sell-products-with-variants&#34;&gt;Can Zen Cart sell products with variants?&lt;/h3&gt;
-&lt;p&gt;Zen Cart supports variants through the &lt;a href=&#34;/user/products/attributes/&#34;&gt;attributes system&lt;/a&gt;.  You can add
+&lt;p&gt;Zen Cart supports variants through the &lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;attributes system&lt;/a&gt;.  You can add
 color, size, or any other product variant to your products with no limitations.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-track-the-stock-of-products-with-variants&#34;&gt;Can Zen Cart track the stock of products with variants?&lt;/h3&gt;
@@ -94,7 +94,7 @@ the &lt;a href=&#34;https://vinosdefrutastropicales.com/product_extra_files/opti
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-allow-me-to-create-restricted-admin-accounts&#34;&gt;Can Zen Cart allow me to create restricted admin accounts?&lt;/h3&gt;
 &lt;p&gt;Yes - you can limit admin users to a subset of the superuser capabilities using
-&lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-create-seo-friendly-er-human-friendly-urls&#34;&gt;Can Zen Cart create SEO friendly (er, &amp;ldquo;human-friendly&amp;rdquo;) URLs?&lt;/h3&gt;
 &lt;p&gt;This capability is not built into Zen Cart at the current time, but two popular plugins exist:&lt;/p&gt;
@@ -105,20 +105,20 @@ the &lt;a href=&#34;https://vinosdefrutastropicales.com/product_extra_files/opti
 &lt;hr&gt;
 &lt;h3 id=&#34;can-zen-cart-allow-me-to-edit-an-order-after-it-was-placed&#34;&gt;Can Zen Cart allow me to edit an order after it was placed?&lt;/h3&gt;
 &lt;p&gt;Editing orders may be performed using the plugin 
-&lt;a href=&#34;/user/orders/edit_orders&#34;&gt;Edit Orders&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/orders/edit_orders&#34;&gt;Edit Orders&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-i-login-to-a-customers-account&#34;&gt;Can I login to a customer&amp;rsquo;s account?&lt;/h3&gt;
-&lt;p&gt;Yes you can.  See &lt;a href=&#34;/user/admin/master_password/&#34;&gt;Master Password capabilities&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yes you can.  See &lt;a href=&#34;/zendocs_test1/user/admin/master_password/&#34;&gt;Master Password capabilities&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;can-i-add-a-new-page-to-my-cart-easily&#34;&gt;Can I add a new page to my cart easily?&lt;/h3&gt;
-&lt;p&gt;Yes, there are several ways you can &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;add a new page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yes, there are several ways you can &lt;a href=&#34;/zendocs_test1/user/customizing/add_pages/&#34;&gt;add a new page&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;does-zen-cart-come-with-demo-data&#34;&gt;Does Zen Cart come with demo data?&lt;/h3&gt;
-&lt;p&gt;Yes, and many of the product&amp;rsquo;s features can be seen by installing with the demo data.  See &lt;a href=&#34;/user/first_steps/demo_data/&#34;&gt;demo data&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Yes, and many of the product&amp;rsquo;s features can be seen by installing with the demo data.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/demo_data/&#34;&gt;demo data&lt;/a&gt; for details.&lt;/p&gt;
 &lt;hr&gt;
 &lt;!-- please keep this at the end --&gt; 
 &lt;h3 id=&#34;is-there-a-list-of-features-that-zen-cart-currently-offers&#34;&gt;Is there a list of features that Zen Cart currently offers?&lt;/h3&gt;
-&lt;p&gt;Yes - see &lt;a href=&#34;/user/about_us/features/&#34;&gt;What features does Zen Cart offer?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yes - see &lt;a href=&#34;/zendocs_test1/user/about_us/features/&#34;&gt;What features does Zen Cart offer?&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;is-there-a-roadmap-of-zen-cart-features-planned-for-the-future&#34;&gt;Is there a roadmap of Zen Cart features planned for the future?&lt;/h3&gt;
 &lt;p&gt;There is a subforum called &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?4-Development-Road-Map&#34;&gt;Development Road Map&lt;/a&gt;.&lt;/p&gt;
@@ -128,17 +128,17 @@ the &lt;a href=&#34;https://vinosdefrutastropicales.com/product_extra_files/opti
     
     <item>
       <title>User: configure.php explained</title>
-      <link>/user/miscellaneous/configure/</link>
+      <link>/zendocs_test1/user/miscellaneous/configure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/configure/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/configure/</guid>
       <description>
         
         
         &lt;p&gt;&lt;strong&gt;Quick Summary:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;HTTP_SERVER&lt;/code&gt; is the domain name of your site (eg: &lt;code&gt;https://www.YOURSITE.com&lt;/code&gt;). Visiting this URL will take customers to the &amp;ldquo;webroot&amp;rdquo; of your domain, whether or not your store is located in that spot.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; and &lt;code&gt;DIR_WS_HTTPS_CATALOG&lt;/code&gt; are the subdirectory foldernames that must be added to the URL in order to take customers to your store.&lt;/p&gt;
-&lt;p&gt;If your store is located in the &lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, then simply entering &lt;code&gt;&#39;/&#39;&lt;/code&gt; here will suffice.&lt;/p&gt;
+&lt;p&gt;If your store is located in the &lt;a href=&#34;/zendocs_test1/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, then simply entering &lt;code&gt;&#39;/&#39;&lt;/code&gt; here will suffice.&lt;/p&gt;
 &lt;p&gt;But if your store is located in a subdirectory like &lt;code&gt;www.YOURSITE.com/store/&lt;/code&gt; then it would be necessary to see &lt;code&gt;&#39;/store/&#39;&lt;/code&gt; as the value here.&lt;/p&gt;
 &lt;p&gt;Explained another way: Zen Cart builds its URLs by combining two values from your configure.php files:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;HTTP_SERVER&lt;/code&gt; plus &lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; plus the page portion of the URL&lt;br&gt;
@@ -155,7 +155,7 @@ and
 &lt;p&gt;However, keep in mind that there IS a similarity between &lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; and &lt;code&gt;DIR_FS_CATALOG&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;DIR_FS_CATALOG&lt;/code&gt; might read: &lt;code&gt;/home/myname/public_html/store/&lt;/code&gt; 
 and thus &lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; is: &lt;code&gt;/store/&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;(&lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; points to whatever follows the &lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, configuration of your hosting account, 
+&lt;p&gt;(&lt;code&gt;DIR_WS_CATALOG&lt;/code&gt; points to whatever follows the &lt;a href=&#34;/zendocs_test1/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, configuration of your hosting account, 
 ie: which folder your account points to for your actual site.&lt;br&gt;
 In most cases this folder is named &lt;code&gt;public_html&lt;/code&gt; or &lt;code&gt;htdocs&lt;/code&gt; or &lt;code&gt;httpdocs&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Other Paths:&lt;/strong&gt;&lt;/p&gt;
@@ -206,8 +206,8 @@ Ideally you will leave this blank, as shown here.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is the collation or character set that Zen Cart tells MySQL to use when exchanging database data back and forth.
 While &lt;code&gt;utf8&lt;/code&gt; is common, using &lt;code&gt;utf8mb4&lt;/code&gt; enables support for emojis and other multibyte characters. 
 However, changing this setting must be done before first install, or else you must manually update all the table fields in your database after changing it here.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/upgrading/detailed_upgrading/#character-set&#34;&gt;this article&lt;/a&gt; for more details on character set.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/upgrading/convert_to_utf8&#34;&gt;this article&lt;/a&gt; for a utility which can help you convert your database from &lt;code&gt;latin1&lt;/code&gt;/&lt;code&gt;iso-8859-1&lt;/code&gt; to &lt;code&gt;utf8&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/upgrading/detailed_upgrading/#character-set&#34;&gt;this article&lt;/a&gt; for more details on character set.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8&#34;&gt;this article&lt;/a&gt; for a utility which can help you convert your database from &lt;code&gt;latin1&lt;/code&gt;/&lt;code&gt;iso-8859-1&lt;/code&gt; to &lt;code&gt;utf8&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;DB_SERVER&amp;#39;, &amp;#39;localhost&amp;#39;);  
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is the address to the server which runs your database. In most cases &amp;rsquo;localhost&amp;rsquo; is the correct choice. Your hosting company can tell you if it should be something else. In some cases (or if using &lt;code&gt;Docker&lt;/code&gt; or other container services) you might require &lt;code&gt;127.0.0.1&lt;/code&gt; instead of &lt;code&gt;localhost&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;DB_SERVER_USERNAME&amp;#39;, &amp;#39;your username&amp;#39;);  
@@ -220,23 +220,23 @@ define(&amp;#39;DB_DATABASE&amp;#39;, &amp;#39;your assigned databasename&amp;#3
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;DIR_FS_SQL_CACHE&amp;#39;, &amp;#39;/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/cache&amp;#39;);  
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This setting specifies the path where SQL cache files would be stored if &amp;lsquo;file&amp;rsquo; mode is selected.&lt;/p&gt;
 &lt;p&gt;(In v1.3.9 and v1.5.0, this setting was ALSO used for storing various debug logs used for troubleshooting problems your PHP scripts might be having in your store. As of v1.5.1, these logs are now found in the &lt;code&gt;DIR_FS_LOGS&lt;/code&gt; location (see below).)&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s possible to relocate this folder to another location perhaps outside your site&amp;rsquo;s &lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, for increased security. 
-Simply relocate the folder using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, and adjust this value to match the new location.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s possible to relocate this folder to another location perhaps outside your site&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, for increased security. 
+Simply relocate the folder using your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, and adjust this value to match the new location.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;DIR_FS_LOGS&amp;#39;, &amp;#39;/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/logs&amp;#39;);  
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;DIR_FS_LOGS&lt;/code&gt; specifies the path where to store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.
-It&amp;rsquo;s possible to relocate this folder to another location perhaps outside your site&amp;rsquo;s &lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, for increased security. 
+It&amp;rsquo;s possible to relocate this folder to another location perhaps outside your site&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;, for increased security. 
 Simply relocate the folder using your FTP program, and adjust this value to match the new location.&lt;/p&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/troubleshooting/db_strict_mode/&#34;&gt;What is STRICT mode for my database&lt;/a&gt; for information on &lt;code&gt;DB_MYSQL_MODE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/troubleshooting/db_strict_mode/&#34;&gt;What is STRICT mode for my database&lt;/a&gt; for information on &lt;code&gt;DB_MYSQL_MODE&lt;/code&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How can I force my site to add &#34;www.&#34; to the URL?</title>
-      <link>/user/miscellaneous/force_www/</link>
+      <link>/zendocs_test1/user/miscellaneous/force_www/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/force_www/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/force_www/</guid>
       <description>
         
         
@@ -260,10 +260,10 @@ RewriteRule ^(.*)$ http://www.YOURSITE.com/$1 [R=301,L]
     
     <item>
       <title>User: How can I limit the age of my customers to people over 18?</title>
-      <link>/user/miscellaneous/age_check/</link>
+      <link>/zendocs_test1/user/miscellaneous/age_check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/age_check/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/age_check/</guid>
       <description>
         
         
@@ -309,10 +309,10 @@ define(&#39;ENTRY_DATE_OF_BIRTH_UNDERAGE&#39;,&#39;Sorry, but you must be at lea
     
     <item>
       <title>User: Salemaker vs Specials</title>
-      <link>/user/miscellaneous/salemaker_vs_specials/</link>
+      <link>/zendocs_test1/user/miscellaneous/salemaker_vs_specials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/salemaker_vs_specials/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/salemaker_vs_specials/</guid>
       <description>
         
         
@@ -333,7 +333,7 @@ define(&#39;ENTRY_DATE_OF_BIRTH_UNDERAGE&#39;,&#39;Sorry, but you must be at lea
 &lt;td&gt;Use case: Run a 20% off March Sale on all winter coats.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;A special is stored as a new price, so if you set a special of 10% off a $30 item, the special price goes to $27.  Subsequent changes to the regular price on the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; do not affect the special.&lt;/td&gt;
+&lt;td&gt;A special is stored as a new price, so if you set a special of 10% off a $30 item, the special price goes to $27.  Subsequent changes to the regular price on the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; do not affect the special.&lt;/td&gt;
 &lt;td&gt;Sales can be set up as dollars off the regular price, a percent off the regular price, or a specific new price. The first two types of sales (dollars off and percent off) mean the sale price will change if the product’s regular price changes.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -342,17 +342,17 @@ define(&#39;ENTRY_DATE_OF_BIRTH_UNDERAGE&#39;,&#39;Sorry, but you must be at lea
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/admin_pages/catalog/salemaker/&#34;&gt;Salemaker&lt;/a&gt; and &lt;a href=&#34;/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt; for more details  on each of these discounting mechanisms.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Salemaker&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt; for more details  on each of these discounting mechanisms.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Some of my PHP files are missing the ?&gt; at the end of the file</title>
-      <link>/user/miscellaneous/missing_close_php/</link>
+      <link>/zendocs_test1/user/miscellaneous/missing_close_php/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/miscellaneous/missing_close_php/</guid>
+      <guid>/zendocs_test1/user/miscellaneous/missing_close_php/</guid>
       <description>
         
         

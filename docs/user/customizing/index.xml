@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Customizing your Site</title>
-    <link>/user/customizing/</link>
+    <link>/zendocs_test1/user/customizing/</link>
     <description>Recent content in Customizing your Site on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/customizing/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/customizing/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,27 +15,27 @@
     
     <item>
       <title>User: Adding Pages to my site</title>
-      <link>/user/customizing/add_pages/</link>
+      <link>/zendocs_test1/user/customizing/add_pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/add_pages/</guid>
+      <guid>/zendocs_test1/user/customizing/add_pages/</guid>
       <description>
         
         
         &lt;p&gt;You have several options if you want to add a page to your site.  Here they are, in increasing order of complexity:&lt;/p&gt;
 &lt;h3 id=&#34;use-ez-pages&#34;&gt;Use EZ-Pages&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;/user/ezpages/what_are_ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; are a great way to add new text content to your site. 
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/ezpages/what_are_ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; are a great way to add new text content to your site. 
 The one restriction they have is that you can&amp;rsquo;t execute any PHP code on them,
 but for many situations, this is not required.&lt;/p&gt;
 &lt;h3 id=&#34;use-the-built-in-extra-pages&#34;&gt;Use the built-in extra pages&lt;/h3&gt;
-&lt;p&gt;The built-in &lt;a href=&#34;/user/template/extra_pages&#34;&gt;extra pages&lt;/a&gt; are&lt;/p&gt;
+&lt;p&gt;The built-in &lt;a href=&#34;/zendocs_test1/user/template/extra_pages&#34;&gt;extra pages&lt;/a&gt; are&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_2&#34;&gt;page_2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_3&#34;&gt;page_3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_4&#34;&gt;page_4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/#define_page_2&#34;&gt;page_2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/#define_page_3&#34;&gt;page_3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/#define_page_4&#34;&gt;page_4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may use these pages to add content to your site.&lt;/p&gt;
-&lt;p&gt;Turn on creation of links to these pages from &lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Page Status&lt;/a&gt;, then modify the page content using the &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Turn on creation of links to these pages from &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Page Status&lt;/a&gt;, then modify the page content using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;use-a-plugin&#34;&gt;Use a Plugin&lt;/h3&gt;
 &lt;p&gt;This plugin adds six new define pages which can be used just like page_2 .. page_4.&lt;/p&gt;
 &lt;ul&gt;
@@ -62,9 +62,9 @@ but for many situations, this is not required.&lt;/p&gt;
 &lt;h2 id=&#34;linking-to-your-new-page&#34;&gt;Linking to your New Page&lt;/h2&gt;
 &lt;p&gt;Once you have created your new page, you&amp;rsquo;ll want to link to it. A few options are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;If you have created the page as an EZ-Page, use the &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If you want the link in the Information Sidebox, use the instructions on &lt;a href=&#34;/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You can put the link in the &lt;a href=&#34;/user/template/header/&#34;&gt;header&lt;/a&gt; or &lt;a href=&#34;/user/template/footer/&#34;&gt;footer&lt;/a&gt; of your site, but the method of doing so will depend on your template.&lt;/li&gt;
+&lt;li&gt;If you have created the page as an EZ-Page, use the &lt;a href=&#34;/zendocs_test1/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you want the link in the Information Sidebox, use the instructions on &lt;a href=&#34;/zendocs_test1/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You can put the link in the &lt;a href=&#34;/zendocs_test1/user/template/header/&#34;&gt;header&lt;/a&gt; or &lt;a href=&#34;/zendocs_test1/user/template/footer/&#34;&gt;footer&lt;/a&gt; of your site, but the method of doing so will depend on your template.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;direct-access-to-files&#34;&gt;Direct Access to Files&lt;/h2&gt;
 &lt;p&gt;You may wish to simply provide files (such as PDFs) on your site without requiring the registration and purchase steps associated with paid downloads.&lt;/p&gt;
@@ -81,42 +81,42 @@ Note: If you are using Ngnix or another webserver other than Apache, you will ha
     
     <item>
       <title>User: Changing your site&#39;s appearance</title>
-      <link>/user/customizing/appearance/</link>
+      <link>/zendocs_test1/user/customizing/appearance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/appearance/</guid>
+      <guid>/zendocs_test1/user/customizing/appearance/</guid>
       <description>
         
         
         &lt;p&gt;There are many things you can do to change the appearance of your cart.&lt;/p&gt;
 &lt;h3 id=&#34;language-file-changes&#34;&gt;Language file changes&lt;/h3&gt;
 &lt;p&gt;You can change any string in your cart by 
-using &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;overrides&lt;/a&gt; to 
+using &lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;overrides&lt;/a&gt; to 
 customize the language file which contains that string.&lt;/p&gt;
 &lt;h3 id=&#34;templating&#34;&gt;Templating&lt;/h3&gt;
 &lt;p&gt;You can completely change the appearance of your site, or just any one 
-page, using the &lt;a href=&#34;/user/template/&#34;&gt;template system&lt;/a&gt;.&lt;/p&gt;
+page, using the &lt;a href=&#34;/zendocs_test1/user/template/&#34;&gt;template system&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;stylesheets&#34;&gt;Stylesheets&lt;/h3&gt;
 &lt;p&gt;Stylesheets control visual aspects of your site, such  as font choices,
-colors and text sizes.  You can &lt;a href=&#34;/user/template/stylesheet/&#34;&gt;customize stylesheets&lt;/a&gt; as part 
+colors and text sizes.  You can &lt;a href=&#34;/zendocs_test1/user/template/stylesheet/&#34;&gt;customize stylesheets&lt;/a&gt; as part 
 of your template.&lt;/p&gt;
 &lt;h3 id=&#34;adding-pages&#34;&gt;Adding Pages&lt;/h3&gt;
-&lt;p&gt;You have several options for &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;adding a new page&lt;/a&gt; to your cart.&lt;/p&gt;
+&lt;p&gt;You have several options for &lt;a href=&#34;/zendocs_test1/user/customizing/add_pages/&#34;&gt;adding a new page&lt;/a&gt; to your cart.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Protecting pages</title>
-      <link>/user/customizing/protecting_pages/</link>
+      <link>/zendocs_test1/user/customizing/protecting_pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/protecting_pages/</guid>
+      <guid>/zendocs_test1/user/customizing/protecting_pages/</guid>
       <description>
         
         
         &lt;h2 id=&#34;restricting-page-to-logged-in-users&#34;&gt;Restricting page to logged in users&lt;/h2&gt;
-&lt;p&gt;As an example, we&amp;rsquo;ll use the &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;built-in extra page&lt;/a&gt;  page_2 (&lt;code&gt;index.php?main_page=page_2&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;As an example, we&amp;rsquo;ll use the &lt;a href=&#34;/zendocs_test1/user/template/extra_pages/&#34;&gt;built-in extra page&lt;/a&gt;  page_2 (&lt;code&gt;index.php?main_page=page_2&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;Modify &lt;code&gt;includes/modules/pages/page_2/header_php.php&lt;/code&gt; to include at the top:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// if the customer is not logged on, redirect them to the login page
   if (!zen_is_logged_in() || zen_in_guest_checkout()) {
@@ -126,7 +126,7 @@ of your template.&lt;/p&gt;
     zen_redirect(zen_href_link(FILENAME_LOGIN, &amp;#39;&amp;#39;, &amp;#39;SSL&amp;#39;));
   } 
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;restricting-page-to-a-customer-group&#34;&gt;Restricting page to a Customer Group&lt;/h2&gt;
-&lt;p&gt;Note: This takes advange of the 1.5.8 feature &lt;a href=&#34;/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so is only available in Zen Cart 1.5.8 and above.&lt;/p&gt;
+&lt;p&gt;Note: This takes advange of the 1.5.8 feature &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so is only available in Zen Cart 1.5.8 and above.&lt;/p&gt;
 &lt;p&gt;Use the logic above to give the right message to non-logged-in users, then add this block next.  We are assuming group &amp;ldquo;1&amp;rdquo; is Wholesalers, and we&amp;rsquo;ll restrict page_2 to this group.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// if the customer is not in group 1, redirect to page not found
   $allowed_group = 1; 
@@ -141,10 +141,10 @@ of your template.&lt;/p&gt;
     
     <item>
       <title>User: Show Flags</title>
-      <link>/user/customizing/show_flags/</link>
+      <link>/zendocs_test1/user/customizing/show_flags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/show_flags/</guid>
+      <guid>/zendocs_test1/user/customizing/show_flags/</guid>
       <description>
         
         
@@ -569,10 +569,10 @@ of your template.&lt;/p&gt;
     
     <item>
       <title>User: Site Specific Overrides</title>
-      <link>/user/customizing/site_specific_overrides/</link>
+      <link>/zendocs_test1/user/customizing/site_specific_overrides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/site_specific_overrides/</guid>
+      <guid>/zendocs_test1/user/customizing/site_specific_overrides/</guid>
       <description>
         
         
@@ -582,29 +582,29 @@ of your template.&lt;/p&gt;
 &lt;p&gt;and customize to taste.&lt;/p&gt;
 &lt;p&gt;The following behaviors can be enabled or disabled by this file:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;displaying the &lt;a href=&#34;/user/storefront_pages/brands/&#34;&gt;Brands page&lt;/a&gt; link in the Information sidebox&lt;/li&gt;
+&lt;li&gt;displaying the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/brands/&#34;&gt;Brands page&lt;/a&gt; link in the Information sidebox&lt;/li&gt;
 &lt;li&gt;displaying the About Us link in the Information sidebox&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Example: turn on the Brands page link in the Information sidebox:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$flag_show_brand_sidebox_link = true;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Information on the &lt;a href=&#34;/user/admin/site_specific_overrides/&#34;&gt;admin site-specific overrides file&lt;/a&gt; is also available.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Information on the &lt;a href=&#34;/zendocs_test1/user/admin/site_specific_overrides/&#34;&gt;admin site-specific overrides file&lt;/a&gt; is also available.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Sort Order for product listing pages</title>
-      <link>/user/customizing/sort_order/</link>
+      <link>/zendocs_test1/user/customizing/sort_order/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/sort_order/</guid>
+      <guid>/zendocs_test1/user/customizing/sort_order/</guid>
       <description>
         
         
-        &lt;p&gt;Products shown on a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; are sorted in one of two ways:&lt;/p&gt;
+        &lt;p&gt;Products shown on a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; are sorted in one of two ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Using the per-product sort order set on the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing&lt;/a&gt; page.&lt;/li&gt;
-&lt;li&gt;Using the value &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order&#34;&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/a&gt; from the Admin &amp;gt; Configuration &amp;gt; Product Listing page.&lt;/li&gt;
+&lt;li&gt;Using the per-product sort order set on the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing&lt;/a&gt; page.&lt;/li&gt;
+&lt;li&gt;Using the value &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order&#34;&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/a&gt; from the Admin &amp;gt; Configuration &amp;gt; Product Listing page.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; is set to blank, the per-product sort order is used.&lt;/p&gt;
 &lt;p&gt;When it is non-blank, it is interpreted as follows:&lt;/p&gt;
@@ -623,14 +623,14 @@ of your template.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The settings for each of these values (0 or non-zero) determine whether or not this column will be shown on a product listing page.  For specifics, see 
-&lt;a href=&#34;/user/template/product_listing_page_configuration&#34;&gt;Product Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/template/product_listing_page_configuration&#34;&gt;Product Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The configuration settings with non-zero values are ordered according to their setting.  Then the sort is done using the field number specified in the first character of &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt;, in ascending or descending order according to the second character.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This is best illustrated by an example.  Consider the following configuration:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/pl_config_1.png&#34; alt=&#34;Listing Page configuration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/pl_config_1.png&#34; alt=&#34;Listing Page configuration&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;This shows that the listing page will display four fields per row, in the following order:&lt;/p&gt;
 &lt;ul&gt;
@@ -640,39 +640,39 @@ of your template.&lt;/p&gt;
 &lt;li&gt;product quantity in stock&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If the value of &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; is blank, the rows will be sorted according to the per product sort order and product name.   Since frequently per product sort order is zero, this means the products are shown sorted by name, like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/pl_config_2.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/pl_config_2.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
 &lt;p&gt;But if the &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; value is 4d, the products are shown sorted by the 4th displayed field (product quantity) in descending order.  The result will look like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/pl_config_3.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/pl_config_3.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Template System</title>
-      <link>/user/customizing/template_system/</link>
+      <link>/zendocs_test1/user/customizing/template_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/template_system/</guid>
+      <guid>/zendocs_test1/user/customizing/template_system/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/template/&#34;&gt;this folder&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/template/&#34;&gt;this folder&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Using Customer Groups</title>
-      <link>/user/customizing/customer_groups/</link>
+      <link>/zendocs_test1/user/customizing/customer_groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/customizing/customer_groups/</guid>
+      <guid>/zendocs_test1/user/customizing/customer_groups/</guid>
       <description>
         
         
-        &lt;p&gt;Note: These ideas take advange of the 1.5.8 feature &lt;a href=&#34;/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so they will only be applicable to Zen Cart 1.5.8 and above.&lt;/p&gt;
+        &lt;p&gt;Note: These ideas take advange of the 1.5.8 feature &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so they will only be applicable to Zen Cart 1.5.8 and above.&lt;/p&gt;
 &lt;h2 id=&#34;restricting-page-to-a-customer-group&#34;&gt;Restricting page to a Customer Group&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/customizing/protecting_pages/#restricting-page-to-a-customer-group&#34;&gt;Protecting Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/customizing/protecting_pages/#restricting-page-to-a-customer-group&#34;&gt;Protecting Pages&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;restricting-a-shipping-method-to-a-customer-group&#34;&gt;Restricting a Shipping Method to a Customer Group&lt;/h2&gt;
 &lt;p&gt;In the &lt;code&gt;__construct&lt;/code&gt; method of the shipping module, below the other checks for enabled, add&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;     if (IS_ADMIN_FLAG !== true) { 

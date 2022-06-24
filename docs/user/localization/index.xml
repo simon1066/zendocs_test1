@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Localization</title>
-    <link>/user/localization/</link>
+    <link>/zendocs_test1/user/localization/</link>
     <description>Recent content in Localization on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/localization/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/localization/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Address formats - what are they?</title>
-      <link>/user/localization/address_formats/</link>
+      <link>/zendocs_test1/user/localization/address_formats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/address_formats/</guid>
+      <guid>/zendocs_test1/user/localization/address_formats/</guid>
       <description>
         
         
@@ -282,10 +282,10 @@ The UK is 6, USA is 7 and most other countries are 5. There is a &lt;a href=&#34
     
     <item>
       <title>User: Date format - changing it from the US format to dd/mm/yyyy</title>
-      <link>/user/localization/changing_date_format/</link>
+      <link>/zendocs_test1/user/localization/changing_date_format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/changing_date_format/</guid>
+      <guid>/zendocs_test1/user/localization/changing_date_format/</guid>
       <description>
         
         
@@ -467,10 +467,10 @@ define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;dd/mm/yyyy&amp;#39;);
     
     <item>
       <title>User: How do I use another currency instead of US Dollars?</title>
-      <link>/user/localization/my_currency/</link>
+      <link>/zendocs_test1/user/localization/my_currency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/my_currency/</guid>
+      <guid>/zendocs_test1/user/localization/my_currency/</guid>
       <description>
         
         
@@ -481,23 +481,23 @@ define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;dd/mm/yyyy&amp;#39;);
 &lt;li&gt;Optional: Enabling a currency-selection sidebox in the store&lt;/li&gt;
 &lt;li&gt;Recommended: Update exchange rates regularly.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.
 If you are running your shop in a language that is not English and are going to use your native currency, click on the line that says &amp;ldquo;Switch To Default Language Currency&amp;rdquo; and change the value to true. If you are going to run the cart in English, but not use US Dollars, make sure that the &amp;ldquo;Switch To Default Language Currency&amp;rdquo; is set to false.&lt;/p&gt;
-&lt;p&gt;Then go to &lt;a href=&#34;/user/admin_pages/localization/currencies/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Currencies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/currencies/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Currencies&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If your currency is in the list which is shown, click your currency, click Edit and check the box labelled &lt;em&gt;Set as default&lt;/em&gt;.  Then click Save.&lt;/p&gt;
 &lt;p&gt;If your currency is &lt;em&gt;not&lt;/em&gt;  in the list which is shown, click the &lt;em&gt;New Currency&lt;/em&gt; button. Fill in the information appropriate for your currency and check the box if it is to be the default for your shop. Click the &lt;em&gt;Insert&lt;/em&gt; button, then after the page refreshes, click the &lt;em&gt;Update Currencies&lt;/em&gt; button.&lt;/p&gt;
 &lt;p&gt;Be sure to click the &lt;em&gt;Update Currencies&lt;/em&gt; button on at least a weekly basis to update all exchange rates.&lt;/p&gt;
-&lt;p&gt;If you wish to allow a dropdown menu for shoppers to change the store&amp;rsquo;s displayed prices in that currency, you can enable the &lt;a href=&#34;/user/sideboxes/sidebox_list/#currencies&#34;&gt;Currencies Sidebox&lt;/a&gt; to appear in either the left or right sidebars.&lt;/p&gt;
+&lt;p&gt;If you wish to allow a dropdown menu for shoppers to change the store&amp;rsquo;s displayed prices in that currency, you can enable the &lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/#currencies&#34;&gt;Currencies Sidebox&lt;/a&gt; to appear in either the left or right sidebars.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Language Support</title>
-      <link>/user/localization/languages/</link>
+      <link>/zendocs_test1/user/localization/languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/languages/</guid>
+      <guid>/zendocs_test1/user/localization/languages/</guid>
       <description>
         
         
@@ -511,7 +511,7 @@ If you are running your shop in a language that is not English and are going to 
 &lt;h2 id=&#34;installing-a-language-pack&#34;&gt;Installing a Language Pack&lt;/h2&gt;
 &lt;p&gt;As always with any modifications, this should be tested and checked calmly and methodically in a &lt;strong&gt;development copy&lt;/strong&gt; of your shop, &lt;strong&gt;NOT&lt;/strong&gt; the production site, as older packs will take some time to be corrected/updated.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re not familiar with installing a Zen Cart plugin, follow the instructions on 
-&lt;a href=&#34;/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Installing&amp;rdquo; has two steps.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -520,7 +520,7 @@ If you know the pack needs updating, it should be done now, as described below.&
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Registering the new language in the Admin using 
-&lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Languages &amp;gt; Add&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/languages/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Languages &amp;gt; Add&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Apart from adding the language option to the admin and the shopfront, the registering action will also create entries for the category and product names in the new language, by copying the english texts.
@@ -559,17 +559,17 @@ Since it is a good thing if this procedure executes without errors, it is advise
 &lt;p&gt;The language file that contains this text is not encoded in utf-8 with no BOM. You can open the file in a suitable editor (like Notepad++) to change the encoding, but if many files are not encoded correctly, there are free programs available that can encode all the files at once.&lt;/p&gt;
 &lt;h2 id=&#34;language-files-from-zen-cart-158-onwards&#34;&gt;Language Files from Zen Cart 1.5.8 onwards&lt;/h2&gt;
 &lt;p&gt;The structure of the language files was completely changed in Zen Cart 1.5.8.&lt;/p&gt;
-&lt;p&gt;A description of the changes and conversion procedure is provided in the developer&amp;rsquo;s guide to &lt;a href=&#34;/dev/languages/158_language_files/&#34;&gt;158 Language Files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A description of the changes and conversion procedure is provided in the developer&amp;rsquo;s guide to &lt;a href=&#34;/zendocs_test1/dev/languages/158_language_files/&#34;&gt;158 Language Files&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Order Statuses</title>
-      <link>/user/localization/orders_status/</link>
+      <link>/zendocs_test1/user/localization/orders_status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/orders_status/</guid>
+      <guid>/zendocs_test1/user/localization/orders_status/</guid>
       <description>
         
         
@@ -583,27 +583,27 @@ Zen Cart has the following default order statuses:&lt;/p&gt;
 &lt;li&gt;Update&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;New order statuses can be created in 
-&lt;a href=&#34;/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;how-can-i-set-my-orders-to-status-shipped&#34;&gt;How can I set my orders to status Shipped?&lt;/h3&gt;
 &lt;p&gt;You can add a new order status (Shipped) by going to
-&lt;a href=&#34;/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Then go to &lt;a href=&#34;/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Orders&lt;/a&gt; and update the order&amp;rsquo;s status to &amp;lsquo;Shipped&amp;rsquo; making sure that you set the &lt;em&gt;Notify Customer&lt;/em&gt; radio button to &lt;em&gt;Email&lt;/em&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Orders&lt;/a&gt; and update the order&amp;rsquo;s status to &amp;lsquo;Shipped&amp;rsquo; making sure that you set the &lt;em&gt;Notify Customer&lt;/em&gt; radio button to &lt;em&gt;Email&lt;/em&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: User information on Array based Language files</title>
-      <link>/user/localization/158_language_files/</link>
+      <link>/zendocs_test1/user/localization/158_language_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/localization/158_language_files/</guid>
+      <guid>/zendocs_test1/user/localization/158_language_files/</guid>
       <description>
         
         
         &lt;p&gt;In Zen Cart 1.5.8, the language file structure was modified so that the PHP &lt;code&gt;define&lt;/code&gt; statement is no longer used directly.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined, so the old approach would create debug logs if something wasn&amp;rsquo;t done.&lt;/p&gt;
 &lt;p&gt;The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called &lt;em&gt;array based language files&lt;/em&gt; (as opposed to the older &lt;em&gt;define based language files&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;If you are a developer who wants to learn how to build a new language pack, please see &lt;a href=&#34;/dev/languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are a developer who wants to learn how to build a new language pack, please see &lt;a href=&#34;/zendocs_test1/dev/languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Because these new language packs are just now being built and are subject to frequent fine-tuning, the most up to date location for finding them will not be the Plugins Library, but the Github repository of the developer maintaining the library.&lt;/p&gt;
 &lt;h3 id=&#34;available-array-based-language-packs-for-zen-cart-158-and-above&#34;&gt;Available Array Based Language Packs for Zen Cart 1.5.8 and above&lt;/h3&gt;
 &lt;ul&gt;

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Installing</title>
-    <link>/user/installing/</link>
+    <link>/zendocs_test1/user/installing/</link>
     <description>Recent content in Installing on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/installing/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/installing/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: How do I create a MySQL database?</title>
-      <link>/user/installing/create_mysql_database/</link>
+      <link>/zendocs_test1/user/installing/create_mysql_database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/create_mysql_database/</guid>
+      <guid>/zendocs_test1/user/installing/create_mysql_database/</guid>
       <description>
         
         
@@ -80,14 +80,14 @@ If you are given an option for choosing a Character Set, choose &lt;code&gt;utf8
     
     <item>
       <title>User: How do I enable SSL after I have installed Zen Cart?</title>
-      <link>/user/installing/enable_ssl/</link>
+      <link>/zendocs_test1/user/installing/enable_ssl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/enable_ssl/</guid>
+      <guid>/zendocs_test1/user/installing/enable_ssl/</guid>
       <description>
         
         
-        &lt;p&gt;See also &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Basic Hosting and Domain concepts&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/&#34;&gt;Basic Hosting and Domain concepts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar &lt;code&gt;https://&lt;/code&gt; in the URL in your browser&amp;rsquo;s address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the address bar with the URL or in the status bar at the bottom of the browser window.&lt;/p&gt;
 &lt;p&gt;Considerations:&lt;/p&gt;
 &lt;h1 id=&#34;1-purchase-your-ssl-certificate&#34;&gt;1. Purchase your SSL certificate&lt;/h1&gt;
@@ -127,54 +127,54 @@ define(&amp;#39;ENABLE_SSL_CATALOG&amp;#39;, &amp;#39;true&amp;#39;);
 (1.5.5 and above) 
 do not have &lt;code&gt;HTTPS_SERVER&lt;/code&gt; in the 
 &lt;code&gt;YOURADMIN/includes/configure.php&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;IMPORTANT NOTE:&lt;/strong&gt; Remember, your configure.php files are probably marked read-only. You&amp;rsquo;ll need to change them to read-write in order to upload your updates, and then put them back to read-only. &lt;a href=&#34;/user/installing/permissions/&#34;&gt;See the FAQ on setting file permissions.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NOTE:&lt;/strong&gt; Remember, your configure.php files are probably marked read-only. You&amp;rsquo;ll need to change them to read-write in order to upload your updates, and then put them back to read-only. &lt;a href=&#34;/zendocs_test1/user/installing/permissions/&#34;&gt;See the FAQ on setting file permissions.&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;4-clear-your-browsers-cache-and-cookies&#34;&gt;4. Clear your browser&amp;rsquo;s cache and cookies&lt;/h1&gt;
-&lt;p&gt;After making these changes, if you don&amp;rsquo;t &lt;a href=&#34;/user/new_user_topics/browser_caching/&#34;&gt;clear your browser&amp;rsquo;s cache and cookies&lt;/a&gt;, it&amp;rsquo;s possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.&lt;/p&gt;
+&lt;p&gt;After making these changes, if you don&amp;rsquo;t &lt;a href=&#34;/zendocs_test1/user/new_user_topics/browser_caching/&#34;&gt;clear your browser&amp;rsquo;s cache and cookies&lt;/a&gt;, it&amp;rsquo;s possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.&lt;/p&gt;
 &lt;h1 id=&#34;5-your-site-is-now-secure&#34;&gt;5. Your site is now secure!&lt;/h1&gt;
 &lt;p&gt;Once your done, your browser&amp;rsquo;s address bar will show a non-broken padlock like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/good_padlock.png&#34; alt=&#34;Good Padlock&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/good_padlock.png&#34; alt=&#34;Good Padlock&#34;&gt;&lt;/p&gt;
 &lt;p&gt;and if you click on your SSL certificate, you&amp;rsquo;ll see it&amp;rsquo;s valid, like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/good_cert_details.png&#34; alt=&#34;Good Certificate Details&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You will want to keep checking your SSL certificate as part of your &lt;a href=&#34;/user/running/regular_maintenance/&#34;&gt;regular website maintenance&lt;/a&gt; so that you don&amp;rsquo;t get a &lt;a href=&#34;/user/running/broken_padlock/&#34;&gt;broken padlock&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/good_cert_details.png&#34; alt=&#34;Good Certificate Details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You will want to keep checking your SSL certificate as part of your &lt;a href=&#34;/zendocs_test1/user/running/regular_maintenance/&#34;&gt;regular website maintenance&lt;/a&gt; so that you don&amp;rsquo;t get a &lt;a href=&#34;/zendocs_test1/user/running/broken_padlock/&#34;&gt;broken padlock&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I validate the integrity of a downloaded file?</title>
-      <link>/user/installing/validate_sha/</link>
+      <link>/zendocs_test1/user/installing/validate_sha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/validate_sha/</guid>
+      <guid>/zendocs_test1/user/installing/validate_sha/</guid>
       <description>
         
         
         &lt;p&gt;When downloading files from the internet, it&amp;rsquo;s very important to verify that the file you downloaded IS in fact the file you EXPECTED to download. Authors of software typically zip up their software and then calculate a &amp;ldquo;checksum&amp;rdquo; based on the contents, and post that checksum next to the link to download the file. YOU should then re-calculate the checksum on the file AFTER downloading, and compare to be sure that the checksum YOU calculated matches the one posted by the author. If they don&amp;rsquo;t match, then you should NOT use the downloaded file, because it may have been tampered with. In such cases you should also report the discrepancy to the author so they can investigate the tampering or fix a mistake.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/first_steps/useful_tools/#hash-validation-tools&#34;&gt;the useful tools page&lt;/a&gt; for a list of checksum validation tools.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#hash-validation-tools&#34;&gt;the useful tools page&lt;/a&gt; for a list of checksum validation tools.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Moving to another server</title>
-      <link>/user/installing/change_hoster/</link>
+      <link>/zendocs_test1/user/installing/change_hoster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/change_hoster/</guid>
+      <guid>/zendocs_test1/user/installing/change_hoster/</guid>
       <description>
         
         
-        &lt;p&gt;If you haven&amp;rsquo;t yet selected a hoster, please read &lt;a href=&#34;/user/installing/pick_hosting/&#34;&gt;picking a hoster&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;If you haven&amp;rsquo;t yet selected a hoster, please read &lt;a href=&#34;/zendocs_test1/user/installing/pick_hosting/&#34;&gt;picking a hoster&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;FIRST:&lt;/strong&gt;  If you are moving your site, DO NOT UPGRADE AT THE SAME TIME!!!   Do your Zen Cart upgrade BEFORE moving, or AFTER moving, but never DURING the move. Otherwise you&amp;rsquo;ll typically run into problems that can&amp;rsquo;t be quickly resolved because you&amp;rsquo;ve intertwined software issues with server issues thus confusing the picture. YOU HAVE BEEN WARNED!&lt;/p&gt;
 &lt;p&gt;1. On your &lt;strong&gt;NEW host&lt;/strong&gt;, create a new MySQL &lt;strong&gt;database&lt;/strong&gt;. Note the username, password, database name, and host name (usually localhost).&lt;/p&gt;
-&lt;p&gt;2. Using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, go to your &lt;strong&gt;NEW host&lt;/strong&gt; and upload a &lt;strong&gt;fresh NEW install&lt;/strong&gt; using the same version files that you built your other site on.  This will make sure that you get the proper settings in your &lt;a href=&#34;/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;2. Using your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, go to your &lt;strong&gt;NEW host&lt;/strong&gt; and upload a &lt;strong&gt;fresh NEW install&lt;/strong&gt; using the same version files that you built your other site on.  This will make sure that you get the proper settings in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You&amp;rsquo;ll find that in the &lt;code&gt;DB_PREFIX&lt;/code&gt; setting of your old store&amp;rsquo;s configure.php files.&lt;/p&gt;
 &lt;p&gt;b. Test it.&lt;/p&gt;
 &lt;p&gt;c. Make &lt;strong&gt;backups&lt;/strong&gt; of the NEW server&amp;rsquo;s &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; files by downloading them (FTP) to your PC.&lt;/p&gt;
 &lt;p&gt;3. On your &lt;strong&gt;OLD host&lt;/strong&gt;, Make a &lt;strong&gt;COMPLETE backup&lt;/strong&gt; of your DATABASE and STORE.&lt;br&gt;
 a. Use either the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL Database&lt;/a&gt; plugin to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the &amp;ldquo;DROP&amp;rdquo; tables command, and under Data, choose &amp;ldquo;Complete Inserts&amp;rdquo; and &amp;ldquo;Extended Inserts&amp;rdquo;.&lt;br&gt;
 Save the SQL file to your PC for later.     Click here for 
-advice on &lt;a href=&#34;/user/running/backup/&#34;&gt;doing a backup&lt;/a&gt;.&lt;/p&gt;
+advice on &lt;a href=&#34;/zendocs_test1/user/running/backup/&#34;&gt;doing a backup&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;b. Download all your old site&amp;rsquo;s files via FTP (or if you have the option, zip them up on the server and download the zip)&lt;/p&gt;
 &lt;p&gt;4. Now &lt;strong&gt;upload your OLD files over the NEW files&lt;/strong&gt; on the NEW server, WITH TWO EXCEPTIONS: Don&amp;rsquo;t overwrite the &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/YOURADMIN/includes/configure.php&lt;/code&gt; files on the NEW server.&lt;/p&gt;
 &lt;p&gt;IMPORTANT NOTE: Your &amp;ldquo;admin&amp;rdquo; folder from the old site is probably a different name than the one that was auto-renamed in the new site. Pick one of the names and rename the other to match. Otherwise you will have two admin folders, which will leave you with confusion.&lt;/p&gt;
@@ -190,7 +190,7 @@ advice on &lt;a href=&#34;/user/running/backup/&#34;&gt;doing a backup&lt;/a&gt;
 &lt;p&gt;On a store that&amp;rsquo;s taking live orders, you need to prevent orders from being accepted on the old site once you&amp;rsquo;ve made your database backup to move to the new site.&lt;br&gt;
 So, make the following adjustments to the steps above:&lt;/p&gt;
 &lt;p&gt;a) BEFORE taking the backup in Step 3, first login to your old site&amp;rsquo;s admin, and set Admin &amp;gt; Configuration &amp;gt; Website Maintenance &amp;gt; Down For Maintenance = TRUE.
-This is called &lt;a href=&#34;/user/running/down_for_maintenance/&#34;&gt;taking your store down for maintenance&lt;/a&gt;.&lt;/p&gt;
+This is called &lt;a href=&#34;/zendocs_test1/user/running/down_for_maintenance/&#34;&gt;taking your store down for maintenance&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;b) AFTER step 5 or 6, login to your NEW store&amp;rsquo;s admin, and set Down For Maintenance = FALSE.&lt;/p&gt;
 &lt;p&gt;c) NEVER disable down-for-maintenance in the OLD site. Once you&amp;rsquo;ve copied the database from it, you don&amp;rsquo;t want to take any more orders in the old site, else they&amp;rsquo;ll be lost. 
 You may even want to put up a message on the old server telling customers that the store has been updated, and that they may need to clear their browser cache and reboot in order to see the new updated site. (This is because browsers remember the old IP address.)  You could optionally delete Zen Cart and the database from the old server and just put up a simple index.html page on that server saying the same sort of message. Eventually people&amp;rsquo;s browsers will all look to the new address. See the Advanced section below for ways to expedite the updates.&lt;/p&gt;
@@ -201,21 +201,21 @@ If you know 3 or 4 days or maybe a week ahead of time that you&amp;rsquo;re goin
 Then, a couple days after you&amp;rsquo;ve completed the move, and propagation is completed, change the TTL back to normal values (whatever your new hosting company prefers to use, often 86400).&lt;/p&gt;
 &lt;h2 id=&#34;just-moving-folders&#34;&gt;Just moving folders?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This FAQ handles moving a cart to a NEW server.
-If you just want to move your cart to another folder on the same server, please see the &lt;a href=&#34;/user/installing/move_cart/&#34;&gt;move cart FAQ&lt;/a&gt;.&lt;/p&gt;
+If you just want to move your cart to another folder on the same server, please see the &lt;a href=&#34;/zendocs_test1/user/installing/move_cart/&#34;&gt;move cart FAQ&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Moving your Zen Cart folder</title>
-      <link>/user/installing/move_cart/</link>
+      <link>/zendocs_test1/user/installing/move_cart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/move_cart/</guid>
+      <guid>/zendocs_test1/user/installing/move_cart/</guid>
       <description>
         
         
-        &lt;p&gt;You can install Zen Cart in the root folder of your hosting account or in a subdirectory.  See &lt;a href=&#34;/user/first_steps/deployment_configurations/&#34;&gt;deployment configurations&lt;/a&gt; for examples.&lt;/p&gt;
+        &lt;p&gt;You can install Zen Cart in the root folder of your hosting account or in a subdirectory.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/deployment_configurations/&#34;&gt;deployment configurations&lt;/a&gt; for examples.&lt;/p&gt;
 &lt;p&gt;If you change your mind, you can move your cart (from a subfolder to root or vice versa); you just have to update some settings when you do so.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Scenario:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I have been building my cart behind the scenes at: 
@@ -248,25 +248,25 @@ DIR_FS_ADMIN (in admin)
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This FAQ handles moving a cart to a new folder on the 
 same server.  If you need to move your cart to a new server, 
-please see the &lt;a href=&#34;/user/installing/change_hoster/&#34;&gt;FAQ on changing hosters&lt;/a&gt;.&lt;/p&gt;
+please see the &lt;a href=&#34;/zendocs_test1/user/installing/change_hoster/&#34;&gt;FAQ on changing hosters&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Permissions on files and folders</title>
-      <link>/user/installing/permissions/</link>
+      <link>/zendocs_test1/user/installing/permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/permissions/</guid>
+      <guid>/zendocs_test1/user/installing/permissions/</guid>
       <description>
         
         
         &lt;p&gt;FIXME - please review&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While the following instructions talk about making files/folders writable, it is wise to review your security settings after installation to be sure you&amp;rsquo;re not leaving yourself open to hacking vulnerability by having too many &amp;ldquo;world-writable&amp;rdquo; files on your site.  
-There are &lt;a href=&#34;/user/security/security_recommendations/&#34;&gt;detailed security recommendations on this topic&lt;/a&gt;.&lt;/p&gt;
+There are &lt;a href=&#34;/zendocs_test1/user/security/security_recommendations/&#34;&gt;detailed security recommendations on this topic&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;using-ftp&#34;&gt;Using FTP&lt;/h2&gt;
-&lt;p&gt;You will be using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to do this.&lt;/p&gt;
+&lt;p&gt;You will be using your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to do this.&lt;/p&gt;
 &lt;p&gt;Most FTP programs will allow you to change file permissions.&lt;/p&gt;
 &lt;p&gt;Connect to your site with your FTP program.&lt;/p&gt;
 &lt;p&gt;Move to your &lt;code&gt;public_html&lt;/code&gt; directory, and perhaps into your &lt;code&gt;zencart&lt;/code&gt; folder underneath &lt;code&gt;public_html&lt;/code&gt;, if you&amp;rsquo;ve installed into a subfolder.&lt;/p&gt;
@@ -334,14 +334,14 @@ permission changes:&lt;/p&gt;
     
     <item>
       <title>User: Picking a hoster</title>
-      <link>/user/installing/pick_hosting/</link>
+      <link>/zendocs_test1/user/installing/pick_hosting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/pick_hosting/</guid>
+      <guid>/zendocs_test1/user/installing/pick_hosting/</guid>
       <description>
         
         
-        &lt;p&gt;As noted in &lt;a href=&#34;/user/first_steps/hosting/#hosting-companies&#34;&gt;Basics - Hosting and Domain concepts&lt;/a&gt;:&lt;/p&gt;
+        &lt;p&gt;As noted in &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#hosting-companies&#34;&gt;Basics - Hosting and Domain concepts&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Your easiest installation option will be a Linux host running Apache with cPanel.&lt;/li&gt;
 &lt;li&gt;The decision on whether to use Shared or VPS hosting will be determined by your budget, but VPS is recommended.&lt;/li&gt;
@@ -352,19 +352,19 @@ their &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Re
 &lt;p&gt;One way to evaluate hosts is to run the &lt;a href=&#34;https://ssllabs.com/ssltest&#34;&gt;test offered by SSLLabs&lt;/a&gt;.  You will want to make sure any host you consider has an &amp;ldquo;A&amp;rdquo; or &amp;ldquo;A+&amp;rdquo; rating.&lt;/p&gt;
 &lt;p&gt;A highly rated host will help make any PCI scan you run more likely to succeed.  The more secure your host, the more secure your site.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of an excellent report:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ssltest_aplus_grade.png&#34; alt=&#34;SSL Test - A+ Grade&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ssltest_aplus_grade.png&#34; alt=&#34;SSL Test - A+ Grade&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a poor report:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ssltest_c_grade.png&#34; alt=&#34;SSL Test - C Grade&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ssltest_c_grade.png&#34; alt=&#34;SSL Test - C Grade&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Renaming Your Admin Folder</title>
-      <link>/user/installing/rename_admin/</link>
+      <link>/zendocs_test1/user/installing/rename_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/rename_admin/</guid>
+      <guid>/zendocs_test1/user/installing/rename_admin/</guid>
       <description>
         
         
@@ -380,7 +380,7 @@ their &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Re
 &lt;p&gt;If you are using v1.5.x, go to step B to rename the folder. If you are using v1.3.x, see the section below about v1.3.x which explains how to edit this file properly in that case.&lt;/p&gt;
 &lt;p&gt;There is no need to alter the admin configure.php in v1.5.x when renaming your admin folder. Simply proceed to step B.&lt;/p&gt;
 &lt;h3 id=&#34;b---rename-the-admin-folder&#34;&gt;B - Rename the Admin folder&lt;/h3&gt;
-&lt;p&gt;Using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; or your webhost&amp;rsquo;s &lt;em&gt;File Manager&lt;/em&gt;, find your Zen Cart &lt;em&gt;/admin/&lt;/em&gt; directory_._ Rename the directory to match the settings you just made in step A.&lt;/p&gt;
+&lt;p&gt;Using your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; or your webhost&amp;rsquo;s &lt;em&gt;File Manager&lt;/em&gt;, find your Zen Cart &lt;em&gt;/admin/&lt;/em&gt; directory_._ Rename the directory to match the settings you just made in step A.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!&lt;/p&gt;
 &lt;h3 id=&#34;c---login-to-your-admin-using-the-new-url&#34;&gt;C - Login to your admin using the new URL&lt;/h3&gt;
 &lt;p&gt;To login to your admin system you will now have to visit a new URL that matches the new name used in steps A and B above.&lt;/p&gt;
@@ -394,7 +394,7 @@ their &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Re
 &lt;p&gt;Edit /admin/includes/configure.php&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#800080&#34;&gt;IMPORTANT NOTE: &lt;font size=&#34;4&#34;&gt;If you&amp;rsquo;re using Zen Cart v1.5.0 or newer, you can skip this step&lt;/font&gt;, and proceed to step B to rename the folder using your FTP program.  With v1.5.0 there&amp;rsquo;s no need to edit your configure.php file when renaming your admin folder.&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Using your FTP program, download a copy of your &lt;strong&gt;/admin/includes/configure.php&lt;/strong&gt; file to your computer.&lt;/p&gt;
-&lt;p&gt;Using a &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;plain text editor&lt;/a&gt; change all instances of &lt;strong&gt;&lt;em&gt;admin&lt;/em&gt;&lt;/strong&gt; to your chosen &lt;strong&gt;new admin folder-name&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Using a &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;plain text editor&lt;/a&gt; change all instances of &lt;strong&gt;&lt;em&gt;admin&lt;/em&gt;&lt;/strong&gt; to your chosen &lt;strong&gt;new admin folder-name&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For maximum security, you may want to consider that new folder name should include numbers and a combination of upper and lower case letters. The longer you make this folder&amp;rsquo;s name the more secure it will be.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;When editing, make sure you leave all the &lt;code&gt;/&lt;/code&gt; (slashes) alone.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;5&#34; color=&#34;#ff0000&#34;&gt;&lt;strong&gt;DO NOT USE SEARCH-AND-REPLACE TO DO THESE EDITS!!!!!!!!!!!&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
@@ -426,7 +426,7 @@ Be sure to make it Read-Only again when finished.  Often you can right-click th
 &lt;p&gt;To login to your admin system you will now have to visit a new URL that matches the new name used in steps A and B above.&lt;/p&gt;
 &lt;p&gt;For example instead of visiting &lt;code&gt;www.example.com/admin/&lt;/code&gt; visit &lt;code&gt;www.example.com/NeW-NamE4u/&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Use of &lt;a href=&#34;http://en.wikipedia.org/wiki/SSL&#34; title=&#34;http://en.wikipedia.org/wiki/SSL&#34;&gt;SSL&lt;/a&gt; is highly recommended to protect your and your customers information. 
-&lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;Learn how to enable SSL on your site&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/installing/enable_ssl/&#34;&gt;Learn how to enable SSL on your site&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;font-color000000d---what-if-it-doesnt-workfont&#34;&gt;&lt;font color=&#34;#000000&#34;&gt;D - What if it doesn&amp;rsquo;t work?&lt;/font&gt;&lt;/h2&gt;
 &lt;p&gt;If it doesn&amp;rsquo;t work, then you&amp;rsquo;ve missed one or more of the steps. &lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;THE MOST COMMON MISTAKE is ignoring the read-only vs writable alert&lt;/strong&gt;&lt;/font&gt; in &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;BRIGHT RED TEXT&lt;/font&gt;&lt;/strong&gt; in step A.&lt;br&gt;
 The second most common mistake is changing the WRONG THINGS!  In step A, change ONLY the word &amp;ldquo;/admin/&amp;rdquo; in the 3 places shown.&lt;/p&gt;
@@ -436,10 +436,10 @@ The second most common mistake is changing the WRONG THINGS!  In step A, change
     
     <item>
       <title>User: What does &#34;Connection to Database failed&#34; mean?</title>
-      <link>/user/installing/connection_failed/</link>
+      <link>/zendocs_test1/user/installing/connection_failed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/connection_failed/</guid>
+      <guid>/zendocs_test1/user/installing/connection_failed/</guid>
       <description>
         
         
@@ -458,7 +458,7 @@ The second most common mistake is changing the WRONG THINGS!  In step A, change
 &lt;li&gt;make a user, with password&lt;/li&gt;
 &lt;li&gt;grant the user permission to use the database&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/installing/create_mysql_database/&#34;&gt;How do I create a MySQL database for Zen Cart?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/installing/create_mysql_database/&#34;&gt;How do I create a MySQL database for Zen Cart?&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Specific steps for creating and securing a database on your server can be obtained from your hosting company tech support.&lt;/p&gt;
 
       </description>
@@ -466,10 +466,10 @@ The second most common mistake is changing the WRONG THINGS!  In step A, change
     
     <item>
       <title>User: What is CHMOD?</title>
-      <link>/user/installing/chmod/</link>
+      <link>/zendocs_test1/user/installing/chmod/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/installing/chmod/</guid>
+      <guid>/zendocs_test1/user/installing/chmod/</guid>
       <description>
         
         
@@ -482,8 +482,8 @@ A number of hosts do not allow setting permissions to 644 for some reason (mine 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;r = read, w = write and x = execute.&lt;/p&gt;
 &lt;p&gt;In the format above, the first group of three characters represents the owner&amp;rsquo;s level of permission, the second group represents permission for others in the same user group as the owner, and the final 3 characters represent the permission for all others (including website visitors).&lt;/p&gt;
 &lt;p&gt;If you were able to set to 644 the owner (you) could modify the file while all others would be restricted. In that case you would not need to change permissions in order to modify it. Just leave it at 644.&lt;/p&gt;
-&lt;p&gt;The permissions are set on the host server usually through the user&amp;rsquo;s control panel. They can also be set using the chmod command in many &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt;, or or through SSH access to the server, if available.&lt;/p&gt;
-&lt;p&gt;This article on &lt;a href=&#34;/user/installing/permissions/&#34;&gt;file permissions&lt;/a&gt; goes into more detail.&lt;/p&gt;
+&lt;p&gt;The permissions are set on the host server usually through the user&amp;rsquo;s control panel. They can also be set using the chmod command in many &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt;, or or through SSH access to the server, if available.&lt;/p&gt;
+&lt;p&gt;This article on &lt;a href=&#34;/zendocs_test1/user/installing/permissions/&#34;&gt;file permissions&lt;/a&gt; goes into more detail.&lt;/p&gt;
 
       </description>
     </item>

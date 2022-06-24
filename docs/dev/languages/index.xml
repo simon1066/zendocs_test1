@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Languages</title>
-    <link>/dev/languages/</link>
+    <link>/zendocs_test1/dev/languages/</link>
     <description>Recent content in Languages on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/languages/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/languages/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,14 +15,14 @@
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/languages/introduction/</link>
+      <link>/zendocs_test1/dev/languages/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/languages/introduction/</guid>
+      <guid>/zendocs_test1/dev/languages/introduction/</guid>
       <description>
         
         
-        &lt;p&gt;Translations are done on a volunteer basis, so the quality and even installation instructions may vary. The standard installation instructions are in the &lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Storeowner Docs &amp;gt; Admin Pages &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Translations are done on a volunteer basis, so the quality and even installation instructions may vary. The standard installation instructions are in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/languages/&#34;&gt;Storeowner Docs &amp;gt; Admin Pages &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You are always welcome to help improve a translation, by either making your suggestions known to the author of the translation or by making your wanted changes yourself.&lt;/p&gt;
 
       </description>
@@ -30,10 +30,10 @@
     
     <item>
       <title>Dev: Creating a New Translation</title>
-      <link>/dev/languages/creating_a_language_pack/</link>
+      <link>/zendocs_test1/dev/languages/creating_a_language_pack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/languages/creating_a_language_pack/</guid>
+      <guid>/zendocs_test1/dev/languages/creating_a_language_pack/</guid>
       <description>
         
         
@@ -455,17 +455,17 @@ define(&amp;#39;CFGDESC_STORE_ZONE&amp;#39;, &amp;#39;Mae\&amp;#39;r parth y mae
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;making-language-pack-available-to-others&#34;&gt;Making Language Pack Available to Others&lt;/h2&gt;
 &lt;p&gt;Having completed your language pack please upload it to the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Language Packs&lt;/a&gt; section of the Plugins Library.&lt;/p&gt;
 &lt;h2 id=&#34;updating-an-older-language-pack&#34;&gt;Updating an Older Language Pack&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;/dev/languages/updating_older_translation/&#34;&gt;updating an older translation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/dev/languages/updating_older_translation/&#34;&gt;updating an older translation&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Developer Information on Array based Language files</title>
-      <link>/dev/languages/158_language_files/</link>
+      <link>/zendocs_test1/dev/languages/158_language_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/languages/158_language_files/</guid>
+      <guid>/zendocs_test1/dev/languages/158_language_files/</guid>
       <description>
         
         
@@ -535,19 +535,19 @@ define(&amp;#39;CFGDESC_STORE_ZONE&amp;#39;, &amp;#39;Mae\&amp;#39;r parth y mae
 &lt;p&gt;These failures can be detected with this grep pattern:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grep &amp;#34;&amp;#39;[A-Z0-9_]*&amp;#39;[\s]*,&amp;#34; *.php | grep -v &amp;#34;=&amp;gt;&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;available-array-based-language-packs-for-zen-cart-158-and-above&#34;&gt;Available Array Based Language Packs for Zen Cart 1.5.8 and above&lt;/h3&gt;
-&lt;p&gt;Please see &lt;a href=&#34;/user/localization/158_language_files/&#34;&gt;User information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/localization/158_language_files/&#34;&gt;User information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;code-conversion&#34;&gt;Code Conversion&lt;/h2&gt;
-&lt;p&gt;If you need to include a language file directly, see the code example in the &lt;a href=&#34;/dev/plugins/upgrading_to_158/#array-based-language-files&#34;&gt;Upgrading plugins for 1.5.8&lt;/a&gt; FAQ.&lt;/p&gt;
+&lt;p&gt;If you need to include a language file directly, see the code example in the &lt;a href=&#34;/zendocs_test1/dev/plugins/upgrading_to_158/#array-based-language-files&#34;&gt;Upgrading plugins for 1.5.8&lt;/a&gt; FAQ.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Updating an Older Translation</title>
-      <link>/dev/languages/updating_older_translation/</link>
+      <link>/zendocs_test1/dev/languages/updating_older_translation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/languages/updating_older_translation/</guid>
+      <guid>/zendocs_test1/dev/languages/updating_older_translation/</guid>
       <description>
         
         

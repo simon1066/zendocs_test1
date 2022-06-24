@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Payment</title>
-    <link>/user/payment/</link>
+    <link>/zendocs_test1/user/payment/</link>
     <description>Recent content in Payment on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/payment/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/payment/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,46 +15,46 @@
     
     <item>
       <title>User: About Payment Modules</title>
-      <link>/user/payment/payment/</link>
+      <link>/zendocs_test1/user/payment/payment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/payment/</guid>
+      <guid>/zendocs_test1/user/payment/payment/</guid>
       <description>
         
         
         &lt;p&gt;Payment modules allow you to collect or arrange payment for an order.&lt;/p&gt;
-&lt;p&gt;The list of available payment modules may be seen by going to &lt;a href=&#34;/user/admin_pages/modules/payment/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Payment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The list of available payment modules may be seen by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/payment/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Payment&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Zen Cart has a number of built-in payment modules:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Authorize.net - both &lt;a href=&#34;/user/payment/authorizenet_aim/&#34;&gt;AIM&lt;/a&gt; and &lt;a href=&#34;/user/payment/authorizenet_sim/&#34;&gt;SIM&lt;/a&gt; are available&lt;/li&gt;
+&lt;li&gt;Authorize.net - both &lt;a href=&#34;/zendocs_test1/user/payment/authorizenet_aim/&#34;&gt;AIM&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/payment/authorizenet_sim/&#34;&gt;SIM&lt;/a&gt; are available&lt;/li&gt;
 &lt;li&gt;Check/Money Order - Receive payment by check&lt;/li&gt;
 &lt;li&gt;Cash on Delivery - COD or in-person payment&lt;/li&gt;
 &lt;li&gt;Free Order - required if you have free products in your store&lt;/li&gt;
-&lt;li&gt;PayPal - payment processing by &lt;a href=&#34;/user/payment/paypal/&#34;&gt;PayPal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Square - payment processing by &lt;a href=&#34;/user/payment/square/&#34;&gt;Square&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PayPal - payment processing by &lt;a href=&#34;/zendocs_test1/user/payment/paypal/&#34;&gt;PayPal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Square - payment processing by &lt;a href=&#34;/zendocs_test1/user/payment/square/&#34;&gt;Square&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you are just evaluating Zen Cart or running a test-only installation, 
 then using the Check/Money Order module to process payments is the best option.&lt;/p&gt;
 &lt;p&gt;More payment modules may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=8&#34;&gt;Payment module section of the Plugins Library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Developers wishing to create a payment module should see the &lt;a href=&#34;/dev/code/modules/&#34;&gt;dev FAQs on modules&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Developers wishing to create a payment module should see the &lt;a href=&#34;/zendocs_test1/dev/code/modules/&#34;&gt;dev FAQs on modules&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you don&amp;rsquo;t already have an account, please use these &lt;a href=&#34;https://www.zen-cart.com/content.php?14-Payment-Processing&#34;&gt;direct links to the payment processors Zen Cart supports&lt;/a&gt;. By signing up via one of our links, you help support the Zen Cart project with small commissions that these providers give back to Zen Cart. Thank you in advance.&lt;/p&gt;
 &lt;h2 id=&#34;credit-card-payments&#34;&gt;Credit Card Payments&lt;/h2&gt;
 &lt;p&gt;Some credit card payment modules, such as Square, provide onsite payment.  The checkout payment page displays a form that captures the customer&amp;rsquo;s credit card details.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/square_payment.jpg&#34; alt=&#34;Square Payment Form&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/square_payment.jpg&#34; alt=&#34;Square Payment Form&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Other payment modules, like PayPal Express, collect payment offsite. They take the user to a form after checkout completion to collect payment, and pass the information back to Zen Cart.  The checkout payment page shows a radio button, which the customer clicks to select that method of payment.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/paypal_payment.png&#34; alt=&#34;PayPal Express&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/paypal_payment.png&#34; alt=&#34;PayPal Express&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;manual-credit-card-processing&#34;&gt;Manual Credit Card Processing&lt;/h2&gt;
-&lt;p&gt;In recent versions of Zen Cart, great care has been taken to handle payment details securely.  This means that older methods of capturing credit cards, such as the &lt;code&gt;cc&lt;/code&gt; and &lt;code&gt;Ceon Manual Card&lt;/code&gt; modules, are no longer recommended.  &lt;a href=&#34;/user/payment/why_not_manual&#34;&gt;Read more about why you shouldn&amp;rsquo;t process credit cards manually&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In recent versions of Zen Cart, great care has been taken to handle payment details securely.  This means that older methods of capturing credit cards, such as the &lt;code&gt;cc&lt;/code&gt; and &lt;code&gt;Ceon Manual Card&lt;/code&gt; modules, are no longer recommended.  &lt;a href=&#34;/zendocs_test1/user/payment/why_not_manual&#34;&gt;Read more about why you shouldn&amp;rsquo;t process credit cards manually&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I get paid?</title>
-      <link>/user/payment/how_do_i_get_paid/</link>
+      <link>/zendocs_test1/user/payment/how_do_i_get_paid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/how_do_i_get_paid/</guid>
+      <guid>/zendocs_test1/user/payment/how_do_i_get_paid/</guid>
       <description>
         
         
@@ -64,7 +64,7 @@ then using the Check/Money Order module to process payments is the best option.&
 &lt;p&gt;Naturally, you will typically wait for the check to arrive and clear your bank before shipping the goods.&lt;/p&gt;
 &lt;p&gt;This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: you wait for payment before fulfilling the order.&lt;/p&gt;
 &lt;p&gt;Note: The Check/Money Order module can be used for &lt;em&gt;any&lt;/em&gt; payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Zelle or Venmo simply by modifying the language defines in in &lt;code&gt;./includes/languages/english/modules/payment/moneyorder.php&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Alternately, you may &lt;a href=&#34;/dev/code/modules/clone_payment/&#34;&gt;clone the moneyorder payment module&lt;/a&gt; to build a Venmo module with its own rules and behaviors.&lt;/p&gt;
+&lt;p&gt;Alternately, you may &lt;a href=&#34;/zendocs_test1/dev/code/modules/clone_payment/&#34;&gt;clone the moneyorder payment module&lt;/a&gt; to build a Venmo module with its own rules and behaviors.&lt;/p&gt;
 &lt;h2 id=&#34;credit-card&#34;&gt;Credit Card&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Before you can accept credit cards directly you must have a merchant account with a Credit Card processing company such as Square, Stripe or Authorize.net.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;If you offer to let your customers pay by Credit Card, there are several ways to do this:&lt;/p&gt;
@@ -77,7 +77,7 @@ If it fails, the customer is notified to try again with correct information, thu
 &lt;p&gt;To use this option, you need a business bank account, a merchant account, and a gateway service provider account, all of which incur monthly fees. You can find &lt;a href=&#34;https://www.zen-cart.com/content.php?14-Payment-Processing&#34;&gt;recommended payment gateway providers here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;c) Manual processing via a retail/POS terminal or an online virtual terminal.&lt;br&gt;
 In this case, you collect the CC details from the customer and then manually process the card through the terminal provided to you by your merchant bank (usually online). You will require a business bank account and a merchant account; both have monthly and per-transaction fees.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: &lt;a href=&#34;/user/payment/why_not_manual/&#34;&gt;online manual card collection is no longer a good option&lt;/a&gt;.  It is not a secure method for making transactions with an online store, and as such is frowned upon by credit card companies. You really should be using a gateway service as described above.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: &lt;a href=&#34;/zendocs_test1/user/payment/why_not_manual/&#34;&gt;online manual card collection is no longer a good option&lt;/a&gt;.  It is not a secure method for making transactions with an online store, and as such is frowned upon by credit card companies. You really should be using a gateway service as described above.&lt;/p&gt;
 &lt;h3 id=&#34;definitions&#34;&gt;Definitions&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;merchant account&lt;/em&gt;&lt;/strong&gt; &amp;ndash; this is a credit/debit-card &amp;ldquo;processing&amp;rdquo; account that you arrange with a clearing house, typically your bank.  Its sole purpose is to take the funds collected from credit/debit cards and forward them to the bank account you&amp;rsquo;ve arranged for that purpose.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;gateway&lt;/em&gt;&lt;/strong&gt; &amp;ndash; this is a computer-driven processing system that talks to the credit-card clearing house computers in the national banking system and determines whether a card is valid or not, and allows collection of funds via your merchant account configuration&lt;/p&gt;
@@ -97,10 +97,10 @@ The biggest confusion about payment collection for new storeowners is typically 
     
     <item>
       <title>User: Authorize.net AIM Payment Module</title>
-      <link>/user/payment/authorizenet_aim/</link>
+      <link>/zendocs_test1/user/payment/authorizenet_aim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/authorizenet_aim/</guid>
+      <guid>/zendocs_test1/user/payment/authorizenet_aim/</guid>
       <description>
         
         
@@ -220,17 +220,17 @@ The 4th value AVS (Address Verification System) should help you determine fraud 
     
     <item>
       <title>User: Authorize.net SIM Payment Module</title>
-      <link>/user/payment/authorizenet_sim/</link>
+      <link>/zendocs_test1/user/payment/authorizenet_sim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/authorizenet_sim/</guid>
+      <guid>/zendocs_test1/user/payment/authorizenet_sim/</guid>
       <description>
         
         
         &lt;font color=&#34;red&#34;&gt;
 &lt;h1&gt;ALERT: DEPRECATED&lt;/h1&gt;
 &lt;/font&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.  Instead, please see &lt;a href=&#34;/user/payment/authorizenet_aim/&#34;&gt;Authorize.net AIM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.  Instead, please see &lt;a href=&#34;/zendocs_test1/user/payment/authorizenet_aim/&#34;&gt;Authorize.net AIM&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;REQUIREMENTS&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Authorize.net Account.   &lt;a href=&#34;http://reseller.authorize.net/application.asp?id=131345&#34;&gt;Support Zen Cart by Clicking Here to Sign Up for an Account now&lt;/a&gt;&lt;/li&gt;
@@ -361,10 +361,10 @@ Just then be mindful that you&amp;rsquo;ll need to update this setting if you ma
     
     <item>
       <title>User: Card Number Validation</title>
-      <link>/user/payment/card_number_validation/</link>
+      <link>/zendocs_test1/user/payment/card_number_validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/card_number_validation/</guid>
+      <guid>/zendocs_test1/user/payment/card_number_validation/</guid>
       <description>
         
         
@@ -390,10 +390,10 @@ Just then be mindful that you&amp;rsquo;ll need to update this setting if you ma
     
     <item>
       <title>User: Credit Card Authorize vs Capture</title>
-      <link>/user/payment/auth_only/</link>
+      <link>/zendocs_test1/user/payment/auth_only/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/auth_only/</guid>
+      <guid>/zendocs_test1/user/payment/auth_only/</guid>
       <description>
         
         
@@ -422,10 +422,10 @@ The length of time allowed before &lt;code&gt;capture&lt;/code&gt; depends on th
     
     <item>
       <title>User: Manual Credit Card Collection - Potential Problems</title>
-      <link>/user/payment/why_not_manual/</link>
+      <link>/zendocs_test1/user/payment/why_not_manual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/why_not_manual/</guid>
+      <guid>/zendocs_test1/user/payment/why_not_manual/</guid>
       <description>
         
         
@@ -449,23 +449,23 @@ The length of time allowed before &lt;code&gt;capture&lt;/code&gt; depends on th
 &lt;p&gt;Notes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Many gateways can be configured to &lt;a href=&#34;/user/payment/auth_only/&#34;&gt;Auth Only instead of Auth and Capture&lt;/a&gt; if your concern is that the final order total might change.&lt;/p&gt;
+&lt;p&gt;Many gateways can be configured to &lt;a href=&#34;/zendocs_test1/user/payment/auth_only/&#34;&gt;Auth Only instead of Auth and Capture&lt;/a&gt; if your concern is that the final order total might change.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The plugin &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2272&#34;&gt;Authorize.net CIM Card on file&lt;/a&gt; allows you to securely retain card information for future charges.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;All these options give you a credit card entry form on your checkout payment page, which is what most customers will expect.  (Naturally they all require an &lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;SSL certificate&lt;/a&gt;, but hopefully you already have one; if not, &lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;install SSL&lt;/a&gt; first.)&lt;/p&gt;
+&lt;p&gt;All these options give you a credit card entry form on your checkout payment page, which is what most customers will expect.  (Naturally they all require an &lt;a href=&#34;/zendocs_test1/user/security/ssl_cert/&#34;&gt;SSL certificate&lt;/a&gt;, but hopefully you already have one; if not, &lt;a href=&#34;/zendocs_test1/user/installing/enable_ssl/&#34;&gt;install SSL&lt;/a&gt; first.)&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: My Payment Methods aren&#39;t showing up during checkout</title>
-      <link>/user/payment/payment_module_missing/</link>
+      <link>/zendocs_test1/user/payment/payment_module_missing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/payment_module_missing/</guid>
+      <guid>/zendocs_test1/user/payment/payment_module_missing/</guid>
       <description>
         
         
@@ -488,10 +488,10 @@ You can use Zone Restrictions to limit which modules show up for different custo
     
     <item>
       <title>User: PayPal - one account on multiple sites</title>
-      <link>/user/payment/paypal_multiple_sites/</link>
+      <link>/zendocs_test1/user/payment/paypal_multiple_sites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_multiple_sites/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_multiple_sites/</guid>
       <description>
         
         
@@ -499,7 +499,7 @@ You can use Zone Restrictions to limit which modules show up for different custo
 &lt;p&gt;When you set up the PayPal parameters for each of your Zen Cart sites you can give them the same API credentials used for your single PayPal account. This applies to Express Checkout, Website Payments Pro, Payments Advanced, Payflow Link, and Payments Pro.&lt;br&gt;
 (Or if you&amp;rsquo;re using the not-so-recommended &amp;ldquo;Payments Standard&amp;rdquo; module, then you&amp;rsquo;d use the same email address and PDT token in all your stores.)&lt;/p&gt;
 &lt;p&gt;Zen Cart will automatically tell PayPal the address of your store when a payment is submitted, so that the correct store is notified of transaction updates. Each store will see only the orders placed at/with that store.&lt;/p&gt;
-&lt;p&gt;The only setup you need to do is make sure that the &amp;ldquo;Instant Payment Notification&amp;rdquo; (IPN) setting is &lt;strong&gt;enabled&lt;/strong&gt; in your PayPal account profile under Website Payment Receiving Preferences, as explained in the &lt;a href=&#34;/user/payment/paypal_ipn/&#34;&gt;PayPal setup/troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The only setup you need to do is make sure that the &amp;ldquo;Instant Payment Notification&amp;rdquo; (IPN) setting is &lt;strong&gt;enabled&lt;/strong&gt; in your PayPal account profile under Website Payment Receiving Preferences, as explained in the &lt;a href=&#34;/zendocs_test1/user/payment/paypal_ipn/&#34;&gt;PayPal setup/troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Many people wonder what to do about specifying the &lt;strong&gt;Return URL&lt;/strong&gt; or &lt;strong&gt;Notification URL&lt;/strong&gt;. Simply set the URLs to the appropriate address for &lt;em&gt;one&lt;/em&gt; of your stores. It must point to a valid address; that is, a valid address for ANY of your stores. When processing transactions from your various Zen Cart stores, the appropriate address for each store will be substituted automatically by Zen Cart.&lt;/p&gt;
 &lt;p&gt;There is one caveat: Your customers will see the name of your PayPal account when making payment, even if that doesn&amp;rsquo;t match your store&amp;rsquo;s name. However, to help differentiate between stores, you can style each store independently by setting the &amp;ldquo;Page Style&amp;rdquo; setting in the Zen Cart payment module settings for that PayPal module. You can find more information about setting Page Styles in PayPal by visiting your PayPal account. Your PayPal account name (your business name if it&amp;rsquo;s a business account, or your paypal email address if it&amp;rsquo;s a premier account) will still show to the customer, but the styling will help make it clear which store they&amp;rsquo;re on, to minimize confusion.&lt;/p&gt;
 &lt;p&gt;In summary:&lt;br&gt;
@@ -516,10 +516,10 @@ If you have a business need to separate your two stores enough that separate Pay
     
     <item>
       <title>User: PayPal - Paying with Credit Card vs a PayPal Account</title>
-      <link>/user/payment/paypal_vs_credit_card/</link>
+      <link>/zendocs_test1/user/payment/paypal_vs_credit_card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_vs_credit_card/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_vs_credit_card/</guid>
       <description>
         
         
@@ -549,7 +549,7 @@ However, some customers are not given this option, and are required to create a 
 &lt;p&gt;UPDATE: PayPal has now stated that they will permit PayPal Express Checkout Business customers to not require that customers have a PayPal account.  In your PayPal account, click on your account name at the top right, then click Account Settings, and navigate to the Website Payments section, then look for PayPal account optional.  You want this to be &lt;strong&gt;On&lt;/strong&gt;.  Also, in your Zen Cart PayPal Express configuration, you want the &lt;em&gt;Use InContext Checkout?&lt;/em&gt; setting to be &lt;strong&gt;Old&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/paypal_account_optional.png&#34; alt=&#34;PayPal Account Optional&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/paypal_account_optional.png&#34; alt=&#34;PayPal Account Optional&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;strong&gt;PayPal Payments Pro&lt;/strong&gt; product (which you must pay a monthly fee to PayPal to use, and is only available to US, UK, and Canadian merchants) adds the ability to accept Credit Card payments directly on your website without the customer even knowing that they are being processed by PayPal.  &lt;a href=&#34;https://www.zen-cart.com/partners/paypal&#34;&gt;Contact your PayPal representative for information&lt;/a&gt; and to sign up for this service.&lt;/li&gt;
 &lt;/ul&gt;
@@ -560,10 +560,10 @@ However, some customers are not given this option, and are required to create a 
     
     <item>
       <title>User: PayPal Error Messages</title>
-      <link>/user/payment/paypal_errors/</link>
+      <link>/zendocs_test1/user/payment/paypal_errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_errors/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_errors/</guid>
       <description>
         
         
@@ -572,7 +572,7 @@ However, some customers are not given this option, and are required to create a 
 &lt;h3 id=&#34;we-cannot-process-your-payment-at-this-time-please-retry-your-purchase-paypal&#34;&gt;We cannot process your payment at this time. Please retry your purchase (PayPal)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Situation:&lt;/strong&gt;&lt;br&gt;
 Customer is attempting to complete a purchase and paying via PayPal. They login, provide payment details, and click the Pay Now or Continue button, and they are greeted with the following message and taken back to the PayPal login page, and no details are recorded in your store:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ppfmferror.jpg&#34; alt=&#34;Paypal Error - fraud&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ppfmferror.jpg&#34; alt=&#34;Paypal Error - fraud&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Reason:&lt;/strong&gt; You have your PayPal account configured to use Fraud Management Filters, and the customer&amp;rsquo;s transaction has triggered one of your rules which you&amp;rsquo;ve configured for a &amp;ldquo;Deny&amp;rdquo; response.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Action to Resolve:&lt;/strong&gt; You will have to review your PayPal Fraud Management Filters to remove the restriction you&amp;rsquo;ve imposed which is causing the customer&amp;rsquo;s transaction to be declined.&lt;/p&gt;
 &lt;p&gt;You can access your Fraud Management Filters settings by logging in to your PayPal merchant Account, clicking on &amp;ldquo;Profile&amp;rdquo;, and choosing &amp;ldquo;Fraud Management Filters&amp;rdquo; (or &amp;ldquo;Risk Controls&amp;rdquo; if your account is an older account).&lt;/p&gt;
@@ -610,16 +610,16 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
     
     <item>
       <title>User: PayPal Express Checkout setup</title>
-      <link>/user/payment/paypal_express_checkout/</link>
+      <link>/zendocs_test1/user/payment/paypal_express_checkout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_express_checkout/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_express_checkout/</guid>
       <description>
         
         
         &lt;h2 id=&#34;paypal-express-checkout&#34;&gt;PayPal Express Checkout&lt;/h2&gt;
 &lt;div style=&#34;float:right;width: 155px;padding-left:15px;&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal&#34;&gt;&lt;img src=&#34;/images/PayPal_Certified.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal&#34;&gt;&lt;img src=&#34;/zendocs_test1/images/PayPal_Certified.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Accept not only credit card payments but also allow PayPal members to pay from their PayPal account.&lt;/li&gt;
@@ -635,7 +635,7 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
 &lt;ul&gt;
 &lt;li&gt;Customers who don&amp;rsquo;t have an existing PayPal account:
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal-ec&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal-ec&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/zendocs_test1/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Click Sign Up Today.&lt;/li&gt;
 &lt;li&gt;Set up an account for Business Owners.&lt;/li&gt;
 &lt;li&gt;Follow the instructions on the PayPal site.&lt;/li&gt;
@@ -643,7 +643,7 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
 &lt;/li&gt;
 &lt;li&gt;Customers who already have a Personal or Premier account:
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal-ec&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/partners/paypal-ec&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/zendocs_test1/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Click the Upgrade your Account link.&lt;/li&gt;
 &lt;li&gt;Click the Upgrade Now button.&lt;/li&gt;
 &lt;li&gt;Choose to upgrade to a Business account and follow instructions to complete the upgrade.&lt;/li&gt;
@@ -667,7 +667,7 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Apply for Website Payments Pro&lt;/strong&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com//partners/paypal-pro&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com//partners/paypal-pro&#34;&gt;&lt;strong&gt;Go to&lt;/strong&gt; &lt;img src=&#34;/zendocs_test1/images/paypal.gif&#34; alt=&#34;PayPal [link]&#34; title=&#34;PayPal [link]&#34;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Login to your PayPal Business Account&lt;/li&gt;
 &lt;li&gt;Click the Merchant Services tab.&lt;/li&gt;
 &lt;li&gt;Click Website Payments Pro in left column.&lt;/li&gt;
@@ -684,10 +684,10 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
     
     <item>
       <title>User: PayPal Standard - Potential Problems</title>
-      <link>/user/payment/paypal_standard/</link>
+      <link>/zendocs_test1/user/payment/paypal_standard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_standard/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_standard/</guid>
       <description>
         
         
@@ -714,7 +714,7 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
 &lt;p&gt;There&amp;rsquo;s a small possibility of a race-condition where the customer clicks the Return link at the same instant that PayPal sends the IPN, and both the PDT and IPN processes which are searching for the customer&amp;rsquo;s account and session and inspecting the order don&amp;rsquo;t discover that the other is already doing its thing, and thus each creates a sale, resulting in duplicates.&lt;/p&gt;
 &lt;p&gt;Further, if the IPN feature isn&amp;rsquo;t turned on in the account, or if IPNs aren&amp;rsquo;t acknowledged by the store for a period of time, PayPal will disable the feature on the account, meaning purchases made will never turn into actual orders in the store.&lt;/p&gt;
 &lt;p&gt;All of this makes PayPal Standard unreliable, and is exactly the reason why it is not recommended.  The only reason it is still part of Zen Cart is that some less-developed countries can&amp;rsquo;t offer Express Checkout.  Unless this is an issue for you, you should be using PayPal Express.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/user/payment/paypal_express_checkout/&#34;&gt;Read about installing PayPal Express&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/payment/paypal_express_checkout/&#34;&gt;Read about installing PayPal Express&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;using-payments-standard-anyway&#34;&gt;Using Payments Standard Anyway&lt;/h4&gt;
 &lt;p&gt;AGAIN: You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.&lt;/p&gt;
 &lt;p&gt;But, if you insist on using the older technology of Website Payments Standard, follow these instructions:&lt;/p&gt;
@@ -762,7 +762,7 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
 &lt;li&gt;Note the URL&amp;rsquo;s suggested in the top of the PayPal module&amp;rsquo;s instructions - they should match what you have set in your PayPal profile in the steps above for the PayPal site.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;how-do-i-set-up-paypal-standard-to-return-to-my-store-automatically&#34;&gt;How do I set up PayPal Standard to return to my store automatically?&lt;/h3&gt;
-&lt;p&gt;Detailed setup instructions for &lt;strong&gt;PayPal Standard&lt;/strong&gt; can be found &lt;a href=&#34;/user/payment/paypal/&#34;&gt;in this article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Detailed setup instructions for &lt;strong&gt;PayPal Standard&lt;/strong&gt; can be found &lt;a href=&#34;/zendocs_test1/user/payment/paypal/&#34;&gt;in this article&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The quick overview for properly configuring IPN is as follows:&lt;br&gt;
 1. You must have a &amp;ldquo;Premier&amp;rdquo; or &amp;ldquo;Business&amp;rdquo; PayPal account in order to use the PayPal module for receiving payments.&lt;/p&gt;
 &lt;p&gt;2. Log into your PayPal account and go to the &amp;ldquo;Profile&amp;rdquo; tab.&lt;/p&gt;
@@ -810,7 +810,7 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
 &lt;/ul&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;strong&gt;Turn off ALL tax and shipping fees in your PayPal profile&lt;/strong&gt;. They will cause the purchase price to mismatch when returning to Zen Cart.&lt;/li&gt;
-&lt;li&gt;NOW, &lt;strong&gt;also check the &lt;a href=&#34;/user/payment/paypal_ipn/&#34;&gt;PayPal IPN Troubleshooting&lt;/a&gt; guidance&lt;/strong&gt; as well&lt;/li&gt;
+&lt;li&gt;NOW, &lt;strong&gt;also check the &lt;a href=&#34;/zendocs_test1/user/payment/paypal_ipn/&#34;&gt;PayPal IPN Troubleshooting&lt;/a&gt; guidance&lt;/strong&gt; as well&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -818,14 +818,14 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: PayPal Standard, Express and Pro - what&#39;s the difference?</title>
-      <link>/user/payment/paypal/</link>
+      <link>/zendocs_test1/user/payment/paypal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal/</guid>
+      <guid>/zendocs_test1/user/payment/paypal/</guid>
       <description>
         
         
-        &lt;p&gt;You&amp;rsquo;re probably really looking for &lt;a href=&#34;/user/payment/paypal_express_checkout/&#34;&gt;Setup instructions for PayPal Express Checkout&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;You&amp;rsquo;re probably really looking for &lt;a href=&#34;/zendocs_test1/user/payment/paypal_express_checkout/&#34;&gt;Setup instructions for PayPal Express Checkout&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Zen Cart recommends using Express Checkout instead of Website Payments Standard.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PayPal Express Checkout&lt;/strong&gt;  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the &amp;ldquo;express&amp;rdquo; part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order &amp;hellip;&amp;hellip;. OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.  &lt;/p&gt;
 &lt;p&gt;&lt;u&gt;&lt;strong&gt;With Express Checkout, the customer can pay without having a PayPal account&lt;/strong&gt;&lt;/u&gt; (as long as you have &amp;ldquo;PayPal Account Optional&amp;rdquo; enabled inside your PayPal merchant account settings:  Profile &amp;gt; Hosted Payment Settings &amp;gt; Website Payments Preferences &amp;gt; PayPal Account Optional = ON), except for merchants/customers in China.&lt;/p&gt;
@@ -854,37 +854,37 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: PayPal/IPN Troubleshooting</title>
-      <link>/user/payment/paypal_ipn/</link>
+      <link>/zendocs_test1/user/payment/paypal_ipn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/paypal_ipn/</guid>
+      <guid>/zendocs_test1/user/payment/paypal_ipn/</guid>
       <description>
         
         
         &lt;p&gt;These are things to check if PayPal payments are not working.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;are-you-getting-specific-error-messages&#34;&gt;Are you getting specific error messages?&lt;/h3&gt;
-&lt;p&gt;See the &lt;a href=&#34;/user/payment/paypal_errors/&#34;&gt;PayPal Errors&lt;/a&gt; page to investigate.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;/zendocs_test1/user/payment/paypal_errors/&#34;&gt;PayPal Errors&lt;/a&gt; page to investigate.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;are-you-getting-whoops-timeouts-when-you-return-to-your-cart-after-payment&#34;&gt;Are you getting &amp;ldquo;Whoops?&amp;rdquo; timeouts when you return to your cart after payment?&lt;/h3&gt;
 &lt;p&gt;Note: The only PayPal method subject to this issue is PayPal Standard.  It does not apply to PayPal Express or PayPal Payments Pro.&lt;/p&gt;
-&lt;p&gt;See the article &lt;a href=&#34;/user/payment/payment_whoops_timeouts/&#34;&gt;Whoops timeouts after payment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the article &lt;a href=&#34;/zendocs_test1/user/payment/payment_whoops_timeouts/&#34;&gt;Whoops timeouts after payment&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;is-the-paypal-payment-option-not-appearing&#34;&gt;Is the PayPal payment option not appearing?&lt;/h3&gt;
-&lt;p&gt;Did you miss any of the configuration steps when &lt;a href=&#34;/user/payment/paypal_express_checkout/&#34;&gt;Configuring PayPal in your Store&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;Did you miss any of the configuration steps when &lt;a href=&#34;/zendocs_test1/user/payment/paypal_express_checkout/&#34;&gt;Configuring PayPal in your Store&lt;/a&gt;?&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;are-transaction-updates-from-paypal-not-updating-your-orders&#34;&gt;Are Transaction Updates From PayPal Not Updating Your Orders?&lt;/h3&gt;
 &lt;p&gt;PayPal sends automatic updates to your store whenever a transaction&amp;rsquo;s status changes. Sometimes those notifications don&amp;rsquo;t arrive, for various technical reasons. The following may help troubleshoot:&lt;/p&gt;
 &lt;p&gt;These are the common configuration errors causing IPN processing to fail:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;If it &amp;ldquo;was&amp;rdquo; working, but stopped, make sure PayPal&amp;rsquo;s services are running properly. &lt;a href=&#34;https://www.paypal-status.com/product/production&#34;&gt;PayPal Live Server Status&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make sure your site is &lt;em&gt;not&lt;/em&gt; in &lt;a href=&#34;/user/running/down_for_maintenance&#34;&gt;down-for-maintenance mode&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make sure your site is &lt;em&gt;not&lt;/em&gt; in &lt;a href=&#34;/zendocs_test1/user/running/down_for_maintenance&#34;&gt;down-for-maintenance mode&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Make sure your site does &lt;em&gt;not&lt;/em&gt; have password-protection via .htaccess in order to get to the &amp;ldquo;store&amp;rdquo; area.&lt;/li&gt;
 &lt;li&gt;Check with your host that the server is able to do outbound TLS connections&lt;/li&gt;
 &lt;li&gt;Use your browser and go to the Login page of your store. If the page is SSL, do you get any certificate errors in your browser? Test from a couple different computers that you don&amp;rsquo;t normally use. An invalid SSL certificate or one that has errors of any sort, could prevent PayPal from successfully posting the notices to your site.&lt;/li&gt;
 &lt;li&gt;Try accessing &lt;code&gt;https://YOURSITE.com/ipn_main_handler.php&lt;/code&gt; with your browser. If you see PHP errors, those will need to be resolved. If you get a white screen, then the first phase of PayPal contacting your site isn&amp;rsquo;t encountering errors. This doesn&amp;rsquo;t mean there aren&amp;rsquo;t any, it just means the initial most obvious steps are working.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href=&#34;/user/troubleshooting/communication_issues/&#34;&gt;communication testing tools available&lt;/a&gt;. If you are asking for troubleshooting help, please supply the URL to each of these tools after you have installed them on your site, so we can assess the responses they reveal.&lt;/li&gt;
-&lt;li&gt;Turn on &lt;a href=&#34;/user/troubleshooting/paypal_debug_logging/&#34;&gt;debug logging&lt;/a&gt; in your PayPal module, and post a link to the zipped log files so they can be analyzed. You&amp;rsquo;ll need to check to be sure that your &lt;em&gt;/logs&lt;/em&gt; folder is marked read/write (chmod 755). Then use your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to access/view those logs and zip-and-upload them for analysis.&lt;/li&gt;
+&lt;li&gt;There are &lt;a href=&#34;/zendocs_test1/user/troubleshooting/communication_issues/&#34;&gt;communication testing tools available&lt;/a&gt;. If you are asking for troubleshooting help, please supply the URL to each of these tools after you have installed them on your site, so we can assess the responses they reveal.&lt;/li&gt;
+&lt;li&gt;Turn on &lt;a href=&#34;/zendocs_test1/user/troubleshooting/paypal_debug_logging/&#34;&gt;debug logging&lt;/a&gt; in your PayPal module, and post a link to the zipped log files so they can be analyzed. You&amp;rsquo;ll need to check to be sure that your &lt;em&gt;/logs&lt;/em&gt; folder is marked read/write (chmod 755). Then use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to access/view those logs and zip-and-upload them for analysis.&lt;/li&gt;
 &lt;li&gt;Check there is no IP block or firewall to prevent PayPal&amp;rsquo;s servers from talking to your server (your host should check this, and you should check any blocking you may have done via your control panel. Also check .htaccess for any &lt;em&gt;deny from&lt;/em&gt; statements and be sure none of them are addresses related to PayPal.
 &lt;ul&gt;
 &lt;li&gt;PayPal IP Address List and the IP addresses on PayPal&amp;rsquo;s Go Live Checklist should be in your host&amp;rsquo;s firewall whitelist.  See their website for details.&lt;/li&gt;
@@ -915,17 +915,17 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: Square Payments Form Module</title>
-      <link>/user/payment/square_payments_form/</link>
+      <link>/zendocs_test1/user/payment/square_payments_form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/square_payments_form/</guid>
+      <guid>/zendocs_test1/user/payment/square_payments_form/</guid>
       <description>
         
         
         &lt;font color=&#34;red&#34;&gt;
 &lt;h1&gt;ALERT: DEPRECATED&lt;/h1&gt;
 &lt;/font&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Square has officially retired this method of payment.  Please use the &lt;a href=&#34;/user/payment/square/&#34;&gt;Square Web Payments&lt;/a&gt; module instead.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Square has officially retired this method of payment.  Please use the &lt;a href=&#34;/zendocs_test1/user/payment/square/&#34;&gt;Square Web Payments&lt;/a&gt; module instead.&lt;/p&gt;
 &lt;p&gt;This module will cease to work in July 2022.&lt;/p&gt;
 &lt;p&gt;It was included in Zen Cart 1.5.5 through 1.5.7.&lt;/p&gt;
 &lt;p&gt;If you need to access this module for historical purposes, please get it from &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=156&#34;&gt;the plugins library&lt;/a&gt;.&lt;/p&gt;
@@ -935,21 +935,21 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: Square Web Payments API</title>
-      <link>/user/payment/square/</link>
+      <link>/zendocs_test1/user/payment/square/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/square/</guid>
+      <guid>/zendocs_test1/user/payment/square/</guid>
       <description>
         
         
         &lt;p&gt;There are two Square modules for Zen Cart:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A newer one, based on the Square Web Payments API, which is currently available as the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2345&#34;&gt;Square Web Payments API plugin&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module will cease to work in July 2022.  The &lt;a href=&#34;/user/payment/square_payments_form/&#34;&gt;Square Payments Form documentation&lt;/a&gt; is maintained for historical purposes.&lt;/li&gt;
+&lt;li&gt;An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module will cease to work in July 2022.  The &lt;a href=&#34;/zendocs_test1/user/payment/square_payments_form/&#34;&gt;Square Payments Form documentation&lt;/a&gt; is maintained for historical purposes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;newer-module---square-web-payments-api&#34;&gt;Newer Module - Square Web Payments API&lt;/h2&gt;
 &lt;p&gt;The newer Square module is available in the Plugins library as &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2345&#34;&gt;Square Web Payments API plugin&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/square_payment_modules.png&#34; alt=&#34;Square Modules&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/square_payment_modules.png&#34; alt=&#34;Square Modules&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The top one is the old Square module.&lt;/li&gt;
 &lt;li&gt;The bottom one is the new Square module.&lt;/li&gt;
@@ -990,20 +990,20 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: Store Credit</title>
-      <link>/user/payment/store_credit/</link>
+      <link>/zendocs_test1/user/payment/store_credit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/store_credit/</guid>
+      <guid>/zendocs_test1/user/payment/store_credit/</guid>
       <description>
         
         
         &lt;p&gt;The following are options for giving a customer store credit rather than a payment refund:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/user/admin_pages/discounts/send_gift_certificate/&#34;&gt;Send them a Gift Certificate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/&#34;&gt;Send them a Gift Certificate&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Create a 100% off one-time use &lt;a href=&#34;/user/order_total/coupons/&#34;&gt;coupon&lt;/a&gt; for the amount owed.&lt;/p&gt;
+&lt;p&gt;Create a 100% off one-time use &lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupon&lt;/a&gt; for the amount owed.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The older Store Credit plugin is no longer supported.&lt;/p&gt;
@@ -1013,10 +1013,10 @@ If IPN acknowledgements aren&amp;rsquo;t responded to automatically then PayPal 
     
     <item>
       <title>User: Whoops timeouts after payment</title>
-      <link>/user/payment/payment_whoops_timeouts/</link>
+      <link>/zendocs_test1/user/payment/payment_whoops_timeouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/payment/payment_whoops_timeouts/</guid>
+      <guid>/zendocs_test1/user/payment/payment_whoops_timeouts/</guid>
       <description>
         
         

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Discounts</title>
-    <link>/user/admin_pages/discounts/</link>
+    <link>/zendocs_test1/user/admin_pages/discounts/</link>
     <description>Recent content in Discounts on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin_pages/discounts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin_pages/discounts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,29 +15,29 @@
     
     <item>
       <title>User: Coupon Admin</title>
-      <link>/user/admin_pages/discounts/coupon_admin/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/coupon_admin/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_admin/</guid>
       <description>
         
         
         &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don&amp;rsquo;t see &lt;em&gt;Coupon Admin&lt;/em&gt; under &lt;em&gt;Discounts&lt;/em&gt; in the admin menu, it means coupons are not installed.  Go to Admin &amp;gt; Modules &amp;gt; Order Total and install coupons.&lt;/p&gt;
 &lt;p&gt;The Coupon Admin screen is the jumping off point for coupon operations.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/coupon_admin.png&#34; alt=&#34;Coupon Admin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/coupon_admin.png&#34; alt=&#34;Coupon Admin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For more information, see 
-the other coupon related entries in &lt;a href=&#34;/user/admin_pages/discounts/&#34;&gt;Sitemap - Admin Pages&lt;/a&gt; or 
-the &lt;a href=&#34;/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
+the other coupon related entries in &lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/&#34;&gt;Sitemap - Admin Pages&lt;/a&gt; or 
+the &lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Coupon Creation</title>
-      <link>/user/admin_pages/discounts/coupon_creation/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_creation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/coupon_creation/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_creation/</guid>
       <description>
         
         
@@ -103,17 +103,17 @@ the &lt;a href=&#34;/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; : These options have been available since Zen Cart 1.5.6.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Coupon Restrictions</title>
-      <link>/user/admin_pages/discounts/coupon_restrictions/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_restrictions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/coupon_restrictions/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_restrictions/</guid>
       <description>
         
         
@@ -134,14 +134,14 @@ Top category DENY&lt;/p&gt;
     
     <item>
       <title>User: Gift Certificate Queue</title>
-      <link>/user/admin_pages/discounts/gift_certificate_queue/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/gift_certificate_queue/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/</guid>
       <description>
         
         
-        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
 &lt;p&gt;The Discounts &amp;gt; Gift Certificate Queue page allows you to view and release gift certificates which have been purchased but not yet issued.  This situation arises when the &lt;em&gt;Queue Purchases&lt;/em&gt; setting in Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Gift Certificates is used; otherwise, there is no queue.&lt;/p&gt;
 &lt;h3 id=&#34;release-certificate&#34;&gt;Release certificate&lt;/h3&gt;
 &lt;ul&gt;
@@ -157,14 +157,14 @@ Top category DENY&lt;/p&gt;
     
     <item>
       <title>User: Send a Gift Certificate</title>
-      <link>/user/admin_pages/discounts/send_gift_certificate/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/send_gift_certificate/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/</guid>
       <description>
         
         
-        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
 &lt;p&gt;The Discounts &amp;gt; Send a Gift Certificate page allows you to generate gift certificates and issue them by email.&lt;/p&gt;
 &lt;h2 id=&#34;to-generatemail-a-gift-certificate-from-your-web-site&#34;&gt;To generate/mail a gift certificate from your web site&lt;/h2&gt;
 &lt;p&gt;Mailing gift certificates requires the Gift Certificates module to be installed (under Admin &amp;gt; Modules &amp;gt; Order Total).&lt;/p&gt;
@@ -220,14 +220,14 @@ This email address was given to us by you or by one of our customers. If you fee
     
     <item>
       <title>User: Gift Certificates Sent</title>
-      <link>/user/admin_pages/discounts/gift_certificates_sent/</link>
+      <link>/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/discounts/gift_certificates_sent/</guid>
+      <guid>/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/</guid>
       <description>
         
         
-        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
 &lt;p&gt;The Discounts &amp;gt; Gift Certificates Sent page allows you to view gift vouchers which have been sent.&lt;/p&gt;
 &lt;p&gt;Click on the line item to have the details shown on the right side of the screen.&lt;/p&gt;
 

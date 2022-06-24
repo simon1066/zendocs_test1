@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – View Builders</title>
-    <link>/dev/code/view_builders/</link>
+    <link>/zendocs_test1/dev/code/view_builders/</link>
     <description>Recent content in View Builders on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/code/view_builders/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/code/view_builders/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: A DTO to define Tabular data</title>
-      <link>/dev/code/view_builders/tabledefinitions/</link>
+      <link>/zendocs_test1/dev/code/view_builders/tabledefinitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/tabledefinitions/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/tabledefinitions/</guid>
       <description>
         
         
@@ -85,7 +85,7 @@ and use the data in that row to carry out some action.&lt;/p&gt;
 &lt;p&gt;The array format for an entry in the &lt;code&gt;rowActions&lt;/code&gt; array is&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;action: the name of the action to be carried out.&lt;/li&gt;
-&lt;li&gt;icon: the name of a &lt;a href=&#34;/user/template/font_awesome/&#34;&gt;Fontawesome&lt;/a&gt; icon to display&lt;/li&gt;
+&lt;li&gt;icon: the name of a &lt;a href=&#34;/zendocs_test1/user/template/font_awesome/&#34;&gt;Fontawesome&lt;/a&gt; icon to display&lt;/li&gt;
 &lt;li&gt;linkParams: info on how to build extra parameters for the 
 buttons link.&lt;/li&gt;
 &lt;/ul&gt;
@@ -156,10 +156,10 @@ table (unless this is a derived item)&lt;/p&gt;
     
     <item>
       <title>Dev: Data Filters</title>
-      <link>/dev/code/view_builders/filters/</link>
+      <link>/zendocs_test1/dev/code/view_builders/filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/filters/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/filters/</guid>
       <description>
         
         
@@ -170,10 +170,10 @@ table (unless this is a derived item)&lt;/p&gt;
     
     <item>
       <title>Dev: Data Formatters</title>
-      <link>/dev/code/view_builders/dataformatters/</link>
+      <link>/zendocs_test1/dev/code/view_builders/dataformatters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/dataformatters/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/dataformatters/</guid>
       <description>
         
         
@@ -183,10 +183,10 @@ table (unless this is a derived item)&lt;/p&gt;
     
     <item>
       <title>Dev: Data Sources</title>
-      <link>/dev/code/view_builders/datasources/</link>
+      <link>/zendocs_test1/dev/code/view_builders/datasources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/datasources/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/datasources/</guid>
       <description>
         
         
@@ -196,10 +196,10 @@ table (unless this is a derived item)&lt;/p&gt;
     
     <item>
       <title>Dev: Derived Items Manager</title>
-      <link>/dev/code/view_builders/deriveditems/</link>
+      <link>/zendocs_test1/dev/code/view_builders/deriveditems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/deriveditems/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/deriveditems/</guid>
       <description>
         
         
@@ -209,10 +209,10 @@ table (unless this is a derived item)&lt;/p&gt;
     
     <item>
       <title>Dev: Table Controllers</title>
-      <link>/dev/code/view_builders/tablecontrollers/</link>
+      <link>/zendocs_test1/dev/code/view_builders/tablecontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/tablecontrollers/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/tablecontrollers/</guid>
       <description>
         
         

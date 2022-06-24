@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Taxes</title>
-    <link>/user/taxes/</link>
+    <link>/zendocs_test1/user/taxes/</link>
     <description>Recent content in Taxes on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/taxes/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/taxes/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: How do I set up a default tax class for new products?</title>
-      <link>/user/taxes/default_tax_class/</link>
+      <link>/zendocs_test1/user/taxes/default_tax_class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/default_tax_class/</guid>
+      <guid>/zendocs_test1/user/taxes/default_tax_class/</guid>
       <description>
         
         
@@ -26,10 +26,10 @@
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; Yes - here&amp;rsquo;s how:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Find out the tax class ID number in &lt;a href=&#34;/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.  (It&amp;rsquo;s the number on the left hand side.)&lt;/p&gt;
+&lt;p&gt;Find out the tax class ID number in &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.  (It&amp;rsquo;s the number on the left hand side.)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt;
 for the product type you&amp;rsquo;re using (probably &lt;code&gt;Product - General&lt;/code&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -46,10 +46,10 @@ and enter the tax class ID number you obtained in step 1 above.&lt;/p&gt;
     
     <item>
       <title>User: Should I charge taxes?  How much?</title>
-      <link>/user/taxes/taxes/</link>
+      <link>/zendocs_test1/user/taxes/taxes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/taxes/</guid>
+      <guid>/zendocs_test1/user/taxes/taxes/</guid>
       <description>
         
         
@@ -61,17 +61,17 @@ and enter the tax class ID number you obtained in step 1 above.&lt;/p&gt;
     
     <item>
       <title>User: Tax calculations are wrong</title>
-      <link>/user/taxes/tax_calc_wrong/</link>
+      <link>/zendocs_test1/user/taxes/tax_calc_wrong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/tax_calc_wrong/</guid>
+      <guid>/zendocs_test1/user/taxes/tax_calc_wrong/</guid>
       <description>
         
         
-        &lt;p&gt;If you haven&amp;rsquo;t configured taxes yet, please see the related articles on setting up taxes in &lt;a href=&#34;/user/taxes/&#34;&gt;Taxes&lt;/a&gt;.  If you have set up taxes according to the instructions, but they don&amp;rsquo;t seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:&lt;/p&gt;
+        &lt;p&gt;If you haven&amp;rsquo;t configured taxes yet, please see the related articles on setting up taxes in &lt;a href=&#34;/zendocs_test1/user/taxes/&#34;&gt;Taxes&lt;/a&gt;.  If you have set up taxes according to the instructions, but they don&amp;rsquo;t seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;What are your store settings for these values in 
-&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;?&lt;/li&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    a. Country/Zone
     b. Basis of Product Tax
@@ -81,27 +81,27 @@ and enter the tax class ID number you obtained in step 1 above.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;What Zone Definitions have you created?
-See &lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;.&lt;/p&gt;
+See &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Inside each of those zone definitions, what country/zone combinations have been selected?
-In &lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;, click on &amp;ldquo;Details&amp;rdquo; button for each zone.&lt;/p&gt;
+In &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;, click on &amp;ldquo;Details&amp;rdquo; button for each zone.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What tax classes do you have?
-Check &lt;a href=&#34;/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.&lt;/p&gt;
+Check &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What tax rates have you created?
-Check &lt;a href=&#34;/user/admin_pages/locations/tax_rates/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/a&gt;.&lt;/p&gt;
+Check &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_rates/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What tax class have you associated with your products?
-Check &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, then click on a product to edit it.&lt;/p&gt;
+Check &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, then click on a product to edit it.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What tax class have you associated with each of your shipping modules?
-Check &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
+Check &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -110,10 +110,10 @@ Check &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt;
     
     <item>
       <title>User: Tax configuration in Canada</title>
-      <link>/user/taxes/canada_taxes/</link>
+      <link>/zendocs_test1/user/taxes/canada_taxes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/canada_taxes/</guid>
+      <guid>/zendocs_test1/user/taxes/canada_taxes/</guid>
       <description>
         
         
@@ -350,10 +350,10 @@ Total: $79.00&lt;/p&gt;
     
     <item>
       <title>User: Tax configuration in the United States</title>
-      <link>/user/taxes/us_taxes/</link>
+      <link>/zendocs_test1/user/taxes/us_taxes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/us_taxes/</guid>
+      <guid>/zendocs_test1/user/taxes/us_taxes/</guid>
       <description>
         
         
@@ -387,7 +387,7 @@ give it a description, ex: Colorado State Sales Tax&lt;br&gt;
 Click on insert&lt;/p&gt;
 &lt;p&gt;Last, make sure you apply the new tax class that you created (Taxable Goods) to any and all products that you might be charging tax on.&lt;/p&gt;
 &lt;p&gt;To make this faster when adding new products, in the Admin area, you can select a default Tax Class to be applied to all new products you create.&lt;br&gt;
-Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;, then choose a product type (likely &lt;code&gt;Product - General&lt;/code&gt;), and click
+Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;, then choose a product type (likely &lt;code&gt;Product - General&lt;/code&gt;), and click
 &lt;em&gt;Edit Layout&lt;/em&gt;, then  &lt;em&gt;Default Tax Class&lt;/em&gt;.&lt;/p&gt;
 
       </description>
@@ -395,14 +395,14 @@ Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;Admin &am
     
     <item>
       <title>User: Tax Inclusive Pricing</title>
-      <link>/user/taxes/tax_inclusive_pricing/</link>
+      <link>/zendocs_test1/user/taxes/tax_inclusive_pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/tax_inclusive_pricing/</guid>
+      <guid>/zendocs_test1/user/taxes/tax_inclusive_pricing/</guid>
       <description>
         
         
-        &lt;p&gt;Whether or not to include taxes when displaying prices is a global setting, which is enabled with the &amp;ldquo;Display Prices with Tax&amp;rdquo; setting in &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Whether or not to include taxes when displaying prices is a global setting, which is enabled with the &amp;ldquo;Display Prices with Tax&amp;rdquo; setting in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the same place, there is a separate setting which determines whether or not to show prices with tax included in the Admin.&lt;/p&gt;
 
       </description>
@@ -410,10 +410,10 @@ Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;Admin &am
     
     <item>
       <title>User: VAT setup instructions</title>
-      <link>/user/taxes/vat/</link>
+      <link>/zendocs_test1/user/taxes/vat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/taxes/vat/</guid>
+      <guid>/zendocs_test1/user/taxes/vat/</guid>
       <description>
         
         
@@ -436,7 +436,7 @@ Tax Rate - 17.5
 Description - VAT 17.5% or similar
 priority can be left blank - Click on insert
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note the above assumes you have no zone definitions/tax rates already set up. If you do just delete them.&lt;/p&gt;
-&lt;p&gt;Now any goods that you wish to charge VAT on must have their &lt;em&gt;Tax Class&lt;/em&gt; set to &lt;em&gt;Taxable Goods&lt;/em&gt;. You can do this on the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product edit screen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now any goods that you wish to charge VAT on must have their &lt;em&gt;Tax Class&lt;/em&gt; set to &lt;em&gt;Taxable Goods&lt;/em&gt;. You can do this on the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product edit screen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Finally, in Admin &amp;gt; Configuration &amp;gt; My Store make sure that &lt;em&gt;Basis of Product Tax&lt;/em&gt; is set to &lt;em&gt;Shipping&lt;/em&gt;.&lt;/p&gt;
 
       </description>

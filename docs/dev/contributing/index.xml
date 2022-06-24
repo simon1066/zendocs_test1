@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Code Contributing and Git</title>
-    <link>/dev/contributing/</link>
+    <link>/zendocs_test1/dev/contributing/</link>
     <description>Recent content in Code Contributing and Git on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/contributing/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/contributing/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/contributing/introduction/</link>
+      <link>/zendocs_test1/dev/contributing/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/introduction/</guid>
+      <guid>/zendocs_test1/dev/contributing/introduction/</guid>
       <description>
         
         
@@ -32,15 +32,15 @@
 &lt;h2 id=&#34;where-do-i-start&#34;&gt;Where do I start?&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s really as easy as 1-2-3 &amp;hellip;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Start with reviewing the &lt;a href=&#34;/dev/contributing/issues&#34;&gt;Issues&lt;/a&gt; document, as a guide to first steps about exploring the issue further, checking whether it&amp;rsquo;s already being addressed someplace, whether it&amp;rsquo;s a core bug vs a &amp;ldquo;bugs-me bug&amp;rdquo;, along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.&lt;/li&gt;
+&lt;li&gt;Start with reviewing the &lt;a href=&#34;/zendocs_test1/dev/contributing/issues&#34;&gt;Issues&lt;/a&gt; document, as a guide to first steps about exploring the issue further, checking whether it&amp;rsquo;s already being addressed someplace, whether it&amp;rsquo;s a core bug vs a &amp;ldquo;bugs-me bug&amp;rdquo;, along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If you&amp;rsquo;re simply &amp;ldquo;looking for ways to get started&amp;rdquo;, take a look at the existing &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;Zen Cart Issues on Github&lt;/a&gt; for issues that are tagged with &amp;ldquo;up-for-grabs&amp;rdquo; or &amp;ldquo;first-timers-only&amp;rdquo;.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re going to contribute code, read through the &lt;a href=&#34;/dev/contributing/github_workflow&#34;&gt;Github Workflow&lt;/a&gt; document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re going to contribute code, read through the &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow&#34;&gt;Github Workflow&lt;/a&gt; document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;As you start working on your code changes and pull request, review the &lt;a href=&#34;/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; guide to ensure that your code matches both the formatting and testing requirements. If you&amp;rsquo;re submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.&lt;/p&gt;
+&lt;p&gt;As you start working on your code changes and pull request, review the &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; guide to ensure that your code matches both the formatting and testing requirements. If you&amp;rsquo;re submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;forum-links&#34;&gt;Forum Links&lt;/h2&gt;
@@ -56,15 +56,15 @@
     
     <item>
       <title>Dev: Change Guidelines</title>
-      <link>/dev/contributing/change_guidelines/</link>
+      <link>/zendocs_test1/dev/contributing/change_guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/change_guidelines/</guid>
+      <guid>/zendocs_test1/dev/contributing/change_guidelines/</guid>
       <description>
         
         
         &lt;h2 id=&#34;how-do-you-make-a-change&#34;&gt;How do you make a change?&lt;/h2&gt;
-&lt;p&gt;Changes are made through pull requests (&amp;ldquo;PR&amp;rsquo;s&amp;rdquo;). If you are unfamiliar with pull requests, please review the project&amp;rsquo;s &lt;a href=&#34;/dev/contributing/github_workflow/&#34;&gt;Github Workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Changes are made through pull requests (&amp;ldquo;PR&amp;rsquo;s&amp;rdquo;). If you are unfamiliar with pull requests, please review the project&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow/&#34;&gt;Github Workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;what-should-go-into-a-change&#34;&gt;What should go into a change?&lt;/h2&gt;
 &lt;p&gt;For non-trivial changes, the best practice is to have a single PR for each issue you are addressing. The reasons for this include:&lt;/p&gt;
 &lt;ul&gt;
@@ -77,7 +77,7 @@
 &lt;h2 id=&#34;bug-fixes-and-formatting&#34;&gt;Bug Fixes and Formatting&lt;/h2&gt;
 &lt;p&gt;When changing existing files, try not to make large formatting changes. 
 Keeping the existing format allows people to more easily compare versions. 
-See &lt;a href=&#34;/dev/contributing/coding_standards/&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
+See &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards/&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;In cases where a significant amount of reformatting is necessary and approved by the dev team, that should be done as a standalone commit and PR, where NO functional changes are made. 
 It should be formatting-only. Otherwise it becomes nearly impossible to find &amp;ldquo;who changed what when and why&amp;rdquo; when investigating code history at a later date.&lt;/p&gt;
 &lt;h2 id=&#34;how-should-i-document-a-change&#34;&gt;How should I document a change?&lt;/h2&gt;
@@ -115,10 +115,10 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
     
     <item>
       <title>Dev: Coding Standards</title>
-      <link>/dev/contributing/coding_standards/</link>
+      <link>/zendocs_test1/dev/contributing/coding_standards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/coding_standards/</guid>
+      <guid>/zendocs_test1/dev/contributing/coding_standards/</guid>
       <description>
         
         
@@ -216,17 +216,17 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;php-short-echo-tags&#34;&gt;PHP Short Echo Tags&lt;/h2&gt;
 &lt;p&gt;At this time, PHP Short Echo Tags (&lt;code&gt;&amp;lt;?=&lt;/code&gt; in lieu of &lt;code&gt;&amp;lt;?php echo&lt;/code&gt;) are not preferred.&lt;/p&gt;
 &lt;h2 id=&#34;more-information&#34;&gt;More Information&lt;/h2&gt;
-&lt;p&gt;More information is provided in &lt;a href=&#34;/dev/code/php_idioms/&#34;&gt;PHP Idioms&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information is provided in &lt;a href=&#34;/zendocs_test1/dev/code/php_idioms/&#34;&gt;PHP Idioms&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Github Workflow &#43; Pull Requests</title>
-      <link>/dev/contributing/github_workflow/</link>
+      <link>/zendocs_test1/dev/contributing/github_workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/github_workflow/</guid>
+      <guid>/zendocs_test1/dev/contributing/github_workflow/</guid>
       <description>
         
         
@@ -487,10 +487,10 @@ For the basics of understanding forking and how to manage that fork, see: &lt;a 
     
     <item>
       <title>Dev: Bug Reporting</title>
-      <link>/dev/contributing/issues/</link>
+      <link>/zendocs_test1/dev/contributing/issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/issues/</guid>
+      <guid>/zendocs_test1/dev/contributing/issues/</guid>
       <description>
         
         
@@ -547,7 +547,7 @@ For the basics of understanding forking and how to manage that fork, see: &lt;a 
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;security-issues&#34;&gt;Security Issues&lt;/h1&gt;
-&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;reference-guide&#34;&gt;Reference Guide&lt;/h1&gt;
 &lt;p&gt;More information on &lt;a href=&#34;https://guides.github.com/features/issues/&#34;&gt;Github Issue Reporting&lt;/a&gt;&lt;/p&gt;
 
@@ -556,27 +556,27 @@ For the basics of understanding forking and how to manage that fork, see: &lt;a 
     
     <item>
       <title>Dev: Notices</title>
-      <link>/dev/contributing/notices/</link>
+      <link>/zendocs_test1/dev/contributing/notices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/notices/</guid>
+      <guid>/zendocs_test1/dev/contributing/notices/</guid>
       <description>
         
         
-        &lt;p&gt;PHP notices are sometimes also called &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;PHP notices are sometimes also called &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is recommended to test code changes against the lowest and highest versions of PHP supported for the version you are changing.  For Zen Cart 1.5.8, this means testing under PHP 7.4 and PHP 8.1.&lt;/p&gt;
 &lt;p&gt;Tests should be done with Admin &amp;gt; Configuration &amp;gt; Logging &amp;gt; Report All Errors settings of &amp;ldquo;Yes.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;The help file &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;PHP Warnings&lt;/a&gt; describes some common pitfalls that people experience and recommendations for fixing them.&lt;/p&gt;
+&lt;p&gt;The help file &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings&lt;/a&gt; describes some common pitfalls that people experience and recommendations for fixing them.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Testing</title>
-      <link>/dev/contributing/tests/</link>
+      <link>/zendocs_test1/dev/contributing/tests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/tests/</guid>
+      <guid>/zendocs_test1/dev/contributing/tests/</guid>
       <description>
         
         

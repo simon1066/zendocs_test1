@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Admins</title>
-    <link>/user/admin_pages/admins/</link>
+    <link>/zendocs_test1/user/admin_pages/admins/</link>
     <description>Recent content in Admins on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin_pages/admins/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin_pages/admins/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,17 +15,17 @@
     
     <item>
       <title>User: Admin Profiles</title>
-      <link>/user/admin_pages/admins/admin_profiles/</link>
+      <link>/zendocs_test1/user/admin_pages/admins/admin_profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/admins/admin_profiles/</guid>
+      <guid>/zendocs_test1/user/admin_pages/admins/admin_profiles/</guid>
       <description>
         
         
         &lt;p&gt;The capabilities of an administrator in Zen Cart are limited by the &lt;em&gt;profile&lt;/em&gt; for that account.  The available profiles are shown on this screen (Admins &amp;gt; Admin Profiles).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/profiles.png&#34; alt=&#34;Admin Profiles&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The profile for each administrator can be seen in the &lt;a href=&#34;/user/admin_pages/admins/admin_users/&#34;&gt;Admins &amp;gt; Admin Users&lt;/a&gt; screen.  A profile is assigned to an administrator account when it is created.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_users_2.png&#34; alt=&#34;Admin Users&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/profiles.png&#34; alt=&#34;Admin Profiles&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The profile for each administrator can be seen in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admins &amp;gt; Admin Users&lt;/a&gt; screen.  A profile is assigned to an administrator account when it is created.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_users_2.png&#34; alt=&#34;Admin Users&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;Superuser&lt;/code&gt; profile has access to all the functions in admin.&lt;/p&gt;
 &lt;p&gt;All other profiles have access to a subset of functions, which is defined by 
 their admin profile.&lt;/p&gt;
@@ -37,56 +37,56 @@ customize this to your needs or create new profiles that match your
 requirements.&lt;/p&gt;
 &lt;p&gt;Remember to review your admin profiles 
 as you add new functions to your admin.  For example, if you 
-install &lt;a href=&#34;/user/orders/edit_orders/&#34;&gt;Edit Orders&lt;/a&gt;, 
+install &lt;a href=&#34;/zendocs_test1/user/orders/edit_orders/&#34;&gt;Edit Orders&lt;/a&gt;, 
 although your &lt;code&gt;Order Processing&lt;/code&gt; profile can run all the standard functions 
 under &lt;code&gt;Admin &amp;gt; Customers&lt;/code&gt;, they still can&amp;rsquo;t run Edit Orders until you go 
 to &lt;code&gt;Admin &amp;gt; Admins &amp;gt; Edit Profiles&lt;/code&gt; and check the &lt;em&gt;Edit Orders&lt;/em&gt; box.&lt;/p&gt;
 &lt;br /&gt;
-&lt;img src=&#34;/images/admin_profiles.png&#34; alt=&#34;Zen Cart Admin Profiles&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/admin_profiles.png&#34; alt=&#34;Zen Cart Admin Profiles&#34; /&gt;
 &lt;br /&gt;&lt;br /&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don&amp;rsquo;t see an item in this list that does appear on the Superuser admin menu, review the troubleshooting instructions in  &lt;a href=&#34;/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don&amp;rsquo;t see an item in this list that does appear on the Superuser admin menu, review the troubleshooting instructions in  &lt;a href=&#34;/zendocs_test1/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Admin Users</title>
-      <link>/user/admin_pages/admins/admin_users/</link>
+      <link>/zendocs_test1/user/admin_pages/admins/admin_users/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/admins/admin_users/</guid>
+      <guid>/zendocs_test1/user/admin_pages/admins/admin_users/</guid>
       <description>
         
         
         &lt;p&gt;Admin Users is a list of your admins and their respective profiles.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_users.png&#34; alt=&#34;Admin Users&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_users.png&#34; alt=&#34;Admin Users&#34;&gt;&lt;/p&gt;
 &lt;p&gt;From this page, you may change an admin&amp;rsquo;s password or profile, or add or delete admins.&lt;/p&gt;
-&lt;p&gt;Profiles are created on the &lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admins &amp;gt; Admin Profiles&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Profiles are created on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admins &amp;gt; Admin Profiles&lt;/a&gt; page.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Admin Page Registration</title>
-      <link>/user/admin_pages/admins/admin_page_registration/</link>
+      <link>/zendocs_test1/user/admin_pages/admins/admin_page_registration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/admins/admin_page_registration/</guid>
+      <guid>/zendocs_test1/user/admin_pages/admins/admin_page_registration/</guid>
       <description>
         
         
         &lt;p&gt;Admin Page Registration is a page for developers who are creating new pages.&lt;/p&gt;
-&lt;p&gt;Note that this page was provided as a bridge to 1.5.x, and its use is no longer recommended.  If you are building a plugin and need a new menu item, please see &lt;a href=&#34;/dev/code/creating_menu/&#34;&gt;Creating a new Admin menu item&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that this page was provided as a bridge to 1.5.x, and its use is no longer recommended.  If you are building a plugin and need a new menu item, please see &lt;a href=&#34;/zendocs_test1/dev/code/creating_menu/&#34;&gt;Creating a new Admin menu item&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Admin Activity Logs</title>
-      <link>/user/admin_pages/admins/admin_activity_logs/</link>
+      <link>/zendocs_test1/user/admin_pages/admins/admin_activity_logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/admins/admin_activity_logs/</guid>
+      <guid>/zendocs_test1/user/admin_pages/admins/admin_activity_logs/</guid>
       <description>
         
         
@@ -96,10 +96,10 @@ security audit or to figure out when an undesired change was made.&lt;/p&gt;
 &lt;p&gt;You cannot directly view your admin activity logs on this page.  To view this table, you will have to use phpMyAdmin, or 
 export a CSV, and download the output to your own computer.&lt;/p&gt;
 &lt;p&gt;When viewing this data, note that the field &lt;code&gt;gzpost&lt;/code&gt; is a json-encoded blob, so you will not be able to view it directly in phpMyAdmin or in a phpMyAdmin export.  However, using the Export feature built into this page (at the top) will allow you to view the gzpost data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_activity_logs.png&#34; alt=&#34;Admin Activity Log Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_activity_logs.png&#34; alt=&#34;Admin Activity Log Manager&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;purging-logs&#34;&gt;Purging Logs&lt;/h3&gt;
 &lt;p&gt;If you are receiving the message, &amp;ldquo;The Admin Activity Logs table has records over 2 months old and should be archived to conserve space&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_activity_log.png&#34; alt=&#34;Zen Cart Admin Activity Log button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_activity_log.png&#34; alt=&#34;Zen Cart Admin Activity Log button&#34;&gt;&lt;/p&gt;
 &lt;p&gt;this is what you should do:&lt;/p&gt;
 &lt;p&gt;a) Go to Admins &amp;gt; Admin Activity Logs.  Where it says, &amp;ldquo;Review or Export Logs,&amp;rdquo; check the box that says &amp;ldquo;Save to file on server&amp;rdquo; and press the &lt;em&gt;Go&lt;/em&gt; button
 on the right.  This will save your logs to disk in case you need them for troubleshooting.  The recommended retention period is 12 months.&lt;/p&gt;

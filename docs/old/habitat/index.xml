@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Habitat</title>
-    <link>/old/habitat/</link>
+    <link>/zendocs_test1/old/habitat/</link>
     <description>Recent content in Habitat on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/old/habitat/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/old/habitat/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Old: Welcome to Habitat</title>
-      <link>/old/habitat/introduction/</link>
+      <link>/zendocs_test1/old/habitat/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/introduction/</guid>
+      <guid>/zendocs_test1/old/habitat/introduction/</guid>
       <description>
         
         
@@ -40,10 +40,10 @@ We&amp;rsquo;re leaving this documentation up temporarily for your reference in 
     
     <item>
       <title>Old: Installing Habitat</title>
-      <link>/old/habitat/installation/</link>
+      <link>/zendocs_test1/old/habitat/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/installation/</guid>
+      <guid>/zendocs_test1/old/habitat/installation/</guid>
       <description>
         
         
@@ -111,10 +111,10 @@ Where %systemroot% is usually c:/windows&lt;/p&gt;
     
     <item>
       <title>Old: Coding with Habitat</title>
-      <link>/old/habitat/code_dev/</link>
+      <link>/zendocs_test1/old/habitat/code_dev/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/code_dev/</guid>
+      <guid>/zendocs_test1/old/habitat/code_dev/</guid>
       <description>
         
         
@@ -137,10 +137,10 @@ The root password for MySQL is also zencart&lt;/p&gt;
     
     <item>
       <title>Old: Customizing Habitat</title>
-      <link>/old/habitat/customising/</link>
+      <link>/zendocs_test1/old/habitat/customising/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/customising/</guid>
+      <guid>/zendocs_test1/old/habitat/customising/</guid>
       <description>
         
         
@@ -236,10 +236,10 @@ If assigning a new IP address, you should not use a publicly available IP, but a
     
     <item>
       <title>Old: Tools in Habitat</title>
-      <link>/old/habitat/dev_tools/</link>
+      <link>/zendocs_test1/old/habitat/dev_tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/dev_tools/</guid>
+      <guid>/zendocs_test1/old/habitat/dev_tools/</guid>
       <description>
         
         
@@ -315,10 +315,10 @@ If assigning a new IP address, you should not use a publicly available IP, but a
     
     <item>
       <title>Old: Tech Specs</title>
-      <link>/old/habitat/technical/</link>
+      <link>/zendocs_test1/old/habitat/technical/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/old/habitat/technical/</guid>
+      <guid>/zendocs_test1/old/habitat/technical/</guid>
       <description>
         
         

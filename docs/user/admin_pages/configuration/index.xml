@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Configuration</title>
-    <link>/user/admin_pages/configuration/</link>
+    <link>/zendocs_test1/user/admin_pages/configuration/</link>
     <description>Recent content in Configuration on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin_pages/configuration/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin_pages/configuration/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: All Configuration Settings</title>
-      <link>/user/admin_pages/configuration/all/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/all/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/all/</guid>
       <description>
         
         
@@ -673,7 +673,7 @@ Description: Customers Referral Code is created from&lt;br /&gt;0= Off&lt;br /&g
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--shippingpackaging&#34;&gt;Configuration &amp;gt; Shipping/Packaging&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/shipping/&#34;&gt;Shipping&lt;/a&gt; for more information on shipping calculations.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/shipping/&#34;&gt;Shipping&lt;/a&gt; for more information on shipping calculations.&lt;/p&gt;
 &lt;h2 id=&#34;country_of_origin&#34;&gt;Country of Origin&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;SHIPPING_ORIGIN_COUNTRY&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Shipping/Packaging&lt;/b&gt;&lt;br /&gt;
@@ -896,7 +896,7 @@ Description: Include backtrace information on &amp;quot;Notice&amp;quot; errors?
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--e-mail-options&#34;&gt;Configuration &amp;gt; E-Mail Options&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/email/&#34;&gt;Email&lt;/a&gt; for more information on customizing your store&amp;rsquo;s email.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/email/&#34;&gt;Email&lt;/a&gt; for more information on customizing your store&amp;rsquo;s email.&lt;/p&gt;
 &lt;h2 id=&#34;email_transport_method&#34;&gt;E-Mail Transport Method&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_TRANSPORT&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; E-Mail Options&lt;/b&gt;&lt;br /&gt;
@@ -919,7 +919,7 @@ Description: Send emails in HTML format if recipient has enabled it in their pre
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_ARCHIVE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; E-Mail Options&lt;/b&gt;&lt;br /&gt;
 Description: If you wish to have email messages archived/stored when sent, set this to &#34;true&#34;.
-&lt;p&gt;To view the email archive that is created when this flag is set to true, use the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To view the email archive that is created when this flag is set to true, use the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;email_friendlyerrors&#34;&gt;E-Mail Friendly-Errors&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_FRIENDLY_ERRORS&lt;/b&gt;&lt;br /&gt;
@@ -1040,7 +1040,7 @@ Description: What currency conversions do you need for Text emails?&lt;br /&gt;E
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--attribute-settings&#34;&gt;Configuration &amp;gt; Attribute Settings&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; for attribute pricing settings.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; for attribute pricing settings.&lt;/p&gt;
 &lt;h2 id=&#34;enable_downloads&#34;&gt;Enable Downloads&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;DOWNLOAD_ENABLED&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Attribute Settings&lt;/b&gt;&lt;br /&gt;
@@ -1330,7 +1330,7 @@ Description: Also Purchased Products Columns per Row&lt;br /&gt;0= off or set th
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--layout-settings&#34;&gt;Configuration &amp;gt; Layout Settings&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See also &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt; for product type specific layout settings.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt; for product type specific layout settings.&lt;/p&gt;
 &lt;h2 id=&#34;column_width__left_boxes&#34;&gt;Column Width - Left Boxes&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;BOX_WIDTH_LEFT&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Layout Settings&lt;/b&gt;&lt;br /&gt;
@@ -1581,7 +1581,7 @@ Description: Enter Website Maintenance period (hh:mm)&lt;/div&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--new-listing&#34;&gt;Configuration &amp;gt; New Listing&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_NEW_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; New Listing&lt;/b&gt;&lt;br /&gt;
@@ -1641,7 +1641,7 @@ Description: Do you want to mask Upcoming Products from being included as New Pr
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--featured-listing&#34;&gt;Configuration &amp;gt; Featured Listing&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;Featured Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;Featured Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_FEATURED_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Featured Listing&lt;/b&gt;&lt;br /&gt;
@@ -1697,7 +1697,7 @@ Description: Do you want to display Add Multiple Products Qty Box and Set Button
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--all-listing&#34;&gt;Configuration &amp;gt; All Listing&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;All Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;All Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_ALL_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; All Listing&lt;/b&gt;&lt;br /&gt;
@@ -1836,7 +1836,7 @@ Description: Filter the products when Product Listing is enabled for current Mai
 &lt;hr&gt;
 &lt;h1 id=&#34;configuration--define-page-status&#34;&gt;Configuration &amp;gt; Define Page Status&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt; for instructions on use.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;define_main_page_status&#34;&gt;Define Main Page Status&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;DEFINE_MAIN_PAGE_STATUS&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Define Page Status&lt;/b&gt;&lt;br /&gt;
@@ -1944,10 +1944,10 @@ Description: EZ-Pages &#34;pages&#34; on which to NOT display the normal &#34;ri
     
     <item>
       <title>User: Configuration &gt; My Store</title>
-      <link>/user/admin_pages/configuration/configuration_mystore/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_mystore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_mystore/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_mystore/</guid>
       <description>
         
         
@@ -2117,10 +2117,10 @@ Description: Login directly to store without entering credentials&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; Minimum Values</title>
-      <link>/user/admin_pages/configuration/configuration_minimumvalues/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_minimumvalues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_minimumvalues/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_minimumvalues/</guid>
       <description>
         
         
@@ -2206,10 +2206,10 @@ Description: Minimum length of admin usernames (must be 4 or more)&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; Maximum Values</title>
-      <link>/user/admin_pages/configuration/configuration_maximumvalues/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_maximumvalues/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/</guid>
       <description>
         
         
@@ -2403,10 +2403,10 @@ Description: Maximum Preview length&lt;br /&gt;100 = Default&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; Images</title>
-      <link>/user/admin_pages/configuration/configuration_images/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_images/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_images/</guid>
       <description>
         
         
@@ -2548,10 +2548,10 @@ Description: Use Proportional Images on Products and Categories?&lt;br /&gt;&lt;
     
     <item>
       <title>User: Configuration &gt; Customer Details</title>
-      <link>/user/admin_pages/configuration/configuration_customerdetails/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_customerdetails/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/</guid>
       <description>
         
         
@@ -2641,14 +2641,14 @@ Description: Customers Referral Code is created from&lt;br /&gt;0= Off&lt;br /&g
     
     <item>
       <title>User: Configuration &gt; Shipping/Packaging</title>
-      <link>/user/admin_pages/configuration/configuration_shippingpackaging/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_shippingpackaging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_shippingpackaging/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_shippingpackaging/</guid>
       <description>
         
         
-        &lt;p&gt;See also &lt;a href=&#34;/user/shipping/&#34;&gt;Shipping&lt;/a&gt; for more information on shipping calculations.&lt;/p&gt;
+        &lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/shipping/&#34;&gt;Shipping&lt;/a&gt; for more information on shipping calculations.&lt;/p&gt;
 &lt;h2 id=&#34;country_of_origin&#34;&gt;Country of Origin&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;SHIPPING_ORIGIN_COUNTRY&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Shipping/Packaging&lt;/b&gt;&lt;br /&gt;
@@ -2695,10 +2695,10 @@ Description: Do you want to display the Order Comments on the Admin Packing Slip
     
     <item>
       <title>User: Configuration &gt; Product Listing</title>
-      <link>/user/admin_pages/configuration/configuration_productlisting/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_productlisting/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/</guid>
       <description>
         
         
@@ -2792,10 +2792,10 @@ Description: Show Sub-Categories on Main Page while navigating through Categorie
     
     <item>
       <title>User: Configuration &gt; Stock</title>
-      <link>/user/admin_pages/configuration/configuration_stock/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_stock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_stock/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_stock/</guid>
       <description>
         
         
@@ -2875,10 +2875,10 @@ Description: When a customer logs in and has a previously stored shopping cart, 
     
     <item>
       <title>User: Configuration &gt; Logging</title>
-      <link>/user/admin_pages/configuration/configuration_logging/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_logging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_logging/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_logging/</guid>
       <description>
         
         
@@ -2904,14 +2904,14 @@ Description: Include backtrace information on &amp;quot;Notice&amp;quot; errors?
     
     <item>
       <title>User: Configuration &gt; E-Mail Options</title>
-      <link>/user/admin_pages/configuration/configuration_emailoptions/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_emailoptions/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/</guid>
       <description>
         
         
-        &lt;p&gt;See also &lt;a href=&#34;/user/email/&#34;&gt;Email&lt;/a&gt; for more information on customizing your store&amp;rsquo;s email.&lt;/p&gt;
+        &lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/email/&#34;&gt;Email&lt;/a&gt; for more information on customizing your store&amp;rsquo;s email.&lt;/p&gt;
 &lt;h2 id=&#34;email_transport_method&#34;&gt;E-Mail Transport Method&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_TRANSPORT&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; E-Mail Options&lt;/b&gt;&lt;br /&gt;
@@ -2934,7 +2934,7 @@ Description: Send emails in HTML format if recipient has enabled it in their pre
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_ARCHIVE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; E-Mail Options&lt;/b&gt;&lt;br /&gt;
 Description: If you wish to have email messages archived/stored when sent, set this to &#34;true&#34;.
-&lt;p&gt;To view the email archive that is created when this flag is set to true, use the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To view the email archive that is created when this flag is set to true, use the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;email_friendlyerrors&#34;&gt;E-Mail Friendly-Errors&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;EMAIL_FRIENDLY_ERRORS&lt;/b&gt;&lt;br /&gt;
@@ -3058,14 +3058,14 @@ Description: What currency conversions do you need for Text emails?&lt;br /&gt;E
     
     <item>
       <title>User: Configuration &gt; Attribute Settings</title>
-      <link>/user/admin_pages/configuration/configuration_attributesettings/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_attributesettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_attributesettings/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_attributesettings/</guid>
       <description>
         
         
-        &lt;p&gt;See also &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; for attribute pricing settings.&lt;/p&gt;
+        &lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; for attribute pricing settings.&lt;/p&gt;
 &lt;h2 id=&#34;enable_downloads&#34;&gt;Enable Downloads&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;DOWNLOAD_ENABLED&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Attribute Settings&lt;/b&gt;&lt;br /&gt;
@@ -3128,10 +3128,10 @@ Description: When a Product only uses READONLY attributes, should the Add to Car
     
     <item>
       <title>User: Configuration &gt; GZip Compression</title>
-      <link>/user/admin_pages/configuration/configuration_gzipcompression/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_gzipcompression/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_gzipcompression/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_gzipcompression/</guid>
       <description>
         
         
@@ -3145,10 +3145,10 @@ Description: 0= off 1= on&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; Sessions</title>
-      <link>/user/admin_pages/configuration/configuration_sessions/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_sessions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_sessions/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_sessions/</guid>
       <description>
         
         
@@ -3202,10 +3202,10 @@ Description: Normally Zen Cart will add a period prefix to the cookie domain, e.
     
     <item>
       <title>User: Configuration &gt; Regulations</title>
-      <link>/user/admin_pages/configuration/configuration_regulations/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_regulations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_regulations/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_regulations/</guid>
       <description>
         
         
@@ -3223,10 +3223,10 @@ Description: Show the Privacy Notice during the account creation procedure which
     
     <item>
       <title>User: Configuration &gt; GV Coupons</title>
-      <link>/user/admin_pages/configuration/configuration_gvcoupons/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_gvcoupons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_gvcoupons/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_gvcoupons/</guid>
       <description>
         
         
@@ -3260,10 +3260,10 @@ Description: Number of Discount Coupons to list on Reports Page&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; Credit Cards</title>
-      <link>/user/admin_pages/configuration/configuration_creditcards/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_creditcards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_creditcards/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_creditcards/</guid>
       <description>
         
         
@@ -3317,10 +3317,10 @@ Description: Show accepted credit cards on Payment page?&lt;br /&gt;0= off&lt;br
     
     <item>
       <title>User: Configuration &gt; Product Info</title>
-      <link>/user/admin_pages/configuration/configuration_productinfo/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_productinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_productinfo/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_productinfo/</guid>
       <description>
         
         
@@ -3418,14 +3418,14 @@ Description: Also Purchased Products Columns per Row&lt;br /&gt;0= off or set th
     
     <item>
       <title>User: Configuration &gt; Layout Settings</title>
-      <link>/user/admin_pages/configuration/configuration_layoutsettings/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_layoutsettings/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/</guid>
       <description>
         
         
-        &lt;p&gt;See also &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt; for product type specific layout settings.&lt;/p&gt;
+        &lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt; for product type specific layout settings.&lt;/p&gt;
 &lt;h2 id=&#34;column_width__left_boxes&#34;&gt;Column Width - Left Boxes&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;BOX_WIDTH_LEFT&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Layout Settings&lt;/b&gt;&lt;br /&gt;
@@ -3624,10 +3624,10 @@ Description: CSS Buttons&lt;br /&gt;Use CSS buttons instead of images (GIF/JPG)?
     
     <item>
       <title>User: Configuration &gt; Website Maintenance</title>
-      <link>/user/admin_pages/configuration/configuration_websitemaintenance/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_websitemaintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_websitemaintenance/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_websitemaintenance/</guid>
       <description>
         
         
@@ -3689,14 +3689,14 @@ Description: Enter Website Maintenance period (hh:mm)&lt;/div&gt;
     
     <item>
       <title>User: Configuration &gt; New Listing</title>
-      <link>/user/admin_pages/configuration/configuration_newlisting/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_newlisting/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_NEW_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; New Listing&lt;/b&gt;&lt;br /&gt;
@@ -3759,14 +3759,14 @@ Description: Do you want to mask Upcoming Products from being included as New Pr
     
     <item>
       <title>User: Configuration &gt; Featured Listing</title>
-      <link>/user/admin_pages/configuration/configuration_featuredlisting/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_featuredlisting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_featuredlisting/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_featuredlisting/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;Featured Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;Featured Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_FEATURED_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Featured Listing&lt;/b&gt;&lt;br /&gt;
@@ -3825,14 +3825,14 @@ Description: Do you want to display Add Multiple Products Qty Box and Set Button
     
     <item>
       <title>User: Configuration &gt; All Listing</title>
-      <link>/user/admin_pages/configuration/configuration_alllisting/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_alllisting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_alllisting/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_alllisting/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;All Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;All Listing Configuration&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;display_product_image&#34;&gt;Display Product Image&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;PRODUCT_ALL_LIST_IMAGE&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; All Listing&lt;/b&gt;&lt;br /&gt;
@@ -3891,10 +3891,10 @@ Description: Do you want to display Add Multiple Products Qty Box and Set Button
     
     <item>
       <title>User: Configuration &gt; Index Listing</title>
-      <link>/user/admin_pages/configuration/configuration_indexlisting/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_indexlisting/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/</guid>
       <description>
         
         
@@ -3984,14 +3984,14 @@ Description: Filter the products when Product Listing is enabled for current Mai
     
     <item>
       <title>User: Configuration &gt; Define Page Status</title>
-      <link>/user/admin_pages/configuration/configuration_definepagestatus/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_definepagestatus/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt; for instructions on use.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt; for instructions on use.&lt;/p&gt;
 &lt;h2 id=&#34;define_main_page_status&#34;&gt;Define Main Page Status&lt;/h2&gt;
 &lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;DEFINE_MAIN_PAGE_STATUS&lt;/b&gt;&lt;br /&gt;
 Path: &lt;b&gt;Configuration &gt; Define Page Status&lt;/b&gt;&lt;br /&gt;
@@ -4046,10 +4046,10 @@ Description: Enable the Defined Page 4 Link/Text?&lt;br /&gt;0= Link ON, Define 
     
     <item>
       <title>User: Configuration &gt; EZ-Pages Settings</title>
-      <link>/user/admin_pages/configuration/configuration_ezpagessettings/</link>
+      <link>/zendocs_test1/user/admin_pages/configuration/configuration_ezpagessettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/configuration/configuration_ezpagessettings/</guid>
+      <guid>/zendocs_test1/user/admin_pages/configuration/configuration_ezpagessettings/</guid>
       <description>
         
         

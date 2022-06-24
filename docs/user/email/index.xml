@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Email</title>
-    <link>/user/email/</link>
+    <link>/zendocs_test1/user/email/</link>
     <description>Recent content in Email on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/email/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/email/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Introduction to Email in Zen Cart</title>
-      <link>/user/email/email_introduction/</link>
+      <link>/zendocs_test1/user/email/email_introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_introduction/</guid>
+      <guid>/zendocs_test1/user/email/email_introduction/</guid>
       <description>
         
         
@@ -43,8 +43,8 @@
 &lt;li&gt;If the transport is a sendmail function, then the server attempts to use the sendmail program on your webserver.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the &lt;code&gt;email_archive&lt;/code&gt; database table. Note that if you wish to use email archiving, you probably also want to use the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If an error occurs, then the error details are logged into the /logs/ folder as &amp;ldquo;myDEBUG-xxxxxx.log&amp;rdquo; files.  See &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;reading a myDEBUG log&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the &lt;code&gt;email_archive&lt;/code&gt; database table. Note that if you wish to use email archiving, you probably also want to use the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If an error occurs, then the error details are logged into the /logs/ folder as &amp;ldquo;myDEBUG-xxxxxx.log&amp;rdquo; files.  See &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;reading a myDEBUG log&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;ol&gt;
@@ -79,7 +79,7 @@
 &lt;li&gt;try testing with HTML emails OFF, since many spam filters block HTML-formatted messages before they even get out the gate.&lt;/li&gt;
 &lt;li&gt;check the mailserver logs &amp;hellip; is it complaining about something, either inbound or outbound?&lt;/li&gt;
 &lt;li&gt;for kicks, get the webserver/mailserver rebooted and dump all the logs &amp;hellip; just maybe something&amp;rsquo;s runamuck in there &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Try enabling Email Archiving (Admin &amp;gt; Configuration &amp;gt; Email Options &amp;gt; Email Archiving). Then install the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it&amp;rsquo;s in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it&amp;rsquo;s at the mercy of your mailserver.&lt;/li&gt;
+&lt;li&gt;Try enabling Email Archiving (Admin &amp;gt; Configuration &amp;gt; Email Options &amp;gt; Email Archiving). Then install the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it&amp;rsquo;s in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it&amp;rsquo;s at the mercy of your mailserver.&lt;/li&gt;
 &lt;li&gt;Look at your raw/full email headers. Does the &amp;ldquo;from&amp;rdquo; address appear to be a &amp;ldquo;nobody@xxxxxxx&amp;rdquo; address? Some hosts block these. The &amp;ldquo;email must send from known domain&amp;rdquo; setting is designed to counteract this. The SMTPAUTH setting also helps to work around this.&lt;/li&gt;
 &lt;li&gt;This is RARE: If using &amp;ldquo;sendmail&amp;rdquo; and your &amp;ldquo;sendmail&amp;rdquo; path on your webserver is not the default of /usr/sbin/sendmail then you can override the default by adding a definition for it in a new file on your server: /includes/extra_datafiles/email_sendmail_override.php &amp;hellip; create a define for EMAIL_SENDMAIL_PATH and point it to the actual sendmail path for your particular host. This should not be necessary, and usually using &amp;ldquo;PHP&amp;rdquo; as transport method will correct it without making this edit.&lt;/li&gt;
 &lt;li&gt;Also rare: Does your server require 7bit mail encoding instead of the default 8bit? If so, edit the /includes/extra_configures.email_use_8bit.php file and put // before the define statement there.&lt;/li&gt;
@@ -87,8 +87,8 @@
 &lt;p&gt;If the email doesn&amp;rsquo;t get to its destination, then usually the problem is a misconfiguration of the MTA or the host is blacklisted somewhere, or ports are blocked or &amp;hellip; well &amp;hellip; the probable causes are for a system administrator to understand.&lt;/p&gt;
 &lt;h3 id=&#34;more-troubleshooting-ideas&#34;&gt;More Troubleshooting Ideas&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/emails_not_received/&#34;&gt;Basic email troubleshooting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;Basic email troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;troubleshooting-questions-for-your-hosting-company&#34;&gt;Troubleshooting Questions for your Hosting Company&lt;/h3&gt;
 &lt;p&gt;Have you asked your hosting company what the right configuration is for your server to send mail most appropriately?&lt;/p&gt;
@@ -105,17 +105,17 @@
 &lt;p&gt;AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup.&lt;/p&gt;
 &lt;h3 id=&#34;email-treated-as-spam&#34;&gt;Email Treated As Spam?&lt;/h3&gt;
 &lt;p&gt;You might want to register your domain with &lt;a href=&#34;https://postmaster.google.com/&#34;&gt;Google Postmaster Tools&lt;/a&gt; to let it collect data about emails you send to recipients using Google&amp;rsquo;s email platform, so that it can report to you any issues it detects with emails you&amp;rsquo;re sending to them.&lt;/p&gt;
-&lt;p&gt;Also see &lt;a href=&#34;/user/email/spam/&#34;&gt;email treated as spam&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also see &lt;a href=&#34;/zendocs_test1/user/email/spam/&#34;&gt;email treated as spam&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Basic Email Troubleshooting</title>
-      <link>/user/email/emails_not_received/</link>
+      <link>/zendocs_test1/user/email/emails_not_received/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/emails_not_received/</guid>
+      <guid>/zendocs_test1/user/email/emails_not_received/</guid>
       <description>
         
         
@@ -125,7 +125,7 @@
 &lt;ol&gt;
 &lt;li&gt;ALWAYS test on a NON-free email address.  Do not test with a yahoo, hotmail, msn, aol, etc address exclusively.&lt;/li&gt;
 &lt;li&gt;You may need to test on multiple email addresses (by creating multiple store accounts) because some email services will drop email before even putting it in the junk folder.&lt;/li&gt;
-&lt;li&gt;All email settings are shown in the screen &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;All email settings are shown in the screen &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;symptom-emails-sent-from-the-cart-are-not-arriving&#34;&gt;Symptom: Emails sent from the cart are not arriving&lt;/h3&gt;
@@ -135,13 +135,13 @@ Options to try include:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Enable &lt;code&gt;Emails Must Be Sent From Known Domain&lt;/code&gt; so that the &amp;ldquo;From&amp;rdquo; address is set properly&lt;/li&gt;
 &lt;li&gt;Try a different Email Transport method](/user/email/email_transport_method/). 
-Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt; and try them in this order: &lt;code&gt;php&lt;/code&gt;, &lt;code&gt;smtp/smtpauth&lt;/code&gt;, &lt;code&gt;sendmail&lt;/code&gt;, &lt;code&gt;sendmail -f&lt;/code&gt;.&lt;/li&gt;
+Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt; and try them in this order: &lt;code&gt;php&lt;/code&gt;, &lt;code&gt;smtp/smtpauth&lt;/code&gt;, &lt;code&gt;sendmail&lt;/code&gt;, &lt;code&gt;sendmail -f&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;With SMTPAuth, you must enter your password in the &lt;em&gt;SMTP Email Account Password&lt;/em&gt; field.  Has your cPanel password changed recently?  If so, you may need to update the value in this field.&lt;/li&gt;
-&lt;li&gt;Look on your hoster&amp;rsquo;s control panel and see if you can add SPF and DKIM records yourself to increase your email reputation.  In cPanel, this is done using the &amp;ldquo;Email Deliverability&amp;rdquo; application.   Work with your hoster if you are unsure about this. See &lt;a href=&#34;/user/email/advanced_email_troubleshooting/#11-spf-dkim-and-dmarc&#34;&gt;SPF, DKIM and DMARC&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;Look on your hoster&amp;rsquo;s control panel and see if you can add SPF and DKIM records yourself to increase your email reputation.  In cPanel, this is done using the &amp;ldquo;Email Deliverability&amp;rdquo; application.   Work with your hoster if you are unsure about this. See &lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/#11-spf-dkim-and-dmarc&#34;&gt;SPF, DKIM and DMARC&lt;/a&gt; for more details.&lt;/li&gt;
 &lt;li&gt;ALWAYS check to see whether a junk mail filter, spam block, or other blacklist system may have trapped your message before it could be delivered&lt;/li&gt;
-&lt;li&gt;Try enabling the &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active&#34;&gt;Email Archiving&lt;/a&gt; feature. Then use the &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; plugin to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart.&lt;/li&gt;
+&lt;li&gt;Try enabling the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active&#34;&gt;Email Archiving&lt;/a&gt; feature. Then use the &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt; plugin to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart.&lt;/li&gt;
 &lt;li&gt;If the issue is arising from one particular customer, ask them to whitelist email from your domain.  For very strict filters, sometimes this is the only way to get through.&lt;/li&gt;
-&lt;li&gt;Check if the customer&amp;rsquo;s &lt;a href=&#34;/user/running/mistyped_email/&#34;&gt;email address is mis-typed&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Check if the customer&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/user/running/mistyped_email/&#34;&gt;email address is mis-typed&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;symptom-email-from-address-shows-up-funny&#34;&gt;Symptom: Email FROM-ADDRESS shows up funny&lt;/h3&gt;
 &lt;p&gt;If your &amp;ldquo;FROM&amp;rdquo; email addresses contain extra brackets &amp;ldquo;)&amp;rdquo;, this is due to having an incorrectly-formed email address defined in your store &lt;code&gt;Email Address (sent FROM)&lt;/code&gt; setting.&lt;/p&gt;
@@ -149,15 +149,15 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
 &lt;ol&gt;
 &lt;li&gt;the Email From address may be malformed&lt;/li&gt;
 &lt;li&gt;the Contact Us Pulldown contents may not be formatted properly. Note the required syntax next to the input field.&lt;/li&gt;
-&lt;li&gt;Check if the customer&amp;rsquo;s &lt;a href=&#34;/user/running/mistyped_email/&#34;&gt;email address is mis-typed&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Check if the customer&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/user/running/mistyped_email/&#34;&gt;email address is mis-typed&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;further-email-troubleshooting&#34;&gt;Further Email Troubleshooting&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/user/email/email_introduction/#diagnosing-problems&#34;&gt;Diagnosing Email Problems&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/email/email_introduction/#diagnosing-problems&#34;&gt;Diagnosing Email Problems&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&#34;&gt;PHPMailer Troubleshooting Guide&lt;/a&gt;&lt;/p&gt;
@@ -169,14 +169,14 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
     
     <item>
       <title>User: Advanced Email Troubleshooting</title>
-      <link>/user/email/advanced_email_troubleshooting/</link>
+      <link>/zendocs_test1/user/email/advanced_email_troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/advanced_email_troubleshooting/</guid>
+      <guid>/zendocs_test1/user/email/advanced_email_troubleshooting/</guid>
       <description>
         
         
-        &lt;p&gt;If you&amp;rsquo;re having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in &lt;a href=&#34;/user/email/email_introduction/&#34;&gt;introduction to email&lt;/a&gt; and &lt;a href=&#34;/user/email/emails_not_received/&#34;&gt;emails not received&lt;/a&gt; before reading this.&lt;/p&gt;
+        &lt;p&gt;If you&amp;rsquo;re having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in &lt;a href=&#34;/zendocs_test1/user/email/email_introduction/&#34;&gt;introduction to email&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;emails not received&lt;/a&gt; before reading this.&lt;/p&gt;
 &lt;h2 id=&#34;basic-troubleshooting&#34;&gt;Basic Troubleshooting&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Make sure your domain is properly configured. We will cover the various settings and entities you need to have configured for your site domain to be able to send email.&lt;/li&gt;
@@ -309,9 +309,9 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
 &lt;h2 id=&#34;4-testing-connectivity-to-your-smtp-server&#34;&gt;4. Testing connectivity to your SMTP server&lt;/h2&gt;
 &lt;p&gt;Assuming you have a VPS and cPanel, you can open a Terminal window and check to be sure you can get to your SMTP server.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a system where sending via Sendgrid will not work because you can&amp;rsquo;t connect:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/smtp_connect_fail.png&#34; alt=&#34;Connection Failure&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/smtp_connect_fail.png&#34; alt=&#34;Connection Failure&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a system where sending via Sendgrid &lt;em&gt;will&lt;/em&gt; work:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/smtp_connect_succeed.png&#34; alt=&#34;Connection Success&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/smtp_connect_succeed.png&#34; alt=&#34;Connection Success&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;5-smtp-handshake-debugging&#34;&gt;5. SMTP Handshake Debugging&lt;/h2&gt;
 &lt;p&gt;If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!&lt;/p&gt;
 &lt;p&gt;To enable email-debug-output, create a PHP file at either of these locations, depending on whether you&amp;rsquo;re testing email on the storefront side or on the admin side, respectively: &lt;code&gt;includes/extra_datafiles/email_debug.php&lt;/code&gt; or &lt;code&gt;YOURADMIN/includes/extra_datafiles/email_debug.php&lt;/code&gt;.&lt;/p&gt;
@@ -325,9 +325,9 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
 &lt;h2 id=&#34;6-what-to-do-when-it-doesnt-work&#34;&gt;6. What to do when it doesn&amp;rsquo;t work?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Write down any error messages or error numbers, and if you have access to your website logs, check them for any errors relevant to the problem. See the /logs/ folder for error details.&lt;/li&gt;
-&lt;li&gt;Get extra debug details by using the debug trick mentioned in &lt;a href=&#34;/user/email/advanced_email_troubleshooting/#4-smtp-handshake-debugging&#34;&gt;TroubleShooting Email - Advanced Part I&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Get extra debug details by using the debug trick mentioned in &lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/#4-smtp-handshake-debugging&#34;&gt;TroubleShooting Email - Advanced Part I&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Switch on email archiving and send some mail. The archiving only takes place after an allegedly successful &amp;lsquo;send&amp;rsquo; so if the email is archived, the website system thinks that it was successfully sent, and the problem lies elsewhere.&lt;/li&gt;
-&lt;li&gt;Give your hosting company details of the time the mail was supposedly sent and ask them to check their mailserver logs.  Here are &lt;a href=&#34;/user/email/email_introduction/#troubleshooting-questions-for-your-hosting-company&#34;&gt;some settings your hosting company may need to help you with email&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Give your hosting company details of the time the mail was supposedly sent and ask them to check their mailserver logs.  Here are &lt;a href=&#34;/zendocs_test1/user/email/email_introduction/#troubleshooting-questions-for-your-hosting-company&#34;&gt;some settings your hosting company may need to help you with email&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Check whether your domain or your hosts have been blacklisted by visiting &lt;a href=&#34;http://www.dnsstuff.com&#34;&gt;http://www.dnsstuff.com&lt;/a&gt; and doing a DnsReport on your domain, and check &lt;a href=&#34;http://www.robtex.com/rbls.html&#34;&gt;http://www.robtex.com/rbls.html&lt;/a&gt; to see if your domain is flagged. Check the mail section of the report, and fix any reported warnings, errors or problems that are in your power to resolve. Engage your hosting company if needed. Refer to Section 1 of this article for more specific details/explanation on Blacklisting and other issues your dnsreport shows you.&lt;/li&gt;
 &lt;li&gt;Ask the intended recipient to check Spam and similar folders. It is also worth checking whether the recipient&amp;rsquo;s email system has a &amp;lsquo;good guys&amp;rsquo; list/setting to &amp;lsquo;Whitelist&amp;rsquo; your site. This tells the mail filters that your domain is expected to send mail to their address, and that it&amp;rsquo;s not Spam.&lt;/li&gt;
 &lt;li&gt;If you&amp;rsquo;re getting &amp;lsquo;Spam flagged&amp;rsquo; emails (you&amp;rsquo;re getting the emails, but they&amp;rsquo;re arriving in your spam folder), check them for the entries in their mail headers, particularly the values for Return-Path, Reply To, and From for strange settings. Note also if they are NOT defined in the headers. Also note any MIME header information and content boundary information for strange settings - a multipart/alternative header with only 1 part in the mail body, or a &amp;ldquo;text/plain&amp;rdquo; content header with HTML body.&lt;/li&gt;
@@ -345,26 +345,26 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
     
     <item>
       <title>User: Adding a message to the admin order update email</title>
-      <link>/user/email/add_message_admin/</link>
+      <link>/zendocs_test1/user/email/add_message_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/add_message_admin/</guid>
+      <guid>/zendocs_test1/user/email/add_message_admin/</guid>
       <description>
         
         
         &lt;p&gt;Since Zen Cart 1.5.7, the capability to add a static message to the admin order update email has been built in.  The file containing the message is located at &amp;lsquo;admin/includes/languages/english/email_extras.php&amp;rsquo;.  Edit this file, and set the defined constant &lt;code&gt;EMAIL_ORDER_UPDATE_MESSAGE&lt;/code&gt; with your additional message and save the file.&lt;/p&gt;
 &lt;p&gt;There is also a notifier called &lt;code&gt;ZEN_UPDATE_ORDERS_HISTORY_SET_ORDER_UPDATE_MESSAGE&lt;/code&gt; which fires when the message is being added, providing the opportunity for customization.&lt;/p&gt;
-&lt;p&gt;You can test your changes to the order update email simply by updating an order on the &lt;a href=&#34;/user/admin_pages/customers/orders/&#34;&gt;order details&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;You can test your changes to the order update email simply by updating an order on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/orders/&#34;&gt;order details&lt;/a&gt; page.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Adding a message to the checkout email</title>
-      <link>/user/email/add_message/</link>
+      <link>/zendocs_test1/user/email/add_message/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/add_message/</guid>
+      <guid>/zendocs_test1/user/email/add_message/</guid>
       <description>
         
         
@@ -378,27 +378,27 @@ Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions
     
     <item>
       <title>User: Audiences</title>
-      <link>/user/email/audiences/</link>
+      <link>/zendocs_test1/user/email/audiences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/audiences/</guid>
+      <guid>/zendocs_test1/user/email/audiences/</guid>
       <description>
         
         
-        &lt;p&gt;Zen Cart contains a table called &lt;code&gt;query_builder&lt;/code&gt; which contains queries that are used to build lists of email addresses for the &lt;a href=&#34;/user/admin_pages/tools/send_email/&#34;&gt;Send Email&lt;/a&gt; and &lt;a href=&#34;/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter Manager&lt;/a&gt; functions.&lt;/p&gt;
+        &lt;p&gt;Zen Cart contains a table called &lt;code&gt;query_builder&lt;/code&gt; which contains queries that are used to build lists of email addresses for the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/send_email/&#34;&gt;Send Email&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter Manager&lt;/a&gt; functions.&lt;/p&gt;
 &lt;p&gt;There is no admin panel interface to this table, but new audiences may be created by copying existing rows and updating as needed.  For example, a list of all newsletter subscribers who have purchased in the last year could be made by copying &amp;ldquo;Active customers in past 3 months (Subscribers)&amp;rdquo; and adjusting the query_name, query_description and query_string values in the new row.&lt;/p&gt;
-&lt;p&gt;It can be helpful to turn on &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/#audienceselect_count_display&#34;&gt;Audience-Select Count Display&lt;/a&gt; while doing this to see the size of the created lists.&lt;/p&gt;
-&lt;p&gt;You can also use plugins like &lt;a href=&#34;/user/email/exporting_email_addresses/&#34;&gt;Email Address Exporter&lt;/a&gt; to build email lists based on audiences.&lt;/p&gt;
+&lt;p&gt;It can be helpful to turn on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/#audienceselect_count_display&#34;&gt;Audience-Select Count Display&lt;/a&gt; while doing this to see the size of the created lists.&lt;/p&gt;
+&lt;p&gt;You can also use plugins like &lt;a href=&#34;/zendocs_test1/user/email/exporting_email_addresses/&#34;&gt;Email Address Exporter&lt;/a&gt; to build email lists based on audiences.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Changing the Email Subject Line</title>
-      <link>/user/email/email_subject_line/</link>
+      <link>/zendocs_test1/user/email/email_subject_line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_subject_line/</guid>
+      <guid>/zendocs_test1/user/email/email_subject_line/</guid>
       <description>
         
         
@@ -414,29 +414,29 @@ The &amp;ldquo;order update&amp;rdquo; email is different again as it is generat
     
     <item>
       <title>User: Correcting Misspelled Email Addresses</title>
-      <link>/user/email/fixing_email_addresses/</link>
+      <link>/zendocs_test1/user/email/fixing_email_addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/fixing_email_addresses/</guid>
+      <guid>/zendocs_test1/user/email/fixing_email_addresses/</guid>
       <description>
         
         
-        &lt;p&gt;See &lt;a href=&#34;/user/running/mistyped_email/&#34;&gt;Fixing a Mis-typed Email Address&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/running/mistyped_email/&#34;&gt;Fixing a Mis-typed Email Address&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Customizing Email</title>
-      <link>/user/email/customizing_email/</link>
+      <link>/zendocs_test1/user/email/customizing_email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/customizing_email/</guid>
+      <guid>/zendocs_test1/user/email/customizing_email/</guid>
       <description>
         
         
         &lt;p&gt;There are several places in the Zen Cart code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one.&lt;/p&gt;
-&lt;p&gt;Don&amp;rsquo;t forget to use the &lt;a href=&#34;/user/template/template_overrides/&#34;&gt;template overrides system&lt;/a&gt; wherever possible when making your changes.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to use the &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;template overrides system&lt;/a&gt; wherever possible when making your changes.&lt;/p&gt;
 &lt;p&gt;The e-mail&amp;rsquo;s structure is determined in one of two ways: if you are sending plain text e-mails, it is determined by the way you put together the various items (customer greeting, order number, link to detailed invoice, etc) in a string variable that is then passed to the &lt;code&gt;zen_mail()&lt;/code&gt; function. If you are sending HTML e-mails, the structure is determined by the template you use.&lt;/p&gt;
 &lt;h2 id=&#34;plain-text-e-mails&#34;&gt;Plain text e-mails&lt;/h2&gt;
 &lt;p&gt;You can rearrange, add, or delete items in a plain text e-mail. To do so, you will need to edit the Zen Cart files where the e-mail is created. For example, if you want to edit the order confirmation e-mail, you will need to edit the file &lt;code&gt;includes/classes/order.php&lt;/code&gt;.&lt;/p&gt;
@@ -457,8 +457,8 @@ The &amp;ldquo;order update&amp;rdquo; email is different again as it is generat
 &lt;p&gt;If you don&amp;rsquo;t understand what&amp;rsquo;s going on in the lines above, you may want to &lt;a href=&#34;http://php.net&#34;&gt;Read more about PHP first&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;html-e-mails&#34;&gt;HTML e-mails&lt;/h2&gt;
 &lt;p&gt;The HTML e-mail templates are located in the folder &lt;code&gt;email/&lt;/code&gt; in your store&amp;rsquo;s root directory. There are several different templates, each for a different purpose. You can rearrange the items, add new items, or delete items to achieve the structure you want for your e-mails.&lt;/p&gt;
-&lt;p&gt;You need not edit any other Zen Cart files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart files that use that particular HTML template, and add in a definition for your new item. You can use the &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.
-in the Admin to find all the files that use a given template; search for the last part of the template name. For example, if you want to add an item into the HTML template &lt;code&gt;email_template_order_status.html&lt;/code&gt;, search for &lt;code&gt;order_status&lt;/code&gt; using the &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need not edit any other Zen Cart files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart files that use that particular HTML template, and add in a definition for your new item. You can use the &lt;a href=&#34;/zendocs_test1/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.
+in the Admin to find all the files that use a given template; search for the last part of the template name. For example, if you want to add an item into the HTML template &lt;code&gt;email_template_order_status.html&lt;/code&gt;, search for &lt;code&gt;order_status&lt;/code&gt; using the &lt;a href=&#34;/zendocs_test1/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Once you have found the files that need to be edited, you will want to add a definition for your new HTML item to each one. For example, suppose you have added an item called &lt;code&gt;$EMAIL_HOURS_OF_OPERATION&lt;/code&gt; to the &lt;code&gt;email_template_order_status.html&lt;/code&gt; template. One of the files that you will need to edit is &lt;code&gt;admin/orders.php&lt;/code&gt;. Find the part of that file where the e-mail message is being constructed; in this case, it begins around line 100.&lt;/p&gt;
 &lt;p&gt;You see that the HTML message is constructed with several statements like this:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;      $html_msg[&amp;#39;EMAIL_CUSTOMERS_NAME&amp;#39;] = $check_status-&amp;gt;fields[&amp;#39;customers_name&amp;#39;];
@@ -545,7 +545,7 @@ email_template_gv_queue.html&lt;/td&gt;
 &lt;h2 id=&#34;modifying-the-order-confirmation-email&#34;&gt;Modifying the Order Confirmation email&lt;/h2&gt;
 &lt;p&gt;A commonly requested change is adding a message to the email your 
 customers get when they place an order. 
-This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I add a message to my order confirmation emails? 
+This is documented in &lt;a href=&#34;/zendocs_test1/user/email/add_message/&#34;&gt;How can I add a message to my order confirmation emails? 
 &lt;/a&gt;.&lt;/p&gt;
 
       </description>
@@ -553,10 +553,10 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
     
     <item>
       <title>User: Email Archive Manager</title>
-      <link>/user/email/email_archive_manager/</link>
+      <link>/zendocs_test1/user/email/email_archive_manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_archive_manager/</guid>
+      <guid>/zendocs_test1/user/email/email_archive_manager/</guid>
       <description>
         
         
@@ -567,27 +567,27 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
 &lt;li&gt;You want the historical record of emails that went out&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The main screen for Email Archive Manager is a listing of all recorded emails sent by the cart.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/email_archive_listing.png&#34; alt=&#34;Email Archive Listing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/email_archive_listing.png&#34; alt=&#34;Email Archive Listing&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Clicking on any particular line provides a brief view of the email, and an opportunity to open the entire email in TEXT or HTML format (if so configured).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/email_archive_detail.png&#34; alt=&#34;Email Archive Detail&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/email_archive_detail.png&#34; alt=&#34;Email Archive Detail&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To use the Email Archive Manager, you must enable email archiving in 
-&lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Email Transport Methods</title>
-      <link>/user/email/email_transport_methods/</link>
+      <link>/zendocs_test1/user/email/email_transport_methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_transport_methods/</guid>
+      <guid>/zendocs_test1/user/email/email_transport_methods/</guid>
       <description>
         
         
         &lt;h2 id=&#34;email-transport-methods-explained&#34;&gt;Email Transport methods explained&lt;/h2&gt;
 &lt;p&gt;Zen Cart supports multiple email transport methods.&lt;/p&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt; and try them in this order:&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt; and try them in this order:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&amp;ldquo;php&amp;rdquo; &amp;ndash; this uses whatever email method your webserver is configured to use for PHP mail commands, as set by your webhost.  This will work fine in most cases.&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;smtp&amp;rdquo; or &amp;ldquo;smtpauth&amp;rdquo; &amp;ndash; for reliable email, many hosts require that you use &amp;ldquo;smtp&amp;rdquo; or usually &amp;ldquo;smtpauth&amp;rdquo; and set all the SMTP settings shown lower on the page.&lt;/li&gt;
@@ -595,8 +595,8 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
 &lt;li&gt;&amp;ldquo;sendmail -f&amp;rdquo; &amp;ndash; this is ideal in cases where your webserver configuration has some tighter security requirements &amp;ndash; esp in busy shared-hosting environments.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Zen Cart also supports the use of Qmail and Gmail.&lt;/p&gt;
-&lt;p&gt;Using SMTPAuth, along with &lt;a href=&#34;/user/email/advanced_email_troubleshooting/&#34;&gt;DKIM and SPF&lt;/a&gt;, is generally the most trouble-free way to send email from your cart.&lt;/p&gt;
-&lt;p&gt;You may also wish to use SMTPAuth with &lt;a href=&#34;/user/email/external_smtp_servers/&#34;&gt;an external SMTP provider&lt;/a&gt; such as SMTP2Go or Mailgun.&lt;/p&gt;
+&lt;p&gt;Using SMTPAuth, along with &lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/&#34;&gt;DKIM and SPF&lt;/a&gt;, is generally the most trouble-free way to send email from your cart.&lt;/p&gt;
+&lt;p&gt;You may also wish to use SMTPAuth with &lt;a href=&#34;/zendocs_test1/user/email/external_smtp_servers/&#34;&gt;an external SMTP provider&lt;/a&gt; such as SMTP2Go or Mailgun.&lt;/p&gt;
 &lt;p&gt;Using Google Mail can be problematic for a number of reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -612,10 +612,10 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
     
     <item>
       <title>User: Exporting customer email addresses</title>
-      <link>/user/email/exporting_email_addresses/</link>
+      <link>/zendocs_test1/user/email/exporting_email_addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/exporting_email_addresses/</guid>
+      <guid>/zendocs_test1/user/email/exporting_email_addresses/</guid>
       <description>
         
         
@@ -628,14 +628,14 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
     
     <item>
       <title>User: Fabricating Email Addresses</title>
-      <link>/user/email/fabricating_email_addresses/</link>
+      <link>/zendocs_test1/user/email/fabricating_email_addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/fabricating_email_addresses/</guid>
+      <guid>/zendocs_test1/user/email/fabricating_email_addresses/</guid>
       <description>
         
         
-        &lt;p&gt;If you have customers who want to buy online from you but don&amp;rsquo;t have an email address, the solution is straightforward: as suggested in &lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;login as customer&lt;/a&gt;, you can simply create an email using their name.  For example, if your customer&amp;rsquo;s name was Scott Wilson, you could create an account with the email &lt;a href=&#34;mailto:scott.wilson@YOURDOMAIN.com&#34;&gt;scott.wilson@YOURDOMAIN.com&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;If you have customers who want to buy online from you but don&amp;rsquo;t have an email address, the solution is straightforward: as suggested in &lt;a href=&#34;/zendocs_test1/user/running/login_as_customer/&#34;&gt;login as customer&lt;/a&gt;, you can simply create an email using their name.  For example, if your customer&amp;rsquo;s name was Scott Wilson, you could create an account with the email &lt;a href=&#34;mailto:scott.wilson@YOURDOMAIN.com&#34;&gt;scott.wilson@YOURDOMAIN.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There is just one problem: if the email address &lt;a href=&#34;mailto:scott.wilson@YOURDOMAIN.com&#34;&gt;scott.wilson@YOURDOMAIN.com&lt;/a&gt; doesn&amp;rsquo;t exist, the email will bounce, and too many bounces will cause your hoster to complain and/or your deliverability to suffer.&lt;/p&gt;
 &lt;p&gt;There are a couple of solutions to this issue:&lt;/p&gt;
 &lt;p&gt;a) Depending on how your email is configured, your email server may have the option of a &amp;ldquo;catch all&amp;rdquo; email.  Non-existent emails will be forwarded to this address and thus not bounce.&lt;/p&gt;
@@ -663,14 +663,14 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
     
     <item>
       <title>User: Gmail</title>
-      <link>/user/email/gmail/</link>
+      <link>/zendocs_test1/user/email/gmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/gmail/</guid>
+      <guid>/zendocs_test1/user/email/gmail/</guid>
       <description>
         
         
-        &lt;p&gt;This topic is covered in &lt;a href=&#34;/user/email/external_smtp_servers/#google-mail--gmail&#34;&gt;Using External SMTP Servers&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;This topic is covered in &lt;a href=&#34;/zendocs_test1/user/email/external_smtp_servers/#google-mail--gmail&#34;&gt;Using External SMTP Servers&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If your issue is that you don&amp;rsquo;t see Gmail in your Email Transport options, see &lt;a href=&#34;https://www.zen-cart.com/showthread.php?223581-Done-v1-5-6-EMAIL_TRANSPORT-settings-created-by-install-upgrade-missing-Gmail&amp;amp;p=1372383#post1372383&#34;&gt;this forum post&lt;/a&gt;.&lt;/p&gt;
 
       </description>
@@ -678,10 +678,10 @@ This is documented in &lt;a href=&#34;/user/email/add_message/&#34;&gt;How can I
     
     <item>
       <title>User: How do I build HTML-formatted Email for other languages?</title>
-      <link>/user/email/multilang/</link>
+      <link>/zendocs_test1/user/email/multilang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/multilang/</guid>
+      <guid>/zendocs_test1/user/email/multilang/</guid>
       <description>
         
         
@@ -700,24 +700,24 @@ However, you may create/use language-specific templates in subfolders named in a
     
     <item>
       <title>User: How do I email all my customers about a sale or promotion?</title>
-      <link>/user/email/all_customers/</link>
+      <link>/zendocs_test1/user/email/all_customers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/all_customers/</guid>
+      <guid>/zendocs_test1/user/email/all_customers/</guid>
       <description>
         
         
-        &lt;p&gt;Sending large numbers of emails from your own hosting account is not recommended.  See &lt;a href=&#34;/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt; for alternatives.&lt;/p&gt;
+        &lt;p&gt;Sending large numbers of emails from your own hosting account is not recommended.  See &lt;a href=&#34;/zendocs_test1/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt; for alternatives.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I prevent my email from being treated like spam?</title>
-      <link>/user/email/spam/</link>
+      <link>/zendocs_test1/user/email/spam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/spam/</guid>
+      <guid>/zendocs_test1/user/email/spam/</guid>
       <description>
         
         
@@ -727,7 +727,7 @@ However, you may create/use language-specific templates in subfolders named in a
 &lt;li&gt;change your email transport method to &amp;ldquo;SMTPAUTH&amp;rdquo; (or &amp;ldquo;sendmail -f&amp;rdquo; as a last resort). This will cause the messages to appear as they are coming from &amp;ldquo;you&amp;rdquo; instead of as coming from your server&amp;rsquo;s unsigned PHP.&lt;/li&gt;
 &lt;li&gt;the option &amp;lsquo;Emails must send from known domain?&amp;rsquo; should be set to True. This will cause e-mail providers see that it is coming from someplace legitimate and not filter it as spam. And, more specifically, your own webserver will not ignore it because it will now appear as legitimately coming from itself (whom it &amp;ldquo;knows&amp;rdquo;), rather than from a 3rd-party.&lt;/li&gt;
 &lt;li&gt;AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup. If those words/terms don&amp;rsquo;t mean anything to you, simply talk to your hosting company about them!&lt;/li&gt;
-&lt;li&gt;Ensure you haven&amp;rsquo;t damaged your own deliverability by &lt;a href=&#34;/user/email/fabricating_email_addresses/&#34;&gt;fabricating email addresses&lt;/a&gt; but not properly handling them with a catch-all or some other mechanism.&lt;/li&gt;
+&lt;li&gt;Ensure you haven&amp;rsquo;t damaged your own deliverability by &lt;a href=&#34;/zendocs_test1/user/email/fabricating_email_addresses/&#34;&gt;fabricating email addresses&lt;/a&gt; but not properly handling them with a catch-all or some other mechanism.&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -735,10 +735,10 @@ However, you may create/use language-specific templates in subfolders named in a
     
     <item>
       <title>User: HTML Email Templates</title>
-      <link>/user/email/html_email_templates/</link>
+      <link>/zendocs_test1/user/email/html_email_templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/html_email_templates/</guid>
+      <guid>/zendocs_test1/user/email/html_email_templates/</guid>
       <description>
         
         
@@ -899,7 +899,7 @@ $PAYMENT_METHOD_FOOTER (Payment method footer, if any)
 &lt;p&gt;Prior to Zen Cart 1.5.5, this option was called &lt;strong&gt;Use MIME HTML When Sending Emails&lt;/strong&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;To access the email archive, see &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To access the email archive, see &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -909,10 +909,10 @@ $PAYMENT_METHOD_FOOTER (Payment method footer, if any)
     
     <item>
       <title>User: Logos in HTML emails</title>
-      <link>/user/email/logo/</link>
+      <link>/zendocs_test1/user/email/logo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/logo/</guid>
+      <guid>/zendocs_test1/user/email/logo/</guid>
       <description>
         
         
@@ -928,12 +928,12 @@ $PAYMENT_METHOD_FOOTER (Payment method footer, if any)
   define (&amp;#39;EMAIL_LOGO_HEIGHT&amp;#39;, &amp;#39;110&amp;#39;);
   define (&amp;#39;EMAIL_LOGO_ALT_TITLE_TEXT&amp;#39;, &amp;#39;Zen Cart! The Art of E-commerce&amp;#39;);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you use the same logo for your site and your email, the values for these defined constants will be the same ones as you entered in your &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change.  See &lt;a href=&#34;/user/new_user_topics/browser_caching/&#34;&gt;caching&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NOTE: You must be sending HTML emails for this to work.&lt;/strong&gt;  See the Enable HTML Emails setting in &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options &lt;/a&gt; setting.&lt;/p&gt;
+&lt;p&gt;Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change.  See &lt;a href=&#34;/zendocs_test1/user/new_user_topics/browser_caching/&#34;&gt;caching&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: You must be sending HTML emails for this to work.&lt;/strong&gt;  See the Enable HTML Emails setting in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options &lt;/a&gt; setting.&lt;/p&gt;
 &lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/orders/high_res_logo&#34;&gt;Using your logo on packing slips and invoices&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/change_header_logo/&#34;&gt;Changing the logo in the header&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/orders/high_res_logo&#34;&gt;Using your logo on packing slips and invoices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/new_user_topics/change_header_logo/&#34;&gt;Changing the logo in the header&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -941,16 +941,16 @@ $PAYMENT_METHOD_FOOTER (Payment method footer, if any)
     
     <item>
       <title>User: Newsletters</title>
-      <link>/user/email/newsletters/</link>
+      <link>/zendocs_test1/user/email/newsletters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/newsletters/</guid>
+      <guid>/zendocs_test1/user/email/newsletters/</guid>
       <description>
         
         
         &lt;p&gt;Sending large numbers of emails (newsletters or other marketing content)
-using &lt;a href=&#34;/user/admin_pages/tools/send_email/&#34;&gt;Send Email&lt;/a&gt; or 
-&lt;a href=&#34;/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter Manager&lt;/a&gt;
+using &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/send_email/&#34;&gt;Send Email&lt;/a&gt; or 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter Manager&lt;/a&gt;
 is not recommended.  Your server and hosting account probably don&amp;rsquo;t allow for
 mass quantities of broadcast emails, and doing so could cause you to be treated like a spammer.&lt;/p&gt;
 &lt;p&gt;Instead, we recommend that you use an &lt;em&gt;Email Service Provider&lt;/em&gt; (ESP) to handle your
@@ -973,14 +973,14 @@ They also have paid features and now position themselves as a full marketing pla
 &lt;p&gt;Because you are no longer using Zen Cart&amp;rsquo;s newsletter feature, you will want to stop capturing signups through Zen Cart.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Turn off &lt;a href=&#34;/user/admin_pages/configuration/configuration_customerdetails/#show_newsletter_checkbox&#34;&gt;Show Newsletter Checkbox&lt;/a&gt; in Admin &amp;gt; Configuration &amp;gt; Customer Details.&lt;/p&gt;
+&lt;p&gt;Turn off &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/#show_newsletter_checkbox&#34;&gt;Show Newsletter Checkbox&lt;/a&gt; in Admin &amp;gt; Configuration &amp;gt; Customer Details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Turn off &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/#display_newsletter_unsubscribe_link&#34;&gt;Display &amp;ldquo;Newsletter Unsubscribe&amp;rdquo; Link&lt;/a&gt; in Admin &amp;gt; Configuration &amp;gt; E-Mail Options.&lt;/p&gt;
+&lt;p&gt;Turn off &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/#display_newsletter_unsubscribe_link&#34;&gt;Display &amp;ldquo;Newsletter Unsubscribe&amp;rdquo; Link&lt;/a&gt; in Admin &amp;gt; Configuration &amp;gt; E-Mail Options.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;handling-subscribes-and-unsubscribes&#34;&gt;Handling Subscribes and Unsubscribes&lt;/h3&gt;
-&lt;p&gt;Most Email Service Providers will provide you with a signup form to use on your website that allows you to allow people to signup for your newsletter.  Use this form, either as a &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;sidebox&lt;/a&gt; or as a &lt;a href=&#34;/user/customizing/add_pages/#build-a-new-custom-page&#34;&gt;new custom page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most Email Service Providers will provide you with a signup form to use on your website that allows you to allow people to signup for your newsletter.  Use this form, either as a &lt;a href=&#34;/zendocs_test1/user/template/sideboxes/&#34;&gt;sidebox&lt;/a&gt; or as a &lt;a href=&#34;/zendocs_test1/user/customizing/add_pages/#build-a-new-custom-page&#34;&gt;new custom page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Generally unsubscribes will be done by clicking the unsubscribe link that is provided at the bottom of your email; doing this within your cart is somewhat complicated and will require custom coding.&lt;/p&gt;
 
       </description>
@@ -988,10 +988,10 @@ They also have paid features and now position themselves as a full marketing pla
     
     <item>
       <title>User: Using External SMTP Servers</title>
-      <link>/user/email/external_smtp_servers/</link>
+      <link>/zendocs_test1/user/email/external_smtp_servers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/external_smtp_servers/</guid>
+      <guid>/zendocs_test1/user/email/external_smtp_servers/</guid>
       <description>
         
         
@@ -1016,7 +1016,7 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
 &lt;p&gt;If you&amp;rsquo;re hosting someplace other than Yahoo but trying to send email through your Yahoo email address, work with your hosting company to configure your &lt;code&gt;DomainKeys&lt;/code&gt; and &lt;code&gt;SPF&lt;/code&gt; settings to allow the emails to be accepted instead of being rejected as forged spam messages.&lt;/p&gt;
 &lt;h2 id=&#34;google-mail--gmail&#34;&gt;Google Mail / Gmail&lt;/h2&gt;
 &lt;p&gt;Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port &lt;code&gt;587&lt;/code&gt; for TLS.&lt;/p&gt;
-&lt;p&gt;Zen Cart supports this by using the following settings in &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Zen Cart supports this by using the following settings in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;:&lt;/p&gt;
 &lt;h3 id=&#34;gmail&#34;&gt;Gmail&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Email Transport: &lt;code&gt;Gmail&lt;/code&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
@@ -1040,7 +1040,7 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
 &lt;p&gt;You may have to have your host make some changes to your domain&amp;rsquo;s &lt;code&gt;MX&lt;/code&gt; records if you are using Google hosted mail. Details for that are on Google&amp;rsquo;s help site.&lt;/p&gt;
 &lt;p&gt;You may also have to open your webserver&amp;rsquo;s firewall to allow access to Google&amp;rsquo;s servers and whatever port you&amp;rsquo;re using to communicate with them. Your hosting company&amp;rsquo;s server administrator will know how to identify the correct address and how to fix their firewall accordingly.&lt;/p&gt;
 &lt;h2 id=&#34;office-365&#34;&gt;Office 365&lt;/h2&gt;
-&lt;p&gt;Use the following settings in &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Use the following settings in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Email Transport: smtpauth&lt;/li&gt;
 &lt;li&gt;SMTP Username: your Outlook email address&lt;/li&gt;
@@ -1104,8 +1104,8 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
 &lt;ul&gt;
 &lt;li&gt;If you are on shared hosting, you may simply not be allowed to use an external SMTP server.  Check with your hoster.&lt;/li&gt;
 &lt;li&gt;You may have to tell your hoster that you want to use an external SMTP server and have them open port 587.&lt;/li&gt;
-&lt;li&gt;You may need to &lt;a href=&#34;https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&#34;&gt;troubleshoot PHPMailer&lt;/a&gt;, including &lt;a href=&#34;/user/email/advanced_email_troubleshooting/#5-smtp-handshake-debugging&#34;&gt;SMTP Handshake debugging&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You may have to review &lt;a href=&#34;/user/email/emails_not_received/&#34;&gt;email troubleshooting instructions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You may need to &lt;a href=&#34;https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&#34;&gt;troubleshoot PHPMailer&lt;/a&gt;, including &lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/#5-smtp-handshake-debugging&#34;&gt;SMTP Handshake debugging&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You may have to review &lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;email troubleshooting instructions&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -1121,10 +1121,10 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
     
     <item>
       <title>User: Welcome email</title>
-      <link>/user/email/welcome/</link>
+      <link>/zendocs_test1/user/email/welcome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/welcome/</guid>
+      <guid>/zendocs_test1/user/email/welcome/</guid>
       <description>
         
         
@@ -1144,7 +1144,7 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
 &lt;p&gt;Copy a few of those words &amp;ldquo;exactly&amp;rdquo; to the clipboard. Example: &lt;code&gt;your opinions on products&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Open the &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Toolkit&lt;/a&gt; under Admin &amp;gt; Tools &amp;gt; Developers Tool Kit&lt;/p&gt;
+&lt;p&gt;Open the &lt;a href=&#34;/zendocs_test1/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Toolkit&lt;/a&gt; under Admin &amp;gt; Tools &amp;gt; Developers Tool Kit&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Paste those words exactly as they appeared on the email into the first search box.&lt;/p&gt;
@@ -1168,22 +1168,22 @@ If your host requires that you send email over SSL, then set your SMTP Port to &
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; It is recommended that you place your customized file in an Overrides folder, like this:
 &lt;code&gt;includes/languages/english/YOURTEMPLATE/create_account.php&lt;/code&gt;.
 where &lt;code&gt;YOURTEMPLATE&lt;/code&gt; is the name of the custom template you&amp;rsquo;ve been developing for your site.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; If you want to test your change once you have made it, rather than signing up for another free email account, you can just delete your account from your store in &lt;a href=&#34;/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/a&gt; and then create it in the usual way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; If you want to test your change once you have made it, rather than signing up for another free email account, you can just delete your account from your store in &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/a&gt; and then create it in the usual way.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Where are my emails stored?</title>
-      <link>/user/email/email_stored/</link>
+      <link>/zendocs_test1/user/email/email_stored/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_stored/</guid>
+      <guid>/zendocs_test1/user/email/email_stored/</guid>
       <description>
         
         
         &lt;p&gt;By default, sent emails are not stored.  You may however turn on saving emails
-using setting the &lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active&#34;&gt;Email Archiving Active&lt;/a&gt; configuration value to &lt;em&gt;true&lt;/em&gt;, and you may view stored emails using &lt;a href=&#34;/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
+using setting the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active&#34;&gt;Email Archiving Active&lt;/a&gt; configuration value to &lt;em&gt;true&lt;/em&gt;, and you may view stored emails using &lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager/&#34;&gt;Email Archive Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This &lt;code&gt;email_archive&lt;/code&gt; table, where emails are stored, grows large
 quickly, so be sure to cull it frequently.&lt;/p&gt;
 
@@ -1192,10 +1192,10 @@ quickly, so be sure to cull it frequently.&lt;/p&gt;
     
     <item>
       <title>User: Why do emails not show in HTML format?</title>
-      <link>/user/email/email_html_not_shown/</link>
+      <link>/zendocs_test1/user/email/email_html_not_shown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/email/email_html_not_shown/</guid>
+      <guid>/zendocs_test1/user/email/email_html_not_shown/</guid>
       <description>
         
         
@@ -1216,9 +1216,9 @@ quickly, so be sure to cull it frequently.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Be sure to review the troubleshooting FAQs for other tips related to potential delivery problems.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/email_introduction/&#34;&gt;Introduction to email&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/emails_not_received/&#34;&gt;Basic email troubleshooting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/email_introduction/&#34;&gt;Introduction to email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;Basic email troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – EU Digital VAT</title>
-    <link>/dev/eu_digital_vat/</link>
+    <link>/zendocs_test1/dev/eu_digital_vat/</link>
     <description>Recent content in EU Digital VAT on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/eu_digital_vat/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/eu_digital_vat/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/eu_digital_vat/introduction/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/introduction/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/introduction/</guid>
       <description>
         
         
@@ -33,10 +33,10 @@
     
     <item>
       <title>Dev: Scoping</title>
-      <link>/dev/eu_digital_vat/scoping/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/scoping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/scoping/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/scoping/</guid>
       <description>
         
         
@@ -56,10 +56,10 @@
     
     <item>
       <title>Dev: Flagging Products</title>
-      <link>/dev/eu_digital_vat/flagging_products/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/flagging_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/flagging_products/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/flagging_products/</guid>
       <description>
         
         
@@ -74,10 +74,10 @@
     
     <item>
       <title>Dev: Tax Rate</title>
-      <link>/dev/eu_digital_vat/determining_tax_rate/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/determining_tax_rate/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</guid>
       <description>
         
         
@@ -93,10 +93,10 @@ However with Digital Goods, the VAT is determined by the customers country. For 
     
     <item>
       <title>Dev: Location</title>
-      <link>/dev/eu_digital_vat/location_identification/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/location_identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/location_identification/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/location_identification/</guid>
       <description>
         
         
@@ -111,10 +111,10 @@ However if for some reason the geoIP returns a different country, then some 3rd 
     
     <item>
       <title>Dev: Restrict Digital Downloads by Country</title>
-      <link>/dev/eu_digital_vat/opt_out_by_country/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/opt_out_by_country/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</guid>
       <description>
         
         
@@ -128,10 +128,10 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: B2B or B2C</title>
-      <link>/dev/eu_digital_vat/identifying_b2b_or_b2c/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/identifying_b2b_or_b2c/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</guid>
       <description>
         
         
@@ -144,10 +144,10 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: Reporting</title>
-      <link>/dev/eu_digital_vat/reporting/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/reporting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/reporting/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/reporting/</guid>
       <description>
         
         
@@ -159,10 +159,10 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: Resources</title>
-      <link>/dev/eu_digital_vat/resources/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/resources/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/resources/</guid>
       <description>
         
         
@@ -178,10 +178,10 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: Collaboration</title>
-      <link>/dev/eu_digital_vat/conference_call_2014_12_30/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/conference_call_2014_12_30/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</guid>
       <description>
         
         

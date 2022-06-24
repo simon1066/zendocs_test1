@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Code</title>
-    <link>/dev/code/</link>
+    <link>/zendocs_test1/dev/code/</link>
     <description>Recent content in Code on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/code/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/code/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Admin Request Sanitization</title>
-      <link>/dev/code/admin_sanitization/</link>
+      <link>/zendocs_test1/dev/code/admin_sanitization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/admin_sanitization/</guid>
+      <guid>/zendocs_test1/dev/code/admin_sanitization/</guid>
       <description>
         
         
@@ -260,14 +260,14 @@ deeper arrays with a further MULTI_DIMENSIONAL sanitizer array.&lt;/p&gt;
     
     <item>
       <title>Dev: Adding a child table to the products table</title>
-      <link>/dev/code/child_table_products/</link>
+      <link>/zendocs_test1/dev/code/child_table_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/child_table_products/</guid>
+      <guid>/zendocs_test1/dev/code/child_table_products/</guid>
       <description>
         
         
-        &lt;p&gt;As an alternative to &lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;adding a field&lt;/a&gt;, you may wish to create a child table.&lt;/p&gt;
+        &lt;p&gt;As an alternative to &lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;adding a field&lt;/a&gt;, you may wish to create a child table.&lt;/p&gt;
 &lt;p&gt;You can see cases where this is already done in Zen Cart: the &lt;code&gt;products_description&lt;/code&gt; table is a child table of the &lt;code&gt;products&lt;/code&gt; table, linked by &lt;code&gt;products_id&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Why would you create a child table rather than just extend the products table?  Here are some scenarios:&lt;/p&gt;
 &lt;ul&gt;
@@ -282,34 +282,34 @@ deeper arrays with a further MULTI_DIMENSIONAL sanitizer array.&lt;/p&gt;
 &lt;li&gt;What happens when a product is deleted?  You may wish to modify &lt;code&gt;admin/includes/modules/delete_product_confirm.php&lt;/code&gt; or the &lt;code&gt;zen_remove_product&lt;/code&gt; function.&lt;/li&gt;
 &lt;li&gt;What happens when a product is copied?  You may wish to modify &lt;code&gt;admin/includes/modules/copy_product_confirm.php&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then you will need to &lt;a href=&#34;/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you will need to &lt;a href=&#34;/zendocs_test1/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adding a field to the products table</title>
-      <link>/dev/code/add_field_products/</link>
+      <link>/zendocs_test1/dev/code/add_field_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/add_field_products/</guid>
+      <guid>/zendocs_test1/dev/code/add_field_products/</guid>
       <description>
         
         
         &lt;p&gt;A plugin called &lt;a href=&#34;https://github.com/torvista/Zen_Cart-Extra_Product_Fields&#34;&gt;Extra Product Fields&lt;/a&gt;
 has been developed that demonstrates the use of observers to add a field to the products table.&lt;/p&gt;
-&lt;p&gt;As an alternative approach, you may wish to &lt;a href=&#34;/dev/code/child_table_products/&#34;&gt;create a child table&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Then you will need to &lt;a href=&#34;/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As an alternative approach, you may wish to &lt;a href=&#34;/zendocs_test1/dev/code/child_table_products/&#34;&gt;create a child table&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you will need to &lt;a href=&#34;/zendocs_test1/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adding a Status History Record to an Order</title>
-      <link>/dev/code/updating_orders_status_history/</link>
+      <link>/zendocs_test1/dev/code/updating_orders_status_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/updating_orders_status_history/</guid>
+      <guid>/zendocs_test1/dev/code/updating_orders_status_history/</guid>
       <description>
         
         
@@ -378,14 +378,14 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Admin cron jobs</title>
-      <link>/dev/code/admin_cron/</link>
+      <link>/zendocs_test1/dev/code/admin_cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/admin_cron/</guid>
+      <guid>/zendocs_test1/dev/code/admin_cron/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/first_steps/hosting/#cron&#34;&gt;Cron&lt;/a&gt; is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the &lt;a href=&#34;/user/admin_pages/localization/currencies/#update-currencies&#34;&gt;exchange rate updater&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#cron&#34;&gt;Cron&lt;/a&gt; is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/currencies/#update-currencies&#34;&gt;exchange rate updater&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What if you want to create your own custom cron job?&lt;/p&gt;
 &lt;p&gt;The easiest way to do this is simply to follow the example of the exchange rate updater.  The key points to note are as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -400,10 +400,10 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Auto Inclusion System</title>
-      <link>/dev/code/inclusion/</link>
+      <link>/zendocs_test1/dev/code/inclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/inclusion/</guid>
+      <guid>/zendocs_test1/dev/code/inclusion/</guid>
       <description>
         
         
@@ -417,29 +417,29 @@ has been developed that demonstrates the use of observers to add a field to the 
 &lt;/ul&gt;
 &lt;h3 id=&#34;extra-datafiles-extra-configures-extra-cart-actions&#34;&gt;Extra Datafiles, Extra Configures, Extra Cart Actions&lt;/h3&gt;
 &lt;p&gt;Any &lt;code&gt;*.php&lt;/code&gt; files in this folder are loaded automatically.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt; for a complete list.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt; for a complete list.&lt;/p&gt;
 &lt;h3 id=&#34;auto-loaded-observers&#34;&gt;Auto Loaded Observers&lt;/h3&gt;
-&lt;p&gt;These are described in the &lt;a href=&#34;/dev/code/notifiers/#auto-loaded-observers&#34;&gt;Notifiers and Observers&lt;/a&gt; documentation. Auto-loaded Observer files include those in &lt;code&gt;includes/classes/observers&lt;/code&gt; (and Admin) whose name begins with &lt;code&gt;auto.&lt;/code&gt; and which define a class named &lt;strong&gt;zcObserver&lt;/strong&gt; + the &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCased&lt;/a&gt; filename - for example, &lt;code&gt;class zcObserverFooObserver&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These are described in the &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/#auto-loaded-observers&#34;&gt;Notifiers and Observers&lt;/a&gt; documentation. Auto-loaded Observer files include those in &lt;code&gt;includes/classes/observers&lt;/code&gt; (and Admin) whose name begins with &lt;code&gt;auto.&lt;/code&gt; and which define a class named &lt;strong&gt;zcObserver&lt;/strong&gt; + the &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCased&lt;/a&gt; filename - for example, &lt;code&gt;class zcObserverFooObserver&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;stylesheets&#34;&gt;Stylesheets&lt;/h3&gt;
-&lt;p&gt;A number of stylesheets are automatically loaded; this process is described in the &lt;a href=&#34;/user/template/stylesheet/&#34;&gt;stylesheet documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A number of stylesheets are automatically loaded; this process is described in the &lt;a href=&#34;/zendocs_test1/user/template/stylesheet/&#34;&gt;stylesheet documentation&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Building a Form</title>
-      <link>/dev/code/forms/</link>
+      <link>/zendocs_test1/dev/code/forms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/forms/</guid>
+      <guid>/zendocs_test1/dev/code/forms/</guid>
       <description>
         
         
         &lt;p&gt;Adding a custom form to your site is a common customization.  There are a few guidelines for when you do this:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Always &lt;a href=&#34;/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets&#34;&gt;submit your form data using POST&lt;/a&gt;. Never use GET for forms. (There are exceptions of course, but if you don&amp;rsquo;t already grok best practices for that, then never use GET for forms!)&lt;/li&gt;
+&lt;li&gt;Always &lt;a href=&#34;/zendocs_test1/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets&#34;&gt;submit your form data using POST&lt;/a&gt;. Never use GET for forms. (There are exceptions of course, but if you don&amp;rsquo;t already grok best practices for that, then never use GET for forms!)&lt;/li&gt;
 &lt;li&gt;Use &lt;code&gt;zen_draw_form&lt;/code&gt;, not the HTML &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag.  Note that when you use &lt;code&gt;zen_draw_form&lt;/code&gt;, you get the &lt;code&gt;securityToken&lt;/code&gt; with no extra work.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/database_querying/&#34;&gt;Sanitize your inputs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/database_querying/&#34;&gt;Sanitize your inputs&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A good model for all of this is the Ask a Question feature, which has been part of Zen Cart since 1.5.7.  See the following files:&lt;/p&gt;
 &lt;ul&gt;
@@ -455,10 +455,10 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Building a Home Page widget</title>
-      <link>/dev/code/widget/</link>
+      <link>/zendocs_test1/dev/code/widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/widget/</guid>
+      <guid>/zendocs_test1/dev/code/widget/</guid>
       <description>
         
         
@@ -486,16 +486,16 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Building a Report</title>
-      <link>/dev/code/reports/</link>
+      <link>/zendocs_test1/dev/code/reports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/reports/</guid>
+      <guid>/zendocs_test1/dev/code/reports/</guid>
       <description>
         
         
         &lt;p&gt;Adding a custom report to your site&amp;rsquo;s admin is a common customization.&lt;/p&gt;
 &lt;p&gt;The easiest way to do this is simply to follow one of the built-in examples. 
-We&amp;rsquo;ll use the &lt;a href=&#34;/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt; report.&lt;/p&gt;
+We&amp;rsquo;ll use the &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt; report.&lt;/p&gt;
 &lt;p&gt;There are two files that make up this report:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;admin/stats_products_lowstock.php&lt;/li&gt;
@@ -536,10 +536,10 @@ define(&amp;#39;BOX_REPORTS_ZERO_WEIGHT&amp;#39;,&amp;#39;Zero Weight Report&amp
     
     <item>
       <title>Dev: Creating a new Admin menu item</title>
-      <link>/dev/code/creating_menu/</link>
+      <link>/zendocs_test1/dev/code/creating_menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/creating_menu/</guid>
+      <guid>/zendocs_test1/dev/code/creating_menu/</guid>
       <description>
         
         
@@ -642,19 +642,19 @@ or if you want to display a message indicating that your tool has been installed
 &lt;p&gt;Rather than write code as shown above, some developers prefer to provide a SQL file that can be run from Admin &amp;gt; Tools &amp;gt; Install SQL Patches.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES (&amp;#39;mod_list&amp;#39;, &amp;#39;BOX_TOOLS_MOD_LIST&amp;#39;, &amp;#39;FILENAME_MOD_LIST&amp;#39;, &amp;#39;&amp;#39;, &amp;#39;tools&amp;#39;, &amp;#39;Y&amp;#39;, 999);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The advantage of this approach is that it&amp;rsquo;s a one time operation with no checking overhead in the future.&lt;/p&gt;
-&lt;p&gt;Still others simply point users to the &lt;a href=&#34;/user/admin_pages/admins/admin_page_registration/&#34;&gt;Admin Page Registration&lt;/a&gt; page. Note that this approach is not encouraged.&lt;/p&gt;
+&lt;p&gt;Still others simply point users to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_page_registration/&#34;&gt;Admin Page Registration&lt;/a&gt; page. Note that this approach is not encouraged.&lt;/p&gt;
 &lt;h2 id=&#34;using-the-encapsulated-plugin-manager&#34;&gt;Using the Encapsulated Plugin Manager&lt;/h2&gt;
-&lt;p&gt;For developers targeting 1.5.7 and above, the &lt;a href=&#34;/dev/plugins/encapsulated_plugins/&#34;&gt;encapsulated plugin&lt;/a&gt; architecture is the new standard.  For details on SQL actions in encapsulated plugins, see &lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For developers targeting 1.5.7 and above, the &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/&#34;&gt;encapsulated plugin&lt;/a&gt; architecture is the new standard.  For details on SQL actions in encapsulated plugins, see &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Creating or Modifying a table</title>
-      <link>/dev/code/creating_tables/</link>
+      <link>/zendocs_test1/dev/code/creating_tables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/creating_tables/</guid>
+      <guid>/zendocs_test1/dev/code/creating_tables/</guid>
       <description>
         
         
@@ -668,7 +668,7 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
 &lt;p&gt;Changing a table&amp;rsquo;s structure - adding or removing fields, modifying default values and so forth - is done with the SQL &lt;code&gt;ALTER TABLE&lt;/code&gt; command.  Again, you may provide a .sql file or automate this action.&lt;/p&gt;
 &lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -676,21 +676,21 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
     
     <item>
       <title>Dev: Displaying Custom Fields</title>
-      <link>/dev/code/displaying_custom_fields/</link>
+      <link>/zendocs_test1/dev/code/displaying_custom_fields/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/displaying_custom_fields/</guid>
+      <guid>/zendocs_test1/dev/code/displaying_custom_fields/</guid>
       <description>
         
         
         &lt;p&gt;Once you have finished adding a field to the database, you will need to figure out where you want to display it, and write the code to do that.   Here are some guidelines.&lt;/p&gt;
 &lt;h2 id=&#34;case-1-new-field-in-products-table&#34;&gt;Case 1: New field in products table&lt;/h2&gt;
-&lt;p&gt;a) Adding the new field to the &lt;a href=&#34;/user/products/product_info/&#34;&gt;product_info page&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;a) Adding the new field to the &lt;a href=&#34;/zendocs_test1/user/products/product_info/&#34;&gt;product_info page&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/pages/product_info/main_template_vars.php&lt;/code&gt; to retrieve the field and create a variable to store it.&lt;/li&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php&lt;/code&gt; to show the variable.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;b) Adding the new field to the &lt;a href=&#34;/user/template/product_listing_page_configuration/&#34;&gt;product listing&lt;/a&gt; page:&lt;/p&gt;
+&lt;p&gt;b) Adding the new field to the &lt;a href=&#34;/zendocs_test1/user/template/product_listing_page_configuration/&#34;&gt;product listing&lt;/a&gt; page:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/pages/index/main_template_vars.php&lt;/code&gt; to retrieve the new field.&lt;/li&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/YOURTEMPLATE/product_listing.php&lt;/code&gt; to display the field.&lt;/li&gt;
@@ -713,7 +713,7 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
 &lt;p&gt;In the &lt;code&gt;query()&lt;/code&gt; method from &lt;code&gt;includes/classes/order.php&lt;/code&gt;, add it to whatever array makes sense (&lt;code&gt;info&lt;/code&gt;, &lt;code&gt;customer&lt;/code&gt;, or &lt;code&gt;delivery&lt;/code&gt;), then reference it in any of the files above the same way other fields in that array are referenced.&lt;/p&gt;
 &lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -721,10 +721,10 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
     
     <item>
       <title>Dev: Extra Folders</title>
-      <link>/dev/code/extra_folders/</link>
+      <link>/zendocs_test1/dev/code/extra_folders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/extra_folders/</guid>
+      <guid>/zendocs_test1/dev/code/extra_folders/</guid>
       <description>
         
         
@@ -762,10 +762,10 @@ a set of utilities, not autoloads.&lt;/p&gt;
     
     <item>
       <title>Dev: Init System</title>
-      <link>/dev/code/init_system/</link>
+      <link>/zendocs_test1/dev/code/init_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/init_system/</guid>
+      <guid>/zendocs_test1/dev/code/init_system/</guid>
       <description>
         
         
@@ -909,10 +909,10 @@ To override that you can pass a &lt;code&gt;classPath&lt;/code&gt; of &lt;code&g
     
     <item>
       <title>Dev: Notifier Report</title>
-      <link>/dev/code/notifier_report/</link>
+      <link>/zendocs_test1/dev/code/notifier_report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/notifier_report/</guid>
+      <guid>/zendocs_test1/dev/code/notifier_report/</guid>
       <description>
         
         
@@ -1728,10 +1728,10 @@ from https://github.com/lat9/notifier_report
     
     <item>
       <title>Dev: Notifiers - List of</title>
-      <link>/dev/code/notifiers_list/</link>
+      <link>/zendocs_test1/dev/code/notifiers_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/notifiers_list/</guid>
+      <guid>/zendocs_test1/dev/code/notifiers_list/</guid>
       <description>
         
         
@@ -1739,7 +1739,7 @@ from https://github.com/lat9/notifier_report
 &lt;!-- see find_notifiers in https://github.com/scottcwilson/zencart_tools --&gt; 
 &lt;p&gt;This is a list of notifiers available in Zen Cart 1.5.7c and above.&lt;/p&gt;
 &lt;p&gt;For a list of notifiers with module name, line number and parameters, 
-please install the &lt;a href=&#34;https://github.com/lat9/notifier_report&#34;&gt;Notifier Report&lt;/a&gt; on your site, or see &lt;a href=&#34;/dev/code/notifier_report/&#34;&gt;the output of Notifier Report&lt;/a&gt; here.&lt;/p&gt;
+please install the &lt;a href=&#34;https://github.com/lat9/notifier_report&#34;&gt;Notifier Report&lt;/a&gt; on your site, or see &lt;a href=&#34;/zendocs_test1/dev/code/notifier_report/&#34;&gt;the output of Notifier Report&lt;/a&gt; here.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;NOTIFIER_ADMIN_ZEN_CUSTOMERS_DELETE_CONFIRM
 NOTIFIER_ADMIN_ZEN_DELETE_PRODUCTS_ATTRIBUTES
 NOTIFIER_ADMIN_ZEN_PRODUCTS_ATTRIBUTES_DOWNLOAD_DELETE
@@ -2280,15 +2280,15 @@ NOTIFY_ZEN_IS_LOGGED_IN
     
     <item>
       <title>Dev: Observer/Notifier System</title>
-      <link>/dev/code/notifiers/</link>
+      <link>/zendocs_test1/dev/code/notifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/notifiers/</guid>
+      <guid>/zendocs_test1/dev/code/notifiers/</guid>
       <description>
         
         
         &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the &lt;a href=&#34;/user/template/template_overrides/&#34;&gt;override system&lt;/a&gt;, the &lt;a href=&#34;/dev/code/inclusion/&#34;&gt;auto inclusion system&lt;/a&gt; and the observer/notifier system.&lt;/p&gt;
+&lt;p&gt;One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;override system&lt;/a&gt;, the &lt;a href=&#34;/zendocs_test1/dev/code/inclusion/&#34;&gt;auto inclusion system&lt;/a&gt; and the observer/notifier system.&lt;/p&gt;
 &lt;p&gt;The observer/notifier system is an implementation of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern&#34;&gt;&amp;ldquo;pub-sub&amp;rdquo; pattern&lt;/a&gt;  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can also be used with procedural code.&lt;/p&gt;
 &lt;p&gt;At a high level, a developer will do the following:&lt;/p&gt;
 &lt;ul&gt;
@@ -2305,7 +2305,7 @@ NOTIFY_ZEN_IS_LOGGED_IN
 &lt;p&gt;&lt;a href=&#34;#observing-notifications&#34;&gt;Observing Notifications&lt;/a&gt;. Identifies the mechanisms used by &lt;em&gt;event observers&lt;/em&gt; to perform their customizations.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;#loading-your-observer-class&#34;&gt;Loading Your Observer Class&lt;/a&gt;.  Identifies how to load your observer-class so that it can begin its observations.  You may choose between &lt;a href=&#34;/dev/code/notifiers/#auto-loaded-observers&#34;&gt;automatic loading&lt;/a&gt; and &lt;a href=&#34;/dev/code/notifiers/#manually-loaded-observers&#34;&gt;manual loading&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#loading-your-observer-class&#34;&gt;Loading Your Observer Class&lt;/a&gt;.  Identifies how to load your observer-class so that it can begin its observations.  You may choose between &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/#auto-loaded-observers&#34;&gt;automatic loading&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/#manually-loaded-observers&#34;&gt;manual loading&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;#advanced-topics&#34;&gt;Advanced Topics&lt;/a&gt;. This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.&lt;/p&gt;
@@ -2318,7 +2318,7 @@ NOTIFY_ZEN_IS_LOGGED_IN
 &lt;/ol&gt;
 &lt;h2 id=&#34;triggering-event-notifications&#34;&gt;Triggering Event Notifications&lt;/h2&gt;
 &lt;p&gt;The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action at that point in the code execution flow.&lt;/p&gt;
-&lt;p&gt;Event names are strings and are triggered via a &lt;code&gt;notify&lt;/code&gt; function.  You can see a &lt;a href=&#34;/dev/code/notifiers_list/&#34;&gt;list of notifiers&lt;/a&gt; in the Zen Cart core code for reference.&lt;/p&gt;
+&lt;p&gt;Event names are strings and are triggered via a &lt;code&gt;notify&lt;/code&gt; function.  You can see a &lt;a href=&#34;/zendocs_test1/dev/code/notifiers_list/&#34;&gt;list of notifiers&lt;/a&gt; in the Zen Cart core code for reference.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Plugins (Zen Cart extensions) can also trigger notifier events.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;notify&lt;/code&gt; method takes the following inputs:&lt;/p&gt;
 &lt;table&gt;
@@ -2587,8 +2587,8 @@ Pairing that with meaningful function names increases readability and comprehens
 &lt;/ul&gt;
 &lt;h3 id=&#34;information-about-notifiers&#34;&gt;Information about Notifiers&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;A &lt;a href=&#34;/dev/code/notifiers_list&#34;&gt;list of notifiers&lt;/a&gt; for the current Zen Cart release.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;/dev/code/notifier_report/&#34;&gt;output of the Zen Cart Notifier Report&lt;/a&gt; run against the current release is provided on the docs site for easy reference by developers.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;/zendocs_test1/dev/code/notifiers_list&#34;&gt;list of notifiers&lt;/a&gt; for the current Zen Cart release.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;/zendocs_test1/dev/code/notifier_report/&#34;&gt;output of the Zen Cart Notifier Report&lt;/a&gt; run against the current release is provided on the docs site for easy reference by developers.&lt;/li&gt;
 &lt;li&gt;You may also install the &lt;a href=&#34;https://github.com/lat9/notifier_report&#34;&gt;Notifier Report&lt;/a&gt; on your own site to get the list of notifiers for your version, which could differ from the official list if you have made changes or are not running the current version.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2597,10 +2597,10 @@ Pairing that with meaningful function names increases readability and comprehens
     
     <item>
       <title>Dev: PHP Idioms</title>
-      <link>/dev/code/php_idioms/</link>
+      <link>/zendocs_test1/dev/code/php_idioms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/php_idioms/</guid>
+      <guid>/zendocs_test1/dev/code/php_idioms/</guid>
       <description>
         
         
@@ -2627,10 +2627,10 @@ Pairing that with meaningful function names increases readability and comprehens
     
     <item>
       <title>Dev: Product Types</title>
-      <link>/dev/code/product_types/</link>
+      <link>/zendocs_test1/dev/code/product_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/product_types/</guid>
+      <guid>/zendocs_test1/dev/code/product_types/</guid>
       <description>
         
         
@@ -2770,14 +2770,14 @@ if (SHOW_PRODUCT_MUSIC_INFO_RECORD_COMPANY == &#39;1&#39;) {
     
     <item>
       <title>Dev: Program Flow</title>
-      <link>/dev/code/program_flow/</link>
+      <link>/zendocs_test1/dev/code/program_flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/program_flow/</guid>
+      <guid>/zendocs_test1/dev/code/program_flow/</guid>
       <description>
         
         
-        &lt;p&gt;A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be &lt;a href=&#34;/dev/code/inclusion/&#34;&gt;auto-loading&lt;/a&gt; of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.&lt;/p&gt;
+        &lt;p&gt;A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be &lt;a href=&#34;/zendocs_test1/dev/code/inclusion/&#34;&gt;auto-loading&lt;/a&gt; of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.&lt;/p&gt;
 &lt;p&gt;If debugging the program flow, there is a useful constant available in &lt;code&gt;/includes/application_top.php&lt;/code&gt; which will show the file loading order in the browser output if set to true:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;define&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;DEBUG_AUTOLOAD&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Locations where an &amp;ldquo;override&amp;rdquo; can be used are noted with a ► symbol.&lt;/p&gt;
@@ -2794,7 +2794,7 @@ if (SHOW_PRODUCT_MUSIC_INFO_RECORD_COMPANY == &#39;1&#39;) {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;►&lt;code&gt;/includes/autoloaders/config.xxxx.php&lt;/code&gt; files (the &lt;a href=&#34;/dev/code/init_system/&#34;&gt;Init System&lt;/a&gt;) loads things in the order defined inside the files, which follows essentially the following order:&lt;/p&gt;
+&lt;p&gt;►&lt;code&gt;/includes/autoloaders/config.xxxx.php&lt;/code&gt; files (the &lt;a href=&#34;/zendocs_test1/dev/code/init_system/&#34;&gt;Init System&lt;/a&gt;) loads things in the order defined inside the files, which follows essentially the following order:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Connect to database and setup caching&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;/includes/filenames.php&lt;/code&gt;&lt;/li&gt;
@@ -2838,7 +2838,7 @@ if (SHOW_PRODUCT_MUSIC_INFO_RECORD_COMPANY == &#39;1&#39;) {
 &lt;li&gt;Calculate category/product path (cPath)&lt;/li&gt;
 &lt;li&gt;Load category-tree class, and prepare the categories-sidebox contents&lt;/li&gt;
 &lt;li&gt;Start the breadcrumb class and add current page components to it&lt;/li&gt;
-&lt;li&gt;Start &lt;a href=&#34;/dev/code/notifiers/&#34;&gt;observer/notifier&lt;/a&gt; infrastructure&lt;/li&gt;
+&lt;li&gt;Start &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/&#34;&gt;observer/notifier&lt;/a&gt; infrastructure&lt;/li&gt;
 &lt;li&gt;Calculate and display any system error messages if relevant&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2925,10 +2925,10 @@ if (SHOW_PRODUCT_MUSIC_INFO_RECORD_COMPANY == &#39;1&#39;) {
     
     <item>
       <title>Dev: Querying the Database</title>
-      <link>/dev/code/database_querying/</link>
+      <link>/zendocs_test1/dev/code/database_querying/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/database_querying/</guid>
+      <guid>/zendocs_test1/dev/code/database_querying/</guid>
       <description>
         
         
@@ -3058,10 +3058,10 @@ $query = $db-&amp;gt;bindVars($query, &amp;#39;:name:&amp;#39;, $_POST[&amp;#39;
     
     <item>
       <title>Dev: Sorting an Admin menu</title>
-      <link>/dev/code/sorting_menu/</link>
+      <link>/zendocs_test1/dev/code/sorting_menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/sorting_menu/</guid>
+      <guid>/zendocs_test1/dev/code/sorting_menu/</guid>
       <description>
         
         
@@ -3086,10 +3086,10 @@ e.g. &amp;lsquo;1,2,3,4&amp;rsquo; etc&lt;/p&gt;
     
     <item>
       <title>Dev: Modules</title>
-      <link>/dev/code/modules/</link>
+      <link>/zendocs_test1/dev/code/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/</guid>
+      <guid>/zendocs_test1/dev/code/modules/</guid>
       <description>
         
         
@@ -3099,10 +3099,10 @@ e.g. &amp;lsquo;1,2,3,4&amp;rsquo; etc&lt;/p&gt;
     
     <item>
       <title>Dev: View Builders</title>
-      <link>/dev/code/view_builders/</link>
+      <link>/zendocs_test1/dev/code/view_builders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/view_builders/</guid>
+      <guid>/zendocs_test1/dev/code/view_builders/</guid>
       <description>
         
         
@@ -3119,10 +3119,10 @@ or actions in admin pages.&lt;/p&gt;
     
     <item>
       <title>Dev: </title>
-      <link>/dev/code/data_validation/</link>
+      <link>/zendocs_test1/dev/code/data_validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/data_validation/</guid>
+      <guid>/zendocs_test1/dev/code/data_validation/</guid>
       <description>
         
         
@@ -3152,7 +3152,7 @@ WHERE configuration_key = &amp;#39;MAX_PAYPAL&amp;#39;;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
 define(&amp;#39;TEXT_MAX_PAYPAL&amp;#39;,&amp;#39;Max PayPal must be in the range 4000-9999&amp;#39;); 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now when an administrator attempts to set it outside this range, an error will be shown at the top of the admin screen like this:&lt;/p&gt;
-&lt;img src=&#34;/images/validation_error.png&#34; alt=&#34;Zen Cart admin data validation error&#34; width=&#34;50%&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/validation_error.png&#34; alt=&#34;Zen Cart admin data validation error&#34; width=&#34;50%&#34; /&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;validating-module-data&#34;&gt;Validating Module Data&lt;/h3&gt;
 &lt;p&gt;As of Zen Cart 1.5.7, you can also perform validation on fields in your shipping, payment and order total modules.&lt;/p&gt;

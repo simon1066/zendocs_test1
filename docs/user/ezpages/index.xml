@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – EZ-Pages</title>
-    <link>/user/ezpages/</link>
+    <link>/zendocs_test1/user/ezpages/</link>
     <description>Recent content in EZ-Pages on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/ezpages/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/ezpages/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: What are EZ-Pages?</title>
-      <link>/user/ezpages/what_are_ezpages/</link>
+      <link>/zendocs_test1/user/ezpages/what_are_ezpages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/what_are_ezpages/</guid>
+      <guid>/zendocs_test1/user/ezpages/what_are_ezpages/</guid>
       <description>
         
         
@@ -30,7 +30,7 @@
 &lt;li&gt;External Links&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In Addition, there is the ability to create &amp;ldquo;related&amp;rdquo; links in the format of a Chapter (group) and its TOC (related pages/links).&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Admin Interface to EZ-Pages&lt;/a&gt; to learn about the how EZ-Pages are set up and managed.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Admin Interface to EZ-Pages&lt;/a&gt; to learn about the how EZ-Pages are set up and managed.&lt;/p&gt;
 &lt;h3 id=&#34;link-naming&#34;&gt;Link Naming&lt;/h3&gt;
 &lt;p&gt;Links are named by the Page Title. All Links need a Page Title in order to function.&lt;/p&gt;
 &lt;p&gt;If you forget to add a Page Title, then you will not be able to add the Link.&lt;/p&gt;
@@ -75,7 +75,7 @@ Page is Visible &lt;b&gt;Yes&lt;/b&gt; radio button.&lt;/p&gt;
 &lt;p&gt;Internal Link URLs are links to internal pages within your shop. These can be to any valid URL, but should be written as relative links such as:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=21  
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The above Link would take you to the Category for categories_id 21&lt;/p&gt;
-&lt;p&gt;While these links can be the Full URL to an Internal Link, it is best to use as a Relative Link, so that if you change domains, or work on a temporary domain or an IP Address, the Link will remain valid.  See &lt;a href=&#34;/user/first_steps/relative_urls/&#34;&gt;relative URLs&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;While these links can be the Full URL to an Internal Link, it is best to use as a Relative Link, so that if you change domains, or work on a temporary domain or an IP Address, the Link will remain valid.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/relative_urls/&#34;&gt;relative URLs&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;Internal Links can also open in a New Window or the Same Window or be for Secure or Non-Secure Pages.&lt;/p&gt;
 &lt;h3 id=&#34;ez-pages-additional-pages-vs-internal-links-vs-external-links&#34;&gt;EZ-Pages Additional Pages vs Internal Links vs External Links&lt;/h3&gt;
 &lt;p&gt;The Type of Link that you create is based on an order of precedence, where HTML Content will supersede both the Internal Link and the External Link values.&lt;/p&gt;
@@ -85,17 +85,17 @@ Page is Visible &lt;b&gt;Yes&lt;/b&gt; radio button.&lt;/p&gt;
 &lt;p&gt;When using Editors such as CKEditor, if you hit enter in the HTML Content area,
 whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo; and will override any Internal Link URL or External Link URL.&lt;/p&gt;
 &lt;h3 id=&#34;other-options-for-adding-pages&#34;&gt;Other options for adding pages&lt;/h3&gt;
-&lt;p&gt;For many situations, EZ-Pages offer exactly what is needed for creating new pages and new content for your Zen Cart.  However, if you need more flexibility (such as the ability to embed PHP code), take a look at the other options shown in &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;Adding Pages to my site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For many situations, EZ-Pages offer exactly what is needed for creating new pages and new content for your Zen Cart.  However, if you need more flexibility (such as the ability to embed PHP code), take a look at the other options shown in &lt;a href=&#34;/zendocs_test1/user/customizing/add_pages/&#34;&gt;Adding Pages to my site&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: EZ-Page Not Found</title>
-      <link>/user/ezpages/ezpage_not_found/</link>
+      <link>/zendocs_test1/user/ezpages/ezpage_not_found/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpage_not_found/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpage_not_found/</guid>
       <description>
         
         
@@ -109,7 +109,7 @@ whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo
 &lt;p&gt;The specified page literally does not exist.  If your URL is &lt;code&gt;YOURSITE.com/index.php?main_page=page&amp;amp;id=310&lt;/code&gt;, but when you go to Admin &amp;gt; Tools &amp;gt; EZ-Pages, you don&amp;rsquo;t see EZ-Page id 301, you will get the page not found error.  Update your link to refer to an existing EZ-Page.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The specified page does exist, but is not visible (has Page is Visible = 0 and 0 values for all Order fields). See &amp;ldquo;Setting Visibility&amp;rdquo; in &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Admin Interface to EZ-Pages&lt;/a&gt; to learn how to update these values.&lt;/p&gt;
+&lt;p&gt;The specified page does exist, but is not visible (has Page is Visible = 0 and 0 values for all Order fields). See &amp;ldquo;Setting Visibility&amp;rdquo; in &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Admin Interface to EZ-Pages&lt;/a&gt; to learn how to update these values.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -118,24 +118,24 @@ whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo
     
     <item>
       <title>User: EZ-Pages sidebox</title>
-      <link>/user/ezpages/ezpages_sidebox/</link>
+      <link>/zendocs_test1/user/ezpages/ezpages_sidebox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpages_sidebox/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpages_sidebox/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/sideboxes/ezpages_sidebox/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How can I add Meta Tags to my EZ-Pages?</title>
-      <link>/user/ezpages/ezpages_meta_tags/</link>
+      <link>/zendocs_test1/user/ezpages/ezpages_meta_tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpages_meta_tags/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpages_meta_tags/</guid>
       <description>
         
         
@@ -146,14 +146,14 @@ whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo
     
     <item>
       <title>User: How can I create a link to an EZ-Page?</title>
-      <link>/user/ezpages/link_to_ezpage/</link>
+      <link>/zendocs_test1/user/ezpages/link_to_ezpage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/link_to_ezpage/</guid>
+      <guid>/zendocs_test1/user/ezpages/link_to_ezpage/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This page pertains to modifying a block of code to insert a link to an EZ-Page.  You don&amp;rsquo;t have to do this - links to EZ-Pages are created automatically in the &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt; and the &lt;a href=&#34;/user/template/additional_links/#option-2&#34;&gt;EZ-Pages header and footer&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This page pertains to modifying a block of code to insert a link to an EZ-Page.  You don&amp;rsquo;t have to do this - links to EZ-Pages are created automatically in the &lt;a href=&#34;/zendocs_test1/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt; and the &lt;a href=&#34;/zendocs_test1/user/template/additional_links/#option-2&#34;&gt;EZ-Pages header and footer&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For simple menus made up of EZ-Pages and non-EZ-Pages, the best solution is often to use the internal and external link functions within EZ-Pages to bring all of the links into your EZ-Pages&amp;rsquo; menus. However, sometimes this is not sufficient. An example might be if you only wanted the EZ-Page to be shown when certain conditions were met.&lt;/p&gt;
 &lt;p&gt;To program an EZ-Page link we can make use of the &lt;code&gt;zen_ez_pages_link()&lt;/code&gt; function that is built into Zen Cart. This will compile and return the &lt;a&gt; tag with the EZ-Page&amp;rsquo;s information. First you will need to know the EZ-Page ID and chapter number of the page to which you want the link to point. You can find this information by going to Admin &amp;gt; Tools &amp;gt; EZ-Pages. You will find the ID in the left hand column and the chapter number in a column over towards the right of the page.&lt;/p&gt;
 &lt;p&gt;Armed with this information you can now construct a link based on the following code model.&lt;/p&gt;
@@ -166,10 +166,10 @@ whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo
     
     <item>
       <title>User: Long EZ-Pages are getting cut off</title>
-      <link>/user/ezpages/long_ezpage/</link>
+      <link>/zendocs_test1/user/ezpages/long_ezpage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/long_ezpage/</guid>
+      <guid>/zendocs_test1/user/ezpages/long_ezpage/</guid>
       <description>
         
         
@@ -180,18 +180,18 @@ whitespace will be added. These will be detected as &amp;ldquo;content&amp;rdquo
 &lt;li&gt;hold the information on a new page outside of the database&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To increase the size of the database field, you would use your database management tool (e.g. phpMyAdmin) to open the &lt;code&gt;ezpages_content&lt;/code&gt; table (or the &lt;code&gt;ezpages&lt;/code&gt; table in Zen Cart 1.5.5 and below), and then change the field type for &lt;code&gt;pages_html_text&lt;/code&gt; from &lt;code&gt;TEXT&lt;/code&gt; to &lt;code&gt;MEDIUMTEXT&lt;/code&gt;. This will give it a capacity of 16 million characters. If that&amp;rsquo;s not enough (wow, what are you doing!) then you can change it to &lt;code&gt;LONGTEXT&lt;/code&gt; which will give you a cool 4 trillion characters with which to play.&lt;/p&gt;
-&lt;p&gt;Alternatively you could use the &lt;a href=&#34;/user/template/extra_pages&#34;&gt;extra pages&lt;/a&gt; (&lt;code&gt;page_2&lt;/code&gt;, &lt;code&gt;page_3&lt;/code&gt; and &lt;code&gt;page_4&lt;/code&gt;) which are shipped with Zen Cart and customize them as described in 
-&lt;a href=&#34;/user/new_user_topics/title_change_for_page_x/&#34;&gt;title change for page_X&lt;/a&gt;. This would be slightly more complex, but offer quicker performance and more flexibility.&lt;/p&gt;
+&lt;p&gt;Alternatively you could use the &lt;a href=&#34;/zendocs_test1/user/template/extra_pages&#34;&gt;extra pages&lt;/a&gt; (&lt;code&gt;page_2&lt;/code&gt;, &lt;code&gt;page_3&lt;/code&gt; and &lt;code&gt;page_4&lt;/code&gt;) which are shipped with Zen Cart and customize them as described in 
+&lt;a href=&#34;/zendocs_test1/user/new_user_topics/title_change_for_page_x/&#34;&gt;title change for page_X&lt;/a&gt;. This would be slightly more complex, but offer quicker performance and more flexibility.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Showing EZ-Page Links</title>
-      <link>/user/ezpages/ezpages_display/</link>
+      <link>/zendocs_test1/user/ezpages/ezpages_display/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpages_display/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpages_display/</guid>
       <description>
         
         
@@ -206,7 +206,7 @@ although the information will apply to any properly coded template.&lt;/p&gt;
 &lt;p&gt;A set of configurations determines where these links are shown.  There is a radio button and sort order for each of the header,
 sidebox and footer.  For a page to show up in one of these places, the
 associated radio button must be set to &lt;em&gt;Yes&lt;/em&gt; and the sort order must be greater than 0.
-You can see these settings in &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt;.&lt;/p&gt;
+You can see these settings in &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;adding-a-link-manually&#34;&gt;Adding a link manually&lt;/h1&gt;
 &lt;p&gt;In addition to the three places shown above, you can change your
 template to show an EZ-Page (say on the product info page) using the technique below.&lt;/p&gt;
@@ -218,7 +218,7 @@ template to show an EZ-Page (say on the product info page) using the technique b
 &lt;p&gt;Let&amp;rsquo;s suppose the language constant for the 
 name of the page is &lt;code&gt;NEW_PAGE_TITLE&lt;/code&gt; and the EZ-Page id, as shown on 
 the left hand side of 
-&lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt;, is 19.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt;, is 19.&lt;/p&gt;
 &lt;p&gt;If you are already in a PHP block, you&amp;rsquo;d use:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  echo &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_EZPAGES,&amp;#39;id=19&amp;#39;) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . NEW_PAGE_TITLE . &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;; 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re in HTML (say in a list), you would use&lt;/p&gt;
@@ -234,10 +234,10 @@ define(&amp;#39;NEW_PAGE_TITLE&amp;#39;,&amp;#39;Name of My New Page&amp;#39;);
     
     <item>
       <title>User: Sitemap support for EZ-Pages</title>
-      <link>/user/ezpages/ezpages_in_sitemap/</link>
+      <link>/zendocs_test1/user/ezpages/ezpages_in_sitemap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpages_in_sitemap/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpages_in_sitemap/</guid>
       <description>
         
         
@@ -249,10 +249,10 @@ define(&amp;#39;NEW_PAGE_TITLE&amp;#39;,&amp;#39;Name of My New Page&amp;#39;);
     
     <item>
       <title>User: Turning sidebox display off/on on an EZ-Page</title>
-      <link>/user/ezpages/sidebox_display_changes/</link>
+      <link>/zendocs_test1/user/ezpages/sidebox_display_changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/sidebox_display_changes/</guid>
+      <guid>/zendocs_test1/user/ezpages/sidebox_display_changes/</guid>
       <description>
         
         
@@ -269,23 +269,23 @@ define(&amp;#39;NEW_PAGE_TITLE&amp;#39;,&amp;#39;Name of My New Page&amp;#39;);
     $title_link = false;
     require($template-&amp;gt;get_template_dir($column_box_default,  DIR_WS_TEMPLATE, $current_page_base,&amp;#39;common&amp;#39;) . &amp;#39;/&amp;#39; .  $column_box_default);
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This condition means that the template to display the sidebox will be called whenever the page is not an EZ-Page or, if it is an EZ-Page, it does not have ID 2 or 5. You can find the IDs of your EZ-Pages by going to &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; EZ-Pages&lt;/a&gt; where the ID for each page is displayed in the first column.&lt;/p&gt;
-&lt;p&gt;Finally, and importantly, don&amp;rsquo;t forget to save your result in &lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;an override file&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Another way to do this is &lt;a href=&#34;/user/template/left_right_columns/&#34;&gt;turning off columns entirely&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This condition means that the template to display the sidebox will be called whenever the page is not an EZ-Page or, if it is an EZ-Page, it does not have ID 2 or 5. You can find the IDs of your EZ-Pages by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; EZ-Pages&lt;/a&gt; where the ID for each page is displayed in the first column.&lt;/p&gt;
+&lt;p&gt;Finally, and importantly, don&amp;rsquo;t forget to save your result in &lt;a href=&#34;/zendocs_test1/user/new_user_topics/overrides/&#34;&gt;an override file&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another way to do this is &lt;a href=&#34;/zendocs_test1/user/template/left_right_columns/&#34;&gt;turning off columns entirely&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: What is the EZ-Pages Header Bar?</title>
-      <link>/user/ezpages/ezpages_header_bar/</link>
+      <link>/zendocs_test1/user/ezpages/ezpages_header_bar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/ezpages/ezpages_header_bar/</guid>
+      <guid>/zendocs_test1/user/ezpages/ezpages_header_bar/</guid>
       <description>
         
         
-        &lt;p&gt;The EZ-Pages header bar is an area in the upper part of your storefront display that shows links to all your EZ-Pages.   In the &lt;a href=&#34;/user/template/page_format/&#34;&gt;page format description&lt;/a&gt;, it is part (f).&lt;/p&gt;
+        &lt;p&gt;The EZ-Pages header bar is an area in the upper part of your storefront display that shows links to all your EZ-Pages.   In the &lt;a href=&#34;/zendocs_test1/user/template/page_format/&#34;&gt;page format description&lt;/a&gt;, it is part (f).&lt;/p&gt;
 &lt;h3 id=&#34;how-do-i-turn-off-the-ez-pages-header-bar&#34;&gt;How do I turn off the EZ-Pages header bar?&lt;/h3&gt;
 &lt;p&gt;There are two ways to turn off the EZ-Pages header bar. Firstly, it won&amp;rsquo;t show if there are no links there, so turning off all link in the header (Admin &amp;gt; Tools &amp;gt; EZ-Pages) would also suppress display of the bar itself.&lt;/p&gt;
 &lt;p&gt;Even quicker would be to go to Admin &amp;gt; Configuration &amp;gt; EZ-Pages Settings and set the value of &amp;ldquo;EZ-Pages Display Status - HeaderBar&amp;rdquo; to zero.&lt;/p&gt;

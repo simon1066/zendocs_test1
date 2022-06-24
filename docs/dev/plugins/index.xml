@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Plugins</title>
-    <link>/dev/plugins/</link>
+    <link>/zendocs_test1/dev/plugins/</link>
     <description>Recent content in Plugins on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/plugins/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/plugins/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Rules for Plugins</title>
-      <link>/dev/plugins/rules/</link>
+      <link>/zendocs_test1/dev/plugins/rules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/rules/</guid>
+      <guid>/zendocs_test1/dev/plugins/rules/</guid>
       <description>
         
         
@@ -99,10 +99,10 @@ An &amp;ldquo;uninstall&amp;rdquo; SQL script should be included as well so the 
     
     <item>
       <title>Dev: Tips on creating a plugin</title>
-      <link>/dev/plugins/tips/</link>
+      <link>/zendocs_test1/dev/plugins/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/tips/</guid>
+      <guid>/zendocs_test1/dev/plugins/tips/</guid>
       <description>
         
         
@@ -114,10 +114,10 @@ An &amp;ldquo;uninstall&amp;rdquo; SQL script should be included as well so the 
 &lt;p&gt;There are built-in override capabilities in Zen Cart to prevent needing to edit some core files which would otherwise need updating.&lt;/p&gt;
 &lt;p&gt;(As a reminder, the override basics are covered in the storefront help; 
 you may read 
-&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;the introduction&lt;/a&gt;, 
-&lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;the details&lt;/a&gt;, 
+&lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;the introduction&lt;/a&gt;, 
+&lt;a href=&#34;/zendocs_test1/user/new_user_topics/overrides/&#34;&gt;the details&lt;/a&gt;, 
 and then 
-&lt;a href=&#34;/user/template/template_overrides/&#34;&gt;the summary&lt;/a&gt;.)&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;the summary&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;Some of the commonly-overlooked override capabilities are listed here:&lt;/p&gt;
 &lt;h3 id=&#34;database_tablesphp--filenamesphp&#34;&gt;database_tables.php &amp;amp; filenames.php&lt;/h3&gt;
 &lt;p&gt;Combine your extra details for these two files into one file, and then add it to both the storefront and the admin:&lt;/p&gt;
@@ -162,9 +162,9 @@ if ($fieldOkay1 !== true) {
   $db-&amp;gt;Execute(&amp;#34;INSERT INTO &amp;#34; . TABLE_CONFIGURATION . &amp;#34; (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES (&amp;#39;Currency Supported&amp;#39;, &amp;#39;MODULE_PAYMENT_AUTHORIZENET_CURRENCY&amp;#39;, &amp;#39;USD&amp;#39;, &amp;#39;Which currency is your Authnet Gateway Account configured to accept?&amp;lt;br&amp;gt;(Purchases in any other currency will be pre-converted to this currency before submission using the exchange rates in your store admin.)&amp;#39;, &amp;#39;6&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;zen_cfg_select_option(array(\&amp;#39;USD\&amp;#39;, \&amp;#39;CAD\&amp;#39;, \&amp;#39;GBP\&amp;#39;, \&amp;#39;EUR\&amp;#39;, \&amp;#39;AUD\&amp;#39;, \&amp;#39;NZD\&amp;#39;), &amp;#39;, now())&amp;#34;);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;adding-configuration-settings&#34;&gt;Adding Configuration settings&lt;/h2&gt;
-&lt;p&gt;If your plugin requires new configuration data, see &lt;a href=&#34;/dev/plugins/adding_config/&#34;&gt;Adding a configuration setting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your plugin requires new configuration data, see &lt;a href=&#34;/zendocs_test1/dev/plugins/adding_config/&#34;&gt;Adding a configuration setting&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;avoiding-the-missing-menu-problem&#34;&gt;Avoiding the Missing Menu problem&lt;/h2&gt;
-&lt;p&gt;If your plugin is an admin page, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant &lt;code&gt;admin_pages&lt;/code&gt; table entries - see &lt;a href=&#34;/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your plugin is an admin page, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant &lt;code&gt;admin_pages&lt;/code&gt; table entries - see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;checking-zen-cart-version&#34;&gt;Checking Zen Cart version&lt;/h2&gt;
 &lt;p&gt;Your plugin may need to do something different depending on the Zen Cart version. Use the &lt;code&gt;PROJECT_VERSION_&lt;/code&gt; settings in &lt;code&gt;includes/version.php&lt;/code&gt; for this.  As an example, this checks for a Zen Cart version of 1.5.7 or higher:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (version_compare(PROJECT_VERSION_NAME . &amp;#39; &amp;#39; . PROJECT_VERSION_MAJOR . &amp;#39;.&amp;#39; . PROJECT_VERSION_MINOR, &amp;#39;1.5.7&amp;#39;, &amp;#39;&amp;gt;=&amp;#39;)) {
@@ -173,13 +173,13 @@ if ($fieldOkay1 !== true) {
 &lt;h2 id=&#34;other-resources&#34;&gt;Other Resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/creating_menu/&#34;&gt;Creating a menu item&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/creating_menu/&#34;&gt;Creating a menu item&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/creating_tables/&#34;&gt;Creating or altering tables&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/creating_tables/&#34;&gt;Creating or altering tables&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/forms/&#34;&gt;Building a form&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/forms/&#34;&gt;Building a form&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;forum-resources&#34;&gt;Forum Resources&lt;/h2&gt;
@@ -190,10 +190,10 @@ if ($fieldOkay1 !== true) {
     
     <item>
       <title>Dev: Upgrading 1.3.X era plugins</title>
-      <link>/dev/plugins/upgrading_to_1.5/</link>
+      <link>/zendocs_test1/dev/plugins/upgrading_to_1.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/upgrading_to_1.5/</guid>
+      <guid>/zendocs_test1/dev/plugins/upgrading_to_1.5/</guid>
       <description>
         
         
@@ -209,17 +209,17 @@ There is a forum thread which outlines some guidance in the process of rewriting
 &lt;p&gt;Forms in v1.5.0 and newer must use security tokens such as those set by properly using &lt;code&gt;zen_draw_form&lt;/code&gt; instead of hard-coded
 tags and must use POSTs for all CRUD actions, leaving GETs for only filter-related activities.&lt;/p&gt;
 &lt;h2 id=&#34;moving-to-the-encapsulated-plugin-manager&#34;&gt;Moving to the Encapsulated Plugin manager&lt;/h2&gt;
-&lt;p&gt;As an recommended next step, follow the guide &lt;a href=&#34;/dev/plugins/encapsulated_plugins/converting/&#34;&gt;Converting an older plugin&lt;/a&gt; to use the new encapsulated plugin manager.&lt;/p&gt;
+&lt;p&gt;As an recommended next step, follow the guide &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/converting/&#34;&gt;Converting an older plugin&lt;/a&gt; to use the new encapsulated plugin manager.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adding a configuration setting</title>
-      <link>/dev/plugins/adding_config/</link>
+      <link>/zendocs_test1/dev/plugins/adding_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/adding_config/</guid>
+      <guid>/zendocs_test1/dev/plugins/adding_config/</guid>
       <description>
         
         
@@ -246,10 +246,10 @@ if (!defined(&amp;#39;SPAM_TEST_TEXT&amp;#39;)) {
     
     <item>
       <title>Dev: Adopting an orphan plugin</title>
-      <link>/dev/plugins/adoption/</link>
+      <link>/zendocs_test1/dev/plugins/adoption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/adoption/</guid>
+      <guid>/zendocs_test1/dev/plugins/adoption/</guid>
       <description>
         
         
@@ -262,7 +262,7 @@ or sometimes even passed away.&lt;/p&gt;
 &lt;li&gt;Do not remove anyone else&amp;rsquo;s copyright or authorship claims.  You are welcome to add yourself, but don&amp;rsquo;t take anything away.&lt;/li&gt;
 &lt;li&gt;Do not claim original authorship if you aren&amp;rsquo;t the original author.  Make it clear that you&amp;rsquo;re building on someone else&amp;rsquo;s work.&lt;/li&gt;
 &lt;li&gt;Make an effort to reach out to the original author to be sure the work has been abandoned.  It could be that the author just doesn&amp;rsquo;t think more work is needed.&lt;/li&gt;
-&lt;li&gt;Follow the &lt;a href=&#34;/dev/plugins/php_updating/&#34;&gt;migration guides&lt;/a&gt; to bring the plugin up to the current level of PHP.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;/zendocs_test1/dev/plugins/php_updating/&#34;&gt;migration guides&lt;/a&gt; to bring the plugin up to the current level of PHP.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -270,10 +270,10 @@ or sometimes even passed away.&lt;/p&gt;
     
     <item>
       <title>Dev: Encapsulated Plugins</title>
-      <link>/dev/plugins/encapsulated_plugins/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/</guid>
       <description>
         
         
@@ -291,10 +291,10 @@ in Zen Cart v1.5.8&lt;/p&gt;
     
     <item>
       <title>Dev: Technical - Building help for your admin plugin</title>
-      <link>/dev/plugins/help/</link>
+      <link>/zendocs_test1/dev/plugins/help/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/help/</guid>
+      <guid>/zendocs_test1/dev/plugins/help/</guid>
       <description>
         
         
@@ -364,23 +364,23 @@ echo &amp;#39;&amp;lt;pre&amp;gt;&amp;#39;;
 print_r($body);
 echo &amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;putting-help-files-on-a-server&#34;&gt;Putting help files on a server&lt;/h3&gt;
-&lt;p&gt;If you are deploying help files to a newly created folder, be sure to follow the guidelines in &lt;a href=&#34;/user/customizing/add_pages/#direct-access-to-files&#34;&gt;Direct Access to Files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are deploying help files to a newly created folder, be sure to follow the guidelines in &lt;a href=&#34;/zendocs_test1/user/customizing/add_pages/#direct-access-to-files&#34;&gt;Direct Access to Files&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Updating plugins for higher levels of PHP</title>
-      <link>/dev/plugins/php_updating/</link>
+      <link>/zendocs_test1/dev/plugins/php_updating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/php_updating/</guid>
+      <guid>/zendocs_test1/dev/plugins/php_updating/</guid>
       <description>
         
         
-        &lt;p&gt;The Zen Cart core is updated for the current release of PHP as each release is done.  You can see the mapping from Zen Cart version to PHP version in the &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;server requirements&lt;/a&gt; document.&lt;/p&gt;
+        &lt;p&gt;The Zen Cart core is updated for the current release of PHP as each release is done.  You can see the mapping from Zen Cart version to PHP version in the &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;server requirements&lt;/a&gt; document.&lt;/p&gt;
 &lt;p&gt;But what about plugins?&lt;/p&gt;
-&lt;p&gt;Well, updating plugins needs to be done by the community.  The first person to check with, of course, would be the plugin author, but they may not be able to do the work (for whatever reason). In this case, it could be an &lt;a href=&#34;/dev/plugins/adoption/&#34;&gt;orphan plugin that needs adoption&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Well, updating plugins needs to be done by the community.  The first person to check with, of course, would be the plugin author, but they may not be able to do the work (for whatever reason). In this case, it could be an &lt;a href=&#34;/zendocs_test1/dev/plugins/adoption/&#34;&gt;orphan plugin that needs adoption&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The following guidance is available for upgraders:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.php.net/manual/en/migration81.php&#34;&gt;Migrating from PHP 8.0.x to PHP 8.1.x&lt;/a&gt;&lt;/li&gt;
@@ -397,15 +397,15 @@ echo &amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;;
     
     <item>
       <title>Dev: Upgrading plugins to work with 1.5.8/PHP 8.0&#43;</title>
-      <link>/dev/plugins/upgrading_to_158/</link>
+      <link>/zendocs_test1/dev/plugins/upgrading_to_158/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/upgrading_to_158/</guid>
+      <guid>/zendocs_test1/dev/plugins/upgrading_to_158/</guid>
       <description>
         
         
         &lt;h2 id=&#34;array-based-language-files&#34;&gt;Array Based Language Files&lt;/h2&gt;
-&lt;p&gt;To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses &lt;a href=&#34;/dev/languages/158_language_files/&#34;&gt;Array Based Language Files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses &lt;a href=&#34;/zendocs_test1/dev/languages/158_language_files/&#34;&gt;Array Based Language Files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you need to include a language file, the old style of doing so&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  $langfile = DIR_WS_LANGUAGES . $_SESSION[&amp;#39;language&amp;#39;] . &amp;#34;/modules/order_total/&amp;#34; .  &amp;#34;ot_group_pricing.php&amp;#34;;
   include_once ($langfile);

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Localization</title>
-    <link>/user/admin_pages/localization/</link>
+    <link>/zendocs_test1/user/admin_pages/localization/</link>
     <description>Recent content in Localization on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin_pages/localization/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin_pages/localization/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,16 +15,16 @@
     
     <item>
       <title>User: Currencies</title>
-      <link>/user/admin_pages/localization/currencies/</link>
+      <link>/zendocs_test1/user/admin_pages/localization/currencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/localization/currencies/</guid>
+      <guid>/zendocs_test1/user/admin_pages/localization/currencies/</guid>
       <description>
         
         
         &lt;p&gt;Zen Cart comes preconfigured with several currencies, including the US dollar, the Euro, the Pound, the Canadian Dollar, and the Australian Dollar.&lt;/p&gt;
 &lt;p&gt;You may add a new currency, or edit the existing ones.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/currencies.png&#34; alt=&#34;Currencies in Zen Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/currencies.png&#34; alt=&#34;Currencies in Zen Cart&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;adding-currencies&#34;&gt;Adding Currencies&lt;/h2&gt;
 &lt;p&gt;To add a new currency, click on the new currency button. You will then enter the information about this new currency in the input area. After you finish entering the new information, click on the Insert button to save this new currency entry.&lt;/p&gt;
 &lt;h3 id=&#34;title&#34;&gt;Title&lt;/h3&gt;
@@ -132,7 +132,7 @@
 &lt;h2 id=&#34;update-currencies&#34;&gt;Update Currencies&lt;/h2&gt;
 &lt;p&gt;If you have the correct ISO 4217 code in the &lt;em&gt;code&lt;/em&gt; column, you can click on the &lt;em&gt;update currencies&lt;/em&gt; button to have the site request current exchange rate values from various conversion sites on the Internet for all currencies that have a correct ISO 4217 code, and the website will obtain current values and automatically correct the exchange rates.&lt;/p&gt;
 &lt;p&gt;Rates that are correctly converted will be listed in green at the top of the page. Rates that were not correctly converted will be listed in red. The website will probably try more than one converter if it has a failure in converting a particular currency. Pay attention to any red items in case you may have misspelled the ISO 4217 code for that currency, as it will not have been correctly updated. Any that were not correctly updated (either because of error or because the conversion site did not have the correct values for that currency) will have to be manually updated using the edit feature.&lt;/p&gt;
-&lt;p&gt;Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a &lt;a href=&#34;/user/first_steps/hosting/#cron&#34;&gt;cron job&lt;/a&gt; in your hosting company&amp;rsquo;s control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company&amp;rsquo;s tech support team if you need help with determining the correct path and the correct php binary to call.&lt;/p&gt;
+&lt;p&gt;Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#cron&#34;&gt;cron job&lt;/a&gt; in your hosting company&amp;rsquo;s control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company&amp;rsquo;s tech support team if you need help with determining the correct path and the correct php binary to call.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;php /full/server/path/to/admin/currency_cron.php
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;editing-an-existing-currency&#34;&gt;Editing an existing currency&lt;/h2&gt;
 &lt;p&gt;If you only need to correct the exchange rate, you can use the &lt;em&gt;update currency&lt;/em&gt; button to change all conversions on your website. If, however the automatic conversion does not work for one or more currencies or you need to change something else (for example, you entered Russian Rubles using code RUS instead of RUB), you would need to change that. Click on the line showing the currency you want to change. The right arrow will appear in the action column, then click on the &lt;em&gt;edit&lt;/em&gt; button.&lt;/p&gt;
@@ -156,10 +156,10 @@
     
     <item>
       <title>User: Languages</title>
-      <link>/user/admin_pages/localization/languages/</link>
+      <link>/zendocs_test1/user/admin_pages/localization/languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/localization/languages/</guid>
+      <guid>/zendocs_test1/user/admin_pages/localization/languages/</guid>
       <description>
         
         
@@ -191,21 +191,21 @@
 &lt;p&gt;Language packs may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Plugins Library&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Language packs are structured to correspond to your cart folders, so you can just 
 rename the admin folder, if one exists, and then upload all the files.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re not familiar with installing a Zen Cart plugin, follow the instructions on &lt;a href=&#34;/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not familiar with installing a Zen Cart plugin, follow the instructions on &lt;a href=&#34;/zendocs_test1/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Orders Status</title>
-      <link>/user/admin_pages/localization/orders_status/</link>
+      <link>/zendocs_test1/user/admin_pages/localization/orders_status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin_pages/localization/orders_status/</guid>
+      <guid>/zendocs_test1/user/admin_pages/localization/orders_status/</guid>
       <description>
         
         
-        &lt;p&gt;The &lt;a href=&#34;/user/localization/orders_status/&#34;&gt;Order Status&lt;/a&gt; field encapsulates where 
+        &lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/localization/orders_status/&#34;&gt;Order Status&lt;/a&gt; field encapsulates where 
 the order is in your order processing workflow.&lt;/p&gt;
 &lt;p&gt;The Admin &amp;gt; Localization &amp;gt; Order Status  page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.&lt;/p&gt;
 &lt;h2 id=&#34;add-a-new-order-status&#34;&gt;Add a new Order Status&lt;/h2&gt;

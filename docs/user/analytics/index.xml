@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Analytics</title>
-    <link>/user/analytics/</link>
+    <link>/zendocs_test1/user/analytics/</link>
     <description>Recent content in Analytics on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/analytics/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/analytics/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,24 +15,24 @@
     
     <item>
       <title>User: Admin Dashboard</title>
-      <link>/user/analytics/admin_dashboard/</link>
+      <link>/zendocs_test1/user/analytics/admin_dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/analytics/admin_dashboard/</guid>
+      <guid>/zendocs_test1/user/analytics/admin_dashboard/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/admin_pages/admin_dashboard/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_dashboard/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Integrating Sales Analytics/Affiliate Tools</title>
-      <link>/user/analytics/sales_analytics_affiliate_tools/</link>
+      <link>/zendocs_test1/user/analytics/sales_analytics_affiliate_tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/analytics/sales_analytics_affiliate_tools/</guid>
+      <guid>/zendocs_test1/user/analytics/sales_analytics_affiliate_tools/</guid>
       <description>
         
         
@@ -175,22 +175,22 @@ Simply create a new file: &lt;code&gt;/includes/modules/pages/checkout_success/j
   $order_summary[&amp;#39;products_ordered_models&amp;#39;] = implode(&amp;#39;|&amp;#39;, array_values($products_array));
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;advanced-use&#34;&gt;Advanced Use&lt;/h2&gt;
-&lt;p&gt;Advanced programmers might choose programmatic hooks instead of JavaScript callbacks, by invoking the &lt;a href=&#34;/dev/code/notifiers/&#34;&gt;notifier system&lt;/a&gt;. This involves hooking 
+&lt;p&gt;Advanced programmers might choose programmatic hooks instead of JavaScript callbacks, by invoking the &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/&#34;&gt;notifier system&lt;/a&gt;. This involves hooking 
 &lt;code&gt;NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES&lt;/code&gt; and referencing the 
 &lt;code&gt;$_SESSION[&#39;order_summary&#39;]&lt;/code&gt; array in place of the non-global 
 &lt;code&gt;$order_summary&lt;/code&gt; array.&lt;/p&gt;
 &lt;p&gt;This could allow a bespoke tracking service to be invoked without needing to force extra activities down to the customer&amp;rsquo;s browser.&lt;/p&gt;
-&lt;p&gt;Related article: &lt;a href=&#34;/user/template/tracking_pixel/&#34;&gt;Adding a tracking pixel&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Related article: &lt;a href=&#34;/zendocs_test1/user/template/tracking_pixel/&#34;&gt;Adding a tracking pixel&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Integrating with Google Analytics</title>
-      <link>/user/analytics/analytics_services/</link>
+      <link>/zendocs_test1/user/analytics/analytics_services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/analytics/analytics_services/</guid>
+      <guid>/zendocs_test1/user/analytics/analytics_services/</guid>
       <description>
         
         
@@ -202,11 +202,11 @@ Other excellent competing tools include Fathom Analytics and Piwik/Matomo.&lt;/p
 &lt;p&gt;&lt;code&gt;/includes/template/YOURTEMPLATENAME/jscript/jscript_piwik_analytics.js&lt;/code&gt; (or rename for your desired service)&lt;/p&gt;
 &lt;p&gt;and paste the JavaScript snippet code inside it.&lt;/p&gt;
 &lt;h2 id=&#34;google-tag-manager&#34;&gt;Google Tag Manager&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/running/external_javascript_services/&#34;&gt;/user/running/external_javascript_services/&lt;/a&gt; for information about Tag Manager.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/running/external_javascript_services/&#34;&gt;/user/running/external_javascript_services/&lt;/a&gt; for information about Tag Manager.&lt;/p&gt;
 &lt;h2 id=&#34;advanced-integration-to-provide-calculated-data&#34;&gt;Advanced Integration To Provide Calculated Data&lt;/h2&gt;
 &lt;p&gt;If you need to do some data queries or numeric calculations, you will need to change the &lt;code&gt;.js&lt;/code&gt; extension in the above file to &lt;code&gt;.php&lt;/code&gt;
 and then you can write PHP code intertwined with the JavaScript code.&lt;/p&gt;
-&lt;p&gt;Commonly-requested data which you can incorporate is explained in &lt;a href=&#34;/user/analytics/sales_analytics_affiliate_tools/&#34;&gt;Integrating Sales/Analytics/Affiliate Tools&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Commonly-requested data which you can incorporate is explained in &lt;a href=&#34;/zendocs_test1/user/analytics/sales_analytics_affiliate_tools/&#34;&gt;Integrating Sales/Analytics/Affiliate Tools&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;advanced-google-e-commerce-analytics&#34;&gt;Advanced Google E-Commerce Analytics&lt;/h2&gt;
 &lt;p&gt;An &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1997&#34;&gt;Advanced Ecommerce Analytics&lt;/a&gt; plugin exists to feed Google&amp;rsquo;s ecommerce-specific analytics data with sales numbers from your store. It may require some custom coding changes to suit your store&amp;rsquo;s unique products, but it&amp;rsquo;s a handy starting point.&lt;/p&gt;
 &lt;h2 id=&#34;google-adwords-conversion-tracking&#34;&gt;Google Adwords Conversion Tracking&lt;/h2&gt;
@@ -246,10 +246,10 @@ if (empty($order_summary)) return;
     
     <item>
       <title>User: What do the numbers in the Counter History box mean?</title>
-      <link>/user/analytics/counter_history/</link>
+      <link>/zendocs_test1/user/analytics/counter_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/analytics/counter_history/</guid>
+      <guid>/zendocs_test1/user/analytics/counter_history/</guid>
       <description>
         
         

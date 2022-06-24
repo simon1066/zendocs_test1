@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – V2s</title>
-    <link>/v2/</link>
+    <link>/zendocs_test1/v2/</link>
     <description>Recent content in V2s on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/v2/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/v2/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/admin_action_classes/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/admin_action_classes/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/admin_action_classes/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/admin_action_classes/introduction/</guid>
       <description>
         
         
@@ -52,10 +52,10 @@ e.g the URL &lt;code&gt;http://localhost/admin_dir/categories.php&lt;/code&gt; w
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/admin_lead_pages/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/admin_lead_pages/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/admin_lead_pages/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/admin_lead_pages/introduction/</guid>
       <description>
         
         
@@ -226,10 +226,10 @@ The &amp;ldquo;Add&amp;rdquo; button requires the define &lt;code&gt;TEXT_LEAD_A
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/dashboard_widgets/dashboard_widgets/</link>
+      <link>/zendocs_test1/v2/code_docs/dashboard_widgets/dashboard_widgets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/dashboard_widgets/dashboard_widgets/</guid>
+      <guid>/zendocs_test1/v2/code_docs/dashboard_widgets/dashboard_widgets/</guid>
       <description>
         
         
@@ -342,10 +342,10 @@ dashboard_widgets_groups (TABLE_DASHBOARD_WIDGETS_GROUPS)
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/database/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/database/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/database/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/database/introduction/</guid>
       <description>
         
         
@@ -382,10 +382,10 @@ foreach($result as $row) {
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/external_downloads/externally_hosted_downloads/</link>
+      <link>/zendocs_test1/v2/code_docs/external_downloads/externally_hosted_downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/external_downloads/externally_hosted_downloads/</guid>
+      <guid>/zendocs_test1/v2/code_docs/external_downloads/externally_hosted_downloads/</guid>
       <description>
         
         
@@ -404,10 +404,10 @@ foreach($result as $row) {
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/multi_language_menus/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/multi_language_menus/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/multi_language_menus/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/multi_language_menus/introduction/</guid>
       <description>
         
         
@@ -426,10 +426,10 @@ define(&amp;#39;CFGDESC_STORE_NAME&amp;#39;, &amp;#39;El nombre de mi tienda&amp
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/pagination/pagination/</link>
+      <link>/zendocs_test1/v2/code_docs/pagination/pagination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/pagination/pagination/</guid>
+      <guid>/zendocs_test1/v2/code_docs/pagination/pagination/</guid>
       <description>
         
         
@@ -565,10 +565,10 @@ i.e.&lt;/p&gt;
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilder/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilder/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilder/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilder/introduction/</guid>
       <description>
         
         
@@ -632,10 +632,10 @@ However if needed take the form of&lt;/p&gt;
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/definition_classes/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/definition_classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/definition_classes/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/definition_classes/</guid>
       <description>
         
         
@@ -733,17 +733,17 @@ Other entries can define derived items, filter methods etc.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The outputLayout array must contain the &amp;lsquo;formatter&amp;rsquo; option. Other options are dependant on the formatter used.&lt;/p&gt;
 &lt;p&gt;More details on the fields listingQuery and outputLayout are provided in 
-&lt;a href=&#34;/v2/code_docs/admin_lead_pages/introduction&#34;&gt;Admin LEAD pages&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/v2/code_docs/admin_lead_pages/introduction&#34;&gt;Admin LEAD pages&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/filter_classes/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/filter_classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/filter_classes/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/filter_classes/</guid>
       <description>
         
         
@@ -827,10 +827,10 @@ class and implement the FilterInterface class&lt;/p&gt;
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/formatter_classes/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/formatter_classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/formatter_classes/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/formatter_classes/</guid>
       <description>
         
         
@@ -907,10 +907,10 @@ It is assumed that the template will be in includes/templates/templates_default/
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/introduction/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/introduction/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/introduction/</guid>
       <description>
         
         
@@ -931,10 +931,10 @@ It is assumed that the template will be in includes/templates/templates_default/
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/schema/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/schema/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/schema/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/schema/</guid>
       <description>
         
         
@@ -978,10 +978,10 @@ It is assumed that the template will be in includes/templates/templates_default/
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/querybuilderdefinitions/templates/</link>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/querybuilderdefinitions/templates/</guid>
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/templates/</guid>
       <description>
         
         
@@ -994,10 +994,10 @@ It is assumed that the template will be in includes/templates/templates_default/
     
     <item>
       <title>V2: </title>
-      <link>/v2/code_docs/request/request/</link>
+      <link>/zendocs_test1/v2/code_docs/request/request/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/code_docs/request/request/</guid>
+      <guid>/zendocs_test1/v2/code_docs/request/request/</guid>
       <description>
         
         
@@ -1037,10 +1037,10 @@ It is based on &lt;a href=&#34;https://github.com/auraphp/Aura.Web&#34;&gt;Aura.
     
     <item>
       <title>V2: </title>
-      <link>/v2/introduction/</link>
+      <link>/zendocs_test1/v2/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/introduction/</guid>
+      <guid>/zendocs_test1/v2/introduction/</guid>
       <description>
         
         
@@ -1072,10 +1072,10 @@ which is meant to make life easier for those developing with/for Zen Cart, and t
     
     <item>
       <title>V2: </title>
-      <link>/v2/template_customization/css_and_javascript/css_and_javascript/</link>
+      <link>/zendocs_test1/v2/template_customization/css_and_javascript/css_and_javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/template_customization/css_and_javascript/css_and_javascript/</guid>
+      <guid>/zendocs_test1/v2/template_customization/css_and_javascript/css_and_javascript/</guid>
       <description>
         
         
@@ -1154,10 +1154,10 @@ Stylesheet filenames are loaded in this order, if present:&lt;/p&gt;
     
     <item>
       <title>V2: </title>
-      <link>/v2/template_customization/php/introduction/</link>
+      <link>/zendocs_test1/v2/template_customization/php/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/v2/template_customization/php/introduction/</guid>
+      <guid>/zendocs_test1/v2/template_customization/php/introduction/</guid>
       <description>
         
         

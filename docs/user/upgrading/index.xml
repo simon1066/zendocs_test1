@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Upgrading</title>
-    <link>/user/upgrading/</link>
+    <link>/zendocs_test1/user/upgrading/</link>
     <description>Recent content in Upgrading on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/upgrading/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/upgrading/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,36 +15,36 @@
     
     <item>
       <title>User: Upgrading - Quick Reference</title>
-      <link>/user/upgrading/upgrading/</link>
+      <link>/zendocs_test1/user/upgrading/upgrading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/upgrading/</guid>
+      <guid>/zendocs_test1/user/upgrading/upgrading/</guid>
       <description>
         
         
         &lt;h2 id=&#34;key-points-related-to-upgrading&#34;&gt;Key Points Related To Upgrading&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;How To Upgrade - Detailed Guide&lt;/a&gt; YES, READ THIS!!!!&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/about_upgrading/&#34;&gt;Why Upgrade?&lt;/a&gt; (Protecting your site from bad actors)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;Date Standardization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release Specific Upgrade Considerations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/configuration_name_changes/&#34;&gt;Configuration Parameter Name Changes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/detailed_upgrading/&#34;&gt;How To Upgrade - Detailed Guide&lt;/a&gt; YES, READ THIS!!!!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/about_upgrading/&#34;&gt;Why Upgrade?&lt;/a&gt; (Protecting your site from bad actors)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;Date Standardization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release Specific Upgrade Considerations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/configuration_name_changes/&#34;&gt;Configuration Parameter Name Changes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;upgrading-approaches&#34;&gt;Upgrading Approaches&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;Standard Upgrade&lt;/a&gt; - preserving your customizations&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/db_only_upgrade/&#34;&gt;Database-Only Upgrade&lt;/a&gt; - quickie upgrade if you want to start over; does not preserve customizations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/detailed_upgrading/&#34;&gt;Standard Upgrade&lt;/a&gt; - preserving your customizations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/db_only_upgrade/&#34;&gt;Database-Only Upgrade&lt;/a&gt; - quickie upgrade if you want to start over; does not preserve customizations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;after-upgrading&#34;&gt;After Upgrading&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;Keep Your JavaScript Scripts Updated&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;Should I Change My Database Character Set to UTF8?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/javascript_updates/&#34;&gt;Keep Your JavaScript Scripts Updated&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8/&#34;&gt;Should I Change My Database Character Set to UTF8?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/installer_no_upgrade/&#34;&gt;Why Don&amp;rsquo;t I See An Option To Upgrade My Database?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;New PHP Warnings/Errors After Upgrading&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/installer_no_upgrade/&#34;&gt;Why Don&amp;rsquo;t I See An Option To Upgrade My Database?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;New PHP Warnings/Errors After Upgrading&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;question-but-it-seems-like-a-long-process-&#34;&gt;QUESTION: &amp;ldquo;But it seems like a long process &amp;hellip;&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;An &amp;ldquo;upgrade&amp;rdquo; is essentially a rebuilding of your site.&lt;/p&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;&lt;strong&gt;This gives you time to sort out whatever needs sorting&lt;/strong&gt; &amp;ldquo;just in case&amp;rdquo;, and allows you to keep taking sales while you&amp;rsquo;re preparing the upgrade.&lt;/p&gt;
 &lt;p&gt;It also helps take some of the pressure off and makes it less urgent to do it all in one fell swoop.&lt;/p&gt;
 &lt;p&gt;The process of comparing your site against the original code for the old version is, in large part, to simply help you quickly identify what customizations you need to make to put those same capabilities into your new site. It simply speeds the process and creates a sort of checklist of things for you to do to re-build it all onto your new site.&lt;/p&gt;
-&lt;p&gt;Then, after you&amp;rsquo;ve got it all built in the temporary location, you put your live store &lt;a href=&#34;/user/running/down_for_maintenance&#34;&gt;down for maintenance&lt;/a&gt;, quickly redo the upgrade there following your checklist and notes, and then bring it online &amp;hellip; meaning your actual live store&amp;rsquo;s downtime could be as short as 5-10 minutes depending on complexities etc.&lt;/p&gt;
+&lt;p&gt;Then, after you&amp;rsquo;ve got it all built in the temporary location, you put your live store &lt;a href=&#34;/zendocs_test1/user/running/down_for_maintenance&#34;&gt;down for maintenance&lt;/a&gt;, quickly redo the upgrade there following your checklist and notes, and then bring it online &amp;hellip; meaning your actual live store&amp;rsquo;s downtime could be as short as 5-10 minutes depending on complexities etc.&lt;/p&gt;
 &lt;p&gt;So, follow the guide, and while there may be some learning involved and remembering of things you did awhile back, it&amp;rsquo;s all time well spent.&lt;/p&gt;
 &lt;h2 id=&#34;question-i-have-a-very-old-version-do-i-upgrade-in-stages-or-all-at-once&#34;&gt;QUESTION: &amp;ldquo;I have a very old version. Do I upgrade in stages, or all-at-once?&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;ANSWER:&lt;/strong&gt; You can upgrade to the latest version directly.&lt;br&gt;
@@ -64,15 +64,15 @@ And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt
     
     <item>
       <title>User: Why should I upgrade?</title>
-      <link>/user/upgrading/about_upgrading/</link>
+      <link>/zendocs_test1/user/upgrading/about_upgrading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/about_upgrading/</guid>
+      <guid>/zendocs_test1/user/upgrading/about_upgrading/</guid>
       <description>
         
         
         &lt;h3 id=&#34;how-do-i-upgrade&#34;&gt;How Do I Upgrade?&lt;/h3&gt;
-&lt;p&gt;To skip the &amp;ldquo;why&amp;rdquo; part and just get started, see the &lt;a href=&#34;/user/upgrading&#34;&gt;Upgrading section&lt;/a&gt; of the docs.&lt;/p&gt;
+&lt;p&gt;To skip the &amp;ldquo;why&amp;rdquo; part and just get started, see the &lt;a href=&#34;/zendocs_test1/user/upgrading&#34;&gt;Upgrading section&lt;/a&gt; of the docs.&lt;/p&gt;
 &lt;h3 id=&#34;why&#34;&gt;Why?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Upgrading is important!  When you upgrade, you get security improvements, you get to use more recent versions of PHP, you get all the bug fixes from the past, and you get new features with every release!&lt;/strong&gt;  We highly encourage all users to stay upgraded.&lt;/p&gt;
 &lt;p&gt;If upgrading is beyond your ability, please post an ad in our &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted&#34;&gt;Commercial Help Wanted Forum&lt;/a&gt; and hire a developer to do your upgrade for you.&lt;/p&gt;
@@ -81,15 +81,15 @@ And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt
 &lt;p&gt;Bad guys are everywhere.  Trying to steal from you.  Trying to wreck your business.  Trying to harass you.  It&amp;rsquo;s unfortunate, but it&amp;rsquo;s part of operating online.&lt;/p&gt;
 &lt;p&gt;Upgrading PHP and your Zen Cart &lt;strong&gt;helps protect you&lt;/strong&gt; from bad guys. Both PHP and Zen Cart are constantly being improved and hardened so that it&amp;rsquo;s more difficult for bad guys to cause problems.  It&amp;rsquo;s an endless cycle - bad guys discover new ways of making trouble; good guys update the software to defend against the new attacks.  But you don&amp;rsquo;t get the benefits of the work the good guys have done unless you upgrade!&lt;/p&gt;
 &lt;h3 id=&#34;does-this-really-happen&#34;&gt;Does this really happen?&lt;/h3&gt;
-&lt;p&gt;Yes.  You can review the &lt;a href=&#34;/user/about_us/security_releases/&#34;&gt;security releases&lt;/a&gt; page and dig into these releases to discover the backstories.&lt;/p&gt;
+&lt;p&gt;Yes.  You can review the &lt;a href=&#34;/zendocs_test1/user/about_us/security_releases/&#34;&gt;security releases&lt;/a&gt; page and dig into these releases to discover the backstories.&lt;/p&gt;
 &lt;h3 id=&#34;how-do-i-keep-my-site-safe&#34;&gt;How Do I Keep My Site Safe?&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgrade regularly. &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;The Zen Cart team takes security seriously&lt;/a&gt;, but &lt;strong&gt;you&lt;/strong&gt; have to install the updates if you want to keep your cart safe.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/about_us/announcements&#34;&gt;Subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/li&gt;
-&lt;li&gt;Perform the &lt;a href=&#34;/user/running/regular_maintenance/&#34;&gt;recommended regular maintenance&lt;/a&gt; of your cart.&lt;/li&gt;
-&lt;li&gt;Follow the &lt;a href=&#34;/user/security/security_recommendations/&#34;&gt;security recommendations&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Keep track of &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; so you know when the &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;PHP version you are running&lt;/a&gt; is at or near end of life.&lt;/li&gt;
-&lt;li&gt;Watch your &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries&lt;/a&gt;.  As vulnerabilities are discovered, you will need to update them.&lt;/li&gt;
+&lt;li&gt;Upgrade regularly. &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;The Zen Cart team takes security seriously&lt;/a&gt;, but &lt;strong&gt;you&lt;/strong&gt; have to install the updates if you want to keep your cart safe.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/about_us/announcements&#34;&gt;Subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/li&gt;
+&lt;li&gt;Perform the &lt;a href=&#34;/zendocs_test1/user/running/regular_maintenance/&#34;&gt;recommended regular maintenance&lt;/a&gt; of your cart.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;/zendocs_test1/user/security/security_recommendations/&#34;&gt;security recommendations&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Keep track of &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; so you know when the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;PHP version you are running&lt;/a&gt; is at or near end of life.&lt;/li&gt;
+&lt;li&gt;Watch your &lt;a href=&#34;/zendocs_test1/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries&lt;/a&gt;.  As vulnerabilities are discovered, you will need to update them.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -97,10 +97,10 @@ And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt
     
     <item>
       <title>User: Standard Upgrade - Recommended Procedure</title>
-      <link>/user/upgrading/detailed_upgrading/</link>
+      <link>/zendocs_test1/user/upgrading/detailed_upgrading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/detailed_upgrading/</guid>
+      <guid>/zendocs_test1/user/upgrading/detailed_upgrading/</guid>
       <description>
         
         
@@ -110,28 +110,28 @@ And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt
 &lt;h1 id=&#34;getting-ready&#34;&gt;Getting Ready&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Backup. Before you begin, remember to make a &lt;a href=&#34;/user/running/backup/&#34;&gt;complete backup of your files and database&lt;/a&gt;. This will be repeated often!&lt;/p&gt;
+&lt;p&gt;Backup. Before you begin, remember to make a &lt;a href=&#34;/zendocs_test1/user/running/backup/&#34;&gt;complete backup of your files and database&lt;/a&gt;. This will be repeated often!&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Content of new versions&lt;/p&gt;
 &lt;p&gt;Upgraders, be sure to familiarize yourself with the content of each of the new versions released since the one you were previously using:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Relevant &lt;a href=&#34;https://www.zen-cart.com/docs/&#34;&gt;&lt;strong&gt;What&amp;rsquo;s New&lt;/strong&gt;&lt;/a&gt; details for releases since the one you were previously using.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release-Specific Considerations&lt;/a&gt; page which points out special cases to consider.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;/zendocs_test1/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release-Specific Considerations&lt;/a&gt; page which points out special cases to consider.&lt;/li&gt;
 &lt;li&gt;You should also spend some time getting familiar with any additions made to the demo data in the new version, so that you can become comfortable with any new features contained in the new release.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Tools&lt;/p&gt;
-&lt;p&gt;To upgrade Zen Cart, you&amp;rsquo;ll need the same basic tools you used to install and customize it in the first place: An &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, a &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt; for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your hosting company&amp;rsquo;s Control Panel for managing your webspace.&lt;/p&gt;
+&lt;p&gt;To upgrade Zen Cart, you&amp;rsquo;ll need the same basic tools you used to install and customize it in the first place: An &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, a &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt; for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your hosting company&amp;rsquo;s Control Panel for managing your webspace.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;File Comparison Tool&lt;/p&gt;
-&lt;p&gt;Additionally, &lt;strong&gt;you will find a file-comparison tool to be highly beneficial. Particularly, a 3-way comparison tool is preferable.&lt;/strong&gt; See the list of &lt;a href=&#34;/user/first_steps/useful_tools/&#34;&gt;Useful Tools&lt;/a&gt; for suggestions. (While the free tools offer 2-way comparison, many offer 3-way comparisons in their paid versions.)&lt;/p&gt;
+&lt;p&gt;Additionally, &lt;strong&gt;you will find a file-comparison tool to be highly beneficial. Particularly, a 3-way comparison tool is preferable.&lt;/strong&gt; See the list of &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/&#34;&gt;Useful Tools&lt;/a&gt; for suggestions. (While the free tools offer 2-way comparison, many offer 3-way comparisons in their paid versions.)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Compatibility&lt;/p&gt;
-&lt;p&gt;First, &lt;a href=&#34;/user/first_steps/server_requirements/&#34;&gt;check whether your server is compatible&lt;/a&gt; with the version you&amp;rsquo;re trying to upgrade to.&lt;/p&gt;
+&lt;p&gt;First, &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/&#34;&gt;check whether your server is compatible&lt;/a&gt; with the version you&amp;rsquo;re trying to upgrade to.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Upgrading follows 3 core stages. We suggest you take your time going through each stage carefully and methodically. Don&amp;rsquo;t rush the process.&lt;/p&gt;
@@ -144,8 +144,8 @@ And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt
 &lt;p&gt;When you&amp;rsquo;re done with your testing, remove the &lt;code&gt;demo&lt;/code&gt; directory and the &lt;code&gt;demo&lt;/code&gt; database you created for it.&lt;/p&gt;
 &lt;h1 id=&#34;1-preparation&#34;&gt;1. Preparation&lt;/h1&gt;
 &lt;h2 id=&#34;make-backups&#34;&gt;Make backups&lt;/h2&gt;
-&lt;p&gt;Make a &lt;a href=&#34;/user/running/backup/#b-backup-your-database&#34;&gt;full backup of your live database (dump to SQL file)&lt;/a&gt;. Store this file on your PC for later reference.&lt;/p&gt;
-&lt;p&gt;Make a &lt;a href=&#34;/user/running/backup/#a-backup-your-files&#34;&gt;full backup of your live site files (ftp to your PC and zip it up for safe-keeping)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Make a &lt;a href=&#34;/zendocs_test1/user/running/backup/#b-backup-your-database&#34;&gt;full backup of your live database (dump to SQL file)&lt;/a&gt;. Store this file on your PC for later reference.&lt;/p&gt;
+&lt;p&gt;Make a &lt;a href=&#34;/zendocs_test1/user/running/backup/#a-backup-your-files&#34;&gt;full backup of your live site files (ftp to your PC and zip it up for safe-keeping)&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;working-directory&#34;&gt;Working Directory&lt;/h2&gt;
 &lt;p&gt;On your PC create a directory/folder to hold your store&amp;rsquo;s &amp;ldquo;old&amp;rdquo; files.&lt;/p&gt;
 &lt;p&gt;For this document we will assume you named this folder &lt;code&gt;store&lt;/code&gt;.&lt;/p&gt;
@@ -180,9 +180,9 @@ This way, in the right column you&amp;rsquo;ll see all the ways in which your st
 In WinMerge you can double-click on each file and note what the differences are.&lt;/p&gt;
 &lt;p&gt;Here are some examples of how WinMerge will allow you to see differences in files.&lt;/p&gt;
 &lt;h4 id=&#34;comparing-directories&#34;&gt;Comparing Directories&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;/images/upg-dir-compare.png&#34; alt=&#34;Comparing Directories&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/upg-dir-compare.png&#34; alt=&#34;Comparing Directories&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;comparing-files&#34;&gt;Comparing Files&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;/images/upg-file-compare.png&#34; alt=&#34;Comparing Files&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/upg-file-compare.png&#34; alt=&#34;Comparing Files&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;types-of-file-differences&#34;&gt;Types of File Differences&lt;/h4&gt;
 &lt;p&gt;There will be many differences:&lt;/p&gt;
 &lt;ul&gt;
@@ -196,11 +196,11 @@ You may have to download the add-on again (ie: the older version of it) to take 
 &lt;p&gt;While you&amp;rsquo;re reviewing PHP/JS/CSS files you might be reminded of some plugins or template customizations that aren&amp;rsquo;t on the list you made earlier. Be sure to note them and then research them for upgrades.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;consider-moving-customizations-into-a-standard-override-structure&#34;&gt;Consider moving customizations into a standard override structure&lt;/h2&gt;
-&lt;p&gt;As you make your list of changed files, this may be a good time to move your store-specific changes into the Zen Cart template-override structure, if you haven&amp;rsquo;t already done so. See the &lt;a href=&#34;/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for help on the template system.&lt;/p&gt;
+&lt;p&gt;As you make your list of changed files, this may be a good time to move your store-specific changes into the Zen Cart template-override structure, if you haven&amp;rsquo;t already done so. See the &lt;a href=&#34;/zendocs_test1/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for help on the template system.&lt;/p&gt;
 &lt;p&gt;The benefit of moving these customizations into specific override files is that these overrides are simpler to compare/upgrade in the future, and may mean less work when it comes to the &amp;ldquo;actual&amp;rdquo; upgrade in following steps.&lt;/p&gt;
 &lt;p&gt;Using overrides isn&amp;rsquo;t a magic pill, but it does simplify things a lot if only by virtue of isolating customizations so you know which things &amp;ldquo;definitely need attention&amp;rdquo; or &amp;ldquo;these differences I see are intentional changes I made&amp;rdquo; (otherwise sometimes it&amp;rsquo;s hard to remember whether you wanted it that way or not).&lt;/p&gt;
 &lt;h2 id=&#34;handling-custom-date-fields-in-your-database&#34;&gt;Handling custom date fields in your database&lt;/h2&gt;
-&lt;p&gt;If you have modified the structure of your database to add custom date fields, please see &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have modified the structure of your database to add custom date fields, please see &lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;2-execution&#34;&gt;2. Execution&lt;/h1&gt;
 &lt;p&gt;Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps &lt;code&gt;store_new&lt;/code&gt;), separate from the other two folders compared above (eg &lt;code&gt;store&lt;/code&gt; and &lt;code&gt;zen_orig&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;Using the list of files you made earlier, go through each &amp;ldquo;changed&amp;rdquo; file, and re-make your changes from the old version onto the new version.&lt;/p&gt;
@@ -226,7 +226,7 @@ You may have to download the add-on again (ie: the older version of it) to take 
 &lt;li&gt;and &lt;code&gt;/includes/modules/sideboxes/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/modules/sideboxes/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;and &lt;code&gt;/includes/languages/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/languages/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;and &lt;code&gt;/includes/languages/LANGUAGE_NAME/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/languages/LANGUAGE_NAME/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;etc (see the &lt;a href=&#34;/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for details on the &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override directories&lt;/a&gt;!)&lt;/li&gt;
+&lt;li&gt;etc (see the &lt;a href=&#34;/zendocs_test1/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for details on the &lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;override directories&lt;/a&gt;!)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clarification: use WinMerge to compare these original directories against your override directories, just like you&amp;rsquo;re comparing other directories with each other. Sometimes using 3-way-mode makes it easier to visualize what parts of individual files were actually customized, so you can decide whether to keep the difference or not.&lt;/p&gt;
@@ -247,17 +247,17 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-testing&#34;&gt;3. Testing&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; As an alternative, rather than testing on your server, you can &lt;a href=&#34;/user/running/local_testing/&#34;&gt;set up a local development environment&lt;/a&gt; and test there.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; As an alternative, rather than testing on your server, you can &lt;a href=&#34;/zendocs_test1/user/running/local_testing/&#34;&gt;set up a local development environment&lt;/a&gt; and test there.&lt;/p&gt;
 &lt;h2 id=&#34;take-a-fresh-backup&#34;&gt;Take a fresh backup&lt;/h2&gt;
 &lt;p&gt;First, take a fresh database backup from your live store:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In your live store, go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/code&gt;.  Put the store in &lt;a href=&#34;/user/running/down_for_maintenance/&#34;&gt;maintenance mode&lt;/a&gt;, and add your IP to the list in the &lt;code&gt;Down For Maintenance (exclude this IP-Address)&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;In your live store, go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/code&gt;.  Put the store in &lt;a href=&#34;/zendocs_test1/user/running/down_for_maintenance/&#34;&gt;maintenance mode&lt;/a&gt;, and add your IP to the list in the &lt;code&gt;Down For Maintenance (exclude this IP-Address)&lt;/code&gt; field.&lt;/li&gt;
 &lt;li&gt;Make a fresh backup of your live database.&lt;/li&gt;
 &lt;li&gt;Put your site back into normal mode (turn off Down For Maintenance).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;create-a-temporary-new-store-on-your-server-for-testing&#34;&gt;Create a temporary new store on your server, for testing&lt;/h2&gt;
 &lt;p&gt;Create a NEW database in cPanel. Create a database user that has full permissions to access this database.&lt;/p&gt;
-&lt;p&gt;Use the backup that you just made from your live site to fill the database with data. (See &lt;a href=&#34;/user/running/backup/#to-restore-your-database&#34;&gt;restoring the database&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Use the backup that you just made from your live site to fill the database with data. (See &lt;a href=&#34;/zendocs_test1/user/running/backup/#to-restore-your-database&#34;&gt;restoring the database&lt;/a&gt;.)&lt;/p&gt;
 &lt;h2 id=&#34;prepare-the-configurephp-files&#34;&gt;Prepare the configure.php files&lt;/h2&gt;
 &lt;p&gt;On your PC, in your &lt;code&gt;store_new&lt;/code&gt; folder, copy&lt;/p&gt;
 &lt;ul&gt;
@@ -277,11 +277,11 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;p&gt;Clarification: a couple steps earlier we created a new database in cPanel, and restored your backup database to that new database. Thus it contains a (slightly) older copy of your store&amp;rsquo;s data. Here we&amp;rsquo;re doing an upgrade on that data so that its structure matches what is needed for the new Zen Cart version we&amp;rsquo;re testing in these steps. THIS IS NOT THE FINAL STEP, and the data is NOT THE FINAL DATA. This is only temporary for testing, but we&amp;rsquo;re using a copy of your prior data as a way to test that things &amp;ldquo;work&amp;rdquo; and have a sense of confidence that the data showing up is &amp;ldquo;familiar&amp;rdquo; and &amp;ldquo;reasonable&amp;rdquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In your browser, run &lt;code&gt;store_new/zc_install/index.php&lt;/code&gt; and choose &amp;ldquo;&lt;em&gt;Upgrade&lt;/em&gt;&amp;rdquo; when prompted. (Don&amp;rsquo;t select &amp;ldquo;Clean Install&amp;rdquo;, or you will overwrite your database.)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If the &amp;ldquo;Upgrade&amp;rdquo; button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the &lt;code&gt;DB_*&lt;/code&gt; fields correspond to your new database, including that the &lt;code&gt;DB_PREFIX&lt;/code&gt; matches the &lt;code&gt;DB_PREFIX&lt;/code&gt; in your old site.&lt;/p&gt;
 &lt;h3 id=&#34;the-zc_install-process&#34;&gt;The zc_install process&lt;/h3&gt;
 &lt;p&gt;Once you press the Upgrade button, the screen will show you a list of updates to be performed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Be patient&lt;/strong&gt; - it can take a while to do all the updating required.&lt;/p&gt;
 &lt;p&gt;Once this action completes, you have an up to date copy of your database.&lt;/p&gt;
 &lt;h2 id=&#34;database-changes&#34;&gt;Database Changes&lt;/h2&gt;
@@ -348,7 +348,7 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;p&gt;Visit each of the admin pages Modules &amp;gt; Shipping, Modules &amp;gt; Payment, Modules &amp;gt; Order Total to allow your modules to insert any missing keys.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;verify&#34;&gt;Verify&lt;/h3&gt;
@@ -416,7 +416,7 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;p&gt;do any install/remove steps relevant to any addons you&amp;rsquo;re adding/removing&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;test &lt;code&gt;store_new&lt;/code&gt;, going through the shopping, buying and order fulfillment process.&lt;/p&gt;
@@ -441,7 +441,7 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;p&gt;In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt; for an updated version of the plugin.  If you don&amp;rsquo;t see one, you can ask on the plugin&amp;rsquo;s support thread. It may be best to remove a plugin&amp;rsquo;s &amp;ldquo;old&amp;rdquo; version&amp;rsquo;s files before installing its new files (consult its documentation and file structure to see if much has changed), in case it&amp;rsquo;s important that older files be sure to be removed.&lt;/p&gt;
 &lt;h1 id=&#34;templates&#34;&gt;Templates&lt;/h1&gt;
 &lt;p&gt;When it comes to templates, if you obtained your template from the Plugins Library, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.&lt;/p&gt;
-&lt;p&gt;If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in &lt;a href=&#34;/user/template/other_templates/#responsive-classic-template-product-page&#34;&gt;responsive classic&lt;/a&gt; template introduced in v1.5.5 is a good start.&lt;/p&gt;
+&lt;p&gt;If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in &lt;a href=&#34;/zendocs_test1/user/template/other_templates/#responsive-classic-template-product-page&#34;&gt;responsive classic&lt;/a&gt; template introduced in v1.5.5 is a good start.&lt;/p&gt;
 &lt;p&gt;HOWEVER: If you are changing your template, YOU SHOULD CONSIDER &lt;strong&gt;TREATING A CHANGE OF TEMPLATE AS A SEPARATE STEP&lt;/strong&gt; FROM YOUR UPGRADE.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Tweaking templates &amp;ldquo;to perfection&amp;rdquo; can endlessly delay implementing an upgrade if you aren&amp;rsquo;t diligent.&lt;/p&gt;
@@ -452,7 +452,7 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
 &lt;p&gt;The MySQL Character set you are using defines the legal characters within a string.  Early versions of Zen Cart used the &lt;code&gt;latin1&lt;/code&gt; character set, which can be used to represent English and other Western European languages.  (You may also hear this character set referred to as &amp;ldquo;iso-8859-1.&amp;rdquo;)&lt;/p&gt;
 &lt;p&gt;As of Zen Cart v1.5.0 all &lt;strong&gt;new&lt;/strong&gt; sites created database tables with the UTF8 character-set.&lt;/p&gt;
 &lt;p&gt;As of Zen Cart v1.5.6 all &lt;strong&gt;new&lt;/strong&gt; sites created database tables with the UTF8MB4 character-set.&lt;/p&gt;
-&lt;p&gt;If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see &lt;a href=&#34;/user/upgrading/convert_to_utf8&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see &lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Other terms you might hear which are related to character set:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;collation: how strings are compared during a sort (arranging in alphabetical order).&lt;/li&gt;
@@ -465,31 +465,31 @@ Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says t
     
     <item>
       <title>User: Database-Only Upgrade Instructions</title>
-      <link>/user/upgrading/db_only_upgrade/</link>
+      <link>/zendocs_test1/user/upgrading/db_only_upgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/db_only_upgrade/</guid>
+      <guid>/zendocs_test1/user/upgrading/db_only_upgrade/</guid>
       <description>
         
         
         &lt;p&gt;&lt;font size=&#34;12&#34; color=&#34;red&#34;&gt;Warning!&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;This is not the &lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;standard upgrade procedure&lt;/a&gt;.  It will DEFINITELY cause you to lose functionality associated with your older customizations and could break things as you will have configuration settings with no associated files (sideboxes, template, etc.).&lt;/p&gt;
+&lt;p&gt;This is not the &lt;a href=&#34;/zendocs_test1/user/upgrading/detailed_upgrading/&#34;&gt;standard upgrade procedure&lt;/a&gt;.  It will DEFINITELY cause you to lose functionality associated with your older customizations and could break things as you will have configuration settings with no associated files (sideboxes, template, etc.).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Doing a database only upgrade might be appropriate in situations like this:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;you are coming from Zen Cart 1.5.4 or older version, and you don&amp;rsquo;t have time or budget for a proper upgrade.&lt;/li&gt;
-&lt;li&gt;your hoster just &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;updated PHP to a version which is not compatible with your older Zen Cart software&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;your hoster just &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;updated PHP to a version which is not compatible with your older Zen Cart software&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;you have minimal customizations and your current template is not mobile compatible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You will lose your customizations, but you won&amp;rsquo;t lose your data and you&amp;rsquo;ll be using the latest software, which is more secure.&lt;/p&gt;
 &lt;p&gt;You will be using the &lt;code&gt;responsive_classic&lt;/code&gt; template initially.  You can always add a new template later after your store is up and running.&lt;/p&gt;
 &lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/user/running/backup/#step-1-backup-your-files&#34;&gt;Back up your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/user/running/backup/#step-2-backup-your-database&#34;&gt;Backup your database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/zendocs_test1/user/running/backup/#step-1-backup-your-files&#34;&gt;Back up your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/zendocs_test1/user/running/backup/#step-2-backup-your-database&#34;&gt;Backup your database&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Create a new directory called &amp;ldquo;test&amp;rdquo; and put the latest version of Zen Cart into it. We&amp;rsquo;ll call this your &lt;em&gt;test site&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Then create a new database and load your old database in it&lt;/li&gt;
-&lt;li&gt;Do any database conversions necessary - only necessary if you have &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;custom
+&lt;li&gt;Do any database conversions necessary - only necessary if you have &lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;custom
 date fields&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Next, change the two configure.php files to utilize the new directory and
 database  This way &amp;hellip; when you attempt to upgrade you are &amp;ldquo;practicing&amp;rdquo; to see
@@ -497,10 +497,10 @@ where the problems, if any will happen&lt;/li&gt;
 &lt;li&gt;Run the installer at &lt;code&gt;https://www.YOURSITE.com/zc_install&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Choose the &lt;em&gt;Upgrade&lt;/em&gt; option&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;the-zc_install-process&#34;&gt;The zc_install process&lt;/h3&gt;
 &lt;p&gt;Once you press the Upgrade button, the screen will show you a list of updates to be performed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Be patient&lt;/strong&gt; - it can take a while to do all the updating required.&lt;/p&gt;
 &lt;p&gt;Once this action completes, you have an up to date copy of your database.&lt;/p&gt;
 &lt;h3 id=&#34;database-changes&#34;&gt;Database Changes&lt;/h3&gt;
@@ -529,10 +529,10 @@ where the problems, if any will happen&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;updating-php&#34;&gt;Updating PHP&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;if-you-have-a-little-more-time-&#34;&gt;If you have a little more time &amp;hellip;&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s worth your while to switch from the Responsive Classic template to the &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.  It looks much better and it&amp;rsquo;s just a bit more work.  Redo the customization step above for the storefront files:&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth your while to switch from the Responsive Classic template to the &lt;a href=&#34;/zendocs_test1/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.  It looks much better and it&amp;rsquo;s just a bit more work.  Redo the customization step above for the storefront files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;includes/languages/bootstrap/english.php&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;includes/languages/english/bootstrap/email_extras.php&lt;/code&gt;&lt;/li&gt;
@@ -543,10 +543,10 @@ where the problems, if any will happen&lt;/li&gt;
     
     <item>
       <title>User: Character Sets</title>
-      <link>/user/upgrading/character_sets/</link>
+      <link>/zendocs_test1/user/upgrading/character_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/character_sets/</guid>
+      <guid>/zendocs_test1/user/upgrading/character_sets/</guid>
       <description>
         
         
@@ -556,9 +556,9 @@ where the problems, if any will happen&lt;/li&gt;
 &lt;p&gt;�&lt;/p&gt;
 &lt;p&gt;Seeing this symbol indicates that you may not be using UTF8MB4 throughout your cart.  Things to check are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;DB_CHARSET&lt;/code&gt; value in your &lt;a href=&#34;/user/miscellaneous/configure/&#34;&gt;configure.php&lt;/a&gt; file.  This setting is the encoding between your database and the output of pages on your site.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;DB_CHARSET&lt;/code&gt; value in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php&lt;/a&gt; file.  This setting is the encoding between your database and the output of pages on your site.&lt;/li&gt;
 &lt;li&gt;The &lt;code&gt;CHARSET&lt;/code&gt; value in your language files in &lt;code&gt;includes/languages/YOURTEMPLATE/&lt;/code&gt;.  For example, if your template is bootstrap and your store uses English and French, check both &lt;code&gt;includes/languages/bootstrap/english.php&lt;/code&gt; and &lt;code&gt;includes/languages/bootstrap/french.php&lt;/code&gt;.  This setting controls the &lt;code&gt;&amp;lt;meta charset=&amp;quot;YOURENCODING&amp;quot;&amp;gt;&lt;/code&gt; tag at the top of your web pages.&lt;/li&gt;
-&lt;li&gt;Your database tables.  If you have not yet gone through the process of &lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;converting from iso-8859-1 to utf8&lt;/a&gt;, you may need to.&lt;/li&gt;
+&lt;li&gt;Your database tables.  If you have not yet gone through the process of &lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8/&#34;&gt;converting from iso-8859-1 to utf8&lt;/a&gt;, you may need to.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may also need to check:&lt;/p&gt;
 &lt;ul&gt;
@@ -566,8 +566,8 @@ where the problems, if any will happen&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;Converting from iso-8859-1 to utf8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/#character-set&#34;&gt;Character Set&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8/&#34;&gt;Converting from iso-8859-1 to utf8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/detailed_upgrading/#character-set&#34;&gt;Character Set&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -575,10 +575,10 @@ where the problems, if any will happen&lt;/li&gt;
     
     <item>
       <title>User: Configuration Parameter Name Changes</title>
-      <link>/user/upgrading/configuration_name_changes/</link>
+      <link>/zendocs_test1/user/upgrading/configuration_name_changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/configuration_name_changes/</guid>
+      <guid>/zendocs_test1/user/upgrading/configuration_name_changes/</guid>
       <description>
         
         
@@ -645,10 +645,10 @@ where the problems, if any will happen&lt;/li&gt;
     
     <item>
       <title>User: Converting from iso-8859-1 to utf8 or utf8mb4</title>
-      <link>/user/upgrading/convert_to_utf8/</link>
+      <link>/zendocs_test1/user/upgrading/convert_to_utf8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/convert_to_utf8/</guid>
+      <guid>/zendocs_test1/user/upgrading/convert_to_utf8/</guid>
       <description>
         
         
@@ -674,8 +674,8 @@ Since Zen Cart v1.5.6 all &lt;strong&gt;new&lt;/strong&gt; sites create database
 &lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1318&#34;&gt;https://github.com/zencart/utf8mb4-converter&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;bad date formats&lt;/a&gt; in existing data&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/upgrading/fixing_broken_tables/&#34;&gt;broken tables&lt;/a&gt;, such as broken auto-increments or corrupt indexes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;bad date formats&lt;/a&gt; in existing data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/upgrading/fixing_broken_tables/&#34;&gt;broken tables&lt;/a&gt;, such as broken auto-increments or corrupt indexes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2-configuring-your-store&#34;&gt;2. Configuring your store&lt;/h3&gt;
 &lt;p&gt;You must also update your PHP files to indicate your UTF-8 intentions.&lt;/p&gt;
@@ -720,29 +720,29 @@ pwd_last_change_date = now(),
     
     <item>
       <title>User: Could not upgrade to version X</title>
-      <link>/user/upgrading/could_not_upgrade/</link>
+      <link>/zendocs_test1/user/upgrading/could_not_upgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/could_not_upgrade/</guid>
+      <guid>/zendocs_test1/user/upgrading/could_not_upgrade/</guid>
       <description>
         
         
         &lt;p&gt;If you get a message like,&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Could not upgrade to version 1.5.7.  We detect that you currently have v1.5.5, and must perform the updates to get to version 1.5.6 first.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/could_not_upgrade.png&#34; alt=&#34;Could not upgrade&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/could_not_upgrade.png&#34; alt=&#34;Could not upgrade&#34;&gt;&lt;/p&gt;
 &lt;p&gt;What has happened is that the upgrade has stopped because one of the tests which ensures prior updates were done has failed.  Each database upgrade to version X will spot check whether all prior upgrades have been completed, and stop if not.&lt;/p&gt;
 &lt;p&gt;The file &lt;code&gt;zc_install/includes/systemChecks.yml&lt;/code&gt; contains the list of checks done at each version to ensure that the database has actually been up to date.  So in the case above, reviewing the 1.5.6 checks will narrow down the things to check to see what might have failed.&lt;/p&gt;
-&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
+&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Date standardization</title>
-      <link>/user/upgrading/date_standardization/</link>
+      <link>/zendocs_test1/user/upgrading/date_standardization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/date_standardization/</guid>
+      <guid>/zendocs_test1/user/upgrading/date_standardization/</guid>
       <description>
         
         
@@ -767,7 +767,7 @@ of your database to add custom &lt;code&gt;datetime&lt;/code&gt; or &lt;code&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1726&#34;&gt;Flexible Footer Menu Columns for 1.5.x&lt;/a&gt;. It creates a field named &lt;code&gt;date_added&lt;/code&gt; in the &lt;code&gt;flexible_footer_menu&lt;/code&gt; table.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Example fix:&lt;/p&gt;
-&lt;p&gt;To get the custom &lt;code&gt;datetime&lt;/code&gt; field &lt;code&gt;order_delivery_date&lt;/code&gt; into the new format, use following command in phpMyAdmin or in &lt;a href=&#34;/user/admin_pages/tools/install_sql_patches/&#34;&gt;Install SQL Patches&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;To get the custom &lt;code&gt;datetime&lt;/code&gt; field &lt;code&gt;order_delivery_date&lt;/code&gt; into the new format, use following command in phpMyAdmin or in &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/install_sql_patches/&#34;&gt;Install SQL Patches&lt;/a&gt;:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;```
 UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WHERE order_delivery_date IS NOT NULL AND CAST(order_delivery_date AS CHAR(19)) = &amp;#39;0000-00-00 00:00:00&amp;#39;;
 ```
@@ -789,10 +789,10 @@ UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WH
     
     <item>
       <title>User: Fixing broken tables</title>
-      <link>/user/upgrading/fixing_broken_tables/</link>
+      <link>/zendocs_test1/user/upgrading/fixing_broken_tables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/fixing_broken_tables/</guid>
+      <guid>/zendocs_test1/user/upgrading/fixing_broken_tables/</guid>
       <description>
         
         
@@ -813,10 +813,10 @@ UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WH
     
     <item>
       <title>User: Installer does not show an Upgrade button</title>
-      <link>/user/upgrading/installer_no_upgrade/</link>
+      <link>/zendocs_test1/user/upgrading/installer_no_upgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/installer_no_upgrade/</guid>
+      <guid>/zendocs_test1/user/upgrading/installer_no_upgrade/</guid>
       <description>
         
         
@@ -826,17 +826,17 @@ UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WH
 &lt;li&gt;Does &lt;code&gt;DB_PREFIX&lt;/code&gt; correctly reflect the prefix used on the tables in the database?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When everything is configured correctly, you should see this at the bottom of the screen on the first page of &lt;code&gt;zc_install&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: JavaScript Libraries</title>
-      <link>/user/upgrading/javascript_updates/</link>
+      <link>/zendocs_test1/user/upgrading/javascript_updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/javascript_updates/</guid>
+      <guid>/zendocs_test1/user/upgrading/javascript_updates/</guid>
       <description>
         
         
@@ -845,37 +845,37 @@ UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WH
 &lt;p&gt;Your template&amp;rsquo;s &lt;code&gt;html_header.php&lt;/code&gt; or &lt;code&gt;jscript/jscript_xxxxxxx.*&lt;/code&gt; files are common places to check for direct references to old libraries.  You will also want to check the &lt;code&gt;includes/templates/YOURTEMPLATE/jscript&lt;/code&gt; folder to see if there are old versions stored there.&lt;/p&gt;
 &lt;p&gt;Remember that addons to templates often bring in their own jQuery version that is likely older than the one you want to use for your template. Make sure you&amp;rsquo;re only loading &lt;strong&gt;one&lt;/strong&gt; copy of jQuery, and that the copy you are loading is current and compatible with all the other JavaScript and/or jQuery features you&amp;rsquo;re already using.&lt;/p&gt;
 &lt;p&gt;A very easy way to test whether your libraries are current is to use Google Lighthouse utility.  In Google Chrome, right click and select &amp;ldquo;Inspect.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Then in the dialog that comes up, on the right side, click &amp;ldquo;Lighthouse.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/lighthouse.png&#34; alt=&#34;Lighthouse&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/lighthouse.png&#34; alt=&#34;Lighthouse&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Click the Generate Report button, and look under &amp;ldquo;Best Practices.&amp;rdquo;  The message in this screenshot indicates that the Bootstrap and jQuery libraries need to be updated.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/best_practices.png&#34; alt=&#34;Lighthouse error&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/best_practices.png&#34; alt=&#34;Lighthouse error&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Mixed Collation Errors</title>
-      <link>/user/upgrading/mixed_collations/</link>
+      <link>/zendocs_test1/user/upgrading/mixed_collations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/mixed_collations/</guid>
+      <guid>/zendocs_test1/user/upgrading/mixed_collations/</guid>
       <description>
         
         
         &lt;p&gt;If you are getting PHP log files that say things like:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Illegal mix of collations (latin1_general_cs,IMPLICIT) and (latin1_general_ci,IMPLICIT) for operation &amp;#39;=&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the easiest way to fix this is to simply convert your database to use UTF8.  Fortunately there is a &lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;UTF8 Conversion Tool&lt;/a&gt; you can run to do this.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the easiest way to fix this is to simply convert your database to use UTF8.  Fortunately there is a &lt;a href=&#34;/zendocs_test1/user/upgrading/convert_to_utf8/&#34;&gt;UTF8 Conversion Tool&lt;/a&gt; you can run to do this.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: PHP Configuration</title>
-      <link>/user/upgrading/php_configuration/</link>
+      <link>/zendocs_test1/user/upgrading/php_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/php_configuration/</guid>
+      <guid>/zendocs_test1/user/upgrading/php_configuration/</guid>
       <description>
         
         
@@ -893,37 +893,37 @@ UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WH
 &lt;/ul&gt;
 &lt;p&gt;Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed.&lt;/p&gt;
 &lt;p&gt;Once you are done changing PHP version or a PHP setting, use the 
-&lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;Version&lt;/a&gt; link on the top right navigation menu to confirm that the change you made is recognized by Zen Cart.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;Version&lt;/a&gt; link on the top right navigation menu to confirm that the change you made is recognized by Zen Cart.&lt;/p&gt;
 &lt;h2 id=&#34;changing-php-versions-with-multiphp-manager&#34;&gt;Changing PHP Versions with MultiPHP Manager&lt;/h2&gt;
 &lt;p&gt;MultiPHP Manager provides a dropdown list of PHP versions; simply select the one that is right for your cart, select the domain from the list below it, and press Apply.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/multiphp.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/multiphp.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;changing-php-versions-with-php-selector&#34;&gt;Changing PHP Versions with PHP Selector&lt;/h2&gt;
 &lt;p&gt;PHP Selector (Select PHP Version) provides a dropdown list of PHP versions; simply select the one that is right for your cart, select the domain from the list below it, and press Apply.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/phpselector.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/phpselector.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;changing-php-configuration-with-multiphp-ini-editor&#34;&gt;Changing PHP Configuration with MultiPHP INI Editor&lt;/h2&gt;
 &lt;p&gt;The Basic Mode of MultiPHP INI Editor allows you to use a form to set some key variables, such as &lt;code&gt;memory_limit&lt;/code&gt;.   For other variables, it provides a file editor for you to use a &lt;code&gt;php.ini&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/multiphpini.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/multiphpini.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;changing-php-configuration-with-php-selector&#34;&gt;Changing PHP Configuration with PHP Selector&lt;/h2&gt;
 &lt;p&gt;The PHP Options screen (launched from the Options tab) at the top of PHP Selector allows you to set common configuration variables for PHP.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/phpselector_options.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/phpselector_options.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The PHP Extensions screen (launched from the Extensions tab) at the top of PHP Selector allows you to include PHP libraries.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/phpselector_extensions.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/phpselector_extensions.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: PHP Warnings and Deprecated messages after upgrading</title>
-      <link>/user/upgrading/php_warnings/</link>
+      <link>/zendocs_test1/user/upgrading/php_warnings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/php_warnings/</guid>
+      <guid>/zendocs_test1/user/upgrading/php_warnings/</guid>
       <description>
         
         
-        &lt;p&gt;As you upgrade PHP from an older version, these are &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug log messages&lt;/a&gt; you will commonly see.  An explanation of &lt;em&gt;why this can happen&lt;/em&gt; is provided in &lt;a href=&#34;/user/troubleshooting/php_debug_logs&#34;&gt;understanding errors after upgrading PHP versions&lt;/a&gt;. This article explains &lt;em&gt;how to fix&lt;/em&gt; some of the most common problems you will see.&lt;/p&gt;
+        &lt;p&gt;As you upgrade PHP from an older version, these are &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug log messages&lt;/a&gt; you will commonly see.  An explanation of &lt;em&gt;why this can happen&lt;/em&gt; is provided in &lt;a href=&#34;/zendocs_test1/user/troubleshooting/php_debug_logs&#34;&gt;understanding errors after upgrading PHP versions&lt;/a&gt;. This article explains &lt;em&gt;how to fix&lt;/em&gt; some of the most common problems you will see.&lt;/p&gt;
 &lt;p&gt;There are several levels of PHP problems, with the least serious being &lt;em&gt;notices&lt;/em&gt; and &lt;em&gt;warnings&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;More serious are PHP &lt;em&gt;errors&lt;/em&gt;, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the &lt;a href=&#34;/user/troubleshooting/blank_page/&#34;&gt;blank pages troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More serious are PHP &lt;em&gt;errors&lt;/em&gt;, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the &lt;a href=&#34;/zendocs_test1/user/troubleshooting/blank_page/&#34;&gt;blank pages troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Please take these as examples, not exact matches for every log you might come across.&lt;/p&gt;
 &lt;h2 id=&#34;undefined-constant&#34;&gt;Undefined constant&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Warning: Use of undefined constant MODULE_SHIPPING_BOXES_MANAGER_STATUS - assumed &amp;#39;MODULE_SHIPPING_BOXES_MANAGER_STATUS&amp;#39; (this will throw an Error in a future version of PHP) in /public_html/zen-cart-v1.5.7/includes/modules/shipping/fedexwebservices.php on line 85.
@@ -1025,17 +1025,17 @@ This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Warning: sizeof(): Parameter must be an array or an object that implements Countable
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To avoid this, check the value using &lt;code&gt;empty&lt;/code&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (!empty($array)) {
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More suggestions and recommendations are available in the &lt;a href=&#34;/dev/plugins/php_updating/&#34;&gt;PHP migration guides&lt;/a&gt; in the Developer Docs.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More suggestions and recommendations are available in the &lt;a href=&#34;/zendocs_test1/dev/plugins/php_updating/&#34;&gt;PHP migration guides&lt;/a&gt; in the Developer Docs.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Release Specific Upgrade Considerations</title>
-      <link>/user/upgrading/release_specific_upgrade_considerations/</link>
+      <link>/zendocs_test1/user/upgrading/release_specific_upgrade_considerations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/release_specific_upgrade_considerations/</guid>
+      <guid>/zendocs_test1/user/upgrading/release_specific_upgrade_considerations/</guid>
       <description>
         
         
@@ -1044,20 +1044,20 @@ This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;
 &lt;li&gt;changes to the database schema or contents which deserve special notice&lt;/li&gt;
 &lt;li&gt;changes to basic template operation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please be sure to also check &lt;a href=&#34;/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please be sure to also check &lt;a href=&#34;/zendocs_test1/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;all-versions&#34;&gt;ALL Versions&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;find outdated JavaScript libraries with known vulnerabilities&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to &lt;a href=&#34;/zendocs_test1/user/upgrading/javascript_updates/&#34;&gt;find outdated JavaScript libraries with known vulnerabilities&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Part of keeping modern is embracing newer PHP versions. You will need to address various &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;common issues with PHP version incompatibility&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Part of keeping modern is embracing newer PHP versions. You will need to address various &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;common issues with PHP version incompatibility&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Be sure external links are constructed with &lt;code&gt;rel=&amp;quot;noreferrer noopener&amp;quot;&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If you use a custom template, check it against &lt;a href=&#34;/user/template/template_changes/&#34;&gt;the template changes list&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you use a custom template, check it against &lt;a href=&#34;/zendocs_test1/user/template/template_changes/&#34;&gt;the template changes list&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;zen-cart-158-currently-in-development-phase-not-released-yet&#34;&gt;Zen Cart 1.5.8 (currently in development phase, not released yet)&lt;/h3&gt;
@@ -1066,7 +1066,7 @@ This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;
 &lt;p&gt;Most &amp;ldquo;functions&amp;rdquo; (both admin and non-admin) have been consolidated into files located in &lt;code&gt;/includes/functions/&lt;/code&gt;. Some have been merged together. Some changes are listed below.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Language file inclusions must be changed to comply with the new language file format.  See &lt;a href=&#34;/dev//languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Language file inclusions must be changed to comply with the new language file format.  See &lt;a href=&#34;/zendocs_test1/dev//languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The function &lt;code&gt;zen_parse_search_string&lt;/code&gt; input parameters have been reversed. Plugins that use this function will require modification.&lt;/p&gt;
@@ -1078,7 +1078,7 @@ This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;
 &lt;p&gt;The function &lt;code&gt;zen_cfg_read_only&lt;/code&gt; has been added.  This means any plugin authors who provided their own version of this function should remove it from their plugin (for 1.5.7+) or wrap it in &lt;code&gt;if (!function_exists(&#39;zen_cfg_read_only&#39;))&lt;/code&gt; (for older versions of Zen Cart).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The misspelled notifier &lt;code&gt;NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt; has been deprecated and replaced by &lt;code&gt;NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt;. Code that references the misspelled notifier will continue to work (due to the &lt;a href=&#34;/dev/code/notifiers/#event-aliasing&#34;&gt;event aliasing&lt;/a&gt; feature), but plugins should be updated to use the corrected name.&lt;/p&gt;
+&lt;p&gt;The misspelled notifier &lt;code&gt;NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt; has been deprecated and replaced by &lt;code&gt;NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt;. Code that references the misspelled notifier will continue to work (due to the &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/#event-aliasing&#34;&gt;event aliasing&lt;/a&gt; feature), but plugins should be updated to use the corrected name.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The constant &lt;code&gt;ROBOTS_PAGES_TO_SKIP&lt;/code&gt; was previously located in the language file &lt;code&gt;meta_tags.php&lt;/code&gt; despite not being language-related.&lt;br&gt;
@@ -1116,7 +1116,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 &lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1583&#34;&gt;Display Logs plugin&lt;/a&gt; is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade. Then if you want to enable the plugin simply go to Admin &amp;gt; Modules &amp;gt; Plugins.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=583&#34;&gt;Admin Login as Customer plugin&lt;/a&gt;, which allowed you to login on a customer&amp;rsquo;s behalf, is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade, and configure as described on the &lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;Place Order&lt;/a&gt; help page.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=583&#34;&gt;Admin Login as Customer plugin&lt;/a&gt;, which allowed you to login on a customer&amp;rsquo;s behalf, is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade, and configure as described on the &lt;a href=&#34;/zendocs_test1/user/running/login_as_customer/&#34;&gt;Place Order&lt;/a&gt; help page.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The login form built by &lt;code&gt;includes/templates/template_default/templates/tpl_login_default.php&lt;/code&gt; was changed so that the &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; are both &lt;code&gt;loginForm&lt;/code&gt;, rather than &lt;code&gt;login&lt;/code&gt;, as in prior releases.  This is important since a direct reference to &lt;code&gt;loginForm&lt;/code&gt; is made in includes/modules/pages/login/on_load_main.js.&lt;/p&gt;
@@ -1136,7 +1136,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 &lt;p&gt;The table containing the EZ-Pages data (&lt;code&gt;ezpages&lt;/code&gt;) was split into two tables, &lt;code&gt;ezpages&lt;/code&gt; and &lt;code&gt;ezpages_content&lt;/code&gt;.  This was done in order to add multi-language capabilities. Accordingly, any files (template overrides or custom files) which reference the &lt;code&gt;ezpages&lt;/code&gt; table will need adjustment to account for this division.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Date format updates began in this release - see &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Date format updates began in this release - see &lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;zen-cart-155&#34;&gt;Zen Cart 1.5.5&lt;/h3&gt;
@@ -1160,7 +1160,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 &lt;/ul&gt;
 &lt;h3 id=&#34;zen-cart-150&#34;&gt;Zen Cart 1.5.0&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The admin menus are no longer built by files ending in &lt;code&gt;.dhtml&lt;/code&gt;.  Instead, a new database table called &lt;code&gt;admin_pages&lt;/code&gt; was introduced.  Mods which create their own menu entries must also follow this convention.  Guidelines for &lt;a href=&#34;/dev/plugins/upgrading_to_1.5/&#34;&gt;upgrading plugins to 1.5&lt;/a&gt; include instructions on this step.&lt;/li&gt;
+&lt;li&gt;The admin menus are no longer built by files ending in &lt;code&gt;.dhtml&lt;/code&gt;.  Instead, a new database table called &lt;code&gt;admin_pages&lt;/code&gt; was introduced.  Mods which create their own menu entries must also follow this convention.  Guidelines for &lt;a href=&#34;/zendocs_test1/dev/plugins/upgrading_to_1.5/&#34;&gt;upgrading plugins to 1.5&lt;/a&gt; include instructions on this step.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1168,19 +1168,19 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
     
     <item>
       <title>User: The PHP Lifecycle</title>
-      <link>/user/upgrading/php_lifecycle/</link>
+      <link>/zendocs_test1/user/upgrading/php_lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/php_lifecycle/</guid>
+      <guid>/zendocs_test1/user/upgrading/php_lifecycle/</guid>
       <description>
         
         
         &lt;p&gt;The PHP language (which Zen Cart uses) is constantly evolving.  And as this occurs, older versions are left behind and no longer supported.&lt;/p&gt;
 &lt;p&gt;You can see the currently supported versions of PHP on &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;To see which version of PHP is appropriate for a particular version of Zen Cart, refer to &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your admin panel will show you &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;your PHP version&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To see which version of PHP is appropriate for a particular version of Zen Cart, refer to &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your admin panel will show you &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;your PHP version&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you see a message like this in your control panel:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/php_deprecated.png&#34; alt=&#34;PHP deprecated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/php_deprecated.png&#34; alt=&#34;PHP deprecated&#34;&gt;&lt;/p&gt;
 &lt;p&gt;it means you have to update your PHP version (and likely your Zen Cart version as well).&lt;/p&gt;
 &lt;p&gt;Not updating PHP and Zen Cart in a timely manner puts you at risk of being hacked, so staying up to date is highly recommended.&lt;/p&gt;
 
@@ -1189,10 +1189,10 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
     
     <item>
       <title>User: Unknown column error after upgrade</title>
-      <link>/user/upgrading/unknown_column/</link>
+      <link>/zendocs_test1/user/upgrading/unknown_column/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/unknown_column/</guid>
+      <guid>/zendocs_test1/user/upgrading/unknown_column/</guid>
       <description>
         
         
@@ -1201,7 +1201,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 &lt;p&gt;or&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; PHP Fatal error: 1054:Unknown column &#39;o.language_code&#39; in &#39;field list&#39; ...&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;What is happening is that one or more of the &lt;code&gt;ALTER TABLE&lt;/code&gt; commands in the upgrade process run by &lt;code&gt;zc_install&lt;/code&gt; failed, and now a column which is expected to exist does not.&lt;/p&gt;
-&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
+&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/zendocs_test1/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once you fix the issue that caused the &lt;code&gt;ALTER TABLE&lt;/code&gt; to fail, you will still need to run the original command to add the new field.  You may do this in phpMyAdmin or in Admin &amp;gt; Tools &amp;gt; Install SQL Patches.   Example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ALTER TABLE orders ADD language_code char(2) NOT NULL default &amp;#39;&amp;#39;;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1210,23 +1210,23 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
     
     <item>
       <title>User: Updating your PHP Version</title>
-      <link>/user/upgrading/php_version/</link>
+      <link>/zendocs_test1/user/upgrading/php_version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/php_version/</guid>
+      <guid>/zendocs_test1/user/upgrading/php_version/</guid>
       <description>
         
         
         &lt;p&gt;After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4.&lt;/p&gt;
-&lt;p&gt;You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The process of changing your PHP is server-specific, depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other utility. See &lt;a href=&#34;/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The process of changing your PHP is server-specific, depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other utility. See &lt;a href=&#34;/zendocs_test1/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit.  For more details, see &lt;a href=&#34;/user/running/memory_limit/&#34;&gt;memory_limit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit.  For more details, see &lt;a href=&#34;/zendocs_test1/user/running/memory_limit/&#34;&gt;memory_limit&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;watch-out-for-new-php-warnings-after-updating-php&#34;&gt;Watch out for new PHP warnings after updating PHP&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/php_debug_logs/&#34;&gt;Understanding problems that occur after upgrading PHP versions&lt;/a&gt; explains &lt;em&gt;why&lt;/em&gt; PHP warnings can suddenly start occurring.&lt;/li&gt;
-&lt;li&gt;An explanation of &lt;em&gt;how to fix them&lt;/em&gt; is provided in &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages after upgrading&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If you are suddenly seeing &amp;ldquo;out of memory&amp;rdquo; PHP notices, your memory_limit setting has likely been reset. Go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; to verify the setting of your PHP Memory Limit, and update it if required - see &lt;a href=&#34;/user/running/memory_limit/&#34;&gt;PHP memory_limit&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/troubleshooting/php_debug_logs/&#34;&gt;Understanding problems that occur after upgrading PHP versions&lt;/a&gt; explains &lt;em&gt;why&lt;/em&gt; PHP warnings can suddenly start occurring.&lt;/li&gt;
+&lt;li&gt;An explanation of &lt;em&gt;how to fix them&lt;/em&gt; is provided in &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages after upgrading&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you are suddenly seeing &amp;ldquo;out of memory&amp;rdquo; PHP notices, your memory_limit setting has likely been reset. Go to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; to verify the setting of your PHP Memory Limit, and update it if required - see &lt;a href=&#34;/zendocs_test1/user/running/memory_limit/&#34;&gt;PHP memory_limit&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1234,15 +1234,15 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
     
     <item>
       <title>User: Upgrading and Templates</title>
-      <link>/user/upgrading/templates/</link>
+      <link>/zendocs_test1/user/upgrading/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/upgrading/templates/</guid>
+      <guid>/zendocs_test1/user/upgrading/templates/</guid>
       <description>
         
         
-        &lt;p&gt;If you are currently using a template which is not &lt;a href=&#34;/user/template/responsive/&#34;&gt;responsive&lt;/a&gt;, you may wish to migrate to the &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you wish to retain your current template, review the guidance on &lt;a href=&#34;/user/template/template_changes/&#34;&gt;template updates&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;If you are currently using a template which is not &lt;a href=&#34;/zendocs_test1/user/template/responsive/&#34;&gt;responsive&lt;/a&gt;, you may wish to migrate to the &lt;a href=&#34;/zendocs_test1/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you wish to retain your current template, review the guidance on &lt;a href=&#34;/zendocs_test1/user/template/template_changes/&#34;&gt;template updates&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

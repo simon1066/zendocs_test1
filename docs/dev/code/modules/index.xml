@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Modules</title>
-    <link>/dev/code/modules/</link>
+    <link>/zendocs_test1/dev/code/modules/</link>
     <description>Recent content in Modules on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/code/modules/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/code/modules/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Adding New Configuration Values to a Module</title>
-      <link>/dev/code/modules/adding_config/</link>
+      <link>/zendocs_test1/dev/code/modules/adding_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/adding_config/</guid>
+      <guid>/zendocs_test1/dev/code/modules/adding_config/</guid>
       <description>
         
         
@@ -46,10 +46,10 @@
     
     <item>
       <title>Dev: Cloning a Payment Module</title>
-      <link>/dev/code/modules/clone_payment/</link>
+      <link>/zendocs_test1/dev/code/modules/clone_payment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/clone_payment/</guid>
+      <guid>/zendocs_test1/dev/code/modules/clone_payment/</guid>
       <description>
         
         
@@ -104,10 +104,10 @@ $this-&amp;gt;title = MODULE_PAYMENT_VENMO_TEXT_TITLE;
     
     <item>
       <title>Dev: Cloning a Shipping Module</title>
-      <link>/dev/code/modules/clone_shipping/</link>
+      <link>/zendocs_test1/dev/code/modules/clone_shipping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/clone_shipping/</guid>
+      <guid>/zendocs_test1/dev/code/modules/clone_shipping/</guid>
       <description>
         
         
@@ -169,10 +169,10 @@ at the &lt;code&gt;items.php&lt;/code&gt; Shipping Module.&lt;/p&gt;
     
     <item>
       <title>Dev: Order Total Modules</title>
-      <link>/dev/code/modules/order_total_modules/</link>
+      <link>/zendocs_test1/dev/code/modules/order_total_modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/order_total_modules/</guid>
+      <guid>/zendocs_test1/dev/code/modules/order_total_modules/</guid>
       <description>
         
         
@@ -588,10 +588,10 @@ white-space: pre-wrap !important;
     
     <item>
       <title>Dev: Shipping Modules</title>
-      <link>/dev/code/modules/shipping_modules/</link>
+      <link>/zendocs_test1/dev/code/modules/shipping_modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/modules/shipping_modules/</guid>
+      <guid>/zendocs_test1/dev/code/modules/shipping_modules/</guid>
       <description>
         
         

@@ -1,4 +1,4 @@
-baseURL = "/zendocs_test1/"
+baseURL = "/"
 title = "Zen Cart Docs"
 
 enableRobotsTXT = true

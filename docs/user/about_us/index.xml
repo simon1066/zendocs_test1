@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – About</title>
-    <link>/user/about_us/</link>
+    <link>/zendocs_test1/user/about_us/</link>
     <description>Recent content in About on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/about_us/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/about_us/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,30 +15,30 @@
     
     <item>
       <title>User: About this site and the Zen Cart Project</title>
-      <link>/user/about_us/about/</link>
+      <link>/zendocs_test1/user/about_us/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/about/</guid>
+      <guid>/zendocs_test1/user/about_us/about/</guid>
       <description>
         
         
         &lt;h2 id=&#34;bug-reports&#34;&gt;&lt;strong&gt;Bug Reports&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Zen Cart takes bug reports seriously, and endeavors to find resolutions to them immediately. You&amp;rsquo;ll observe that we tend to post solutions for bugfixes as soon as we have them. This does not always mean a new &amp;ldquo;release&amp;rdquo;, unless there is something fairly major. Patches are issued sparingly in the interest of keeping code both manageable and still current.&lt;/p&gt;
 &lt;p&gt;We encourage all users to make bug reports.&lt;/p&gt;
-&lt;p&gt;To learn more, please see &lt;a href=&#34;/user/about_us/bug_reporting/&#34;&gt;how to report a bug&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To learn more, please see &lt;a href=&#34;/zendocs_test1/user/about_us/bug_reporting/&#34;&gt;how to report a bug&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;security-reports&#34;&gt;&lt;strong&gt;Security Reports&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;If you find a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you find a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;code-contributions&#34;&gt;&lt;strong&gt;Code Contributions&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit &amp;ldquo;everyone&amp;rsquo;s&amp;rdquo; needs directly. Instead, we endeavor to continually make the code more adaptable and able to be enhanced by way of &lt;a href=&#34;/user/plugins/&#34;&gt;community-contributed/supported plugins&lt;/a&gt; that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions of custom-written code.&lt;/p&gt;
+&lt;p&gt;Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit &amp;ldquo;everyone&amp;rsquo;s&amp;rdquo; needs directly. Instead, we endeavor to continually make the code more adaptable and able to be enhanced by way of &lt;a href=&#34;/zendocs_test1/user/plugins/&#34;&gt;community-contributed/supported plugins&lt;/a&gt; that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions of custom-written code.&lt;/p&gt;
 &lt;p&gt;We recognize that custom-written code is typically created with the aim of solving one&amp;rsquo;s own individual business challenges and is not generally written to benefit &amp;ldquo;everyone&amp;rdquo;. We are also aware that modifications are written with varying degrees of skillsets and comprehension of overall code. Thus, we continue to attempt to make it possible to &amp;ldquo;plug in&amp;rdquo; without having to alter core code if possible.
-See &lt;a href=&#34;/user/plugins/about_plugins/#plugin-interfaces&#34;&gt;plugin interfaces&lt;/a&gt; for details. 
+See &lt;a href=&#34;/zendocs_test1/user/plugins/about_plugins/#plugin-interfaces&#34;&gt;plugin interfaces&lt;/a&gt; for details. 
 Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s also important to note that community-supplied contributions are written at a certain point in time and are not always compatible with future or earlier versions of Zen Cart. This is a challenge with any community-supported project. Our plugins section attempts to help minimize the confusion in this by separating contributions based on the version of Zen Cart for which they were initially written.&lt;/p&gt;
 &lt;p&gt;You can find community created and supported contributions in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt; of the Zen Cart Forum.&lt;/p&gt;
 &lt;h2 id=&#34;fees&#34;&gt;&lt;strong&gt;Fees&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;There is no fee for using Zen Cart. You may &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;download Zen Cart&lt;/a&gt; and use it, subject to the terms of the license, for free. If you find it useful, you are encouraged to &lt;a href=&#34;/user/about_us/donate/&#34;&gt;make a donation&lt;/a&gt; to help support the ongoing development and improvement of the product.&lt;/p&gt;
+&lt;p&gt;There is no fee for using Zen Cart. You may &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;download Zen Cart&lt;/a&gt; and use it, subject to the terms of the license, for free. If you find it useful, you are encouraged to &lt;a href=&#34;/zendocs_test1/user/about_us/donate/&#34;&gt;make a donation&lt;/a&gt; to help support the ongoing development and improvement of the product.&lt;/p&gt;
 &lt;h2 id=&#34;community&#34;&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;You can &lt;a href=&#34;/user/about_us/contributing/&#34;&gt;participate in the Zen Cart community&lt;/a&gt; in many ways.  Join the fun!&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&#34;/zendocs_test1/user/about_us/contributing/&#34;&gt;participate in the Zen Cart community&lt;/a&gt; in many ways.  Join the fun!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md&#34;&gt;contributing to the Zen Cart documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/zencart/zencart/blob/v158/CONTRIBUTING.md&#34;&gt;contributing to the Zen Cart code&lt;/a&gt;&lt;/li&gt;
@@ -54,10 +54,10 @@ Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
     
     <item>
       <title>User: Announcements</title>
-      <link>/user/about_us/announcements/</link>
+      <link>/zendocs_test1/user/about_us/announcements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/announcements/</guid>
+      <guid>/zendocs_test1/user/about_us/announcements/</guid>
       <description>
         
         
@@ -70,10 +70,10 @@ Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
     
     <item>
       <title>User: Contributing to the Zen Cart project</title>
-      <link>/user/about_us/contributing/</link>
+      <link>/zendocs_test1/user/about_us/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/contributing/</guid>
+      <guid>/zendocs_test1/user/about_us/contributing/</guid>
       <description>
         
         
@@ -83,7 +83,7 @@ Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
 &lt;p&gt;You can answer user questions on &lt;a href=&#34;https://www.zen-cart.com/forum.php&#34;&gt;the Zen Cart forum&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You can work on fixing bugs or adding features for the next release.  The &lt;a href=&#34;https://github.com/zencart/zencart&#34;&gt;Zen Cart code&lt;/a&gt; is stored in Github to make it easy for people to contribute, and the &lt;a href=&#34;/dev/contributing/&#34;&gt;guide to contributing&lt;/a&gt; helps new people get started.&lt;/p&gt;
+&lt;p&gt;You can work on fixing bugs or adding features for the next release.  The &lt;a href=&#34;https://github.com/zencart/zencart&#34;&gt;Zen Cart code&lt;/a&gt; is stored in Github to make it easy for people to contribute, and the &lt;a href=&#34;/zendocs_test1/dev/contributing/&#34;&gt;guide to contributing&lt;/a&gt; helps new people get started.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;You can file bug reports on the &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;issues list&lt;/a&gt; in Github, or on the &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?140-Bug-Reports&#34;&gt;bug report sub-forum&lt;/a&gt;.&lt;/p&gt;
@@ -92,23 +92,23 @@ Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
 &lt;p&gt;You can work on documentation.  The &lt;a href=&#34;https://github.com/zencart/documentation&#34;&gt;Zen Cart documentation&lt;/a&gt; is also stored in Github.  A &lt;a href=&#34;https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md&#34;&gt;getting started guide&lt;/a&gt; is provided.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You can create a new plugin, or adopt a plugin that has been abandoned. You can &lt;a href=&#34;/dev/plugins/&#34;&gt;read about plugins&lt;/a&gt; to get started.&lt;/p&gt;
+&lt;p&gt;You can create a new plugin, or adopt a plugin that has been abandoned. You can &lt;a href=&#34;/zendocs_test1/dev/plugins/&#34;&gt;read about plugins&lt;/a&gt; to get started.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You can make a &lt;a href=&#34;/user/about_us/donate/&#34;&gt;financial donation&lt;/a&gt; to support the project.&lt;/p&gt;
+&lt;p&gt;You can make a &lt;a href=&#34;/zendocs_test1/user/about_us/donate/&#34;&gt;financial donation&lt;/a&gt; to support the project.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The other thing you can do is to &lt;em&gt;gently correct&lt;/em&gt; people who say &amp;ldquo;Zen Cart is dead&amp;rdquo; or &amp;ldquo;Zen Cart is obsolete&amp;rdquo; or &amp;ldquo;Zen Cart is just osCommerce with templates.&amp;rdquo;  None of these things is true!  In fact, Zen Cart is an &lt;a href=&#34;https://github.com/zencart/zencart/graphs/contributors&#34;&gt;active project on Github&lt;/a&gt; with &lt;a href=&#34;/user/about_us/features/&#34;&gt;many unique features&lt;/a&gt;.  It has a &lt;a href=&#34;https://www.zen-cart.com/forum.php&#34;&gt;busy support forum&lt;/a&gt; and gets &lt;a href=&#34;/user/about_us/release_history/&#34;&gt;new releases every year or so&lt;/a&gt;.  Best of all, it can be easily &lt;a href=&#34;/user/plugins/&#34;&gt;extended to meet your custom needs&lt;/a&gt;.  No platform is ideal for everyone, but for many use cases, Zen Cart is an excellent fit.&lt;/p&gt;
+&lt;p&gt;The other thing you can do is to &lt;em&gt;gently correct&lt;/em&gt; people who say &amp;ldquo;Zen Cart is dead&amp;rdquo; or &amp;ldquo;Zen Cart is obsolete&amp;rdquo; or &amp;ldquo;Zen Cart is just osCommerce with templates.&amp;rdquo;  None of these things is true!  In fact, Zen Cart is an &lt;a href=&#34;https://github.com/zencart/zencart/graphs/contributors&#34;&gt;active project on Github&lt;/a&gt; with &lt;a href=&#34;/zendocs_test1/user/about_us/features/&#34;&gt;many unique features&lt;/a&gt;.  It has a &lt;a href=&#34;https://www.zen-cart.com/forum.php&#34;&gt;busy support forum&lt;/a&gt; and gets &lt;a href=&#34;/zendocs_test1/user/about_us/release_history/&#34;&gt;new releases every year or so&lt;/a&gt;.  Best of all, it can be easily &lt;a href=&#34;/zendocs_test1/user/plugins/&#34;&gt;extended to meet your custom needs&lt;/a&gt;.  No platform is ideal for everyone, but for many use cases, Zen Cart is an excellent fit.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Core Team</title>
-      <link>/user/about_us/core_team/</link>
+      <link>/zendocs_test1/user/about_us/core_team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/core_team/</guid>
+      <guid>/zendocs_test1/user/about_us/core_team/</guid>
       <description>
         
         
@@ -126,10 +126,10 @@ Not every situation is perfect, but we keep growing in this area.&lt;/p&gt;
     
     <item>
       <title>User: Donate</title>
-      <link>/user/about_us/donate/</link>
+      <link>/zendocs_test1/user/about_us/donate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/donate/</guid>
+      <guid>/zendocs_test1/user/about_us/donate/</guid>
       <description>
         
         
@@ -195,10 +195,10 @@ Klamath Falls, OR 97603&lt;/p&gt;
     
     <item>
       <title>User: Fake solicitations for Zen Cart</title>
-      <link>/user/about_us/fake_solicitations/</link>
+      <link>/zendocs_test1/user/about_us/fake_solicitations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/fake_solicitations/</guid>
+      <guid>/zendocs_test1/user/about_us/fake_solicitations/</guid>
       <description>
         
         
@@ -214,10 +214,10 @@ Klamath Falls, OR 97603&lt;/p&gt;
     
     <item>
       <title>User: In Memoriam</title>
-      <link>/user/about_us/in_memoriam/</link>
+      <link>/zendocs_test1/user/about_us/in_memoriam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/in_memoriam/</guid>
+      <guid>/zendocs_test1/user/about_us/in_memoriam/</guid>
       <description>
         
         
@@ -241,10 +241,10 @@ individuals who are no longer with us.  May they rest in peace.&lt;/p&gt;
     
     <item>
       <title>User: Known Bugs</title>
-      <link>/user/about_us/known_bugs/</link>
+      <link>/zendocs_test1/user/about_us/known_bugs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/known_bugs/</guid>
+      <guid>/zendocs_test1/user/about_us/known_bugs/</guid>
       <description>
         
         
@@ -252,7 +252,7 @@ individuals who are no longer with us.  May they rest in peace.&lt;/p&gt;
 &lt;p&gt;For every release, a known bugs thread is created on the Zen Cart forum
 to provide an easy way of tracking the issues that have been resolved.
 These bugs are fixed in the next release, so if you are not on the latest
-release, &lt;a href=&#34;/user/upgrading/&#34;&gt;doing an upgrade&lt;/a&gt; is the best way to get the fix.&lt;/p&gt;
+release, &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;doing an upgrade&lt;/a&gt; is the best way to get the fix.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?226872-Known-bugs-(and-fixes)-for-v1-5-7-series&#34;&gt;Known Bugs in Zen Cart 1.5.7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?224706-Known-bugs-and-fixes-for-v1-5-6&#34;&gt;Known Bugs in Zen Cart 1.5.6&lt;/a&gt;&lt;/li&gt;
@@ -261,41 +261,41 @@ release, &lt;a href=&#34;/user/upgrading/&#34;&gt;doing an upgrade&lt;/a&gt; is 
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?213868-Known-Bugs-(and-fixes)-with-v1-5-3&#34;&gt;Known Bugs in Zen Cart 1.5.3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?200688-Known-Bugs-%28and-fixes%29-with-v1-5-1&#34;&gt;Known Bugs in Zen Cart 1.5.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Think you&amp;rsquo;ve found a new bug?  Here&amp;rsquo;s &lt;a href=&#34;/user/about_us/bug_reporting/&#34;&gt;how to report it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Think you&amp;rsquo;ve found a new bug?  Here&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/user/about_us/bug_reporting/&#34;&gt;how to report it&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Plugins</title>
-      <link>/user/about_us/plugins/</link>
+      <link>/zendocs_test1/user/about_us/plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/plugins/</guid>
+      <guid>/zendocs_test1/user/about_us/plugins/</guid>
       <description>
         
         
-        &lt;p&gt;Zen Cart plugin developers are encouraged to share their work by submitting it to the Plugins area.  See &lt;a href=&#34;/user/plugins/&#34;&gt;Plugins&lt;/a&gt; for more information.&lt;/p&gt;
+        &lt;p&gt;Zen Cart plugin developers are encouraged to share their work by submitting it to the Plugins area.  See &lt;a href=&#34;/zendocs_test1/user/plugins/&#34;&gt;Plugins&lt;/a&gt; for more information.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Release History</title>
-      <link>/user/about_us/release_history/</link>
+      <link>/zendocs_test1/user/about_us/release_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/release_history/</guid>
+      <guid>/zendocs_test1/user/about_us/release_history/</guid>
       <description>
         
         
         &lt;!-- RELEASETIME - update --&gt; 
 &lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements&#34;&gt;Release Announcements&lt;/a&gt; are provided on the Zen Cart forum.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/user/about_us/security_releases/&#34;&gt;Security Patches&lt;/a&gt; are also announced on the forum.&lt;/p&gt;
-&lt;p&gt;See also &lt;a href=&#34;/dev/schema/&#34;&gt;Zen Cart Database Schema&lt;/a&gt;, 
-&lt;a href=&#34;/user/about_us/known_bugs/&#34;&gt;Zen Cart Known Bugs&lt;/a&gt;, 
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/about_us/security_releases/&#34;&gt;Security Patches&lt;/a&gt; are also announced on the forum.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/dev/schema/&#34;&gt;Zen Cart Database Schema&lt;/a&gt;, 
+&lt;a href=&#34;/zendocs_test1/user/about_us/known_bugs/&#34;&gt;Zen Cart Known Bugs&lt;/a&gt;, 
 and
-&lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;PHP version compatibility with Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;PHP version compatibility with Zen Cart&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you need to get a copy of Zen Cart (current or older version), please see &lt;a href=&#34;https://docs.zen-cart.com/user/first_steps/get_zen_cart/&#34;&gt;Downloading Zen Cart&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;This is the release history of the Zen Cart product.&lt;/p&gt;
@@ -382,10 +382,10 @@ and
     
     <item>
       <title>User: Reporting a bug</title>
-      <link>/user/about_us/bug_reporting/</link>
+      <link>/zendocs_test1/user/about_us/bug_reporting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/bug_reporting/</guid>
+      <guid>/zendocs_test1/user/about_us/bug_reporting/</guid>
       <description>
         
         
@@ -395,19 +395,19 @@ people taking the time to report them.  The easiest way to report a bug
 is &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?140-Bug-Reports&#34;&gt;in the bug reporting sub-forum&lt;/a&gt; but if you have a Github account, you can also write your finding up as a &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;Github issue&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We take bug reports seriously, and endeavour to find resolutions to them immediately. As you&amp;rsquo;ve seen with our releases, we tend to post solutions for bugfixes as soon as we have them. This does not always mean a new &amp;ldquo;release&amp;rdquo;, unless there is something fairly major. Patches are issued sparingly in the interest of keeping code both manageable and still current.&lt;/p&gt;
 &lt;h2 id=&#34;check-first&#34;&gt;Check first!&lt;/h2&gt;
-&lt;p&gt;The article &lt;a href=&#34;/user/about_us/known_bugs/&#34;&gt;known bugs&lt;/a&gt; shows significant bugs that have already been reported.  Also remember that if you are not running the most current release, the bug may be fixed by &lt;a href=&#34;/user/upgrading/&#34;&gt;upgrading your cart&lt;/a&gt;. Reviewing the &lt;a href=&#34;/user/about_us/release_history/&#34;&gt;release notes&lt;/a&gt; between your version and the most current version shows you the fixes that you&amp;rsquo;ll get when you upgrade.&lt;/p&gt;
+&lt;p&gt;The article &lt;a href=&#34;/zendocs_test1/user/about_us/known_bugs/&#34;&gt;known bugs&lt;/a&gt; shows significant bugs that have already been reported.  Also remember that if you are not running the most current release, the bug may be fixed by &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;upgrading your cart&lt;/a&gt;. Reviewing the &lt;a href=&#34;/zendocs_test1/user/about_us/release_history/&#34;&gt;release notes&lt;/a&gt; between your version and the most current version shows you the fixes that you&amp;rsquo;ll get when you upgrade.&lt;/p&gt;
 &lt;h2 id=&#34;security-issues&#34;&gt;Security Issues&lt;/h2&gt;
-&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Security Releases</title>
-      <link>/user/about_us/security_releases/</link>
+      <link>/zendocs_test1/user/about_us/security_releases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/security_releases/</guid>
+      <guid>/zendocs_test1/user/about_us/security_releases/</guid>
       <description>
         
         
@@ -423,38 +423,38 @@ is &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?140-Bug-Reports&#34
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?218239-curesec-com-security-report-Patch-Included&#34;&gt;Curesec patch (Sept 2015)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?214916-Important-announcement-about-POODLE-and-payment-security&#34;&gt;POODLE patches (Oct 2014)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;All of these patches are included in the current release, so if you are running an older version, you should &lt;a href=&#34;/user/upgrading/upgrading/&#34;&gt;upgrade&lt;/a&gt; as soon as possible.&lt;/p&gt;
+&lt;p&gt;All of these patches are included in the current release, so if you are running an older version, you should &lt;a href=&#34;/zendocs_test1/user/upgrading/upgrading/&#34;&gt;upgrade&lt;/a&gt; as soon as possible.&lt;/p&gt;
 &lt;h3 id=&#34;getting-notified-of-security-updates&#34;&gt;Getting Notified of Security Updates&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;/user/about_us/announcements&#34;&gt;Subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/about_us/announcements&#34;&gt;Subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/p&gt;
 &lt;h3 id=&#34;new-security-issues&#34;&gt;New Security Issues&lt;/h3&gt;
-&lt;p&gt;If you believe you have found a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you believe you have found a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Security Reporting Protocol</title>
-      <link>/user/about_us/security_reports/</link>
+      <link>/zendocs_test1/user/about_us/security_reports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/security_reports/</guid>
+      <guid>/zendocs_test1/user/about_us/security_reports/</guid>
       <description>
         
         
         &lt;p&gt;If you find a security issue, such as a vulnerability, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately.&lt;/p&gt;
 &lt;p&gt;Zen Cart takes security issues VERY seriously. Whenever a true security risk is discovered, a fix is posted immediately, using whatever means is most appropriate.&lt;/p&gt;
 &lt;p&gt;We appreciate hearing (privately) from the community about any security exploit risks found in Zen Cart code. We would rather hear about the situation privately so we can respond publicly with a fix for everyone.This helps keep existing shops safe without advertising the risk to would-be hackers and other bad guys.&lt;/p&gt;
-&lt;p&gt;You can view past security releases at the page &lt;a href=&#34;/user/about_us/security_releases/&#34;&gt;security releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can view past security releases at the page &lt;a href=&#34;/zendocs_test1/user/about_us/security_releases/&#34;&gt;security releases&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: What features does Zen Cart offer?</title>
-      <link>/user/about_us/features/</link>
+      <link>/zendocs_test1/user/about_us/features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/features/</guid>
+      <guid>/zendocs_test1/user/about_us/features/</guid>
       <description>
         
         
@@ -536,28 +536,28 @@ is &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?140-Bug-Reports&#34
 &lt;li&gt;Ability to add new pages&lt;/li&gt;
 &lt;li&gt;Can be installed with demo data for evaluation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Do you have a question about whether Zen Cart offers a particular feature? It might be answered &lt;a href=&#34;/user/miscellaneous/can_zen_cart/&#34;&gt;on the miscellaneous FAQs page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Do you have a question about whether Zen Cart offers a particular feature? It might be answered &lt;a href=&#34;/zendocs_test1/user/miscellaneous/can_zen_cart/&#34;&gt;on the miscellaneous FAQs page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: What is Zen Cart ?</title>
-      <link>/user/about_us/what_is_zen_cart/</link>
+      <link>/zendocs_test1/user/about_us/what_is_zen_cart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/what_is_zen_cart/</guid>
+      <guid>/zendocs_test1/user/about_us/what_is_zen_cart/</guid>
       <description>
         
         
         &lt;p&gt;Zen Cart is a self-hosted, free and open-source ecommerce system which builds a complete website for you.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;self-hosted&lt;/em&gt; means you provide the &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;web hosting&lt;/a&gt; and the &lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;SSL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;self-hosted&lt;/em&gt; means you provide the &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/&#34;&gt;web hosting&lt;/a&gt; and the &lt;a href=&#34;/zendocs_test1/user/security/ssl_cert/&#34;&gt;SSL&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;free and open-source&lt;/em&gt; means there is no charge for the software, and you are free to use and modify it as you wish.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;complete website&lt;/em&gt; means that unlike a bolt-on solution like PayPal payment buttons, which require a pre-existing web page, Zen Cart builds your entire site.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A &lt;a href=&#34;/user/about_us/features/&#34;&gt;list of features&lt;/a&gt; is available if you have specific capability questions.&lt;/p&gt;
-&lt;p&gt;A self-hosted open source application gives you complete freedom to customize to your tastes and needs, but comes with the obligation of software maintenance and upgrading as new versions are released.  However, there is plenty of &lt;a href=&#34;/user/upgrading/&#34;&gt;documentation on upgrading&lt;/a&gt; as well as &lt;a href=&#34;/user/zen_cart_forum/&#34;&gt;support on the forum&lt;/a&gt;, and there are also &lt;a href=&#34;/user/zen_cart_forum/chw/&#34;&gt;contractors who will maintain and upgrade your site for you&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;/zendocs_test1/user/about_us/features/&#34;&gt;list of features&lt;/a&gt; is available if you have specific capability questions.&lt;/p&gt;
+&lt;p&gt;A self-hosted open source application gives you complete freedom to customize to your tastes and needs, but comes with the obligation of software maintenance and upgrading as new versions are released.  However, there is plenty of &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;documentation on upgrading&lt;/a&gt; as well as &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/&#34;&gt;support on the forum&lt;/a&gt;, and there are also &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/chw/&#34;&gt;contractors who will maintain and upgrade your site for you&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;While Zen Cart provides all the pieces you need to sell online, there are some things it does not do:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It does not provide CRM functionality beyond a list of customers and their billing and shipping addresses.&lt;/li&gt;

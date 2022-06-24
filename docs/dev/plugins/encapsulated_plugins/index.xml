@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Encapsulated Plugins</title>
-    <link>/dev/plugins/encapsulated_plugins/</link>
+    <link>/zendocs_test1/dev/plugins/encapsulated_plugins/</link>
     <description>Recent content in Encapsulated Plugins on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/plugins/encapsulated_plugins/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/plugins/encapsulated_plugins/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Directory Structure</title>
-      <link>/dev/plugins/encapsulated_plugins/directory_structure/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/directory_structure/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</guid>
       <description>
         
         
@@ -139,7 +139,7 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While these examples mention the &lt;code&gt;catalog&lt;/code&gt; subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.&lt;/p&gt;
 &lt;p&gt;ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The &lt;code&gt;Installer&lt;/code&gt; folder is optional; you can embed the installation logic in your plugin if you prefer.  See &lt;a href=&#34;/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;Installer Classes&lt;/a&gt; and &lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt; for details on using the &lt;code&gt;Installer&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The &lt;code&gt;Installer&lt;/code&gt; folder is optional; you can embed the installation logic in your plugin if you prefer.  See &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;Installer Classes&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt; for details on using the &lt;code&gt;Installer&lt;/code&gt; folder.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE on JavaScript loading:&lt;/strong&gt; naming your JavaScript file the same name as your PHP file name will make it automatically load.  If you have additional .js files to load, give them names starting with the PHP file name followed by an underscore.  For example, if you create a file called &lt;code&gt;admin/rewards.php&lt;/code&gt;, the autoloader will load &lt;code&gt;admin/includes/javascript/rewards.js&lt;/code&gt;, as well as any JavaScript file whose name matches the pattern &lt;code&gt;admin/includes/javascript/rewards_*.js&lt;/code&gt;, e.g. &lt;code&gt;admin/includes/javascript/rewards_sha-256.js&lt;/code&gt;.&lt;/p&gt;
 
       </description>
@@ -147,10 +147,10 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
     
     <item>
       <title>Dev: Manifest Files</title>
-      <link>/dev/plugins/encapsulated_plugins/manifests/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/manifests/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</guid>
       <description>
         
         
@@ -214,10 +214,10 @@ This is used by the store&amp;rsquo;s Plugin Manager to check for whether new ve
     
     <item>
       <title>Dev: Plugin Installer Language Files</title>
-      <link>/dev/plugins/encapsulated_plugins/plugin_language_files/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/plugin_language_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/plugin_language_files/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/plugin_language_files/</guid>
       <description>
         
         
@@ -275,10 +275,10 @@ of language files needed by the plugin itself are handled differently.&lt;/p&gt;
     
     <item>
       <title>Dev: Installer Classes</title>
-      <link>/dev/plugins/encapsulated_plugins/installer_classes/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/installer_classes/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/</guid>
       <description>
         
         
@@ -330,10 +330,10 @@ class PluginInstaller extends BasePluginInstaller
     
     <item>
       <title>Dev: Plugin SQL Installation</title>
-      <link>/dev/plugins/encapsulated_plugins/sql_installation/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/sql_installation/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/</guid>
       <description>
         
         
@@ -394,10 +394,10 @@ using a plain SQL install file as above, you can use a class based method.&lt;/p
     
     <item>
       <title>Dev: Converting a plugin to use encapsulation</title>
-      <link>/dev/plugins/encapsulated_plugins/converting/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/converting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/converting/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/converting/</guid>
       <description>
         
         
@@ -422,15 +422,15 @@ plugin&amp;rsquo;s top level folder under a new folder with the name
 ./zc_plugins/ModList/1.4.0/admin/mod_list.php
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; It is not necessary to rename admin in the plugin directory hierarchy&lt;/p&gt;
 &lt;h3 id=&#34;2-add-the-manifest&#34;&gt;2. Add the Manifest&lt;/h3&gt;
-&lt;p&gt;Create a &lt;a href=&#34;/dev/plugins/encapsulated_plugins/manifests/&#34;&gt;manifest file&lt;/a&gt;. In our example, this will be placed in&lt;/p&gt;
+&lt;p&gt;Create a &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/&#34;&gt;manifest file&lt;/a&gt;. In our example, this will be placed in&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/manifest.php
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-add-the-plugin-installer-script&#34;&gt;3. Add the Plugin Installer script&lt;/h3&gt;
-&lt;p&gt;Create an &lt;a href=&#34;/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;installer script&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create an &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;installer script&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In our example, this will be placed in&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/Installer/PluginInstaller.php
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-optional-create-install-and-uninstall-files&#34;&gt;4. (optional) Create install and uninstall files&lt;/h3&gt;
 &lt;p&gt;If the installer script you created above did not do the SQL operations 
-required by the plugin, you can use &lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;plain SQL files&lt;/a&gt;.&lt;/p&gt;
+required by the plugin, you can use &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;plain SQL files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In our example, these will be placed in&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/Installer/uninstall.sql
 ./zc_plugins/ModList/1.4.0/Installer/install.sql
@@ -475,10 +475,10 @@ and therefore any variables created will be scoped into that class and not the g
     
     <item>
       <title>Dev: Upgrading an encapsulated plugin</title>
-      <link>/dev/plugins/encapsulated_plugins/upgrading/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/upgrading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/upgrading/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/upgrading/</guid>
       <description>
         
         
@@ -491,7 +491,7 @@ and then making your changes.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;zc_plugins/MyPlugin/1.0.1
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and make your changes.  Once you release, people will upload the new version and run through the upgrade process using Admin &amp;gt; Modules &amp;gt; Plugin Manager.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; One constraint is that even if your first version did not use 
-&lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/#sql-installer-classes&#34;&gt;SQL Installer Classes&lt;/a&gt;, your update must do so if there are database changes. 
+&lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/#sql-installer-classes&#34;&gt;SQL Installer Classes&lt;/a&gt;, your update must do so if there are database changes. 
 The plain .sql files in the Installer folder are not run on an upgrade.&lt;/p&gt;
 
       </description>

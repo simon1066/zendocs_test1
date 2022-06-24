@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Schema</title>
-    <link>/dev/schema/</link>
+    <link>/zendocs_test1/dev/schema/</link>
     <description>Recent content in Schema on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/schema/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/schema/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Zen Cart 1.5.7 Schema</title>
-      <link>/dev/schema/schema_157/</link>
+      <link>/zendocs_test1/dev/schema/schema_157/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_157/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_157/</guid>
       <description>
         
         
@@ -49,10 +49,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.6 Schema</title>
-      <link>/dev/schema/schema_156/</link>
+      <link>/zendocs_test1/dev/schema/schema_156/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_156/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_156/</guid>
       <description>
         
         
@@ -81,10 +81,10 @@ td {
     
     <item>
       <title>Dev: Zen Cart 1.5.5 Schema</title>
-      <link>/dev/schema/schema_155/</link>
+      <link>/zendocs_test1/dev/schema/schema_155/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_155/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_155/</guid>
       <description>
         
         
@@ -114,10 +114,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.4 Schema</title>
-      <link>/dev/schema/schema_154/</link>
+      <link>/zendocs_test1/dev/schema/schema_154/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_154/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_154/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.1 Schema</title>
-      <link>/dev/schema/schema_151/</link>
+      <link>/zendocs_test1/dev/schema/schema_151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_151/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_151/</guid>
       <description>
         
         
@@ -180,10 +180,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.3.9 Schema</title>
-      <link>/dev/schema/schema_139/</link>
+      <link>/zendocs_test1/dev/schema/schema_139/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_139/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_139/</guid>
       <description>
         
         
@@ -213,14 +213,14 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Renaming Database Table-Prefixes</title>
-      <link>/dev/schema/renaming/</link>
+      <link>/zendocs_test1/dev/schema/renaming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/renaming/</guid>
+      <guid>/zendocs_test1/dev/schema/renaming/</guid>
       <description>
         
         
-        &lt;p&gt;The use of &lt;a href=&#34;/user/first_steps/database/#what-are-prefixes&#34;&gt;database prefixes&lt;/a&gt; was common in the past but is not common or recommended now that hosting plans are more generous with the number of databases permitted.&lt;/p&gt;
+        &lt;p&gt;The use of &lt;a href=&#34;/zendocs_test1/user/first_steps/database/#what-are-prefixes&#34;&gt;database prefixes&lt;/a&gt; was common in the past but is not common or recommended now that hosting plans are more generous with the number of databases permitted.&lt;/p&gt;
 &lt;h2 id=&#34;removing-database-table-name-prefixes&#34;&gt;Removing Database Table-Name Prefixes&lt;/h2&gt;
 &lt;p&gt;If your database has tables named with a &lt;code&gt;zen_&lt;/code&gt; or &lt;code&gt;zc_&lt;/code&gt; or other prefix and you want to remove those prefixes, you must rename all those tables manually, and update your Zen Cart configuration to recognize the change.&lt;/p&gt;
 &lt;ol&gt;

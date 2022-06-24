@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Admin System</title>
-    <link>/user/admin/</link>
+    <link>/zendocs_test1/user/admin/</link>
     <description>Recent content in Admin System on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/admin/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Why is the Admin area so busy?</title>
-      <link>/user/admin/why_admin/</link>
+      <link>/zendocs_test1/user/admin/why_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/why_admin/</guid>
+      <guid>/zendocs_test1/user/admin/why_admin/</guid>
       <description>
         
         
@@ -30,33 +30,33 @@
 Zen Cart is designed to be storeowner-friendly in the sense that you can customize your cart without being a software developer.&lt;/p&gt;
 &lt;p&gt;At the same time, every setting in the admin is yet another thing the storeowner must read when trying to find something.  So some settings are deliberately left out of the configuration, and hard coded instead.&lt;/p&gt;
 &lt;p&gt;We have attempted to mitigate the complexity of the admin by providing 
-&lt;a href=&#34;/user/admin_pages/configuration/&#34;&gt;documentation for each of the configuration screens&lt;/a&gt;. 
-There&amp;rsquo;s even a way to &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;view all configuration settings&lt;/a&gt; on a single page.&lt;/p&gt;
-&lt;p&gt;Although Storeowners with Superuser accounts have to live with a large admin panel, accounts for staff can be set up with custom &lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; that only show relevant menus.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/&#34;&gt;documentation for each of the configuration screens&lt;/a&gt;. 
+There&amp;rsquo;s even a way to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/all/&#34;&gt;view all configuration settings&lt;/a&gt; on a single page.&lt;/p&gt;
+&lt;p&gt;Although Storeowners with Superuser accounts have to live with a large admin panel, accounts for staff can be set up with custom &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; that only show relevant menus.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Admin Password - Resetting or Changing</title>
-      <link>/user/admin/admin_password/</link>
+      <link>/zendocs_test1/user/admin/admin_password/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_password/</guid>
+      <guid>/zendocs_test1/user/admin/admin_password/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/troubleshooting/reset_admin_password/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/reset_admin_password/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Admin Site Specific Overrides</title>
-      <link>/user/admin/site_specific_overrides/</link>
+      <link>/zendocs_test1/user/admin/site_specific_overrides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/site_specific_overrides/</guid>
+      <guid>/zendocs_test1/user/admin/site_specific_overrides/</guid>
       <description>
         
         
@@ -67,7 +67,7 @@ There&amp;rsquo;s even a way to &lt;a href=&#34;/user/admin_pages/configuration/
 &lt;p&gt;The following behaviors can be enabled or disabled by this file:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Enable/disable zcDate debug&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;/user/admin_pages/customers/order_display_options/&#34;&gt;order display&lt;/a&gt; for images, tax display, etc.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/order_display_options/&#34;&gt;order display&lt;/a&gt; for images, tax display, etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Example: disable product images on packing slip and invoice:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$show_product_images = false;
@@ -75,80 +75,80 @@ There&amp;rsquo;s even a way to &lt;a href=&#34;/user/admin_pages/configuration/
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if ($_GET[&amp;#39;cmd&amp;#39;] == &amp;#39;invoice&amp;#39;) { 
    $show_product_images = false;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Information on the &lt;a href=&#34;/user/customizing/site_specific_overrides/&#34;&gt;storefront site-specific overrides file&lt;/a&gt; is also available.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Information on the &lt;a href=&#34;/zendocs_test1/user/customizing/site_specific_overrides/&#34;&gt;storefront site-specific overrides file&lt;/a&gt; is also available.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How can I restrict my employees&#39; admin capabilities?</title>
-      <link>/user/admin/employee_restricted/</link>
+      <link>/zendocs_test1/user/admin/employee_restricted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/employee_restricted/</guid>
+      <guid>/zendocs_test1/user/admin/employee_restricted/</guid>
       <description>
         
         
         &lt;h3 id=&#34;question&#34;&gt;Question:&lt;/h3&gt;
 &lt;p&gt;How can I restrict my employees to just maintaining products and processing orders, and stop them from changing configuration settings?&lt;/p&gt;
 &lt;h3 id=&#34;answer&#34;&gt;Answer:&lt;/h3&gt;
-&lt;p&gt;This feature is provided through the &lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; feature of your Zen Cart admin panel.&lt;/p&gt;
+&lt;p&gt;This feature is provided through the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; feature of your Zen Cart admin panel.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How can I tell if my products have attributes?</title>
-      <link>/user/admin/admin_products_attributes/</link>
+      <link>/zendocs_test1/user/admin/admin_products_attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_products_attributes/</guid>
+      <guid>/zendocs_test1/user/admin/admin_products_attributes/</guid>
       <description>
         
         
-        &lt;p&gt;The Admin &amp;gt; Catalog &amp;gt; Categories/Products page shows products when you drill down to a category with products.  On the right hand side of each product row are a series of buttons, which are described in the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products (Products Level)&lt;/a&gt; FAQ.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/listing_attributes.png&#34; alt=&#34;Attributes button&#34;&gt;&lt;/p&gt;
+        &lt;p&gt;The Admin &amp;gt; Catalog &amp;gt; Categories/Products page shows products when you drill down to a category with products.  On the right hand side of each product row are a series of buttons, which are described in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products (Products Level)&lt;/a&gt; FAQ.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/listing_attributes.png&#34; alt=&#34;Attributes button&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When the button for attributes (&amp;ldquo;A&amp;rdquo;) is black, as it is on the top row, the product has no attributes.&lt;/p&gt;
 &lt;p&gt;When it is not black, as shown on the bottom row, the product has one or more attributes.&lt;/p&gt;
-&lt;p&gt;On the storefront side, products with attributes show on the product info page with drop down boxes, checkboxes, text boxes or radio buttons. If you are looking at a list of products in a category, or on a &lt;a href=&#34;/user/products/product_listing/&#34;&gt;listing page&lt;/a&gt;, the products with a &amp;ldquo;More Information&amp;rdquo; button rather than an &amp;ldquo;Add to Cart&amp;rdquo; button have attributes.  See &lt;a href=&#34;/user/storefront_pages/add_to_cart/&#34;&gt;Add to Cart&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;On the storefront side, products with attributes show on the product info page with drop down boxes, checkboxes, text boxes or radio buttons. If you are looking at a list of products in a category, or on a &lt;a href=&#34;/zendocs_test1/user/products/product_listing/&#34;&gt;listing page&lt;/a&gt;, the products with a &amp;ldquo;More Information&amp;rdquo; button rather than an &amp;ldquo;Add to Cart&amp;rdquo; button have attributes.  See &lt;a href=&#34;/zendocs_test1/user/storefront_pages/add_to_cart/&#34;&gt;Add to Cart&lt;/a&gt; for more details.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I add or delete categories?</title>
-      <link>/user/admin/admin_add_categories/</link>
+      <link>/zendocs_test1/user/admin/admin_add_categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_add_categories/</guid>
+      <guid>/zendocs_test1/user/admin/admin_add_categories/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/products/add_delete_categories/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/products/add_delete_categories/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I add or delete products?</title>
-      <link>/user/admin/admin_add_products/</link>
+      <link>/zendocs_test1/user/admin/admin_add_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_add_products/</guid>
+      <guid>/zendocs_test1/user/admin/admin_add_products/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/products/add_delete/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/products/add_delete/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I increase the number of products per page in admin?</title>
-      <link>/user/admin/admin_listing_count/</link>
+      <link>/zendocs_test1/user/admin/admin_listing_count/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_listing_count/</guid>
+      <guid>/zendocs_test1/user/admin/admin_listing_count/</guid>
       <description>
         
         
@@ -160,15 +160,15 @@ There&amp;rsquo;s even a way to &lt;a href=&#34;/user/admin_pages/configuration/
     
     <item>
       <title>User: How do I set up banners? and report on banner ads?</title>
-      <link>/user/admin/banner_ads/</link>
+      <link>/zendocs_test1/user/admin/banner_ads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/banner_ads/</guid>
+      <guid>/zendocs_test1/user/admin/banner_ads/</guid>
       <description>
         
         
         &lt;h2 id=&#34;banner-manager---quick-summary&#34;&gt;Banner Manager - Quick Summary&lt;/h2&gt;
-&lt;p&gt;You can control/add/edit/delete your banners in &lt;a href=&#34;/user/admin_pages/tools/banner_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Banner Manager&lt;/a&gt;. (click this link for more details)&lt;/p&gt;
+&lt;p&gt;You can control/add/edit/delete your banners in &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/banner_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Banner Manager&lt;/a&gt;. (click this link for more details)&lt;/p&gt;
 &lt;p&gt;To add a new banner, click the &lt;code&gt;New Banner&lt;/code&gt; button.
 To edit an existing one and change its link, picture, etc, click on the banner you want to change, and click the &lt;code&gt;Edit&lt;/code&gt; button.&lt;/p&gt;
 &lt;p&gt;You can enable and disable any particular banner by clicking on the red/green status button.&lt;/p&gt;
@@ -177,20 +177,20 @@ To edit an existing one and change its link, picture, etc, click on the banner y
 &lt;p&gt;Images used in banners are typically uploaded to your server&amp;rsquo;s &lt;code&gt;/images/banners&lt;/code&gt; directory.&lt;/p&gt;
 &lt;h2 id=&#34;banner-styles&#34;&gt;Banner Styles&lt;/h2&gt;
 &lt;p&gt;There are 2 styles of banners: &lt;strong&gt;sidebox&lt;/strong&gt; banners and &lt;strong&gt;wide&lt;/strong&gt; banners&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/user/sideboxes/sidebox_list/#banners&#34;&gt;Sidebox Banners&lt;/a&gt; are narrower and designed to &lt;strong&gt;fit in a sidebox&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/#banners&#34;&gt;Sidebox Banners&lt;/a&gt; are narrower and designed to &lt;strong&gt;fit in a sidebox&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Wide Banners are designed to &lt;strong&gt;span the width of your page&lt;/strong&gt;.  The images should be wide, but not too tall.&lt;/p&gt;
 &lt;p&gt;You can give almost whatever group name you want to a banner. Banners in the same group will be randomly displayed one at a time in the position indicated in &lt;code&gt;Layout Settings&lt;/code&gt; (see below).&lt;/p&gt;
 &lt;h3 id=&#34;banner-sizes&#34;&gt;Banner Sizes&lt;/h3&gt;
 &lt;p&gt;Banner sizes are your choice. There are industry standard &amp;ldquo;ad&amp;rdquo; sizes you could consider for the sake of consistency, but you can make them any size that you want and mix and match the sizes depending on your layout.&lt;/p&gt;
 &lt;p&gt;Keep in mind that using industry-standard sizes might get your banners treated as &amp;ldquo;ads&amp;rdquo; and therefore ad-blocking browser plugins might hide them.&lt;/p&gt;
 &lt;h3 id=&#34;positioning-banner-groups&#34;&gt;Positioning Banner Groups&lt;/h3&gt;
-&lt;p&gt;You control which group of banners is &amp;ldquo;displayed where&amp;rdquo; by editing the &amp;ldquo;Banner Display Groups&amp;rdquo; position group names under &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You control which group of banners is &amp;ldquo;displayed where&amp;rdquo; by editing the &amp;ldquo;Banner Display Groups&amp;rdquo; position group names under &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you assign more than one banner to a certain group, it will randomly pick one from that group whenever that group is asked to be displayed.&lt;/p&gt;
 &lt;p&gt;Only one banner is displayed at a time in any banner position. (There is an exception to this: the BannersAll sidebox, which displays all banners assigned to its group, in the sort order you specify.)&lt;/p&gt;
 &lt;h4 id=&#34;banner-locations-in-templates&#34;&gt;Banner Locations in Templates&lt;/h4&gt;
 &lt;p&gt;In the default template the following are where these banners will be displayed:&lt;/p&gt;
-&lt;img src=&#34;/images/banners_header.png&#34; alt=&#34;Header Positions for Banner Groups&#34;&gt;
-&lt;img src=&#34;/images/banners_footer.png&#34; alt=&#34;Footer Positions for Banner Groups&#34;&gt;
+&lt;img src=&#34;/zendocs_test1/images/banners_header.png&#34; alt=&#34;Header Positions for Banner Groups&#34;&gt;
+&lt;img src=&#34;/zendocs_test1/images/banners_footer.png&#34; alt=&#34;Footer Positions for Banner Groups&#34;&gt;
 &lt;h4 id=&#34;technical-note-for-coders&#34;&gt;Technical note for coders:&lt;/h4&gt;
 &lt;p&gt;By default the banner groups are internally numbered and displayed using template parameters as follows:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Banner Display Groups - Header Position 1 = SHOW_BANNERS_GROUP_SET1
@@ -203,7 +203,7 @@ Banner Display Groups - Side Box banner_box = SHOW_BANNERS_GROUP_SET7
 Banner Display Groups - Side Box banner_box2 = SHOW_BANNERS_GROUP_SET8
 Banner Display Groups - Side Box banner_box_all = SHOW_BANNERS_GROUP_SET_ALL
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;how-do-i-generate-a-report-on-banner-advertising&#34;&gt;How do I generate a report on banner advertising?&lt;/h3&gt;
-&lt;p&gt;Banner statistics are tracked on an ongoing basis. When you open &lt;a href=&#34;/user/admin_pages/tools/banner_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Banner Manager&lt;/a&gt;, you can see the last 3 days&amp;rsquo; details on-screen.&lt;/p&gt;
+&lt;p&gt;Banner statistics are tracked on an ongoing basis. When you open &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/banner_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Banner Manager&lt;/a&gt;, you can see the last 3 days&amp;rsquo; details on-screen.&lt;/p&gt;
 &lt;p&gt;For more information, under the &amp;ldquo;Action&amp;rdquo; column, you see a small white graph symbol. Click on that to view stats for day/month/year.&lt;/p&gt;
 
       </description>
@@ -211,19 +211,19 @@ Banner Display Groups - Side Box banner_box_all = SHOW_BANNERS_GROUP_SET_ALL
     
     <item>
       <title>User: How do I set up meta tags for my site?</title>
-      <link>/user/admin/meta_tags/</link>
+      <link>/zendocs_test1/user/admin/meta_tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/meta_tags/</guid>
+      <guid>/zendocs_test1/user/admin/meta_tags/</guid>
       <description>
         
         
         &lt;p&gt;Zen Cart is built with a feature to have separate meta tags for each Category and Products &amp;ndash; separate from the ones on general pages.&lt;/p&gt;
 &lt;h3 id=&#34;categories&#34;&gt;Categories&lt;/h3&gt;
-&lt;p&gt;To define meta tags for a Category, go to the &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Once you&amp;rsquo;re there, click on the meta tag icon (the last one to the right for any given category) and set your content.&lt;/p&gt;
+&lt;p&gt;To define meta tags for a Category, go to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Once you&amp;rsquo;re there, click on the meta tag icon (the last one to the right for any given category) and set your content.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; A meta tag entry on this screen must contain something in the keywords and description fields or it is not considered complete, and will be ignored.&lt;/p&gt;
 &lt;h3 id=&#34;products&#34;&gt;Products&lt;/h3&gt;
-&lt;p&gt;If you want to define meta tags for individual Products, you will navigate to that product using &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, and click on the meta tag icon (last one on the right) to define it.&lt;/p&gt;
+&lt;p&gt;If you want to define meta tags for individual Products, you will navigate to that product using &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, and click on the meta tag icon (last one on the right) to define it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; there are custom settings in Product Types so if you don&amp;rsquo;t want, for example, products_price in the title,  you can globally set the defaults for 1 or all product types.&lt;/p&gt;
 &lt;h3 id=&#34;common-site-wide&#34;&gt;Common Site-Wide&lt;/h3&gt;
 &lt;p&gt;To define site-wide tags such as charset, keywords and description, go to &lt;code&gt;/includes/languages/english/YOURTEMPLATE/meta_tags.php&lt;/code&gt; and edit that file.  Set the keywords, site title, site tagline and site description.&lt;/p&gt;
@@ -260,15 +260,15 @@ Open it up and add your own meta tag to those already there by default.&lt;/p&gt
     
     <item>
       <title>User: How do I sort products in the admin</title>
-      <link>/user/admin/admin_sort/</link>
+      <link>/zendocs_test1/user/admin/admin_sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/admin_sort/</guid>
+      <guid>/zendocs_test1/user/admin/admin_sort/</guid>
       <description>
         
         
         &lt;p&gt;Since Zen Cart 1.5.6, it has been possible to sort lists of products on the Categories/Products page at the products level.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/admin_product_sort.png&#34; alt=&#34;Sorting products in Admin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_product_sort.png&#34; alt=&#34;Sorting products in Admin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Use the &lt;em&gt;Categories/Product Display Order&lt;/em&gt; dropdown, and pick the field you would like to sort on.  Your product list will now be sorted by that field.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This only changes the view in the admin; on the storefront side, the sort order field will determine how  products are sorted.&lt;/p&gt;
 
@@ -277,20 +277,20 @@ Open it up and add your own meta tag to those already there by default.&lt;/p&gt
     
     <item>
       <title>User: I want to enable/disable some sideboxes</title>
-      <link>/user/admin/sideboxes/</link>
+      <link>/zendocs_test1/user/admin/sideboxes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/sideboxes/</guid>
+      <guid>/zendocs_test1/user/admin/sideboxes/</guid>
       <description>
         
         
         &lt;h3 id=&#34;controlling-sideboxes-in-admin&#34;&gt;Controlling Sideboxes in Admin&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sideboxes&lt;/a&gt; are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.&lt;/p&gt;
-&lt;p&gt;Sideboxes display is controlled by &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/template/sideboxes/&#34;&gt;Sideboxes&lt;/a&gt; are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.&lt;/p&gt;
+&lt;p&gt;Sideboxes display is controlled by &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;controlling-sideboxes-in-other-ways&#34;&gt;Controlling Sideboxes in Other Ways&lt;/h3&gt;
-&lt;p&gt;You can turn sideboxes off on a per page basis by modifying your template.  See &lt;a href=&#34;/user/sideboxes/suppressing_sidebox_display/&#34;&gt;suppressing sidebox display&lt;/a&gt; for details.&lt;/p&gt;
-&lt;p&gt;You can also &lt;a href=&#34;/user/template/left_right_columns/&#34;&gt;turn off the left and right columns&lt;/a&gt; where sideboxes display.&lt;/p&gt;
-&lt;p&gt;The number of entries shown in each sidebox is sometimes controlled using settings from &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can turn sideboxes off on a per page basis by modifying your template.  See &lt;a href=&#34;/zendocs_test1/user/sideboxes/suppressing_sidebox_display/&#34;&gt;suppressing sidebox display&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;You can also &lt;a href=&#34;/zendocs_test1/user/template/left_right_columns/&#34;&gt;turn off the left and right columns&lt;/a&gt; where sideboxes display.&lt;/p&gt;
+&lt;p&gt;The number of entries shown in each sidebox is sometimes controlled using settings from &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The number of Special Products displayed is controlled by MAX_RANDOM_SELECT_SPECIALS.&lt;/li&gt;
@@ -303,25 +303,25 @@ Open it up and add your own meta tag to those already there by default.&lt;/p&gt
     
     <item>
       <title>User: Is there a way that I can check on what users with Admin access to my site are doing?</title>
-      <link>/user/admin/monitoring_admin/</link>
+      <link>/zendocs_test1/user/admin/monitoring_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/monitoring_admin/</guid>
+      <guid>/zendocs_test1/user/admin/monitoring_admin/</guid>
       <description>
         
         
-        &lt;p&gt;Each time an Admin page is called, the access date, admin ID, page accessed, page parameters and IP address are logged in the &lt;code&gt;admin_activity_log&lt;/code&gt; table. The contents of this table can be viewed via database management tools such as &lt;code&gt;phpMyAdmin&lt;/code&gt;.  The table may also be exported using &lt;a href=&#34;/user/admin_pages/admins/admin_activity_logs/&#34;&gt;Admin &amp;gt; Admins &amp;gt; Admin Activity Logs&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can also limit the scope of any admin user&amp;rsquo;s capabilities using the &lt;a href=&#34;/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; feature.&lt;/p&gt;
+        &lt;p&gt;Each time an Admin page is called, the access date, admin ID, page accessed, page parameters and IP address are logged in the &lt;code&gt;admin_activity_log&lt;/code&gt; table. The contents of this table can be viewed via database management tools such as &lt;code&gt;phpMyAdmin&lt;/code&gt;.  The table may also be exported using &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/&#34;&gt;Admin &amp;gt; Admins &amp;gt; Admin Activity Logs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also limit the scope of any admin user&amp;rsquo;s capabilities using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; feature.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Master Password - Logging into a customer&#39;s account</title>
-      <link>/user/admin/master_password/</link>
+      <link>/zendocs_test1/user/admin/master_password/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/master_password/</guid>
+      <guid>/zendocs_test1/user/admin/master_password/</guid>
       <description>
         
         
@@ -331,7 +331,7 @@ Open it up and add your own meta tag to those already there by default.&lt;/p&gt
 &lt;li&gt;Placing an order on their behalf&lt;/li&gt;
 &lt;li&gt;Pre-loading the cart for them to complete an order.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The &lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;Login as Customer&lt;/a&gt; feature allows you to 
+&lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/running/login_as_customer/&#34;&gt;Login as Customer&lt;/a&gt; feature allows you to 
 select a customer&amp;rsquo;s account in Admin &amp;gt; Customers and login as them using your admin credentials
 by clicking the &amp;ldquo;Place Order&amp;rdquo; button on the side box showing their account.&lt;/p&gt;
 &lt;p&gt;Prior to this version, logging in as a customer was still possible using 
@@ -347,14 +347,14 @@ one of these plugins:&lt;/p&gt;
     
     <item>
       <title>User: New Products - what is the age cutoff?</title>
-      <link>/user/admin/what_is_new/</link>
+      <link>/zendocs_test1/user/admin/what_is_new/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/what_is_new/</guid>
+      <guid>/zendocs_test1/user/admin/what_is_new/</guid>
       <description>
         
         
-        &lt;p&gt;The setting &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; New Product Listing - Limited to &amp;hellip;&lt;/a&gt; determines what &amp;ldquo;New Product&amp;rdquo; means:&lt;/p&gt;
+        &lt;p&gt;The setting &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; New Product Listing - Limited to &amp;hellip;&lt;/a&gt; determines what &amp;ldquo;New Product&amp;rdquo; means:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Limit the New Product Listing to
 0= All Products
 1= Current Month
@@ -366,21 +366,21 @@ one of these plugins:&lt;/p&gt;
 120= 120 Days
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reducing this value means a more efficient query for generating a list of new products.&lt;/p&gt;
 &lt;p&gt;ALTERNATIVE:
-If, however, you wish to hand-pick which items show up, then turn OFF the &lt;em&gt;New Products&lt;/em&gt; box, and use &lt;em&gt;Featured Products&lt;/em&gt; instead.  See &lt;a href=&#34;/user/admin_pages/catalog/featured/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Featured Products&lt;/a&gt; to pick the products.&lt;/p&gt;
+If, however, you wish to hand-pick which items show up, then turn OFF the &lt;em&gt;New Products&lt;/em&gt; box, and use &lt;em&gt;Featured Products&lt;/em&gt; instead.  See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Featured Products&lt;/a&gt; to pick the products.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: New/Featured/Special/Upcoming Products sections</title>
-      <link>/user/admin/centerboxes/</link>
+      <link>/zendocs_test1/user/admin/centerboxes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/centerboxes/</guid>
+      <guid>/zendocs_test1/user/admin/centerboxes/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerboxes&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerboxes&lt;/a&gt;
 are pieces of content that are displayed in the middle of the screen in the Zen Cart storefront.&lt;/p&gt;
 &lt;p&gt;This article is about controlling centerboxes from the admin.&lt;/p&gt;
 &lt;p&gt;As the title of this article suggests, there are four built-in Centerboxes:&lt;/p&gt;
@@ -391,11 +391,11 @@ are pieces of content that are displayed in the middle of the screen in the Zen 
 &lt;li&gt;Upcoming Products&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Each of these blocks can be displayed on a number of pages. Using the New Products centerbox as an example, the following settings exist:&lt;/p&gt;
-&lt;p&gt;On &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;On &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Show New Products on empty Shopping Cart Page&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;On &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;On &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Show New Products on Main Page&lt;/li&gt;
 &lt;li&gt;Show New Products on Main Page - Category with SubCategories&lt;/li&gt;
@@ -408,7 +408,7 @@ are pieces of content that are displayed in the middle of the screen in the Zen 
 &lt;li&gt;Turn OFF by setting to 0 all of the ones you do NOT want to see displayed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Once you have turned on a centerbox and determined its position, you must decide how many items it should contain.&lt;/p&gt;
-&lt;p&gt;The number of products shown in each centerbox is controlled using settings from &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.  Note that names of these settings changed in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;p&gt;The number of products shown in each centerbox is controlled using settings from &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.  Note that names of these settings changed in Zen Cart 1.5.8.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -447,10 +447,10 @@ are pieces of content that are displayed in the middle of the screen in the Zen 
     
     <item>
       <title>User: The Developer&#39;s Toolkit</title>
-      <link>/user/admin/developers_toolkit/</link>
+      <link>/zendocs_test1/user/admin/developers_toolkit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/admin/developers_toolkit/</guid>
+      <guid>/zendocs_test1/user/admin/developers_toolkit/</guid>
       <description>
         
         
@@ -461,7 +461,7 @@ In this example, you desire to remove:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Products Reviews - Share your opinions on products with our other customers.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3. Copy a few of those words exactly to the clipboard.&lt;br&gt;
 Example: &lt;code&gt;your opinions on products&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;4. Open the Developer&amp;rsquo;s Toolkit under &lt;a href=&#34;/user/admin_pages/tools/developers_tool_kit/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;4. Open the Developer&amp;rsquo;s Toolkit under &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/developers_tool_kit/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;5. Paste those words &amp;ldquo;exactly&amp;rdquo; as they appeared on the email into the first search box.&lt;/p&gt;
 &lt;p&gt;6. From the first drop-down, choose &amp;ldquo;All Language Files&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;7. Click &lt;em&gt;Search&lt;/em&gt;&lt;/p&gt;
@@ -471,7 +471,7 @@ Example: &lt;code&gt;your opinions on products&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; It&amp;rsquo;s recommended that you place your customized file in an Overrides folder, like this:&lt;br&gt;
 &lt;code&gt;includes/languages/english/YOURTEMPLATE/create_account.php&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;code&gt;YOURTEMPLATE&lt;/code&gt; is the name of the custom template you&amp;rsquo;ve been developing for your site.&lt;/p&gt;
-&lt;p&gt;For more information on overrides see the &lt;a href=&#34;/user/template/template_overrides/&#34;&gt;Template Overrides FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information on overrides see the &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;Template Overrides FAQ&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

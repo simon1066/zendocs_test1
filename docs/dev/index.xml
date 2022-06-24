@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Zen Cart Developer Docs</title>
-    <link>/dev/</link>
+    <link>/zendocs_test1/dev/</link>
     <description>Recent content in Zen Cart Developer Docs on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/dev/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Dev: Zen Cart 1.5.7 Schema</title>
-      <link>/dev/schema/schema_157/</link>
+      <link>/zendocs_test1/dev/schema/schema_157/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_157/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_157/</guid>
       <description>
         
         
@@ -49,10 +49,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.6 Schema</title>
-      <link>/dev/schema/schema_156/</link>
+      <link>/zendocs_test1/dev/schema/schema_156/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_156/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_156/</guid>
       <description>
         
         
@@ -81,10 +81,10 @@ td {
     
     <item>
       <title>Dev: Zen Cart 1.5.5 Schema</title>
-      <link>/dev/schema/schema_155/</link>
+      <link>/zendocs_test1/dev/schema/schema_155/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_155/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_155/</guid>
       <description>
         
         
@@ -114,10 +114,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.4 Schema</title>
-      <link>/dev/schema/schema_154/</link>
+      <link>/zendocs_test1/dev/schema/schema_154/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_154/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_154/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.5.1 Schema</title>
-      <link>/dev/schema/schema_151/</link>
+      <link>/zendocs_test1/dev/schema/schema_151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_151/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_151/</guid>
       <description>
         
         
@@ -180,10 +180,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Zen Cart 1.3.9 Schema</title>
-      <link>/dev/schema/schema_139/</link>
+      <link>/zendocs_test1/dev/schema/schema_139/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/schema/schema_139/</guid>
+      <guid>/zendocs_test1/dev/schema/schema_139/</guid>
       <description>
         
         
@@ -213,10 +213,10 @@ Legend: &lt;b&gt;bolded fields&lt;/b&gt; are primary keys,&amp;nbsp;&lt;a href=&
     
     <item>
       <title>Dev: Admin Request Sanitization</title>
-      <link>/dev/code/admin_sanitization/</link>
+      <link>/zendocs_test1/dev/code/admin_sanitization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/admin_sanitization/</guid>
+      <guid>/zendocs_test1/dev/code/admin_sanitization/</guid>
       <description>
         
         
@@ -458,10 +458,10 @@ deeper arrays with a further MULTI_DIMENSIONAL sanitizer array.&lt;/p&gt;
     
     <item>
       <title>Dev: Directory Structure</title>
-      <link>/dev/plugins/encapsulated_plugins/directory_structure/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/directory_structure/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</guid>
       <description>
         
         
@@ -582,7 +582,7 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While these examples mention the &lt;code&gt;catalog&lt;/code&gt; subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.&lt;/p&gt;
 &lt;p&gt;ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The &lt;code&gt;Installer&lt;/code&gt; folder is optional; you can embed the installation logic in your plugin if you prefer.  See &lt;a href=&#34;/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;Installer Classes&lt;/a&gt; and &lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt; for details on using the &lt;code&gt;Installer&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The &lt;code&gt;Installer&lt;/code&gt; folder is optional; you can embed the installation logic in your plugin if you prefer.  See &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;Installer Classes&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt; for details on using the &lt;code&gt;Installer&lt;/code&gt; folder.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE on JavaScript loading:&lt;/strong&gt; naming your JavaScript file the same name as your PHP file name will make it automatically load.  If you have additional .js files to load, give them names starting with the PHP file name followed by an underscore.  For example, if you create a file called &lt;code&gt;admin/rewards.php&lt;/code&gt;, the autoloader will load &lt;code&gt;admin/includes/javascript/rewards.js&lt;/code&gt;, as well as any JavaScript file whose name matches the pattern &lt;code&gt;admin/includes/javascript/rewards_*.js&lt;/code&gt;, e.g. &lt;code&gt;admin/includes/javascript/rewards_sha-256.js&lt;/code&gt;.&lt;/p&gt;
 
       </description>
@@ -590,10 +590,10 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/contributing/introduction/</link>
+      <link>/zendocs_test1/dev/contributing/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/introduction/</guid>
+      <guid>/zendocs_test1/dev/contributing/introduction/</guid>
       <description>
         
         
@@ -607,15 +607,15 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
 &lt;h2 id=&#34;where-do-i-start&#34;&gt;Where do I start?&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s really as easy as 1-2-3 &amp;hellip;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Start with reviewing the &lt;a href=&#34;/dev/contributing/issues&#34;&gt;Issues&lt;/a&gt; document, as a guide to first steps about exploring the issue further, checking whether it&amp;rsquo;s already being addressed someplace, whether it&amp;rsquo;s a core bug vs a &amp;ldquo;bugs-me bug&amp;rdquo;, along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.&lt;/li&gt;
+&lt;li&gt;Start with reviewing the &lt;a href=&#34;/zendocs_test1/dev/contributing/issues&#34;&gt;Issues&lt;/a&gt; document, as a guide to first steps about exploring the issue further, checking whether it&amp;rsquo;s already being addressed someplace, whether it&amp;rsquo;s a core bug vs a &amp;ldquo;bugs-me bug&amp;rdquo;, along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If you&amp;rsquo;re simply &amp;ldquo;looking for ways to get started&amp;rdquo;, take a look at the existing &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;Zen Cart Issues on Github&lt;/a&gt; for issues that are tagged with &amp;ldquo;up-for-grabs&amp;rdquo; or &amp;ldquo;first-timers-only&amp;rdquo;.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re going to contribute code, read through the &lt;a href=&#34;/dev/contributing/github_workflow&#34;&gt;Github Workflow&lt;/a&gt; document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re going to contribute code, read through the &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow&#34;&gt;Github Workflow&lt;/a&gt; document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;As you start working on your code changes and pull request, review the &lt;a href=&#34;/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; guide to ensure that your code matches both the formatting and testing requirements. If you&amp;rsquo;re submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.&lt;/p&gt;
+&lt;p&gt;As you start working on your code changes and pull request, review the &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; guide to ensure that your code matches both the formatting and testing requirements. If you&amp;rsquo;re submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;forum-links&#34;&gt;Forum Links&lt;/h2&gt;
@@ -631,10 +631,10 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/eu_digital_vat/introduction/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/introduction/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/introduction/</guid>
       <description>
         
         
@@ -649,10 +649,10 @@ This allows for automated upgrades and the possibility of downgrading as well.&l
     
     <item>
       <title>Dev: Rules for Plugins</title>
-      <link>/dev/plugins/rules/</link>
+      <link>/zendocs_test1/dev/plugins/rules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/rules/</guid>
+      <guid>/zendocs_test1/dev/plugins/rules/</guid>
       <description>
         
         
@@ -733,10 +733,10 @@ An &amp;ldquo;uninstall&amp;rdquo; SQL script should be included as well so the 
     
     <item>
       <title>Dev: Tips on creating a plugin</title>
-      <link>/dev/plugins/tips/</link>
+      <link>/zendocs_test1/dev/plugins/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/tips/</guid>
+      <guid>/zendocs_test1/dev/plugins/tips/</guid>
       <description>
         
         
@@ -748,10 +748,10 @@ An &amp;ldquo;uninstall&amp;rdquo; SQL script should be included as well so the 
 &lt;p&gt;There are built-in override capabilities in Zen Cart to prevent needing to edit some core files which would otherwise need updating.&lt;/p&gt;
 &lt;p&gt;(As a reminder, the override basics are covered in the storefront help; 
 you may read 
-&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;the introduction&lt;/a&gt;, 
-&lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;the details&lt;/a&gt;, 
+&lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;the introduction&lt;/a&gt;, 
+&lt;a href=&#34;/zendocs_test1/user/new_user_topics/overrides/&#34;&gt;the details&lt;/a&gt;, 
 and then 
-&lt;a href=&#34;/user/template/template_overrides/&#34;&gt;the summary&lt;/a&gt;.)&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;the summary&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;Some of the commonly-overlooked override capabilities are listed here:&lt;/p&gt;
 &lt;h3 id=&#34;database_tablesphp--filenamesphp&#34;&gt;database_tables.php &amp;amp; filenames.php&lt;/h3&gt;
 &lt;p&gt;Combine your extra details for these two files into one file, and then add it to both the storefront and the admin:&lt;/p&gt;
@@ -796,9 +796,9 @@ if ($fieldOkay1 !== true) {
   $db-&amp;gt;Execute(&amp;#34;INSERT INTO &amp;#34; . TABLE_CONFIGURATION . &amp;#34; (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES (&amp;#39;Currency Supported&amp;#39;, &amp;#39;MODULE_PAYMENT_AUTHORIZENET_CURRENCY&amp;#39;, &amp;#39;USD&amp;#39;, &amp;#39;Which currency is your Authnet Gateway Account configured to accept?&amp;lt;br&amp;gt;(Purchases in any other currency will be pre-converted to this currency before submission using the exchange rates in your store admin.)&amp;#39;, &amp;#39;6&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;zen_cfg_select_option(array(\&amp;#39;USD\&amp;#39;, \&amp;#39;CAD\&amp;#39;, \&amp;#39;GBP\&amp;#39;, \&amp;#39;EUR\&amp;#39;, \&amp;#39;AUD\&amp;#39;, \&amp;#39;NZD\&amp;#39;), &amp;#39;, now())&amp;#34;);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;adding-configuration-settings&#34;&gt;Adding Configuration settings&lt;/h2&gt;
-&lt;p&gt;If your plugin requires new configuration data, see &lt;a href=&#34;/dev/plugins/adding_config/&#34;&gt;Adding a configuration setting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your plugin requires new configuration data, see &lt;a href=&#34;/zendocs_test1/dev/plugins/adding_config/&#34;&gt;Adding a configuration setting&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;avoiding-the-missing-menu-problem&#34;&gt;Avoiding the Missing Menu problem&lt;/h2&gt;
-&lt;p&gt;If your plugin is an admin page, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant &lt;code&gt;admin_pages&lt;/code&gt; table entries - see &lt;a href=&#34;/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your plugin is an admin page, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant &lt;code&gt;admin_pages&lt;/code&gt; table entries - see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/admin_menu_item_missing/&#34;&gt;Admin menu item is missing&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;checking-zen-cart-version&#34;&gt;Checking Zen Cart version&lt;/h2&gt;
 &lt;p&gt;Your plugin may need to do something different depending on the Zen Cart version. Use the &lt;code&gt;PROJECT_VERSION_&lt;/code&gt; settings in &lt;code&gt;includes/version.php&lt;/code&gt; for this.  As an example, this checks for a Zen Cart version of 1.5.7 or higher:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (version_compare(PROJECT_VERSION_NAME . &amp;#39; &amp;#39; . PROJECT_VERSION_MAJOR . &amp;#39;.&amp;#39; . PROJECT_VERSION_MINOR, &amp;#39;1.5.7&amp;#39;, &amp;#39;&amp;gt;=&amp;#39;)) {
@@ -807,13 +807,13 @@ if ($fieldOkay1 !== true) {
 &lt;h2 id=&#34;other-resources&#34;&gt;Other Resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/creating_menu/&#34;&gt;Creating a menu item&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/creating_menu/&#34;&gt;Creating a menu item&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/creating_tables/&#34;&gt;Creating or altering tables&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/creating_tables/&#34;&gt;Creating or altering tables&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/dev/code/forms/&#34;&gt;Building a form&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/dev/code/forms/&#34;&gt;Building a form&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;forum-resources&#34;&gt;Forum Resources&lt;/h2&gt;
@@ -824,10 +824,10 @@ if ($fieldOkay1 !== true) {
     
     <item>
       <title>Dev: Upgrading 1.3.X era plugins</title>
-      <link>/dev/plugins/upgrading_to_1.5/</link>
+      <link>/zendocs_test1/dev/plugins/upgrading_to_1.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/upgrading_to_1.5/</guid>
+      <guid>/zendocs_test1/dev/plugins/upgrading_to_1.5/</guid>
       <description>
         
         
@@ -843,22 +843,22 @@ There is a forum thread which outlines some guidance in the process of rewriting
 &lt;p&gt;Forms in v1.5.0 and newer must use security tokens such as those set by properly using &lt;code&gt;zen_draw_form&lt;/code&gt; instead of hard-coded
 tags and must use POSTs for all CRUD actions, leaving GETs for only filter-related activities.&lt;/p&gt;
 &lt;h2 id=&#34;moving-to-the-encapsulated-plugin-manager&#34;&gt;Moving to the Encapsulated Plugin manager&lt;/h2&gt;
-&lt;p&gt;As an recommended next step, follow the guide &lt;a href=&#34;/dev/plugins/encapsulated_plugins/converting/&#34;&gt;Converting an older plugin&lt;/a&gt; to use the new encapsulated plugin manager.&lt;/p&gt;
+&lt;p&gt;As an recommended next step, follow the guide &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/converting/&#34;&gt;Converting an older plugin&lt;/a&gt; to use the new encapsulated plugin manager.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Change Guidelines</title>
-      <link>/dev/contributing/change_guidelines/</link>
+      <link>/zendocs_test1/dev/contributing/change_guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/change_guidelines/</guid>
+      <guid>/zendocs_test1/dev/contributing/change_guidelines/</guid>
       <description>
         
         
         &lt;h2 id=&#34;how-do-you-make-a-change&#34;&gt;How do you make a change?&lt;/h2&gt;
-&lt;p&gt;Changes are made through pull requests (&amp;ldquo;PR&amp;rsquo;s&amp;rdquo;). If you are unfamiliar with pull requests, please review the project&amp;rsquo;s &lt;a href=&#34;/dev/contributing/github_workflow/&#34;&gt;Github Workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Changes are made through pull requests (&amp;ldquo;PR&amp;rsquo;s&amp;rdquo;). If you are unfamiliar with pull requests, please review the project&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow/&#34;&gt;Github Workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;what-should-go-into-a-change&#34;&gt;What should go into a change?&lt;/h2&gt;
 &lt;p&gt;For non-trivial changes, the best practice is to have a single PR for each issue you are addressing. The reasons for this include:&lt;/p&gt;
 &lt;ul&gt;
@@ -871,7 +871,7 @@ tags and must use POSTs for all CRUD actions, leaving GETs for only filter-relat
 &lt;h2 id=&#34;bug-fixes-and-formatting&#34;&gt;Bug Fixes and Formatting&lt;/h2&gt;
 &lt;p&gt;When changing existing files, try not to make large formatting changes. 
 Keeping the existing format allows people to more easily compare versions. 
-See &lt;a href=&#34;/dev/contributing/coding_standards/&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
+See &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards/&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;In cases where a significant amount of reformatting is necessary and approved by the dev team, that should be done as a standalone commit and PR, where NO functional changes are made. 
 It should be formatting-only. Otherwise it becomes nearly impossible to find &amp;ldquo;who changed what when and why&amp;rdquo; when investigating code history at a later date.&lt;/p&gt;
 &lt;h2 id=&#34;how-should-i-document-a-change&#34;&gt;How should I document a change?&lt;/h2&gt;
@@ -909,10 +909,10 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
     
     <item>
       <title>Dev: Coding Standards</title>
-      <link>/dev/contributing/coding_standards/</link>
+      <link>/zendocs_test1/dev/contributing/coding_standards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/coding_standards/</guid>
+      <guid>/zendocs_test1/dev/contributing/coding_standards/</guid>
       <description>
         
         
@@ -1010,17 +1010,17 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;php-short-echo-tags&#34;&gt;PHP Short Echo Tags&lt;/h2&gt;
 &lt;p&gt;At this time, PHP Short Echo Tags (&lt;code&gt;&amp;lt;?=&lt;/code&gt; in lieu of &lt;code&gt;&amp;lt;?php echo&lt;/code&gt;) are not preferred.&lt;/p&gt;
 &lt;h2 id=&#34;more-information&#34;&gt;More Information&lt;/h2&gt;
-&lt;p&gt;More information is provided in &lt;a href=&#34;/dev/code/php_idioms/&#34;&gt;PHP Idioms&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information is provided in &lt;a href=&#34;/zendocs_test1/dev/code/php_idioms/&#34;&gt;PHP Idioms&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Scoping</title>
-      <link>/dev/eu_digital_vat/scoping/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/scoping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/scoping/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/scoping/</guid>
       <description>
         
         
@@ -1040,10 +1040,10 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
     
     <item>
       <title>Dev: Flagging Products</title>
-      <link>/dev/eu_digital_vat/flagging_products/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/flagging_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/flagging_products/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/flagging_products/</guid>
       <description>
         
         
@@ -1058,10 +1058,10 @@ If the PR fully resolves a related issue, prefix the issue number with &lt;code&
     
     <item>
       <title>Dev: Github Workflow &#43; Pull Requests</title>
-      <link>/dev/contributing/github_workflow/</link>
+      <link>/zendocs_test1/dev/contributing/github_workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/github_workflow/</guid>
+      <guid>/zendocs_test1/dev/contributing/github_workflow/</guid>
       <description>
         
         
@@ -1322,10 +1322,10 @@ For the basics of understanding forking and how to manage that fork, see: &lt;a 
     
     <item>
       <title>Dev: Tax Rate</title>
-      <link>/dev/eu_digital_vat/determining_tax_rate/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/determining_tax_rate/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</guid>
       <description>
         
         
@@ -1341,10 +1341,10 @@ However with Digital Goods, the VAT is determined by the customers country. For 
     
     <item>
       <title>Dev: Bug Reporting</title>
-      <link>/dev/contributing/issues/</link>
+      <link>/zendocs_test1/dev/contributing/issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/issues/</guid>
+      <guid>/zendocs_test1/dev/contributing/issues/</guid>
       <description>
         
         
@@ -1401,7 +1401,7 @@ However with Digital Goods, the VAT is determined by the customers country. For 
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;security-issues&#34;&gt;Security Issues&lt;/h1&gt;
-&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;reference-guide&#34;&gt;Reference Guide&lt;/h1&gt;
 &lt;p&gt;More information on &lt;a href=&#34;https://guides.github.com/features/issues/&#34;&gt;Github Issue Reporting&lt;/a&gt;&lt;/p&gt;
 
@@ -1410,10 +1410,10 @@ However with Digital Goods, the VAT is determined by the customers country. For 
     
     <item>
       <title>Dev: Location</title>
-      <link>/dev/eu_digital_vat/location_identification/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/location_identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/location_identification/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/location_identification/</guid>
       <description>
         
         
@@ -1428,10 +1428,10 @@ However if for some reason the geoIP returns a different country, then some 3rd 
     
     <item>
       <title>Dev: Restrict Digital Downloads by Country</title>
-      <link>/dev/eu_digital_vat/opt_out_by_country/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/opt_out_by_country/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</guid>
       <description>
         
         
@@ -1445,10 +1445,10 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: B2B or B2C</title>
-      <link>/dev/eu_digital_vat/identifying_b2b_or_b2c/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/identifying_b2b_or_b2c/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</guid>
       <description>
         
         
@@ -1461,27 +1461,27 @@ My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Dev: Notices</title>
-      <link>/dev/contributing/notices/</link>
+      <link>/zendocs_test1/dev/contributing/notices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/notices/</guid>
+      <guid>/zendocs_test1/dev/contributing/notices/</guid>
       <description>
         
         
-        &lt;p&gt;PHP notices are sometimes also called &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;PHP notices are sometimes also called &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is recommended to test code changes against the lowest and highest versions of PHP supported for the version you are changing.  For Zen Cart 1.5.8, this means testing under PHP 7.4 and PHP 8.1.&lt;/p&gt;
 &lt;p&gt;Tests should be done with Admin &amp;gt; Configuration &amp;gt; Logging &amp;gt; Report All Errors settings of &amp;ldquo;Yes.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;The help file &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;PHP Warnings&lt;/a&gt; describes some common pitfalls that people experience and recommendations for fixing them.&lt;/p&gt;
+&lt;p&gt;The help file &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings&lt;/a&gt; describes some common pitfalls that people experience and recommendations for fixing them.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Testing</title>
-      <link>/dev/contributing/tests/</link>
+      <link>/zendocs_test1/dev/contributing/tests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/contributing/tests/</guid>
+      <guid>/zendocs_test1/dev/contributing/tests/</guid>
       <description>
         
         
@@ -1547,10 +1547,10 @@ the browser tests.&lt;/p&gt;
     
     <item>
       <title>Dev: Reporting</title>
-      <link>/dev/eu_digital_vat/reporting/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/reporting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/reporting/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/reporting/</guid>
       <description>
         
         
@@ -1562,10 +1562,10 @@ the browser tests.&lt;/p&gt;
     
     <item>
       <title>Dev: Resources</title>
-      <link>/dev/eu_digital_vat/resources/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/resources/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/resources/</guid>
       <description>
         
         
@@ -1581,14 +1581,14 @@ the browser tests.&lt;/p&gt;
     
     <item>
       <title>Dev: Adding a child table to the products table</title>
-      <link>/dev/code/child_table_products/</link>
+      <link>/zendocs_test1/dev/code/child_table_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/child_table_products/</guid>
+      <guid>/zendocs_test1/dev/code/child_table_products/</guid>
       <description>
         
         
-        &lt;p&gt;As an alternative to &lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;adding a field&lt;/a&gt;, you may wish to create a child table.&lt;/p&gt;
+        &lt;p&gt;As an alternative to &lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;adding a field&lt;/a&gt;, you may wish to create a child table.&lt;/p&gt;
 &lt;p&gt;You can see cases where this is already done in Zen Cart: the &lt;code&gt;products_description&lt;/code&gt; table is a child table of the &lt;code&gt;products&lt;/code&gt; table, linked by &lt;code&gt;products_id&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Why would you create a child table rather than just extend the products table?  Here are some scenarios:&lt;/p&gt;
 &lt;ul&gt;
@@ -1603,17 +1603,17 @@ the browser tests.&lt;/p&gt;
 &lt;li&gt;What happens when a product is deleted?  You may wish to modify &lt;code&gt;admin/includes/modules/delete_product_confirm.php&lt;/code&gt; or the &lt;code&gt;zen_remove_product&lt;/code&gt; function.&lt;/li&gt;
 &lt;li&gt;What happens when a product is copied?  You may wish to modify &lt;code&gt;admin/includes/modules/copy_product_confirm.php&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then you will need to &lt;a href=&#34;/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you will need to &lt;a href=&#34;/zendocs_test1/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adding a configuration setting</title>
-      <link>/dev/plugins/adding_config/</link>
+      <link>/zendocs_test1/dev/plugins/adding_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/adding_config/</guid>
+      <guid>/zendocs_test1/dev/plugins/adding_config/</guid>
       <description>
         
         
@@ -1640,27 +1640,27 @@ if (!defined(&amp;#39;SPAM_TEST_TEXT&amp;#39;)) {
     
     <item>
       <title>Dev: Adding a field to the products table</title>
-      <link>/dev/code/add_field_products/</link>
+      <link>/zendocs_test1/dev/code/add_field_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/add_field_products/</guid>
+      <guid>/zendocs_test1/dev/code/add_field_products/</guid>
       <description>
         
         
         &lt;p&gt;A plugin called &lt;a href=&#34;https://github.com/torvista/Zen_Cart-Extra_Product_Fields&#34;&gt;Extra Product Fields&lt;/a&gt;
 has been developed that demonstrates the use of observers to add a field to the products table.&lt;/p&gt;
-&lt;p&gt;As an alternative approach, you may wish to &lt;a href=&#34;/dev/code/child_table_products/&#34;&gt;create a child table&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Then you will need to &lt;a href=&#34;/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As an alternative approach, you may wish to &lt;a href=&#34;/zendocs_test1/dev/code/child_table_products/&#34;&gt;create a child table&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you will need to &lt;a href=&#34;/zendocs_test1/dev/code/displaying_custom_fields/&#34;&gt;customize your template to display the new field&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adding a Status History Record to an Order</title>
-      <link>/dev/code/updating_orders_status_history/</link>
+      <link>/zendocs_test1/dev/code/updating_orders_status_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/updating_orders_status_history/</guid>
+      <guid>/zendocs_test1/dev/code/updating_orders_status_history/</guid>
       <description>
         
         
@@ -1729,14 +1729,14 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Admin cron jobs</title>
-      <link>/dev/code/admin_cron/</link>
+      <link>/zendocs_test1/dev/code/admin_cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/admin_cron/</guid>
+      <guid>/zendocs_test1/dev/code/admin_cron/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/first_steps/hosting/#cron&#34;&gt;Cron&lt;/a&gt; is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the &lt;a href=&#34;/user/admin_pages/localization/currencies/#update-currencies&#34;&gt;exchange rate updater&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#cron&#34;&gt;Cron&lt;/a&gt; is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/currencies/#update-currencies&#34;&gt;exchange rate updater&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What if you want to create your own custom cron job?&lt;/p&gt;
 &lt;p&gt;The easiest way to do this is simply to follow the example of the exchange rate updater.  The key points to note are as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -1751,10 +1751,10 @@ has been developed that demonstrates the use of observers to add a field to the 
     
     <item>
       <title>Dev: Admin Templating Capability</title>
-      <link>/dev/admin/templating/</link>
+      <link>/zendocs_test1/dev/admin/templating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/admin/templating/</guid>
+      <guid>/zendocs_test1/dev/admin/templating/</guid>
       <description>
         
         
@@ -1796,17 +1796,17 @@ That is, there isn&amp;rsquo;t much of a &amp;ldquo;template&amp;rdquo; system, 
 (eg: &lt;code&gt;pagename_mystore.js&lt;/code&gt;) so that there are fewer file conflicts when upgrading.&lt;/p&gt;
 &lt;p&gt;Plugins not using the &lt;code&gt;zc_plugins&lt;/code&gt; structure should put their page-specific custom JavaScript into a file using a naming convention akin to: &lt;code&gt;pagename_pluginname.js&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;site-specific-overrides&#34;&gt;Site Specific Overrides&lt;/h2&gt;
-&lt;p&gt;Starting in Zen Cart 1.5.8, an &lt;a href=&#34;/user/admin/site_specific_overrides/&#34;&gt;admin site-specific override&lt;/a&gt; capability exists.&lt;/p&gt;
+&lt;p&gt;Starting in Zen Cart 1.5.8, an &lt;a href=&#34;/zendocs_test1/user/admin/site_specific_overrides/&#34;&gt;admin site-specific override&lt;/a&gt; capability exists.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Adopting an orphan plugin</title>
-      <link>/dev/plugins/adoption/</link>
+      <link>/zendocs_test1/dev/plugins/adoption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/adoption/</guid>
+      <guid>/zendocs_test1/dev/plugins/adoption/</guid>
       <description>
         
         
@@ -1819,7 +1819,7 @@ or sometimes even passed away.&lt;/p&gt;
 &lt;li&gt;Do not remove anyone else&amp;rsquo;s copyright or authorship claims.  You are welcome to add yourself, but don&amp;rsquo;t take anything away.&lt;/li&gt;
 &lt;li&gt;Do not claim original authorship if you aren&amp;rsquo;t the original author.  Make it clear that you&amp;rsquo;re building on someone else&amp;rsquo;s work.&lt;/li&gt;
 &lt;li&gt;Make an effort to reach out to the original author to be sure the work has been abandoned.  It could be that the author just doesn&amp;rsquo;t think more work is needed.&lt;/li&gt;
-&lt;li&gt;Follow the &lt;a href=&#34;/dev/plugins/php_updating/&#34;&gt;migration guides&lt;/a&gt; to bring the plugin up to the current level of PHP.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;/zendocs_test1/dev/plugins/php_updating/&#34;&gt;migration guides&lt;/a&gt; to bring the plugin up to the current level of PHP.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1827,10 +1827,10 @@ or sometimes even passed away.&lt;/p&gt;
     
     <item>
       <title>Dev: Auto Inclusion System</title>
-      <link>/dev/code/inclusion/</link>
+      <link>/zendocs_test1/dev/code/inclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/inclusion/</guid>
+      <guid>/zendocs_test1/dev/code/inclusion/</guid>
       <description>
         
         
@@ -1844,29 +1844,29 @@ or sometimes even passed away.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;extra-datafiles-extra-configures-extra-cart-actions&#34;&gt;Extra Datafiles, Extra Configures, Extra Cart Actions&lt;/h3&gt;
 &lt;p&gt;Any &lt;code&gt;*.php&lt;/code&gt; files in this folder are loaded automatically.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt; for a complete list.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt; for a complete list.&lt;/p&gt;
 &lt;h3 id=&#34;auto-loaded-observers&#34;&gt;Auto Loaded Observers&lt;/h3&gt;
-&lt;p&gt;These are described in the &lt;a href=&#34;/dev/code/notifiers/#auto-loaded-observers&#34;&gt;Notifiers and Observers&lt;/a&gt; documentation. Auto-loaded Observer files include those in &lt;code&gt;includes/classes/observers&lt;/code&gt; (and Admin) whose name begins with &lt;code&gt;auto.&lt;/code&gt; and which define a class named &lt;strong&gt;zcObserver&lt;/strong&gt; + the &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCased&lt;/a&gt; filename - for example, &lt;code&gt;class zcObserverFooObserver&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These are described in the &lt;a href=&#34;/zendocs_test1/dev/code/notifiers/#auto-loaded-observers&#34;&gt;Notifiers and Observers&lt;/a&gt; documentation. Auto-loaded Observer files include those in &lt;code&gt;includes/classes/observers&lt;/code&gt; (and Admin) whose name begins with &lt;code&gt;auto.&lt;/code&gt; and which define a class named &lt;strong&gt;zcObserver&lt;/strong&gt; + the &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCased&lt;/a&gt; filename - for example, &lt;code&gt;class zcObserverFooObserver&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;stylesheets&#34;&gt;Stylesheets&lt;/h3&gt;
-&lt;p&gt;A number of stylesheets are automatically loaded; this process is described in the &lt;a href=&#34;/user/template/stylesheet/&#34;&gt;stylesheet documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A number of stylesheets are automatically loaded; this process is described in the &lt;a href=&#34;/zendocs_test1/user/template/stylesheet/&#34;&gt;stylesheet documentation&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Building a Form</title>
-      <link>/dev/code/forms/</link>
+      <link>/zendocs_test1/dev/code/forms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/forms/</guid>
+      <guid>/zendocs_test1/dev/code/forms/</guid>
       <description>
         
         
         &lt;p&gt;Adding a custom form to your site is a common customization.  There are a few guidelines for when you do this:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Always &lt;a href=&#34;/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets&#34;&gt;submit your form data using POST&lt;/a&gt;. Never use GET for forms. (There are exceptions of course, but if you don&amp;rsquo;t already grok best practices for that, then never use GET for forms!)&lt;/li&gt;
+&lt;li&gt;Always &lt;a href=&#34;/zendocs_test1/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets&#34;&gt;submit your form data using POST&lt;/a&gt;. Never use GET for forms. (There are exceptions of course, but if you don&amp;rsquo;t already grok best practices for that, then never use GET for forms!)&lt;/li&gt;
 &lt;li&gt;Use &lt;code&gt;zen_draw_form&lt;/code&gt;, not the HTML &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag.  Note that when you use &lt;code&gt;zen_draw_form&lt;/code&gt;, you get the &lt;code&gt;securityToken&lt;/code&gt; with no extra work.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/database_querying/&#34;&gt;Sanitize your inputs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/database_querying/&#34;&gt;Sanitize your inputs&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A good model for all of this is the Ask a Question feature, which has been part of Zen Cart since 1.5.7.  See the following files:&lt;/p&gt;
 &lt;ul&gt;
@@ -1882,16 +1882,16 @@ or sometimes even passed away.&lt;/p&gt;
     
     <item>
       <title>Dev: Building a Report</title>
-      <link>/dev/code/reports/</link>
+      <link>/zendocs_test1/dev/code/reports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/reports/</guid>
+      <guid>/zendocs_test1/dev/code/reports/</guid>
       <description>
         
         
         &lt;p&gt;Adding a custom report to your site&amp;rsquo;s admin is a common customization.&lt;/p&gt;
 &lt;p&gt;The easiest way to do this is simply to follow one of the built-in examples. 
-We&amp;rsquo;ll use the &lt;a href=&#34;/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt; report.&lt;/p&gt;
+We&amp;rsquo;ll use the &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt; report.&lt;/p&gt;
 &lt;p&gt;There are two files that make up this report:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;admin/stats_products_lowstock.php&lt;/li&gt;
@@ -1932,10 +1932,10 @@ define(&amp;#39;BOX_REPORTS_ZERO_WEIGHT&amp;#39;,&amp;#39;Zero Weight Report&amp
     
     <item>
       <title>Dev: Collaboration</title>
-      <link>/dev/eu_digital_vat/conference_call_2014_12_30/</link>
+      <link>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/eu_digital_vat/conference_call_2014_12_30/</guid>
+      <guid>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</guid>
       <description>
         
         
@@ -1970,10 +1970,10 @@ Some clarification that the currency that prices are displayed would have no eff
     
     <item>
       <title>Dev: Creating a new Admin menu item</title>
-      <link>/dev/code/creating_menu/</link>
+      <link>/zendocs_test1/dev/code/creating_menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/creating_menu/</guid>
+      <guid>/zendocs_test1/dev/code/creating_menu/</guid>
       <description>
         
         
@@ -2076,19 +2076,19 @@ or if you want to display a message indicating that your tool has been installed
 &lt;p&gt;Rather than write code as shown above, some developers prefer to provide a SQL file that can be run from Admin &amp;gt; Tools &amp;gt; Install SQL Patches.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES (&amp;#39;mod_list&amp;#39;, &amp;#39;BOX_TOOLS_MOD_LIST&amp;#39;, &amp;#39;FILENAME_MOD_LIST&amp;#39;, &amp;#39;&amp;#39;, &amp;#39;tools&amp;#39;, &amp;#39;Y&amp;#39;, 999);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The advantage of this approach is that it&amp;rsquo;s a one time operation with no checking overhead in the future.&lt;/p&gt;
-&lt;p&gt;Still others simply point users to the &lt;a href=&#34;/user/admin_pages/admins/admin_page_registration/&#34;&gt;Admin Page Registration&lt;/a&gt; page. Note that this approach is not encouraged.&lt;/p&gt;
+&lt;p&gt;Still others simply point users to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_page_registration/&#34;&gt;Admin Page Registration&lt;/a&gt; page. Note that this approach is not encouraged.&lt;/p&gt;
 &lt;h2 id=&#34;using-the-encapsulated-plugin-manager&#34;&gt;Using the Encapsulated Plugin Manager&lt;/h2&gt;
-&lt;p&gt;For developers targeting 1.5.7 and above, the &lt;a href=&#34;/dev/plugins/encapsulated_plugins/&#34;&gt;encapsulated plugin&lt;/a&gt; architecture is the new standard.  For details on SQL actions in encapsulated plugins, see &lt;a href=&#34;/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For developers targeting 1.5.7 and above, the &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/&#34;&gt;encapsulated plugin&lt;/a&gt; architecture is the new standard.  For details on SQL actions in encapsulated plugins, see &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Dev: Creating or Modifying a table</title>
-      <link>/dev/code/creating_tables/</link>
+      <link>/zendocs_test1/dev/code/creating_tables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/creating_tables/</guid>
+      <guid>/zendocs_test1/dev/code/creating_tables/</guid>
       <description>
         
         
@@ -2102,7 +2102,7 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
 &lt;p&gt;Changing a table&amp;rsquo;s structure - adding or removing fields, modifying default values and so forth - is done with the SQL &lt;code&gt;ALTER TABLE&lt;/code&gt; command.  Again, you may provide a .sql file or automate this action.&lt;/p&gt;
 &lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -2110,10 +2110,10 @@ define(&amp;#39;TABLE_PRODUCTS_XSELL&amp;#39;, DB_PREFIX . &amp;#39;products_xse
     
     <item>
       <title>Dev: Developer Environment</title>
-      <link>/dev/developer_environment/</link>
+      <link>/zendocs_test1/dev/developer_environment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/developer_environment/</guid>
+      <guid>/zendocs_test1/dev/developer_environment/</guid>
       <description>
         
         
@@ -2127,9 +2127,9 @@ It&amp;rsquo;s helpful if your editor honors the &lt;code&gt;.editorconfig&lt;/c
 &lt;p&gt;Line-endings in the github repo are (or are expected to be) &lt;code&gt;LF&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Zen Cart uses &lt;a href=&#34;https://www.php-fig.org/psr/psr-2/&#34;&gt;PSR-2 formatting&lt;/a&gt; standards for &amp;ldquo;new&amp;rdquo; code.&lt;/p&gt;
 &lt;p&gt;OLDER code uses a &amp;ldquo;modified&amp;rdquo; PSR-2 which embraces &amp;ldquo;2 spaces&amp;rdquo; for indentation, and often leaves the &amp;ldquo;opening curly brace&amp;rdquo; of classes and functions on the prior line, instead of starting on a new line.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;h2 id=&#34;version-control&#34;&gt;Version Control&lt;/h2&gt;
-&lt;p&gt;Zen Cart is developed using GitHub version control. We encourage you to create a GitHub account, firstly to become aware of project activity, and secondly to encourage your input. Read the &lt;a href=&#34;/dev/contributing/github_workflow/&#34;&gt;section on Git&lt;/a&gt;
+&lt;p&gt;Zen Cart is developed using GitHub version control. We encourage you to create a GitHub account, firstly to become aware of project activity, and secondly to encourage your input. Read the &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow/&#34;&gt;section on Git&lt;/a&gt;
 to learn about the workflow that the project uses.&lt;/p&gt;
 &lt;h2 id=&#34;retaining-the-default-directory-structure&#34;&gt;Retaining the Default Directory Structure&lt;/h2&gt;
 &lt;p&gt;By default, warnings are displayed if you don&amp;rsquo;t rename the &lt;code&gt;admin&lt;/code&gt; folder and delete the &lt;code&gt;zc_install&lt;/code&gt; folder.&lt;/p&gt;
@@ -2139,7 +2139,7 @@ to learn about the workflow that the project uses.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The filename prefix &lt;code&gt;dev-&lt;/code&gt; is significant: the project &lt;code&gt;.gitignore&lt;/code&gt; file ignores files with this prefix so you can keep this new file in your GitHub fork of the zencart project without accidentally checking it in.&lt;/p&gt;
 &lt;h2 id=&#34;configuration-keys&#34;&gt;Configuration Keys&lt;/h2&gt;
 &lt;p&gt;Every option that may be modified in the Admin screens is a constant stored in the database. It is very helpful to know the name of a constant (the &lt;code&gt;configuration_key&lt;/code&gt;) when searching in code for their use or to use them in your own code.&lt;/p&gt;
-&lt;p&gt;The keys used by Zen Cart are listed in the &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configs&lt;/a&gt; page, but that will not be a comprehensive list for &lt;strong&gt;your&lt;/strong&gt; site as it does not include possible Plugins.&lt;br&gt;
+&lt;p&gt;The keys used by Zen Cart are listed in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/all/&#34;&gt;All Configs&lt;/a&gt; page, but that will not be a comprehensive list for &lt;strong&gt;your&lt;/strong&gt; site as it does not include possible Plugins.&lt;br&gt;
 However, the constant names may be displayed by enabling an admin option:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In your admin, each submenu under the Configuration menu has an url such as &lt;code&gt;admin/index.php?cmd=configuration&amp;amp;gID=1.&lt;/code&gt;&lt;br&gt;
@@ -2148,7 +2148,7 @@ Manually change the gID to &lt;code&gt;gID=6&lt;/code&gt; to display an addition
 &lt;li&gt;Set this value to 1.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now when editing an admin option, the constant name will be shown in the InfoBox title.&lt;/p&gt;
-&lt;img src=&#34;/images/show_keys.png&#34; alt=&#34;Show Configuration Keys in Zen Cart&#34; width=&#34;50%&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/show_keys.png&#34; alt=&#34;Show Configuration Keys in Zen Cart&#34; width=&#34;50%&#34; /&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;p&gt;Example use: I need to see if the configuration allows add to cart on out of stock products.  Go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/code&gt; and select &lt;em&gt;Show Sold Out Image in place of Add to Cart&lt;/em&gt;.  You&amp;rsquo;ll see the key value is &lt;code&gt;SHOW_PRODUCTS_SOLD_OUT_IMAGE&lt;/code&gt;.  So your code would be,&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == &amp;#39;0&amp;#39;) { 
@@ -2183,21 +2183,21 @@ include DIR_FS_CATALOG . DIR_WS_INCLUDES . &amp;#39;extra_configures/dev-email_o
     
     <item>
       <title>Dev: Displaying Custom Fields</title>
-      <link>/dev/code/displaying_custom_fields/</link>
+      <link>/zendocs_test1/dev/code/displaying_custom_fields/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/displaying_custom_fields/</guid>
+      <guid>/zendocs_test1/dev/code/displaying_custom_fields/</guid>
       <description>
         
         
         &lt;p&gt;Once you have finished adding a field to the database, you will need to figure out where you want to display it, and write the code to do that.   Here are some guidelines.&lt;/p&gt;
 &lt;h2 id=&#34;case-1-new-field-in-products-table&#34;&gt;Case 1: New field in products table&lt;/h2&gt;
-&lt;p&gt;a) Adding the new field to the &lt;a href=&#34;/user/products/product_info/&#34;&gt;product_info page&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;a) Adding the new field to the &lt;a href=&#34;/zendocs_test1/user/products/product_info/&#34;&gt;product_info page&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/pages/product_info/main_template_vars.php&lt;/code&gt; to retrieve the field and create a variable to store it.&lt;/li&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php&lt;/code&gt; to show the variable.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;b) Adding the new field to the &lt;a href=&#34;/user/template/product_listing_page_configuration/&#34;&gt;product listing&lt;/a&gt; page:&lt;/p&gt;
+&lt;p&gt;b) Adding the new field to the &lt;a href=&#34;/zendocs_test1/user/template/product_listing_page_configuration/&#34;&gt;product listing&lt;/a&gt; page:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/pages/index/main_template_vars.php&lt;/code&gt; to retrieve the new field.&lt;/li&gt;
 &lt;li&gt;Modify &lt;code&gt;includes/modules/YOURTEMPLATE/product_listing.php&lt;/code&gt; to display the field.&lt;/li&gt;
@@ -2220,7 +2220,7 @@ include DIR_FS_CATALOG . DIR_WS_INCLUDES . &amp;#39;extra_configures/dev-email_o
 &lt;p&gt;In the &lt;code&gt;query()&lt;/code&gt; method from &lt;code&gt;includes/classes/order.php&lt;/code&gt;, add it to whatever array makes sense (&lt;code&gt;info&lt;/code&gt;, &lt;code&gt;customer&lt;/code&gt;, or &lt;code&gt;delivery&lt;/code&gt;), then reference it in any of the files above the same way other fields in that array are referenced.&lt;/p&gt;
 &lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/add_field_products/&#34;&gt;Adding a field to the products table&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -2228,10 +2228,10 @@ include DIR_FS_CATALOG . DIR_WS_INCLUDES . &amp;#39;extra_configures/dev-email_o
     
     <item>
       <title>Dev: Extra Folders</title>
-      <link>/dev/code/extra_folders/</link>
+      <link>/zendocs_test1/dev/code/extra_folders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/extra_folders/</guid>
+      <guid>/zendocs_test1/dev/code/extra_folders/</guid>
       <description>
         
         
@@ -2269,10 +2269,10 @@ a set of utilities, not autoloads.&lt;/p&gt;
     
     <item>
       <title>Dev: Init System</title>
-      <link>/dev/code/init_system/</link>
+      <link>/zendocs_test1/dev/code/init_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/init_system/</guid>
+      <guid>/zendocs_test1/dev/code/init_system/</guid>
       <description>
         
         
@@ -2416,14 +2416,14 @@ To override that you can pass a &lt;code&gt;classPath&lt;/code&gt; of &lt;code&g
     
     <item>
       <title>Dev: Introduction</title>
-      <link>/dev/languages/introduction/</link>
+      <link>/zendocs_test1/dev/languages/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/languages/introduction/</guid>
+      <guid>/zendocs_test1/dev/languages/introduction/</guid>
       <description>
         
         
-        &lt;p&gt;Translations are done on a volunteer basis, so the quality and even installation instructions may vary. The standard installation instructions are in the &lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Storeowner Docs &amp;gt; Admin Pages &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Translations are done on a volunteer basis, so the quality and even installation instructions may vary. The standard installation instructions are in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/languages/&#34;&gt;Storeowner Docs &amp;gt; Admin Pages &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You are always welcome to help improve a translation, by either making your suggestions known to the author of the translation or by making your wanted changes yourself.&lt;/p&gt;
 
       </description>
@@ -2431,10 +2431,10 @@ To override that you can pass a &lt;code&gt;classPath&lt;/code&gt; of &lt;code&g
     
     <item>
       <title>Dev: Manifest Files</title>
-      <link>/dev/plugins/encapsulated_plugins/manifests/</link>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/plugins/encapsulated_plugins/manifests/</guid>
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</guid>
       <description>
         
         
@@ -2498,10 +2498,10 @@ This is used by the store&amp;rsquo;s Plugin Manager to check for whether new ve
     
     <item>
       <title>Dev: Notifiers - List of</title>
-      <link>/dev/code/notifiers_list/</link>
+      <link>/zendocs_test1/dev/code/notifiers_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/notifiers_list/</guid>
+      <guid>/zendocs_test1/dev/code/notifiers_list/</guid>
       <description>
         
         
@@ -2509,7 +2509,7 @@ This is used by the store&amp;rsquo;s Plugin Manager to check for whether new ve
 &lt;!-- see find_notifiers in https://github.com/scottcwilson/zencart_tools --&gt; 
 &lt;p&gt;This is a list of notifiers available in Zen Cart 1.5.7c and above.&lt;/p&gt;
 &lt;p&gt;For a list of notifiers with module name, line number and parameters, 
-please install the &lt;a href=&#34;https://github.com/lat9/notifier_report&#34;&gt;Notifier Report&lt;/a&gt; on your site, or see &lt;a href=&#34;/dev/code/notifier_report/&#34;&gt;the output of Notifier Report&lt;/a&gt; here.&lt;/p&gt;
+please install the &lt;a href=&#34;https://github.com/lat9/notifier_report&#34;&gt;Notifier Report&lt;/a&gt; on your site, or see &lt;a href=&#34;/zendocs_test1/dev/code/notifier_report/&#34;&gt;the output of Notifier Report&lt;/a&gt; here.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;NOTIFIER_ADMIN_ZEN_CUSTOMERS_DELETE_CONFIRM
 NOTIFIER_ADMIN_ZEN_DELETE_PRODUCTS_ATTRIBUTES
 NOTIFIER_ADMIN_ZEN_PRODUCTS_ATTRIBUTES_DOWNLOAD_DELETE
@@ -3050,10 +3050,10 @@ NOTIFY_ZEN_IS_LOGGED_IN
     
     <item>
       <title>Dev: PHP Idioms</title>
-      <link>/dev/code/php_idioms/</link>
+      <link>/zendocs_test1/dev/code/php_idioms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/php_idioms/</guid>
+      <guid>/zendocs_test1/dev/code/php_idioms/</guid>
       <description>
         
         
@@ -3080,10 +3080,10 @@ NOTIFY_ZEN_IS_LOGGED_IN
     
     <item>
       <title>Dev: Product Types</title>
-      <link>/dev/code/product_types/</link>
+      <link>/zendocs_test1/dev/code/product_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/code/product_types/</guid>
+      <guid>/zendocs_test1/dev/code/product_types/</guid>
       <description>
         
         
@@ -3223,10 +3223,10 @@ if (SHOW_PRODUCT_MUSIC_INFO_RECORD_COMPANY == &#39;1&#39;) {
     
     <item>
       <title>Dev: Release History</title>
-      <link>/user/about_us/release_history/</link>
+      <link>/zendocs_test1/user/about_us/release_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/about_us/release_history/</guid>
+      <guid>/zendocs_test1/user/about_us/release_history/</guid>
       <description>
         
         

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Products</title>
-    <link>/user/products/</link>
+    <link>/zendocs_test1/user/products/</link>
     <description>Recent content in Products on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/products/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/products/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Attributes - an introduction</title>
-      <link>/user/products/attributes_info/</link>
+      <link>/zendocs_test1/user/products/attributes_info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/attributes_info/</guid>
+      <guid>/zendocs_test1/user/products/attributes_info/</guid>
       <description>
         
         
@@ -43,53 +43,53 @@ attributes mechanism.&lt;/p&gt;
 This is a cropped view of the product info page for one of the same products.
 The product has a dropdown
 attribute called &lt;em&gt;Media Type&lt;/em&gt;, and three checkbox attributes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/attributes.png&#34; alt=&#34;Attributes in Zen Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/attributes.png&#34; alt=&#34;Attributes in Zen Cart&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To learn more about attributes, read:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/catalog/option_name_manager/&#34;&gt;Option Name Manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/catalog/option_value_manager/&#34;&gt;Option Value Manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/attributes/&#34;&gt;Adding attributes to products&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/attribute_pricing/&#34;&gt;Attribute Pricing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_name_manager/&#34;&gt;Option Name Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_value_manager/&#34;&gt;Option Value Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;Adding attributes to products&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/attribute_pricing/&#34;&gt;Attribute Pricing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Downloadable products are also created using attributes.  To learn 
 more about downloadable products, read:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/downloadable/&#34;&gt;Creating Downloadable products&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/downloadable_verifying/&#34;&gt;Downloadable products - verifying correctness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/downloadable/&#34;&gt;Creating Downloadable products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/downloadable_verifying/&#34;&gt;Downloadable products - verifying correctness&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Creating a test store with the demo data allows you to see how 
-various scenarios may be accomplished.  See &lt;a href=&#34;/user/first_steps/demo_data&#34;&gt;demo data&lt;/a&gt; for details.&lt;/p&gt;
+various scenarios may be accomplished.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/demo_data&#34;&gt;demo data&lt;/a&gt; for details.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: All Products</title>
-      <link>/user/products/all_products/</link>
+      <link>/zendocs_test1/user/products/all_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/all_products/</guid>
+      <guid>/zendocs_test1/user/products/all_products/</guid>
       <description>
         
         
         &lt;p&gt;The All Products page is a listing page which shows all the enabled products in your store.&lt;/p&gt;
-&lt;p&gt;The display of items on the All Products page is controlled on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_alllisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; All Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The display of items on the All Products page is controlled on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_alllisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; All Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Attribute Pricing</title>
-      <link>/user/products/attribute_pricing/</link>
+      <link>/zendocs_test1/user/products/attribute_pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/attribute_pricing/</guid>
+      <guid>/zendocs_test1/user/products/attribute_pricing/</guid>
       <description>
         
         
         &lt;h3 id=&#34;product-priced-by-attributes-vs-attributes-with-prices&#34;&gt;Product Priced by Attributes vs Attributes with Prices&lt;/h3&gt;
-&lt;p&gt;The Zen Cart &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; has a field called &lt;em&gt;Product Priced by Attributes&lt;/em&gt;.  This field controls how product prices are displayed on the product info page.  When &lt;em&gt;Product Priced by Attributes&lt;/em&gt;  is set to Yes, the product prices include the attribute price.  When it is set to no, the prices are shown as increments on top of the product price.&lt;/p&gt;
+&lt;p&gt;The Zen Cart &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; has a field called &lt;em&gt;Product Priced by Attributes&lt;/em&gt;.  This field controls how product prices are displayed on the product info page.  When &lt;em&gt;Product Priced by Attributes&lt;/em&gt;  is set to Yes, the product prices include the attribute price.  When it is set to no, the prices are shown as increments on top of the product price.&lt;/p&gt;
 &lt;p&gt;Consider a shirt which is $20 for sizes S-L, but an extra $10 for XL and an extra $20 for XXL.&lt;/p&gt;
 &lt;p&gt;With &lt;em&gt;Product Priced by Attributes&lt;/em&gt; = No, the prices would look like this:&lt;/p&gt;
 &lt;pre&gt;
@@ -106,8 +106,8 @@ XL ($30)
 XXL ($40) 
 &lt;/pre&gt;
 &lt;h2 id=&#34;settings-in-attributes-controller&#34;&gt;Settings in Attributes Controller&lt;/h2&gt;
-&lt;p&gt;Using the &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt; you can adjust attribute prices in a number of ways.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/attributes_controller_prices.png&#34; alt=&#34;Prices and Weights&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt; you can adjust attribute prices in a number of ways.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/attributes_controller_prices.png&#34; alt=&#34;Prices and Weights&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Entering a value in the &lt;em&gt;Price&lt;/em&gt; field will increase the price by the specified value.  A decrease (&amp;quot;-&amp;quot;) option is also available to lower the price.&lt;/p&gt;
@@ -119,7 +119,7 @@ XXL ($40)
 &lt;p&gt;OFFSET/ONETIME OFFSET - FIXME&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;An attribute may be subject to quantity discounting using the fields &lt;em&gt;Attributes Qty Price Discount&lt;/em&gt; and &lt;em&gt;Onetime Attributes Qty Price Discount&lt;/em&gt;.   These settings are configured using &lt;a href=&#34;/user/running/colon-separated-pairs/&#34;&gt;colon-separated pairs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An attribute may be subject to quantity discounting using the fields &lt;em&gt;Attributes Qty Price Discount&lt;/em&gt; and &lt;em&gt;Onetime Attributes Qty Price Discount&lt;/em&gt;.   These settings are configured using &lt;a href=&#34;/zendocs_test1/user/running/colon-separated-pairs/&#34;&gt;colon-separated pairs&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Pricing by Word or Letter - Both of these options are available for attributes with option type TEXT.&lt;/p&gt;
@@ -130,29 +130,29 @@ XXL ($40)
 &lt;p&gt;Suppose you want to charge $10 for size XL shirts.  To do this, you would go to Attributes Controller, edit the attribute XL, and set the Price field, under Prices and Weights, to 10.&lt;/p&gt;
 &lt;p&gt;Now suppose you want to change the pricing for XL shirts, so that you charge $10 for purchases of 1-4, but quantities of 5 or more, you only charge $3.  Remove the Price setting of 10, and enter the following in Attributes Qty Price Discount:&lt;/p&gt;
 &lt;p&gt;4:10,5:3&lt;/p&gt;
-&lt;p&gt;This is an example of &lt;a href=&#34;/user/running/colon-separated-pairs/&#34;&gt;colon separated pairs configuration&lt;/a&gt; which is common in Zen Cart.  In this case, this setting is read, &amp;ldquo;for quantities of up to 4, add $10 to the price; for quantities of 5 or more, add 3 to the price.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Don&amp;rsquo;t confuse attribute discounts with &lt;a href=&#34;/user/products/quantity_discounts/&#34;&gt;product quantity discounts&lt;/a&gt;, which are set using &lt;a href=&#34;/user/admin_pages/catalog/products_price_manager/&#34;&gt;Products Price Manager&lt;/a&gt;. Product Quantity Discounting discounts bulk purchases of a specific product, irrespective of how its attributes are set.&lt;/p&gt;
+&lt;p&gt;This is an example of &lt;a href=&#34;/zendocs_test1/user/running/colon-separated-pairs/&#34;&gt;colon separated pairs configuration&lt;/a&gt; which is common in Zen Cart.  In this case, this setting is read, &amp;ldquo;for quantities of up to 4, add $10 to the price; for quantities of 5 or more, add 3 to the price.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Don&amp;rsquo;t confuse attribute discounts with &lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;product quantity discounts&lt;/a&gt;, which are set using &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_price_manager/&#34;&gt;Products Price Manager&lt;/a&gt;. Product Quantity Discounting discounts bulk purchases of a specific product, irrespective of how its attributes are set.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Attributes - adding to products</title>
-      <link>/user/products/attributes/</link>
+      <link>/zendocs_test1/user/products/attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/attributes/</guid>
+      <guid>/zendocs_test1/user/products/attributes/</guid>
       <description>
         
         
-        &lt;p&gt;There are three aspects to adding &lt;a href=&#34;/user/products/attributes_info/&#34;&gt;attributes&lt;/a&gt; to a product:&lt;/p&gt;
+        &lt;p&gt;There are three aspects to adding &lt;a href=&#34;/zendocs_test1/user/products/attributes_info/&#34;&gt;attributes&lt;/a&gt; to a product:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Option Name: The name of the option&lt;/li&gt;
 &lt;li&gt;Option Value: The values that the option may have&lt;/li&gt;
 &lt;li&gt;Attribute: Assigning the combinations of those option names and values to the product, creating the desired variants&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;defining-option-names&#34;&gt;Defining Option Names&lt;/h2&gt;
-&lt;p&gt;This is done in &lt;a href=&#34;/user/admin_pages/catalog/option_name_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Option Name Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is done in &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_name_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Option Name Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Color&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;a) Sort Order - determines the order in which multiple Option Names are displayed.&lt;/p&gt;
@@ -177,7 +177,7 @@ XXL ($40)
 &lt;li&gt;There are choices of image layout&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;defining-option-values&#34;&gt;Defining Option Values&lt;/h2&gt;
-&lt;p&gt;This is done in &lt;a href=&#34;/user/admin_pages/catalog/option_value_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Option Value Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is done in &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_value_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Option Value Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;a) Select the Option Name&lt;br&gt;
 b) Add a value such as &amp;ldquo;Red&amp;rdquo;&lt;br&gt;
 c) Enter a Sort Order&lt;/p&gt;
@@ -257,7 +257,7 @@ Option Sort Order 90&lt;/p&gt;
 This will display all the Option Values defined for that Name.&lt;/p&gt;
 &lt;p&gt;2. Select an Option Value to add to the product.&lt;/p&gt;
 &lt;p&gt;3. Edit the parameters associated with the Value.&lt;/p&gt;
-&lt;p&gt;Price display is determined by the product option &lt;a href=&#34;/user/products/attribute_pricing/#product-priced-by-attributes-vs-attributes-with-prices/&#34;&gt;priced by attribute&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Price display is determined by the product option &lt;a href=&#34;/zendocs_test1/user/products/attribute_pricing/#product-priced-by-attributes-vs-attributes-with-prices/&#34;&gt;priced by attribute&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Price can be entered with a prefix of + or - or blank.&lt;/p&gt;
 &lt;p&gt;+ and blank will add the attribute price&lt;br&gt;
 - will subtract the attribute price&lt;/p&gt;
@@ -276,7 +276,7 @@ which are controlled by attribute settings.&lt;/p&gt;
 &lt;li&gt;Price per word and free words&lt;/li&gt;
 &lt;li&gt;Price per letter and free letters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;4. The Attribute Flags in the colored boxes define behaviours of the attribute such as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -307,73 +307,73 @@ You can always edit or delete them after adding.&lt;/p&gt;
 &lt;p&gt;When done, you may update the sort orders for the product to the Option Value default sort order by choosing that Additional Action, at the top of the page..&lt;/p&gt;
 &lt;h3 id=&#34;downloadable-products&#34;&gt;Downloadable Products&lt;/h3&gt;
 &lt;p&gt;Note: if you plan on using downloads, be sure you have configured your Attribute Settings for handling files. See &lt;strong&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;For more information, see &lt;a href=&#34;/user/products/downloadable/&#34;&gt;configuring downloadable attributes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;/zendocs_test1/user/products/downloadable/&#34;&gt;configuring downloadable attributes&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;dependent-attributes&#34;&gt;Dependent Attributes&lt;/h3&gt;
 &lt;p&gt;Dependent attributes are these whose range of values depend on the values of previously set attributes.  For example, the values for Car Model depend on the value of Car Make.&lt;/p&gt;
-&lt;p&gt;Zen Cart does not natively support this feature but plugins can provide &lt;a href=&#34;/user/miscellaneous/can_zen_cart/#can-zen-cart-configure-products-with-dependent-attributes&#34;&gt;dependent attribute&lt;/a&gt; support.&lt;/p&gt;
+&lt;p&gt;Zen Cart does not natively support this feature but plugins can provide &lt;a href=&#34;/zendocs_test1/user/miscellaneous/can_zen_cart/#can-zen-cart-configure-products-with-dependent-attributes&#34;&gt;dependent attribute&lt;/a&gt; support.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Can a product be listed in more than one category?</title>
-      <link>/user/products/product_multiple_categories/</link>
+      <link>/zendocs_test1/user/products/product_multiple_categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_multiple_categories/</guid>
+      <guid>/zendocs_test1/user/products/product_multiple_categories/</guid>
       <description>
         
         
         &lt;p&gt;Yes. If you haven&amp;rsquo;t created it yet, set up the product that you want to be listed in two or more categories. Go to the category in which you put that product, using Admin &amp;gt; Catalog &amp;gt; Categories/Products.  There you will see a row of icons towards the right, one of which is a white &amp;ldquo;c&amp;rdquo; in a blue circle. Click on that and you can copy a product to another category.&lt;/p&gt;
 &lt;p&gt;There are two types of copy: linked or duplicated. In the former case the product shows in both categories but there&amp;rsquo;s only one instance, so any changes will affect both. In the latter case a new, identical product is created, which can then be changed independently of the original.  This is a good shortcut for creating a new product which shares many things in common with an existing product.&lt;/p&gt;
-&lt;p&gt;Generally when you want to show a product in multiple categories, you will want a linked product (so you don&amp;rsquo;t have to maintain two different product entries). &lt;a href=&#34;/user/products/linked_product/&#34;&gt;Read more about linked products&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Generally when you want to show a product in multiple categories, you will want a linked product (so you don&amp;rsquo;t have to maintain two different product entries). &lt;a href=&#34;/zendocs_test1/user/products/linked_product/&#34;&gt;Read more about linked products&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Category Management in Admin</title>
-      <link>/user/products/category_management_admin/</link>
+      <link>/zendocs_test1/user/products/category_management_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/category_management_admin/</guid>
+      <guid>/zendocs_test1/user/products/category_management_admin/</guid>
       <description>
         
         
         &lt;h3 id=&#34;adding-a-category&#34;&gt;Adding a Category&lt;/h3&gt;
 &lt;p&gt;Adding a category allows you to set all the fields which describe the category.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/category_edit.png&#34; alt=&#34;category editing screen&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/category_edit.png&#34; alt=&#34;category editing screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The categories add/edit screen allows you to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;set the category name and description&lt;/li&gt;
 &lt;li&gt;set the category image&lt;/li&gt;
 &lt;li&gt;set the category sort order&lt;/li&gt;
-&lt;li&gt;restrict new product additions to the category to only specific product types if desired.  See &lt;a href=&#34;/user/products/category_product_type_restrict/&#34;&gt;Product Type Restrictions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;restrict new product additions to the category to only specific product types if desired.  See &lt;a href=&#34;/zendocs_test1/user/products/category_product_type_restrict/&#34;&gt;Product Type Restrictions&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;/user/products/&#34;&gt;category FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/products/&#34;&gt;category FAQs&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;editing-a-category&#34;&gt;Editing a Category&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;/user/products/category_management_admin/#adding-a-category&#34;&gt;Adding a category&lt;/a&gt; and editing that category are performed on the same screen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/products/category_management_admin/#adding-a-category&#34;&gt;Adding a category&lt;/a&gt; and editing that category are performed on the same screen.&lt;/p&gt;
 &lt;h3 id=&#34;deleting-a-category&#34;&gt;Deleting a Category&lt;/h3&gt;
 &lt;p&gt;Deleting a category removes it from  the catalog entirely. 
-Deleting a category is done from the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the trash can icon.&lt;/p&gt;
+Deleting a category is done from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the trash can icon.&lt;/p&gt;
 &lt;p&gt;It is best to remove or move any sub-categories or products under a category you are about to delete.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/delete_category_sidebar.png&#34; alt=&#34;Deleting a Category&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/delete_category_sidebar.png&#34; alt=&#34;Deleting a Category&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;moving-a-category&#34;&gt;Moving a Category&lt;/h3&gt;
 &lt;p&gt;Moving a category changes its place in the hierarchy.&lt;br&gt;
-Moving a category is done from the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the purple M icon.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/move_category_sidebar.png&#34; alt=&#34;Moving a Category&#34;&gt;&lt;/p&gt;
+Moving a category is done from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the purple M icon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/move_category_sidebar.png&#34; alt=&#34;Moving a Category&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;category-meta-tags&#34;&gt;Category Meta Tags&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/admin_pages/catalog/categories_meta_tags_editor/&#34;&gt;Category Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_meta_tags_editor/&#34;&gt;Category Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Category product-type restrictions</title>
-      <link>/user/products/category_product_type_restrict/</link>
+      <link>/zendocs_test1/user/products/category_product_type_restrict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/category_product_type_restrict/</guid>
+      <guid>/zendocs_test1/user/products/category_product_type_restrict/</guid>
       <description>
         
         
@@ -383,7 +383,7 @@ Moving a category is done from the &lt;a href=&#34;/user/admin_pages/catalog/cat
 &lt;p&gt;Whatever product type you use to create a product will be used to display that product to the customers in your store.  The display in the store has nothing to do with the restrictions in the admin related to a given category. It&amp;rsquo;s based on the product-type of the product, not the category.&lt;/p&gt;
 &lt;h3 id=&#34;using&#34;&gt;Using&lt;/h3&gt;
 &lt;p&gt;To set a category product-type restriction, edit the category you wish to change
-by clicking the pencil icon at the right of the category name when you have navigated to the category using &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories&lt;/a&gt;.&lt;/p&gt;
+by clicking the pencil icon at the right of the category name when you have navigated to the category using &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Then, at the bottom of the screen, select the desired product type from the 
 &lt;code&gt;Restrict to Product Type&lt;/code&gt; dropdown.  Press either &lt;code&gt;Add include SubCategories&lt;/code&gt;
 or &lt;code&gt;Add without SubCategories&lt;/code&gt;.&lt;/p&gt;
@@ -393,15 +393,15 @@ or &lt;code&gt;Add without SubCategories&lt;/code&gt;.&lt;/p&gt;
     
     <item>
       <title>User: Download delivery methods</title>
-      <link>/user/products/download_delivery_methods/</link>
+      <link>/zendocs_test1/user/products/download_delivery_methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/download_delivery_methods/</guid>
+      <guid>/zendocs_test1/user/products/download_delivery_methods/</guid>
       <description>
         
         
         &lt;p&gt;For downloadable products, there are several ways of delivering downloadable content to your customers, depending on your hosting configuration.&lt;/p&gt;
-&lt;p&gt;You can find these options in &lt;a href=&#34;/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;You can find these options in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;serving-files-from-your-own-stores-webserver&#34;&gt;Serving files from your own store&amp;rsquo;s webserver&lt;/h2&gt;
 &lt;h3 id=&#34;download-by-redirect&#34;&gt;Download by Redirect&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Download by Redirect - when set to True&lt;/strong&gt; uses the Linux/UNIX &amp;ldquo;symlink&amp;rdquo; feature to create a temporary file &amp;ldquo;stub&amp;rdquo; in the /pub folder. Then your customer is directed to that file-stub for their download. This means the customer can only ever access it via that stub, which also disappears after their download is over.&lt;/p&gt;
@@ -451,24 +451,24 @@ or &lt;code&gt;Add without SubCategories&lt;/code&gt;.&lt;/p&gt;
     
     <item>
       <title>User: Download folder - Moving</title>
-      <link>/user/products/download_moving/</link>
+      <link>/zendocs_test1/user/products/download_moving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/download_moving/</guid>
+      <guid>/zendocs_test1/user/products/download_moving/</guid>
       <description>
         
         
-        &lt;p&gt;Please see &lt;a href=&#34;/user/security/relocate_download_folder/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/security/relocate_download_folder/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Downloadable Products - can they also be shippable?</title>
-      <link>/user/products/products_shippable_and_downloadable/</link>
+      <link>/zendocs_test1/user/products/products_shippable_and_downloadable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/products_shippable_and_downloadable/</guid>
+      <guid>/zendocs_test1/user/products/products_shippable_and_downloadable/</guid>
       <description>
         
         
@@ -484,7 +484,7 @@ If there is no weight to the order, does the order have Free Shipping?
 
 **Note:** When using Free Shipping, enable the Free Shipping Module (freeshipper).  It will only show when shipping is free.
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;downloadable-products&#34;&gt;Downloadable Products&lt;/h2&gt;
-&lt;p&gt;Downloads are NOT set to Virtual Product and NOT set to Always Free Shipping.  They are already &amp;ldquo;recognized&amp;rdquo; as Free shipping by virtue of the Download filename on the Attributes. See &lt;a href=&#34;/user/products/downloadable/#important-facts-about-download-settings&#34;&gt;Important Facts about Download Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Downloads are NOT set to Virtual Product and NOT set to Always Free Shipping.  They are already &amp;ldquo;recognized&amp;rdquo; as Free shipping by virtue of the Download filename on the Attributes. See &lt;a href=&#34;/zendocs_test1/user/products/downloadable/#important-facts-about-download-settings&#34;&gt;Important Facts about Download Settings&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Check the settings are:&lt;/p&gt;
 &lt;pre&gt;
 Product is Virtual: **No, Shipping Address Required**
@@ -519,10 +519,10 @@ Always Free Shipping: **Special, Product/Download Combo Requires a Shipping Addr
     
     <item>
       <title>User: Downloadable products - how to create?</title>
-      <link>/user/products/downloadable/</link>
+      <link>/zendocs_test1/user/products/downloadable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/downloadable/</guid>
+      <guid>/zendocs_test1/user/products/downloadable/</guid>
       <description>
         
         
@@ -532,13 +532,13 @@ Always Free Shipping: **Special, Product/Download Combo Requires a Shipping Addr
 &lt;p&gt;A downloadable product is a digital item such as an ebook, a music file, an image or a software product.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Downloads are handled as product attributes.  So, first, you should familiarize yourself with &lt;a href=&#34;/user/products/attributes/&#34;&gt;setting up attributes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Downloads are handled as product attributes.  So, first, you should familiarize yourself with &lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;setting up attributes&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Download files must be loaded by &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP&lt;/a&gt; to your store&amp;rsquo;s  &lt;code&gt;/download&lt;/code&gt; directory before trying to link those files to products/attributes.   For greater security, you can &lt;a href=&#34;/user/security/relocate_download_folder/&#34;&gt;relocate the downloads folder&lt;/a&gt; outside your web space.&lt;/p&gt;
+&lt;p&gt;Download files must be loaded by &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP&lt;/a&gt; to your store&amp;rsquo;s  &lt;code&gt;/download&lt;/code&gt; directory before trying to link those files to products/attributes.   For greater security, you can &lt;a href=&#34;/zendocs_test1/user/security/relocate_download_folder/&#34;&gt;relocate the downloads folder&lt;/a&gt; outside your web space.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You may serve your downloads from a remote URL by providing that URL as the filename. You may also serve them from AWS S3 with special syntax.  See &lt;a href=&#34;/user/products/download_delivery_methods/#serving-files-via-aws&#34;&gt;download_delivery_methods/#serving-files-via-aws&lt;/a&gt; for details on syntax and on setting your AWS credentials.&lt;/p&gt;
+&lt;p&gt;You may serve your downloads from a remote URL by providing that URL as the filename. You may also serve them from AWS S3 with special syntax.  See &lt;a href=&#34;/zendocs_test1/user/products/download_delivery_methods/#serving-files-via-aws&#34;&gt;download_delivery_methods/#serving-files-via-aws&lt;/a&gt; for details on syntax and on setting your AWS credentials.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Other important facts about downloads are linked at the bottom of this article.&lt;/p&gt;
@@ -711,17 +711,17 @@ If you cannot use Redirect ON, ask your hosting site why they cannot follow the 
 &lt;p&gt;Download files should be loaded to the &lt;code&gt;/download&lt;/code&gt; directory&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;On the &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; page, you should see a green dot next to the filename of the Download itself.  Similarly, on &lt;a href=&#34;/user/admin_pages/catalog/downloads_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Downloads Manager&lt;/a&gt;, you should see a green dot next to the file.&lt;/p&gt;
+&lt;p&gt;On the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; page, you should see a green dot next to the filename of the Download itself.  Similarly, on &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/downloads_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Downloads Manager&lt;/a&gt;, you should see a green dot next to the file.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;combo-products&#34;&gt;Combo Products&lt;/h3&gt;
 &lt;p&gt;A combo product is a product with a physical and downloadable component.&lt;br&gt;
-Read more about &lt;a href=&#34;/user/products/products_shippable_and_downloadable/&#34;&gt;downloadable combo products&lt;/a&gt;.&lt;/p&gt;
+Read more about &lt;a href=&#34;/zendocs_test1/user/products/products_shippable_and_downloadable/&#34;&gt;downloadable combo products&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;See Also:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/downloads_activating/&#34;&gt;Downloads - why do they not activate after checkout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/download_delivery_methods/&#34;&gt;Download Delivery Methods&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/security/relocate_download_folder/&#34;&gt;Moving your Download Folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/downloads_activating/&#34;&gt;Downloads - why do they not activate after checkout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/download_delivery_methods/&#34;&gt;Download Delivery Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/security/relocate_download_folder/&#34;&gt;Moving your Download Folder&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -729,40 +729,40 @@ Read more about &lt;a href=&#34;/user/products/products_shippable_and_downloadab
     
     <item>
       <title>User: Downloadable products - verifying correctness</title>
-      <link>/user/products/downloadable_verifying/</link>
+      <link>/zendocs_test1/user/products/downloadable_verifying/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/downloadable_verifying/</guid>
+      <guid>/zendocs_test1/user/products/downloadable_verifying/</guid>
       <description>
         
         
-        &lt;p&gt;Once you have created downloadable products, or after you have updated them, you&amp;rsquo;ll want to check on them to be sure they will work for your customers.  There are a couple of ways to do this. It is also particularly important to do this if you &lt;a href=&#34;/user/security/relocate_download_folder/&#34;&gt;move the download folder&lt;/a&gt; for security reasons.&lt;/p&gt;
+        &lt;p&gt;Once you have created downloadable products, or after you have updated them, you&amp;rsquo;ll want to check on them to be sure they will work for your customers.  There are a couple of ways to do this. It is also particularly important to do this if you &lt;a href=&#34;/zendocs_test1/user/security/relocate_download_folder/&#34;&gt;move the download folder&lt;/a&gt; for security reasons.&lt;/p&gt;
 &lt;h3 id=&#34;downloads-manager&#34;&gt;Downloads Manager&lt;/h3&gt;
-&lt;p&gt;Going to &lt;a href=&#34;/user/admin_pages/catalog/downloads_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Downloads Manager&lt;/a&gt; shows a screen with two downloadable products.  Note that the first download (named test.zip) is missing, which is shown by the red dot next to the filename.&lt;/p&gt;
+&lt;p&gt;Going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/downloads_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Downloads Manager&lt;/a&gt; shows a screen with two downloadable products.  Note that the first download (named test.zip) is missing, which is shown by the red dot next to the filename.&lt;/p&gt;
 &lt;br&gt;
-&lt;img src=&#34;/images/downloads_manager.png&#34; alt=&#34;Downloads Manager&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/downloads_manager.png&#34; alt=&#34;Downloads Manager&#34; /&gt;
 &lt;h3 id=&#34;attributes-controller&#34;&gt;Attributes Controller&lt;/h3&gt;
-&lt;p&gt;Going to &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; and viewing a single product which has downloads allows you to see if the downloadable files are present where they should be. 
+&lt;p&gt;Going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt; and viewing a single product which has downloads allows you to see if the downloadable files are present where they should be. 
 In the image below, you can see again that the file test.zip is missing.&lt;/p&gt;
 &lt;br&gt;
-&lt;img src=&#34;/images/attributes_controller_attributes.png&#34; alt=&#34;Attributes Controller&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/attributes_controller_attributes.png&#34; alt=&#34;Attributes Controller&#34; /&gt;
 &lt;h3 id=&#34;product-edit-page&#34;&gt;Product Edit page&lt;/h3&gt;
 &lt;p&gt;Editing a product shows you the shipping settings, which are required to be as follows for a downloadable product:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Product is Virtual: No, Shipping Address Required&lt;/li&gt;
 &lt;li&gt;Always Free Shipping: No, Normal Shipping Rules&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/products/downloadable/#additional-notes-about-downloads-and-shipping-costs&#34;&gt;shipping costs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/products/downloadable/#additional-notes-about-downloads-and-shipping-costs&#34;&gt;shipping costs&lt;/a&gt; for more details.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Downloads - why do they not activate after checkout?</title>
-      <link>/user/products/downloads_activating/</link>
+      <link>/zendocs_test1/user/products/downloads_activating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/downloads_activating/</guid>
+      <guid>/zendocs_test1/user/products/downloads_activating/</guid>
       <description>
         
         
@@ -772,13 +772,13 @@ In the image below, you can see again that the file test.zip is missing.&lt;/p&g
 &lt;p&gt;Automated gateways like Authorize.net can be configured to set the order to &amp;ldquo;Processing&amp;rdquo; automatically after the gateway gets a response back that the payment is completed. That&amp;rsquo;s why the status setting is normally already at &amp;ldquo;processing&amp;rdquo; for those modules when they&amp;rsquo;re installed. Since the gateway is actually only storing the order when the payment IS received, they can activate the order immediately, meaning the checkout-success page will see the download links. But that only works if you&amp;rsquo;re using a live gateway tied to a merchant account.&lt;/p&gt;
 &lt;p&gt;It also works fine with the &amp;ldquo;freecharger&amp;rdquo; module because the order is free, and thus the download is available immediately because you aren&amp;rsquo;t needing payment before activation. But if your freecharger module&amp;rsquo;s setting is set to &amp;ldquo;Default&amp;rdquo; or &amp;ldquo;Pending&amp;rdquo; then those purchases will need verification and manual updates as well.
 But if you intend to NOT review ANY freecharger purchases, then you can set the freecharger Order Status to Processing so that downloads with it are immediately available.&lt;/p&gt;
-&lt;p&gt;You also want to check the two &lt;code&gt;Downloads Controller Order Status Value&lt;/code&gt; settings on &lt;a href=&#34;/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/a&gt;.  When the order status is between these two values, the customer may download their files (assuming the download is not expired and not too many days have passed since the order - these are also configurable settings).&lt;/p&gt;
+&lt;p&gt;You also want to check the two &lt;code&gt;Downloads Controller Order Status Value&lt;/code&gt; settings on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/a&gt;.  When the order status is between these two values, the customer may download their files (assuming the download is not expired and not too many days have passed since the order - these are also configurable settings).&lt;/p&gt;
 &lt;h2 id=&#34;notes&#34;&gt;NOTES:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The product must be configured with a valid download in order for download details to display.&lt;/li&gt;
 &lt;li&gt;The working downloadable product must be properly configured BEFORE the order is placed. Edits made to the product &lt;em&gt;after&lt;/em&gt; the order is placed will not get applied to previous orders.&lt;/li&gt;
-&lt;li&gt;See: &lt;a href=&#34;/user/products/downloadable/&#34;&gt;How to create downloadable items&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;See: &lt;a href=&#34;/user/products/downloadable_verifying/&#34;&gt;Verifying downloadable items&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See: &lt;a href=&#34;/zendocs_test1/user/products/downloadable/&#34;&gt;How to create downloadable items&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See: &lt;a href=&#34;/zendocs_test1/user/products/downloadable_verifying/&#34;&gt;Verifying downloadable items&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -786,10 +786,10 @@ But if you intend to NOT review ANY freecharger purchases, then you can set the 
     
     <item>
       <title>User: EasyPopulate</title>
-      <link>/user/products/easypopulate/</link>
+      <link>/zendocs_test1/user/products/easypopulate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/easypopulate/</guid>
+      <guid>/zendocs_test1/user/products/easypopulate/</guid>
       <description>
         
         
@@ -812,48 +812,48 @@ But if you intend to NOT review ANY freecharger purchases, then you can set the 
     
     <item>
       <title>User: Featured Products</title>
-      <link>/user/products/featured_products/</link>
+      <link>/zendocs_test1/user/products/featured_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/featured_products/</guid>
+      <guid>/zendocs_test1/user/products/featured_products/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/admin_pages/catalog/featured/&#34;&gt;Featured Products&lt;/a&gt; allow you to highlight 
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;Featured Products&lt;/a&gt; allow you to highlight 
 products for display in various places.&lt;/p&gt;
 &lt;p&gt;Once you have created some featured products, Zen Cart has a number of ways for you to show them off:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the built-in Featured Products page, which appears when you navigate to &lt;code&gt;YOURSITE.com/index.php?main_page=featured_products&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;the optional Featured Products &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;the optional Featured Products &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the optional Featured Products &lt;a href=&#34;/zendocs_test1/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the optional Featured Products &lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may also configure featured products to appear in the following places:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;below a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;below a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Adding a product to the featured products list is done on the &lt;a href=&#34;/user/admin_pages/catalog/featured/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Featured Products&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;The display of items on the Featured Products page is controlled on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_featuredlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Featured Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Adding a product to the featured products list is done on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Featured Products&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;The display of items on the Featured Products page is controlled on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_featuredlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Featured Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I add or delete categories?</title>
-      <link>/user/products/add_delete_categories/</link>
+      <link>/zendocs_test1/user/products/add_delete_categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/add_delete_categories/</guid>
+      <guid>/zendocs_test1/user/products/add_delete_categories/</guid>
       <description>
         
         
         &lt;h3 id=&#34;how-do-i-add-a-new-category&#34;&gt;How do I add a new category?&lt;/h3&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you want to add the category.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you want to add the category.&lt;/p&gt;
 &lt;p&gt;Click the new category button.&lt;/p&gt;
 &lt;p&gt;On the next page fill in the category name, description, and other information, and click &lt;em&gt;Save&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; A category can hold sub-categories or products, but not both at the same level.&lt;/p&gt;
 &lt;h3 id=&#34;how-do-i-delete-a-category&#34;&gt;How do I delete a category?&lt;/h3&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you see the category.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you see the category.&lt;/p&gt;
 &lt;p&gt;Click the red trash can icon on the right side of the page.&lt;/p&gt;
 &lt;p&gt;From the next page, choose &lt;em&gt;Delete&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Deleting a top level category will remove the subcategories and products it contains.&lt;/p&gt;
@@ -863,37 +863,37 @@ products for display in various places.&lt;/p&gt;
     
     <item>
       <title>User: How do I add or delete products?</title>
-      <link>/user/products/add_delete/</link>
+      <link>/zendocs_test1/user/products/add_delete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/add_delete/</guid>
+      <guid>/zendocs_test1/user/products/add_delete/</guid>
       <description>
         
         
         &lt;h3 id=&#34;how-do-i-add-a-new-product&#34;&gt;How do I add a new product?&lt;/h3&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you want to add the product.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you want to add the product.&lt;/p&gt;
 &lt;p&gt;There must either be other products there or nothing - a category which 
 already contains categories may not contain products.&lt;/p&gt;
 &lt;p&gt;Click the new product button.&lt;/p&gt;
 &lt;p&gt;On the next page fill in the product name, price, and other fields, and click &lt;em&gt;Preview&lt;/em&gt;.  Then on the next page, click &lt;em&gt;Insert&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;After creating the product, if you need to &lt;a href=&#34;/user/products/attributes/&#34;&gt;add attributes&lt;/a&gt; to it, 
+&lt;p&gt;After creating the product, if you need to &lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;add attributes&lt;/a&gt; to it, 
 click the light blue &lt;em&gt;A&lt;/em&gt; to the right of the product.&lt;/p&gt;
 &lt;h3 id=&#34;how-do-i-delete-a-product&#34;&gt;How do I delete a product?&lt;/h3&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you see the product.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;.  Drill down to the level where you see the product.&lt;/p&gt;
 &lt;p&gt;Click the red trash can icon on the right side of the page.&lt;/p&gt;
 &lt;p&gt;From the next page, choose &lt;em&gt;Delete&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;easypopulate&#34;&gt;EasyPopulate&lt;/h3&gt;
-&lt;p&gt;Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like &lt;a href=&#34;/user/products/easypopulate/&#34;&gt;EasyPopulate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like &lt;a href=&#34;/zendocs_test1/user/products/easypopulate/&#34;&gt;EasyPopulate&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I set up &#34;Music&#34; products for audio-previews?</title>
-      <link>/user/products/music_previews/</link>
+      <link>/zendocs_test1/user/products/music_previews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/music_previews/</guid>
+      <guid>/zendocs_test1/user/products/music_previews/</guid>
       <description>
         
         
@@ -940,8 +940,8 @@ There are a couple tutorials on this process:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/downloadable/&#34;&gt;Setting up downloads for products&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/attributes/&#34;&gt;Adding attributes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/downloadable/&#34;&gt;Setting up downloads for products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;Adding attributes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -949,29 +949,29 @@ There are a couple tutorials on this process:&lt;/p&gt;
     
     <item>
       <title>User: How do I turn off the display of the weight?</title>
-      <link>/user/products/disable_weight/</link>
+      <link>/zendocs_test1/user/products/disable_weight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/disable_weight/</guid>
+      <guid>/zendocs_test1/user/products/disable_weight/</guid>
       <description>
         
         
-        &lt;p&gt;First, let&amp;rsquo;s be clear about the difference between a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;listing page&lt;/a&gt; and the &lt;a href=&#34;/user/storefront_pages/product_info/&#34;&gt;product info&lt;/a&gt; page. When you see a number of products listed together, that&amp;rsquo;s a listing page. For example, the New Products page is a listing page.  The page showing all products in a category is also a listing page called the &lt;em&gt;product listing page&lt;/em&gt;.  When you click on one of the individual products in a list, you will be taken to the product info page.&lt;/p&gt;
-&lt;p&gt;To turn off weight on the product listing pages, login to your Admin area and then choose &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Configuration &amp;gt; Product Listing&lt;/a&gt;, then select &lt;em&gt;Display Product Weight&lt;/em&gt; and set it to 0.  The other New, Featured and All Products listing pages each have their own configuration menus.&lt;/p&gt;
+        &lt;p&gt;First, let&amp;rsquo;s be clear about the difference between a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;listing page&lt;/a&gt; and the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_info/&#34;&gt;product info&lt;/a&gt; page. When you see a number of products listed together, that&amp;rsquo;s a listing page. For example, the New Products page is a listing page.  The page showing all products in a category is also a listing page called the &lt;em&gt;product listing page&lt;/em&gt;.  When you click on one of the individual products in a list, you will be taken to the product info page.&lt;/p&gt;
+&lt;p&gt;To turn off weight on the product listing pages, login to your Admin area and then choose &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Configuration &amp;gt; Product Listing&lt;/a&gt;, then select &lt;em&gt;Display Product Weight&lt;/em&gt; and set it to 0.  The other New, Featured and All Products listing pages each have their own configuration menus.&lt;/p&gt;
 &lt;p&gt;You may have spotted the Product Info entry on the Configuration menu and already be there to do the same for product info. STOP.&lt;/p&gt;
 &lt;p&gt;The Product info page works differently from the listing pages. This is because of the flexibility that Zen Cart gives you to define different product types. You may wish, for example, to display a weight for a book, but not for a downloadable pdf. Zen Cart allows you to set them up as different product types and display different information about them.&lt;/p&gt;
 &lt;p&gt;So where do you go to turn off display of a products weight? Follow
-the instructions on &lt;a href=&#34;/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page&#34;&gt;turning off fields from the product page&lt;/a&gt;.&lt;/p&gt;
+the instructions on &lt;a href=&#34;/zendocs_test1/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page&#34;&gt;turning off fields from the product page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Is it possible to order fractional quantities?</title>
-      <link>/user/products/fractional_quantities/</link>
+      <link>/zendocs_test1/user/products/fractional_quantities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/fractional_quantities/</guid>
+      <guid>/zendocs_test1/user/products/fractional_quantities/</guid>
       <description>
         
         
@@ -990,10 +990,10 @@ the instructions on &lt;a href=&#34;/user/template/basic_customizations/#can-i-t
     
     <item>
       <title>User: Linked Product - what is it?</title>
-      <link>/user/products/linked_product/</link>
+      <link>/zendocs_test1/user/products/linked_product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/linked_product/</guid>
+      <guid>/zendocs_test1/user/products/linked_product/</guid>
       <description>
         
         
@@ -1001,8 +1001,8 @@ the instructions on &lt;a href=&#34;/user/template/basic_customizations/#can-i-t
 &lt;p&gt;This means that you only have to edit that product in one place in order to have changes take effect everywhere it is displayed.  If you put it on special in one place, it will be on special in the other place/category as well.&lt;/p&gt;
 &lt;p&gt;Linking also means that you&amp;rsquo;ll not see the same product appear more than once in a given list of products.&lt;/p&gt;
 &lt;p&gt;If you make a &amp;ldquo;copy&amp;rdquo; of a product, instead of linking it, then you will have two distinct and separate products which would require separate editing if you were to make changes later. Specials would affect one and not the other, unless you applied the Special to both individually.  In the case of a copy, you might end up seeing both versions of the product appearing in various product lists.&lt;/p&gt;
-&lt;p&gt;The copy and link operations are done on the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products screen, at the products level&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can also add a product to another category using the &lt;a href=&#34;/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;The copy and link operations are done on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products screen, at the products level&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also add a product to another category using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;The Categories/Products screen described above will show a button in the right sidebar labelled &lt;strong&gt;Multiple Categories Link Manager&lt;/strong&gt;.  This button takes you to the Products to Categories screen, with the product pre-selected.&lt;/p&gt;
 &lt;h3 id=&#34;why-would-you-use-a-linked-product&#34;&gt;Why would you use a Linked Product?&lt;/h3&gt;
 &lt;p&gt;To make it easier for your customers to discover a specific product, no matter how they navigate your site.&lt;/p&gt;
@@ -1025,9 +1025,9 @@ Screen Size
 Resolution 
    1080p 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The product itself is entered in only one place.  Since &lt;strong&gt;&lt;em&gt;Samsung&lt;/em&gt;&lt;/strong&gt; is nearest to the top of the category tree, you would enter the product &lt;strong&gt;&lt;em&gt;Samsung MX701080&lt;/em&gt;&lt;/strong&gt; as the first product in the category.  Be sure to include all information about the item, &lt;em&gt;&lt;em&gt;especially&lt;/em&gt;&lt;/em&gt; the information that identifies the other features for which you made categories.&lt;/p&gt;
-&lt;p&gt;Locate the product in the Categories and Products menu under &lt;strong&gt;&lt;em&gt;Samsung&lt;/em&gt;&lt;/strong&gt;.  Click on the blue C in the Action block of the Product Listing.  If the item only needed to be copied to one or two other categories, it can be done in the Copy To area BUT, we are going to be in several categories.  Scroll down until the &lt;strong&gt;&lt;em&gt;Multiple Categories Link Manager&lt;/em&gt;&lt;/strong&gt; button appears, and click on that.  This will open up the &lt;a href=&#34;/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Locate the product in the Categories and Products menu under &lt;strong&gt;&lt;em&gt;Samsung&lt;/em&gt;&lt;/strong&gt;.  Click on the blue C in the Action block of the Product Listing.  If the item only needed to be copied to one or two other categories, it can be done in the Copy To area BUT, we are going to be in several categories.  Scroll down until the &lt;strong&gt;&lt;em&gt;Multiple Categories Link Manager&lt;/em&gt;&lt;/strong&gt; button appears, and click on that.  This will open up the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Scroll down to the &lt;strong&gt;&lt;em&gt;Linked Categories&lt;/em&gt;&lt;/strong&gt; section of the page.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/p2c_set_linked.png&#34; alt=&#34;P2C set linked categories&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/p2c_set_linked.png&#34; alt=&#34;P2C set linked categories&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If the extra categories were entered correctly, you should see a &lt;strong&gt;&lt;em&gt;Screen Size &amp;gt; 70 Inch&lt;/em&gt;&lt;/strong&gt; option and a &lt;strong&gt;&lt;em&gt;Resolution &amp;gt; 1080p&lt;/em&gt;&lt;/strong&gt; option in the listing.  Ticking both of those will cause the Samsung MX701080 to show up in three places on your site.&lt;/p&gt;
 &lt;p&gt;So a customer would see this product hierarchy:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Samsung
@@ -1048,10 +1048,10 @@ Resolution
     
     <item>
       <title>User: Listing pages</title>
-      <link>/user/products/product_listing/</link>
+      <link>/zendocs_test1/user/products/product_listing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_listing/</guid>
+      <guid>/zendocs_test1/user/products/product_listing/</guid>
       <description>
         
         
@@ -1062,120 +1062,120 @@ Resolution
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The New Products page shows recently added products (as defined in 
-&lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_&#34;&gt;this setting&lt;/a&gt;).&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_&#34;&gt;this setting&lt;/a&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The Featured Products page shows products which have been &lt;a href=&#34;/user/admin_pages/catalog/featured/&#34;&gt;marked as featured&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Featured Products page shows products which have been &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;marked as featured&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The All Products page shows all the products in your store.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;More information on listing pages is provided in the &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;storefront listing pages&lt;/a&gt; FAQ.&lt;/p&gt;
-&lt;p&gt;The layout for listing pages is described in more detail in &lt;a href=&#34;/user/template/listing_page_layout/&#34;&gt;listing page layout&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The configuration settings for the New Products, Featured Products and All Products listing pages is explained in &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;new/featured/all products listing page configuration&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The Product Listing  page is discussed in more detail in &lt;a href=&#34;/user/storefront_pages/product_listing/&#34;&gt;Product Listing page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information on listing pages is provided in the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;storefront listing pages&lt;/a&gt; FAQ.&lt;/p&gt;
+&lt;p&gt;The layout for listing pages is described in more detail in &lt;a href=&#34;/zendocs_test1/user/template/listing_page_layout/&#34;&gt;listing page layout&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The configuration settings for the New Products, Featured Products and All Products listing pages is explained in &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;new/featured/all products listing page configuration&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Product Listing  page is discussed in more detail in &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_listing/&#34;&gt;Product Listing page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Meta Tags</title>
-      <link>/user/products/meta_tags/</link>
+      <link>/zendocs_test1/user/products/meta_tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/meta_tags/</guid>
+      <guid>/zendocs_test1/user/products/meta_tags/</guid>
       <description>
         
         
         &lt;p&gt;Meta Tags are HTML elements which are designed for web browsers and search engines - they&amp;rsquo;re  not designed to be looked at by humans.&lt;/p&gt;
-&lt;p&gt;For more discussion on this topic, read &lt;a href=&#34;/user/admin/meta_tags/&#34;&gt;How do I set up meta tags for my site?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more discussion on this topic, read &lt;a href=&#34;/zendocs_test1/user/admin/meta_tags/&#34;&gt;How do I set up meta tags for my site?&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Meta Tag information in your pages is constructed by Zen Cart using the information from the screens below, as well as the contents of the file &lt;code&gt;includes/languages/english/YOURTEMPLATE/meta_tags.php&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;how-can-i-add-meta-tags-to-my-categories&#34;&gt;How can I add Meta Tags to my categories?&lt;/h3&gt;
-&lt;p&gt;Use the &lt;a href=&#34;/user/admin_pages/catalog/categories_meta_tags_editor/&#34;&gt;Categories Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Use the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_meta_tags_editor/&#34;&gt;Categories Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;how-can-i-add-meta-tags-to-my-products&#34;&gt;How can I add Meta Tags to my products?&lt;/h3&gt;
-&lt;p&gt;Use the &lt;a href=&#34;/user/admin_pages/catalog/products_meta_tags_editor/&#34;&gt;Products Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Use the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_meta_tags_editor/&#34;&gt;Products Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;how-can-i-add-meta-tags-to-my-ez-pages&#34;&gt;How can I add Meta Tags to my EZ-Pages?&lt;/h3&gt;
 &lt;p&gt;Use the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=746&#34;&gt;EZ-Pages Meta Tag Fields&lt;/a&gt; plugin.&lt;/p&gt;
 &lt;h3 id=&#34;how-do-i-determine-what-meta-data-goes-on-the-product-info-page&#34;&gt;How do I determine what meta data goes on the product info page?&lt;/h3&gt;
-&lt;p&gt;The screen &lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/a&gt; has a series of fields that allow you to fine tune the meta tag data on the product info page.&lt;/p&gt;
+&lt;p&gt;The screen &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/a&gt; has a series of fields that allow you to fine tune the meta tag data on the product info page.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: New Products</title>
-      <link>/user/products/new_products/</link>
+      <link>/zendocs_test1/user/products/new_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/new_products/</guid>
+      <guid>/zendocs_test1/user/products/new_products/</guid>
       <description>
         
         
         &lt;p&gt;Zen Cart has a number of ways for you to show off new products:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;the built-in New Products Page, configured under &lt;a href=&#34;/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Configuration &amp;gt; New Listing&lt;/a&gt;.  This page appears when you navigate to &lt;code&gt;YOURSITE.com/index.php?main_page=products_new&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;the optional New Products &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;the optional New Products &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the built-in New Products Page, configured under &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Configuration &amp;gt; New Listing&lt;/a&gt;.  This page appears when you navigate to &lt;code&gt;YOURSITE.com/index.php?main_page=products_new&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;the optional New Products &lt;a href=&#34;/zendocs_test1/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the optional New Products &lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may also configure new products to appear in the following places:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;below a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;below a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Determination of what qualifies as &amp;ldquo;new&amp;rdquo; is also configurable, using 
-&lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; New Product Listing - Limited to &amp;hellip; &lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The display of items on the New Products page is controlled on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; New Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; New Product Listing - Limited to &amp;hellip; &lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The display of items on the New Products page is controlled on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; New Listing page&lt;/a&gt;.  Setting the Display values on this page is described in greater detail in &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Price Reductions</title>
-      <link>/user/products/price_reductions/</link>
+      <link>/zendocs_test1/user/products/price_reductions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/price_reductions/</guid>
+      <guid>/zendocs_test1/user/products/price_reductions/</guid>
       <description>
         
         
         &lt;p&gt;There are a variety of ways products can be discounted in Zen Cart:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Using &lt;a href=&#34;/user/products/special_products/&#34;&gt;Specials&lt;/a&gt; or &lt;a href=&#34;/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Using &lt;a href=&#34;/user/products/quantity_discounts/&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Using an &lt;a href=&#34;/user/order_total/order_total/&#34;&gt;Order Total Module&lt;/a&gt; such as Group Pricing or Coupons.&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;/zendocs_test1/user/products/special_products/&#34;&gt;Specials&lt;/a&gt; or &lt;a href=&#34;/zendocs_test1/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using an &lt;a href=&#34;/zendocs_test1/user/order_total/order_total/&#34;&gt;Order Total Module&lt;/a&gt; such as Group Pricing or Coupons.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Each of these results in a price reduction which is presented in a different way.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Specials and Sales display the reduced price on the listing and product info pages, with the original price shown in strikethrough:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/reductions_special.jpg&#34; alt=&#34;Sale/Special Price Reduction&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reductions_special.jpg&#34; alt=&#34;Sale/Special Price Reduction&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Quantity Discounts show a reduced price on the shopping cart page and checkout pages as more items are purchased.
 Here&amp;rsquo;s a purchase of 1 item, at $15.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/reductions_qd_1.jpg&#34; alt=&#34;Quantity Discounts - purchase 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reductions_qd_1.jpg&#34; alt=&#34;Quantity Discounts - purchase 1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a purchase of 10 of those items, at $13.80.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/reductions_qd_2.jpg&#34; alt=&#34;Quantity Discounts - purchase 10&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reductions_qd_2.jpg&#34; alt=&#34;Quantity Discounts - purchase 10&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Order Totals show a discount in the order summary on the checkout payment and checkout confirmation pages. The per-item price is &lt;em&gt;not&lt;/em&gt; reduced.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/reductions_group.jpg&#34; alt=&#34;Group Pricing - 10% off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reductions_group.jpg&#34; alt=&#34;Group Pricing - 10% off&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Pricing includes tax</title>
-      <link>/user/products/pricing_includes_tax/</link>
+      <link>/zendocs_test1/user/products/pricing_includes_tax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/pricing_includes_tax/</guid>
+      <guid>/zendocs_test1/user/products/pricing_includes_tax/</guid>
       <description>
         
         
         &lt;p&gt;Some jurisdictions require displayed prices to include tax.  So a $10 item with a 10% tax applicable in the store&amp;rsquo;s zone would be displayed with a price of $11.00.&lt;/p&gt;
 &lt;p&gt;If you need to display prices with taxes included, follow these steps:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/taxes/vat/&#34;&gt;Set up your taxes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/taxes/tax_inclusive_pricing&#34;&gt;Configure tax inclusive pricing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/taxes/vat/&#34;&gt;Set up your taxes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/taxes/tax_inclusive_pricing&#34;&gt;Configure tax inclusive pricing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1183,100 +1183,100 @@ Here&amp;rsquo;s a purchase of 1 item, at $15.&lt;/p&gt;
     
     <item>
       <title>User: Product Editing Screen</title>
-      <link>/user/products/product_edit/</link>
+      <link>/zendocs_test1/user/products/product_edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_edit/</guid>
+      <guid>/zendocs_test1/user/products/product_edit/</guid>
       <description>
         
         
-        &lt;p&gt;The product editing screen is reached by going to &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, and then navigating down to &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;the product level&lt;/a&gt; and editing a specific product.&lt;/p&gt;
+        &lt;p&gt;The product editing screen is reached by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, and then navigating down to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;the product level&lt;/a&gt; and editing a specific product.&lt;/p&gt;
 &lt;p&gt;The screen allows you to set all the product fields available to 
 that product type.  It is used for both product creation and product editing.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/product_edit.png&#34; alt=&#34;product editing screen&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_edit.png&#34; alt=&#34;product editing screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Some fields in the &lt;code&gt;Product - General&lt;/code&gt; product type that can be set 
 when adding the product are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/products_status/&#34;&gt;Products Status&lt;/a&gt; - set to Disabled to not display in the storefront; Enabled otherwise&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/upcoming_products/&#34;&gt;Date Available&lt;/a&gt; - use if the product will not be available until the future&lt;/li&gt;
-&lt;li&gt;Products Manufacturer - select a &lt;a href=&#34;/user/admin_pages/catalog/manufacturers/&#34;&gt;manufacturer&lt;/a&gt; if you organize products by manufacturer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/products_status/&#34;&gt;Products Status&lt;/a&gt; - set to Disabled to not display in the storefront; Enabled otherwise&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/upcoming_products/&#34;&gt;Date Available&lt;/a&gt; - use if the product will not be available until the future&lt;/li&gt;
+&lt;li&gt;Products Manufacturer - select a &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/manufacturers/&#34;&gt;manufacturer&lt;/a&gt; if you organize products by manufacturer&lt;/li&gt;
 &lt;li&gt;Products Name - title for the product&lt;/li&gt;
 &lt;li&gt;Product is Free - Yes if so.&lt;/li&gt;
 &lt;li&gt;Product is Call for Price - when used, the product will not be directly purchasable&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/attribute_pricing/&#34;&gt;Product Priced by Attributes&lt;/a&gt; - is the product&amp;rsquo;s price determined by its attribute settings?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/attribute_pricing/&#34;&gt;Product Priced by Attributes&lt;/a&gt; - is the product&amp;rsquo;s price determined by its attribute settings?&lt;/li&gt;
 &lt;li&gt;Tax Class - if taxes are applicable, which ones?&lt;/li&gt;
 &lt;li&gt;Products Price (Net) - base price of product before taxes&lt;/li&gt;
 &lt;li&gt;Products Price (Gross) - computed using net price plus applicable taxes if the product was shipped to the location specified Admin &amp;gt; Configuration &amp;gt; My Store &amp;gt; Zone.  (Think: if my store offered pickup, what taxes would I need to charge?)&lt;/li&gt;
 &lt;li&gt;Product is Virtual - is the product a completely digital item&lt;/li&gt;
 &lt;li&gt;Always Free Shipping - does the product ship for free?&lt;/li&gt;
-&lt;li&gt;Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as &lt;a href=&#34;/user/products/product_info&#34;&gt;product info&lt;/a&gt; page&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/product_units/&#34;&gt;Product Qty Minimum&lt;/a&gt; - lowest number of this product which may be purchased&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/product_units/&#34;&gt;Product Qty Maximum&lt;/a&gt; - highest number of this product which may be purchased&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/product_units/&#34;&gt;Product Qty Units&lt;/a&gt; - if &amp;gt; 1, this product must be purchased in bundles of this many&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/mixed_on/&#34;&gt;Product Qty Min/Unit Mix&lt;/a&gt; - can products with different attributes be combined to reach the Product Qty Minimum threshold?&lt;/li&gt;
+&lt;li&gt;Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as &lt;a href=&#34;/zendocs_test1/user/products/product_info&#34;&gt;product info&lt;/a&gt; page&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/product_units/&#34;&gt;Product Qty Minimum&lt;/a&gt; - lowest number of this product which may be purchased&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/product_units/&#34;&gt;Product Qty Maximum&lt;/a&gt; - highest number of this product which may be purchased&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/product_units/&#34;&gt;Product Qty Units&lt;/a&gt; - if &amp;gt; 1, this product must be purchased in bundles of this many&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/mixed_on/&#34;&gt;Product Qty Min/Unit Mix&lt;/a&gt; - can products with different attributes be combined to reach the Product Qty Minimum threshold?&lt;/li&gt;
 &lt;li&gt;Products Description - details about the product&lt;/li&gt;
 &lt;li&gt;Products Quantity - quantity in inventory&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/products/product_model/&#34;&gt;Products Model&lt;/a&gt; - model number or SKU&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/product_model/&#34;&gt;Products Model&lt;/a&gt; - model number or SKU&lt;/li&gt;
 &lt;li&gt;Products Image - main photo for product&lt;/li&gt;
 &lt;li&gt;Products URL - if there is another web page that provides more information, add the URL here&lt;/li&gt;
 &lt;li&gt;Products Shipping Weight - weight before adding packing materials&lt;/li&gt;
-&lt;li&gt;Sort Order - the order the product will be displayed in on a &lt;a href=&#34;/user/products/product_listing/&#34;&gt;listing page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Sort Order - the order the product will be displayed in on a &lt;a href=&#34;/zendocs_test1/user/products/product_listing/&#34;&gt;listing page&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;/user/products/&#34;&gt;product FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/products/&#34;&gt;product FAQs&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Product Management in Admin</title>
-      <link>/user/products/product_management_admin/</link>
+      <link>/zendocs_test1/user/products/product_management_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_management_admin/</guid>
+      <guid>/zendocs_test1/user/products/product_management_admin/</guid>
       <description>
         
         
         &lt;h3 id=&#34;product-types-and-product-fields&#34;&gt;Product Types and Product Fields&lt;/h3&gt;
 &lt;p&gt;The fields that are shown on the product adding/editing page in admin
-depend on the &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;product type&lt;/a&gt;.  In these examples, we&amp;rsquo;ll assume the 
+depend on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;product type&lt;/a&gt;.  In these examples, we&amp;rsquo;ll assume the 
 product type is &lt;code&gt;Product - General&lt;/code&gt;.  This is the most common (and default) product type.&lt;/p&gt;
 &lt;h3 id=&#34;adding-a-product&#34;&gt;Adding a Product&lt;/h3&gt;
 &lt;p&gt;Adding a product allows you to set all the product fields available to 
 that product type.  Adding is done on the 
-&lt;a href=&#34;/user/products/product_edit/&#34;&gt;product add/edit screen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;/user/products/&#34;&gt;product FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product add/edit screen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/products/&#34;&gt;product FAQs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;When you add a product, the product&amp;rsquo;s master category is set to the category in which you are adding the product.&lt;/p&gt;
 &lt;h3 id=&#34;editing-a-product&#34;&gt;Editing a Product&lt;/h3&gt;
-&lt;p&gt;Editing a product is also done from the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product add/edit screen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Editing a product is also done from the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product add/edit screen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This screen shows you the master category id value for a product, which tells you the category the product is in.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/master_category.png&#34; alt=&#34;Master Category for a product&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If the product is a &lt;a href=&#34;/user/products/linked_product/&#34;&gt;linked product&lt;/a&gt; it will have other category associations, which can be managed in the &lt;a href=&#34;/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/master_category.png&#34; alt=&#34;Master Category for a product&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If the product is a &lt;a href=&#34;/zendocs_test1/user/products/linked_product/&#34;&gt;linked product&lt;/a&gt; it will have other category associations, which can be managed in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; page.&lt;/p&gt;
 &lt;h3 id=&#34;deleting-a-product&#34;&gt;Deleting a Product&lt;/h3&gt;
 &lt;p&gt;Deleting a product removes it from  the catalog entirely. 
-Deleting a product is done from the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the trash can icon.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/delete_sidebar.png&#34; alt=&#34;Deleting a product&#34;&gt;&lt;/p&gt;
+Deleting a product is done from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the trash can icon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/delete_sidebar.png&#34; alt=&#34;Deleting a product&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;moving-a-product&#34;&gt;Moving a Product&lt;/h3&gt;
 &lt;p&gt;Moving a product changes its master category so it appears in another place.
-Moving a product is done from the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the purple M icon.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/move_sidebar.png&#34; alt=&#34;Moving a product&#34;&gt;&lt;/p&gt;
+Moving a product is done from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the purple M icon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/move_sidebar.png&#34; alt=&#34;Moving a product&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;copying-a-product&#34;&gt;Copying a Product&lt;/h3&gt;
-&lt;p&gt;Copying a product can be used to create a duplicate of the original product or create a &lt;a href=&#34;/user/products/linked_product/&#34;&gt;linked product&lt;/a&gt;. 
-Copying a product is done from the &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the blue C icon.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/copy_sidebar.png&#34; alt=&#34;Copying a product&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Copying a product can be used to create a duplicate of the original product or create a &lt;a href=&#34;/zendocs_test1/user/products/linked_product/&#34;&gt;linked product&lt;/a&gt;. 
+Copying a product is done from the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories_products/&#34;&gt;Categories/Products&lt;/a&gt; screen using the blue C icon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/copy_sidebar.png&#34; alt=&#34;Copying a product&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;multiple-categories-link-manager&#34;&gt;Multiple Categories Link Manager&lt;/h3&gt;
-&lt;p&gt;The Multiple Categories Link Manager button takes you to the &lt;a href=&#34;/user/admin_pages/catalog/products_to_categories/#updating-a-single-products-linked-categories&#34;&gt;Products to Categories&lt;/a&gt; page with the product already selected.&lt;/p&gt;
+&lt;p&gt;The Multiple Categories Link Manager button takes you to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_to_categories/#updating-a-single-products-linked-categories&#34;&gt;Products to Categories&lt;/a&gt; page with the product already selected.&lt;/p&gt;
 &lt;h3 id=&#34;product-meta-tags&#34;&gt;Product Meta Tags&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;/user/admin_pages/catalog/products_meta_tags_editor/&#34;&gt;Products Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_meta_tags_editor/&#34;&gt;Products Meta Tags Editor&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Product Model</title>
-      <link>/user/products/product_model/</link>
+      <link>/zendocs_test1/user/products/product_model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_model/</guid>
+      <guid>/zendocs_test1/user/products/product_model/</guid>
       <description>
         
         
@@ -1289,42 +1289,42 @@ Copying a product is done from the &lt;a href=&#34;/user/admin_pages/catalog/cat
     
     <item>
       <title>User: Product Notifications</title>
-      <link>/user/products/product_notification/</link>
+      <link>/zendocs_test1/user/products/product_notification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_notification/</guid>
+      <guid>/zendocs_test1/user/products/product_notification/</guid>
       <description>
         
         
         &lt;p&gt;&lt;strong&gt;To Enable/Disable the Product Notification System&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Customer Details&lt;/a&gt;. 
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Customer Details&lt;/a&gt;. 
 Change the setting for &amp;ldquo;Customer Product Notification Status&amp;rdquo; on or off according to the inline help text.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Signing Up for Notifications&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;While browsing products, customers sign up for product notifications via the &lt;a href=&#34;/user/sideboxes/sidebox_list/#product-notifications&#34;&gt;notifications sidebox&lt;/a&gt;, which is visible only on actual product pages OR by clicking the product checkboxes shown after a successful checkout. Checking the boxes and clicking the submit button will opt them in to the notifications for that product.&lt;/p&gt;
+&lt;p&gt;While browsing products, customers sign up for product notifications via the &lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/#product-notifications&#34;&gt;notifications sidebox&lt;/a&gt;, which is visible only on actual product pages OR by clicking the product checkboxes shown after a successful checkout. Checking the boxes and clicking the submit button will opt them in to the notifications for that product.&lt;/p&gt;
 &lt;p&gt;From this point, customers manage their own subscriptions using their My Account area.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sending Notifications&lt;/strong&gt;&lt;br&gt;
 The product-notification system is not automatic. You have to send notices to the people who have opted to be notified. It is NOT linked to any product-changes you might make in the admin area.&lt;/p&gt;
-&lt;p&gt;To send notifications to those who have signed up, go to &lt;a href=&#34;/user/admin_pages/tools/newsletter/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Newsletter and Product Notifications Manager&lt;/a&gt;.  Then click &lt;em&gt;New Newsletter&lt;/em&gt;, and choose &lt;code&gt;product_notification&lt;/code&gt; as the Module.&lt;/p&gt;
+&lt;p&gt;To send notifications to those who have signed up, go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/newsletter/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Newsletter and Product Notifications Manager&lt;/a&gt;.  Then click &lt;em&gt;New Newsletter&lt;/em&gt;, and choose &lt;code&gt;product_notification&lt;/code&gt; as the Module.&lt;/p&gt;
 &lt;p&gt;When sending, it will ask you which products your notice applies to. Select, and send.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/product_notification.png&#34; alt=&#34;Product Selection in Notifications Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_notification.png&#34; alt=&#34;Product Selection in Notifications Manager&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Product Units</title>
-      <link>/user/products/product_units/</link>
+      <link>/zendocs_test1/user/products/product_units/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_units/</guid>
+      <guid>/zendocs_test1/user/products/product_units/</guid>
       <description>
         
         
-        &lt;p&gt;The &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing screen&lt;/a&gt; shows the following fields related to sale quantities.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/product_units.png&#34; alt=&#34;product units&#34;&gt;&lt;/p&gt;
+        &lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing screen&lt;/a&gt; shows the following fields related to sale quantities.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_units.png&#34; alt=&#34;product units&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Product Quantity Box Shows just determines whether to show the quantity box on pages which allow the product to be purchased, such as &lt;a href=&#34;/user/products/product_info&#34;&gt;product info&lt;/a&gt; page, and possibly also the &lt;a href=&#34;/user/products/product_listing/&#34;&gt;listing pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Product Quantity Box Shows just determines whether to show the quantity box on pages which allow the product to be purchased, such as &lt;a href=&#34;/zendocs_test1/user/products/product_info&#34;&gt;product info&lt;/a&gt; page, and possibly also the &lt;a href=&#34;/zendocs_test1/user/products/product_listing/&#34;&gt;listing pages&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Product Qty Minimum is the lowest number of this product which may be purchased.&lt;/p&gt;
@@ -1336,7 +1336,7 @@ The product-notification system is not automatic. You have to send notices to th
 &lt;p&gt;Product Qty Units is used when the product needs to be purchased in bundles.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Product Qty Min/Unit Mix is covered in &lt;a href=&#34;/user/products/mixed_on/&#34;&gt;What does MIXED ON mean?&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Product Qty Min/Unit Mix is covered in &lt;a href=&#34;/zendocs_test1/user/products/mixed_on/&#34;&gt;What does MIXED ON mean?&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For example, if&lt;/p&gt;
@@ -1361,19 +1361,19 @@ The product-notification system is not automatic. You have to send notices to th
     
     <item>
       <title>User: Products Status</title>
-      <link>/user/products/products_status/</link>
+      <link>/zendocs_test1/user/products/products_status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/products_status/</guid>
+      <guid>/zendocs_test1/user/products/products_status/</guid>
       <description>
         
         
-        &lt;p&gt;The &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing screen&lt;/a&gt; allows you to change the product status to either Enabled or Disabled.&lt;/p&gt;
+        &lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing screen&lt;/a&gt; allows you to change the product status to either Enabled or Disabled.&lt;/p&gt;
 &lt;p&gt;An enabled product will appear on the storefront, whereas a 
 disabled product will not.&lt;/p&gt;
 &lt;p&gt;Attempting to navigate to the product page for a product which is disabled will return an HTTP status 404 (page not found).  This is an important consideration, because when it occurs, your customers will no longer be able to see products which may only be temporarily out of stock.&lt;/p&gt;
 &lt;p&gt;In addition to changing a product&amp;rsquo;s status by hand in the editing screen, 
-a product will automatically be moved to Disabled if the &lt;a href=&#34;/user/running/stock/&#34;&gt;Products status in Catalog when out of stock&lt;/a&gt; field is set to 0.  For stores where an out of stock condition will be short lived, but who don&amp;rsquo;t want to permit sales when products are not in stock, a good configuration might be&lt;/p&gt;
+a product will automatically be moved to Disabled if the &lt;a href=&#34;/zendocs_test1/user/running/stock/&#34;&gt;Products status in Catalog when out of stock&lt;/a&gt; field is set to 0.  For stores where an out of stock condition will be short lived, but who don&amp;rsquo;t want to permit sales when products are not in stock, a good configuration might be&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Admin &amp;gt; Configuration &amp;gt; Stock &amp;gt; Products status in Catalog when out of stock should be set to = 1&lt;/li&gt;
 &lt;li&gt;Admin &amp;gt; Configuration &amp;gt; Stock &amp;gt; Show Sold Out Image in place of Add to Cart = 1&lt;/li&gt;
@@ -1384,15 +1384,15 @@ a product will automatically be moved to Disabled if the &lt;a href=&#34;/user/r
     
     <item>
       <title>User: Quantity Discounts</title>
-      <link>/user/products/quantity_discounts/</link>
+      <link>/zendocs_test1/user/products/quantity_discounts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/quantity_discounts/</guid>
+      <guid>/zendocs_test1/user/products/quantity_discounts/</guid>
       <description>
         
         
         &lt;p&gt;The 
-&lt;a href=&#34;/user/admin_pages/catalog/products_price_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Products Price Manager&lt;/a&gt; page allows you to add per product quantity discounts.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_price_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Products Price Manager&lt;/a&gt; page allows you to add per product quantity discounts.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Select the product&lt;/li&gt;
 &lt;li&gt;Press the &lt;em&gt;Edit Product&lt;/em&gt; button&lt;/li&gt;
@@ -1402,16 +1402,16 @@ a product will automatically be moved to Disabled if the &lt;a href=&#34;/user/r
 &lt;/ul&gt;
 &lt;p&gt;Any rows you don&amp;rsquo;t fill in will be removed upon update.&lt;/p&gt;
 &lt;p&gt;The screen you see will look like this:&lt;/p&gt;
-&lt;img src=&#34;/images/products_price_manager.png&#34; alt=&#34;products_price_manager.png&#34; /&gt;
+&lt;img src=&#34;/zendocs_test1/images/products_price_manager.png&#34; alt=&#34;products_price_manager.png&#34; /&gt;
 &lt;p&gt;The radio button &lt;em&gt;Discount Qty Applies to Mixed Attributes&lt;/em&gt;  is referring
-to the &lt;a href=&#34;/user/products/mixed_on/&#34;&gt;MIXED ON&lt;/a&gt; setting from the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt;.&lt;/p&gt;
+to the &lt;a href=&#34;/zendocs_test1/user/products/mixed_on/&#34;&gt;MIXED ON&lt;/a&gt; setting from the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Quantity Discounts created using Products Price Manager will discount bulk purchases of a single product.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;If you need to discount bulk purchases across categories or the entire store, take a look at the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=135&#34;&gt;Quantity Discounts plugin&lt;/a&gt; in the &lt;a href=&#34;/user/plugins/plugin_library/&#34;&gt;Zen Cart Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you need to discount bulk purchases across categories or the entire store, take a look at the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=135&#34;&gt;Quantity Discounts plugin&lt;/a&gt; in the &lt;a href=&#34;/zendocs_test1/user/plugins/plugin_library/&#34;&gt;Zen Cart Plugins Library&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If you need to reduce the price of a product &lt;em&gt;with a specific attribute&lt;/em&gt; when purchased in bulk, look at &lt;a href=&#34;/user/products/attribute_pricing/#settings-in-attributes-controller&#34;&gt;&lt;strong&gt;attribute&lt;/strong&gt; quantity discounts&lt;/a&gt;, which are set in the &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/#quantity-discounts&#34;&gt;Attributes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you need to reduce the price of a product &lt;em&gt;with a specific attribute&lt;/em&gt; when purchased in bulk, look at &lt;a href=&#34;/zendocs_test1/user/products/attribute_pricing/#settings-in-attributes-controller&#34;&gt;&lt;strong&gt;attribute&lt;/strong&gt; quantity discounts&lt;/a&gt;, which are set in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/#quantity-discounts&#34;&gt;Attributes Controller&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1420,10 +1420,10 @@ to the &lt;a href=&#34;/user/products/mixed_on/&#34;&gt;MIXED ON&lt;/a&gt; setti
     
     <item>
       <title>User: Required Attributes not working</title>
-      <link>/user/products/required_attributes/</link>
+      <link>/zendocs_test1/user/products/required_attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/required_attributes/</guid>
+      <guid>/zendocs_test1/user/products/required_attributes/</guid>
       <description>
         
         
@@ -1440,7 +1440,7 @@ This forces the customer to choose something &amp;ldquo;other than&amp;rdquo; th
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Set a default value (for radio buttons)&lt;/p&gt;
-&lt;p&gt;a. Go to the &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt; and select the product in question (you will need to select the category, then the product, then press &lt;em&gt;Display&lt;/em&gt;).  The attributes will be shown below the product.&lt;/p&gt;
+&lt;p&gt;a. Go to the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt; and select the product in question (you will need to select the category, then the product, then press &lt;em&gt;Display&lt;/em&gt;).  The attributes will be shown below the product.&lt;/p&gt;
 &lt;p&gt;b. Pick the attribute you want to be the default, and press the Edit button on the right side of that attribute.&lt;/p&gt;
 &lt;p&gt;c. Set the &lt;em&gt;Default Attribute to be Marked Selected:&lt;/em&gt; radio button to &lt;em&gt;Yes&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;d. Press the &lt;em&gt;Update&lt;/em&gt; button to save this change. &lt;/p&gt;
@@ -1452,36 +1452,36 @@ This forces the customer to choose something &amp;ldquo;other than&amp;rdquo; th
     
     <item>
       <title>User: Sale Products</title>
-      <link>/user/products/sale_products/</link>
+      <link>/zendocs_test1/user/products/sale_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/sale_products/</guid>
+      <guid>/zendocs_test1/user/products/sale_products/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt; allow you to discount entire categories of products. Sales are sometimes contrasted with &lt;a href=&#34;/user/products/special_products/&#34;&gt;Specials&lt;/a&gt;, which allow you to discount a single product.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt; allow you to discount entire categories of products. Sales are sometimes contrasted with &lt;a href=&#34;/zendocs_test1/user/products/special_products/&#34;&gt;Specials&lt;/a&gt;, which allow you to discount a single product.&lt;/p&gt;
 &lt;p&gt;There are no built-in centerboxes or pages to show sales, although the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1185&#34;&gt;What&amp;rsquo;s on Sale&lt;/a&gt; plugin is available.&lt;/p&gt;
-&lt;p&gt;Creating Sales is done on the &lt;a href=&#34;/user/admin_pages/catalog/salemaker/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; SaleMaker&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;Sales have configurable &lt;a href=&#34;/user/products/start_end_dates/&#34;&gt;start and end dates&lt;/a&gt; so you don&amp;rsquo;t have to turn them on or off by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
-&lt;p&gt;Sales directly reduce the displayed price of a product.  See &lt;a href=&#34;/user/products/price_reductions/&#34;&gt;Price Reductions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Creating Sales is done on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; SaleMaker&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Sales have configurable &lt;a href=&#34;/zendocs_test1/user/products/start_end_dates/&#34;&gt;start and end dates&lt;/a&gt; so you don&amp;rsquo;t have to turn them on or off by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
+&lt;p&gt;Sales directly reduce the displayed price of a product.  See &lt;a href=&#34;/zendocs_test1/user/products/price_reductions/&#34;&gt;Price Reductions&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Single-Valued Attributes</title>
-      <link>/user/products/single_valued_attributes/</link>
+      <link>/zendocs_test1/user/products/single_valued_attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/single_valued_attributes/</guid>
+      <guid>/zendocs_test1/user/products/single_valued_attributes/</guid>
       <description>
         
         
         &lt;p&gt;Generally attributes are provided to allow a customer to make a choice between several options.  For example, in this image we see you must select a Media Type, and can optionally choose to add three possible Gift Options.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/attributes.png&#34; alt=&#34;Attribute choices&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/attributes.png&#34; alt=&#34;Attribute choices&#34;&gt;&lt;/p&gt;
 &lt;p&gt;However, in some cases, product attributes for Zen Cart have only one value.  These are called &amp;ldquo;single-valued&amp;rdquo; attributes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/single_valued_attribute.png&#34; alt=&#34;Single-valued Attribute&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/single_valued_attribute_2.png&#34; alt=&#34;Single-valued Attribute 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/single_valued_attribute.png&#34; alt=&#34;Single-valued Attribute&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/single_valued_attribute_2.png&#34; alt=&#34;Single-valued Attribute 2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Since Zen Cart 1.5.7, products like these can be added to the cart directly from a listing page without needing to go to the product info page.&lt;/p&gt;
 
       </description>
@@ -1489,46 +1489,46 @@ This forces the customer to choose something &amp;ldquo;other than&amp;rdquo; th
     
     <item>
       <title>User: Special Products</title>
-      <link>/user/products/special_products/</link>
+      <link>/zendocs_test1/user/products/special_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/special_products/</guid>
+      <guid>/zendocs_test1/user/products/special_products/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt; allow you to discount single products. Specials are sometimes contrasted with &lt;a href=&#34;/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt;, which allow you to discount one or more categories of products.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt; allow you to discount single products. Specials are sometimes contrasted with &lt;a href=&#34;/zendocs_test1/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt;, which allow you to discount one or more categories of products.&lt;/p&gt;
 &lt;p&gt;Once you have done this, Zen Cart has a number of ways for you to show off your specials:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the built-in Specials Page, which appears when you navigate to &lt;code&gt;YOURSITE.com/index.php?main_page=specials&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;the optional Specials &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;the optional Specials &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the optional Specials &lt;a href=&#34;/zendocs_test1/user/template/sideboxes/&#34;&gt;Sidebox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the optional Specials &lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may also configure specials to appear in the following places:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;below a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;on an empty shopping cart page with the setting on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;below a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Creating Specials is done on the &lt;a href=&#34;/user/admin_pages/catalog/specials/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Specials&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;Specials have configurable &lt;a href=&#34;/user/products/start_end_dates/&#34;&gt;start and end dates&lt;/a&gt; so you don&amp;rsquo;t have to turn them on or off by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
-&lt;p&gt;Specials directly reduce the displayed price of a product.  See &lt;a href=&#34;/user/products/price_reductions/&#34;&gt;Price Reductions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Creating Specials is done on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Specials&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Specials have configurable &lt;a href=&#34;/zendocs_test1/user/products/start_end_dates/&#34;&gt;start and end dates&lt;/a&gt; so you don&amp;rsquo;t have to turn them on or off by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
+&lt;p&gt;Specials directly reduce the displayed price of a product.  See &lt;a href=&#34;/zendocs_test1/user/products/price_reductions/&#34;&gt;Price Reductions&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Start and End Dates</title>
-      <link>/user/products/start_end_dates/</link>
+      <link>/zendocs_test1/user/products/start_end_dates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/start_end_dates/</guid>
+      <guid>/zendocs_test1/user/products/start_end_dates/</guid>
       <description>
         
         
         &lt;h2 id=&#34;sales-and-specials&#34;&gt;Sales and Specials&lt;/h2&gt;
-&lt;p&gt;Both &lt;a href=&#34;/user/products/special_products/&#34;&gt;Specials&lt;/a&gt; and &lt;a href=&#34;/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt; have configurable start and end dates, which means you don&amp;rsquo;t have to turn them off or on by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
+&lt;p&gt;Both &lt;a href=&#34;/zendocs_test1/user/products/special_products/&#34;&gt;Specials&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/products/sale_products/&#34;&gt;Sales&lt;/a&gt; have configurable start and end dates, which means you don&amp;rsquo;t have to turn them off or on by hand if you don&amp;rsquo;t want to.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s how they work:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;On every page load (admin or storefront), the current date is determined using the &lt;a href=&#34;/user/new_user_topics/timezone/&#34;&gt;cart&amp;rsquo;s timezone&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;On every page load (admin or storefront), the current date is determined using the &lt;a href=&#34;/zendocs_test1/user/new_user_topics/timezone/&#34;&gt;cart&amp;rsquo;s timezone&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Any &lt;em&gt;currently disabled&lt;/em&gt; Sales or Specials are &lt;strong&gt;enabled&lt;/strong&gt; if they have:
 &lt;ul&gt;
 &lt;li&gt;they have a start date which is less than or equal to the current date (or start date not set),&lt;/li&gt;
@@ -1549,39 +1549,39 @@ This forces the customer to choose something &amp;ldquo;other than&amp;rdquo; th
 &lt;/ul&gt;
 &lt;p&gt;So a sale with a start date of 01/27/2021 and an end date of 01/28/2021 would run from only on 01/27/2021.  As soon as the date changed, the sale would end.  (The actual database update ending the sale would occur on the first page load after 01/28/2021 began.)&lt;/p&gt;
 &lt;h2 id=&#34;featured-products&#34;&gt;Featured Products&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;/user/admin_pages/catalog/featured/&#34;&gt;Featured Products&lt;/a&gt; also have a start and end date, and work the same way Sales and Specials do, as described above.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;Featured Products&lt;/a&gt; also have a start and end date, and work the same way Sales and Specials do, as described above.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming-products&#34;&gt;Upcoming Products&lt;/h2&gt;
-&lt;p&gt;Since Zen Cart 1.5.7, it has been possible to automatically enable any disabled &lt;a href=&#34;/user/products/upcoming_products/&#34;&gt;Upcoming Product&lt;/a&gt; on its available date, 
-using the &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;enable disabled product by available date&lt;/a&gt; feature.&lt;/p&gt;
+&lt;p&gt;Since Zen Cart 1.5.7, it has been possible to automatically enable any disabled &lt;a href=&#34;/zendocs_test1/user/products/upcoming_products/&#34;&gt;Upcoming Product&lt;/a&gt; on its available date, 
+using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;enable disabled product by available date&lt;/a&gt; feature.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Upcoming Products</title>
-      <link>/user/products/upcoming_products/</link>
+      <link>/zendocs_test1/user/products/upcoming_products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/upcoming_products/</guid>
+      <guid>/zendocs_test1/user/products/upcoming_products/</guid>
       <description>
         
         
         &lt;p&gt;Upcoming Products are those whose &lt;em&gt;Date Available&lt;/em&gt; setting on the 
-&lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; is set to a date in the future.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt; is set to a date in the future.&lt;/p&gt;
 &lt;p&gt;If you have created upcoming products, Zen Cart allows you to show them 
-in a &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;
-on the main page called Upcoming Products.  This can be configured with the setting &lt;em&gt;Show Upcoming Products on Main Page&lt;/em&gt; in &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt; setting.&lt;/p&gt;
+in a &lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerbox&lt;/a&gt;
+on the main page called Upcoming Products.  This can be configured with the setting &lt;em&gt;Show Upcoming Products on Main Page&lt;/em&gt; in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt; setting.&lt;/p&gt;
 &lt;p&gt;You may also configure upcoming products to appear in the following places:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;in a centerbox on an empty shopping cart page with the setting &lt;em&gt;Show Upcoming Products on Main Page&lt;/em&gt; on &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;in a centerbox below a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;in a centerbox on an empty shopping cart page with the setting &lt;em&gt;Show Upcoming Products on Main Page&lt;/em&gt; on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;in a centerbox below a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; using the settings on &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Some stores will set the &lt;a href=&#34;/user/products/products_status/&#34;&gt;products status&lt;/a&gt; of an upcoming product to Disabled until the release date is reached.  In this case, a storeowner may wish to automate the transition to products status Enabled by using the &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;enable disabled product by available date&lt;/a&gt; feature, which has been available since Zen Cart 1.5.7.&lt;/p&gt;
+&lt;p&gt;Some stores will set the &lt;a href=&#34;/zendocs_test1/user/products/products_status/&#34;&gt;products status&lt;/a&gt; of an upcoming product to Disabled until the release date is reached.  In this case, a storeowner may wish to automate the transition to products status Enabled by using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;enable disabled product by available date&lt;/a&gt; feature, which has been available since Zen Cart 1.5.7.&lt;/p&gt;
 &lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/catalog/products_expected/&#34;&gt;Products Expected Admin Screen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin/centerboxes/&#34;&gt;how to enable/disable the Upcoming Products section&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;Enable disabled product by available date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_expected/&#34;&gt;Products Expected Admin Screen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin/centerboxes/&#34;&gt;how to enable/disable the Upcoming Products section&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date&#34;&gt;Enable disabled product by available date&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1589,10 +1589,10 @@ on the main page called Upcoming Products.  This can be configured with the sett
     
     <item>
       <title>User: Variable Price Product or Donation</title>
-      <link>/user/products/variable_price_donation/</link>
+      <link>/zendocs_test1/user/products/variable_price_donation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/variable_price_donation/</guid>
+      <guid>/zendocs_test1/user/products/variable_price_donation/</guid>
       <description>
         
         
@@ -1624,16 +1624,16 @@ Save the product. It is now available in your store.&lt;/p&gt;
     
     <item>
       <title>User: What are the numbers beside the category links?</title>
-      <link>/user/products/disable_category_count/</link>
+      <link>/zendocs_test1/user/products/disable_category_count/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/disable_category_count/</guid>
+      <guid>/zendocs_test1/user/products/disable_category_count/</guid>
       <description>
         
         
-        &lt;p&gt;The numbers next to the category names on the &lt;a href=&#34;/user/sideboxes/categories_sidebox/&#34;&gt;categories sidebox&lt;/a&gt; are the category/inventory counts.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/sidebox_categories.png&#34; alt=&#34;Categories Sidebox&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If you want to change whether these are shown or not, go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;. 
+        &lt;p&gt;The numbers next to the category names on the &lt;a href=&#34;/zendocs_test1/user/sideboxes/categories_sidebox/&#34;&gt;categories sidebox&lt;/a&gt; are the category/inventory counts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/sidebox_categories.png&#34; alt=&#34;Categories Sidebox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you want to change whether these are shown or not, go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;. 
 Locate the &lt;em&gt;Show Category Counts&lt;/em&gt; option, and turn them on or off.&lt;/p&gt;
 
       </description>
@@ -1641,19 +1641,19 @@ Locate the &lt;em&gt;Show Category Counts&lt;/em&gt; option, and turn them on or
     
     <item>
       <title>User: What does MIXED ON mean?</title>
-      <link>/user/products/mixed_on/</link>
+      <link>/zendocs_test1/user/products/mixed_on/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/mixed_on/</guid>
+      <guid>/zendocs_test1/user/products/mixed_on/</guid>
       <description>
         
         
-        &lt;p&gt;On the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt;, 
-there are a number of &lt;a href=&#34;/user/products/product_units/&#34;&gt;settings related to sale quantities&lt;/a&gt;.  One of them is called Product Qty Min/Unit Mix .&lt;/p&gt;
+        &lt;p&gt;On the &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;product editing page&lt;/a&gt;, 
+there are a number of &lt;a href=&#34;/zendocs_test1/user/products/product_units/&#34;&gt;settings related to sale quantities&lt;/a&gt;.  One of them is called Product Qty Min/Unit Mix .&lt;/p&gt;
 &lt;p&gt;When the setting &lt;code&gt;Product Qty Minimum&lt;/code&gt; is greater than 1, the 
 setting &lt;code&gt;Product Qty Min/Unit Mix&lt;/code&gt; is used in determining 
 whether the minimum has been met, both for purchasing and for 
-&lt;a href=&#34;/user/products/quantity_discounts/&#34;&gt;quantity discounts&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;quantity discounts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you have the Minimum set to 36 with &lt;code&gt;Product Qty Min/Unit Mix&lt;/code&gt; = &lt;code&gt;Yes&lt;/code&gt;, the &amp;ldquo;MIXED: ON&amp;rdquo; status message shows.&lt;/p&gt;
 &lt;p&gt;Mixed ON means that they can &amp;ldquo;mix&amp;rdquo; or match Attributes to build the 36 Minimum setting.  For example, 12 Red 14 Yellow 10 Green meets the minimum restriction of 36.&lt;/p&gt;
 &lt;p&gt;Mixed OFF means that they cannot &amp;ldquo;mix&amp;rdquo; the Attributes to build the 36 Minimum setting. For example, you must have 36 Red and/or 36 Yellow and/or 36 Green
@@ -1664,22 +1664,22 @@ to meet the minimum restriction of 36&lt;/p&gt;
     
     <item>
       <title>User: What is the Product Info page?</title>
-      <link>/user/products/product_info/</link>
+      <link>/zendocs_test1/user/products/product_info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/products/product_info/</guid>
+      <guid>/zendocs_test1/user/products/product_info/</guid>
       <description>
         
         
-        &lt;p&gt;Zen Cart uses the term &amp;ldquo;product info page&amp;rdquo; to refer to a page that shows a single product, versus the &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;listing page&lt;/a&gt; page, which shows a number of products.&lt;/p&gt;
-&lt;p&gt;Products without &lt;a href=&#34;/user/products/attributes_info/&#34;&gt;attributes&lt;/a&gt; may be purchased off other pages (with appropriate settings), but only the product info page allows you to set attribute values 
+        &lt;p&gt;Zen Cart uses the term &amp;ldquo;product info page&amp;rdquo; to refer to a page that shows a single product, versus the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;listing page&lt;/a&gt; page, which shows a number of products.&lt;/p&gt;
+&lt;p&gt;Products without &lt;a href=&#34;/zendocs_test1/user/products/attributes_info/&#34;&gt;attributes&lt;/a&gt; may be purchased off other pages (with appropriate settings), but only the product info page allows you to set attribute values 
 for products with attributes.&lt;/p&gt;
 &lt;p&gt;The product info page also allows you to show the products description and other fields that give more information about the product to your customers.&lt;/p&gt;
 &lt;p&gt;The information which appears on the product info page is governed by the
-product type and the &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;product type layout settings&lt;/a&gt; for that product type.&lt;/p&gt;
+product type and the &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;product type layout settings&lt;/a&gt; for that product type.&lt;/p&gt;
 &lt;p&gt;Almost everyone uses the product type &lt;code&gt;Product - General&lt;/code&gt; only, but other
-product types are available, and you may develop new ones to meet your needs.  See &lt;a href=&#34;/dev/code/product_types/&#34;&gt;Product Types&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;p&gt;For more information, please see &lt;a href=&#34;/user/storefront_pages/product_info/&#34;&gt;product info page&lt;/a&gt;.&lt;/p&gt;
+product types are available, and you may develop new ones to meet your needs.  See &lt;a href=&#34;/zendocs_test1/dev/code/product_types/&#34;&gt;Product Types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;For more information, please see &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_info/&#34;&gt;product info page&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

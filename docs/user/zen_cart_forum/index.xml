@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zen Cart Documentation – Zen Cart Forum</title>
-    <link>/user/zen_cart_forum/</link>
+    <link>/zendocs_test1/user/zen_cart_forum/</link>
     <description>Recent content in Zen Cart Forum on Zen Cart Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/user/zen_cart_forum/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zendocs_test1/user/zen_cart_forum/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>User: Before you Post - how to ask a good question</title>
-      <link>/user/zen_cart_forum/before_you_post/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/before_you_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/before_you_post/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/before_you_post/</guid>
       <description>
         
         
@@ -26,7 +26,7 @@
 &lt;h3 id=&#34;do-your-homework&#34;&gt;Do your homework:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Check the the &lt;a href=&#34;/user/&#34;&gt;Zen Cart documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Check the the &lt;a href=&#34;/zendocs_test1/user/&#34;&gt;Zen Cart documentation&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/search.php&#34;&gt;Search the forum&lt;/a&gt;&lt;/p&gt;
@@ -98,10 +98,10 @@
     
     <item>
       <title>User: Blocking posts from specific users</title>
-      <link>/user/zen_cart_forum/ignore/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/ignore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/ignore/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/ignore/</guid>
       <description>
         
         
@@ -109,21 +109,21 @@
 &lt;ul&gt;
 &lt;li&gt;Click their name in a forum post they have made and select View Profile&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ignore1.png&#34; alt=&#34;Step 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ignore1.png&#34; alt=&#34;Step 1&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;On the left, click Add to Ignore List.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ignore2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/ignore2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Code of Conduct</title>
-      <link>/user/zen_cart_forum/code_of_conduct/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/code_of_conduct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/code_of_conduct/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/code_of_conduct/</guid>
       <description>
         
         
@@ -156,7 +156,7 @@
 &lt;p&gt;Send, post or distribute unauthorized copyrighted material.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Communicating on message boards, via email or using &lt;a href=&#34;/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; (or PM), is different from face-to-face communication. Only the words are seen, not your facial expressions or tone of voice. Please pay careful attention to how you use your words.&lt;/p&gt;
+&lt;p&gt;Communicating on message boards, via email or using &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; (or PM), is different from face-to-face communication. Only the words are seen, not your facial expressions or tone of voice. Please pay careful attention to how you use your words.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remember that the words you enter in a burst of passion or indignant anger will be there for you and everyone else to see (even in search engines), sometimes long after those intense feelings have passed. That&amp;rsquo;s not meant to discourage spontaneity, but just a friendly reminder of the long-term existence and effects of what you post.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;You may, from time to time, find yourself in disagreement with someone else&amp;rsquo;s opinion. At times like these, please keep in mind it&amp;rsquo;s safer and more polite to take issue with the comments rather than the person.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Statements, postings, Private Messages or other communications from the Zen Cart website, that violate the above terms will be deleted from the forums upon discovery. While we may attempt to notify you if we move or delete a post, we are under no obligation to do so. Depending on the nature of the violation, the Zen Cart Moderators, at their sole discretion may terminate a customer&amp;rsquo;s account.&lt;/strong&gt;&lt;/p&gt;
@@ -166,10 +166,10 @@
     
     <item>
       <title>User: Commercial Help Wanted</title>
-      <link>/user/zen_cart_forum/chw/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/chw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/chw/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/chw/</guid>
       <description>
         
         
@@ -177,7 +177,7 @@
 within the Zen Cart forum.  It&amp;rsquo;s free to post jobs, but to see the posts,
 developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
 &lt;h3 id=&#34;how-it-works&#34;&gt;HOW IT WORKS:&lt;/h3&gt;
-&lt;p&gt;People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you&amp;rsquo;ve given them enough information and they think that their skills are enough to provide what you&amp;rsquo;re asking for, they will send you a &lt;a href=&#34;/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; - also called a PM - with an offer to help.&lt;/p&gt;
+&lt;p&gt;People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you&amp;rsquo;ve given them enough information and they think that their skills are enough to provide what you&amp;rsquo;re asking for, they will send you a &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; - also called a PM - with an offer to help.&lt;/p&gt;
 &lt;h3 id=&#34;if-you-get-no-response&#34;&gt;IF YOU GET NO RESPONSE:&lt;/h3&gt;
 &lt;p&gt;It could be for many reasons, including possibly: not enough information to understand what you&amp;rsquo;re needing, they don&amp;rsquo;t think they know how to do it, they don&amp;rsquo;t feel you would be willing to pay them appropriately, or maybe they just haven&amp;rsquo;t logged in yet and haven&amp;rsquo;t seen what you&amp;rsquo;ve posted.&lt;/p&gt;
 &lt;h3 id=&#34;tips-to-get-responses&#34;&gt;TIPS TO GET RESPONSES:&lt;/h3&gt;
@@ -198,10 +198,10 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
     
     <item>
       <title>User: Finding a Plugin</title>
-      <link>/user/zen_cart_forum/finding_a_plugin/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/finding_a_plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/finding_a_plugin/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/finding_a_plugin/</guid>
       <description>
         
         
@@ -230,10 +230,10 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
     
     <item>
       <title>User: Forum Do&#39;s and Don&#39;ts</title>
-      <link>/user/zen_cart_forum/dos_and_donts/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/dos_and_donts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/dos_and_donts/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/dos_and_donts/</guid>
       <description>
         
         
@@ -244,20 +244,20 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
 &lt;li&gt;If you&amp;rsquo;re asking for help, the people trying to help you are volunteers, &lt;em&gt;not your staff&lt;/em&gt;.  Is your tone appropriate?&lt;/li&gt;
 &lt;li&gt;Don&amp;rsquo;t take your frustrations out on people in the forum.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you behave rudely, the people best positioned to help you may &lt;a href=&#34;/user/zen_cart_forum/ignore/&#34;&gt;block you&lt;/a&gt;, preventing you from getting the help you need.&lt;/p&gt;
+&lt;p&gt;If you behave rudely, the people best positioned to help you may &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/ignore/&#34;&gt;block you&lt;/a&gt;, preventing you from getting the help you need.&lt;/p&gt;
 &lt;h3 id=&#34;do&#34;&gt;Do:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Search for posts relevant to your problem.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Read the &lt;a href=&#34;/user/&#34;&gt;Zen Cart documentation&lt;/a&gt; to see if the answer is there.&lt;/p&gt;
+&lt;p&gt;Read the &lt;a href=&#34;/zendocs_test1/user/&#34;&gt;Zen Cart documentation&lt;/a&gt; to see if the answer is there.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Make the headline for your post relevant to your problem.  Be as precise as possible - &amp;ldquo;Help!&amp;rdquo; if not a good headline.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Tell us about your host and versions of Zen Cart and PHP so that we can diagnose more easily.  &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;How to find your Zen Cart, PHP and MySQL version&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tell us about your host and versions of Zen Cart and PHP so that we can diagnose more easily.  &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;How to find your Zen Cart, PHP and MySQL version&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Help others where you can. The best way to learn a subject is to teach someone else.&lt;/p&gt;
@@ -281,7 +281,7 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
 &lt;p&gt;Cross Post. Cross Posting is posting the same message in multiple threads or posting links to threads on other boards. It&amp;rsquo;s seen as spam.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Use banners or other images in your signature line. You will be asked to remove them.  See &lt;a href=&#34;/user/zen_cart_forum/signature/&#34;&gt;signature guidelines&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Use banners or other images in your signature line. You will be asked to remove them.  See &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/signature/&#34;&gt;signature guidelines&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Hold independent contests or raffles.&lt;/p&gt;
@@ -290,17 +290,17 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
 &lt;p&gt;Use barcodes as avatars.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Please realize that your issue may be so specific to your environment and customizations that forum users won&amp;rsquo;t be able to figure it out.  In that case, you will need to post to the &lt;a href=&#34;/user/zen_cart_forum/chw/&#34;&gt;Commercial Help Wanted&lt;/a&gt; forum to find a developer to help you.&lt;/p&gt;
+&lt;p&gt;Please realize that your issue may be so specific to your environment and customizations that forum users won&amp;rsquo;t be able to figure it out.  In that case, you will need to post to the &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/chw/&#34;&gt;Commercial Help Wanted&lt;/a&gt; forum to find a developer to help you.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: How do I find the posts I (or another member) have made?</title>
-      <link>/user/zen_cart_forum/my_posts/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/my_posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/my_posts/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/my_posts/</guid>
       <description>
         
         
@@ -349,31 +349,31 @@ developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
     
     <item>
       <title>User: Private Messages (PM)</title>
-      <link>/user/zen_cart_forum/pm/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/pm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/pm/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/pm/</guid>
       <description>
         
         
         &lt;h2 id=&#34;what-is-a-pm&#34;&gt;What is a PM?&lt;/h2&gt;
 &lt;p&gt;The Zen Cart forum software offers the capability for users to message each other. This feature is called  private messaging or PM.&lt;/p&gt;
 &lt;h2 id=&#34;what-are-the-rules-of-pm&#34;&gt;What are the rules of PM?&lt;/h2&gt;
-&lt;p&gt;Private messages are subject to the &lt;a href=&#34;/user/zen_cart_forum/code_of_conduct/&#34;&gt;Zen Cart Code of Conduct&lt;/a&gt;.  The &lt;a href=&#34;/user/zen_cart_forum/dos_and_donts/&#34;&gt;do&amp;rsquo;s and don&amp;rsquo;ts list&lt;/a&gt; also provides some guidance.&lt;/p&gt;
+&lt;p&gt;Private messages are subject to the &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/code_of_conduct/&#34;&gt;Zen Cart Code of Conduct&lt;/a&gt;.  The &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/dos_and_donts/&#34;&gt;do&amp;rsquo;s and don&amp;rsquo;ts list&lt;/a&gt; also provides some guidance.&lt;/p&gt;
 &lt;h2 id=&#34;how-do-i-send-a-pm&#34;&gt;How do I send a PM?&lt;/h2&gt;
 &lt;p&gt;In the forum, if you right click on someone&amp;rsquo;s avatar, you get a popup menu.
 One of the entries is &amp;ldquo;Private Message&amp;rdquo;.  Click on that.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/forum_avatar.png&#34; alt=&#34;Forum Avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/forum_avatar.png&#34; alt=&#34;Forum Avatar&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>User: Signature Guidelines</title>
-      <link>/user/zen_cart_forum/signature/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/signature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/signature/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/signature/</guid>
       <description>
         
         
@@ -446,10 +446,10 @@ Buy my shoes! Cheap knocks offs at myShoesCheap.com
     
     <item>
       <title>User: Why can&#39;t I post?</title>
-      <link>/user/zen_cart_forum/forum_issues/</link>
+      <link>/zendocs_test1/user/zen_cart_forum/forum_issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/zen_cart_forum/forum_issues/</guid>
+      <guid>/zendocs_test1/user/zen_cart_forum/forum_issues/</guid>
       <description>
         
         
