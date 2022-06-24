@@ -1,0 +1,493 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Zen Cart Forum</title>
+    <link>/user/zen_cart_forum/</link>
+    <description>Recent content in Zen Cart Forum on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/zen_cart_forum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Before you Post - how to ask a good question</title>
+      <link>/user/zen_cart_forum/before_you_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/before_you_post/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;before-you-post-a-question-on-the-forum&#34;&gt;Before you post a question on the forum&lt;/h2&gt;
+&lt;h3 id=&#34;do-your-homework&#34;&gt;Do your homework:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Check the the &lt;a href=&#34;/user/&#34;&gt;Zen Cart documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/search.php&#34;&gt;Search the forum&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Read the Implementation Guide for a possible answer to your problem.  A link to the most current PDF Implementation Guide can be found at the top of &lt;a href=&#34;https://www.zen-cart.com/docs/&#34;&gt;the release docs page&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;done-all-of-the-above-and-still-having-a-problem&#34;&gt;Done all of the above and still having a problem?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Post your problem in the appropriate forum category.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;You should include answers to all of these questions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What version of Zen Cart?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is it a new install or an upgrade?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What plugins you have installed?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What customizations have you made?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What type of server are you using?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Are you installing locally?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What operating system?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What version of PHP is installed on the server?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What version of MySQL is installed on the server?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What you were doing when your problem occurred?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are the steps to reproduce the problem?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have you attempted to fix the problem?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What steps have you taken?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any other details that might be important, i.e. the port number&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your problem is visual in nature, try switching your template back to &amp;ldquo;Classic&amp;rdquo; temporarily and see if the problem persists. Include the results of this observation in your post.&lt;/p&gt;
+&lt;p&gt;Only post once (not multiple times on the same issue) and then be patient. We are all volunteers, we all live in different time zones, we all have lives, and the expert you need at that moment may just not be available.&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t received an answer in a reasonable amount of time &lt;strong&gt;you may reply to your own post WITH MORE information&lt;/strong&gt;. DO NOT post &amp;ldquo;Well?&amp;rdquo; or &amp;ldquo;Can someone please help&amp;rdquo;. That is considered bumping and you will probably get yelled at.&lt;/p&gt;
+&lt;p&gt;Duplicate posts are subject to being locked or deleted, as they simply bring confusion to those helping or others reading/searching for information later, and are seen as spam-like.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Blocking posts from specific users</title>
+      <link>/user/zen_cart_forum/ignore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/ignore/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-do-i-mark-a-user-so-i-dont-see-posts-from-them-anymore&#34;&gt;How do I mark a user so I don&amp;rsquo;t see posts from them anymore?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click their name in a forum post they have made and select View Profile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ignore1.png&#34; alt=&#34;Step 1&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the left, click Add to Ignore List.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ignore2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Code of Conduct</title>
+      <link>/user/zen_cart_forum/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/code_of_conduct/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;zen-cart-forum-code-of-conduct&#34;&gt;Zen Cart Forum Code of Conduct&lt;/h2&gt;
+&lt;p&gt;When you log on to the Zen Cart forum or visit as a guest, you have agreed to follow this Code of Conduct. It applies to all forum posts, private messages, emails and any other communication originating from this web site.&lt;/p&gt;
+&lt;h3 id=&#34;you-agree-that-you-will-not&#34;&gt;You agree that you will not:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute any form of active &lt;strong&gt;commercial solicitation&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute any communication that is intended to harass, belittle, humiliate, threaten or cause embarrassment to a fellow member.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute material that contains vulgar, obscene or indecent language or images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute any communication that contains spam (multiple copies in one area or the same communication in multiple areas).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute material that defames, abuses or threatens others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or make statements that are bigoted, hateful or racially offensive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute material that advocates illegal activity or discusses illegal activities with the intent to commit them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send, post or distribute unauthorized copyrighted material.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Communicating on message boards, via email or using &lt;a href=&#34;/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; (or PM), is different from face-to-face communication. Only the words are seen, not your facial expressions or tone of voice. Please pay careful attention to how you use your words.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remember that the words you enter in a burst of passion or indignant anger will be there for you and everyone else to see (even in search engines), sometimes long after those intense feelings have passed. That&amp;rsquo;s not meant to discourage spontaneity, but just a friendly reminder of the long-term existence and effects of what you post.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You may, from time to time, find yourself in disagreement with someone else&amp;rsquo;s opinion. At times like these, please keep in mind it&amp;rsquo;s safer and more polite to take issue with the comments rather than the person.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Statements, postings, Private Messages or other communications from the Zen Cart website, that violate the above terms will be deleted from the forums upon discovery. While we may attempt to notify you if we move or delete a post, we are under no obligation to do so. Depending on the nature of the violation, the Zen Cart Moderators, at their sole discretion may terminate a customer&amp;rsquo;s account.&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Commercial Help Wanted</title>
+      <link>/user/zen_cart_forum/chw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/chw/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted&#34;&gt;Commercial Help Wanted&lt;/a&gt; forum allows users who want to hire a web pro do so 
+within the Zen Cart forum.  It&amp;rsquo;s free to post jobs, but to see the posts,
+developers have to pay a subscription fee, so it helps the project.&lt;/p&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;HOW IT WORKS:&lt;/h3&gt;
+&lt;p&gt;People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you&amp;rsquo;ve given them enough information and they think that their skills are enough to provide what you&amp;rsquo;re asking for, they will send you a &lt;a href=&#34;/user/zen_cart_forum/pm/&#34;&gt;private message&lt;/a&gt; - also called a PM - with an offer to help.&lt;/p&gt;
+&lt;h3 id=&#34;if-you-get-no-response&#34;&gt;IF YOU GET NO RESPONSE:&lt;/h3&gt;
+&lt;p&gt;It could be for many reasons, including possibly: not enough information to understand what you&amp;rsquo;re needing, they don&amp;rsquo;t think they know how to do it, they don&amp;rsquo;t feel you would be willing to pay them appropriately, or maybe they just haven&amp;rsquo;t logged in yet and haven&amp;rsquo;t seen what you&amp;rsquo;ve posted.&lt;/p&gt;
+&lt;h3 id=&#34;tips-to-get-responses&#34;&gt;TIPS TO GET RESPONSES:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;give lots of relevant details, including version numbers of Zen Cart and PHP and MySQL and the plugins or templates you have installed, especially those related to whatever work you want done; don&amp;rsquo;t make them ask for all the necessary information;&lt;/li&gt;
+&lt;li&gt;indicate your budget, so they know whether your offer is attractive or worth their time;&lt;/li&gt;
+&lt;li&gt;indicate your timeline so they can determine whether they are available to do the work in the timeframe you require it;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;im-a-developer---how-do-i-join&#34;&gt;I&amp;rsquo;M A DEVELOPER - HOW DO I JOIN?&lt;/h3&gt;
+&lt;p&gt;Use the &lt;a href=&#34;https://www.zen-cart.com/payments.php&#34;&gt;CHW Payment Page&lt;/a&gt; on the Zen Cart forum.&lt;/p&gt;
+&lt;h3 id=&#34;no-warranty&#34;&gt;NO WARRANTY&lt;/h3&gt;
+&lt;p&gt;AS WITH ANY PAID HELP SCENARIO, YOU MUST DO YOUR OWN INDEPENDENT ASSESSMENT OF A SERVICE-PROVIDER BEFORE ENGAGING IN A CONTRACT WITH THEM.&lt;/p&gt;
+&lt;p&gt;ZEN CART DOES NOT WARRANTY THE QUALITY OF ANY RESPONSE YOU MAY RECEIVE FROM POSTING.
+.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Finding a Plugin</title>
+      <link>/user/zen_cart_forum/finding_a_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/finding_a_plugin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sometimes you&amp;rsquo;ll read about a plugin and want to try it yourself.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to find it in the Plugins Library:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Go to Plugin Library
+&lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;https://www.zen-cart.com/downloads.php&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;click Advanced Search&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the plugin name in the search box, and set the dropdown to Search Titles only.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This should find the plugin for you if it is in the Plugins Library.&lt;/p&gt;
+&lt;p&gt;Another option is to use Google to search for a plugin.&lt;/p&gt;
+&lt;p&gt;If you enter&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;site:zen-cart.com name-of-plugin 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;into the search box at Google.com, you will likely find what you want on the first page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Forum Do&#39;s and Don&#39;ts</title>
+      <link>/user/zen_cart_forum/dos_and_donts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/dos_and_donts/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;forum-dos-and-donts&#34;&gt;Forum Do&amp;rsquo;s and Don&amp;rsquo;ts&lt;/h2&gt;
+&lt;p&gt;Above all, &lt;em&gt;be polite&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;re coming into an office - is your behavior office appropriate?&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re asking for help, the people trying to help you are volunteers, &lt;em&gt;not your staff&lt;/em&gt;.  Is your tone appropriate?&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t take your frustrations out on people in the forum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you behave rudely, the people best positioned to help you may &lt;a href=&#34;/user/zen_cart_forum/ignore/&#34;&gt;block you&lt;/a&gt;, preventing you from getting the help you need.&lt;/p&gt;
+&lt;h3 id=&#34;do&#34;&gt;Do:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Search for posts relevant to your problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Read the &lt;a href=&#34;/user/&#34;&gt;Zen Cart documentation&lt;/a&gt; to see if the answer is there.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make the headline for your post relevant to your problem.  Be as precise as possible - &amp;ldquo;Help!&amp;rdquo; if not a good headline.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tell us about your host and versions of Zen Cart and PHP so that we can diagnose more easily.  &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;How to find your Zen Cart, PHP and MySQL version&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Help others where you can. The best way to learn a subject is to teach someone else.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dont&#34;&gt;Don&amp;rsquo;t:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Post links to commercial services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bump your post. If you have not gotten an answer in a reasonable amount of time. Post a reply to your own existing post with more details of what you have and haven&amp;rsquo;t done to attempt to cure the problem or find answers to your questions. Try to explain your issue in a different way.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Private Message the Support Team or other developers trying to get their attention for your post. The whole idea of the forum is education and a problem solved privately benefits no one except you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hijack a thread: If a thread is asking one question and you want to ask a different one, just create a new thread in the relevant forum; don&amp;rsquo;t hijack the threads.  (The exception is support threads for plugins.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cross Post. Cross Posting is posting the same message in multiple threads or posting links to threads on other boards. It&amp;rsquo;s seen as spam.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use banners or other images in your signature line. You will be asked to remove them.  See &lt;a href=&#34;/user/zen_cart_forum/signature/&#34;&gt;signature guidelines&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hold independent contests or raffles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use barcodes as avatars.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please realize that your issue may be so specific to your environment and customizations that forum users won&amp;rsquo;t be able to figure it out.  In that case, you will need to post to the &lt;a href=&#34;/user/zen_cart_forum/chw/&#34;&gt;Commercial Help Wanted&lt;/a&gt; forum to find a developer to help you.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I find the posts I (or another member) have made?</title>
+      <link>/user/zen_cart_forum/my_posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/my_posts/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;you-can-&#34;&gt;You can &amp;hellip;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click on your Username inside any post&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select &amp;ldquo;Find other posts by this user&amp;rdquo; from the pulldown menu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;or-&#34;&gt;OR &amp;hellip;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click on the &amp;ldquo;Settings&amp;rdquo; link in the upper-right forum nav bar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pick &amp;ldquo;Find more posts by this member&amp;rdquo; or &amp;ldquo;Find all threads started by this member&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;or--1&#34;&gt;OR &amp;hellip;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click &amp;ldquo;Quick Links&amp;rdquo; in the forum menu bar&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose the &amp;ldquo;Members List&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the Search Members or look through the alphabetical lists.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the forum member&amp;rsquo;s name to view their profile.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose the Statistics tab&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &amp;ldquo;Find all posts by&amp;hellip;&amp;rdquo; or &amp;ldquo;Find all threads started by &amp;hellip;&amp;rdquo; link&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Private Messages (PM)</title>
+      <link>/user/zen_cart_forum/pm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/pm/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;what-is-a-pm&#34;&gt;What is a PM?&lt;/h2&gt;
+&lt;p&gt;The Zen Cart forum software offers the capability for users to message each other. This feature is called  private messaging or PM.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-rules-of-pm&#34;&gt;What are the rules of PM?&lt;/h2&gt;
+&lt;p&gt;Private messages are subject to the &lt;a href=&#34;/user/zen_cart_forum/code_of_conduct/&#34;&gt;Zen Cart Code of Conduct&lt;/a&gt;.  The &lt;a href=&#34;/user/zen_cart_forum/dos_and_donts/&#34;&gt;do&amp;rsquo;s and don&amp;rsquo;ts list&lt;/a&gt; also provides some guidance.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-i-send-a-pm&#34;&gt;How do I send a PM?&lt;/h2&gt;
+&lt;p&gt;In the forum, if you right click on someone&amp;rsquo;s avatar, you get a popup menu.
+One of the entries is &amp;ldquo;Private Message&amp;rdquo;.  Click on that.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/forum_avatar.png&#34; alt=&#34;Forum Avatar&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Signature Guidelines</title>
+      <link>/user/zen_cart_forum/signature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/signature/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;signature-line-guidelines&#34;&gt;Signature Line Guidelines&lt;/h2&gt;
+&lt;p&gt;Updated August 2011&lt;/p&gt;
+&lt;h3 id=&#34;you-may&#34;&gt;You may:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;You may have one &lt;em&gt;link&lt;/em&gt; for your business. This must just be a simple hyperlink to your business website, with &lt;em&gt;no advertising copy&lt;/em&gt;.&lt;br&gt;
+&lt;strong&gt;Example: &lt;a href=&#34;http://www.my-site.com&#34;&gt;http://www.my-site.com&lt;/a&gt; or &lt;a href=&#34;http://www.my-site.com&#34;&gt;My Store&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;You may have one link for each Zen Cart powered store that you operate. This must just be a simple hyperlink to your business website, with &lt;em&gt;no advertising copy&lt;/em&gt;.&lt;br&gt;
+&lt;strong&gt;Example: &lt;a href=&#34;http://www.my-site.com&#34;&gt;http://www.my-site.com&lt;/a&gt; or &lt;a href=&#34;http://www.my-site.com&#34;&gt;My Store&lt;/a&gt;&lt;/strong&gt;____&lt;/li&gt;
+&lt;li&gt;You may have links to any plugins that you have created/amended. Links must be to the Zen Cart download area. Offsite links are not allowed.&lt;/li&gt;
+&lt;li&gt;Other content such as &amp;lsquo;Thought of the day&amp;rsquo;, Quotes etc are acceptable as long as they conform to all of the other rules herein.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;an-acceptable-signature-line-would-be&#34;&gt;An acceptable signature line would be:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;John Smith  
+http://www.my-site.com  
+Happy to be Zenning today
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;you-may-not&#34;&gt;You may not:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You may not use any URLs that contain &amp;lsquo;affiliate&amp;rsquo; links, unless those links have been previously approved by the Zen Cart team.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may not use any images in your signature or barcodes as your avatar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may not have any sales/marketing material.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may not exceed 250 characters in your signature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may not have any content or links that reference material that is offensive or may be considered to be offensive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We define &amp;lsquo;offensive&amp;rsquo; as:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Content that is intended to harass, belittle, humiliate, threaten or cause embarrassment to a fellow member.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content that contains vulgar, obscene or indecent language or images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content that defames, abuses or threatens others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content that is bigoted, hateful or racially offensive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content that advocates illegal activity or discusses illegal activities with the intent to commit them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content that uses unauthorized copyrighted material.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;an-unacceptable-signature&#34;&gt;An unacceptable signature:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;John Smith  
+Follow me on Twitter - twitter.com/johnsmith  
+Buy my shoes! Cheap knocks offs at myShoesCheap.com
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;If your site contains material not suitable for certain audiences, please be sure to provide a warning!&lt;/p&gt;
+&lt;p&gt;The Zen Cart founders and moderators will be the final arbiters of any dispute over the interpretation of these rules.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why can&#39;t I post?</title>
+      <link>/user/zen_cart_forum/forum_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/zen_cart_forum/forum_issues/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;i-need-to-make-a-post-to-the-forum-but-cannot&#34;&gt;I need to make a post to the forum but cannot.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The forum can be found at: &lt;a href=&#34;https://www.zen-cart.com/forum.php&#34;&gt;https://www.zen-cart.com/forum.php&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;New forum members must complete their registration by confirming their email address. When you register, the forum will send an email to the email address you entered. That email will contain a link you need to click in order to confirm your address. Alternate methods are discussed in the email itself in case the link cannot be &amp;ldquo;clicked&amp;rdquo; in your email program.&lt;/li&gt;
+&lt;li&gt;Once you have confirmed your email address via the instructions in the email you receive, you will have access to the forum.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ive-confirmed-my-email-address-but-dont-know-how-to-create-new-threads&#34;&gt;I&amp;rsquo;ve confirmed my email address but don&amp;rsquo;t know how to create new threads.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;There are three ways to create posts on the forum:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &amp;ldquo;New Thread&amp;rdquo; button in a forum&amp;rsquo;s topic listing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &amp;ldquo;Reply&amp;rdquo; button in an existing thread.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &amp;ldquo;Quote&amp;rdquo; button in an existing thread, which will quote that existing post&amp;rsquo;s content in your reply.  Use only when appropriate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some sections of the forum labelled &amp;ldquo;Archived&amp;rdquo; are read-only and cannot be posted in.&lt;br&gt;
+If you wish to continue discussion on an archived topic, first check to see whether it&amp;rsquo;s already been continued elsewhere by another person, by doing a search about the issue discussed. Then reply to that existing discussion if your issue is the same as the one discussed.&lt;br&gt;
+Or, start a new thread on the topic, choosing the appropriate category.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;where-is-the-new-thread-button-mentioned-above&#34;&gt;Where is the &amp;ldquo;New Thread&amp;rdquo; button mentioned above?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A picture is worth a thousand words, they say:&lt;br&gt;
+&lt;img src=&#34;https://www.zen-cart.com/info-pix/new-thread-button.jpg&#34; alt=&#34;New Thread Button in Forum&#34; title=&#34;New Thread Button in Forum&#34;&gt;&lt;/li&gt;
+&lt;li&gt;If for some reason that button still doesn&amp;rsquo;t show, click here: &lt;a href=&#34;https://www.zen-cart.com/newthread.php?do=newthread&amp;amp;f=128&#34;&gt;Post New Thread in General Questions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,617 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Localization</title>
+    <link>/user/localization/</link>
+    <description>Recent content in Localization on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/localization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Address formats - what are they?</title>
+      <link>/user/localization/address_formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/address_formats/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You may have noticed the address format value ranges between 1 and 20.
+The UK is 6, USA is 7 and most other countries are 5. There is a &lt;a href=&#34;#zen-cart-158&#34;&gt;full list below.&lt;/a&gt; The Default format is 1 which is no longer used by any country.&lt;/p&gt;
+&lt;p&gt;What exactly is the &amp;lsquo;format&amp;rsquo; ?&lt;/p&gt;
+&lt;p&gt;Address formats are based on international ISO standard formats.&lt;/p&gt;
+&lt;p&gt;In Zen Cart, formats are stored in the &lt;code&gt;address_format&lt;/code&gt; table.&lt;/p&gt;
+&lt;p&gt;This table is structured as follows:&lt;/p&gt;
+&lt;h2 id=&#34;columns&#34;&gt;Columns&lt;/h2&gt;
+&lt;h3 id=&#34;address_format_id&#34;&gt;address_format_id&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dd&gt;A unique, auto incremented value, to identify each address format record.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Type:&lt;/td&gt;
+&lt;td&gt;int(11)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Null:&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Default:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extra:&lt;/td&gt;
+&lt;td&gt;auto_increment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;address_format&#34;&gt;address_format&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dd&gt;The format used for displaying the shipping/billing address.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Type:&lt;/td&gt;
+&lt;td&gt;varchar(128)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Null:&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Default:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Possible variables are:&lt;/p&gt;
+&lt;dl&gt;
+&lt;dd&gt;
+&lt;ul&gt;
+&lt;li&gt;$firstname - first name&lt;/li&gt;
+&lt;li&gt;$lastname - last name&lt;/li&gt;
+&lt;li&gt;$cr - forces line break&lt;/li&gt;
+&lt;li&gt;$streets - street address&lt;/li&gt;
+&lt;li&gt;$city - city&lt;/li&gt;
+&lt;li&gt;$state - state&lt;/li&gt;
+&lt;li&gt;$statecomma - state followed by a comma and a space&lt;/li&gt;
+&lt;li&gt;$postcode - postcode&lt;/li&gt;
+&lt;li&gt;$country - country&lt;/li&gt;
+&lt;li&gt;Punctuation, spaces and other characters can be added as well before or after the variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;address_summary&#34;&gt;address_summary&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dd&gt;Summary of the address format used for display purposes.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Type:&lt;/td&gt;
+&lt;td&gt;varchar(48)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Null:&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Default:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;default-entries&#34;&gt;Default Entries&lt;/h2&gt;
+&lt;p&gt;The default entries can be seen in the file &lt;code&gt;zc_install/sql/install/mysql_zencart.sql&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;zen-cart-156&#34;&gt;Zen Cart 1.5.6&lt;/h3&gt;
+&lt;p&gt;The entries are:&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city, $postcode&lt;br&gt;$statecomma$country,$city / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city, $state    $postcode&lt;br&gt;$country,$city, $state / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city&lt;br&gt;$postcode - $statecomma$country,$state / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city ($postcode)&lt;br&gt;$country, $postcode / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$postcode $city&lt;br&gt;$country,$city / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city&lt;br&gt;$state&lt;br&gt;$postcode&lt;br&gt;$country,$postcode / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt; $firstname $lastname&lt;br&gt;$streets&lt;br&gt;$city $state $postcode&lt;br&gt;$country,$city $state / $country&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The values are used as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1 - Default, most countries except those below. 
+2 - USA 
+3 - Spain 
+4 - Singapore 
+5 - Germany 
+6 - UK/GB 
+7 - Australia
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;zen-cart-158&#34;&gt;Zen Cart 1.5.8&lt;/h3&gt;
+&lt;p&gt;Additional address formats have been added to Zen Cart 1.5.8. If you upgrade from a previous version of Zen Cart then any address codes you have created will be moved outside of the new default range and all orders and country entries that used them will be adjusted.&lt;/p&gt;
+&lt;p&gt;Below is a table with the Format ID, Address formats, an example of the address and the countries to which they are applied.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Format&lt;/th&gt;
+&lt;th&gt;Address Format&lt;/th&gt;
+&lt;th&gt;Example                                                             &lt;/th&gt;
+&lt;th&gt;Countries&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr$city, $postcode$cr$statecomma$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city, postcode&lt;br&gt;state, country&lt;/td&gt;
+&lt;td&gt;Default - Not Used&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr$city, $state    $postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city, state postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Latvia&lt;br&gt;Myanmar&lt;br&gt;Saint Kitts and Nevis&lt;br&gt;Somalia&lt;br&gt;Trinidad and Tobago&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr$city$cr $postcode - $statecomma$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city&lt;br&gt;postcode - state, country&lt;/td&gt;
+&lt;td&gt;Not Used&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr$city ($postcode)$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city (postcode)&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Not Used&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $postcode $city$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode city&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Åland Islands&lt;br&gt;Albania&lt;br&gt;Algeria&lt;br&gt;Andorra&lt;br&gt;Argentina&lt;br&gt;Armenia&lt;br&gt;Austria&lt;br&gt;Azerbaijan&lt;br&gt;Belgium&lt;br&gt;Bosnia and Herzegowina&lt;br&gt;Bulgaria&lt;br&gt;Cape Verde&lt;br&gt;Chile&lt;br&gt;Croatia&lt;br&gt;Cyprus&lt;br&gt;Czech Republic&lt;br&gt;Denmark&lt;br&gt;Dominican Republic&lt;br&gt;Equatorial Guinea&lt;br&gt;Estonia&lt;br&gt;Ethiopia&lt;br&gt;Faroe Islands&lt;br&gt;Finland&lt;br&gt;France&lt;br&gt;French Guiana&lt;br&gt;French Polynesia&lt;br&gt;French Southern Territories&lt;br&gt;Gabon&lt;br&gt;Georgia&lt;br&gt;Germany&lt;br&gt;Greece&lt;br&gt;Greenland&lt;br&gt;Guadeloupe&lt;br&gt;Guinea&lt;br&gt;Guinea-bissau&lt;br&gt;Haiti&lt;br&gt;Iceland&lt;br&gt;Israel&lt;br&gt;Jamaica&lt;br&gt;Kuwait&lt;br&gt;Lao People&amp;rsquo;s Democratic Republic&lt;br&gt;Liechtenstein&lt;br&gt;Lithuania&lt;br&gt;Luxembourg&lt;br&gt;Macedonia, The Former Yugoslav Republic of &lt;br&gt;Madagascar&lt;br&gt;Martinique&lt;br&gt;Mayotte&lt;br&gt;Moldova&lt;br&gt;Monaco&lt;br&gt;Morocco&lt;br&gt;Netherlands&lt;br&gt;New Caledonia&lt;br&gt;Niger&lt;br&gt;Norway&lt;br&gt;Paraguay&lt;br&gt;Poland&lt;br&gt;Portugal&lt;br&gt;Réunion&lt;br&gt;Romania&lt;br&gt;San Marino&lt;br&gt;Senegal&lt;br&gt;Slovakia (Slovak Republic)&lt;br&gt;Slovenia&lt;br&gt;St. Pierre and Miquelon&lt;br&gt;Svalbard and Jan Mayen Islands&lt;br&gt;Sweden&lt;br&gt;Switzerland&lt;br&gt;Syrian Arab Republic&lt;br&gt;Tajikistan&lt;br&gt;Turkmenistan&lt;br&gt;Uruguay&lt;br&gt;Wallis and Futuna Islands&lt;br&gt;Palestine,  State of &lt;br&gt;Montenegro&lt;br&gt;South Sudan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city$cr$state$cr$postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city&lt;br&gt;state&lt;br&gt;postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Afghanistan&lt;br&gt;British Indian Ocean Territory&lt;br&gt;Egypt&lt;br&gt;Falkland Islands (Malvinas)&lt;br&gt;Gibraltar&lt;br&gt;India&lt;br&gt;Iran (Islamic Republic of)&lt;br&gt;Ireland&lt;br&gt;Kazakhstan&lt;br&gt;Kenya&lt;br&gt;Kiribati&lt;br&gt;Malta&lt;br&gt;Montserrat&lt;br&gt;Pitcairn&lt;br&gt;Russian Federation&lt;br&gt;Seychelles&lt;br&gt;Solomon Islands&lt;br&gt;South Africa&lt;br&gt;South Georgia and the South Sandwich Islands&lt;br&gt;Sri Lanka&lt;br&gt;St. Helena&lt;br&gt;Swaziland&lt;br&gt;Togo&lt;br&gt;Turks and Caicos Islands&lt;br&gt;Tuvalu&lt;br&gt;Ukraine&lt;br&gt;United Arab Emirates&lt;br&gt;United Kingdom&lt;br&gt;Uzbekistan&lt;br&gt;Serbia&lt;br&gt;Zimbabwe&lt;br&gt;Guernsey&lt;br&gt;Isle of Man&lt;br&gt;Jersey&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city $state $postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city state postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;American Samoa&lt;br&gt;Australia&lt;br&gt;Cambodia&lt;br&gt;Canada&lt;br&gt;Cayman Islands&lt;br&gt;China&lt;br&gt;Christmas Island&lt;br&gt;Cocos (Keeling) Islands&lt;br&gt;Colombia&lt;br&gt;Guam&lt;br&gt;Guyana&lt;br&gt;Heard and Mc Donald Islands&lt;br&gt;Japan&lt;br&gt;Korea,  Republic of &lt;br&gt;Marshall Islands&lt;br&gt;Micronesia, Federated States of &lt;br&gt;Norfolk Island&lt;br&gt;Northern Mariana Islands&lt;br&gt;Pakistan&lt;br&gt;Palau&lt;br&gt;Puerto Rico&lt;br&gt;United States&lt;br&gt;United States Minor Outlying Islands&lt;br&gt;Virgin Islands (U.S.)&lt;br&gt;Curaçao&lt;br&gt;Sint Maarten (Dutch part)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets $cr$city$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Angola&lt;br&gt;Antigua and Barbuda&lt;br&gt;Aruba&lt;br&gt;Barbados&lt;br&gt;Benin&lt;br&gt;Bolivia&lt;br&gt;Botswana&lt;br&gt;Bouvet Island&lt;br&gt;Burundi&lt;br&gt;Cameroon&lt;br&gt;Central African Republic&lt;br&gt;Chad&lt;br&gt;Comoros&lt;br&gt;Congo&lt;br&gt;Côte d&amp;rsquo;Ivoire&lt;br&gt;Djibouti&lt;br&gt;Dominica&lt;br&gt;Eritrea&lt;br&gt;Fiji&lt;br&gt;Gambia&lt;br&gt;Grenada&lt;br&gt;Hong Kong&lt;br&gt;Libya&lt;br&gt;Macao&lt;br&gt;Malawi&lt;br&gt;Mali&lt;br&gt;Mauritania&lt;br&gt;Mauritius&lt;br&gt;Namibia&lt;br&gt;Qatar&lt;br&gt;Rwanda&lt;br&gt;Saint Lucia&lt;br&gt;Samoa&lt;br&gt;Sao Tome and Principe&lt;br&gt;Sierra Leone&lt;br&gt;Suriname&lt;br&gt;Tonga&lt;br&gt;Uganda&lt;br&gt;Vanuatu&lt;br&gt;Western Sahara&lt;br&gt;Yemen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets $cr$postcode $city $state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode city state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Cuba&lt;br&gt;Honduras&lt;br&gt;Italy&lt;br&gt;Liberia&lt;br&gt;Mexico&lt;br&gt;Tunisia&lt;br&gt;Turkey&lt;br&gt;Vatican City State (Holy See)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city $postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Anguilla&lt;br&gt;Antarctica&lt;br&gt;Bahamas&lt;br&gt;Bahrain&lt;br&gt;Bangladesh&lt;br&gt;Belize&lt;br&gt;Bermuda&lt;br&gt;Bhutan&lt;br&gt;Burkina Faso&lt;br&gt;Cook Islands&lt;br&gt;Timor-Leste&lt;br&gt;Indonesia&lt;br&gt;Jordan&lt;br&gt;Korea, Democratic People&amp;rsquo;s Republic of&lt;br&gt;Lebanon&lt;br&gt;Lesotho&lt;br&gt;Maldives&lt;br&gt;Mongolia&lt;br&gt;Nauru&lt;br&gt;Nepal&lt;br&gt;Bonaire, Sint Eustatius and Saba &lt;br&gt;New Zealand&lt;br&gt;Niue&lt;br&gt;Saint Vincent and the Grenadines&lt;br&gt;Saudi Arabia&lt;br&gt;Singapore&lt;br&gt;Taiwan&lt;br&gt;Tokelau&lt;br&gt;Virgin Islands (British)&lt;br&gt;Zambia&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city $state$cr$postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city state&lt;br&gt;postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Brazil&lt;br&gt;Costa Rica&lt;br&gt;Ghana&lt;br&gt;Iraq&lt;br&gt;Thailand&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $postcode$cr$city $state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode&lt;br&gt;city state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Ecuador&lt;br&gt;Nicaragua&lt;br&gt;Peru&lt;br&gt;Sudan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city $postcode$cr$state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city postcode&lt;br&gt;state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Nigeria&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets $cr$postcode $city$cr$state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode city&lt;br&gt;state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Belarus&lt;br&gt;El Salvador&lt;br&gt;Guatemala&lt;br&gt;Kyrgyzstan&lt;br&gt;Malaysia&lt;br&gt;Mozambique&lt;br&gt;Panama&lt;br&gt;Tanzania, United Republic of&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $postcode$cr$city$cr$state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode&lt;br&gt;city&lt;br&gt;state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Oman&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city $postcode $state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city postcode state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Papua New Guinea&lt;br&gt;Venezuela&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city$cr$postcode $state$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city&lt;br&gt;postcode state&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Philippines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $city$cr$state $postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;city&lt;br&gt;state postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Brunei Darussalam&lt;br&gt;Viet Nam&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$city$cr$streets$cr $postcode$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;city&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Hungary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$firstname $lastname$cr$streets$cr $postcode $city ($state)$cr$country&lt;/td&gt;
+&lt;td&gt;firstname surname&lt;br&gt;street address&lt;br&gt;addressline2&lt;br&gt;postcode city (state)&lt;br&gt;country&lt;/td&gt;
+&lt;td&gt;Spain&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The sources used to determine the address formats where &lt;a href=&#34;https://www.informatica.com/products/data-quality/data-as-a-service/address-verification/address-formats.html&#34;&gt;informatica&lt;/a&gt; and &lt;a href=&#34;https://www.loqate.com/en-gb/address-verification/international-address-formats&#34;&gt;loqate&lt;/a&gt;. Loqate appeared to be more recent and had more formats with postcodes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Date format - changing it from the US format to dd/mm/yyyy</title>
+      <link>/user/localization/changing_date_format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/changing_date_format/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are a number of different date formats used around the world, and the approach for changing to any of them is broadly the same. In this tutorial we&amp;rsquo;ll show how to change from the default US format (mm/dd/yyyy) to the dd/mm/yyyy format used in most other English-speaking countries and those speaking many other languages. As date formats are generally language-specific (or in the case of English, dialect-specific) we&amp;rsquo;ll be editing two Zen Cart language files to make this change.&lt;/p&gt;
+&lt;h3 id=&#34;1-open-file-includeslanguagesyourtemplateyourlanguagephp&#34;&gt;1. open file includes/languages/YOURTEMPLATE/YOURLANGUAGE.php&lt;/h3&gt;
+&lt;p&gt;(if this file doesn&amp;rsquo;t exist, create it by copying the file &lt;code&gt;includes/languages/YOURLANGUAGE.php&lt;/code&gt; to this location).&lt;/p&gt;
+&lt;h3 id=&#34;2-find-this-section&#34;&gt;2. find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@setlocale(LC_TIME, &amp;#39;en_US.ISO_8859-1&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SHORT&amp;#39;, &amp;#39;%m/%d/%Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT_LONG&amp;#39;, &amp;#39;%A %d %B, %Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT&amp;#39;, &amp;#39;m/d/Y&amp;#39;); // this is used for date()
+
+define(&amp;#39;DATE_TIME_FORMAT&amp;#39;, DATE_FORMAT_SHORT . &amp;#39; %H:%M:%S&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@setlocale(LC_TIME, &amp;#39;en_GB.ISO_8859-1&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SHORT&amp;#39;, &amp;#39;%d/%m/%Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT_LONG&amp;#39;, &amp;#39;%A %d %B, %Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT&amp;#39;, &amp;#39;d/m/Y&amp;#39;); // this is used for date()
+
+define(&amp;#39;DATE_TIME_FORMAT&amp;#39;, DATE_FORMAT_SHORT . &amp;#39; %H:%M:%S&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-in-the-same-file-find-this-section&#34;&gt;3. in the same file find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Return date in raw format
+
+// $date should be in format mm/dd/yyyy
+
+// raw date is in format YYYYMMDD, or DDMMYYYY
+
+if (!function_exists(&amp;#39;zen_date_raw&amp;#39;)) {
+
+  function zen_date_raw($date, $reverse = false) {
+
+    if ($reverse) {
+
+      return substr($date, 3, 2) . substr($date, 0, 2) . substr($date, 6, 4);
+
+    } else {
+
+      return substr($date, 6, 4) . substr($date, 0, 2) . substr($date, 3, 2);
+
+    }
+
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Return date in raw format
+
+// $date should be in format dd/mm/yyyy
+
+// raw date is in format YYYYMMDD, or DDMMYYYY
+
+if (!function_exists(&amp;#39;zen_date_raw&amp;#39;)) {
+
+  function zen_date_raw($date, $reverse = false) {
+
+    if ($reverse) {
+
+      return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
+
+    } else {
+
+      return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
+
+    }
+
+  }
+
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-in-the-same-file-find-this-section&#34;&gt;4. In the same file find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// text for date of birth example
+
+define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;mm/dd/yyyy&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// text for date of birth example
+
+define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;dd/mm/yyyy&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-in-the-same-file-find-this-section&#34;&gt;5. In the same file find this section:&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_ERROR&#39;, &#39;Is your birth date correct? Our system requires the date in this format: MM/DD/YYYY (eg 05/21/1970)&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_TEXT&#39;, &#39;* (eg. 05/21/1970)&#39;); &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_ERROR&#39;, &#39;Is your birth date correct? Our system requires the date in this format: DD/MM/YYYY (eg 21/05/1970)&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_TEXT&#39;, &#39;* (eg. 21/05/1970)&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-open-file-adminincludeslanguagesyourlanguagephp&#34;&gt;6. Open file admin/includes/languages/YOURLANGUAGE.php&lt;/h3&gt;
+&lt;p&gt;(this file cannot be over-ridden at present, so you will need to edit the file directly and be careful to reapply the changes if you upgrade to a later version of Zen Cart)&lt;/p&gt;
+&lt;h3 id=&#34;7-find-this-section&#34;&gt;7. Find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;setlocale(LC_TIME, &amp;#39;en_US.ISO_8859-1&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SHORT&amp;#39;, &amp;#39;%m/%d/%Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT_LONG&amp;#39;, &amp;#39;%A %d %B, %Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT&amp;#39;, &amp;#39;m/d/Y&amp;#39;); // this is used for date()
+
+define(&amp;#39;PHP_DATE_TIME_FORMAT&amp;#39;, &amp;#39;m/d/Y H:i:s&amp;#39;); // this is used for date()
+
+define(&amp;#39;DATE_TIME_FORMAT&amp;#39;, DATE_FORMAT_SHORT . &amp;#39; %H:%M:%S&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SPIFFYCAL&amp;#39;, &amp;#39;MM/dd/yyyy&amp;#39;); //Use only &amp;#39;dd&amp;#39;, &amp;#39;MM&amp;#39; and &amp;#39;yyyy&amp;#39; here in any order
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;setlocale(LC_TIME, &amp;#39;en_GB.ISO_8859-1&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SHORT&amp;#39;, &amp;#39;%d/%m/%Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT_LONG&amp;#39;, &amp;#39;%A %d %B, %Y&amp;#39;); // this is used for strftime()
+
+define(&amp;#39;DATE_FORMAT&amp;#39;, &amp;#39;d/m/Y&amp;#39;); // this is used for date()
+
+define(&amp;#39;PHP_DATE_TIME_FORMAT&amp;#39;, &amp;#39;d/m/Y H:i:s&amp;#39;); // this is used for date()
+
+define(&amp;#39;DATE_TIME_FORMAT&amp;#39;, DATE_FORMAT_SHORT . &amp;#39; %H:%M:%S&amp;#39;);
+
+define(&amp;#39;DATE_FORMAT_SPIFFYCAL&amp;#39;, &amp;#39;dd/MM/yyyy&amp;#39;); //Use only &amp;#39;dd&amp;#39;, &amp;#39;MM&amp;#39; and &amp;#39;yyyy&amp;#39; here in any order
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;8-in-the-same-file-find-this-section&#34;&gt;8. In the same file find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Return date in raw format
+
+// $date should be in format mm/dd/yyyy
+
+// raw date is in format YYYYMMDD, or DDMMYYYY
+
+function zen_date_raw($date, $reverse = false) {
+
+  if ($reverse) {
+
+    return substr($date, 3, 2) . substr($date, 0, 2) . substr($date, 6, 4);
+
+  } else {
+
+    return substr($date, 6, 4) . substr($date, 0, 2) . substr($date, 3, 2);
+
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Return date in raw format
+
+// $date should be in format dd/mm/yyyy
+
+// raw date is in format YYYYMMDD, or DDMMYYYY
+
+function zen_date_raw($date, $reverse = false) {
+
+  if ($reverse) {
+
+    return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
+
+  } else {
+
+    return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
+
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;9-in-the-same-file-find-this-section&#34;&gt;9. In the same file find this section:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// text for date of birth example
+
+define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;mm/dd/yyyy&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// text for date of birth example
+
+define(&amp;#39;DOB_FORMAT_STRING&amp;#39;, &amp;#39;dd/mm/yyyy&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;10-in-the-same-file-find-this-section&#34;&gt;10. In the same file find this section:&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;JS_DOB&#39;, &#39;* The \&#39;Date of Birth\&#39; entry must be in the format: xx/xx/xxxx (month/date/year).\n&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;JS_DOB&#39;, &#39;* The \&#39;Date of Birth\&#39; entry must be in the format: xx/xx/xxxx (date/month/year).\n&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;11-in-the-same-file-find-this-section&#34;&gt;11. In the same file find this section:&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_ERROR&#39;, &#39;&amp;amp;nbsp;&amp;lt;span class=&amp;quot;errorText&amp;quot;&amp;gt;(eg. 05/21/1970)&amp;lt;/span&amp;gt;&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and replace with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;ENTRY_DATE_OF_BIRTH_ERROR&#39;, &#39;&amp;amp;nbsp;&amp;lt;span class=&amp;quot;errorText&amp;quot;&amp;gt;(eg. 21/05/1970)&amp;lt;/span&amp;gt;&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s it, you&amp;rsquo;re done!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I use another currency instead of US Dollars?</title>
+      <link>/user/localization/my_currency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/my_currency/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are two parts to configuring your currency settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configuring whether you want to accept more than one currency&lt;/li&gt;
+&lt;li&gt;Adding the new currency&lt;/li&gt;
+&lt;li&gt;Optional: Enabling a currency-selection sidebox in the store&lt;/li&gt;
+&lt;li&gt;Recommended: Update exchange rates regularly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.
+If you are running your shop in a language that is not English and are going to use your native currency, click on the line that says &amp;ldquo;Switch To Default Language Currency&amp;rdquo; and change the value to true. If you are going to run the cart in English, but not use US Dollars, make sure that the &amp;ldquo;Switch To Default Language Currency&amp;rdquo; is set to false.&lt;/p&gt;
+&lt;p&gt;Then go to &lt;a href=&#34;/user/admin_pages/localization/currencies/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Currencies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If your currency is in the list which is shown, click your currency, click Edit and check the box labelled &lt;em&gt;Set as default&lt;/em&gt;.  Then click Save.&lt;/p&gt;
+&lt;p&gt;If your currency is &lt;em&gt;not&lt;/em&gt;  in the list which is shown, click the &lt;em&gt;New Currency&lt;/em&gt; button. Fill in the information appropriate for your currency and check the box if it is to be the default for your shop. Click the &lt;em&gt;Insert&lt;/em&gt; button, then after the page refreshes, click the &lt;em&gt;Update Currencies&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;Be sure to click the &lt;em&gt;Update Currencies&lt;/em&gt; button on at least a weekly basis to update all exchange rates.&lt;/p&gt;
+&lt;p&gt;If you wish to allow a dropdown menu for shoppers to change the store&amp;rsquo;s displayed prices in that currency, you can enable the &lt;a href=&#34;/user/sideboxes/sidebox_list/#currencies&#34;&gt;Currencies Sidebox&lt;/a&gt; to appear in either the left or right sidebars.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Language Support</title>
+      <link>/user/localization/languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/languages/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;what-is-a-language-pack-&#34;&gt;What is a Language Pack ?&lt;/h2&gt;
+&lt;p&gt;A Language Pack is the group of files that contain the texts displayed on the pages of Zen Cart.  All the texts (constants) used in Zen Cart are in a fileset separated from the program files, to facilitate translation. The storefront and the admin have their own language fileset, each under a /languages directory.&lt;/p&gt;
+&lt;p&gt;By default, Zen Cart only includes the fileset for english (US). Other Language Packs are available from the Zen Cart &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Always read the corresponding support thread for a Language Pack to learn the current state of a language pack/how up to date it is and whether it is being maintained on a version control site like GitHub.&lt;/p&gt;
+&lt;p&gt;A Language Pack is a great deal of work to maintain and since they are all the results of efforts by the community, it is common that some languages are not kept up to date with the current Zen Cart.&lt;/p&gt;
+&lt;p&gt;Consequently, installing an older language pack in a current Zen Cart and having to update it yourself is something that you will need to accept if you want to use that language. It will not destroy your shop, but it will certainly result in multiple errors (white screens and corresponding debug logs) that are easily rectified. See the section below on Updating a Language Pack.&lt;/p&gt;
+&lt;p&gt;If updating is necessary, you should update the language pack BEFORE registering it in the Zen Cart admin.&lt;/p&gt;
+&lt;h2 id=&#34;installing-a-language-pack&#34;&gt;Installing a Language Pack&lt;/h2&gt;
+&lt;p&gt;As always with any modifications, this should be tested and checked calmly and methodically in a &lt;strong&gt;development copy&lt;/strong&gt; of your shop, &lt;strong&gt;NOT&lt;/strong&gt; the production site, as older packs will take some time to be corrected/updated.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not familiar with installing a Zen Cart plugin, follow the instructions on 
+&lt;a href=&#34;/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Installing&amp;rdquo; has two steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Copying the files into the site. At this point the Zen Cart code will not try and use it and so no problems should occur.
+If you know the pack needs updating, it should be done now, as described below.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Registering the new language in the Admin using 
+&lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Languages &amp;gt; Add&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Apart from adding the language option to the admin and the shopfront, the registering action will also create entries for the category and product names in the new language, by copying the english texts.
+Since it is a good thing if this procedure executes without errors, it is advised to update the language pack first to hopefully avoid any errors. But, since this is being tested on a development site, it is not so critical.&lt;/p&gt;
+&lt;h2 id=&#34;updating-a-language-pack&#34;&gt;Updating a Language Pack&lt;/h2&gt;
+&lt;p&gt;If the language pack is for an older version than the current Zen Cart, you should copy those files into a vanilla, current version of Zen Cart for comparison with the english fileset (using Beyond Compare/WinMerge or equivalent).&lt;/p&gt;
+&lt;p&gt;All files, the folder/file structure and the constant definitions that exist in the english files &lt;strong&gt;must&lt;/strong&gt; be replicated/mirrored exactly in the additional language pack fileset. You may find that some texts may exist in the old pack but not in the new, but maybe they have been moved elsewhere. So, you should cut and save these &amp;ldquo;extra&amp;rdquo; constants to re-use when you discover where they were moved to.&lt;/p&gt;
+&lt;p&gt;If files or constants are missing in the language pack, at some point while navigating the shop the code will &amp;ldquo;look for&amp;rdquo; that definition and not find it, thereby causing a white screen but with a corresponding debug log that will tell you exactly what was not found. Hence easy to fix!&lt;/p&gt;
+&lt;p&gt;You should also consider the community aspect of Zen Cart and the free software you are using and ensure &lt;strong&gt;your&lt;/strong&gt; valuable updating work is available to others, by locating a copy of the files on a public repository such as GitHub, to avoid others having to repeat your work and to allow others to improve it for everyone&amp;rsquo;s benefit.&lt;/p&gt;
+&lt;p&gt;Here are some symptoms you might see.&lt;/p&gt;
+&lt;h3 id=&#34;blank-white-screen-after-language-pack-installed&#34;&gt;Blank White Screen After Language Pack Installed.&lt;/h3&gt;
+&lt;p&gt;This is due to a missing file, syntax error in a file or a missing constant.&lt;/p&gt;
+&lt;p&gt;Check the logs directory for &lt;code&gt;myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log&lt;/code&gt; files and look for &lt;code&gt;failed to open stream: No such file or directory&lt;/code&gt;. Before it you should see a file path of the missing file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Find the file in the english language folder &lt;code&gt;YOURSITE/includes/languages/english/MISSINGFILE.php&lt;/code&gt; and copy to your language folder.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PHP Fatal error:  Uncaught Error: Undefined constant &amp;#34;MODULE_PAYMENT_MONEYORDER_TEXT_ACCOUNTS&amp;#34;.... 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Find the constant name in the english language files and copy it to the corresponding file in the language pack. You can translate it now or later, or not at all if it is an admin file and you don&amp;rsquo;t care. But it &lt;strong&gt;MUST&lt;/strong&gt; exist.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You must navigate through every page on the shop to check this as different files are loaded on different pages.&lt;/p&gt;
+&lt;h3 id=&#34;capitalized-titles-displayed-in-english&#34;&gt;Capitalized Titles Displayed in English&lt;/h3&gt;
+&lt;p&gt;If you get sections named displayed as capitalized title with underscore between, e.g.&lt;code&gt;HEADING_TITLE&lt;/code&gt;, again it will be because language files have not been included in the language pack. Finding these can be trickier as the same title may be used in multiple places.&lt;/p&gt;
+&lt;p&gt;Start by logging into your admin page. Then select &lt;code&gt;Tools &amp;gt; Developers Tool Kit&lt;/code&gt; in the tool kit and enter the name of the missing variable.  Search &lt;code&gt;All Language Files for ENGLISH - Catalog/Admin&lt;/code&gt;. This should produce a list of places where the variable is defined.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.&lt;/li&gt;
+&lt;li&gt;If there are multiple listings, then go back to the storefront and add &lt;code&gt;&amp;amp;language=en&lt;/code&gt; to then end of the URL or if &lt;code&gt;&amp;amp;language=YOURLANGUAGECODE&lt;/code&gt; is already present, change YOURLANGUAGECODE to &lt;code&gt;en&lt;/code&gt;.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;admin-field-descriptions-still-in-english&#34;&gt;Admin Field Descriptions Still in English&lt;/h3&gt;
+&lt;p&gt;This means one of two things happened:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The language pack did not contain a full translation of the admin descriptions held in the database.  Contact the language pack creator to ask if translation is available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OR&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have not run the sql patch for the admin files.  See your installation instructions and run the sql patch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-texts-have-odd-characters-instead-of-accented-letters&#34;&gt;Some Texts Have Odd Characters Instead of Accented Letters&lt;/h3&gt;
+&lt;p&gt;The language file that contains this text is not encoded in utf-8 with no BOM. You can open the file in a suitable editor (like Notepad++) to change the encoding, but if many files are not encoded correctly, there are free programs available that can encode all the files at once.&lt;/p&gt;
+&lt;h2 id=&#34;language-files-from-zen-cart-158-onwards&#34;&gt;Language Files from Zen Cart 1.5.8 onwards&lt;/h2&gt;
+&lt;p&gt;The structure of the language files was completely changed in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;p&gt;A description of the changes and conversion procedure is provided in the developer&amp;rsquo;s guide to &lt;a href=&#34;/dev/languages/158_language_files/&#34;&gt;158 Language Files&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Order Statuses</title>
+      <link>/user/localization/orders_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/orders_status/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;what-is-an-order-status&#34;&gt;What is an Order Status?&lt;/h3&gt;
+&lt;p&gt;The order status field is a value which encapsulates where the order is in your workflow.
+Zen Cart has the following default order statuses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pending&lt;/li&gt;
+&lt;li&gt;Processing&lt;/li&gt;
+&lt;li&gt;Delivered&lt;/li&gt;
+&lt;li&gt;Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;New order statuses can be created in 
+&lt;a href=&#34;/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;how-can-i-set-my-orders-to-status-shipped&#34;&gt;How can I set my orders to status Shipped?&lt;/h3&gt;
+&lt;p&gt;You can add a new order status (Shipped) by going to
+&lt;a href=&#34;/user/admin_pages/localization/orders_status/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Orders Status&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then go to &lt;a href=&#34;/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Orders&lt;/a&gt; and update the order&amp;rsquo;s status to &amp;lsquo;Shipped&amp;rsquo; making sure that you set the &lt;em&gt;Notify Customer&lt;/em&gt; radio button to &lt;em&gt;Email&lt;/em&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: User information on Array based Language files</title>
+      <link>/user/localization/158_language_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/localization/158_language_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Zen Cart 1.5.8, the language file structure was modified so that the PHP &lt;code&gt;define&lt;/code&gt; statement is no longer used directly.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined, so the old approach would create debug logs if something wasn&amp;rsquo;t done.&lt;/p&gt;
+&lt;p&gt;The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called &lt;em&gt;array based language files&lt;/em&gt; (as opposed to the older &lt;em&gt;define based language files&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;If you are a developer who wants to learn how to build a new language pack, please see &lt;a href=&#34;/dev/languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Because these new language packs are just now being built and are subject to frequent fine-tuning, the most up to date location for finding them will not be the Plugins Library, but the Github repository of the developer maintaining the library.&lt;/p&gt;
+&lt;h3 id=&#34;available-array-based-language-packs-for-zen-cart-158-and-above&#34;&gt;Available Array Based Language Packs for Zen Cart 1.5.8 and above&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/torvista/Zen_Cart-Spanish_Language_Pack/tree/v158&#34;&gt;Spanish&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

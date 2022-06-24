@@ -1,0 +1,238 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Discounts</title>
+    <link>/zendocs_test1/user/admin_pages/discounts/</link>
+    <description>Recent content in Discounts on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/discounts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Coupon Admin</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_admin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don&amp;rsquo;t see &lt;em&gt;Coupon Admin&lt;/em&gt; under &lt;em&gt;Discounts&lt;/em&gt; in the admin menu, it means coupons are not installed.  Go to Admin &amp;gt; Modules &amp;gt; Order Total and install coupons.&lt;/p&gt;
+&lt;p&gt;The Coupon Admin screen is the jumping off point for coupon operations.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/coupon_admin.png&#34; alt=&#34;Coupon Admin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For more information, see 
+the other coupon related entries in &lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/&#34;&gt;Sitemap - Admin Pages&lt;/a&gt; or 
+the &lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Coupon Creation</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_creation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_creation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To create a new coupon, go to Admin &amp;gt; Discounts &amp;gt; Coupon Admin, press the insert button  and fill in these fields:&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;Field Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Name&lt;/td&gt;
+&lt;td&gt;A short name for the coupon.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Description &lt;/td&gt;
+&lt;td&gt;A description of the coupon for the customer.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Amount&lt;/td&gt;
+&lt;td&gt;The value of the discount for the coupon, either fixed or add a % on the end for a percentage discount.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Minimum Order&lt;/td&gt;
+&lt;td&gt;The minimum order value before the coupon is valid.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Minimum Calculated From &lt;sup&gt;1&lt;/sup&gt; &lt;/td&gt;
+&lt;td&gt;Options which allow you allow/disallow products when calculating the order value.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Free Shipping&lt;/td&gt;
+&lt;td&gt;The coupon gives free shipping on an order. Note. This overrides the coupon_amount figure but respects the minimum order value.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Code&lt;/td&gt;
+&lt;td&gt;You can enter your own code here, or leave blank for an auto generated one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Uses per Coupon&lt;/td&gt;
+&lt;td&gt;The maximum number of times the coupon can be used, leave blank if you want no limit.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Uses per Customer&lt;/td&gt;
+&lt;td&gt;Number of times a user can use the coupon, leave blank for no limit.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Start Date&lt;/td&gt;
+&lt;td&gt;The date the coupon will be valid from.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;End Date&lt;/td&gt;
+&lt;td&gt;The date the coupon expires.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Zone Restrictions &lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;Only allow the coupon to be used in the specified zone.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Customer previous orders less than &lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;Only allow this coupon for customers who have placed fewer than the specified number of orders.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; : These options have been available since Zen Cart 1.5.6.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupons FAQ&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Coupon Restrictions</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/coupon_restrictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/coupon_restrictions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Coupons can be restricted in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not applying to specific products&lt;/li&gt;
+&lt;li&gt;only applying to specific products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;creating-a-restriction&#34;&gt;Creating a restriction&lt;/h3&gt;
+&lt;p&gt;First set a restriction on:
+Top category DENY&lt;/p&gt;
+&lt;p&gt;Next, start adding the Categories and/or Products that are ALLOWED.&lt;/p&gt;
+&lt;p&gt;You can mix the Categories and Products on the restrictions.&lt;/p&gt;
+&lt;p&gt;By setting the Top Category to DENY then you will only permit what has then been added as an ALLOW to work with the Discount Coupon.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Gift Certificate Queue</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+&lt;p&gt;The Discounts &amp;gt; Gift Certificate Queue page allows you to view and release gift certificates which have been purchased but not yet issued.  This situation arises when the &lt;em&gt;Queue Purchases&lt;/em&gt; setting in Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Gift Certificates is used; otherwise, there is no queue.&lt;/p&gt;
+&lt;h3 id=&#34;release-certificate&#34;&gt;Release certificate&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have issued a gift certificate, possibly via the Mail Gift Certificate menu function, you can release the certificate as having been issued.&lt;/li&gt;
+&lt;li&gt;Click on the line entry (if there is more than one pending gift certificate) to cause the right arrow to appear in the action column.&lt;/li&gt;
+&lt;li&gt;You can click on the Order button to bring up a listing of the actual order this gift certificate is from if you have to do any processing to the order (such as issue a packing list for items to be shipped, or actually mail a physical certificate). Use the back button on that form to return here.&lt;/li&gt;
+&lt;li&gt;Click on the release gift button.&lt;/li&gt;
+&lt;li&gt;You will be shown the time stamp and the amount again, and be asked to confirm this certificate. Click on the red confirm button to release the certificate, or click on the cancel button to leave the certificate unreleased.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Send a Gift Certificate</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+&lt;p&gt;The Discounts &amp;gt; Send a Gift Certificate page allows you to generate gift certificates and issue them by email.&lt;/p&gt;
+&lt;h2 id=&#34;to-generatemail-a-gift-certificate-from-your-web-site&#34;&gt;To generate/mail a gift certificate from your web site&lt;/h2&gt;
+&lt;p&gt;Mailing gift certificates requires the Gift Certificates module to be installed (under Admin &amp;gt; Modules &amp;gt; Order Total).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Gift Certificates are recognized by redemption code, and not a name.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log in to the Zen Cart Admin section.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to Gift Certificate/Coupons &amp;gt; Mail Gift Certificates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the drop down menu select and existing customer to send the gift certificate, or enter a new address in the field below it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure that the default from address is who you want the email to be from.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter email subject like, &amp;lsquo;You have a Gift Certificate from a web site running Zen Cart.&amp;rsquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the amount value of the gift certificate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter a message to go with it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click send mail.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the next page review and send the certificate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Your customer will receive an email that look something like this.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BODY TEXT THAT YOU ENTERED
+
+The Gift Certificate is worth $20.00
+
+To redeem this Gift Certificate, please click on the link below. Please also write down the Redemption Code which is 20b171589e in case you have any problems.
+
+http://www.YOURSITE.com/store/index.php/gv_redeem/gv_no/20b171589e
+
+or visit http://www.YOURSITE.com/store/ and enter the code during the checkout process
+
+
+This email address was given to us by you or by one of our customers. If you feel that you have received this email in error, please send an email to YOURSITE@YOURMAIL.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;releasing-gift-certificates-created-by-admin&#34;&gt;Releasing Gift Certificates Created by Admin&lt;/h2&gt;
+&lt;p&gt;For stores that use the &lt;em&gt;Queue Purchases&lt;/em&gt; setting in Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Gift Certificates, purchased Gift Certificates must be released before they can be used.&lt;/p&gt;
+&lt;p&gt;Gift Certificates created by the admin are not subject to this restriction; no release is required.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Gift Certificates Sent</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;about Gift Certificates&lt;/a&gt; yet, please start there.&lt;/p&gt;
+&lt;p&gt;The Discounts &amp;gt; Gift Certificates Sent page allows you to view gift vouchers which have been sent.&lt;/p&gt;
+&lt;p&gt;Click on the line item to have the details shown on the right side of the screen.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

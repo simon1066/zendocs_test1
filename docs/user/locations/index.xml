@@ -1,0 +1,195 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Locations</title>
+    <link>/user/locations/</link>
+    <description>Recent content in Locations on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/locations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Creating Zone Definitions</title>
+      <link>/user/locations/zone_definitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/locations/zone_definitions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are unclear on how zones are used in Zen Cart, please see the help pages for &lt;a href=&#34;/user/admin_pages/locations/zones/&#34;&gt;Zones&lt;/a&gt; and &lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Zone definitions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zone Definitions can be created by adding each entry one at a time in the admin, or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the &lt;code&gt;Tools &amp;gt; Install SQL Patches&lt;/code&gt; menu.&lt;/p&gt;
+&lt;p&gt;Be careful when creating Zone Definitions such as Zone Definitions for the United States.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Country: United States  
+Zone: All Zones  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;is the United States with All Zones that includes all 50 States, DC, US Islands and Territories such as Puerto Rico and the US Virgin Islands and the Armed Forces.&lt;/p&gt;
+&lt;p&gt;If you need to distinguish your definition of the United States, then you need to specifically add the setting for the&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Country: United States  
+Zone: (specific Zone here)  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;to-manually-create-a-zone-using-the-zen-cart-admin&#34;&gt;To manually create a Zone using the Zen Cart Admin&lt;/h3&gt;
+&lt;p&gt;Suppose you want to create a zone containing Alaska and Hawaii only.&lt;br&gt;
+Here are the required steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to Admin &amp;gt; Locations &amp;gt; Zones Definitions.  Press the Insert button.&lt;/li&gt;
+&lt;li&gt;Enter a name (we will use &amp;ldquo;Non Continental US&amp;rdquo;) and a description (Alaska and Hawaii). Press Enter&lt;/li&gt;
+&lt;li&gt;A new row appears with the zone name &amp;ldquo;Non Continental US.&amp;rdquo; In the Infobox on the right, press the Details button.&lt;/li&gt;
+&lt;li&gt;Press Insert, and select Country = &amp;ldquo;United States&amp;rdquo; and Zone = &amp;ldquo;Alaska&amp;rdquo;.  Press Insert.&lt;/li&gt;
+&lt;li&gt;Press Insert, and select Country = &amp;ldquo;United States&amp;rdquo; and Zone = &amp;ldquo;Hawaii&amp;rdquo;.  Press Insert.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;re done!  You now have a new zone you can use anywhere Zone restriction is allowed, such as a shipping module&amp;rsquo;s configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;to-create-a-zone-for-the-us-continental-48-states--dc&#34;&gt;To create a Zone for the US Continental 48 States &amp;amp; DC&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO `geo_zones` (`geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`)   
+VALUES   
+(&amp;#39;48 Lower States&amp;#39;, &amp;#39;48 States + DC&amp;#39;, NULL, &amp;#39;2008-02-01 12:12:12&amp;#39;);  
+SET @geo_zone_id=last_insert_id();
+
+INSERT INTO `zones_to_geo_zones` (`zone_country_id`, `zone_id`, `geo_zone_id`)   
+VALUES  
+(223, 1, @geo_zone_id),  
+(223, 4, @geo_zone_id),  
+(223, 5, @geo_zone_id),  
+(223, 12, @geo_zone_id),  
+(223, 13, @geo_zone_id),  
+(223, 14, @geo_zone_id),  
+(223, 15, @geo_zone_id),  
+(223, 16, @geo_zone_id),  
+(223, 18, @geo_zone_id),  
+(223, 19, @geo_zone_id),  
+(223, 22, @geo_zone_id),  
+(223, 23, @geo_zone_id),  
+(223, 24, @geo_zone_id),  
+(223, 25, @geo_zone_id),  
+(223, 26, @geo_zone_id),  
+(223, 27, @geo_zone_id),  
+(223, 28, @geo_zone_id),  
+(223, 29, @geo_zone_id),  
+(223, 31, @geo_zone_id),  
+(223, 32, @geo_zone_id),  
+(223, 33, @geo_zone_id),  
+(223, 34, @geo_zone_id),  
+(223, 35, @geo_zone_id),  
+(223, 36, @geo_zone_id),  
+(223, 37, @geo_zone_id),  
+(223, 38, @geo_zone_id),  
+(223, 39, @geo_zone_id),  
+(223, 40, @geo_zone_id),  
+(223, 41, @geo_zone_id),  
+(223, 42, @geo_zone_id),  
+(223, 43, @geo_zone_id),  
+(223, 44, @geo_zone_id),  
+(223, 45, @geo_zone_id),  
+(223, 47, @geo_zone_id),  
+(223, 48, @geo_zone_id),  
+(223, 49, @geo_zone_id),  
+(223, 51, @geo_zone_id),  
+(223, 53, @geo_zone_id),  
+(223, 54, @geo_zone_id),  
+(223, 55, @geo_zone_id),  
+(223, 56, @geo_zone_id),  
+(223, 57, @geo_zone_id),  
+(223, 58, @geo_zone_id),  
+(223, 59, @geo_zone_id),  
+(223, 61, @geo_zone_id),  
+(223, 62, @geo_zone_id),  
+(223, 63, @geo_zone_id),  
+(223, 64, @geo_zone_id),  
+(223, 65, @geo_zone_id);  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;to-create-a-zone-for-the-us-50-states--dc&#34;&gt;To create a Zone for the US 50 States &amp;amp; DC&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO `geo_zones` (`geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`) 
+VALUES 
+(&amp;#39;50 States&amp;#39;, &amp;#39;50 States + DC&amp;#39;, NULL, &amp;#39;2008-02-01 12:12:12&amp;#39;);
+SET @geo_zone_id=last_insert_id();
+
+INSERT INTO `zones_to_geo_zones` (`zone_country_id`, `zone_id`, `geo_zone_id`) 
+VALUES
+(223, 1, @geo_zone_id),
+(223, 2, @geo_zone_id),
+(223, 4, @geo_zone_id),
+(223, 5, @geo_zone_id),
+(223, 12, @geo_zone_id),
+(223, 13, @geo_zone_id),
+(223, 14, @geo_zone_id),
+(223, 15, @geo_zone_id),
+(223, 16, @geo_zone_id),
+(223, 18, @geo_zone_id),
+(223, 19, @geo_zone_id),
+(223, 21, @geo_zone_id),
+(223, 22, @geo_zone_id),
+(223, 23, @geo_zone_id),
+(223, 24, @geo_zone_id),
+(223, 25, @geo_zone_id),
+(223, 26, @geo_zone_id),
+(223, 27, @geo_zone_id),
+(223, 28, @geo_zone_id),
+(223, 29, @geo_zone_id),
+(223, 31, @geo_zone_id),
+(223, 32, @geo_zone_id),
+(223, 33, @geo_zone_id),
+(223, 34, @geo_zone_id),
+(223, 35, @geo_zone_id),
+(223, 36, @geo_zone_id),
+(223, 37, @geo_zone_id),
+(223, 38, @geo_zone_id),
+(223, 39, @geo_zone_id),
+(223, 40, @geo_zone_id),
+(223, 41, @geo_zone_id),
+(223, 42, @geo_zone_id),
+(223, 43, @geo_zone_id),
+(223, 44, @geo_zone_id),
+(223, 45, @geo_zone_id),
+(223, 47, @geo_zone_id),
+(223, 48, @geo_zone_id),
+(223, 49, @geo_zone_id),
+(223, 51, @geo_zone_id),
+(223, 53, @geo_zone_id),
+(223, 54, @geo_zone_id),
+(223, 55, @geo_zone_id),
+(223, 56, @geo_zone_id),
+(223, 57, @geo_zone_id),
+(223, 58, @geo_zone_id),
+(223, 59, @geo_zone_id),
+(223, 61, @geo_zone_id),
+(223, 62, @geo_zone_id),
+(223, 63, @geo_zone_id),
+(223, 64, @geo_zone_id),
+(223, 65, @geo_zone_id);  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;to-create-a-zone-definition-for-the-rest-of-the-world-excluding-the-united-states-you-can-use&#34;&gt;To create a Zone Definition for the Rest of the World, excluding the United States, you can use:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO geo_zones (geo_zone_name, geo_zone_description, last_modified, date_added)   
+VALUES   
+(&amp;#39;&amp;lt;span class=&amp;#34;highlight&amp;#34;&amp;gt;Rest&amp;lt;/span&amp;gt; of the &amp;lt;span class=&amp;#34;highlight&amp;#34;&amp;gt;World&amp;lt;/span&amp;gt;&amp;#39;, &amp;#39;All Countries Except United States&amp;#39;, NULL, CURDATE());  
+SET @geo_zone_id=last_insert_id();
+
+INSERT INTO zones_to_geo_zones (zone_country_id, zone_id, geo_zone_id, date_added)   
+SELECT countries_id , 0, @geo_zone_id, CURDATE()   
+FROM countries   
+WHERE countries_iso_code_3 NOT IN (&amp;#39;USA&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;to-create-a-zone-definition-for-the-rest-of-the-world-excluding-the-united-states-and-canada-you-can-use&#34;&gt;To create a Zone Definition for the Rest of the World, excluding the United States and Canada, you can use:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO geo_zones (geo_zone_name, geo_zone_description, last_modified, date_added)   
+VALUES   
+(&amp;#39;International&amp;#39;, &amp;#39;All Countries Except USA and Canada&amp;#39;, NULL, CURDATE());  
+SET @geo_zone_id=last_insert_id();
+
+INSERT INTO zones_to_geo_zones (zone_country_id, zone_id, geo_zone_id, date_added)  
+SELECT countries_id , 0, @geo_zone_id, CURDATE()  
+FROM countries  
+WHERE countries_iso_code_3 NOT IN (&amp;#39;USA&amp;#39;,&amp;#39;CAN&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;to-create-a-zone-definition-for-the-rest-of-the-world-excluding-the-united-kingdom-you-can-use&#34;&gt;To create a Zone Definition for the Rest of the World, excluding the United Kingdom, you can use:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO geo_zones (geo_zone_name, geo_zone_description, last_modified, date_added)   
+VALUES   
+(&amp;#39;International&amp;#39;, &amp;#39;All Countries Except United Kingdom&amp;#39;, NULL, CURDATE());  
+
+INSERT INTO &amp;lt;span class=&amp;#34;highlight&amp;#34;&amp;gt;zones_to_geo_zones&amp;lt;/span&amp;gt; (zone_country_id, zone_id, geo_zone_id, date_added)   
+SELECT countries_id , 0, @geo_zone_id, CURDATE()   
+FROM countries   
+WHERE countries_iso_code_3 NOT IN (&amp;#39;GBR&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

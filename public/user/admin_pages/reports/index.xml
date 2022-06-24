@@ -1,0 +1,122 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Reports</title>
+    <link>/zendocs_test1/user/admin_pages/reports/</link>
+    <description>Recent content in Reports on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/reports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Customer Orders-Total</title>
+      <link>/zendocs_test1/user/admin_pages/reports/customer_orders_total/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/customer_orders_total/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report lists your customers ranked by their lifetime value.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/customer_orders_total.png&#34; alt=&#34;Customer Orders Total&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customers Referral</title>
+      <link>/zendocs_test1/user/admin_pages/reports/customers_referral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/customers_referral/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report creates a list of orders having a specified &lt;a href=&#34;/zendocs_test1/user/orders/customer_referral/&#34;&gt;referral or coupon code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that this is only relevant for stores that set Customers Referral Status to &amp;ldquo;1&amp;rdquo; or &amp;ldquo;2&amp;rdquo; on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Customer Details&lt;/a&gt; screen.   See &lt;a href=&#34;/zendocs_test1/user/reporting/customer_referral/&#34;&gt;Customer Referral Processing&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;The page opens showing the following fields on a form:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a selector list of customer referral codes (which the customer entered when they created their account).&lt;/li&gt;
+&lt;li&gt;a start and end date&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/customers_referral.png&#34; alt=&#34;Customers Referral&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Change these fields as needed and press the &lt;em&gt;Display&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;Orders matching this referral code will be displayed in a list.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/customers_referral_result.png&#34; alt=&#34;Customers Referral&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Products Low Stock</title>
+      <link>/zendocs_test1/user/admin_pages/reports/products_low_stock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/products_low_stock/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report shows your products ranked by quantity in stock, in ascending order, so that you can quickly identify which products need to be re-ordered.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/products_low_stock.png&#34; alt=&#34;Products Low Stock&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Products Purchased</title>
+      <link>/zendocs_test1/user/admin_pages/reports/products_purchased/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/products_purchased/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report shows all your products, ranked in sales order.&lt;/p&gt;
+&lt;p&gt;The Products Purchased Report queries the &lt;code&gt;orders_products&lt;/code&gt; table to get an exact count of the number of products sold.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This is different from how the &lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/#best-sellers&#34;&gt;Bestsellers Sidebox&lt;/a&gt; is built: the bestsellers list is based on the &lt;code&gt;products_ordered&lt;/code&gt; field in the &lt;code&gt;products&lt;/code&gt; table, which can be manipulated using the &lt;code&gt;Reset ALL Products Ordered&lt;/code&gt; button in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/store_manager/&#34;&gt;Store Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/products_purchased_report.png&#34; alt=&#34;Products Purchased Report&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Products Viewed</title>
+      <link>/zendocs_test1/user/admin_pages/reports/products_viewed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/products_viewed/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report lists of the number of times each product has been &amp;ldquo;viewed&amp;rdquo; (page visited).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/products_viewed.png&#34; alt=&#34;Products Viewed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The default reporting range is &amp;ldquo;the past year&amp;rdquo;, but you can change this as needed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In Zen Cart 1.5.7, the products_viewed data gathering was refactored to improve performance, so for upgraders from pre_1.5.7 to 1.5.7 or above, data will not be available for the interval prior to the upgrade date. Prior to v1.5.7 the numbers could not be filtered by a date range: they represented &amp;ldquo;all views since the counters were reset to 0&amp;rdquo;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Sales Report with Graphs</title>
+      <link>/zendocs_test1/user/admin_pages/reports/graphical_sales_report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/graphical_sales_report/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This report shows sales in both graphical and tabular format.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/srg_1.png&#34; alt=&#34;Sales Reports with Graphs - bar chart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/srg_2.png&#34; alt=&#34;Sales Reports with Graphs - table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;An alternative tool to generate tabular sales reports is the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=9&#34;&gt;Sales Report plugin&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

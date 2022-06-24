@@ -1,0 +1,523 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Security</title>
+    <link>/user/security/</link>
+    <description>Recent content in Security on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Blocking probing activity</title>
+      <link>/user/security/block_probes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/block_probes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some common attempts to probe your site for old vulnerabilities, or vulnerabilities from other systems, can be blocked by adding the following code to your site:&lt;br&gt;
+1. Copy and paste the following code into a new text file in your favorite text-only editor.&lt;br&gt;
+2. Save the file as &lt;code&gt;block_probing.php&lt;/code&gt;, and upload it to your store into the following folders:&lt;/p&gt;
+&lt;p&gt;a) &lt;code&gt;/YOURADMIN/includes/extra_configures/  &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;b) &lt;code&gt;/includes/extra_configures/  &lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+ * @package security
+ * @copyright Copyright 2003-2011 Zen Cart Development Team
+ * @license [https://www.zen-cart.com/license/2_0.txt](https://www.zen-cart.com/license/2_0.txt) GNU Public License V2.0
+ * @copyright Portions Copyright 2008,2009,2010,2011 GNU/GPL V.2 BY MIKE H. [HTTP://WWW.SPAMBOTSECURITY.COM](HTTP://WWW.SPAMBOTSECURITY.COM)
+ * @version $Id: vuln_trap.php 15882 2011-09-01 08:23:55Z drbyte $
+ */
+$paramsToCheck = array();
+
+// List of strings to search for and block
+$paramsToCheck[] = &amp;#39;.php/login.php&amp;#39;;
+$paramsToCheck[] = &amp;#39;.php/password_forgotten.php&amp;#39;;
+$paramsToCheck[] = &amp;#39;.php/sqlpatch.php&amp;#39;;
+$paramsToCheck[] = &amp;#39;file_manager.php&amp;#39;;
+$paramsToCheck[] = &amp;#39;index.html?&amp;#39;;
+$paramsToCheck[] = &amp;#39;:2082&amp;#39;;
+$paramsToCheck[] = &amp;#39;:2083&amp;#39;;
+$paramsToCheck[] = &amp;#39;:2086&amp;#39;;
+$paramsToCheck[] = &amp;#39;:2087&amp;#39;;
+
+// processing ****************************
+/**
+ * inoculate against hack attempts which waste CPU cycles
+ */
+$contaminated = (isset($_FILES[&amp;#39;GLOBALS&amp;#39;]) || isset($_REQUEST[&amp;#39;GLOBALS&amp;#39;])) ? true : false;
+$paramsToAvoid  = array(&amp;#39;GLOBALS&amp;#39;, &amp;#39;_COOKIE&amp;#39;, &amp;#39;_ENV&amp;#39;, &amp;#39;_FILES&amp;#39;, &amp;#39;_GET&amp;#39;, &amp;#39;_POST&amp;#39;,  &amp;#39;_REQUEST&amp;#39;, &amp;#39;_SERVER&amp;#39;, &amp;#39;_SESSION&amp;#39;, &amp;#39;HTTP_COOKIE_VARS&amp;#39;, &amp;#39;HTTP_ENV_VARS&amp;#39;,  &amp;#39;HTTP_GET_VARS&amp;#39;, &amp;#39;HTTP_POST_VARS&amp;#39;, &amp;#39;HTTP_POST_FILES&amp;#39;,  &amp;#39;HTTP_RAW_POST_DATA&amp;#39;, &amp;#39;HTTP_SERVER_VARS&amp;#39;, &amp;#39;HTTP_SESSION_VARS&amp;#39;);
+$paramsToAvoid[] = &amp;#39;autoLoadConfig&amp;#39;;
+$paramsToAvoid[] = &amp;#39;mosConfig_absolute_path&amp;#39;;
+$paramsToAvoid[] = &amp;#39;hash&amp;#39;;
+$paramsToAvoid[] = &amp;#39;main&amp;#39;;
+foreach($paramsToAvoid as $key) {
+  if (isset($_GET[$key]) || isset($_POST[$key]) || isset($_COOKIE[$key])) {
+    $contaminated = true;
+    break;
+  }
+}
+if ($contaminated)
+{
+  header(&amp;#39;HTTP/1.1 406 Not Acceptable&amp;#39;);
+  exit(0);
+}
+$requesturi=@$_SERVER[&amp;#39;REQUEST_URI&amp;#39;];
+$lcrequesturi=strtolower($requesturi);
+$query2=$useragent=&amp;#34;&amp;#34;;
+if(isset($_SERVER[&amp;#39;QUERY_STRING&amp;#39;])){$query2=@$_SERVER[&amp;#39;QUERY_STRING&amp;#39;];}
+$query=strtolower($query2);
+$querydec2=urldecode($query2); // urldecoded to make signature writing for detection matching easier
+$querydec=strtolower($querydec2);
+$querydecsws=preg_replace(&amp;#39;/\s+/&amp;#39;,&amp;#39;&amp;#39;,$querydec);
+$querydecsws=preg_replace(&amp;#34;/[^\x9\xA\xD\x20-\x7F]/&amp;#34;,&amp;#39;&amp;#39;,$querydecsws);
+if(isset($_SERVER[&amp;#39;HTTP_USER_AGENT&amp;#39;])){$useragent=@$_SERVER[&amp;#39;HTTP_USER_AGENT&amp;#39;];}
+$lcuseragent=strtolower($useragent);
+$lcuseragentsws=preg_replace(&amp;#39;/\s+/&amp;#39;,&amp;#39;&amp;#39;,$lcuseragent);
+$lcuseragentsws=preg_replace(&amp;#34;/[^\x9\xA\xD\x20-\x7F]/&amp;#34;,&amp;#39;&amp;#39;,$lcuseragentsws);
+
+foreach ($paramsToCheck as $key =&amp;gt; $val) {
+  if (substr_count($lcrequesturi, $val) || substr_count($query, $val) || substr($query, -1) == &amp;#39;?&amp;#39;) {
+    $contaminated = TRUE;
+  }
+}
+unset($paramsToCheck, $paramsToAvoid, $key, $val);
+if ($contaminated)
+{
+  header(&amp;#39;HTTP/1.1 406 Not Acceptable&amp;#39;);
+  exit(0);
+}
+unset($contaminated);
+unset($query2,  $query, $querydec2, $querydec, $querydecsws, $useragent, $lcuseragent,  $lcuseragentsws, $requesturi, $lcrequesturi, $lcrequesturisws, $lcpost,  $lcpostsws);
+/* *** END OF INOCULATION *** */
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Download folder - Relocating</title>
+      <link>/user/security/relocate_download_folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/relocate_download_folder/</guid>
+      <description>
+        
+        
+        &lt;p&gt;With Zen Cart it is possible to relocate the &amp;ldquo;download&amp;rdquo; folder outside your 
+&lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt; 
+folder so that thieves cannot directly link to real files on your server and download without paying or being authenticated.&lt;/p&gt;
+&lt;p&gt;To do this, you must:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a download method of either &amp;ldquo;&lt;strong&gt;Download by Streaming&lt;/strong&gt;&amp;rdquo; or &amp;ldquo;&lt;strong&gt;Download by Redirect&lt;/strong&gt;&amp;rdquo; from &lt;strong&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/strong&gt;.&lt;br&gt;
+If you&amp;rsquo;re using a Linux server, either option is suitable.&lt;br&gt;
+If you&amp;rsquo;re using a Windows server running IIS, you may not be able use redirects (depending on PHP version and whether or not your server allows PHP symlinks). Instead, you will need to use &lt;em&gt;&lt;strong&gt;Download by Streaming&lt;/strong&gt;&lt;/em&gt; in order to handle secured downloads.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to move your &amp;ldquo;download&amp;rdquo; folder outside your webroot. Perhaps drag-and-drop it to a level &amp;ldquo;above&amp;rdquo; your &lt;code&gt;public_html&lt;/code&gt; folder.  The method you choose for moving or creating this folder will depend on your hosting account and the tools available to you for moving folders.&lt;/p&gt;
+&lt;p&gt;Usually the &amp;ldquo;download&amp;rdquo; folder is located inside your store area, for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/home/my_user_name/public_html/mystore/download&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You want to move it &amp;ldquo;above&amp;rdquo; your &lt;code&gt;public_html&lt;/code&gt; folder, something like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/home/my_user_name/download&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit your two configure.php files to show the new path to your download folder:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/YOURADMIN/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In Zen Cart 1.5.5 and higher:&lt;/p&gt;
+&lt;div class=&#34;indent&#34;&gt;
+&lt;p&gt;There is no line setting &lt;code&gt;DIR_FS_DOWNLOAD&lt;/code&gt; in these versions of Zen Cart.  You must &lt;em&gt;add&lt;/em&gt; a line to the bottom of your configure.php files that says something like&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DIR_FS_DOWNLOAD&#39;, &#39;/home/my_user_name/download/&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In Zen Cart 1.5.4 and lower:&lt;/p&gt;
+&lt;div class=&#34;indent&#34;&gt;
+&lt;p&gt;You&amp;rsquo;ll need to edit the line that says this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DIR_FS_DOWNLOAD&#39;, DIR_FS_CATALOG . &#39;download/&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;to look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DIR_FS_DOWNLOAD&#39;, &#39;/home/my_user_name/download/&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Specifically, you need to indicate the exact complete path for the webserver&amp;rsquo;s filesystem that points to your download folder.  You could use your &lt;code&gt;DIR_FS_CATALOG&lt;/code&gt; entry in your configure.php file as a reference, and make appropriate adjustments.  Your FTP program and/or your webserver&amp;rsquo;s hosting control panel should be able to help you understand the complete path.&lt;/p&gt;
+&lt;p&gt;As an example, if your &lt;code&gt;DIR_FS_CATALOG&lt;/code&gt; value is set as follows:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DIR_FS_CATALOG&#39;, &#39;/home/jimmy/public_html/store/&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;then you would want&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DIR_FS_DOWNLOAD&#39;, &#39;/home/jimmy/download/&#39;);&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How Zen Cart uses cookies</title>
+      <link>/user/security/cookies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/cookies/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A fresh clean &lt;em&gt;uncustomized&lt;/em&gt; installation of Zen Cart does VERY LITTLE with cookies or anything related to &amp;ldquo;tracking&amp;rdquo; of visitors.&lt;/p&gt;
+&lt;h3 id=&#34;cookies&#34;&gt;COOKIES&lt;/h3&gt;
+&lt;p&gt;Zen Cart requires that the visitor&amp;rsquo;s computer accept a session cookie. This session cookie contains simply the session ID number which identifies the visitor to the store, as separate from other visitors. The session cookie contains no personal identity information, and in itself is thus anonymous as a 3rd-party cannot use anything in the cookie to identify the visitor in any way.&lt;br&gt;
+In a traditional configuration, and by definition, this session cookie expires at the end of the visitor&amp;rsquo;s session in the browser, or at a predefined time (typically 24 minutes) after their last &amp;ldquo;click&amp;rdquo;, whichever is sooner.&lt;/p&gt;
+&lt;h3 id=&#34;sessions&#34;&gt;SESSIONS&lt;/h3&gt;
+&lt;p&gt;The session ID is used only to recognize what the visitor has done during their visit to the store. This includes things like: whether the visitor has put something in their shopping basket, whether they have logged in, and allows them to proceed through checkout.&lt;/p&gt;
+&lt;h3 id=&#34;exceptions&#34;&gt;EXCEPTIONS&lt;/h3&gt;
+&lt;p&gt;Storeowners who alter the original Zen Cart code by the use of addons/plugins, custom code, additional HTML in templates, adding JavaScript segments, etc, may be engaging in additional tracking and using additional cookies for broader purposes than Zen Cart itself requires. Each store&amp;rsquo;s configuration and activity is unique to their own implementation. Each storeowner is responsible for their own use of the software and the addons/plugins/external-code and any other alteration they make to it.&lt;/p&gt;
+&lt;h3 id=&#34;disclaimer&#34;&gt;DISCLAIMER&lt;/h3&gt;
+&lt;p&gt;This article is for general informational purposes only. It is NOT legal advice, nor should it be relied upon as such. This information is not intended to replace proper legal counsel. Zen Ventures, LLC assumes no liability or responsibility for the use of this information, nor for ways in which any shop has altered the use or function of Zen Cart official code. It is up to individual storeowners to disclose the ways in which their store operates differently from core basic Zen Cart functionality.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Passwords in Zen Cart</title>
+      <link>/user/security/passwords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/passwords/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;customer-passwords&#34;&gt;Customer Passwords&lt;/h3&gt;
+&lt;p&gt;The only requirement for customer passwords in Zen Cart is that the length of a password must be greater than or equal to &lt;code&gt;ENTRY_PASSWORD_MIN_LENGTH&lt;/code&gt;, which is set on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_minimumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Minimum Values&lt;/a&gt; screen.&lt;/p&gt;
+&lt;h3 id=&#34;admin-passwords&#34;&gt;Admin Passwords&lt;/h3&gt;
+&lt;p&gt;Admin Passwords must meet the following requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The length of an admin password must be greater than or equal to &lt;code&gt;ADMIN_PASSWORD_MIN_LENGTH&lt;/code&gt; (which has a minimum value of 7).&lt;/li&gt;
+&lt;li&gt;Admin passwords must contain at least 1 letter and 1 number.&lt;/li&gt;
+&lt;li&gt;Admin passwords must not be the same as the last 4 passwords (unless &lt;code&gt;PADSS_PWD_EXPIRY_ENFORCED&lt;/code&gt; is disabled).&lt;/li&gt;
+&lt;li&gt;Admin passwords must be changed every 90 days (unless &lt;code&gt;PADSS_PWD_EXPIRY_ENFORCED&lt;/code&gt; is disabled).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;disabling-admin-password-checks&#34;&gt;Disabling Admin Password checks&lt;/h3&gt;
+&lt;p&gt;Disabling this check makes your site makes your site NON-COMPLIANT with PA-DSS rules. Disabling should only be used by developers who are working on sites that are not available over the public Internet.&lt;/p&gt;
+&lt;p&gt;The setting &lt;code&gt;PADSS_PWD_EXPIRY_ENFORCED&lt;/code&gt; is on the screen &lt;a href=&#34;/admin_pages/configuration/configuration_mystore&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;changing-customer-passwords&#34;&gt;Changing Customer Passwords&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Customers may change their own passwords using the screen My Account &amp;gt; Change my Account Password.&lt;/li&gt;
+&lt;li&gt;Customers may reset their passwords using the &amp;ldquo;Forgot your password&amp;rdquo; link on the login page.&lt;/li&gt;
+&lt;li&gt;Since 1.5.5, admins may reset customer passwords from the &lt;a href=&#34;/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/a&gt; screen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;changing-admin-passwords&#34;&gt;Changing Admin Passwords&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Admins may change their own passwords (or the passwords of other admins) using the screen Admins &amp;gt; Admin Users.&lt;/li&gt;
+&lt;li&gt;Admins are forced to change their own passwords every 90 days as noted above.&lt;/li&gt;
+&lt;li&gt;Admins may reset their passwords using the &amp;ldquo;Forgot Password?&amp;rdquo; link on the login page.&lt;/li&gt;
+&lt;li&gt;More advanced troubleshooting tips for changing admin passwords are provided in the FAQ &lt;a href=&#34;/user/troubleshooting/reset_admin_password/&#34;&gt;Admin Password - Resetting or Changing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;database-passwords&#34;&gt;Database Passwords&lt;/h3&gt;
+&lt;p&gt;The password pair for database access is contained in the value &lt;code&gt;DB_SERVER_PASSWORD&lt;/code&gt;, which is set in the files &lt;code&gt;includes/configure.php&lt;/code&gt; and &lt;code&gt;admin/includes/configure.php&lt;/code&gt;.  Your hosting company may have rules for these passwords.&lt;/p&gt;
+&lt;p&gt;Some plugins such as &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL Plugin&lt;/a&gt; use the database password in a shell command.  In this case, the password must not use shell metacharacters.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: PCI Compliance Statement</title>
+      <link>/user/security/pci_compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/pci_compliance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;pci-dss-compliance-questions-answered&#34;&gt;PCI DSS Compliance Questions Answered&lt;/h2&gt;
+&lt;h3 id=&#34;common-myths-about-pci-compliance&#34;&gt;Common myths about PCI Compliance&lt;/h3&gt;
+&lt;p&gt;Please see the following page for a better understanding of what PCI Compliance is NOT:  &lt;a href=&#34;https://www.pcisecuritystandards.org/pdfs/pciscc_ten_common_myths.pdf&#34;&gt;https://www.pcisecuritystandards.org/pdfs/pciscc_ten_common_myths.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;answers-to-the-most-commonly-asked-questions-pertaining-to-payment-card-industry-data-security-standard-compliance&#34;&gt;Answers to the most commonly-asked questions pertaining to Payment Card Industry Data Security Standard compliance&lt;/h3&gt;
+&lt;p&gt;&lt;i&gt;DISCLAIMER: The following answers pertain to a webstore built with default Zen Cart code without any customizations, using only built-in features/modules/capabilities, in the default configuration.&lt;br&gt;
+Any customizations you do to your store render these statements incomplete and require that you answer these questions yourself.  &lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Question 6.2 Is the software and application development process based on an industry best practice and is information security included throughout the software development life cycle (SDLC) process?
+Yes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Question 6.5 Were the guidelines commonly accepted by the security community (such as Open Web Application Security Project group (&lt;a href=&#34;http://www.owasp.org/&#34;&gt;www.owasp.org&lt;/a&gt;)) taken into account in the development of Web applications?
+Yes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Question 6.6 When authenticating over the Internet, is the application designed to prevent malicious users from trying to determine existing user accounts?
+Yes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Question 6.7 Is sensitive cardholder data stored in cookies secured or encrypted?&lt;br&gt;
+Cookies are not used to store Cardholder data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Question 6.8 Are controls implemented on the server side to prevent SQL injection and other bypassing of client side-input controls?
+Yes&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pabp-standards-compliance&#34;&gt;PABP Standards Compliance&lt;/h2&gt;
+&lt;p&gt;A fresh install of Zen Cart contains several built-in payment modules which connect to an external gateway to do live credit card transaction processing. &lt;strong&gt;These built-in gateway modules are designed to be PABP compliant.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Any alterations made to these modules by an individual storeowner, or any addon modules built by third-party developers, may or may not be PABP compliant. The onus is on the store merchant to ensure compliance for satisfying PABP requirements for their own merchant account TOS.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Responding to a hack</title>
+      <link>/user/security/hacked/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/hacked/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apply-security-fixes-applicable-to-your-version&#34;&gt;Apply Security Fixes applicable to your version&lt;/h2&gt;
+&lt;p&gt;1. If any &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements&#34;&gt;security fixes&lt;/a&gt; have been posted for your version, be sure you have installed them.&lt;/p&gt;
+&lt;h2 id=&#34;site-audit-to-look-for-damaged-or-added-files&#34;&gt;Site Audit to look for damaged or added files&lt;/h2&gt;
+&lt;p&gt;2. You will need to do a full site audit to be sure all files are as you expect them to be. &lt;a href=&#34;/user/troubleshooting/diagnosing_obscure_issues/&#34;&gt;These steps can be used as a guide.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;secure-your-site-using-the-security-recommendations&#34;&gt;Secure Your Site Using the Security Recommendations&lt;/h2&gt;
+&lt;p&gt;3. Ensure that you have secured your site following the recommendations &lt;a href=&#34;https://www.zen-cart.com/docs/important_site_security_recommendations.html&#34;&gt;provided with the code&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;other-resources&#34;&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;4. You may find these tips helpful:
+&lt;a href=&#34;https://www.google.com/webmasters/hacked/&#34;&gt;https://www.google.com/webmasters/hacked/&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Security Recommendations</title>
+      <link>/user/security/security_recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/security_recommendations/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;security-basics&#34;&gt;Security basics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Learn about &lt;a href=&#34;/user/first_steps/security/&#34;&gt;running your site securely&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get an &lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;SSL certificate&lt;/a&gt;. Yes, &lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;you need SSL&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;steps-to-a-more-secure-site&#34;&gt;Steps to a More Secure Site&lt;/h2&gt;
+&lt;h3 id=&#34;1-remove-extra-folders-from-your-server-after-install&#34;&gt;1. Remove extra folders from your server after install&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s important that after you&amp;rsquo;ve installed your site and are satisfied that it&amp;rsquo;s working properly, including actually doing live transactions to test ALL the payment and shipping modules you&amp;rsquo;re using on your site, be sure to do some cleanup:&lt;/p&gt;
+&lt;p&gt;REMOVE THE FOLLOWING FOLDERS (and all the files inside them), TO MINIMIZE SECURITY RISKS:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; - /docs  
+ - /extras  
+ - /zc_install  
+ - /install.txt (this file can be removed, too)  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is safe to keep these files on your own computer, since they can be used as references/documentation, or used to aid in troubleshooting as diagnostic tools, or for upgrading/installing again in the future. But those folders/files should &lt;em&gt;not&lt;/em&gt; be on a live webserver.&lt;/p&gt;
+&lt;p&gt;Optional: Additionally, &lt;em&gt;IF&lt;/em&gt; you have no intentions of supporting downloadable products or music-media products, you can &lt;em&gt;also&lt;/em&gt; remove these folders:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; - /download  
+ - /media  
+ - /pub  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then you&amp;rsquo;ll need to go to your Admin &amp;gt; Configuration &amp;gt; Attribute Settings &amp;gt; Enable Downloads, and set it to &lt;em&gt;False&lt;/em&gt; to turn off the warning message about the missing download folder.&lt;/p&gt;
+&lt;p&gt;In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.&lt;/p&gt;
+&lt;h3 id=&#34;2-_admin_-folder-name&#34;&gt;2. &lt;em&gt;/admin&lt;/em&gt; folder name&lt;/h3&gt;
+&lt;p&gt;It is recommended for additional security that you not use &lt;code&gt;admin&lt;/code&gt; as the name of your Admin area. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.&lt;/p&gt;
+&lt;p&gt;By default the Zen Cart installer will rename it for you.&lt;/p&gt;
+&lt;p&gt;Some 3rd-party auto-install scripts provided by hosting companies also use a directory not called &amp;ldquo;admin&amp;rdquo; &amp;hellip; but they always use the same directory name on all sites they install, so you really ought to rename it yourself!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/user/installing/rename_admin/&#34;&gt;Instructions for renaming your admin folder can be found in this article&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;3-use-smtpauth-or-smtp-as-your-email-transport-method-instead-of-the-generic-php-or-sendmail-settings&#34;&gt;3. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic &amp;ldquo;PHP&amp;rdquo; or &amp;ldquo;sendmail&amp;rdquo; settings.&lt;/h3&gt;
+&lt;p&gt;Go to Admin &amp;gt; Configuration &amp;gt; Email Options, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.&lt;/p&gt;
+&lt;p&gt;This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.&lt;/p&gt;
+&lt;h3 id=&#34;4-consider-using-a-firewall-service-like-cloudflare&#34;&gt;4. Consider using a firewall service like Cloudflare&lt;/h3&gt;
+&lt;p&gt;A free account on Cloudflare.com will let you manage your DNS through them, and set up IP-blocking from malicious visitors.&lt;/p&gt;
+&lt;p&gt;By default Cloudflare will then block all kinds of bad traffic automatically for you.&lt;/p&gt;
+&lt;p&gt;You can set up a firewall rule (one of five free rules available) to block a &amp;ldquo;list&amp;rdquo; of IP addresses that you manage. 
+You can set up other firewall rules to block entire countries. (Be sure to only block countries you will actually never intend to sell to.)&lt;/p&gt;
+&lt;p&gt;In order for it to work, you must change your domain&amp;rsquo;s Name Servers (in your domain registrar) to point to Cloudflare instead of to your hosting company.&lt;/p&gt;
+&lt;p&gt;If you wish to block IP addresses independently from your store&amp;rsquo;s Admin (whether you also use Cloudflare or not) you might consider installing the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2237&#34;&gt;Access Blocker plugin&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-delete-any-unused-_admin_-accounts&#34;&gt;5. Delete any unused &lt;em&gt;Admin&lt;/em&gt; accounts&lt;/h3&gt;
+&lt;p&gt;Go to: Admin &amp;gt; Admin Access &amp;gt; Admin Users&lt;/p&gt;
+&lt;p&gt;In your admin Users screen, check for any unused/unrecognized Admin accounts, and delete them. Especially the Demo account, if it exists.&lt;/p&gt;
+&lt;h3 id=&#34;6-admin-password-security&#34;&gt;6. Admin Password Security&lt;/h3&gt;
+&lt;p&gt;It is wise to use complicated passwords so that a would-be hacker can&amp;rsquo;t easily guess them.&lt;/p&gt;
+&lt;p&gt;We recommend that you use passwords that are at least eight or more characters long, and a mix of letters and numbers, and even upper-and-lower case. Making it multiple words (of letters-and-numbers) with spaces in between will make it almost impossible to guess or crack.&lt;/p&gt;
+&lt;p&gt;If you are going to use normal words it is a good idea to join together two normal words that don&amp;rsquo;t normally go together, again separating them with spaces and maybe mixing in some uppercase letters.&lt;/p&gt;
+&lt;p&gt;Admin passwords should be changed at least every 3 months. And anytime an employee leaves your company.&lt;/p&gt;
+&lt;p&gt;Visit Admin &amp;gt; Admin Access &amp;gt; Admin Users to change passwords.&lt;/p&gt;
+&lt;p&gt;(or for v1.3.9 and older, you can change your Admin password in Admin &amp;gt; Tools &amp;gt; Admin Settings, and click on the Reset Password button, or click on the icon that looks like a recycle symbol.)&lt;/p&gt;
+&lt;h3 id=&#34;7-admin-access-protection&#34;&gt;7. Admin Access Protection&lt;/h3&gt;
+&lt;p&gt;It is wise to observe caution while working in your admin area:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;use only one browser tab&lt;/strong&gt; to access your admin area&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;always log out of your admin&lt;/strong&gt; when not using it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Be careful clicking on links in emails whose content/purpose you don&amp;rsquo;t recognize/expect.&lt;/p&gt;
+&lt;h3 id=&#34;8-protect-your-define-pages-content-in-html_includes&#34;&gt;8. Protect your &amp;ldquo;define pages&amp;rdquo; content in &amp;ldquo;html_includes&amp;rdquo;&lt;/h3&gt;
+&lt;p&gt;After you have finished editing your define pages in &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Define Pages Editor&lt;/a&gt;, you should protect them:&lt;/p&gt;
+&lt;p&gt;A. Download a copy of them to your PC using your &lt;a href=&#34;/user/first_steps/useful_tools/&#34;&gt;FTP software&lt;/a&gt;. They are located in the &lt;code&gt;/includes/languages/english/html_includes&lt;/code&gt; folder and subfolders.&lt;/p&gt;
+&lt;p&gt;B. Make them read-only. See notes above on CHMOD.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/includes/languages/english/html_includes&lt;/code&gt; – and all files/folders underneath&lt;/p&gt;
+&lt;p&gt;If you make them read-only, then a would-be hacker cannot edit them if they gain access to your system, unless they can get permissions to change the read-only status, which is more complicated.&lt;/p&gt;
+&lt;p&gt;Note: Of course, once you set them read-only, then you&amp;rsquo;ll need to go and set them back to read-write before making additional changes using the define-pages editor or uploading replacements via FTP, and then read-only again when done.&lt;/p&gt;
+&lt;h3 id=&#34;9-use-_htaccess_-files-to-protect-against-unwanted-snooping&#34;&gt;9. Use &lt;em&gt;.htaccess&lt;/em&gt; files to protect against unwanted snooping&lt;/h3&gt;
+&lt;p&gt;If your server doesn&amp;rsquo;t support use of .htaccess files, you&amp;rsquo;ll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied &lt;code&gt;.htaccess&lt;/code&gt; files but using &lt;em&gt;your&lt;/em&gt; server&amp;rsquo;s available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.&lt;/p&gt;
+&lt;p&gt;In order for the &lt;code&gt;.htaccess&lt;/code&gt; protections to work effectively, your host must include either &lt;code&gt;All&lt;/code&gt; or all of these: &lt;code&gt;Limit Options Indexes&lt;/code&gt; parameters to the &lt;code&gt;AllowOverride&lt;/code&gt; configuration in the server&amp;rsquo;s master Apache &lt;code&gt;httpd.conf&lt;/code&gt; file.&lt;/p&gt;
+&lt;h3 id=&#34;10-protect-your-images-and-other-folders&#34;&gt;10. Protect your &amp;ldquo;images&amp;rdquo; and other folders&lt;/h3&gt;
+&lt;p&gt;During initial installation, you are advised to set your images folder to read/write, so that you can use the &lt;em&gt;Admin&lt;/em&gt; interface to upload product/category images without having to use FTP for each one. Similar recommendations are made to other files for various reasons.&lt;/p&gt;
+&lt;p&gt;However, leaving the images (or any other) folder in read/write mode means that hackers might be able to put malicious files in this (or other) folder(s) and thus create access points from which to attempt nasty exploits.&lt;/p&gt;
+&lt;p&gt;Thus, once your site is built and your images have been created/loaded, you could drop the security for the images directories down from read/write to read-only. ie: chmod down to 644 for files and 755 for folders.&lt;/p&gt;
+&lt;h4 id=&#34;filefolder-permissions-settings&#34;&gt;File/Folder permissions settings&lt;/h4&gt;
+&lt;p&gt;On Linux/Unix hosts, generally, permission-setting recommendations for basic security are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;folders/directories: 755&lt;/li&gt;
+&lt;li&gt;files: 644&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On Windows hosts, setting files read-only is usually sufficient. Should double-check that the &lt;em&gt;Internet Guest Account&lt;/em&gt; has limited (read-only) access.&lt;/p&gt;
+&lt;h4 id=&#34;folder-purposes&#34;&gt;Folder Purposes&lt;/h4&gt;
+&lt;p&gt;The folders for which installation suggests read-write access for setup are these. If your site supports .htaccess protection, then you should use it for these folders.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/&lt;strong&gt;cache&lt;/strong&gt;&lt;br&gt;
+This is used to cache session and database information. The BEST security protection for this is to move it to a folder &amp;ldquo;above&amp;rdquo; the 
+&lt;a href=&#34;/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt; 
+so that it&amp;rsquo;s not accessible via a browser. (Requires changes to &lt;code&gt;DIR_FS_SQL_CACHE&lt;/code&gt; setting in configure.php files as well as &lt;a href=&#34;/user/admin_pages/configuration/configuration_sessions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Sessions &amp;gt; Session Directory&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;images&lt;/strong&gt;&lt;br&gt;
+See other suggestions earlier.&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;includes/languages/english/html_includes&lt;/strong&gt;&lt;br&gt;
+See other suggestions earlier.&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;logs&lt;/strong&gt;&lt;br&gt;
+This folder is used for storing debug or error logs needed for troubleshooting problems which may be occurring on your site. You may wish to relocate this folder above your web/document-root for security reasons. Update the DIR_FS_LOG in both configure.php files to point to the new location.&lt;br&gt;
+(Not applicable to versions older than v1.5.0)&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;media&lt;/strong&gt;&lt;br&gt;
+This is only suggested read-write for the sake of being able to upload music-product media files via the admin. Could be done by FTP as an alternative.&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;pub&lt;/strong&gt;&lt;br&gt;
+This is used on Linux/Unix hosts to have downloadable products made available to customers via a secure delivery method which doesn&amp;rsquo;t disclose the &amp;lsquo;real&amp;rsquo; location of files/data on your server (so that people can&amp;rsquo;t share a URL and have their friends steal downloads from your site)&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;admin/backups&lt;/strong&gt;&lt;br&gt;
+This is used by automated backup routines to store database backups. Optional.&lt;/li&gt;
+&lt;li&gt;/&lt;strong&gt;admin/images/graphs&lt;/strong&gt;&lt;br&gt;
+This is used by the &lt;a href=&#34;/user/admin_pages/tools/banner_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Banner Manager&lt;/a&gt; 
+for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;11-remove-the-print-url-feature-from-your-browser&#34;&gt;11. Remove the print URL feature from your browser&lt;/h3&gt;
+&lt;p&gt;To stop the browser from printing the admin URL (which discloses your Admin foldername) on the invoice follow these steps:.&lt;br&gt;
+*   Click on &lt;em&gt;File&lt;/em&gt; then &lt;em&gt;Page Setup&lt;/em&gt;
+*   On the Page Setup window click on the tab &amp;ldquo;Margins &amp;amp; Header/Footer&amp;rdquo;. In the &amp;ldquo;Header &amp;amp; Footer&amp;rdquo; section set all of the drop downs to &amp;ndash;blank&amp;ndash;. (Or at least remove all instances of &amp;ldquo;Title&amp;rdquo; and &amp;ldquo;URL&amp;rdquo; from the various boxes.) (In some browsers the &amp;ldquo;URL&amp;rdquo; is denoted by the &lt;code&gt;&amp;amp;u&lt;/code&gt; pattern, which is what you should remove.)&lt;/p&gt;
+&lt;h3 id=&#34;12-things-to-check-up-on-regularly&#34;&gt;12. Things to Check Up on Regularly&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Be sure you&amp;rsquo;ve done all the steps listed in this document.&lt;/li&gt;
+&lt;li&gt;Make recent backups of your website files and database.
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backup the database over a secure connection (ie: if you&amp;rsquo;re using phpMyAdmin to backup, then make sure you&amp;rsquo;re using HTTPS addresses in your URLs).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backup the website files over a secure connection If you&amp;rsquo;re copying files via FTP, be sure to use a secure form of FTP, not plain FTP. 
+See &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt; and &lt;a href=&#34;/user/first_steps/security/&#34;&gt;security&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Store the backed up database and website files into an encrypted file. Note: You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Check your server&amp;rsquo;s error log regularly for odd or suspicious activity. Your hosting control panel should give you access to the Apache &lt;code&gt;error_log&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Look for any links that went to a page that isn&amp;rsquo;t in your site.&lt;/li&gt;
+&lt;li&gt;Look for links that have &lt;code&gt;http&lt;/code&gt; after the &lt;em&gt;index.php&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Check your website files regularly to be sure nothing&amp;rsquo;s been added or altered.&lt;/li&gt;
+&lt;li&gt;Ask your web host what they have done to be sure the server you&amp;rsquo;re on is safe and secure.  You need to guard against two things:
+&lt;ul&gt;
+&lt;li&gt;Ensure that outsiders cannot cause harm, and&lt;/li&gt;
+&lt;li&gt;Ensure that other websites on your server with security issues cannot be used to get to your site and cause harm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.&lt;/li&gt;
+&lt;li&gt;Check your Zen Cart /logs/ or /cache/ folder for myDEBUG-XXXXX.log files to see whether any errors are happening which need to be fixed. Delete the log files after you&amp;rsquo;ve addressed the errors.  If you are not sure how to read log files, see &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;reading a myDEBUG log&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ensure your &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries are up to date&lt;/a&gt; using a tool like Google Lighthouse.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;13-server-operating-system-patches&#34;&gt;13. Server Operating System Patches&lt;/h3&gt;
+&lt;p&gt;There are some common server vulnerabilities that are worth checking into to ensure your server isn&amp;rsquo;t vulnerable to easy hacker exploits. There are entire professions dedicated to this subject, so it&amp;rsquo;s impossible to list everything here. Work with your hosting company to ensure your server is patched with the latest requirements for your operating system.&lt;/p&gt;
+&lt;h3 id=&#34;14-http-headers-for-pci-compliance&#34;&gt;14. HTTP Headers for PCI Compliance&lt;/h3&gt;
+&lt;p&gt;PCI Compliance aims to provide a secure experience for both you and your customers.
+It is common for PCI scanners to flag concerns about same-origin, CSP, XSS, and more. 
+To implement these headers in Apache the following &lt;code&gt;.htaccess&lt;/code&gt; directives could be added to a &lt;code&gt;.htaccess&lt;/code&gt; file in your site&amp;rsquo;s &lt;code&gt;document root&lt;/code&gt; (generally &lt;code&gt;public_html&lt;/code&gt;). Work with your hosting company for specifics, and consult them on how best to customize these to your unique needs. It is important that your &lt;code&gt;https&lt;/code&gt; configuration is already solid before you implement these; again, work with your hosting company.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Security Headers
+&amp;lt;IfModule mod_headers.c&amp;gt;
+	Header set X-XSS-Protection &amp;#34;1; mode=block&amp;#34;
+	Header set X-Frame-Options &amp;#34;SAMEORIGIN&amp;#34;
+	Header set X-Content-Type-Options &amp;#34;nosniff&amp;#34;
+	Header always set Strict-Transport-Security &amp;#34;max-age=3000; includeSubDomains&amp;#34;
+	# Header set Content-Security-Policy ... # site-owner needs to decide what suits here
+	Header set Referrer-Policy &amp;#34;same-origin&amp;#34;
+	Header set Feature-Policy &amp;#34;geolocation &amp;#39;self&amp;#39;; vibrate &amp;#39;none&amp;#39;&amp;#34;
+	Header set X-Permitted-Cross-Domain-Policies: none
+&amp;lt;/IfModule&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;15-securing-your-backups&#34;&gt;15. Securing Your Backups&lt;/h3&gt;
+&lt;p&gt;First: You should be &lt;a href=&#34;/user/running/backup/&#34;&gt;making backups&lt;/a&gt; regularly!&lt;/p&gt;
+&lt;p&gt;Store your backups someplace for safekeeping. Consider a thumb-drive that you keep with your financial records. The backup can also serve as a snapshot for your data if you need to look back for reference.&lt;/p&gt;
+&lt;p&gt;While backups are good, too many is bad! &amp;hellip; if they&amp;rsquo;re not secured.&lt;/p&gt;
+&lt;p&gt;You should only keep backups that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations.&lt;/p&gt;
+&lt;p&gt;(Consider: you wouldn&amp;rsquo;t leave customers&amp;rsquo; credit card details in papers laying all over your file cabinets and cupboards and drawers: you&amp;rsquo;d put them in one central safe spot. Do the same with your backups, and destroy copies that don&amp;rsquo;t need to be kept. This includes not leaving thumb-drives with private data on them sitting around unaccounted-for. Put the important ones someplace safe, and delete the ones that no longer have a purpose.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Software Versions and why they are important</title>
+      <link>/user/security/software_versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/software_versions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Half the battle of security is simply ensuring your software is up to date. 
+Software is versioned so that you can tell at a glance if you are running the current release.&lt;/p&gt;
+&lt;h2 id=&#34;zen-cart-version&#34;&gt;Zen Cart version&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;/user/first_steps/version/&#34;&gt;version information for Zen Cart, PHP and MySQL&lt;/a&gt; article explains how to determine your Zen Cart version.&lt;/p&gt;
+&lt;p&gt;If you are not running the current version, you should start &lt;a href=&#34;/user/upgrading/&#34;&gt;planning your Zen Cart upgrade&lt;/a&gt;. 
+An explanation of the importance of upgrading is provided in the article &lt;a href=&#34;/user/upgrading/about_upgrading/&#34;&gt;why should I upgrade?&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;php-version&#34;&gt;PHP version&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;/user/first_steps/version/&#34;&gt;version information for Zen Cart, PHP and MySQL&lt;/a&gt; article explains how to determine your PHP version.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;PHP&amp;rsquo;s Version Support Policy&lt;/a&gt; will tell you if your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed &amp;ldquo;secure&amp;rdquo; if they are out of the maintenance period.&lt;/p&gt;
+&lt;p&gt;You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;javascript-library-versions&#34;&gt;JavaScript library versions&lt;/h2&gt;
+&lt;p&gt;JavaScript libraries such as jQuery are updated as issues are found.  It&amp;rsquo;s best to use the most current version of each library you use.&lt;/p&gt;
+&lt;p&gt;The easiest way to check if your JavaScript libraries are up to date is to use the &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;Google Lighthouse&lt;/a&gt; tool.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What is an SSL certificate?</title>
+      <link>/user/security/ssl_cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/security/ssl_cert/</guid>
+      <description>
+        
+        
+        &lt;p&gt;See also &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Basic Hosting and Domain concepts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An SSL certificate contains the following information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The domain name for which the certificate was issued.&lt;/li&gt;
+&lt;li&gt;The owner of the certificate and the domain name.&lt;/li&gt;
+&lt;li&gt;The physical location of the owner.&lt;/li&gt;
+&lt;li&gt;The validity dates of the certificate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you connect to a secure web server, the server authenticates itself to the web browser by presenting a digital certificate. The certificate is proof that an independent trusted third party has verified that the website belongs to the company it claims to belong to. A valid certificate gives customers confidence that they are sending personal information securely, and to the right place.&lt;/p&gt;
+&lt;p&gt;SSL certificates can provide you with non-forgeable proof of your website&amp;rsquo;s identity, and customer confidence in the integrity and security of your online business. Customers are becoming increasingly aware of the advantages of SSL security and will often not purchase online from non-secure stores. All major web merchants use SSL security to encourage customers to buy online.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;You will need an SSL certificate&lt;/a&gt; to run a successful Zen Cart based business. Just like hosting, it&amp;rsquo;s part of the cost of doing business.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

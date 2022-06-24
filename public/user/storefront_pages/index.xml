@@ -1,0 +1,640 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Sitemap - Storefront Pages</title>
+    <link>/zendocs_test1/user/storefront_pages/</link>
+    <description>Recent content in Sitemap - Storefront Pages on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/storefront_pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: About Us Page</title>
+      <link>/zendocs_test1/user/storefront_pages/about_us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/about_us/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Zen Cart 1.5.8 and higher, the About Us page is built in.&lt;/p&gt;
+&lt;p&gt;Prior to Zen Cart 1.5.8, the About Us page was provided as a plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=86&#34;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2198&#34;&gt;Skinny About Us&lt;/a&gt; 
+The latter is somewhat less customizable but contains fewer files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may use the About Us page to show content about your store that is designed to build credibility.&lt;/p&gt;
+&lt;p&gt;A link to the About Us page may optionally be displayed in the &lt;a href=&#34;/zendocs_test1/user/sideboxes/information_sidebox/&#34;&gt;Information Sidebox&lt;/a&gt;. To do this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In 1.5.8 and above, use the &lt;a href=&#34;/zendocs_test1/user/customizing/site_specific_overrides/&#34;&gt;site specific overrides&lt;/a&gt; file.&lt;/li&gt;
+&lt;li&gt;Prior to this, use the instructions in 
+&lt;a href=&#34;/zendocs_test1/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Add to Cart</title>
+      <link>/zendocs_test1/user/storefront_pages/add_to_cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/add_to_cart/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Unless otherwise noted, the products we will discuss on this page will be assumed to be in stock with the &lt;em&gt;Call for Price&lt;/em&gt; flag set to No.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Add to Cart&amp;rdquo; button will &lt;em&gt;always&lt;/em&gt; appear on the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_info/&#34;&gt;product info&lt;/a&gt; page.  It may optionally appear on other pages under the following conditions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the button is configurable on the page in question, it not been turned off.  For example, on the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/listing_pages/&#34;&gt;New Products&lt;/a&gt; page, the add to cart button may be turned off using the &lt;em&gt;Display Product Buy Now Button&lt;/em&gt; switch on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Configuration &amp;gt; New Listing&lt;/a&gt; page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The product has no attributes, or, the product has only &lt;a href=&#34;/zendocs_test1/user/products/single_valued_attributes/&#34;&gt;single-valued attributes&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If these conditions are not met, the &amp;ldquo;More Info &amp;hellip;&amp;rdquo; button is displayed instead of &amp;ldquo;Buy Now&amp;rdquo; (or &amp;ldquo;Add to Cart&amp;rdquo;), and pressing this button will go to the &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_info/&#34;&gt;product info&lt;/a&gt; page.&lt;/p&gt;
+&lt;h3 id=&#34;limitations-on-add-to-cart&#34;&gt;Limitations on Add to Cart&lt;/h3&gt;
+&lt;p&gt;Once an add to cart is performed, the following checks are done:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href=&#34;/zendocs_test1/user/products/product_units/&#34;&gt;product quantity minimum, maximum and units&lt;/a&gt; are checked.  If a violation occurs, the in-cart quantity will be dynamically updated.&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&#34;/zendocs_test1/user/running/stock/&#34;&gt;stock tracking configuration 3&lt;/a&gt; is enabled, quantity is not adjusted but checkout will be blocked if stock is insufficient to meet the order requirements.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Brands Page</title>
+      <link>/zendocs_test1/user/storefront_pages/brands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/brands/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Brands page shows the manufacturers for a store, and allows customers to view all products from a particular manufacturer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/brands_page.png&#34; alt=&#34;Brands Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When a manufacturer&amp;rsquo;s logo is clicked, the customer sees a &lt;a href=&#34;/zendocs_test1/user/storefront_pages/product_listing/&#34;&gt;product listing&lt;/a&gt; page showing that manufacturer&amp;rsquo;s products. 
+&lt;img src=&#34;/zendocs_test1/images/brand_listing.png&#34; alt=&#34;Brand Listing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A link to the Brands page may optionally be displayed in the &lt;a href=&#34;/zendocs_test1/user/sideboxes/information_sidebox/&#34;&gt;Information Sidebox&lt;/a&gt; 
+using the &lt;a href=&#34;/zendocs_test1/user/customizing/site_specific_overrides/&#34;&gt;site specific overrides&lt;/a&gt; file.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Category Listing Page</title>
+      <link>/zendocs_test1/user/storefront_pages/category_listing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/category_listing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Category Listing page shows subcategories under a category.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/category_listing.png&#34; alt=&#34;Category Listing Page&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Centerboxes may be displayed below category listing page results - see &lt;a href=&#34;/zendocs_test1/user/template/index_listing/&#34;&gt;Index Listing Configuration&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Checkout Shipping - Checkout Payment - Checkout Confirmation - Checkout Success pages</title>
+      <link>/zendocs_test1/user/storefront_pages/checkout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/checkout/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME needs content&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Define Pages</title>
+      <link>/zendocs_test1/user/storefront_pages/define_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/define_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: EZ-Pages</title>
+      <link>/zendocs_test1/user/storefront_pages/ezpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/ezpages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/ezpages/&#34;&gt;this folder&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Home Page</title>
+      <link>/zendocs_test1/user/storefront_pages/home_page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/home_page/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME needs content&lt;/p&gt;
+&lt;p&gt;Relevant links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/template/index_listing/&#34;&gt;Index Listing Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Centerboxes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-do-i-get-my-store-home-page-to-open-to-a-certain-category&#34;&gt;How do I get my store home page to open to a certain category?&lt;/h3&gt;
+&lt;p&gt;Open the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Find &amp;ldquo;Main Page - Opens with Category&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Type in the category you wish to open to.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;example: 25  or 3_10 or 24_41_79
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then press &lt;em&gt;Save&lt;/em&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Listing Pages</title>
+      <link>/zendocs_test1/user/storefront_pages/listing_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/listing_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart uses the term &lt;em&gt;listing page&lt;/em&gt; to refer to a page that shows a number of products in a stack of rows in the center of the page.&lt;/p&gt;
+&lt;p&gt;Examples of listing pages are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;All Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=featured&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_new&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Listing&lt;/td&gt;
+&lt;td&gt;index.php?main_page=index&amp;amp;cPath=NNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Where &lt;em&gt;NNN&lt;/em&gt; is a category path of a category containing products.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Product Listing page&lt;/em&gt; is the page that is created when viewing a category which contains products (rather than other categories).  It is sometimes also called the &lt;em&gt;Index Listing page&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Category pages&lt;/em&gt; are pages showing only categories.  This term is less used, and category pages have fewer configuration options.  Also, the category page is displayed as a grid of images, so it&amp;rsquo;s different from the other listing pages discussed here.&lt;/p&gt;
+&lt;p&gt;Consider the following product hierarchy&lt;/p&gt;
+&lt;pre&gt;
+Men&#39;s Clothing (category 3)
+     |
+     ----&gt;  Shirts (category 5)
+     |      |
+     |      -------&gt; shirt A  product 1
+     |               shirt B product 2
+     |               shirt C  product 3
+     ----&gt;  Pants (category 6)
+     |      |
+     |      -------&gt; pants A  product 4
+     |               pants B product 5
+     |               pants C  product 6 
+&lt;/pre&gt;
+&lt;p&gt;The page showing category 3 (Men&amp;rsquo;s Clothing)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;would be a category page, showing categories 5 and 6.  The category path for this page would be &lt;em&gt;3&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The page showing category 5 (Shirts)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=3_5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;would be a product listing page, showing products 4, 5 and 6.  The category path for this page would be &lt;em&gt;3_5&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the cases above, the category path for the&lt;/p&gt;
+&lt;p&gt;The listing pages described above are built-in to Zen Cart; no extra work is required to create them.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of what a product listing page might look like on a desktop computer:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_listing.png&#34; alt=&#34;Product Listing Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s the Featured Products listing page showing a different layout:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_listing_featured.png&#34; alt=&#34;Featured Products Listing Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The layout for listing pages is described in more detail in &lt;a href=&#34;/zendocs_test1/user/template/listing_page_layout/&#34;&gt;listing page layout&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The configuration settings for the New Products, Featured Products and All Products listing pages are explained in &lt;a href=&#34;/zendocs_test1/user/template/new_featured_all_listing_page_configuration/&#34;&gt;new/featured/all products listing page configuration&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The configuration settings for the Product Listing pages are explained in &lt;a href=&#34;/zendocs_test1/user/template/product_listing_page_configuration/&#34;&gt;listing page configuration&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Product Info Page</title>
+      <link>/zendocs_test1/user/storefront_pages/product_info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/product_info/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME needs content&lt;/p&gt;
+&lt;p&gt;mention these items:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/li&gt;
+&lt;li&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; [select product type] &amp;gt; Edit Layout Settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Product Listing Page</title>
+      <link>/zendocs_test1/user/storefront_pages/product_listing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/product_listing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Product Listing page shows products in a specific category. By default they are shown one-per-row.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/product_listing.png&#34; alt=&#34;Product Listing Page&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The configuration settings for these pages are in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Listing&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternatively, the product listing pages can be displayed in columnar layout - see &lt;a href=&#34;/zendocs_test1/user/template/listing_columns/&#34;&gt;Columnar Layout for Product Listing pages&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Centerboxes may be displayed below product listing page results - see &lt;a href=&#34;/zendocs_test1/user/template/index_listing/&#34;&gt;Index Listing Configuration&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Details on the configuration of the product listing page are provided in &lt;a href=&#34;/zendocs_test1/user/template/product_listing_page_configuration&#34;&gt;Product Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Reviews Page</title>
+      <link>/zendocs_test1/user/storefront_pages/reviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/reviews/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The reviews page shows customer product reviews for your store in a paginated format.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reviews_page.png&#34; alt=&#34;Reviews Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A single review is on a page called product_reviews_info.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reviews_info_page.png&#34; alt=&#34;Reviews Info&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Logged in customers may write a review on the product_reviews_write page:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/reviews_write.png&#34; alt=&#34;Write Reviews Page&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;related&#34;&gt;Related:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/reviews/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Reviews&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Shopping Cart Page</title>
+      <link>/zendocs_test1/user/storefront_pages/shopping_cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/shopping_cart/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME needs content&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Site Map Page</title>
+      <link>/zendocs_test1/user/storefront_pages/site_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/site_map/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Since Zen Cart 1.3.0, a storefront sitemap has been automatically produced.  The purpose of this sitemap is to provide visitors with a single place to see all the categories in the store.  It&amp;rsquo;s just another mechanism for your customers to discover what&amp;rsquo;s in your store.&lt;/p&gt;
+&lt;p&gt;Other pages are also included in the Site Map, such the &lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt;, &lt;a href=&#34;/zendocs_test1/user/search/storefront_search/#advanced-search-page&#34;&gt;Advanced Search Page&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/sitemap.png&#34; alt=&#34;Site Map&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This site map is produced for the benefit of human visitors, and should not be confused with an &lt;a href=&#34;/zendocs_test1/user/search/xml_site_map/&#34;&gt;XML sitemap&lt;/a&gt;, which is produced for the benefit of search engines.&lt;/p&gt;
+&lt;p&gt;The site map may be accessed at the URL &lt;code&gt;index.php?main_page=site_map&lt;/code&gt;.  There is frequently a link to the site map in a store&amp;rsquo;s footer, header or a sidebox.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Specials Page</title>
+      <link>/zendocs_test1/user/storefront_pages/specials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/specials/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The specials page shows all the products in your store which are currently on special.  The list is presented in a grid format with pagination.  The special price reduction is shown prominently in red, and the original price is marked with strikethrough.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/specials_page.png&#34; alt=&#34;Specials Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Other places specials are shown:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/#specials&#34;&gt;Specials sidebox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;Specials centerbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since the specials sidebox and centerbox only display a small subset of products on special, the products shown are chosen at random.  The specials page shows all products on special, so the order is fixed.&lt;/p&gt;
+&lt;p&gt;Unlike the &lt;a href=&#34;/zendocs_test1/user/template/listing_page_layout&#34;&gt;listing page layout&lt;/a&gt;, where items are shown in rows, the specials page looks like the home page,  with one main &lt;a href=&#34;/zendocs_test1/user/template/centerboxes/&#34;&gt;centerbox&lt;/a&gt; showing items in a grid.&lt;/p&gt;
+&lt;h3 id=&#34;related&#34;&gt;Related:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Specials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/special_products/&#34;&gt;Reducing prices on a single product&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/miscellaneous/salemaker_vs_specials/&#34;&gt;Salemaker vs Specials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Storefront Pages - A Complete List</title>
+      <link>/zendocs_test1/user/storefront_pages/complete_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/storefront_pages/complete_list/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Pages not requiring login are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;About Us&lt;/td&gt;
+&lt;td&gt;index.php?main_page=about_us&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Advanced Search&lt;/td&gt;
+&lt;td&gt;index.php?main_page=advanced_search&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Advanced Search Result&lt;/td&gt;
+&lt;td&gt;index.php?main_page=advanced_search_result&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;All Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_all&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Brands&lt;/td&gt;
+&lt;td&gt;index.php?main_page=brands&lt;/td&gt;
+&lt;td&gt;Shop by Brand&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Category Listing&lt;/td&gt;
+&lt;td&gt;index.php?main_page=index&amp;amp;cPath=NNN&lt;/td&gt;
+&lt;td&gt;Shows subcategories in a category&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conditions of Use&lt;/td&gt;
+&lt;td&gt;index.php?main_page=conditions&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Contact Us&lt;/td&gt;
+&lt;td&gt;index.php?main_page=contact_us&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Create Account&lt;/td&gt;
+&lt;td&gt;index.php?main_page=create_account&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Create Account Success&lt;/td&gt;
+&lt;td&gt;index.php?main_page=create_account_success&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discount Coupon&lt;/td&gt;
+&lt;td&gt;index.php?main_page=discount_coupon&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=featured&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_new&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page&lt;/td&gt;
+&lt;td&gt;Displays an EZ-Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 2&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 3&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 4&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Privacy&lt;/td&gt;
+&lt;td&gt;index.php?main_page=privacy&lt;/td&gt;
+&lt;td&gt;Privacy Policy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Listing&lt;/td&gt;
+&lt;td&gt;index.php?main_page=index&amp;amp;cPath=NNN&lt;/td&gt;
+&lt;td&gt;Shows products in a category&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Reviews Info&lt;/td&gt;
+&lt;td&gt;index.php?main_page=product_reviews_info&lt;/td&gt;
+&lt;td&gt;Read a specific review&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reviews&lt;/td&gt;
+&lt;td&gt;index.php?main_page=reviews&lt;/td&gt;
+&lt;td&gt;Read all reviews&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping&lt;/td&gt;
+&lt;td&gt;index.php?main_page=shippinginfo&lt;/td&gt;
+&lt;td&gt;Shipping Policy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Site Map&lt;/td&gt;
+&lt;td&gt;index.php?main_page=site_map&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shopping Cart&lt;/td&gt;
+&lt;td&gt;index.php?main_page=shopping_cart&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Specials&lt;/td&gt;
+&lt;td&gt;index.php?main_page=specials&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Some pages cannot be accessed unless a visitor is logged in:&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Account&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account Edit&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_edit&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account History&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_history&lt;/td&gt;
+&lt;td&gt;View all orders&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account History Info&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_history_info&lt;/td&gt;
+&lt;td&gt;View a single order&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account Newsletters&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_newsletters&lt;/td&gt;
+&lt;td&gt;Manage newsletter subscription&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account Notifications&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_notifications&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account Password&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_password&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Address Book&lt;/td&gt;
+&lt;td&gt;index.php?main_page=address_book&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ask a Question&lt;/td&gt;
+&lt;td&gt;index.php?main_page=ask_a_question&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Confirmation&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_confirmation&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Payment&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_payment&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Payment Address&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_payment_address&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Shipping Address&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_shipping_address&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Shipping&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_shipping&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Success&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_success&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Reviews Write&lt;/td&gt;
+&lt;td&gt;index.php?main_page=product_reviews_write&lt;/td&gt;
+&lt;td&gt;Write a review&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unsubscribe&lt;/td&gt;
+&lt;td&gt;index.php?main_page=unsubscribe&lt;/td&gt;
+&lt;td&gt;Unsubscribe from Newsletter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+Product and Category URLs have additional parameters.  The URL for product 27, which is in category 5 under category 1 would be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;cPath=1_5&amp;amp;products_id=27
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;products_id=27
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The URL for category 5 would be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=1_5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If the setting &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/#skip_1prod_categories&#34;&gt;Skip 1-prod Categories&lt;/a&gt; is True, and there was only one product in category 5, this page would be skipped and the product info page would be shown directly.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

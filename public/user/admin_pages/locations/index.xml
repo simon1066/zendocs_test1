@@ -1,0 +1,184 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Locations/Taxes</title>
+    <link>/zendocs_test1/user/admin_pages/locations/</link>
+    <description>Recent content in Locations/Taxes on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/locations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Countries</title>
+      <link>/zendocs_test1/user/admin_pages/locations/countries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/countries/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Defines every country with the following information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country Name&lt;/li&gt;
+&lt;li&gt;ISO-3166 2-letter and 3-letter country code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/localization/address_formats/&#34;&gt;Address format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Whether you ship to that country&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/countries.png&#34; alt=&#34;Countries&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enabled countries show at the top of the list.&lt;/p&gt;
+&lt;p&gt;The address format and shipping status can be seen in the right sidebar, which is opened when a country is selected.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/countries_usa.png&#34; alt=&#34;Countries - USA&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;disablingenabling-countries&#34;&gt;Disabling/Enabling Countries&lt;/h2&gt;
+&lt;p&gt;In your Admin-&amp;gt;Locations/Taxes-&amp;gt;Countries screen, you can click on the green &amp;ldquo;status&amp;rdquo; icon to toggle the country&amp;rsquo;s status off. The screen updates immediately with the change. If you don&amp;rsquo;t see the country alphabetically in the list, it may have been previously disabled.  This moves a country to the end of the list, clicking the red icon will turn the country back on.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Zones</title>
+      <link>/zendocs_test1/user/admin_pages/locations/zones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/zones/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/zones.png&#34; alt=&#34;Zones&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are two kinds of zones in Zen Cart: &lt;strong&gt;zones&lt;/strong&gt; and &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones_definitions/&#34;&gt;zone definitions&lt;/a&gt; (sometimes referred to as &lt;em&gt;geo_zones&lt;/em&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zones are the regions within a country defined by that country&amp;rsquo;s national government.  For example, Canada is broken into Provinces.&lt;/li&gt;
+&lt;li&gt;Zone Definitions are groupings of zones that storeowners create to for shipping, payment and tax purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, you may have a zone definition &lt;strong&gt;European Union&lt;/strong&gt; which contains all the countries in the European Union. Then you might define zones for each of those countries, containing the provinces for that country.&lt;/p&gt;
+&lt;p&gt;The zones and zone definitions are used to couple 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_rates/&#34;&gt;Tax Rates&lt;/a&gt; and 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_classes/&#34;&gt;Tax Classes&lt;/a&gt; to geographic locations. 
+For example, you may ship to all states in the USA, but since your store is located in Florida, you only need to charge sales tax to customers in Florida. You can define two zone definitions: one containing all the states except Florida, and one containing just Florida. Then you can specify the Tax Rate that the zone Florida should use.&lt;/p&gt;
+&lt;p&gt;If your state has separate tax rates for different cities or counties (like California), then you will need to establish one zone definition for each city or county in order to be able to account for all sales made and apportion them for each city or county according to your sales tax return.&lt;/p&gt;
+&lt;p&gt;Some Shipping Modules (such as the &lt;a href=&#34;/zendocs_test1/user/shipping/zones/&#34;&gt;Zones Shipping Module&lt;/a&gt;) also allow you to define zones within the module itself, independent of the zone definitions you make. This means you can specify different shipping rates, for example, for countries in the same zone definition.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Zone Definitions</title>
+      <link>/zendocs_test1/user/admin_pages/locations/zones_definitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/zones_definitions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/zones_definition.png&#34; alt=&#34;Zone Definitions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are two kinds of zones in Zen Cart: &lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones/&#34;&gt;zones&lt;/a&gt; and &lt;strong&gt;zone definitions&lt;/strong&gt; (also referred to as &lt;em&gt;geo_zones&lt;/em&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zones are the regions within a country defined by that country&amp;rsquo;s national government.  For example, Canada is broken into Provinces.&lt;/li&gt;
+&lt;li&gt;Zone Definitions are groupings of zones that storeowners create to for shipping, payment and tax purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, you may have a zone definition &lt;strong&gt;European Union&lt;/strong&gt; which contains all the countries in the European Union. Then you might define zones for each of those countries, containing the provinces for that country.&lt;/p&gt;
+&lt;p&gt;The zones and zone definitions are used to couple 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_rates/&#34;&gt;Tax Rates&lt;/a&gt; and 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_classes/&#34;&gt;Tax Classes&lt;/a&gt; to geographic locations. 
+For example, you may ship to all states in the USA, but since your store is located in Florida, you only need to charge sales tax to customers in Florida. You can define two zone definitions: one containing all the states except Florida, and one containing just Florida. Then you can specify the Tax Rate that the zone Florida should use.&lt;/p&gt;
+&lt;p&gt;If your state has separate tax rates for different cities or counties (like California), then you will need to establish one zone definition for each city or county in order to be able to account for all sales made and apportion them for each city or county according to your sales tax return.&lt;/p&gt;
+&lt;p&gt;Some Shipping Modules (such as the &lt;a href=&#34;/zendocs_test1/user/shipping/zones/&#34;&gt;Zones Shipping Module&lt;/a&gt;) also allow you to define zones within the module itself, independent of the zone definitions you make. This means you can specify different shipping rates, for example, for countries in the same zone definition.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax Classes</title>
+      <link>/zendocs_test1/user/admin_pages/locations/tax_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/tax_classes/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tax-classes-defined&#34;&gt;Tax Classes Defined&lt;/h2&gt;
+&lt;p&gt;Tax Classes are typically used to differentiate between the type of tax calculations that apply to a given product.&lt;/p&gt;
+&lt;p&gt;Typical tax classes might include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Taxable Goods&lt;/li&gt;
+&lt;li&gt;Non-Taxable Goods&lt;/li&gt;
+&lt;li&gt;GST-Only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;creating-a-tax-class&#34;&gt;Creating a Tax Class&lt;/h3&gt;
+&lt;p&gt;If you need another tax class,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Click New Tax Class&lt;/li&gt;
+&lt;li&gt;Enter a title and description&lt;/li&gt;
+&lt;li&gt;Click Insert&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;setting-a-default-tax-class-for-use-when-adding-new-products&#34;&gt;Setting a Default Tax Class for use when adding new products&lt;/h3&gt;
+&lt;p&gt;When entering new products in the Admin area, it is necessary to select the appropriate tax class for that product. Otherwise taxes won&amp;rsquo;t be calculated appropriately on it during checkout.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, you need to identify the Tax Class ID number.
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;code&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Click Edit&lt;/li&gt;
+&lt;li&gt;Look at the URL in the browser address bar.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll see something that looks like: &lt;code&gt;&amp;amp;tID=3&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;In this case, the ID number is 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Now set the default for product-entry by going to:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt; (select the desired product type if other than &lt;code&gt;Product - General&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Edit Layout&lt;/li&gt;
+&lt;li&gt;Click on Product Price Tax Class Default - When adding new products&lt;/li&gt;
+&lt;li&gt;Enter the number of the tax class ID determined above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax Rates</title>
+      <link>/zendocs_test1/user/admin_pages/locations/tax_rates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/tax_rates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to create a specific tax rate for a zone.&lt;/p&gt;
+&lt;h1 id=&#34;adding-a-new-tax-rate&#34;&gt;Adding a new tax rate&lt;/h1&gt;
+&lt;p&gt;The following steps are an example of setting a tax rate definition for California:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/li&gt;
+&lt;li&gt;Click New Tax Rate&lt;/li&gt;
+&lt;li&gt;Select a Tax Class Title:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Taxable Goods
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Select a Tax Zone:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;California Tax
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Enter a Tax Rate (% is assumed - don&amp;rsquo;t enter the % symbol):
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;7.75
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Enter a description to appear on invoices:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CA Tax
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Set a Tax Priority:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Click Insert&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

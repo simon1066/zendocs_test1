@@ -1,0 +1,2353 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Template System</title>
+    <link>/user/template/</link>
+    <description>Recent content in Template System on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/template/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: What is a Template?</title>
+      <link>/user/template/what_is_a_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/what_is_a_template/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before you read this article, please be sure you are familiar with 
+&lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; used in describing
+Zen Cart files.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-a-template&#34;&gt;What is a template?&lt;/h3&gt;
+&lt;p&gt;A template (sometimes called a &amp;ldquo;theme&amp;rdquo; or a &amp;ldquo;skin&amp;rdquo; in other software) is a set of files that controls how
+the Zen Cart storefront looks.&lt;/p&gt;
+&lt;p&gt;The following list outlines the elements of a template:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/template_pages/&#34;&gt;Template Pages&lt;/a&gt; - how content display is structured&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/header/&#34;&gt;Header&lt;/a&gt; - top part of template, including logo and top menu area if any&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sideboxes&lt;/a&gt; - narrow pieces of content that are placed on the left and right edges of all pages&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerboxes&lt;/a&gt; - wide pieces of content that are placed in the center of the page on specific pages&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/stylesheet/&#34;&gt;Stylesheet&lt;/a&gt; - the CSS that controls the layout of the site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/responsive/&#34;&gt;Responsiveness&lt;/a&gt; - modern templates must look good on mobile devices like phones and tablets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;whats-the-difference-between-templates-and-overrides&#34;&gt;What&amp;rsquo;s the difference between templates and overrides?&lt;/h3&gt;
+&lt;p&gt;Creating a new template means you are using the 
+&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;overrides&lt;/a&gt; system, 
+even if just to create &lt;code&gt;includes/templates/YOURTEMPLATE&lt;/code&gt; and 
+folders below that.   But generally, a new template also uses 
+more overrides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;language file overrides like &lt;code&gt;includes/languages/YOURTEMPLATE&lt;/code&gt; and &lt;code&gt;includes/languages/english/YOURTEMPLATE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;code overrides like &lt;code&gt;/includes/modules/YOURTEMPLATE&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-can-i-not-override&#34;&gt;What can I not override?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/template/template_overrides/#what-can-i-not-override&#34;&gt;the list of non-overridable files&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-template-default&#34;&gt;What is template default?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/template/template_default/&#34;&gt;the template default FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-responsive-classic&#34;&gt;What is responsive classic?&lt;/h3&gt;
+&lt;p&gt;The &amp;ldquo;Responsive Classic&amp;rdquo; template was added as the main template in Zen Cart 1.5.5.
+It uses techniques like browser user-agent-detection to adapt its display for mobile devices like phones and tablets.
+See &lt;a href=&#34;/user/template/other_templates/&#34;&gt;other templates for Zen Cart&lt;/a&gt; and 
+&lt;a href=&#34;/user/template/responsive_classic/&#34;&gt;the Responsive Classic FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-other-templates-are-available&#34;&gt;What other templates are available?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/template/other_templates/&#34;&gt;other templates for Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;i-created-a-new-template-but-cant-see-it-in-admin--tools--template-selection&#34;&gt;I created a new template, but can&amp;rsquo;t see it in Admin &amp;gt; Tools &amp;gt; Template Selection&lt;/h3&gt;
+&lt;p&gt;This can happen if you have forgotten to create the &lt;code&gt;template_info.php&lt;/code&gt; file. 
+See &lt;a href=&#34;/user/template/template_info/&#34;&gt;the template_info FAQ&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basic Template Customizations</title>
+      <link>/user/template/basic_customizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/basic_customizations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before you read this article, please be sure you are familiar with 
+&lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; used in describing
+Zen Cart files.&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- this file isn&#39;t named _misc.md but it&#39;s really a misc file --&gt; 
+Some questions are important but brief.  To make managing this 
+FAQ easier, these questions are grouped in a single page, 
+rather than separating each one into an individual article. 
+&lt;br&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;can-i-change-the-width-of-the-side-boxes&#34;&gt;Can I change the width of the side boxes?&lt;/h3&gt;
+&lt;p&gt;To change the width of the sidebox columns, open &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Click the Box Width you wish to change and edit it, the width can be fixed (default is 150px), expressed as a percentage of the total page width or as a relative size (20em). You can also change the width of either column to suit your design.&lt;/p&gt;
+&lt;p&gt;For example: if you were using a fluid design and wanted the boxes to shrink and grow depending on the window size you would set the columns to 20% and the boxes to 100%.&lt;/p&gt;
+&lt;p&gt;You can also turn off either column universally in the same section of the admin.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-can-i-remove-the-search-box-in-the-header-navigation-bar&#34;&gt;How can I remove the search box in the header navigation bar?&lt;/h3&gt;
+&lt;p&gt;Open &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;. Find &lt;code&gt;search_header.php&lt;/code&gt;, edit, and turn both switches to off.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-do-i-show-the-categories-on-the-main-page&#34;&gt;How do I show the Categories on the main page?&lt;/h3&gt;
+&lt;p&gt;Open &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Find &lt;code&gt;Categories - Always Show on Main Page&lt;/code&gt;, click edit and enable the feature.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;can-i-remove-the-powered-by-zen-cart-from-the-footer-of-my-cart&#34;&gt;Can I remove the &amp;ldquo;Powered by Zen Cart&amp;rdquo; from the footer of my cart?&lt;/h3&gt;
+&lt;p&gt;Yes.  Keeping this link is not required.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-do-i-change-the-colors-and-fonts&#34;&gt;How do I change the colors and fonts?&lt;/h3&gt;
+&lt;p&gt;Find the file &lt;code&gt;includes/templates/YOURTEMPLATE/css/stylesheet.css&lt;/code&gt;. Start by opening the style sheet in your favorite text editor:&lt;/p&gt;
+&lt;p&gt;All of the pages are broken into smaller pieces called &amp;ldquo;classes&amp;rdquo; and each class has a style. The class styles are used to control the look of your fonts, colors, text size, borders, background images, etc. Change the colors by substituting standard HTML color numbers for the text and background colors. Change the text size by increasing or decreasing the size, change the typeface by using a different font name.&lt;/p&gt;
+&lt;p&gt;To remove a CSS element, such as a border, simply comment out the line you don&amp;rsquo;t want to use with a &lt;code&gt;/*&lt;/code&gt; (slash, asterisk) at the beginning of the line and &lt;code&gt;*/&lt;/code&gt; (asterisk, slash) at the end of the line. After making your changes upload the stylesheet to the directory, refresh your browser and admire your handywork.&lt;/p&gt;
+&lt;p&gt;For more information on Cascading Style Sheets search the Internet for links to tutorials and references.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-do-i-change-the-mycard-images-for-credit-cards&#34;&gt;How do I change the &amp;ldquo;MyCard&amp;rdquo; images for Credit Cards?&lt;/h3&gt;
+&lt;p&gt;Zen Cart does not provide credit card images.&lt;/p&gt;
+&lt;p&gt;You may wish to contact your Merchant services for official images that you are permitted to use.&lt;/p&gt;
+&lt;p&gt;Once you have obtained the allowed images, upload your new gifs and replace the ones that are holding the place on the pics you see on your checkout page.&lt;/p&gt;
+&lt;p&gt;If you wish to override the defaults, the images should go here:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/images/icons&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cc1.gif = Visa
+cc2.gif = MC
+cc3.gif = Amex
+cc4.gif = Diners
+cc5.gif = Discover
+cc6.gif = JCB
+cc7.gif = AustralianBankCard
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;where-are-the-buttons-and-how-do-i-change-them&#34;&gt;Where are the buttons and how do I change them?&lt;/h3&gt;
+&lt;p&gt;Newer templates do not use static button images; instead, they use 
+&lt;a href=&#34;/user/template/buttons/&#34;&gt;CSS buttons&lt;/a&gt; feature, which uses CSS to style the text as a button.&lt;br&gt;
+The text used is the alt text for each image button, defined in the language files.&lt;/p&gt;
+&lt;p&gt;Note that in the case of a Submit button, the text allowed is limited to 30 characters: if this is exceeded the image is used instead.&lt;/p&gt;
+&lt;p&gt;To use CSS Buttons, enable them in 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/#css_buttons&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you wish to use static images for buttons, refer to the list of buttons in the file 
+&lt;code&gt;includes/language/english/button_names.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Create your buttons using your favorite &lt;a href=&#34;/user/first_steps/useful_tools/#graphics-editors&#34;&gt;image editor&lt;/a&gt;. The buttons may to be saved as GIF, JPG or PNG. If you are not using the same format or name as the original buttons, edit &lt;code&gt;button_names.php&lt;/code&gt; and save the edited file in your override directory &lt;code&gt;includes/language/english/YOURTEMPLATE/button_names.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Upload your button images to:
+&lt;code&gt;includes/templates/YOURTEMPLATE/buttons/YOURLANGUAGE/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If you are using multiple languages you need a set of buttons for each language.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;are-there-any-template-overrides-in-the-admin-area&#34;&gt;Are there any template overrides in the Admin area?&lt;/h3&gt;
+&lt;p&gt;At this time, there are no &amp;ldquo;overrides&amp;rdquo; for whole pages in the Admin area.&lt;/p&gt;
+&lt;p&gt;If you wish to change admin functionality, you will have to edit the core files directly.   Be sure to keep a list of your changes for quick reference when upgrading.&lt;/p&gt;
+&lt;p&gt;There are many Notifier/Observer hooks available to augment existing functionality, and several auto-loading directories allow plugins to integrate as well. Since v1.5.7 plugins for the Admin can be packaged without having to touch admin files in many cases.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-files-are-used-to-edit-both-the-way-a-product-displays-in-the-product-listing-and-the-product-description-page&#34;&gt;What files are used to edit both the way a product displays in the product listing and the product description page?&lt;/h3&gt;
+&lt;p&gt;This is handled in many ways. 
+There are administrative &amp;ldquo;switches&amp;rdquo; under&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Listing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are language files controlling text content.
+There are template files controlling the display of the information.&lt;/p&gt;
+&lt;p&gt;For more specific questions, please go to the &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?15-Templates-Stylesheets-Page-Layout&#34;&gt;support forum&lt;/a&gt; and post a new topic, with as much detail as possible about what you&amp;rsquo;re wanting to do, including a URL if possible.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-do-i-to-change-shopping-cart-line-that-shows-weight-item-count-and-price&#34;&gt;How do I to change shopping cart line that shows Weight, Item Count and Price?&lt;/h3&gt;
+&lt;p&gt;Go to:   &lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging&lt;/a&gt;.
+Select  Display Number of Boxes and Weight Status&lt;/p&gt;
+&lt;p&gt;Choose the desired setting:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0= off
+1= Boxes Only
+2= Weight Only
+3= Both Boxes and Weight
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;can-i-turn-off-fields-from-my-product-info-page&#34;&gt;Can I turn off fields from my product info page?&lt;/h3&gt;
+&lt;p&gt;To turn off the weight, inventory count, manufacturer, etc. on my product info page, do the following: 
+Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Choose &lt;code&gt;Product - General&lt;/code&gt; (or the product type you are customizing).&lt;/p&gt;
+&lt;p&gt;Click &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Layout Settings&lt;/a&gt; and turn off any settings you do not want to display on the store pages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-do-i-change-weight-from-pounds-to-kilograms&#34;&gt;How do I change weight from pounds to Kilograms&lt;/h3&gt;
+&lt;p&gt;In &lt;code&gt;includes/languages/english.php&lt;/code&gt; 
+find the following lines of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;TEXT_PRODUCT_WEIGHT_UNIT&amp;#39;,&amp;#39;lbs&amp;#39;);
+
+define(&amp;#39;TEXT_SHIPPING_WEIGHT&amp;#39;,&amp;#39;lbs&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the highlighted portions, making sure that the single quote marks are not left out.&lt;/p&gt;
+&lt;p&gt;Save the changed file to &lt;code&gt;includes/languages/YOURTEMPLATE/english.php&lt;/code&gt; and upload to your server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;my-browser-bar-says-zen-cart-the-art-of--where-do-i-change-that&#34;&gt;My browser bar says &amp;ldquo;Zen Cart!, The Art of &amp;hellip;&amp;rdquo;, where do I change that?&lt;/h3&gt;
+&lt;p&gt;To change the title text to say what you want, do the following:&lt;/p&gt;
+&lt;p&gt;Open the &lt;code&gt;includes/languages/english/meta_tags.php&lt;/code&gt; file in your text editor. Find the following line of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// page title
+define(&amp;#39;TITLE&amp;#39;, &amp;#39;Zen Cart!&amp;#39;);
+
+// Site Tagline
+define(&amp;#39;SITE_TAGLINE&amp;#39;, &amp;#39;The Art of E-commerce&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace the title and tagline text with your own text, making sure that the single quote marks are not left out and new quote marks are not added.&lt;/p&gt;
+&lt;p&gt;Save the edited file to &lt;code&gt;includes/languages/english/YOURTEMPLATE/meta_tags.php&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- please keep this at the end --&gt; 
+
+Do you have a suggestion for a FAQ? 
+Please post it to &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?128-General-Questions&#34;&gt;General Questions on the support forum&lt;/a&gt;.
+&lt;br&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Overrides System</title>
+      <link>/user/template/template_overrides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_overrides/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before you read this, please review 
+&lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt;,
+&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;template default and default files&lt;/a&gt; and 
+&lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;overrides for new users&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Overrides were created to simplify upgrading and templating.&lt;/p&gt;
+&lt;h2 id=&#34;what-can-i-override&#34;&gt;What Can I Override?&lt;/h2&gt;
+&lt;p&gt;Any file which exists in a folder which has a &lt;code&gt;classic&lt;/code&gt; subfolder 
+can be overridden.&lt;/p&gt;
+&lt;p&gt;As of Zen Cart 1.5.6, this list is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/languages/
+includes/languages/english/extra_definitions/
+includes/languages/english/
+includes/languages/english/html_includes/
+includes/languages/english/modules/payment/
+includes/languages/english/modules/shipping/
+includes/languages/english/modules/order_total/
+includes/modules/
+includes/modules/sideboxes/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In addition, you can override:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/index_filters/ 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also override any folder in your template folder.
+Again as of 1.5.6, this list is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;YOUR_TEMPLATE/buttons/
+YOUR_TEMPLATE/common/
+YOUR_TEMPLATE/css/
+YOUR_TEMPLATE/images/
+YOUR_TEMPLATE/info_shopping_cart/
+YOUR_TEMPLATE/jscript/
+YOUR_TEMPLATE/popup_attributes_qty_prices/
+YOUR_TEMPLATE/popup_coupon_help/
+YOUR_TEMPLATE/popup_cvv_help/
+YOUR_TEMPLATE/popup_image/
+YOUR_TEMPLATE/popup_image_additional/
+YOUR_TEMPLATE/popup_search_help/
+YOUR_TEMPLATE/popup_shipping_estimator/
+YOUR_TEMPLATE/sideboxes/
+YOUR_TEMPLATE/templates/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also place overrides in these folders:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./includes/auto_loaders/overrides/
+./includes/init_includes/overrides/
+./admin/includes/auto_loaders/overrides/
+./admin/includes/init_includes/overrides/
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;what-can-i-not-override&#34;&gt;What Can I NOT Override?&lt;/h2&gt;
+&lt;p&gt;At the moment, these elements of your cart do not support overrides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;includes/modules/pages&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;shipping&lt;/code&gt;, &lt;code&gt;payment&lt;/code&gt; and &lt;code&gt;order total&lt;/code&gt; folders under &lt;code&gt;includes/modules&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-mechanisms-for-changing-cart-appearance&#34;&gt;Other Mechanisms for Changing Cart Appearance&lt;/h2&gt;
+&lt;p&gt;Some behaviors are controlled by the &lt;a href=&#34;/user/customizing/show_flags/&#34;&gt;show flags&lt;/a&gt; in the admin.&lt;/p&gt;
+&lt;p&gt;Starting in 1.5.8, there are &lt;a href=&#34;/user/customizing/site_specific_overrides/&#34;&gt;site specific overrides&lt;/a&gt;, which allow you to change the behavior of Zen Cart without touching core files.&lt;/p&gt;
+&lt;p&gt;There are also other mechanisms to allow you modify the 
+behavior of the system without touching core files.
+These are more advanced topics, intended for developers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/notifiers/&#34;&gt;Notifiers/Observers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/init_system/&#34;&gt;Init System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See also &lt;a href=&#34;/dev/plugins/tips/&#34;&gt;plugin tips&lt;/a&gt; for more suggestions.&lt;/p&gt;
+&lt;h2 id=&#34;using-your-overrides&#34;&gt;Using your Overrides&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ve created some overrides and now you want to use your new template!&lt;/p&gt;
+&lt;p&gt;Just create the &lt;code&gt;template_info.php&lt;/code&gt; file and activate your template. 
+See &lt;a href=&#34;/user/template/template_info/&#34;&gt;the template_info FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/template/creating_template/&#34;&gt;how to create a new template&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/template/basic_customizations/&#34;&gt;how to customize your new template&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Learn to use the &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developers Tool Kit&lt;/a&gt;.
+It will help you track down the files that you need to change to get the results you want.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Accessibility Compliance Questions</title>
+      <link>/user/template/accessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/accessibility/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before you read this article, please be sure you are familiar with &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; used in describing Zen Cart files.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-accessibility&#34;&gt;What is Accessibility?&lt;/h3&gt;
+&lt;p&gt;Web Content Accessibility Guidelines (WCAG) is developed through the W3C process in cooperation with individuals and organizations around the world, with a goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.  You&amp;rsquo;ll find a great article at the &lt;a href=&#34;https://www.w3.org/standards/webdesign/accessibility&#34;&gt;W3C Web Design and Applications page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What follows are just a few of the things that Zen Cart users should consider when creating or editing their template and site.  Think of it as a quick triumvirate of accessibility steps to think about.  These three are the most common accessibility standards that should be considered when adding anything to your site.&lt;/p&gt;
+&lt;h4 id=&#34;visual-problems&#34;&gt;Visual Problems&lt;/h4&gt;
+&lt;p&gt;Whether you know it or not, there are many accommodations for access in our daily lives.  Signal lights (red, yellow, green) are all top to bottom or left to right.  You&amp;rsquo;ll find this is a world-wide standard.  Is this because everyone buys from the same signal light manufacturer?  It&amp;rsquo;s actually because one out of every twelve men and one out of every two hundred women is &amp;ldquo;color blind&amp;rdquo;.  The more accurate description is color deficient.  The signals are the same because the main color deficiencies are in the red (protan) and green (deutan) defects.  With them always in the same order, the color deficient person decide to go or stop based on the location of the light rather than the color.&lt;/p&gt;
+&lt;p&gt;If we look at just the 2017 US statistics, that would mean that over thirteen million men and eight hundred and thirty thousand women will have a problem looking at a website that contains reds or greens.  That translates to five per cent of the US people are going to have problems with colors on a website.&lt;/p&gt;
+&lt;p&gt;This does not take into account the number of folks that are legally or totally blind.  In this case, we would need to add another twelve million to our list.  This brings us to almost a full ten per cent of the US Population alone that are going to have difficulty with website colors.  And, half of those will have a problem even seeing the site.  Just search for &amp;ldquo;website reading programs for the visually impaired&amp;rdquo; and just the 70+ million responses might convince you that they are a hot topic.&lt;/p&gt;
+&lt;p&gt;What can we do about the colors of our Zen Cart templates?  As of Zen Cart 1.5.7, the responsive_classic templates meets the accessibility standards.  The way the colors are handled is with contrast.  Even a person who cannot see red will be able to read the red text if it &amp;ldquo;stands out&amp;rdquo; against against its background.  For instance, you would think that red (#FF0000) on a white (#FFFFFF) background would not be difficult for someone to read.&lt;/p&gt;
+&lt;div border=&#34;1&#34; style=&#34;background:#FFFFFF; border: 1px solid black; padding: 5px;&#34;&gt;
+&lt;font color=&#34;#FF0000&#34;&gt;This is text in color #FF0000 on a white background.&lt;/font&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;In fact, the contrast ratio this produces is 3.99 to 1, which fails three out of five of the web contrast checks.  The red would need to darken to #B30000 in order to meet the minimum 7.2 to 1 ratio, and pass all five tests.&lt;/p&gt;
+&lt;div border=&#34;1&#34; style=&#34;background:#FFFFFF; border: 1px solid black; padding: 5px;&#34;&gt;
+&lt;font color=&#34;#B30000&#34;&gt;This is text in color #B30000 on a white background.&lt;/font&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://webaim.org/resources/contrastchecker/&#34;&gt;WebAIM Contrast Checker&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h4 id=&#34;what-am-i-looking-at&#34;&gt;What Am I Looking At?&lt;/h4&gt;
+&lt;p&gt;But Accessibility is not just about the visually challenged.  What about the folks in developing countries or a remote ranch in Texas or Montana?  What&amp;rsquo;s the average internet speed in the Alaskan Bush?  You might wonder what they would have in common but, probably just because you&amp;rsquo;re in your home or office with megabytes of bandwidth.  There are folks that are still using virtually dial-up speed to surf the net!&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;What am I supposed to do about their problem?&amp;rdquo; you might ask.  The answer is Alternative Text for Images.  How does that help their problem?&lt;/p&gt;
+&lt;p&gt;Many folks are forced to turn off the display of image in their browser just to get the page to load on their low-speed connection.  The Alternative Text (alt tag) is a vital tool that can be used to &amp;ldquo;tell&amp;rdquo; the browser what the image is that they are not seeing.&lt;/p&gt;
+&lt;p&gt;Zen Cart uses image &lt;code&gt;alt&lt;/code&gt; tags to help describe images.  For example, in the demo data set, product 27&amp;rsquo;s image appears on the product info page like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;img=&amp;#34;images/hewlett_packard/lj1100xi.gif&amp;#34; alt=&amp;#34;Hewlett Packard LaserJet 1100Xi Linked&amp;#34;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This HTML is rendered by a browser like this:&lt;/p&gt;
+&lt;img src=&#34;/images/product_info_image.png&#34; alt=&#34;Product Info Page - Main Image&#34; /&gt;
+&lt;p&gt;When images are turned off, it is rendered in the browser like this:&lt;/p&gt;
+&lt;img src=&#34;/images/product_info_no_image.png&#34; alt=&#34;Product Info Page - Main Image&#34; /&gt;
+&lt;p&gt;The &lt;code&gt;alt&lt;/code&gt; tags Zen Cart uses come from the title of the product, category, or item.  If you look at the demo items added to a site  without their images turned on, the display of the Hardware category looks like a dual listing of everything when, in fact, it&amp;rsquo;s just the alt tag providing that second and vital bit of information.&lt;/p&gt;
+&lt;p&gt;Why use the title instead of the model number or some other information?  Consider the person using a reader and hearing &amp;ldquo;HD600D&amp;rdquo;.  Accessibility, in this case, is doing your best to let the reader know what the item is or does.  In this case, the alt=&amp;ldquo;Garage Door Opener Model HD600D&amp;rdquo; would be a LOT more helpful.&lt;/p&gt;
+&lt;p&gt;Any time you add an image to your site, make sure the alt tag is included and understandable by your customer.&lt;/p&gt;
+&lt;h4 id=&#34;pyrotechnics-on-a-site&#34;&gt;Pyrotechnics on a Site?&lt;/h4&gt;
+&lt;p&gt;Remember the number of visually challenged individuals in the US?  Well, there&amp;rsquo;s another 1.2 percent of the population that can be affected by &amp;ldquo;Special Effects&amp;rdquo; on your website.  Remember the big rage of blinking text in the &#39;80s and &#39;90s?  Well, there are a lot of folks that got physically ill from the blinking.  Fast moving sliders, quick pop-ups, and even color changes on hover can be a problem for these folks.&lt;/p&gt;
+&lt;h4 id=&#34;where-can-i-find-&#34;&gt;Where Can I find &amp;hellip;?&lt;/h4&gt;
+&lt;p&gt;The manager at your local grocery will keep the milk, bread, and eggs separate.  Not to meet some federal, state, or local standard, but to make you go throughout the store while shopping rather than go to one counter and leave.  Is it a good practice for your website?  Probably not.  If I&amp;rsquo;m looking for the latest team tee shirts for the wife and I, what would be the most convenient way to shop for those?  Maybe mixing the men&amp;rsquo;s and women&amp;rsquo;s together in one product is over the top but, having a separate product for each size or color can go the other way and frustrate the customer.  Imagine having to go to one page for the shirt, another for the color, and another for the size.  You might think no one would do that but, it happens.  Zen Cart provides the Attributes Controller to help you consolidate the options for an item and make shopping easier for your client.&lt;/p&gt;
+&lt;p&gt;Additionally, from the SEO standpoint, search engines frown upon separate products for each option and reward logical attribute use.&lt;/p&gt;
+&lt;h4 id=&#34;wheres-my-help-&#34;&gt;Where&amp;rsquo;s My Help ?&lt;/h4&gt;
+&lt;p&gt;There&amp;rsquo;s a good &lt;a href=&#34;https://www.youtube.com/watch?v=3f31oufqFSM&#34;&gt;video&lt;/a&gt; that shows the ways you can increase accessibility on your site.&lt;/p&gt;
+&lt;p&gt;Several free testers are available on the internet.  If you are using Chrome, Opera, or Firefox browsers, an Accessibility Test is already available for your browser as an extension.  Just go to the &lt;a href=&#34;https://www.w3.org/WAI/test-evaluate/preliminary/&#34;&gt;W3C Easy Check Page&lt;/a&gt; and click on the &lt;em&gt;Tools: WebDev Toolbar and IE WAT (Optional)&lt;/em&gt; link for more information about your browser&amp;rsquo;s extension.&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- please keep this at the end --&gt; 
+
+Do you have a suggestion for a FAQ? 
+Please post it to &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?128-General-Questions&#34;&gt;General Questions on the support forum&lt;/a&gt;.
+&lt;br&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Add image to sidebox or centerbox</title>
+      <link>/user/template/add_image_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/add_image_box/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The exact method will depend upon whether you are creating a small image to be repeated, or a image that will either span the box or is intended to be centered within it.&lt;/p&gt;
+&lt;p&gt;Firstly, create your image and place it in the images directory of your template.&lt;/p&gt;
+&lt;p&gt;Then find the following blocks in your CSS:&lt;/p&gt;
+&lt;p&gt;For adding the image to the center boxes:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.centerBoxWrapper {
+    border: 1px solid #9a9a9a;
+    height: 1%;
+    margin: 1.1em 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For adding to the left and/or right sideboxes:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.leftBoxContainer, .rightBoxContainer {
+    margin: 0em;
+    border: 1px solid #9a9a9a;
+    border-bottom: 5px solid #336633;
+    margin-top: 1.5em;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The above CSS is taken from the default template and may vary depending upon which template you are using and what modifications have been made to it.&lt;/p&gt;
+&lt;p&gt;Then add the following CSS to the appropriate block&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   /* create free space at the bottom of the box in which to display the image */
+    padding-bottom: 20px;
+    /* add the image to the boxes background */
+    background-image: url(../images/box_bg.jpg);
+    /* position the image at the bottom and center of the box */
+    background-position: bottom center;
+    /* EITHER set the image to not repeat */
+    background-repeat: no-repeat;
+    /* OR set it to repeat horizontally */
+    background-repeat: repeat-x;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can use the same image for both center and sideboxes if you wish. Any excess width will fall outside the box and not be displayed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Adding a tracking pixel</title>
+      <link>/user/template/tracking_pixel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/tracking_pixel/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME please verify&lt;/p&gt;
+&lt;h2 id=&#34;situation&#34;&gt;Situation:&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ve just signed up with an affiliate system who&amp;rsquo;s promised you the ultimate in statistics tracking, commission handling, referral monitoring, and more.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;ve given you a snippet of code and instructed you to place it on your site, after replacing some parameters with actual values of orders in your store. 
+But you don&amp;rsquo;t know where to put this new code.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution:&lt;/h2&gt;
+&lt;p&gt;1. First, you need to make sure you have an appropriate override file in place.&lt;/p&gt;
+&lt;p&gt;THERE ARE TWO OPTIONS:&lt;br&gt;
+a) JavaScript file (recommended)&lt;br&gt;
+To do it with a JavaScript file, simply create the following file:&lt;br&gt;
+/includes/modules/pages/checkout_success/jscript_myaffiliate_program.php&lt;/p&gt;
+&lt;p&gt;b) template file:&lt;br&gt;
+To do it with a template file, you&amp;rsquo;ll need the following file on your server: /includes/templates/YOURTEMPLATE/checkout_success/tpl_footer.php (replacing YOURTEMPLATE with the name of your actual custom template, of course)&lt;br&gt;
+If you don&amp;rsquo;t already have that checkout_success folder at that location, create it. And then copy the tpl_footer.php file from your /includes/templates/YOURTEMPLATE/common/tpl_footer.php &amp;hellip; or if you don&amp;rsquo;t have one there, get it from template_default.&lt;/p&gt;
+&lt;p&gt;2. Using your favorite &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt;, save the file, but leave it open in your editor.&lt;/p&gt;
+&lt;p&gt;3. Now, for each parameter that your affiliate company told you needs to be replaced dynamically, substitute the appropriate value from the table below:&lt;/p&gt;
+&lt;div class=&#34;cms_table&#34;&gt;
+&lt;table class=&#34;cms_table&#34;&gt;
+&lt;tbody&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;th width=&#34;300&#34; class=&#34;cms_table_th&#34;&gt;**Value to replace**&lt;/th&gt;
+&lt;th class=&#34;cms_table_th&#34;&gt;**What to replace it with**&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Order Number&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;order_number&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Subtotal&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;order_subtotal&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Amount of credits/discounts on the order&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;credits_applied&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Final Total&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;order_total&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Commissionable Order Amount (does not include discounts)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;commissionable_order&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Commissionable amount, formatted with dollar sign and decimal point (per currently selected currency formatting rules set in your admin)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;commissionable_order_formatted&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Coupon Code, if any (often used for referral tracking)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;coupon_code&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Currency Code (3-letter ISO code)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;currency_code&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Exchange Rate applied, if any&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;currency_value&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Payment Module used&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;payment_module_code&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Shipping Method selected by customer&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;shipping_method&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Order Status (number) denoting the order&#39;s status in your store at this present time.&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;orders_status&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Tax on the order&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;tax&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Shipping Cost on the order&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;shipping&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Order Total (the final/net total of the order, the amount sent for payment)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;order_total&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Product Model Numbers (delimited with &#34;|&#34;)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;products_ordered_models&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr valign=&#34;top&#34; class=&#34;cms_table_tr&#34;&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;Product IDs (delimited with &#34;|&#34;)&lt;/td&gt;
+&lt;td class=&#34;cms_table_td&#34;&gt;&amp;lt;?php echo $order_summary[&#39;products_ordered_ids&#39;]; ?&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;Save the file and upload it to your server, keeping in mind the correct folder location as explained in steps 1 and 2.&lt;/p&gt;
+&lt;p&gt;4. Test&lt;/p&gt;
+&lt;p&gt;Need to pass details of specific products ordered? See the additional variables outlined in the article linked below.&lt;/p&gt;
+&lt;p&gt;Related article: &lt;a href=&#34;/user/orders/sales_analytics_affiliate_tools/&#34;&gt;Integrating Sales Analytics/Affiliate Tools&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Bootstrap Template for Zen Cart</title>
+      <link>/user/template/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/bootstrap/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2191&#34;&gt;Bootstrap template&lt;/a&gt; is a well supported, standards-based, &lt;a href=&#34;/user/template/responsive/&#34;&gt;responsive&lt;/a&gt; template which was built by the Zen Cart community.&lt;/p&gt;
+&lt;p&gt;The Bootstrap template is built on the &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; front-end toolkit.  It differs from the older &lt;a href=&#34;/user/template/responsive_classic/&#34;&gt;Responsive Classic&lt;/a&gt; template in the following ways:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Bootstrap&lt;/th&gt;
+&lt;th&gt;Responsive Classic&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Determining screen size&lt;/td&gt;
+&lt;td&gt;CSS Media Queries&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://mobiledetect.net/&#34;&gt;Mobile_Detect&lt;/a&gt; library&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS&lt;/td&gt;
+&lt;td&gt;Single CSS file&lt;/td&gt;
+&lt;td&gt;Separate CSS for desktop, tablet and phone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Orientation Handling&lt;/td&gt;
+&lt;td&gt;Built in&lt;/td&gt;
+&lt;td&gt;Requires different CSS for landscape vs portrait on mobile devices&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Device Support&lt;/td&gt;
+&lt;td&gt;Device independent&lt;/td&gt;
+&lt;td&gt;Lists specific devices&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Bootstrap template version 3.X is based on &lt;a href=&#34;https://getbootstrap.com/docs/4.6/getting-started/introduction/&#34;&gt;Bootstrap 4&lt;/a&gt;.  You can find the exact version of Bootstrap (&lt;code&gt;major.minor.patch&lt;/code&gt;) in use by looking at the file &lt;code&gt;includes/templates/bootstrap/common/html_header.php&lt;/code&gt;, which pulls in the Bootstrap javascript and css.&lt;/p&gt;
+&lt;h3 id=&#34;bootstrap-template---product-page-desktop&#34;&gt;Bootstrap Template - Product Page (Desktop)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bootstrap_desktop.png&#34; alt=&#34;Bootstrap Template Product Page on Desktop&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bootstrap-template---product-page-mobile&#34;&gt;Bootstrap Template - Product Page (Mobile)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bootstrap_full.png&#34; alt=&#34;Bootstrap Template Product Page on Mobile&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;colors-in-the-bootstrap-template&#34;&gt;Colors in the Bootstrap Template&lt;/h3&gt;
+&lt;p&gt;One of the best things about the Bootstrap template is that it puts the control of colors in the hands of the storeowner.  Using Admin &amp;gt; Tools &amp;gt; ZCA Bootstrap Colors, you can set many of the colors in your template.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bootstrap_colors.png&#34; alt=&#34;Bootstrap Colors&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Buttons</title>
+      <link>/user/template/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/buttons/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Most recent Zen Cart installations use the &lt;strong&gt;CSS Buttons&lt;/strong&gt; feature of Zen Cart, which is enabled in &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/button_css.png&#34; alt=&#34;CSS Button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;No action is required to create a CSS button; it simply uses the button text and displays it according to the styling your template has set.&lt;/p&gt;
+&lt;p&gt;Prior to the introduction of the CSS buttons feature in 1.3.0, Zen Cart buttons were static .gif images like the one shown below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/button_gif.png&#34; alt=&#34;GIF button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Many of them were much smaller - just enough space to fit the text describing their action.&lt;/p&gt;
+&lt;img src=&#34;/images/button_add_selected.gif&#34; alt=&#34;GIF button - add selected&#34; style=&#34;border-style: none !important&#34; /&gt;
+&lt;p&gt;You are free to use either setting, but most people prefer the maintenance free and more modern looking CSS buttons.&lt;/p&gt;
+&lt;p&gt;If you decide you want to use static images and customize them, you&amp;rsquo;ll want to build a full set - do each of the filenames in &lt;code&gt;includes/templates/template_default/buttons/english/&lt;/code&gt;.  There are currently 52 of them.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Can I use an image for a sidebox header</title>
+      <link>/user/template/image_for_sidebox_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/image_for_sidebox_header/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Using an &lt;a href=&#34;/user/first_steps/useful_tools/#graphics-editors&#34;&gt;image editor&lt;/a&gt;, create your image sets with a name for each sidebox you want to change. Upload to your server and save the images in &lt;code&gt;/includes/templates/YOURTEMPLATE/buttons/english/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In your &lt;code&gt;/includes/languages/YOURTEMPLATE/english.php&lt;/code&gt; find this line of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_CATEGORIES&amp;#39;, &amp;#39;Categories&amp;#39;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change it as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_CATEGORIES&amp;#39;, zen_image(DIR_WS_TEMPLATE . &amp;#39;buttons/&amp;#39; . $_SESSION[&amp;#39;language&amp;#39;] . &amp;#39;/&amp;#39; . &amp;#39;image.gif&amp;#39;, &amp;#39;Your alt title text for heading&amp;#39;));
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In your &lt;code&gt;/includes/languages/YOURTEMPLATE/english.php&lt;/code&gt;, find this line of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_LINKS&amp;#39;, &amp;#39;&amp;amp;nbsp;&amp;amp;nbsp;[more]&amp;#39;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change it as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_LINKS&amp;#39;, &amp;#39;&amp;#39;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This method requires another edit which globally removes the &lt;code&gt;[more]&lt;/code&gt; that follows all heading links.  However, but it does allow total flexibility in image type used for each replaced heading. In practice, heading images will usually be of the same type for consistency.&lt;/p&gt;
+&lt;h3 id=&#34;replacing-background-images-for-one-or-all-sidebox-headings&#34;&gt;Replacing background images for one or all sidebox headings:&lt;/h3&gt;
+&lt;p&gt;You may want to keep the standard heading text, but change the background images.
+If you want to replace the default Zen Cart background image to be used for all the sideboxes, use an image editor to create your image and save it to &lt;code&gt;/includes/templates/YOURTEMPLATE/images/&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+&lt;p&gt;Now open your &lt;code&gt;stylesheet.css&lt;/code&gt;, find and edit the following rules:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.leftBoxHeading { 
+  margin: 0em; 
+  background: url(../images/background_image.jpg) no-repeat left top #ff6699; 
+  padding: 0.5em 0.2em; 
+}
+.rightBoxHeading { 
+  margin: 0em; 
+  background: url(../images/background_image.jpg) no-repeat left top #ff6699; 
+  padding: 0.2em 0em; 
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want a different background image for one sidebox heading, add to your stylesheet below the previous rules:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#categoriesHeading { 
+  margin: 0em; 
+  background: url(../images/categories_background_image.jpg) no-repeat left top #ff6699; 
+  padding: 0.2em 0em; 
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the image file name in each of the URL property values, save the stylesheet and upload the image files to &lt;code&gt;/includes/templates/YOURTEMPLATE/images/&lt;/code&gt; on your server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Centerboxes</title>
+      <link>/user/template/centerboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/centerboxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Centerboxes are pieces of content that are displayed in the middle of the screen in the Zen Cart storefront.&lt;/p&gt;
+&lt;p&gt;You can learn about &lt;a href=&#34;/user/admin/centerboxes/&#34;&gt;controlling centerboxes in the admin&lt;/a&gt; so that you only display the centerboxes that are most important to your store.&lt;/p&gt;
+&lt;p&gt;This is the Featured Products centerbox.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/featured_products_centerbox.png&#34; alt=&#34;Featured Products Centerbox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are four centerboxes that are built in to Zen Cart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New Products&lt;/li&gt;
+&lt;li&gt;Featured Products&lt;/li&gt;
+&lt;li&gt;Special Products&lt;/li&gt;
+&lt;li&gt;Upcoming Products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;centerboxes-and-mobile&#34;&gt;Centerboxes and Mobile&lt;/h3&gt;
+&lt;p&gt;Centerboxes will appear on a mobile device in the expected place.&lt;/p&gt;
+&lt;img alt=&#34;Centerbox on tablet&#34; src=&#34;/images/centerboxes_mobile.png&#34; /&gt;
+&lt;p&gt;This behavior is different from that of &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;sideboxes&lt;/a&gt;, which are commonly hidden on mobile.&lt;/p&gt;
+&lt;h3 id=&#34;centerbox-controls&#34;&gt;Centerbox Controls&lt;/h3&gt;
+&lt;p&gt;The number of products shown in a centerbox is controlled using an Admin setting on the page &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.  Note that names of these settings changed in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Centerbox Name&lt;/th&gt;
+&lt;th&gt;Pre-1.5.8&lt;/th&gt;
+&lt;th&gt;1.5.8 and above&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Specials&lt;/td&gt;
+&lt;td&gt;Maximum Display of Specials Products - Main Page&lt;/td&gt;
+&lt;td&gt;Products on Special Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;New Products Module&lt;/td&gt;
+&lt;td&gt;New Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;Maximum Display of Featured Products - Main Page&lt;/td&gt;
+&lt;td&gt;Featured Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Upcoming Products&lt;/td&gt;
+&lt;td&gt;Upcoming Products&lt;/td&gt;
+&lt;td&gt;Upcoming Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;creating-your-own-centerbox&#34;&gt;Creating your own centerbox&lt;/h3&gt;
+&lt;p&gt;In addition to the four built-in centerboxes described above, other centerboxes are available in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Zen Cart plugins library&lt;/a&gt;.  Try searching for both &amp;ldquo;centerbox&amp;rdquo; and &amp;ldquo;centerboxes&amp;rdquo; in the Advanced Search with &amp;ldquo;Search Titles Only&amp;rdquo; set.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Columnar Layout for Product Listing pages</title>
+      <link>/user/template/listing_columns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/listing_columns/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Since 1.5.7, Zen Cart includes a configuration setting called &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/#columns_per_row&#34;&gt;Columns Per Row&lt;/a&gt;.  This setting allows you to display multiple columns of products per row on the Product Listing page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Your template must also support this setting.  Both the Responsive Classic and &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap&lt;/a&gt; templates support this setting.  Many older templates use a version of the Column Grid Layout plugin, which is deprecated by this setting.&lt;/p&gt;
+&lt;p&gt;This is what it looks like when &lt;code&gt;Columns Per Row&lt;/code&gt; is set to 3.
+&lt;img src=&#34;/images/listing_col_3.png&#34; alt=&#34;3 Columns per Row&#34;&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;This is what it looks like when &lt;code&gt;Columns Per Row&lt;/code&gt; is set to 1.  Using this setting is called &lt;em&gt;rows mode&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/listing_col_1.png&#34; alt=&#34;1 Column per Row&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note that the setting &lt;code&gt;Columns Per Row&lt;/code&gt; only applies to Product Listing pages, not other listing pages such as All Products or New Products.&lt;/p&gt;
+&lt;p&gt;In the Bootstrap template, the recommended value of &lt;code&gt;Columns Per Row&lt;/code&gt; is 0, which allows the template to determine how many columns will fit on the screen dynamically.  A smaller window will have fewer columns, and a larger window will have more.&lt;/p&gt;
+&lt;p&gt;Setting &lt;code&gt;Columns Per Row&lt;/code&gt; to 0 is called &lt;em&gt;fluid mode&lt;/em&gt; in the Bootstrap template.   The Bootstrap template is best run in either rows mode or fluid mode.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a Bootstrap listing page in fluid mode in a wide window (around 1500px):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bs_listing_wide.png&#34; alt=&#34;Wide window - 4 columns&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s what the same page looks like when the window is narrowed to 1024px (iPad width):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bs_listing_tablet.png&#34; alt=&#34;Tablet window - 3 columns&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And finally, here&amp;rsquo;s what the same page looks like when the window is narrowed to 500 px (mobile phone):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bs_listing_phone.png&#34; alt=&#34;Tablet window - 1 column&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Developer Tip: the number of columns shown at each window size may be adjusted by editing &lt;code&gt;includes/modules/bootstrap/product_listing.php&lt;/code&gt; and modifying for &lt;code&gt;$grid_classes_matrix&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Creating the template_info.php file</title>
+      <link>/user/template/template_info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_info/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Activating your template so that you can use your overrides files 
+requires two final steps (the first is one time only, of course).&lt;/p&gt;
+&lt;p&gt;a. Create &lt;code&gt;includes/templates/YOURTEMPLATE/template_info.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In order for the system to &amp;ldquo;see&amp;rdquo; your template, the &lt;code&gt;template_info.php&lt;/code&gt;
+file must exist inside the &lt;code&gt;includes/templates/YOURTEMPLATE&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Create it as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php 
+$template_name = &amp;#39;Your Template Name&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;b. Login to your Admin panel and go to &lt;a href=&#34;/user/admin_pages/tools/template_selection/&#34;&gt;Tools &amp;gt; Template Selection&lt;/a&gt;.  You should see your new custom template(s) in the dropdown list. Select your template.&lt;/p&gt;
+&lt;p&gt;You are now using your new template.&lt;/p&gt;
+&lt;h3 id=&#34;full-specification-for-template_info-file&#34;&gt;Full specification for template_info file&lt;/h3&gt;
+&lt;p&gt;If you are going to distribute your template, you should build out the
+&lt;code&gt;template_info.php&lt;/code&gt; file more completely.  Use this&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php  
+$template_name = &amp;#39;YOURTEMPLATE&amp;#39;;  
+$template_version = &amp;#39;Version 1.0&amp;#39;;  
+$template_author = &amp;#39;&amp;lt;enter your name&amp;gt;&amp;#39;;  
+$template_description = &amp;#39;describe your template&amp;#39;; 
+$template_screenshot = &amp;#39;screenshot.jpg&amp;#39;;  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice there is no closing PHP tag.&lt;/p&gt;
+&lt;p&gt;Create a screenshot of your template, and save it as &lt;code&gt;includes/templates/YOURTEMPLATE/images/screenshot.jpg&lt;/code&gt;.  This way people will be able to &amp;ldquo;preview&amp;rdquo; your template.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Creating your own Template</title>
+      <link>/user/template/creating_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/creating_template/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;looking-to-build-your-own-template&#34;&gt;Looking to build your own template?&lt;/h2&gt;
+&lt;p&gt;First, before you do that, consider using the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2191&#34;&gt;Bootstrap4 template&lt;/a&gt;, as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
+It is already mobile-friendly, and has a clean &amp;ldquo;look&amp;rdquo; to it.&lt;/p&gt;
+&lt;h2 id=&#34;other-templates&#34;&gt;Other Templates&lt;/h2&gt;
+&lt;p&gt;To get ideas about building your own template, take a look at the other templates available for Zen Cart.&lt;/p&gt;
+Contributed responsive templates which you can use with your Zen Cart may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=2&#34;&gt; Responsive Templates&lt;/a&gt; sections in the Zen Cart Plugins Directory.  
+
+&lt;br&gt;&lt;br&gt;
+
+For reference, you can also view and &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=13&#34;&gt; Legacy Templates&lt;/a&gt;, but bear in mind that you will want your final template to be responsive (to look good on mobile devices). 
+
+&lt;br&gt;
+
+&lt;h2 id=&#34;scaffolding-your-own-template&#34;&gt;Scaffolding Your Own Template&lt;/h2&gt;
+&lt;p&gt;This is an outline of the steps you should follow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;make a new folder, perhaps something like &lt;code&gt;includes/templates/mary&lt;/code&gt;.  This is the working area for your own custom template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make the following subfolders in there:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;common/
+css/
+images/
+jscript/
+templates/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copy the existing files from the &lt;code&gt;responsive_classic/css&lt;/code&gt; and &lt;code&gt;responsive_classic/images&lt;/code&gt; into the appropriate folders in your new working area. Also copy the &lt;code&gt;responsive_class/jscript/jscript_framework.php&lt;/code&gt; file to your new &lt;code&gt;jscript&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copy &lt;code&gt;tpl_header.php&lt;/code&gt; from the &lt;code&gt;responsive_classic/common&lt;/code&gt; folder.  You&amp;rsquo;ll want to edit this file to incorporate your custom page-header.  This file governs the appearance of the top of all of your pages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copy &lt;code&gt;tpl_footer.php&lt;/code&gt; from the &lt;code&gt;responsive_classic/common&lt;/code&gt; folder.  You can edit the footer area to appear as you like.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;While working on #4 and #5 above, you can also modify the &lt;code&gt;css/stylesheet.css&lt;/code&gt; file in your working area, to set the styles for your template.  You can copy your existing stylesheet into the &lt;code&gt;css&lt;/code&gt; folder, making sure it&amp;rsquo;s named &lt;code&gt;stylesXXXXXXX.css&lt;/code&gt; (ie: &lt;code&gt;styles_mine.css&lt;/code&gt;). All files in this folder are loaded by your store in alphabetical order, and cascading rules will determine the combination of effects in that order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The colors for the main area of your site and the sideboxes, etc can be controlled in your stylesheets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you need a very different page-layout from the default, you can copy &lt;code&gt;tpl_main_page.php&lt;/code&gt; from the &lt;code&gt;responsive_classic/common&lt;/code&gt; folder to your &lt;code&gt;common&lt;/code&gt; folder, and alter it.  This file builds your pages, starting with the header, then the left column of sideboxes, the middle &amp;ldquo;content&amp;rdquo; area of the site, then the right column of sideboxes, followed finally by the footer. Thus, by styling this page, you can control the appearance of the whole site. In many cases, you don&amp;rsquo;t need to touch it though, as much of the control is in the stylesheet already.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, create the &lt;code&gt;template_info.php&lt;/code&gt; file in your working template folder. Instructions on creating this file and activating your template can be found in &lt;a href=&#34;/user/template/template_info/&#34;&gt;the template_info FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: CSS</title>
+      <link>/user/template/stylesheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/stylesheet/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Zen Cart, stylesheets are located in this folder: 
+&lt;code&gt;/includes/templates/YOURTEMPLATE/css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The CSS files are sent to the browser in this order: (and alphabetically within each case of more than one match):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;style*.css&lt;/code&gt; // are always loaded and at least ONE should contain site-wide properties.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;language_stylesheet.css&lt;/code&gt; // changes to ALL pages, when that language is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;page_name.css&lt;/code&gt; // changes to one page (use index_home.css for &amp;ldquo;just the home page&amp;rdquo;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pageXXX.css&lt;/code&gt; // changes for a specific numbered EZ-Page, ie: page3.css for ez-page id=3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;language_page_name.css&lt;/code&gt; // changes to one page, when that language is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;c_??.css&lt;/code&gt; // changes to all info pages in a category&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;language_c_??.css&lt;/code&gt; // changes to all info pages in a category, when that language is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;c_??_??_children.css&lt;/code&gt; // changes for all children of the specified parent. Also supports a language prefix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;m_??.css&lt;/code&gt; // changes to a manufacturer&amp;rsquo;s listing page&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;language_m_??.css&lt;/code&gt; // changes to a manufacturer&amp;rsquo;s listing page, when that language is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;p_??.css&lt;/code&gt; // changes to a product&amp;rsquo;s info page&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;language_p_??.css&lt;/code&gt; // changes to a product&amp;rsquo;s info page, when that language is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;print*.css&lt;/code&gt; // printer-friendly global usage site-wide changes for printing-only&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;code&gt;stylesheet.css&lt;/code&gt; always loads first and should contain the bulk of your CSS selectors. Each file loaded takes priority over previously loaded file(s). To save loading time, only new selectors or selectors whose properties you wish to change should be in the subsequent optional CSS files. You can have different overrides for the same page, in different languages, because the two would never be called at the same time.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;If someone selected the French language on your site, the &lt;/code&gt;french_stylesheet.css&lt;code&gt;would also be loaded. It should only contain the site-wide changes you want to make to&lt;/code&gt;stylesheet.css`.&lt;/p&gt;
+&lt;p&gt;If someone went to any of the other pages, that page&amp;rsquo;s CSS file would be loaded. Possibly you want different &lt;code&gt;background-image&lt;/code&gt; &amp;amp; &lt;code&gt;background-color&lt;/code&gt; on each of &lt;code&gt;page_x&lt;/code&gt; pages. Possibly you do not want a border around &lt;code&gt;.plainBox&lt;/code&gt; most of the time, but on a couple of pages you do, and on one of those pages you want it in black and the other in red.&lt;/p&gt;
+&lt;p&gt;Possibly you created a NEW tag for your Privacy Statement. It is defined in only one CSS file, &lt;code&gt;german_privacy.css&lt;/code&gt; as&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.newtag { text-transform: uppercase }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Because, in Germany, that phrase must be in all CAPS, but not in other countries.&lt;/p&gt;
+&lt;p&gt;Use your CSS files and the standard tags as much as possible; just change their properties when needed. If possible, DON&amp;rsquo;T MODIFY the core code. Use your CSS files to do the work for you.&lt;/p&gt;
+&lt;p&gt;If you refrain from altering the core files, then you will find that upgrades and maintenance are much easier.&lt;/p&gt;
+&lt;p&gt;Helpful tips testing CSS changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Watch out for &lt;a href=&#34;/user/new_user_topics/browser_caching/&#34;&gt;browser caching&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;/user/running/inspect/&#34;&gt;Inspect in Google Chrome&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customizing your Site</title>
+      <link>/user/template/customizing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/customizing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/customizing/&#34;&gt;this folder&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Define Pages</title>
+      <link>/user/template/define_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/define_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Define pages are special pieces of content that appear above normal page content for certain pages.  Unlike language strings, Define pages may be modified in the Admin.  The &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Define Pages Editor&lt;/a&gt; help page lists the pages with define page content.&lt;/p&gt;
+&lt;p&gt;The phrase &amp;ldquo;Define Pages&amp;rdquo; can also be used to refer to the stand-alone pages whose content is created in the Define Pages Editor, and which are controlled using the &lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Define Pages Status&lt;/a&gt; admin page.&lt;/p&gt;
+&lt;p&gt;The Define pages also come with a set of controls in admin, which are shown on &lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Pages Status&lt;/a&gt;.  These controls allow you to determine whether the block of content created by the Define Pages editor is shown on the associated page, and whether links to the associated page will be created.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The setting &lt;em&gt;Link ON&lt;/em&gt; means a link to the page will be created in any content block which is designed to link to this page.  For example, setting &lt;em&gt;Link ON&lt;/em&gt; for Define Page 2 means a link to &lt;code&gt;index.php?main_page=page_2&lt;/code&gt; will be created in the Responsive Classic Mobile Menu, the More Information Sidebox and the Site Map.  Conversely, &lt;em&gt;Link OFF&lt;/em&gt; means no such link will be created.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The setting &lt;em&gt;Define Text ON&lt;/em&gt; means the text created in the &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt; will be displayed on the page in question.  For example, setting &lt;em&gt;Define Text ON&lt;/em&gt; for Define Main Page Status means the text created in &lt;code&gt;define_main_page.php&lt;/code&gt; in the Define Pages Editor will be displayed on the home page. Conversely, &lt;em&gt;Define Text OFF&lt;/em&gt; for this page means the text will not be displayed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As noted above, &lt;em&gt;Define Text ON&lt;/em&gt; always behaves the same way - it simply enables or disables the display of the block of text associated with it.  &lt;em&gt;Link ON&lt;/em&gt; is different: it controls the creation of links to the associated page.  The interpretation of &lt;em&gt;Link ON&lt;/em&gt; is done as follows:&lt;/p&gt;
+&lt;br&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Status Flag Name&lt;/th&gt;
+&lt;th&gt;Behavior if Link ON&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Main Page Status&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Contact Us Status&lt;/td&gt;
+&lt;td&gt;Link to Contact Us page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Privacy Status&lt;/td&gt;
+&lt;td&gt;Link to Privacy page created in Site Map and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Shipping &amp;amp; Returns&lt;/td&gt;
+&lt;td&gt;Link to Shipping Information page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Conditions of Use&lt;/td&gt;
+&lt;td&gt;Link to Conditions of Use page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Checkout Success&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Discount Coupon&lt;/td&gt;
+&lt;td&gt;Link to Discount Coupon page created in Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Site Map Status&lt;/td&gt;
+&lt;td&gt;Link to Site Map created in Site Map, Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Page-Not-Found Status&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Page 2&lt;/td&gt;
+&lt;td&gt;Link to Page 2 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Page 3&lt;/td&gt;
+&lt;td&gt;Link to Page 3 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Define Page 4&lt;/td&gt;
+&lt;td&gt;Link to Page 4 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;em&gt;Link ON&lt;/em&gt; is also interpreted by some popular plugins such as Flexible Footer.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The pages listed below are considered Define Pages, since their content is controlled using the Define Pages Editor.&lt;/p&gt;
+&lt;br&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page Name&lt;/th&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;About Us&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_about_us.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=about_us&lt;/code&gt; (1.5.8 andabove)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ask a Question&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_ask_a_question.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=ask_a_question&lt;/code&gt;  (1.5.7 and above)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Contact Us&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_contact_us.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=contact_us&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Privacy&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_privacy.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=privacy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping Info&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_shippinginfo.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=shippinginfo&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conditions of Use&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_conditions.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=conditions&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discount Coupon&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_discount_coupon.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=coupons&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Site Map&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_site_map.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=site_map&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 2&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_2.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 3&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_3.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_3&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_4.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;These pages have other content, and define page content is embedded along side that:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page Name&lt;/th&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Shopping Cart&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_shopping_cart.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=shopping_cart&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Success&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_checkout_success.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=checkout_success&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Home Page&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_main_page.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some newer pages use the &lt;a href=&#34;/user/customizing/site_specific_overrides/&#34;&gt;site specific overrides&lt;/a&gt; file for enabling/disabling links instead of Configuration &amp;gt; Define Pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;About Us&lt;/li&gt;
+&lt;li&gt;Brands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your needs go beyond what is provided by the define pages, take a look at the FAQ on &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;adding pages&lt;/a&gt;, which describes the use of &lt;a href=&#34;/user/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; as well as using plugins to build custom pages for your Zen Cart installation.&lt;/p&gt;
+&lt;h3 id=&#34;related&#34;&gt;Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/define_not_showing/&#34;&gt; Why does my define page not show up in Define Pages Editor?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/extra_pages/&#34;&gt; Extra Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Extra Pages</title>
+      <link>/user/template/extra_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/extra_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Because many people want to add content to their store, Zen Cart comes with three built-in &amp;ldquo;extra&amp;rdquo; pages.&lt;/p&gt;
+&lt;p&gt;These pages are &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define pages&lt;/a&gt;, which can be managed using the &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Define Pages Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page Name&lt;/th&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 2&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_2.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 3&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_3.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_3&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;define_page_4.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;index.php?main_page=page_4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The Extra Pages are displayed in the &lt;a href=&#34;/user/sideboxes/more_information_sidebox/&#34;&gt;More Information sidebox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are other ways to create new pages; see &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;Adding Pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Favicon</title>
+      <link>/user/template/favicon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/favicon/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Adding a custom &lt;code&gt;favicon&lt;/code&gt; is simple:&lt;/p&gt;
+&lt;p&gt;Create and place a &lt;code&gt;favicon.ico&lt;/code&gt; file in the root (ie: &amp;ldquo;public_html&amp;rdquo; or &amp;ldquo;httpdocs&amp;rdquo; etc) directory of your web server, using your FTP program.
+Zen Cart provides one by default, so simply replacing that file is fine.&lt;/p&gt;
+&lt;p&gt;In most cases, that&amp;rsquo;s all you need to do !!!&lt;/p&gt;
+&lt;p&gt;The icon image file needs to be &amp;ldquo;square&amp;rdquo;, ideally a multiple of 48x48px, such as 48x48 or 96x96 or 132x132px.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You will usually have to &amp;ldquo;bookmark&amp;rdquo; your store in your browser&amp;rsquo;s favorites in order for the favicon to be cached by the browser for display.
+Often pressing CTRL+D will quickly bookmark the page you&amp;rsquo;re currently viewing.&lt;/p&gt;
+&lt;p&gt;TIP: If your favicon is cached with an old/invalid image, you can fix that after uploading your replacement by simply &lt;a href=&#34;/user/new_user_topics/browser_caching/&#34;&gt;clearing your browser&amp;rsquo;s cache&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Related reading:
+&lt;a href=&#34;https://support.google.com/webmasters/answer/9290858&#34;&gt;https://support.google.com/webmasters/answer/9290858&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Font Awesome</title>
+      <link>/user/template/font_awesome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/font_awesome/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Font Awesome provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available.&lt;/p&gt;
+&lt;p&gt;You can see an example of the use of Font Awesome in the icons shown on Admin &amp;gt; Catalog &amp;gt; Categories/Products:&lt;/p&gt;
+&lt;img src=&#34;/images/products_icons.png&#34; alt=&#34;Admin Product Listing Icons&#34; /&gt; 
+&lt;br clear=&#34;all&#34; /&gt;
+&lt;br&gt;
+The pencil, trash can, dollar sign and asterisk are icons from Font-Awesome.
+&lt;br&gt;
+Font Awesome 4.7 is included in Zen Cart 1.5.5 and above.  
+&lt;h2 id=&#34;font-awesome-help&#34;&gt;Font Awesome Help&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fontawesome.com/v4.7.0/&#34;&gt;Font Awesome 4.7&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I add links to the Header and Footer?</title>
+      <link>/user/template/additional_links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/additional_links/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are two options for adding additional links to the header and footer of your site.&lt;/p&gt;
+&lt;h3 id=&#34;option-1&#34;&gt;OPTION 1:&lt;/h3&gt;
+&lt;p&gt;Additional links requires editing two files; &lt;code&gt;tpl_header.php&lt;/code&gt; and &lt;code&gt;tpl_footer.php&lt;/code&gt;.
+You can add internal page links as well external links. We&amp;rsquo;ll use &lt;code&gt;tpl_header.php&lt;/code&gt; in this article, but the same procedures would apply to &lt;code&gt;tpl_footer.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Adding an internal page link (let&amp;rsquo;s use the &lt;code&gt;Contact Us&lt;/code&gt; page in this example.)&lt;/p&gt;
+&lt;p&gt;In your text editor, open &lt;code&gt;includes/templates/YOURTEMPLATE/common/tpl_header.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Find the following code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!--bof-navigation display--&amp;gt;
+&amp;lt;div id=&amp;#34;navMainWrapper&amp;#34;&amp;gt;
+&amp;lt;div id=&amp;#34;navMain&amp;#34;&amp;gt;
+&amp;lt;ul class=&amp;#34;back&amp;#34;&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;?php echo &amp;#39;&amp;lt;?php echo &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . HTTP_SERVER . DIR_WS_CATALOG . &amp;#39;&amp;#34;&amp;gt;&amp;#39;; ?&amp;gt;&amp;lt;?php echo HEADER_TITLE_CATALOG; ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add the following code just below the last line in the above code.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php if (DEFINE_CONTACT_US_STATUS &amp;lt;= 1) { ?&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;?php echo &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_CONTACT_US, &amp;#39;&amp;#39;, &amp;#39;SSL&amp;#39;) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . BOX_INFORMATION_CONTACT . &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;; ?&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;?php } ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You would add an external link as outlined above.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;http://external_link.com&amp;#34;&amp;gt;External Link Text&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;option-2&#34;&gt;OPTION 2:&lt;/h3&gt;
+&lt;p&gt;Make sure the EZ-Pages header or footer are activated in &lt;a href=&#34;/user/admin_pages/configuration/configuration_ezpagessettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; EZ-Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Admin &amp;gt; Tools &amp;gt; EZ-Pages&lt;/a&gt; and click the &lt;code&gt;New Page&lt;/code&gt; button.&lt;/p&gt;
+&lt;p&gt;Fill in the Page Title Box (in our example, add Contact Us)&lt;/p&gt;
+&lt;p&gt;Select Where you want the link to appear:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Header &amp;gt; select Yes and add a Sort Order
+Footer &amp;gt; select Yes and add a Sort Order
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/images/ezpages_header_footer.png&#34; alt=&#34;EZ-Pages header and footer&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Scroll down to the &lt;code&gt;Internal Link URL&lt;/code&gt; box&lt;/p&gt;
+&lt;p&gt;Add your link as follows - &lt;code&gt;index.php?main_page=contact_us&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ezpages_internal_link.png&#34; alt=&#34;EZ-Pages internal link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(You would follow this procedure for whatever page you are adding)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I enable &#34;Customers Also Purchased&#34; display?</title>
+      <link>/user/template/also_purchased/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/also_purchased/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;Also Purchased&amp;rdquo; information may be shown on the &lt;a href=&#34;/user/storefront_pages/product_info/&#34;&gt;product info&lt;/a&gt; page.  This means customers can see which other products were purchased by customers viewing the product they are viewing.&lt;/p&gt;
+&lt;p&gt;To enable also purchased products display on the product info page, do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Set: &lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/#also_purchased_products_columns_per_row&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info &amp;gt; Also Purchased Products Columns per Row&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set: &lt;a href=&#34;/user/admin_pages/configuration/configuration_minimumvalues/#also_purchased_products&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Minimum Values &amp;gt; Also Purchased Products&lt;/a&gt; to a value greater than 0.  If you always want to display also purchased products, use the value &amp;ldquo;1&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A value larger than 1 (say &amp;ldquo;3&amp;rdquo;) means &amp;ldquo;Display also purchased products only if there are three or more.&amp;rdquo;  So if you set this value to 3, but there is only one also purchased product, no products will be shown.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Set: &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/#also_purchased_products&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; Also Purchased Products&lt;/a&gt; to a value greater than 1.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/also_purchased.png&#34; alt=&#34;Also Purchased Products&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I find the value of a configuration setting?</title>
+      <link>/user/template/config_value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/config_value/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you&amp;rsquo;re modifying a template and you want to check a config value, you can 
+look at the &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configuration Settings&lt;/a&gt; page 
+and do a search for the configuration title.  The configuration key will be 
+shown when you find it, and you can use that in your code.  The configuration
+key is created as a defined constant as part of the initialization code.&lt;/p&gt;
+&lt;p&gt;Example: You want to display the value of the email address that emails
+are sent from.&lt;/p&gt;
+&lt;p&gt;Go to the page linked above, and search for &lt;code&gt;sent FROM&lt;/code&gt;.  You&amp;rsquo;ll see that the 
+configuration key is &lt;code&gt;EMAIL_FROM&lt;/code&gt;.   It&amp;rsquo;s a defined constant so it doesn&amp;rsquo;t 
+need a &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+echo &amp;#34;We welcome your feedback - just email &amp;#34; . EMAIL_FROM . &amp;#34;.&amp;lt;br /&amp;gt;&amp;#34;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Conversely, if you&amp;rsquo;re modifying a template, you might see a config like 
+&lt;code&gt;SHOW_TOTALS_IN_CART&lt;/code&gt;.
+If you want to know where it is set, 
+look at the &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configuration Settings&lt;/a&gt; page, 
+and search for it. 
+When you see it, look back up to the last header, you&amp;rsquo;ll see it&amp;rsquo;s in 
+&lt;code&gt;Configuration &amp;gt; Layout Settings&lt;/code&gt;, so now you know where it is set.&lt;/p&gt;
+&lt;p&gt;If you have an all uppercase value referenced in your template, and you don&amp;rsquo;t see the value in configuration settings, it&amp;rsquo;s likely a language string.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I remove and/or re-arrange the sideboxes?</title>
+      <link>/user/template/remove_rearrange_sideboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/remove_rearrange_sideboxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Open &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Click on the box that you would like to move or turn off, click edit and make your changes. The position of the boxes is based on their sort order. Example: a box with a sort of 10 would be above a box with a sort of 30.&lt;/p&gt;
+&lt;p&gt;Click the &lt;em&gt;Update&lt;/em&gt; button to save your changes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How to rearrange the product info page</title>
+      <link>/user/template/move_add_to_cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/move_add_to_cart/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Example: I want to move the Add to Cart box to another place on my product page&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have a page you want to change the structure of.&lt;/li&gt;
+&lt;li&gt;Open the page in your browser.&lt;/li&gt;
+&lt;li&gt;Choose View Source from your browser menu.&lt;/li&gt;
+&lt;li&gt;Scroll down to the section you&amp;rsquo;re bothered about moving. In the case of the add-to-cart button, you&amp;rsquo;ll see this:&lt;/li&gt;
+&lt;li&gt;You need to locate the section that starts with and ends with these tags:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!--bof Add to Cart Box --&amp;gt;
+   &amp;lt;div id=&amp;#34;cartAdd&amp;#34;&amp;gt;
+     Add to Cart: &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;cart_quantity&amp;#34; value=&amp;#34;1&amp;#34; maxlength=&amp;#34;6&amp;#34; size=&amp;#34;4&amp;#34; /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;products_id&amp;#34; value=&amp;#34;1&amp;#34; /&amp;gt;&amp;lt;input type=&amp;#34;image&amp;#34; src=&amp;#34;includes/templates/template_default/buttons/english/button_in_cart.gif&amp;#34; alt=&amp;#34;Add to Cart&amp;#34; title=&amp;#34; Add to Cart &amp;#34; /&amp;gt;  
+   &amp;lt;/div&amp;gt;
+&amp;lt;!--eof Add to Cart Box--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note the &lt;code&gt;&amp;lt;!-- bof Add to Cart Box --&amp;gt;&lt;/code&gt; (&amp;lsquo;bof&amp;rsquo; is an abbreviation for &amp;ldquo;beginning of file&amp;rdquo;) and corresponding end tag: &lt;code&gt;&amp;lt;!-- eof Add to Cart Box--&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Simply relocate that section up or down in the file to the place where you want it to appear:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go find those same tags in the template file (if you search using the &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developers Toolkit&lt;/a&gt;, you&amp;rsquo;ll find that it&amp;rsquo;s &lt;code&gt;tpl_product_info_display.php&lt;/code&gt;) and move that entire section up or down in the file as you desire, noting to NOT put anything between any other existing &lt;code&gt;&amp;lt;bof&amp;gt;...&amp;lt;eof&amp;gt;&lt;/code&gt; markers.&lt;/p&gt;
+&lt;p&gt;For example, instead of this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;bof product description&amp;gt;
+&amp;lt;eof product description&amp;gt;
+&amp;lt;bof add to cart&amp;gt;
+&amp;lt;eof add to cart&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;maybe you want something like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;bof add to cart&amp;gt;
+&amp;lt;eof add to cart&amp;gt;
+&amp;lt;bof product description&amp;gt;
+&amp;lt;eof product description&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Do similarly with other sections as desired.&lt;/p&gt;
+&lt;p&gt;Then use any necessary CSS alterations to style things as needed.&lt;/p&gt;
+&lt;p&gt;See also this related FAQ: &lt;a href=&#34;/user/new_user_topics/what_files/&#34;&gt;How do I determine which files to edit&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How to show/hide text?</title>
+      <link>/user/template/disclosure_widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/disclosure_widget/</guid>
+      <description>
+        
+        
+        &lt;p&gt;An element on a page can be toggled open or closed with just a click.&lt;/p&gt;
+&lt;p&gt;Modern web browsers support HTML5 markup language, allowing use of the &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; elements to create a disclosure widget in which information is visible only when the widget is toggled into an &amp;lsquo;open&amp;rsquo; state.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation:&lt;/h3&gt;
+&lt;p&gt;In order for the HTML code to validate correctly when using these HTML5 elements the DOCTYPE must be set to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html &amp;lt;?php echo HTML_PARAMS; ?&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This code is in the file &lt;code&gt;includes/templates/YOURTEMPLATE/common/html_header.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Modern Zen Cart templates have this already but older templates may still be based on the HTML/XHTML standards. HTML5 is designed to be backwards compatible so changing the DOCTYPE on these templates should have no ill effect.&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation:&lt;/h3&gt;
+&lt;p&gt;The disclosure widget can be added to any page such as a &lt;a href=&#34;/user/template/define_pages/&#34;&gt;Define page&lt;/a&gt;, &lt;a href=&#34;/user/ezpages/&#34;&gt;EZ-Page&lt;/a&gt;, category description, product description &amp;hellip;&lt;/p&gt;
+&lt;p&gt;Example code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;lt;details&amp;gt;
+  &amp;lt;summary&amp;gt;What is Zen Cart?&amp;lt;/summary&amp;gt;
+  &amp;lt;p&amp;gt;Zen Cart truly is the art of e-commerce; free, user-friendly, open source shopping cart software. The ecommerce web site design program is developed by a group of like-minded shop owners, programmers, designers, and consultants that think ecommerce web design could be, and should be, done differently.&amp;lt;/p&amp;gt;
+&amp;lt;/details&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; element should be the first child element of the &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+&lt;p&gt;By default the &lt;code&gt;&amp;lt;summary&amp;gt; ... &amp;lt;/summary&amp;gt;&lt;/code&gt; heading is all that is displayed, with the &lt;code&gt;&amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;&lt;/code&gt; content being hidden. A standard arrow icon is shown next to the heading indicating that it needs to be clicked on. Try it out by copying the above code to one of your pages.&lt;/p&gt;
+&lt;h3 id=&#34;customization&#34;&gt;Customization:&lt;/h3&gt;
+&lt;p&gt;Although less feature rich than traditional Javascript methods of show/hide these elements can still be customized. Changing the icon, formatting the elements and changing the default state can all be achieved by edits to the HTML code or CSS stylesheet.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Index Listing Configuration</title>
+      <link>/user/template/index_listing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/index_listing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;em&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/em&gt; doesn&amp;rsquo;t control a row and column layout like the &lt;a href=&#34;/user/template/listing_page_layout/&#34;&gt;listing page layout&lt;/a&gt; pages for &lt;em&gt;New Products&lt;/em&gt; and &lt;em&gt;Featured Products&lt;/em&gt;. Instead, the &lt;strong&gt;Index Listing&lt;/strong&gt; settings control location, sort order, number of products per row and category filtering for the  &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;&lt;strong&gt;centerboxes&lt;/strong&gt;&lt;/a&gt; only.&lt;/p&gt;
+&lt;p&gt;The listing pages do have other configuration settings listed under &lt;em&gt;Admin &amp;gt; Configuration&lt;/em&gt; but those listings are for the pages only and not the centerboxes. The &lt;span style=&#34;color:red&#34;&gt;red arrows&lt;/span&gt; below point to the configuration settings for the actual pages with these urls:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index.php?main_page=featured_products&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;index.php?main_page=products_new&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=...&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;span style=&#34;color:blue;&#34;&gt;blue arrow&lt;/span&gt;, however, points to the &lt;strong&gt;Index Listing&lt;/strong&gt; which only controls the &lt;em&gt;centerboxes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/config_dropdown_cutout.png&#34; alt=&#34;Configuration Dropdown Menu&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/user/template/centerboxes/&#34;&gt;Centerboxes&lt;/a&gt; are located below the page content as portrayed in the image below.&lt;/p&gt;
+&lt;h2 id=&#34;centerbox-location--sort-order&#34;&gt;Centerbox Location &amp;amp; Sort Order&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_location.png&#34; alt=&#34;Centerbox Location&#34;&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;For example, when you don&amp;rsquo;t want to show &lt;em&gt;New Products&lt;/em&gt; anywhere in the cart, you turn off the link in the Categories sidebox and make sure the &lt;em&gt;New Products&lt;/em&gt; sidebox is disabled. The &lt;em&gt;New Products&lt;/em&gt; are still showing, however, on all the listed pages in the centerboxes below the page content as shown in the above image. Your next step then is to change the settings in the &lt;strong&gt;Index Listing:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/index_listing.png&#34; alt=&#34;Index Listing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Most of the &lt;strong&gt;Index Listing&lt;/strong&gt; settings control whether the different centerboxes show on different pages. Other settings at the bottom of the menu control the number of products showing per row in the centerboxes.&lt;/p&gt;
+&lt;p&gt;The centerboxes are &lt;strong&gt;New Products&lt;/strong&gt;, &lt;strong&gt;Featured Products&lt;/strong&gt;, &lt;strong&gt;Special Products&lt;/strong&gt; and &lt;strong&gt;Upcoming&lt;/strong&gt; (or Expected) &lt;strong&gt;Products&lt;/strong&gt;. There are four settings for each centerbox which correspond to the four locations where the centerboxes are displayed.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;New&lt;/em&gt;, &lt;em&gt;Featured&lt;/em&gt; and &lt;em&gt;Special Products&lt;/em&gt; all look the same: a row of products:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_featured.png&#34; alt=&#34;Featured Products Centerbox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Upcoming Products&lt;/em&gt; looks very different:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_upcoming.png&#34; alt=&#34;Upcoming Products Centerbox&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;page-locations&#34;&gt;Page Locations&lt;/h2&gt;
+&lt;p&gt;Those locations are &lt;strong&gt;Main Page&lt;/strong&gt; (or the home page), &lt;strong&gt;Category with Subcategories&lt;/strong&gt;, &lt;strong&gt;Product listing&lt;/strong&gt;, and &lt;strong&gt;Errors &amp;amp; Missing Products&lt;/strong&gt;. These are all turned on by default. The image above shows the home page with the lower portion of the centerboxes. The  &lt;strong&gt;Category with Subcategories&lt;/strong&gt; url starts /index.php?main_page=index&amp;amp;cPath=. This then is any category or subcategory that has a subcategory. &lt;strong&gt;Product Listing&lt;/strong&gt; is a category with no subcategories where the products are listed on the page. &lt;strong&gt;Errors &amp;amp; Missing Products&lt;/strong&gt; obviously is when a category or product does not exist but a visitor puts in the wrong url.&lt;/p&gt;
+&lt;p&gt;If you do not want a specific centerbox showing anywhere, change the number to zero on each of the four page locations. Anything besides zero designates the sort order of the boxes with the lowest number being displayed first. The default settings have &lt;em&gt;New Products&lt;/em&gt; first and the others in this order: &lt;em&gt;Featured Products&lt;/em&gt; (2), &lt;em&gt;Specials&lt;/em&gt; (3) and &lt;em&gt;Upcoming&lt;/em&gt; (4).&lt;/p&gt;
+&lt;h2 id=&#34;number-of-products-per-row&#34;&gt;Number of Products per Row&lt;/h2&gt;
+&lt;p&gt;The next set of settings towards the bottom of the menu are the &lt;em&gt;Per Row&lt;/em&gt; choice: the number of products that appear per row.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_per_row.png&#34; alt=&#34;Centerboxes per Category Row&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The numbers range up to 12 per row but as you can see by the image below, the actual number showing needs to be more about what looks right in the display as well as not exceeding the number of products available. This is &lt;em&gt;New Products&lt;/em&gt; changed to 12 and there are only 9 products allowed by &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;&lt;em&gt;Configuration &amp;gt; Maximum Values&lt;/em&gt;&lt;/a&gt; so those nine are compressed into 1/12 partitions, leaving white space (3 nonexistent products) to the right and crowding the other nine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_per_row_expanded.png&#34; alt=&#34;Crowded Centerboxes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Changing the number to 9, improves the display but can still be too crowded for most sites.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_per_row_expanded2.png&#34; alt=&#34;Crowded Centerboxes 2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;filtering-products-for-categories&#34;&gt;Filtering Products for Categories&lt;/h2&gt;
+&lt;p&gt;The last setting on the index menu is &lt;em&gt;Filter Product Listing for Current Top Level Category When Enabled&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The centerboxes on the home page and the errors and missing pages will show all eligible products but that is not necessarily the case on the other pages.  If you are in a specific category with sub-categories, those boxes will display only products from those sub-categories. On the product listing page, all products within the parent category will show. That final setting, however, will change that to all products instead of just category-specific products by selecting 0 instead of the default 1.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_filter.png&#34; alt=&#34;Filter for Centerboxes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Zen Cart demo data has nine featured products, but in the Hardware Category only two are featured. Both show on the first page where all eight sub-categories appear. But on the product listing page in the mice category, only the featured mouse appears.&lt;/p&gt;
+&lt;p&gt;Hardware Subcategories:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_featured_hardware2.png&#34; alt=&#34;Hardware Subcategories Featured Products&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mouse Subcategory&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/centerbox_featured_hardware.png&#34; alt=&#34;Mouse Subcategory Featured Product&#34;&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The centerboxes shown on the Shopping Cart page when it is empty are controlled in &lt;a href=&#34;/user/admin_pages/configuration/configuration_stock/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Stock&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: JavaScript Customization</title>
+      <link>/user/template/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/javascript/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;site-wide-jscripts&#34;&gt;Site-Wide jscript&amp;rsquo;s&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;jscript*.js files -- to be &#34;linked&#34; by your site&lt;/b&gt; 
+&lt;/p&gt;&lt;p&gt;Any file in the &lt;code&gt;includes/templates/&lt;b&gt;{template_directory}&lt;/b&gt;/jscript/&lt;/code&gt; directory with the following filename format will be loaded globally on every page of your shop: 
+&lt;/p&gt;
+&lt;pre&gt; jscript_{unique_name}.js
+&lt;/pre&gt;
+&lt;p&gt;(where &lt;b&gt;{unique_name}&lt;/b&gt; can be anything you want) 
+&lt;/p&gt;&lt;p&gt;Effectively, the file will be loaded as if you had inserted the following into an HTML page:
+&lt;/p&gt;
+&lt;pre&gt; &amp;lt;script type=&#34;text/javascript&#34; src=&#34;includes/templates/{template_directory}/jscript/jscript_{unique_name}.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;b&gt;jscript*.php files -- to be &#34;included&#34; in your HTML content sent to the browser, inline.&lt;/b&gt;
+&lt;/p&gt;&lt;p&gt;If you need to control the content of certain PHP variables inside jscript code on the page, OR if you need to include several &lt;code&gt;&amp;lt;script&amp;gt;...&amp;lt;/script&amp;gt;&lt;/code&gt; tags, use a &lt;b&gt;jscript_*.php&lt;/b&gt; file instead. 
+However, &lt;b&gt;in this case, you DO need to include&lt;/b&gt; the &lt;code&gt;&amp;lt;script .... &amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; tags in the file. 
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;page-specific-jscript-files&#34;&gt;Page-Specific jscript files&lt;/h3&gt;
+&lt;p&gt;For page-specific operation, put the file under the &lt;code&gt;/includes/modules/pages/{pagename}/&lt;/code&gt; folder. 
+&lt;/p&gt;&lt;p&gt;&lt;b&gt;jscript*.js files -- to be &#34;linked&#34; by your site&lt;/b&gt; 
+&lt;/p&gt;&lt;p&gt;Note: &lt;b&gt;jscript_*.js&lt;/b&gt; files must not contain any &lt;code&gt;&amp;lt;script...&amp;gt; .... &amp;lt;/script&amp;gt;&lt;/code&gt; tags. They should contain ONLY the contents that are to go &#34;between&#34; those tags. 
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;b&gt;jscript*.php files -- to be &#34;included&#34; in your HTML content sent to the browser, inline.&lt;/b&gt;
+&lt;/p&gt;&lt;p&gt;If you need to control the content of certain PHP variables inside jscript code on the page, use a &lt;b&gt;jscript_*.php&lt;/b&gt; file.
+However, in this case, you DO need to include the &lt;code&gt;&amp;lt;script .... &amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; tags in the file.
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;on_load-override-how-to&#34;&gt;On_Load Override How-To&lt;/h3&gt;
+&lt;p&gt;This is a bit of another angle on the use of JavaScript in Zen Cart pages.
+&lt;/p&gt;&lt;p&gt;Zen Cart&#39;s modular system can be used to insert &amp;lt;body&amp;gt; tag &#34;onload&#34; event handling on a site-wide or per-page basis very easily. Within your /includes/templates/YOURTEMPLATE/ folder, you can create a &lt;code&gt;/jscript/on_load/&lt;/code&gt; folder for this purpose. 
+&lt;/p&gt;&lt;p&gt;Any &lt;b&gt;on_load_*.js&lt;/b&gt; file in this directory can be used to modify the body tag with a JavaScript &lt;i&gt;on_load()&lt;/i&gt; function.
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;site-wide-use&#34;&gt;Site-Wide Use&lt;/h3&gt;
+&lt;p&gt;For site-wide operation, just name the file on_load_.js (you need the trailing underscore; on_load.js does not work) and store it in the &lt;code&gt;/includes/templates/YOURTEMPLATE/jscript/on_load/&lt;/code&gt; folder. Multiple files may be present, and can be added by adding an underscore and more letters to the filename. 
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;page-specific-use&#34;&gt;Page-Specific Use&lt;/h3&gt;
+&lt;p&gt;For page-specific operation, put the file under the &lt;code&gt;/includes/modules/pages/{pagename}/&lt;/code&gt; folder. 
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;file-contents&#34;&gt;File Contents&lt;/h3&gt;
+&lt;p&gt;Note: &lt;b&gt;on_load_*.js&lt;/b&gt; files must contain ONLY the raw code to be inserted in the &amp;lt;body&amp;gt; tag in the &lt;code&gt;on_load=&#34;&#34;&lt;/code&gt; attribute.
+&lt;/p&gt;&lt;p&gt;The effect is like this:
+&lt;/p&gt;
+&lt;pre&gt; &amp;lt;body onload=&#34;WHATEVER_YOUR_FILE_CONTAINS_GOES_HERE&#34;&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Essentially, the contents of the file will be a function call to the DOM or to functions loaded in a jscript file. 
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;override-operation&#34;&gt;OVERRIDE Operation:&lt;/h3&gt;
+&lt;p&gt;1. Checks the existence of &#34;on_load&#34; scripts for the &lt;b&gt;individual page&lt;/b&gt; first. Looks in 
+&lt;/p&gt;&lt;p&gt;&#34;&lt;code&gt;/includes/modules/pages/{PAGENAME}/&lt;/code&gt;&#34; for files named &#34;&lt;b&gt;on_load_*.js&lt;/b&gt;&#34;
+&lt;/p&gt;&lt;p&gt;2. Then checks for site-wide overrides in 
+&lt;/p&gt;&lt;p&gt;&#34;&lt;code&gt;includes/templates/TEMPLATE/jscript/on_load/on_load_*.js&lt;/code&gt;&#34;
+&lt;/p&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;examples&#34;&gt;EXAMPLES&lt;/h3&gt;
+&lt;h4 id=&#34;example-1-per-page-on_load-coding&#34;&gt;EXAMPLE #1 (per-page on_load coding)&lt;/h4&gt;
+&lt;p&gt;Two live examples of this exist for the default &#34;login&#34; and &#34;contact us&#34; pages in Zen Cart®.
+Let&#39;s look at the login page: 
+&lt;/p&gt;&lt;p&gt;You&#39;ll see that in &lt;code&gt;/includes/modules/pages/login/on_load_main.js&lt;/code&gt; the code that is inserted into the &amp;lt;body&amp;gt; tag for that page is this:
+&lt;/p&gt;
+&lt;pre&gt;  document.getElementById(&#39;login-email-address&#39;).focus();
+&lt;/pre&gt;
+&lt;p&gt;This is a DOM call to set focus on the &#34;login-email-address&#34; field on the page as the first spot where the cursor will be flashing when the page is opened.
+&lt;/p&gt;&lt;p&gt;When the login page is loaded, the &amp;lt;body&amp;gt; tag will read like this:
+&lt;/p&gt;
+&lt;pre&gt;  &amp;lt;body id=&#34;login&#34; onload=&#34;document.getElementById(&#39;login-email-address&#39;).focus();&#34;&amp;gt; 
+&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;example-2-on_load-calls-on-all-pages-in-your-shop&#34;&gt;EXAMPLE #2 (on_load calls on all pages in your shop)&lt;/h4&gt;
+&lt;p&gt;Sometimes a designer wishes to preload rollover images on the page for menu purposes. In this case, the implementation is two-fold:
+&lt;/p&gt;&lt;p&gt;1. Create a file with JavaScript function definitions for the preload activities, and place it in:
+&lt;/p&gt;&lt;p&gt;&lt;code&gt;includes/templates/{template_directory}/jscript/jscript_preloadimages.js&lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;2. Create a file for the onload code as:
+&lt;/p&gt;&lt;p&gt;&lt;code&gt;includes/templates/{template_directory}/jscript/on_load/on_load_image_preload.js&lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;and in the file put just one function call to match the preload function definition in your js file, such as:
+&lt;/p&gt;
+&lt;pre&gt; preloadImages();
+&lt;/pre&gt;
+&lt;p&gt;3. Of course, be sure to upload the real image files, etc to support the preload activities.
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Left and Right Columns - turning them off</title>
+      <link>/user/template/left_right_columns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/left_right_columns/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;turning-off-a-column-on-specific-pages&#34;&gt;Turning off a column on specific pages&lt;/h3&gt;
+&lt;p&gt;Firstly, if you don&amp;rsquo;t already have one, create an override file for tpl_main_page.php in your &lt;code&gt;includes/templates/YOURTEMPLATE/common&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;There is enormous scope within this one module to create turn the left and right hand columns on and off according to which page is to be displayed. Open it up and you will see a large comment at the top explaining some of them. Here are a few examples to help illustrate that.&lt;/p&gt;
+&lt;p&gt;If you wish to turn off the left hand column for the &amp;ldquo;contact us&amp;rdquo; and &amp;ldquo;terms &amp;amp; conditions&amp;rdquo; pages, find the following block of code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (in_array($current_page_base,explode(&amp;#34;,&amp;#34;,&amp;#39;list_pages_to_skip_all_right_sideboxes _on_here,separated_by_commas,and_no_spaces&amp;#39;)) ) {  
+     $flag_disable_right = true;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and edit it to read&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (in_array($current_page_base,explode(&amp;#39;,&amp;#39;,&amp;#39;contact_us,conditions&amp;#39;)) ) {  
+     $flag_disable_left = true;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you wished to disable both columns during checkout, add or edit the above block to read&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (in_array($current_page_base,explode(&amp;#39;,&amp;#39;,&amp;#39;checkout_shipping,checkout_payment,checkout_confirmation&amp;#39;)) ) {  
+    $flag_disable_right = true;  
+    $flag_disable_left = true;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To disable the right column for EZ-Pages 2 and 5,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (isset($ezpage_id) &amp;amp;&amp;amp; in_array($ezpage_id,explode(&amp;#34;,&amp;#34;,&amp;#39;2,5&amp;#39;))) {  
+    $flag_disable_right = true;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To turn off the left column for the home page only, you would insert the following:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if ($this_is_home_page) {  
+     $flag_disable_left = true;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;turning-off-a-column-on-ez-pages-via-admin&#34;&gt;Turning off a column on EZ-Pages via Admin&lt;/h3&gt;
+&lt;p&gt;If you wish to disable left or right columns on specific EZ-Pages, go to 
+Admin &amp;gt; Configuration &amp;gt; EZ-Pages Settings.&lt;/p&gt;
+&lt;p&gt;To disable the left column on specific EZ-Pages, update the setting 
+&lt;em&gt;EZ-Pages Pages to disable left-column&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Simply list page ID numbers separated by commas with no spaces.&lt;/p&gt;
+&lt;p&gt;Page ID numbers can be obtained from the EZ-Pages screen under Admin &amp;gt; Tools.&lt;br&gt;
+ie: 21&lt;br&gt;
+or leave blank.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s another way to &lt;a href=&#34;/user/ezpages/sidebox_display_changes/&#34;&gt;modify sidebox display on EZ-Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;other-options&#34;&gt;Other options:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;To Globally disable the right column, go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt; and  set &lt;em&gt;Column Right Status - Global&lt;/em&gt; to 0.&lt;/li&gt;
+&lt;li&gt;There are also other ways to &lt;a href=&#34;/user/sideboxes/suppressing_sidebox_display/&#34;&gt;change sidebox display&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Listing Page Layout</title>
+      <link>/user/template/listing_page_layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/listing_page_layout/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Listing Pages are used to show groups of results.  Examples of listing pages are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New Products&lt;/li&gt;
+&lt;li&gt;Featured Products&lt;/li&gt;
+&lt;li&gt;All Products&lt;/li&gt;
+&lt;li&gt;Product Listing page for category 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are specific configurations for these pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The New Products page is configured by &lt;a href=&#34;/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; New Listing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The Featured Products page is configured by &lt;a href=&#34;/user/admin_pages/configuration/configuration_featuredlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Featured Listing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The All Products page is configured by &lt;a href=&#34;/user/admin_pages/configuration/configuration_alllisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; All Listing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Product Listing Pages that show the products in a category are configured by &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Listing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These four pages are share some of the same layout features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stacked rows with one product per row.  Note that since 1.5.7b, it has been possible to display products in a &lt;a href=&#34;/user/template/listing_columns/&#34;&gt;grid layout&lt;/a&gt; with multiple columns per row.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/pagination/&#34;&gt;paginated results display&lt;/a&gt; so that only a subset of the total number of results are shown on each page.  Navigation is provided between pages of results.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Three of the pages, New, Featured, and All Products, have configuration settings that are identical in nature. The full explanation for these display settings can be found here: &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration&#34;&gt;New/Featured/All Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Product Listing page configuration is a bit different.  A full explanation for its display settings can be found here: &lt;a href=&#34;/user/template/product_listing_page_configuration&#34;&gt;Product Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt; configuration settings are actually for Centerboxes, not the Product Listing page.  It is explained in the &lt;a href=&#34;/user/template/index_listing&#34;&gt;Index Listing Configuration&lt;/a&gt; FAQ.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Mobile or Desktop state?</title>
+      <link>/user/template/mobile_mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/mobile_mode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;/user/template/responsive/&#34;&gt;Responsiveness&lt;/a&gt; - the ability to display properly on not just a desktop computer, but also mobile devices like phones and tablets - is a critical feature of modern templates.&lt;/p&gt;
+&lt;p&gt;Determining the kind of device being used can be done in different ways.  How you do it will depend on the template you are running, and what tools are available with that template.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;responsive_classic&lt;/code&gt; template 
+uses the &lt;a href=&#34;http://mobiledetect.net/&#34;&gt;Mobile_Detect&lt;/a&gt; library to 
+determine the screen characteristics.&lt;/p&gt;
+&lt;p&gt;Use this to query the environment and react accordingly.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (!class_exists(&amp;#39;Mobile_Detect&amp;#39;)) {
+  include_once(DIR_WS_CLASSES . &amp;#39;Mobile_Detect.php&amp;#39;);
+}
+  $detect = new Mobile_Detect;
+  $isMobile = $detect-&amp;gt;isMobile();
+  $isTablet = $detect-&amp;gt;isTablet();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You likely already have a &lt;code&gt;Mobile_Detect&lt;/code&gt; object built, so you can just do&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;global $detect; // If you&amp;#39;re in a function
+if ($detect-&amp;gt;isMobile() || $detect-&amp;gt;isTablet()) { 
+  ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You might also want to check &lt;code&gt; $_SESSION[&#39;layoutType&#39;] == &#39;mobile&#39;&lt;/code&gt; in case that variable is set.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Another approach is the one used by &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Twitter Bootstrap&lt;/a&gt;. Bootstrap uses the CSS &amp;ldquo;media queries&amp;rdquo; breakpoints feature to determine the appropriate presentation for the device in use.  Bootstrap proponents argue that bootstrap is faster to load and more well maintained than Mobile-Detect. You can observe how this is done in the Zen Cart admin, which makes heavy use of Bootstrap.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: New Listing - Featured Listing - All Listing configuration settings</title>
+      <link>/user/template/new_featured_all_listing_page_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/new_featured_all_listing_page_configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The New Products, Featured Products, and All Products pages 
+are &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;listing pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They are all configured using the same kinds of settings, but each one 
+has its own configuration settings page; the pages are under Admin &amp;gt; Configuration, and are named
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;New Listing&lt;/a&gt;,
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_featuredlisting/&#34;&gt;Featured Listing&lt;/a&gt;, and 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_alllisting/&#34;&gt;All Listing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For example, Admin &amp;gt; Configuration &amp;gt; Featured Listing, the top settings are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Display Product Image&lt;/li&gt;
+&lt;li&gt;Display Product Quantity&lt;/li&gt;
+&lt;li&gt;Display Product Buy Now Button&lt;/li&gt;
+&lt;li&gt;Display Product Name&lt;/li&gt;
+&lt;li&gt;Display Product Model&lt;/li&gt;
+&lt;li&gt;Display Product Manufacturer Name&lt;/li&gt;
+&lt;li&gt;Display Product Price&lt;/li&gt;
+&lt;li&gt;Display Product Weight&lt;/li&gt;
+&lt;li&gt;Display Product Date Added&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and each of these values is set the same way, with a 4 digit value:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0= off&lt;/li&gt;
+&lt;li&gt;1st digit Left or Right&lt;/li&gt;
+&lt;li&gt;2nd and 3rd digit Sort Order&lt;/li&gt;
+&lt;li&gt;4th digit number of breaks after&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Another way to describe this is that the digits are ABBC where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A is 1 for display on left, 2 for display on right&lt;/li&gt;
+&lt;li&gt;BB is the sort order (00-99)&lt;/li&gt;
+&lt;li&gt;C is the number of line breaks after the field is displayed (0-9).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/images/featured_products_settings.png&#34; alt=&#34;Featured Products Settings&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note that each setting has a four digit value; each digit or combination of digits controls a separate aspect of the display.&lt;/p&gt;
+&lt;p&gt;The first digit controls whether that piece of the listing, say the product name, will show or not. You have to chose either a 1 or a 2 in order for it to show on the listing. Product name has a value of 2101, indicating it is to be shown. If that value was changed to 3101, it disappears from the page.&lt;/p&gt;
+&lt;p&gt;The first digit also determines whether the item is located on the left or right as in the image below where the 2101 was changed to 1101. Use &amp;ldquo;2&amp;rdquo; for right (as in the upper image) and &amp;ldquo;1&amp;rdquo; for left.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/featured_product_settings2.png&#34; alt=&#34;Featured Change Name Number&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The second and third digit taken together determines the sort order of the items in the display. For example, changing the model number from 2101 to 2311 places it below the manufacturer name that has a number of 2302.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/featured_product_settings3.png&#34; alt=&#34;Featured Change Model Number&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The fourth number determines the spacing between fields. If we just change the manufacturer number above from 2302 to 2301, the space between the manufacturer and model number disappears. Peeking under the hood, this setting controls how many line breaks are present, i.e, one, two or however many you may want.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/featured_product_settings4.png&#34; alt=&#34;Featured Change Manufacturer Spacing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The behavior of the Buy Now button on listing pages is discussed in &lt;a href=&#34;/user/storefront_pages/add_to_cart/&#34;&gt;add to cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/user/storefront_pages/product_listing/&#34;&gt;Product Listing pages&lt;/a&gt; have their own configuration, which is described in the &lt;a href=&#34;/user/template/product_listing_page_configuration/&#34;&gt;product listing configuration page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Other templates for Zen Cart</title>
+      <link>/user/template/other_templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/other_templates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The base template is Zen Cart is called &lt;a href=&#34;/user/template/template_default/&#34;&gt;template_default&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Classic is a sample custom template. You can create your own custom templates;  Classic is just an example. Anything that&amp;rsquo;s not in your custom template but exists in template_default will be automatically loaded from template_default for you. Thus, when you&amp;rsquo;re building a custom template, all you need in your custom template folder are the files/folders that you&amp;rsquo;ve customized/changed/added. Everything else is taken from the &lt;a href=&#34;/user/first_steps/overrides/#default-files&#34;&gt;default files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Responsive Classic is another sample custom template, but it is more modern than Classic. It was designed &lt;a href=&#34;/user/template/responsive/&#34;&gt;to be responsive&lt;/a&gt;, which is a way of saying that it works on mobile devices.  When the &lt;code&gt;classic&lt;/code&gt; template was created, there were no mobile devices, so that wasn&amp;rsquo;t a concern.  More details on this template are provided in the &lt;a href=&#34;/user/template/responsive_classic/&#34;&gt;Responsive Classic FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The community contributed &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;bootstrap template&lt;/a&gt; is another good option for a responsive template.&lt;/p&gt;
+Contributed responsive templates which you can use with your Zen Cart may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=2&#34;&gt; Responsive Templates&lt;/a&gt; sections in the Zen Cart Plugins Directory.  
+
+&lt;br&gt;&lt;br&gt;
+
+For reference, you can also view and &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=13&#34;&gt; Legacy Templates&lt;/a&gt;, but bear in mind that you will want your final template to be responsive (to look good on mobile devices). 
+
+&lt;br&gt;
+
+&lt;br&gt;
+&lt;p&gt;See the other FAQs on &lt;a href=&#34;/user/template/&#34;&gt;the template system and overrides&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;h3 id=&#34;commercial-templates&#34;&gt;Commercial Templates&lt;/h3&gt;
+&lt;p&gt;There are software vendors who sell templates for Zen Cart.  Many of them are extremely visually attractive.  But exercise caution!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some of these templates were built for WordPress, not Zen Cart, so they don&amp;rsquo;t respect configuration settings and are much harder to work on.&lt;/li&gt;
+&lt;li&gt;Some of these templates were built under PHP 5.6 and need extensive fixing before they can run error-free under current versions of PHP.&lt;/li&gt;
+&lt;li&gt;Some of these templates were built for much older versions of Zen Cart, and haven&amp;rsquo;t been upgraded.&lt;/li&gt;
+&lt;li&gt;Some of these templates will use PHP short &amp;ldquo;open&amp;rdquo; tags, which are deprecated and scheduled for removal from PHP.&lt;/li&gt;
+&lt;li&gt;Some of these templates include old versions of JavaScript libraries, which must be updated.&lt;/li&gt;
+&lt;li&gt;Some of these templates remove large pieces of core code functionality to simplify the template builder&amp;rsquo;s job (because they don&amp;rsquo;t take the time to learn all the things Zen Cart can do with its various configuration switches or product features), which means that things you would expect to work do not.&lt;/li&gt;
+&lt;li&gt;Some of these templates will not have incorporated the latest &lt;a href=&#34;/user/template/template_changes/&#34;&gt;template security changes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Be sure to discuss these issues with your template provider and make the transaction with an awareness of what you are taking on.&lt;br&gt;
+Don&amp;rsquo;t be afraid to get them to put in writing whether they have tested the template&amp;rsquo;s functionality with all of Zen Cart&amp;rsquo;s features, and whether they will support you if things &amp;ldquo;break&amp;rdquo; when you change Zen Cart configuration settings.&lt;/p&gt;
+&lt;h3 id=&#34;switching-templates-during-an-upgrade&#34;&gt;Switching templates during an upgrade&lt;/h3&gt;
+&lt;p&gt;As is noted in the &lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;detailed upgrading guide&lt;/a&gt;, an upgrade is not the ideal time to switch templates; consider upgrading first and then choosing a new template.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tweaking templates &amp;ldquo;to perfection&amp;rdquo; can endlessly delay implementing an upgrade if you aren&amp;rsquo;t diligent.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you &lt;em&gt;must&lt;/em&gt; change templates (because you&amp;rsquo;re coming from an old version of Zen Cart with a non-responsive template, for example), consider using the &lt;a href=&#34;/user/template/responsive_classic/&#34;&gt;Responsive Classic&lt;/a&gt; template until your upgrade is complete and live, and &lt;em&gt;then&lt;/em&gt; changing your template.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Page format in the storefront</title>
+      <link>/user/template/page_format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/page_format/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This screenshot below shows the top of a page in a Zen Cart storefront on a desktop computer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/page_top.png&#34; alt=&#34;Page top&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Legend:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a: &lt;a href=&#34;/user/template/header/&#34;&gt;page header&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;b,c: left and right &lt;a href=&#34;/user/sideboxes/&#34;&gt;sideboxes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;d: &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;centerbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;e: &lt;a href=&#34;/user/new_user_topics/categories_tabs/&#34;&gt;categories tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;f: &lt;a href=&#34;/user/ezpages/ezpages_header_bar/&#34;&gt;EZ-Pages header bar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This screenshot below shows the bottom of a page in a Zen Cart storefront. 
+The entire width of the page is taken up by the footer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/page_bottom.png&#34; alt=&#34;Page bottom&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Because of the reduced screensize on a mobile device, pages look different.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the same page on a mobile phone:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/page_phone.png&#34; alt=&#34;Page on a phone&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s the same page on a tablet:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/page_tablet.png&#34; alt=&#34;Page on a tablet&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On those devices, the hamburger menu on the top left allows you to view additional page content.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Page types in the storefront</title>
+      <link>/user/template/page_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/page_types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Zen Cart storefront is created when the software builds &lt;em&gt;pages&lt;/em&gt;. 
+For example, when a user browses&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://YOURSTORE.com/index.php?main_page=specials 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the page which is displayed is the Specials page.&lt;/p&gt;
+&lt;p&gt;The parts and layout of pages is shown in the &lt;a href=&#34;/user/template/page_format/&#34;&gt;page format&lt;/a&gt; FAQ.&lt;/p&gt;
+&lt;p&gt;The following types of pages are provided by Zen Cart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Standard Pages such as product_info. These pages each have their own layout, according to the content they are displaying.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/template/listing_page_layout/&#34;&gt;Listing Pages&lt;/a&gt;, such as specials, which show multiple products.  Many listing pages have common layout elements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/template/define_pages/&#34;&gt;Define Pages&lt;/a&gt;, such as the Shipping Information page, which display content created by the storeowner.  A fixed set of define pages is provided.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/ezpages/what_are_ezpages/&#34;&gt;EZ-Pages&lt;/a&gt;, which display content according to the needs of the storeowner; an unlimited number of EZ-Pages may be created.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, you may add pages to your store by &lt;a href=&#34;/user/customizing/add_pages#create-a-new-page&#34;&gt;creating a new page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Pagination in Zen Cart</title>
+      <link>/user/template/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/pagination/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a &lt;a href=&#34;/user/template/listing_page_layout/&#34;&gt;listing page&lt;/a&gt; is created, the results are shown in paginated blocks, with navigation between blocks of results. For example, here&amp;rsquo;s the Specials page on a mobile device.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/specials_pagination.png&#34; alt=&#34;Specials pagination&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;In this screenshot, there are 27 specials, which are displayed in groups of 9.  The navigation controls (&lt;strong&gt;Next&lt;/strong&gt; and &lt;strong&gt;Previous&lt;/strong&gt; links) may be shown at the top, bottom or both places.&lt;/p&gt;
+&lt;p&gt;The desktop display is similar, but because a desktop screen is wider, more products per row can be shown.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/specials_pagination_desktop.png&#34; alt=&#34;Specials pagination - desktop&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Pagination controls are provided in the Zen Cart admin on the page &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.  Note that names of these settings changed in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page Name&lt;/th&gt;
+&lt;th&gt;Pre-1.5.8&lt;/th&gt;
+&lt;th&gt;1.5.8 and above&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Specials&lt;/td&gt;
+&lt;td&gt;Products on Special&lt;/td&gt;
+&lt;td&gt;Products on Special Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;New Products Listing- Number Per Page&lt;/td&gt;
+&lt;td&gt;New Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;Maximum Display of Featured Products Page&lt;/td&gt;
+&lt;td&gt;Featured Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Index Listing&lt;/td&gt;
+&lt;td&gt;Products Listing- Number Per Page&lt;/td&gt;
+&lt;td&gt;Products Listing Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;All Products&lt;/td&gt;
+&lt;td&gt;Maximum Display of Products All Page&lt;/td&gt;
+&lt;td&gt;All Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that the Advanced Search Results also uses the setting from the Index listing. 
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;The behavior and appearance of the &lt;strong&gt;Next&lt;/strong&gt; and &lt;strong&gt;Previous&lt;/strong&gt; navigation links is controlled using settings on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;And since these are template elements, they can be styled.  For example, here&amp;rsquo;s another template&amp;rsquo;s interpretation of the navigation:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/next_prev_2.png&#34; alt=&#34;Navigation&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Privately testing a new template</title>
+      <link>/user/template/private_testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/private_testing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In recent versions of Zen Cart, it is possible for an admin user to privately test a new template while other users see the regular template.  Use these steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Determine your IP Address&lt;/li&gt;
+&lt;li&gt;Go to the screen Admin &amp;gt; Configuration &amp;gt; Website Maintenance, and enter your IP Address in the &lt;em&gt;Down For Maintenance (exclude this IP-Address)&lt;/em&gt; field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If you are using a local webserver (such as MAMP or WAMP), you must use whatever value is contained in &lt;code&gt;$_SERVER[&#39;REMOTE_ADDR&#39;]&lt;/code&gt; for your IP Address.  This will &lt;em&gt;not&lt;/em&gt;  be your public facing IP address - it might be &lt;code&gt;::1&lt;/code&gt; or some other private value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visit the storefront and append the argument &lt;code&gt;t=YOURNEWTEMPLATE&lt;/code&gt; to the URL.  You will now be locally switched to the new template.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, if the URL was&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://MYSTORE.com/index.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you would use&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://MYSTORE.com/index.php?t=MYTEMPLATE
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the URL was&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://MYSTORE.com/index.php?main_page=index&amp;amp;cPath=6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you would use&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://MYSTORE.com/index.php?main_page=index&amp;amp;cPath=6&amp;amp;t=MYTEMPLATE 
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This only needs to be done once; it will be carried forward for subsequent page visits in the current session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you&amp;rsquo;re finished testing, append &lt;code&gt;t=off&lt;/code&gt; to the URL to stop private testing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to make other templates available to all users (i.e. not limit it to IP addresses from the Down For Maintenance list), make the following changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;copy &lt;code&gt;includes/init_includes/init_templates.php&lt;/code&gt; to &lt;code&gt;includes/init_includes/overrides/init_templates.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;At the bottom of &lt;code&gt;includes/init_includes/overrides/init_templates.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;change&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (zen_is_whitelisted_admin_ip()) {
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (1) {
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Product Listing configuration settings</title>
+      <link>/user/template/product_listing_page_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/product_listing_page_configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Product Listing (or Index Listing) pages 
+are &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;listing pages&lt;/a&gt; showing
+all products in a specific category.&lt;/p&gt;
+&lt;p&gt;These pages have their own configuration settings page, which is 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Listing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On this page, the top settings are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Display Product Image&lt;/li&gt;
+&lt;li&gt;Display Product Manufacturer Name&lt;/li&gt;
+&lt;li&gt;Display Product Model&lt;/li&gt;
+&lt;li&gt;Display Product Name&lt;/li&gt;
+&lt;li&gt;Display Product Price/Add to Cart&lt;/li&gt;
+&lt;li&gt;Display Product Quantity&lt;/li&gt;
+&lt;li&gt;Display Product Weight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these values is set the same way, with a zero (indicating do not display this field on the listing page) or a positive number (indicating display this field in this order).&lt;/p&gt;
+&lt;p&gt;There are two things about the display of index listing pages that can be changed using admin controls:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;a) How products are sorted when displayed on an index listing page:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;By default, the sort order of products is done according to the sort order field on the products editing page.&lt;/p&gt;
+&lt;p&gt;This can be changed using &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order&#34;&gt;Display Product Listing Default Sort Order&lt;/a&gt; on the Admin &amp;gt; Configuration &amp;gt; Product Listing page.  See &lt;a href=&#34;/user/customizing/sort_order/&#34;&gt;sort order&lt;/a&gt; for more details. When this value is set, one of the fields above (name, price, quantity, etc.) will be used to sort the products.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;b) How each product is displayed on the listing page.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Display&amp;rdquo; controls described above indicate whether a particular field is shown for a product.  The layout in which they are shown is less configurable than the &lt;a href=&#34;/user/template/new_featured_all_listing_page_configuration/&#34;&gt;New Listing - Featured Listing - All Listing configuration settings&lt;/a&gt;   - there are basically three columns per row of listed product:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the image is on the left&lt;/li&gt;
+&lt;li&gt;the price and add to cart box is on the right&lt;/li&gt;
+&lt;li&gt;in the center are product name, model, manufacturer, description, quantity and weight.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This behavior may be modified by changing the template file &lt;code&gt;includes/modules/YOURTEMPLATE/product_listing.php&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Responsive Classic Template for Zen Cart</title>
+      <link>/user/template/responsive_classic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/responsive_classic/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Responsive Classic is a template which is &lt;a href=&#34;/user/template/responsive/&#34;&gt;responsive&lt;/a&gt;, meaning it can be used on mobile devices.  It uses &lt;a href=&#34;http://mobiledetect.net/&#34;&gt;Mobile_Detect&lt;/a&gt; library to determine the screen characteristics, and highly tailored CSS for each type of device: phone, tablet or desktop.&lt;/p&gt;
+&lt;h3 id=&#34;responsive-classic-template---product-page-desktop&#34;&gt;Responsive Classic Template - Product Page (Desktop)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/responsive_classic_desktop.png&#34; alt=&#34;Responsive Classic Template Product Page on Desktop&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;responsive-classic-template---product-page-mobile&#34;&gt;Responsive Classic Template - Product Page (Mobile)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/responsive_classic_full.png&#34; alt=&#34;Responsive Classic Template Product Page on Mobile&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Responsive Templates</title>
+      <link>/user/template/responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/responsive/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Responsiveness - the ability to display properly on not just a desktop computer, but also mobile devices like phones and tablets - is a critical feature of modern templates.&lt;/p&gt;
+&lt;p&gt;How do you know if a template is responsive?&lt;/p&gt;
+&lt;p&gt;The easiest way would be to look at it on your smartphone.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t have a smartphone handy, or just want a quick test from your desktop web browser, you can use the mobile simulator that modern browsers generally come with.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to do it in Google Chrome:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right click and select Inspect.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Click the &amp;ldquo;Toggle device toolbar&amp;rdquo; icon&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/device_toolbar.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now your page will display as if it were being rendered on a mobile device.  You can change the device using the dropdown at the top of the page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/device_dropdown.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Another way is just to use your mouse and grab the corner of your browser window and drag it narrower, and watch what it looks like on smaller/larger screens.&lt;/p&gt;
+&lt;p&gt;Developers and designers might appreciate the &lt;a href=&#34;https://responsively.app&#34;&gt;https://responsively.app&lt;/a&gt; tool for looking at a site by simulating various common mobile devices.&lt;/p&gt;
+&lt;p&gt;TIP: Don&amp;rsquo;t design your site for &amp;ldquo;every possible mobile device.&amp;rdquo; It will never be &amp;ldquo;pixel-perfect.&amp;rdquo; Make it work well for the majority of devices that &lt;em&gt;your&lt;/em&gt; site&amp;rsquo;s visitors are using: don&amp;rsquo;t worry about devices of people who aren&amp;rsquo;t your target customer.&lt;/p&gt;
+&lt;h2 id=&#34;does-zen-cart-offer-a-responsive-template&#34;&gt;Does Zen Cart offer a responsive template?&lt;/h2&gt;
+&lt;p&gt;Zen Cart has two free responsive templates which are well supported:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;/user/template/responsive_classic/&#34;&gt;Responsive Classic template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-do-you-achieve-responsiveness&#34;&gt;How do you achieve responsiveness?&lt;/h2&gt;
+&lt;p&gt;In order to determine how to lay out a page, the template must first determine the length and width of the visitor&amp;rsquo;s screen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Responsive Classic template uses browser user-agent-detection&lt;/li&gt;
+&lt;li&gt;The Bootstrap template uses media queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A deeper discussion of these topics is presented in the &lt;a href=&#34;/user/template/mobile_mode/&#34;&gt;Mobile or Desktop state?&lt;/a&gt; article.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Sideboxes</title>
+      <link>/user/template/sideboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/sideboxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sideboxes are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.  (The smaller width of a mobile screen means they are either hidden or put in the middle of the screen on such devices.)&lt;/p&gt;
+&lt;p&gt;You can learn about &lt;a href=&#34;/user/admin/sideboxes/&#34;&gt;controlling sideboxes in the admin&lt;/a&gt; so that you only display the sideboxes that are most important to your store.&lt;/p&gt;
+&lt;p&gt;Zen Cart has a number of sideboxes that come pre-built. 
+You can see all the available sideboxes in the &lt;a href=&#34;/user/sideboxes/sidebox_list/&#34;&gt;sidebox list&lt;/a&gt; FAQ.&lt;/p&gt;
+&lt;p&gt;The Information Sidebox, for example, is just a list of links. 
+The Specials Sidebox, on the other hand, shows product images and information.&lt;/p&gt;
+&lt;br&gt;
+&lt;div style=&#34;float: left;&#34;&gt;
+  &lt;div style=&#34;float: left; margin-right: 10px;&#34;&gt;
+    &lt;img alt=&#34;Information Sidebox&#34; src=&#34;/images/information_sidebox.png&#34; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;float: left;&#34;&gt;
+    &lt;img alt=&#34;Specials Sidebox&#34; src=&#34;/images/specials_sidebox.png&#34; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;sideboxes-and-mobile&#34;&gt;Sideboxes and Mobile&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;/user/template/responsive/&#34;&gt;Responsive&lt;/a&gt; templates often not display sideboxes on a mobile device (especially a phone) due to space limitations.  Instead the links provided by sideboxes may be accessed from the hamburger menu at the top of the site.&lt;/p&gt;
+&lt;img alt=&#34;Mobile - closed&#34; src=&#34;/images/mobile_closed.png&#34; /&gt;
+&lt;p&gt;When you click on the hamburger icon at the top left, then menu opens&lt;/p&gt;
+&lt;img alt=&#34;Mobile - open&#34; src=&#34;/images/mobile_open.png&#34; /&gt;
+&lt;p&gt;From there you can navigate to the desired page.&lt;/p&gt;
+&lt;p&gt;This behavior is different from that of &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;centerboxes&lt;/a&gt;, which appear as normal on mobile.&lt;/p&gt;
+&lt;h4 id=&#34;controlling-sideboxes-on-mobile-menu&#34;&gt;Controlling Sideboxes on Mobile Menu&lt;/h4&gt;
+&lt;p&gt;If you wish to add more links to your mobile-menu sidebar beyond those which are controlled via Admin Switches, you may need to edit PHP files to add those links by hand.&lt;/p&gt;
+&lt;p&gt;In the case of the &lt;code&gt;responsive_classic&lt;/code&gt; template the file to edit is &lt;code&gt;/includes/templates/YOURTEMPLATE/templates/tpl_modules_mobile_menu.php&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;sidebox-controls&#34;&gt;Sidebox Controls&lt;/h3&gt;
+&lt;p&gt;The number of products shown in a sidebox is controlled using an Admin setting on the page &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;.  There are many such settings; here are a few:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Sidebox Name&lt;/th&gt;
+&lt;th&gt;Control&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Specials&lt;/td&gt;
+&lt;td&gt;Random Products On Special for SideBox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;Random New Products for SideBox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;Random Featured Products for SideBox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;creating-your-own-sidebox&#34;&gt;Creating your own sidebox&lt;/h3&gt;
+&lt;p&gt;In addition to the &lt;a href=&#34;/user/sideboxes/sidebox_list/&#34;&gt;built-in sideboxes&lt;/a&gt;, other sideboxes are available in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=12&#34;&gt;sideboxes section of the Zen Cart plugins library&lt;/a&gt;.  For example, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=80&#34;&gt;Blank Sidebox&lt;/a&gt; allows you to create your own sidebox with whatever content you wish.&lt;/p&gt;
+&lt;h3 id=&#34;controlling-sidebox-display&#34;&gt;Controlling sidebox display&lt;/h3&gt;
+&lt;p&gt;On some pages, it may be desirable to disable some or all sideboxes.  See &lt;a href=&#34;/user/sideboxes/suppressing_sidebox_display/&#34;&gt;Suppressing sidebox display on specific pages&lt;/a&gt; for instructions on doing this.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Site Footer</title>
+      <link>/user/template/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/footer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The storefront footer is content that will appear at bottom top of every page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/footer.png&#34; alt=&#34;Footer&#34;&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The links in the black background are created by &lt;code&gt;includes/templates/YOURTEMPLATE/templates/ezpages_bar_footer.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The display of IP Address information is controlled by &lt;em&gt;Footer - Show IP Address status&lt;/em&gt; in &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Copyright string is uses the defined constant &lt;code&gt;FOOTER_TEXT_BODY&lt;/code&gt; from &lt;code&gt;includes/languages/YOURTEMPLATE/english.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On a mobile device, the layout is much simpler; just the IP Address and copyright string, as well as a banner if &lt;a href=&#34;/user/admin_pages/tools/banner_manager/&#34;&gt;footer banners&lt;/a&gt; are used.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/mobile_footer.png&#34; alt=&#34;Mobile Footer&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Site Header</title>
+      <link>/user/template/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/header/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The storefront header is content that will appear at the top of every page. 
+It includes your logo, tagline text (if any) and possibly menus and links.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/header.png&#34; alt=&#34;Header&#34;&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The links in the black background are created by &lt;code&gt;includes/templates/YOURTEMPLATE/common/tpl_header.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The search box in the upper right is called &lt;a href=&#34;/user/sideboxes/search_box_header_only/&#34;&gt;header search&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Below this is the logo and tagline.  Both of these are set in &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The block of links with the blue background is called &lt;a href=&#34;/user/new_user_topics/categories_tabs/&#34;&gt;categories tabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The block of links below them with the gray background is called the &lt;a href=&#34;/user/ezpages/ezpages_header_bar/&#34;&gt;EZ-Pages Header Bar&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once a customer has logged in, more menu items appear on the black bar.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/logged_in_header.png&#34; alt=&#34;Header after Login&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On a mobile device, these menu items are provided by icons.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/mobile_closed.png&#34; alt=&#34;Mobile Header closed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Clicking on the hamburger icon on the left opens up a menu with text links&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/mobile_open_logged_in.png&#34; alt=&#34;Mobile Header open&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Notice that additional links are also provided.  These are created in &lt;code&gt;includes/templates/responsive_classic/templates/tpl_modules_mobile_menu.php&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;related-links&#34;&gt;Related Links:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/change_header_logo/&#34;&gt;How do I change the header logo?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/change_header_image/&#34;&gt;How do I change the header background?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Default - what is it?</title>
+      <link>/user/template/template_default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_default/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;template_default&lt;/code&gt; is the master set of template files. Don&amp;rsquo;t touch these (except when doing an upgrade).&lt;/p&gt;
+&lt;p&gt;Sometimes the word &lt;code&gt;default&lt;/code&gt; is also used to refer to a 
+&lt;a href=&#34;/user/new_user_topics/no_such_file/#how-do-you-find-the-default-file&#34;&gt;default code file&lt;/a&gt; - a file that can be 
+overridden using &lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;template overrides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zen Cart also comes with another &lt;a href=&#34;/user/template/other_templates/&#34;&gt;template&lt;/a&gt;, called &lt;code&gt;responsive_classic&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See the other FAQ on &lt;a href=&#34;/user/template/template_overrides/&#34;&gt;template overrides&lt;/a&gt; for more information.&lt;/p&gt;
+Contributed responsive templates which you can use with your Zen Cart may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=2&#34;&gt; Responsive Templates&lt;/a&gt; sections in the Zen Cart Plugins Directory.  
+
+&lt;br&gt;&lt;br&gt;
+
+For reference, you can also view and &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;id=13&#34;&gt; Legacy Templates&lt;/a&gt;, but bear in mind that you will want your final template to be responsive (to look good on mobile devices). 
+
+&lt;br&gt;
+
+&lt;h3 id=&#34;can-i-use-template_default&#34;&gt;Can I use template_default?&lt;/h3&gt;
+&lt;p&gt;You &lt;em&gt;do&lt;/em&gt; use the it in every case where you don&amp;rsquo;t &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override&lt;/a&gt; a file.&lt;/p&gt;
+&lt;p&gt;However, by default, the 
+&lt;a href=&#34;/user/admin_pages/tools/template_selection/&#34;&gt;selected template&lt;/a&gt;
+for your store is &lt;code&gt;responsive_classic&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This means that when Zen Cart looks for a template file, a language file, a stylesheet or any other &lt;a href=&#34;/user/new_user_topics/template_files/&#34;&gt;template file&lt;/a&gt;, it looks in &lt;code&gt;responsive_classic&lt;/code&gt; first.
+Then, if the file isn&amp;rsquo;t found, it looks in &lt;code&gt;template_default&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;is-template_default-a-good-base-for-my-new-template-design&#34;&gt;Is template_default a good base for my new template design?&lt;/h3&gt;
+&lt;p&gt;Not really.  It was created in an era prior to the widespread use of 
+mobile devices.  For this reason, &lt;code&gt;responsive_classic&lt;/code&gt; is a better choice 
+for a base for a new template.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Images</title>
+      <link>/user/template/template_images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_images/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Note that by default, YOURLANGUAGE is &amp;ldquo;english&amp;rdquo; and YOURTEMPLATE is &amp;ldquo;responsive_classic&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;images&lt;/code&gt; folder: This is where your Product images are located.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/languages/YOURLANGUAGE/images&lt;/code&gt; folder: icon.gif (your language flag).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/buttons/YOURLANGUAGE&lt;/code&gt; folder: contains the buttons used by the cart, if you are not using &lt;a href=&#34;/user/template/buttons/&#34;&gt;CSS buttons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/images&lt;/code&gt; folder: contains &lt;code&gt;logo.gif&lt;/code&gt;, and other images required by your template files.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/images/icons&lt;/code&gt; folder: contains additional images used by the cart (specific to your template)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; if your template is looking for an image in the 
+&lt;code&gt;includes/templates/YOURTEMPLATE/images&lt;/code&gt; folder but cannot find it, Zen Cart will use the image in the &lt;code&gt;includes/templates/template_default/images&lt;/code&gt; folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Pages</title>
+      <link>/user/template/template_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The most commonly modified files in a Zen Cart template are the files in &lt;code&gt;includes/templates/YOURTEMPLATE/templates&lt;/code&gt;, which control how a page looks.&lt;/p&gt;
+&lt;p&gt;These files are sometimes called &amp;ldquo;template files&amp;rdquo; but for clarity we&amp;rsquo;ll call them template pages, to differentiate them from sidebox files, language files or any other part of a template.&lt;/p&gt;
+&lt;p&gt;For example, the template page for the Featured Products page is &lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_featured_products_default.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Template pages will each be a certain &lt;a href=&#34;/user/template/page_types/&#34;&gt;page type&lt;/a&gt;, depending on the page. For example, the featured products page is a listing page. 
+There are separate FAQs for each of the &lt;a href=&#34;/user/storefront_pages/&#34;&gt;pages in the storefront&lt;/a&gt;.  Take a look there to find more information about a specific page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Updates</title>
+      <link>/user/template/template_changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_changes/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If you start building a new Zen Cart with the latest version, and use
+the Responsive Classic template (or the very well maintained &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;), you get all the latest fixes.&lt;/p&gt;
+&lt;p&gt;But what if you are using another template?  How can you check to see if it
+has all the most recent fixes?&lt;/p&gt;
+&lt;p&gt;This page is intended to present a list of security fixes and other improvements you will want 
+to add to your template if they are not present and you have overridden the file. (If you have not overridden the file, you are using the updated copy
+in &lt;code&gt;template_default&lt;/code&gt;.)  You can check 
+the folder &lt;code&gt;includes/templates/template_default&lt;/code&gt; for the base copy of 
+the specified file if you&amp;rsquo;re not sure where a change should go.&lt;/p&gt;
+&lt;h2 id=&#34;security-fixes&#34;&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;common/html_header.php&lt;/code&gt; - use &lt;code&gt;header(&#39;X-Frame-Options:SAMEORIGIN&#39;);&lt;/code&gt; to prevent clickjacking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;common/html_header.php&lt;/code&gt; - pull in most recent versions of jQuery and other libraries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;common/tpl_header.php&lt;/code&gt; - Use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for message display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sideboxes/tpl_reviews_random.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for review display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_account_default.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for &lt;code&gt;$orders[&#39;order_name&#39;])&lt;/code&gt; display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_account_history_info_default.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for output of &lt;code&gt;$_GET[&#39;order_id&#39;]&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_checkout_confirmation_default.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for attribute value display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_product_info_display.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; in &lt;code&gt;productInfoLink&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_product_music_info_display.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; in &lt;code&gt;productInfoLink&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_product_free_shipping_info_display.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; in &lt;code&gt;productInfoLink&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_product_reviews_default.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for review display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;templates/tpl_reviews_default.php&lt;/code&gt; - use &lt;code&gt;zen_output_string_protected&lt;/code&gt; for review display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;anti-spam&#34;&gt;Anti-Spam&lt;/h2&gt;
+&lt;p&gt;The following template files were updated in Zen Cart 1.5.7 with anti-spam features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_product_reviews_write_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_contact_us_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_modules_create_account.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_ask_a_question_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;client-side-validation&#34;&gt;Client side validation&lt;/h2&gt;
+&lt;p&gt;The following files were updated in Zen Cart 1.5.5 to specify a field type and required flag where needed when creating input fields:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_account_edit_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_account_password_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_contact_us_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_login_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_modules_address_book_details.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_modules_checkout_new_address.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_modules_create_account.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templates/tpl_password_forgotten_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please be sure to also check &lt;a href=&#34;/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release Specific Upgrade Considerations&lt;/a&gt; when doing an upgrade.&lt;/p&gt;
+&lt;h2 id=&#34;php-updates&#34;&gt;PHP Updates&lt;/h2&gt;
+&lt;p&gt;You will also want to make changes so that your older template is compliant with the latest version of PHP.  See &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages&lt;/a&gt; for some common changes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why does this plugin not work with Template Monster Templates?</title>
+      <link>/user/template/template_monster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/template/template_monster/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart plugins often depend on built-in Zen Cart features, which are 
+removed as an expedient by Template Monster developers.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using a Template Monster template and a change you are 
+trying isn&amp;rsquo;t working, you&amp;rsquo;ll need to figure out the difference 
+between the relevant default files and the files that your template 
+is using, and restore the missing features.&lt;/p&gt;
+&lt;p&gt;Sometimes the easiest way to do this is to back up the specific template file that doesn&amp;rsquo;t work, and then copy in the version from &lt;code&gt;responsive_classic&lt;/code&gt; (or &lt;code&gt;template_default&lt;/code&gt;), and verify the operation of your plugin (just functionally - ignore the aesthetics).  Then see how much customization is required to make it look right.&lt;/p&gt;
+&lt;p&gt;Note: Sometimes it&amp;rsquo;s not even a plugin that&amp;rsquo;s broken, it&amp;rsquo;s core Zen Cart 
+functionality.  If this is happening to you try just switching to &lt;code&gt;responsive_classic&lt;/code&gt; (or &lt;code&gt;template_default&lt;/code&gt;), and see if things work better.&lt;/p&gt;
+&lt;p&gt;Note: These issues are not exclusive to Template Monster; many other commercial template vendors use the same methods:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deleting core code rather than correctly integrating with it.&lt;/li&gt;
+&lt;li&gt;ignoring configuration settings and assume defaults rather than correctly coding for all possible configurations.&lt;/li&gt;
+&lt;li&gt;failing to stay up to date with Zen Cart core and PHP changes.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

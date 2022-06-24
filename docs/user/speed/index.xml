@@ -1,0 +1,277 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Speed</title>
+    <link>/user/speed/</link>
+    <description>Recent content in Speed on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/speed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: How do I speed up my site?</title>
+      <link>/user/speed/speed_up_site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/speed/speed_up_site/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here are some suggestions, assuming you&amp;rsquo;re running the latest-released version of Zen Cart:&lt;/p&gt;
+&lt;h3 id=&#34;turn-off-category-counts-especially-if-you-have-a-large-number-of-categories&#34;&gt;Turn off Category Counts, especially if you have a large number of categories.&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Config &amp;gt; My Store&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Show Category Counts = false  
+- Show Category Counts-Admin = false  
+
+(this second one is for admin-area only when editing catalog)  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;disable-the-manufacturers-sidebox-if-you-dont-need-it&#34;&gt;Disable the Manufacturers sidebox if you don&amp;rsquo;t need it.&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;. 
+Find the sideboxes/manufacturers.php entry, and turn it &amp;ldquo;OFF&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;disable-products-viewed&#34;&gt;Disable Products Viewed&lt;/h3&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;NEW!&lt;/font&gt; 
+In releases prior to 1.5.7, the Zen Cart &amp;ldquo;products viewed&amp;rdquo; feature can cause performance degradation on 
+busy sites.&lt;/p&gt;
+&lt;p&gt;Disable this feature by editing &lt;code&gt; includes/extra_datafiles/products_viewed_counter.php&lt;/code&gt; and setting &lt;code&gt;LEGACY_PRODUCTS_VIEWED_COUNTER&lt;/code&gt; to &lt;code&gt;off&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This change is only relevant for Zen Cart 1.5.6c and below.&lt;/p&gt;
+&lt;h3 id=&#34;ensure-your-images-are-optimized-for-your-site&#34;&gt;Ensure your images are optimized for your site.&lt;/h3&gt;
+&lt;p&gt;Specifically, use small images for thumbnails, slightly larger for product pages (&lt;code&gt;_MED&lt;/code&gt; images), and large detailed images for &amp;ldquo;click to enlarge&amp;rdquo; (&lt;code&gt;_LRG&lt;/code&gt;) images.&lt;/p&gt;
+&lt;p&gt;See also these articles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/images/additional_images/&#34;&gt;Adding Multiple Images To Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/images/images_howto/&#34;&gt;Preparing and Optimizing Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;disable-unused-attribute-settings&#34;&gt;Disable unused attribute settings&lt;/h3&gt;
+&lt;p&gt;In &lt;a href=&#34;/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Attribute Settings&lt;/a&gt;, there are a few switches which, if turned off, will reduce the number of queries used to calculate and display product information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Enable Downloads &amp;ndash; If you&amp;rsquo;re not doing downloads on your site, turn this off.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable Price Factor &amp;ndash; If you&amp;rsquo;re not using price-by-attributes support, turn this off to stop those calculations and the related queries&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable Qty Price Discount &amp;ndash; If you&amp;rsquo;re not doing quantity discounts, turn this off&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable Attribute Images &amp;ndash; If you&amp;rsquo;re not adding images to your attributes, turn this off&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable Text Pricing by word or letter &amp;ndash; If you&amp;rsquo;re not offering text attributes which calculate per-word or per-letter, turn this off.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;a href=&#34;/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt;, when you are adding an attribute to a product, set &amp;ldquo;Apply Discounts Used by Product Special/Sale: No&amp;rdquo; (assuming that the options don&amp;rsquo;t have cost associated with them); this will heavily reduce your parse times.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;home-page-performance&#34;&gt;Home Page performance&lt;/h3&gt;
+&lt;p&gt;If it&amp;rsquo;s primarily your home page (ie: the storefront) that&amp;rsquo;s slow, you might consider turning off content-boxes related to specials and featured products, as they generate a lot of extra queries to extract special pricing information.&lt;/p&gt;
+&lt;h3 id=&#34;dont-overload-categories&#34;&gt;Don&amp;rsquo;t overload categories&lt;/h3&gt;
+&lt;p&gt;If your categories contain a LOT of products, consider dividing them into subcategories for improved efficiency not only in performance but also in helping the customer find what they&amp;rsquo;re looking for.&lt;/p&gt;
+&lt;p&gt;If you really can&amp;rsquo;t make your categories more lean, consider turning off the previous/next buttons on the &lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Product Info&lt;/a&gt; page, or at least set the prev/next sort mode to NOT include the product name (ie: pick product Model or Price instead).&lt;/p&gt;
+&lt;p&gt;Further, when you have a LOT of products in large numbers of subcategories, you may find significant improvement by going to &lt;a href=&#34;/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Index Listing&lt;/a&gt; and turning off the first 8 settings there (setting them to 0). Adjust as necessary, depending on what content you wish to display.&lt;/p&gt;
+&lt;h3 id=&#34;reduce-new-products-window&#34;&gt;Reduce New Products window&lt;/h3&gt;
+&lt;p&gt;The &amp;ldquo;new products&amp;rdquo; selection window is by default set to &amp;ldquo;Forever&amp;rdquo;. The configuration setting  &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; New Product Listing - Limited to &amp;hellip;&lt;/a&gt; tells the system how far back to look when creating a list of new products. &lt;a href=&#34;/user/admin/what_is_new/&#34;&gt;Setting the new product timeframe to a smaller window&lt;/a&gt; will make the display of &amp;ldquo;new products&amp;rdquo; (in sideboxes and center content-boxes) run much faster, and thus improve speed.&lt;/p&gt;
+&lt;h3 id=&#34;disable-also-purchased-products&#34;&gt;Disable Also Purchased Products&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;/user/template/also_purchased/&#34;&gt;Also Purchased Products&lt;/a&gt; display on the product info page is an expensive
+query when the orders table is large. Try setting &lt;a href=&#34;/user/admin_pages/configuration/configuration_productinfo/#also_purchased_products_columns_per_row&#34;&gt;Also Purchased Products Columns per Row&lt;/a&gt; to 0 to disable this feature, and see if that noticeably increases the speed of your product pages.&lt;/p&gt;
+&lt;h3 id=&#34;consider-gzip-compression&#34;&gt;Consider GZip Compression&lt;/h3&gt;
+&lt;p&gt;In some cases, enabling gzip compression can be helpful for people experiencing slowness loading a site over slow internet connections:&lt;br&gt;
+Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_gzipcompression/&#34;&gt;Admin &amp;gt; Config &amp;gt; GZip Compression&lt;/a&gt; and set Enable GZip Compression = 1&lt;/p&gt;
+&lt;h3 id=&#34;ensure-images-exist&#34;&gt;Ensure Images Exist&lt;/h3&gt;
+&lt;p&gt;Ensure that your stylesheets don&amp;rsquo;t contain any references to image files that don&amp;rsquo;t exist on your server. (You can use the &lt;a href=&#34;http://www.websiteoptimization.com/services/analyze/index.html&#34;&gt;Website Optimizer Speed Test&lt;/a&gt; site to quickly find missing images on specific pages.)&lt;/p&gt;
+&lt;h3 id=&#34;remove-excess-debuglog-files&#34;&gt;Remove Excess debug/log files&lt;/h3&gt;
+&lt;p&gt;If your site has generated a large number of &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;, it can cause some degree of slowdown. (This is worsened if you&amp;rsquo;re using v1.5.0 or older, where those log files are stored on the /cache/ folder. Having a lot of non-caching files in the /cache/ folder can lead to serious slowdowns on all versions.)&lt;/p&gt;
+&lt;p&gt;You will want to download a copy of those log files to your PC, using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;. Then analyze them to see what errors might be occurring on your site on a regular basis.&lt;br&gt;
+Then you can purge those logs files by using the &lt;a href=&#34;/user/admin_pages/tools/store_manager/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Store Manager&lt;/a&gt; Purge log files menu option.&lt;/p&gt;
+&lt;h3 id=&#34;use-mysql-slow-query-log&#34;&gt;Use MySQL slow query log&lt;/h3&gt;
+&lt;p&gt;Use the MySQL slow query log feature to identify poorly-performing database queries.&lt;/p&gt;
+&lt;p&gt;You may need to talk to your hosting company to enable this feature and to evaluate the logs generated. Set it with a low threshold so that you can see where the database is spending its time.&lt;/p&gt;
+&lt;p&gt;Do you have any plugins enabled that add their own tables? Maybe they&amp;rsquo;re poorly tuned tables.&lt;/p&gt;
+&lt;p&gt;Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?&lt;/p&gt;
+&lt;h3 id=&#34;review-other-settings-that-can-cause-slowdowns&#34;&gt;Review other settings that can cause slowdowns&lt;/h3&gt;
+&lt;p&gt;In addition to the settings mentioned above, additional settings you may wish to change to improve performance are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values &amp;gt; Manufacturers List - Verify Product Exist&lt;/li&gt;
+&lt;li&gt;Admin &amp;gt; Configuration &amp;gt; Sessions &amp;gt; IP to Host Conversion Status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these settings has its own documentation.&lt;/p&gt;
+&lt;h3 id=&#34;consider-additional-server-tuning&#34;&gt;Consider additional server tuning&lt;/h3&gt;
+&lt;p&gt;Consider these &lt;a href=&#34;/user/speed/webserver_tuning/&#34;&gt;Webserver Tuning Tips&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;check-for-duplicate-jquery-libraries&#34;&gt;Check for duplicate jQuery libraries&lt;/h3&gt;
+&lt;p&gt;In case you haven&amp;rsquo;t already considered this, make sure you&amp;rsquo;re not loading more than one copy of jQuery on your site.&lt;/p&gt;
+&lt;p&gt;Many plugins come with their own copy of jquery.js or jquery-min.js (or some numbered version of the same pattern), and you shouldn&amp;rsquo;t be loading them all; only load one, and that should be the latest version.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin is slow or hangs forever</title>
+      <link>/user/speed/admin_slow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/speed/admin_slow/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Is the slowness &lt;em&gt;only&lt;/em&gt; for the admin area? If you also see the &lt;em&gt;same&lt;/em&gt; slowness in your storefront, this FAQ does not apply to your situation.&lt;/p&gt;
+&lt;p&gt;When you first log in to the Admin area, Zen Cart attempts to talk to the Zen Cart versioning server to see if updates are available. If it can&amp;rsquo;t communicate with the versioning server then it is possible that you&amp;rsquo;ll see your admin access hang for a minute or so.&lt;/p&gt;
+&lt;p&gt;There are 2 approaches to addressing this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;When you DO log into the admin area, turn off version checking here:
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;, and set &lt;code&gt;Show if version update available&lt;/code&gt; to false.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IF AND ONLY IF you can&amp;rsquo;t log into the admin area AT ALL, try editing the &lt;code&gt;/admin/includes/local/skip-version-check.ini&lt;/code&gt; file and disable version checking:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version_check=off
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;other-settings-that-can-cause-slowdowns&#34;&gt;Other settings that can cause slowdowns&lt;/h3&gt;
+&lt;p&gt;In addition to the settings mentioned above, additional settings you may wish to change to improve admin performance are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin &amp;gt; Configuration &amp;gt; My Store &amp;gt; Show if version update available&lt;/li&gt;
+&lt;li&gt;Admin &amp;gt; Configuration &amp;gt; E-Mail Options &amp;gt; Audience-Select Count Display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these settings has its own documentation.&lt;/p&gt;
+&lt;h3 id=&#34;software-changes-to-consider&#34;&gt;Software Changes to consider&lt;/h3&gt;
+&lt;p&gt;Sometimes one of the widgets on the dashboard is the cause of the slowness.  You can tweak these to improve performance at the cost of less functionality.  These are things you can try:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;modify &lt;code&gt;admin/includes/modules/dashboard_widgets/RecentOrdersDashboardWidget.php&lt;/code&gt; and set &lt;code&gt;$includeAttributesInPopoverRows&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;modify &lt;code&gt;admin/orders.php&lt;/code&gt; and set &lt;code&gt;$includeAttributesInProductDetailRows&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may also wish to disable specific widgets by modifying &lt;code&gt;admin/index_dashboard.php&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: File upload limitations</title>
+      <link>/user/speed/max_file_upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/speed/max_file_upload/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Note: This does not apply to your site unless you use File Upload attributes on products.&lt;/p&gt;
+&lt;p&gt;The ability to upload files to your Zen Cart site via a browser is affected by several factors:&lt;/p&gt;
+&lt;h3 id=&#34;php-limits-on-your-server&#34;&gt;PHP Limits on your Server&lt;/h3&gt;
+&lt;p&gt;Your hosting company has configured your server with certain capabilities and limitations. The default configuration for PHP uploads is often set at just 2 MB.  Some hosting companies increase this. Some do not.
+It is controlled by the following settings in &lt;code&gt;php.ini&lt;/code&gt; (which you may or may not have control over):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;post_max_size&lt;/li&gt;
+&lt;li&gt;max_file_uploads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these need to be bigger than the largest file size you want to upload.&lt;/p&gt;
+&lt;h3 id=&#34;php-timeout-limit-on-your-server&#34;&gt;PHP Timeout Limit on your Server&lt;/h3&gt;
+&lt;p&gt;The speed of the internet connection between your (or your customer&amp;rsquo;s) computer and your webserver will affect how long it takes to upload files. 
+So, in addition to the size limits, there&amp;rsquo;s also the time required to actually &lt;em&gt;do&lt;/em&gt; the upload.
+The following settings control the length of time PHP is allowed to wait for an action to complete, including uploading on a page:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;max_execution_time&lt;/li&gt;
+&lt;li&gt;max_input_time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these need to be long enough (in seconds) for the time required for the slowest likely connection to upload the largest likely filesize.&lt;/p&gt;
+&lt;h3 id=&#34;changing-these-php-settings&#34;&gt;Changing these PHP Settings&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s best if those settings can be configured in the server&amp;rsquo;s master PHP settings, or at least in the hosting-account&amp;rsquo;s settings (if not in a control panel, then at least in a custom &lt;code&gt;php.ini&lt;/code&gt; activated for just that user).  Some of those settings can be set in code while the PHP script is executing. Check with your hosting company about the best way to change these settings for your unique needs.  Some hosts do NOT allow you to change these; if yours does not, you may wish to change hosters.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h3 id=&#34;zen-cart-admin-limit&#34;&gt;Zen Cart Admin Limit&lt;/h3&gt;
+&lt;p&gt;In your Zen Cart &lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt; screen, you&amp;rsquo;ll find a &lt;em&gt;Maximum Upload Size&lt;/em&gt; parameter. This is the number (in bytes) that Zen Cart checks to see if the file uploaded is small enough to suit maximum requirements. If the uploaded file is larger than this number, it will be rejected.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This number is ignored if the PHP limits discussed above are smaller, since PHP will reject the upload if the file is too large, long before Zen Cart will be able to check it using its own values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: GZIP compression</title>
+      <link>/user/speed/gzip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/speed/gzip/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GZIP Compression is a technology that allows your webserver to 
+reduce the size of pages before being transmission from server to browser.
+This speeds the delivery of web pages.&lt;/p&gt;
+&lt;h3 id=&#34;when-to-use-it&#34;&gt;When to Use It&lt;/h3&gt;
+&lt;p&gt;If PHP is already configured on the server with &lt;code&gt;output_buffering&lt;/code&gt; enabled, then it is already doing this compression before transmission. 
+This means that if you turn on GZip compression in Zen Cart, you&amp;rsquo;re 
+doing compression twice, which can actually can slow things down.&lt;/p&gt;
+&lt;p&gt;To check whether your server&amp;rsquo;s PHP configuration already does this, go to 
+&lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Server/Version Info&lt;/a&gt;. 
+Search the page for &lt;code&gt;output_buffering&lt;/code&gt; and determine its setting.
+If it is &amp;ldquo;On&amp;rdquo; or a number greater than &amp;ldquo;0&amp;rdquo;, leave the Zen Cart GZip setting set to 0.&lt;br&gt;
+If it is Off&amp;quot; or &amp;ldquo;0&amp;rdquo;, set enable &lt;a href=&#34;/user/admin_pages/configuration/configuration_gzipcompression/&#34;&gt;GZIP in Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another way to check is to type your URL into &lt;a href=&#34;http://www.whatsmyip.org/http-compression-test&#34;&gt;this website&lt;/a&gt;.  If it says your domain &amp;ldquo;IS GZIPPED&amp;rdquo; then you can leave the setting at 0 in Zen Cart.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Webserver Tuning Tips</title>
+      <link>/user/speed/webserver_tuning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/speed/webserver_tuning/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If your server is performing poorly you may want to consider the following PHP and MySQL tuning suggestions.&lt;/p&gt;
+&lt;p&gt;First, review the &lt;a href=&#34;/user/first_steps/server_requirements/&#34;&gt;Zen Cart Server Requirements&lt;/a&gt; document for the essentials.&lt;/p&gt;
+&lt;h1 id=&#34;php-tuning&#34;&gt;PHP Tuning&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;memory_limit&lt;/code&gt; should be set to 32M or higher. Nowadays it&amp;rsquo;s very common to see it set somewhere between 128M-512M. Set it to as much as you need, but not higher, otherwise you&amp;rsquo;re wasting RAM resources on your server.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max_execution_time&lt;/code&gt; is commonly set to 60 seconds, which should be fine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max_input_time&lt;/code&gt; is commonly set to 60 seconds, which is normally fine, except if you&amp;rsquo;re doing large uploads such as huge photos or large input files with plugins like &lt;a href=&#34;/user/products/easypopulate/&#34;&gt;EasyPopulate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file_uploads&lt;/code&gt; must be set to &amp;ldquo;On&amp;rdquo; if you expect to be able to upload files either via your admin interface or receive files from your customers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;post_max_size&lt;/code&gt; should be set to something that matches the size of files you will allow to be uploaded, whether by customers or by yourself as an administrator. Start with at least 8M, or even 32M or larger if you&amp;rsquo;re uploading large images or large attachments or doing large data-imports.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;upload_max_filesize&lt;/code&gt; should be set to the same as &lt;code&gt;post_max_size&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gzip&lt;/code&gt; compression should be enabled: &lt;code&gt;zlib&lt;/code&gt; extension should be loaded and &lt;code&gt;zlib.output_compression&lt;/code&gt; should be set to a non-zero value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mysql-tuning&#34;&gt;MySQL Tuning&lt;/h2&gt;
+&lt;p&gt;In MySQL, the server&amp;rsquo;s &lt;code&gt;my.cnf&lt;/code&gt; file contains the configuration settings for the database engine operation.  The default settings are typically inadequate for optimal use, and thus require tuning for your database to run smoothly.&lt;/p&gt;
+&lt;p&gt;Tuning MySQL is a carefully-guarded skill by industry professionals since the knowledge is specialized and the expertise of professionals skilled in this topic commands a high price because it typically affords the benefactor a competitive edge.&lt;/p&gt;
+&lt;p&gt;Here are some tips with which you can experiment if you have control over the MySQL configuration (most storeowners will not have this level of access, and must rely on their hosting company&amp;rsquo;s server administrator to do this sort of tweaking because it affects EVERYONE running on that server).&lt;/p&gt;
+&lt;p&gt;The following points talk about settings in &lt;code&gt;my.cnf&lt;/code&gt; vs statistics on running processes which can be found in your phpMyAdmin screen.&lt;/p&gt;
+&lt;h3 id=&#34;mysql-server-ram&#34;&gt;MySQL Server RAM&lt;/h3&gt;
+&lt;p&gt;Note that the more RAM you have available to MySQL, the more room you have to play when tweaking. It&amp;rsquo;s important to give a careful balance between MySQL and other services (especially Apache and PHP).&lt;/p&gt;
+&lt;h3 id=&#34;mysql-memory-model&#34;&gt;MySQL Memory Model&lt;/h3&gt;
+&lt;p&gt;The default memory allocations for MySQL are not adequate for a live server. You need to increase the memory allocations beyond the standard settings.&lt;/p&gt;
+&lt;p&gt;The sum of all &lt;code&gt;read/sort/join buffer size&lt;/code&gt; settings, and total &lt;code&gt;tmp tables&lt;/code&gt; multiplied by &lt;code&gt;tmp table sizes&lt;/code&gt;, and &lt;code&gt;cache size&lt;/code&gt; settings plus &lt;code&gt;memory per connection&lt;/code&gt; multiplied by &lt;code&gt;max number of connections&lt;/code&gt; should be no more than 90% of available memory allocated to MySQL&lt;/p&gt;
+&lt;h3 id=&#34;mysql-caching&#34;&gt;MySQL Caching&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;table_cache&lt;/code&gt; should be large enough to handle the number of &lt;code&gt;open_tables&lt;/code&gt; at any given time, plus 5-10% room to spare&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;table_definition_cache&lt;/code&gt; should be set similarly&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;thread_cache_size&lt;/code&gt; needs to be large enough to support the number of &lt;code&gt;threads_created&lt;/code&gt; and &lt;code&gt;threads_cached&lt;/code&gt; per second&lt;/p&gt;
+&lt;h3 id=&#34;buffers&#34;&gt;Buffers&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;key_buffer&lt;/code&gt; size should be set to a level which suits the amount of index usage occurring on your server. Using 15-20% of system memory is common. But if this value is too large you&amp;rsquo;re wasting resources that could be used better elsewhere.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;read_buffer_size&lt;/code&gt; should be under 8M, and usually more than 2M. Increase it depending on the number of table scans happening on an ongoing basis.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;read_rnd_buffer_size&lt;/code&gt; might benefit from being 2M or larger&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;join_buffer_size&lt;/code&gt; and &lt;code&gt;sort_buffer_size&lt;/code&gt; often do well at 1M but sometimes increasing this to 2M may be beneficial&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tmp_table_size&lt;/code&gt; needs to be large enough to handle the memory demands of any temporary-tables created by query joins. Poorly written joins on improperly indexed tables will create higher demands on this setting&lt;/p&gt;
+&lt;h3 id=&#34;connections&#34;&gt;Connections&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;max_connections&lt;/code&gt; vs &lt;code&gt;max_used_connections&lt;/code&gt; &amp;ndash; Don&amp;rsquo;t set &lt;code&gt;max_connections&lt;/code&gt; way too high, else you&amp;rsquo;re wasting resources. Your &lt;code&gt;max_used_connections&lt;/code&gt; should be more than 10% of your &lt;code&gt;max_connections&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;max_open_files&lt;/code&gt; vs &lt;code&gt;open_files&lt;/code&gt; &amp;ndash; you should be using less than 75% of your &lt;code&gt;max_open_files&lt;/code&gt; setting&lt;/p&gt;
+&lt;h3 id=&#34;processes&#34;&gt;Processes&lt;/h3&gt;
+&lt;p&gt;You&amp;rsquo;ll need to refine the number of child processes to be spawned before they are killed by the server. You do NOT want to have excess numbers of idle processes in MySQL, as this wastes resources. This is a combination of &lt;code&gt;max_connections&lt;/code&gt; and &lt;code&gt;connect_timeout&lt;/code&gt;, &lt;code&gt;wait_timeout&lt;/code&gt;, &lt;code&gt;max_connect_errors&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;slow-query-log&#34;&gt;Slow Query Log&lt;/h3&gt;
+&lt;p&gt;It may be useful to enable &lt;code&gt;log-slow-queries&lt;/code&gt; so that someone skilled in understanding the logs and altering queries for performance can review them for tweaking.&lt;/p&gt;
+&lt;p&gt;When using this feature, setting &lt;code&gt;long_query_time&lt;/code&gt; to a value short enough to catch slow-running queries will help. This number may need adjusting over time. &lt;code&gt;2&lt;/code&gt; might be a good starting value.&lt;/p&gt;
+&lt;p&gt;Be aware that this log can grow VERY large very quickly if there are many problems and slow queries. Beware. Best to use this only temporarily from time to time.&lt;/p&gt;
+&lt;h3 id=&#34;general-advice&#34;&gt;General Advice&lt;/h3&gt;
+&lt;p&gt;You can find many articles online regarding MySQL tweaking or optimization. There are many opinions, and it is really a balancing act. Determine what works best for you based on your actual site performance &amp;hellip; especially when it is busiest.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

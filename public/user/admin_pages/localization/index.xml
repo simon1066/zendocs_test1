@@ -1,0 +1,222 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Localization</title>
+    <link>/zendocs_test1/user/admin_pages/localization/</link>
+    <description>Recent content in Localization on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/localization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Currencies</title>
+      <link>/zendocs_test1/user/admin_pages/localization/currencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/localization/currencies/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart comes preconfigured with several currencies, including the US dollar, the Euro, the Pound, the Canadian Dollar, and the Australian Dollar.&lt;/p&gt;
+&lt;p&gt;You may add a new currency, or edit the existing ones.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/currencies.png&#34; alt=&#34;Currencies in Zen Cart&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-currencies&#34;&gt;Adding Currencies&lt;/h2&gt;
+&lt;p&gt;To add a new currency, click on the new currency button. You will then enter the information about this new currency in the input area. After you finish entering the new information, click on the Insert button to save this new currency entry.&lt;/p&gt;
+&lt;h3 id=&#34;title&#34;&gt;Title&lt;/h3&gt;
+&lt;p&gt;This is the name of the new currency, like &lt;em&gt;Canadian Dollar&lt;/em&gt; or &lt;em&gt;Mexican Peso&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+&lt;p&gt;This is the three-character ISO 4217 international name for the currency you just described, like &lt;em&gt;CAD&lt;/em&gt; for &lt;em&gt;Canadian Dollar&lt;/em&gt;, &lt;em&gt;MXN&lt;/em&gt; for &lt;em&gt;Mexican Peso&lt;/em&gt;, &lt;em&gt;USD&lt;/em&gt; for &lt;em&gt;US Dollar&lt;/em&gt;, or &lt;em&gt;JPY&lt;/em&gt; for &lt;em&gt;Japanese Yen&lt;/em&gt;, etc. Note that to use the automated currency conversion feature (see the explanation for the &lt;em&gt;update currencies&lt;/em&gt; button below), this code must be the correct one for that currency. If you don&amp;rsquo;t know the international code for the currency you want to add, you can find it in several places:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;a href=&#34;https://www.iso.org/iso-4217-currency-codes.html&#34;&gt;ISO standard 4217&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On Wikipedia, at the entry for &lt;a href=&#34;http://en.wikipedia.org/wiki/ISO_4217&#34;&gt;ISO 4217&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On XE.COM, which in addition to the &lt;a href=&#34;http://www.xe.com/iso4217.htm&#34;&gt;ISO 4217&lt;/a&gt; have the list of &lt;a href=&#34;http://www.xe.com/symbols.htm&#34;&gt;symbols used for most currencies&lt;/a&gt;, ($ for Dollar, ₭ for Euro, £ for Pound, ¥ for Yen, etc.), as well as &lt;a href=&#34;http://www.xe.com/ucc/&#34;&gt;currency conversion&lt;/a&gt; between almost all world currencies (you&amp;rsquo;ll need that for the &lt;strong&gt;Value&lt;/strong&gt; field below if you want to manually process currency conversions as opposed to using the automated currency converter (see the explanation for the &lt;em&gt;update currencies&lt;/em&gt; button below), don&amp;rsquo;t know what the usual currency conversion rate is between your currency and that one).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;symbol-left&#34;&gt;Symbol Left&lt;/h3&gt;
+&lt;p&gt;If, when this currency is displayed, some symbol usually appears before (to the left of) the amount when it is displayed, enter that here. If no symbol commonly appears before the amount (like CA$ for Canadian Dollar) leave this field blank. This is separate from, and in addition to &lt;em&gt;Symbol Right&lt;/em&gt; below.&lt;/p&gt;
+&lt;h3 id=&#34;symbol-right&#34;&gt;Symbol Right&lt;/h3&gt;
+&lt;p&gt;If, when this currency is displayed, some symbol usually appears after (to the right of) the amount when it is displayed, enter that here. If no symbol commonly appears before the amount (like CAN for Canadian Dollar) leave this field blank. This is separate from, and in addition to &lt;em&gt;Symbol Left&lt;/em&gt; above.&lt;/p&gt;
+&lt;h3 id=&#34;decimal-point&#34;&gt;Decimal Point&lt;/h3&gt;
+&lt;p&gt;This is where you indicate what symbol appears between whole and fractional amounts of this currency. For U.S. and Canadian dollars, this is a period; in some countries it is a comma.&lt;/p&gt;
+&lt;h3 id=&#34;thousands-point&#34;&gt;Thousands Point&lt;/h3&gt;
+&lt;p&gt;This is where you indicate what symbol appears between thousands of whole amounts of this currency. For U.S. and Canadian dollars, this is a comma; in some countries it is a period.&lt;/p&gt;
+&lt;h3 id=&#34;decimal-places&#34;&gt;Decimal Places&lt;/h3&gt;
+&lt;p&gt;This indicates the number of decimal places appear to the right for this currency. U.S. and Canadian dollars have two digits after the decimal point. Some currencies may have four or six.&lt;/p&gt;
+&lt;h3 id=&#34;value&#34;&gt;Value&lt;/h3&gt;
+&lt;p&gt;This is the value of the other currency relative to the default currency for your store. Your default currency should have a value of exactly 1.&lt;/p&gt;
+&lt;p&gt;If you are going to use the automatic conversion feature (see the &lt;em&gt;Update Currencies&lt;/em&gt; button below), then you can simply leave this field blank (or enter zero, both are the same) and let the website update the value.&lt;/p&gt;
+&lt;p&gt;If you do not wish to use the automatic conversion feature, here are some examples for conversions. Note that these are sample values, you will want to know what the usual conversion rate is at the current time as currency rates can fluctuate.&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;If Your default Currency is&lt;/th&gt;
+&lt;th&gt;And you wanted to create a new currency of&lt;/th&gt;
+&lt;th&gt;And the price of that currency in your default currency is&lt;/th&gt;
+&lt;th&gt;You would use this for the amount in the _value_ field.&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;Euro&lt;/td&gt;
+&lt;td&gt;1.27&lt;/td&gt;
+&lt;td&gt;0.7835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;British Pound&lt;/td&gt;
+&lt;td&gt;1.86&lt;/td&gt;
+&lt;td&gt;0.5367&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;Canadian Dollar&lt;/td&gt;
+&lt;td&gt;0.8840&lt;/td&gt;
+&lt;td&gt;1.1312&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;Mexican Peso&lt;/td&gt;
+&lt;td&gt;0.0921&lt;/td&gt;
+&lt;td&gt;10.858&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Euro&lt;/td&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;0.7836&lt;/td&gt;
+&lt;td&gt;1.2726&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;British Pound&lt;/td&gt;
+&lt;td&gt;Euro&lt;/td&gt;
+&lt;td&gt;0.6849&lt;/td&gt;
+&lt;td&gt;1.46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;British Pound&lt;/td&gt;
+&lt;td&gt;Vietnam Dong&lt;/td&gt;
+&lt;td&gt;0.0000335444&lt;/td&gt;
+&lt;td&gt;29,811.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Canadian Dollar&lt;/td&gt;
+&lt;td&gt;Euro&lt;/td&gt;
+&lt;td&gt;1.4435&lt;/td&gt;
+&lt;td&gt;0.6927&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Canadian Dollar&lt;/td&gt;
+&lt;td&gt;Mexican Peso&lt;/td&gt;
+&lt;td&gt;0.1042&lt;/td&gt;
+&lt;td&gt;9.59908&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mexican Peso&lt;/td&gt;
+&lt;td&gt;Euro&lt;/td&gt;
+&lt;td&gt;13.8570&lt;/td&gt;
+&lt;td&gt;0.0721657&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Japanese Yen&lt;/td&gt;
+&lt;td&gt;US Dollar&lt;/td&gt;
+&lt;td&gt;0.0087&lt;/td&gt;
+&lt;td&gt;114.655&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;set-as-default&#34;&gt;Set as Default&lt;/h3&gt;
+&lt;p&gt;If this is the default currency for this store, you will want to check this box. Note it may require some manual changes, as is indicated in the box, thus you might want to set this before loading any pricing data.&lt;/p&gt;
+&lt;p&gt;After you finish, click on the &lt;em&gt;Insert&lt;/em&gt; button to save this new currency entry. If you decide you do not want this entry, click on &lt;em&gt;cancel&lt;/em&gt; and the new entry will not be added.&lt;/p&gt;
+&lt;h2 id=&#34;update-currencies&#34;&gt;Update Currencies&lt;/h2&gt;
+&lt;p&gt;If you have the correct ISO 4217 code in the &lt;em&gt;code&lt;/em&gt; column, you can click on the &lt;em&gt;update currencies&lt;/em&gt; button to have the site request current exchange rate values from various conversion sites on the Internet for all currencies that have a correct ISO 4217 code, and the website will obtain current values and automatically correct the exchange rates.&lt;/p&gt;
+&lt;p&gt;Rates that are correctly converted will be listed in green at the top of the page. Rates that were not correctly converted will be listed in red. The website will probably try more than one converter if it has a failure in converting a particular currency. Pay attention to any red items in case you may have misspelled the ISO 4217 code for that currency, as it will not have been correctly updated. Any that were not correctly updated (either because of error or because the conversion site did not have the correct values for that currency) will have to be manually updated using the edit feature.&lt;/p&gt;
+&lt;p&gt;Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#cron&#34;&gt;cron job&lt;/a&gt; in your hosting company&amp;rsquo;s control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company&amp;rsquo;s tech support team if you need help with determining the correct path and the correct php binary to call.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;php /full/server/path/to/admin/currency_cron.php
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;editing-an-existing-currency&#34;&gt;Editing an existing currency&lt;/h2&gt;
+&lt;p&gt;If you only need to correct the exchange rate, you can use the &lt;em&gt;update currency&lt;/em&gt; button to change all conversions on your website. If, however the automatic conversion does not work for one or more currencies or you need to change something else (for example, you entered Russian Rubles using code RUS instead of RUB), you would need to change that. Click on the line showing the currency you want to change. The right arrow will appear in the action column, then click on the &lt;em&gt;edit&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;A series of entry fields, same as provided for the &lt;em&gt;add new currency&lt;/em&gt; button will appear, only the values of those fields will be loaded with the current values. Change any fields as appropriate, then once you are finished, click on the &lt;em&gt;update&lt;/em&gt; button to save these changes. If you decide you do not want these changes, click on &lt;em&gt;cancel&lt;/em&gt; to leave the original values intact.&lt;/p&gt;
+&lt;h2 id=&#34;deleting-an-existing-currency&#34;&gt;Deleting an existing currency&lt;/h2&gt;
+&lt;p&gt;If you no longer want a particular currency, click on the line showing the currency you want to delete. The right arrow will appear in the action column, then click on the &lt;em&gt;delete&lt;/em&gt; button. You will be asked to confirm if you want to delete that currency. Click on the &lt;em&gt;delete&lt;/em&gt; button again to do so, or click the &lt;em&gt;cancel&lt;/em&gt; button if you do not wish to delete this particular currency.&lt;/p&gt;
+&lt;p&gt;If you are deleting all currencies except your &amp;ldquo;default&amp;rdquo; currency, be sure to set that Default currency&amp;rsquo;s exchange rate Value to 1.0000.&lt;/p&gt;
+&lt;h2 id=&#34;not-displaying-the-currencies-box&#34;&gt;Not displaying the Currencies box&lt;/h2&gt;
+&lt;p&gt;If you only operate with one currency, Euro for example, you may wish to delete all others and set the exchange value to 1.&lt;/p&gt;
+&lt;p&gt;With just one currency in use, you will most likely want to stop the currency selection box from being displayed.&lt;/p&gt;
+&lt;p&gt;To do this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the Tools menu, click &amp;ldquo;Layout Boxes Controller&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;find &amp;lsquo;sideboxes/currencies.php&amp;rsquo; in the list. It may be near the bottom. Click it.&lt;/li&gt;
+&lt;li&gt;set both &amp;ldquo;Left/Right Column Status&amp;rdquo; and &amp;ldquo;Single Column Status&amp;rdquo; to off.&lt;/li&gt;
+&lt;li&gt;Click Update.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Languages</title>
+      <link>/zendocs_test1/user/admin_pages/localization/languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/localization/languages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to add additional language(s) in order to internationalize the output generated by Zen Cart.&lt;/p&gt;
+&lt;h2 id=&#34;new-language&#34;&gt;New Language&lt;/h2&gt;
+&lt;p&gt;To add a new language, click on the &lt;em&gt;new language&lt;/em&gt; button. A form will appear. Enter the information, then click on the &lt;em&gt;insert&lt;/em&gt; button to add the new language. Click on the &lt;em&gt;cancel&lt;/em&gt; button if you change your mind.&lt;/p&gt;
+&lt;h3 id=&#34;name&#34;&gt;Name&lt;/h3&gt;
+&lt;p&gt;This is the name of the language, probably best as expressed &lt;em&gt;in itself&lt;/em&gt;, e.g. Francais for French, Español for Spanish, Deutsch for German, etc.&lt;/p&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+&lt;p&gt;This is the two-letter ISO 639 language code, e.g. en for English, fr for Francais, es for Español, etc. If you don&amp;rsquo;t know the code, you can find it on Wikipedia &lt;a href=&#34;http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;image&#34;&gt;Image&lt;/h3&gt;
+&lt;p&gt;This would be a small icon used to identify the language. This would most likely be a gif image of the typical flag for some country commonly associated with that language. This should be located in the &lt;code&gt;/includes/languages/YOURLANGUAGE/images&lt;/code&gt; folder.&lt;/p&gt;
+&lt;h3 id=&#34;directory&#34;&gt;Directory&lt;/h3&gt;
+&lt;p&gt;This directory is where the translated php source files for this language are contained. For example, enter &amp;lsquo;&lt;em&gt;english&lt;/em&gt;&amp;rsquo; the directory for the English language is located at 
+&lt;code&gt;/includes/languages/english&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;sort-order&#34;&gt;Sort order&lt;/h3&gt;
+&lt;p&gt;This is the order that the languages are to appear in. Lower numbers are shown higher on the screen.&lt;/p&gt;
+&lt;h3 id=&#34;set-as-default&#34;&gt;Set as default&lt;/h3&gt;
+&lt;p&gt;Check this box if this is the default language for this site.&lt;/p&gt;
+&lt;p&gt;When you finish entering data, click on the &lt;em&gt;insert&lt;/em&gt; button to add the new language. Click on the &lt;em&gt;cancel&lt;/em&gt; button to discard this form.&lt;/p&gt;
+&lt;p&gt;If you have not yet &lt;a href=&#34;#installing-a-language-pack&#34;&gt;installed the language pack&lt;/a&gt; you will see the warning message&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; MISSING LANGUAGE FILES OR DIRECTORIES ... YOURLANGUAGE YOURLANGUAGE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;edit-language&#34;&gt;Edit Language&lt;/h2&gt;
+&lt;p&gt;If you need to change the information about an existing language, click on the named language so that the right arrow appears in the Action column, then click on the &lt;em&gt;edit&lt;/em&gt; button. The fields on the screen are the same for adding a language. When finished editing, click on the &lt;em&gt;update&lt;/em&gt; button to save the changes, or click on &lt;em&gt;cancel&lt;/em&gt; to discard them.&lt;/p&gt;
+&lt;h2 id=&#34;delete-language&#34;&gt;Delete Language&lt;/h2&gt;
+&lt;p&gt;To remove a language, click on the named language so that the right arrow appears in the Action column, then click on the &lt;em&gt;Delete&lt;/em&gt; button. If this is not the default language, you will be asked to confirm. Click on the &lt;em&gt;delete&lt;/em&gt; button again to delete the language, or &lt;em&gt;cancel&lt;/em&gt; if you do not wish to delete this language. If this is the default language, only the &lt;em&gt;cancel&lt;/em&gt; button will appear, as you cannot delete the default language.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-multi-language-store&#34;&gt;Creating a multi-language store&lt;/h2&gt;
+&lt;p&gt;Language packs may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Language packs are structured to correspond to your cart folders, so you can just 
+rename the admin folder, if one exists, and then upload all the files.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not familiar with installing a Zen Cart plugin, follow the instructions on &lt;a href=&#34;/zendocs_test1/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Orders Status</title>
+      <link>/zendocs_test1/user/admin_pages/localization/orders_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/localization/orders_status/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/localization/orders_status/&#34;&gt;Order Status&lt;/a&gt; field encapsulates where 
+the order is in your order processing workflow.&lt;/p&gt;
+&lt;p&gt;The Admin &amp;gt; Localization &amp;gt; Order Status  page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.&lt;/p&gt;
+&lt;h2 id=&#34;add-a-new-order-status&#34;&gt;Add a new Order Status&lt;/h2&gt;
+&lt;p&gt;To add a new order status, click on the insert button. A box allowing you to enter the name of the status will appear. If this is the default status, check the set as default box. Click on the insert button to save this new status, click on the cancel button to discard.&lt;/p&gt;
+&lt;h2 id=&#34;edit-an-existing-order-status&#34;&gt;Edit an existing Order Status&lt;/h2&gt;
+&lt;p&gt;Click on the name of the status you want to change, so that the right arrow appears in the action column, then click on the edit button. Type in the new name for this status. If this is the default status, check the set as default box. Click on the update button to save this change of order status, click on the cancel button to discard the change.&lt;/p&gt;
+&lt;h2 id=&#34;delete-an-order-status&#34;&gt;Delete an Order Status&lt;/h2&gt;
+&lt;p&gt;Click on the name of the status you want to remove, so that the right arrow appears in the action column, then click on the delete button. You will be asked to confirm this action. Click on the delete button again to remove this order status, click on the cancel button if you do not wish to remove it. If this is the default order status you will not be able to delete it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

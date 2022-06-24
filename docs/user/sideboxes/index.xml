@@ -1,0 +1,742 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Sideboxes</title>
+    <link>/user/sideboxes/</link>
+    <description>Recent content in Sideboxes on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/sideboxes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Sideboxes</title>
+      <link>/user/sideboxes/sideboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/sideboxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Adding a Link to the Information sidebox</title>
+      <link>/user/sideboxes/add_link_information_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/add_link_information_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page continues the FAQ on &lt;a href=&#34;/user/sideboxes/information_sidebox/&#34;&gt;customizing the Information Sidebox&lt;/a&gt;. It is such a common question is has been pulled out to its own page.&lt;/p&gt;
+&lt;p&gt;The same technique can be used to add a link to the &lt;a href=&#34;/user/sideboxes/more_information_sidebox/&#34;&gt;More Information sidebox&lt;/a&gt; or the &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ Page sidebox&lt;/a&gt; just by changing the file being edited.&lt;/p&gt;
+&lt;p&gt;To add a link to the Information Sidebox, we create the &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override file&lt;/a&gt; &lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Edit this file.&lt;/p&gt;
+&lt;p&gt;Add your link before the list&amp;rsquo;s ending &lt;code&gt;ul&lt;/code&gt; tag:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content  .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;#39; . &amp;#34;\n&amp;#34;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, linking to an external page:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;https://www.zen-cart.com/&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noreferrer noopener&amp;#34;&amp;gt;The Greatest Shopping Cart Ever!&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#39; . &amp;#34;\n&amp;#34; ;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In subsequent examples, the appended linefeed (&lt;code&gt;. &amp;quot;\n&amp;quot;&lt;/code&gt;) is dropped for clarity.&lt;/p&gt;
+&lt;p&gt;If the link if to an internal page, use the &lt;code&gt;zen_href_link&lt;/code&gt; function.  For example, if you have a page called &amp;ldquo;News&amp;rdquo; (and have defined &lt;code&gt;FILENAME_NEWS&lt;/code&gt; and &lt;code&gt;BOX_INFORMATION_NEWS&lt;/code&gt;), a link to this page may be added to the Information Sidebox with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_NEWS) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . BOX_INFORMATION_NEWS . &amp;#39;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the link is to an internal EZ-Page, use&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_EZPAGES,&amp;#39;id=9&amp;#39;) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . &amp;#34;My new page&amp;#34; . &amp;#39;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or if you don&amp;rsquo;t want to modify code, you can just use the &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt;, which displays EZ-Pages with sidebox display on and a positive sort order.&lt;/p&gt;
+&lt;h3 id=&#34;alternate-approaches&#34;&gt;Alternate Approaches&lt;/h3&gt;
+&lt;p&gt;Purists would argue that it&amp;rsquo;s not a good practice to update the template to add links, and that instead, the relevant module file should be updated. (The approach used above is more beginner friendly and lends itself to copy-and-paste ready examples for all three sideboxes, which is why it was chosen.)&lt;/p&gt;
+&lt;p&gt;You could accomplish what&amp;rsquo;s done in the first example - add a link to zen-cart.com to the Information sidebox - by creating the 
+&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override file&lt;/a&gt; &lt;code&gt;includes/modules/sideboxes/YOURTEMPLATE/information.php&lt;/code&gt;, and then modifying it just before the &lt;code&gt;require&lt;/code&gt; statements to add&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$information[] = &amp;#39;&amp;lt;a href=&amp;#34;https://www.zen-cart.com/&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noreferrer noopener&amp;#34;&amp;gt;The Greatest Shopping Cart Ever!&amp;lt;/a&amp;gt;&amp;#39;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The same process could be used to add a link to the More Information sidebox, using the &lt;code&gt;$more_information&lt;/code&gt; array in place of &lt;code&gt;$information&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;However, adding a link to the EZ Pages sidebox using this technique would be more involved, since the entries in &lt;code&gt;$var_linksList&lt;/code&gt; are arrays, not simple strings.&lt;/p&gt;
+&lt;h3 id=&#34;specification-of-urls&#34;&gt;Specification of URLs&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s a good practice not to hardcode non-relative URLs, in case your site moves or you want to reconstruct a test instance of it.  So don&amp;rsquo;t do this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;https://YOURSTORE.com/index.php?main_page=page&amp;amp;id=25&amp;#34;&amp;gt;Important information&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;; // NO 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Instead, use an URL relative to the top of your store (or better yet, use &lt;code&gt;zen_href_link&lt;/code&gt; as in the examples above):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;index.php?main_page=page&amp;amp;id=25&amp;#34;&amp;gt;Important information&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;; // Better
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can read more about &lt;a href=&#34;/user/first_steps/relative_urls/&#34;&gt;the importance of relative URLs&lt;/a&gt; to explore this topic in greater depth.&lt;/p&gt;
+&lt;h3 id=&#34;mobile&#34;&gt;Mobile&lt;/h3&gt;
+&lt;p&gt;You may need to make &lt;a href=&#34;/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu&#34;&gt;additional edits to control the link on mobile displays&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Build your own sidebox</title>
+      <link>/user/sideboxes/build_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/build_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart has a number of &lt;a href=&#34;/user/sideboxes/sidebox_list/&#34;&gt;built-in sideboxes&lt;/a&gt;; other sideboxes are available in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=12&#34;&gt;sideboxes section of the Zen Cart plugins library&lt;/a&gt;.   But even with this number of options, some storeowners find their custom requirements necessitate building a sidebox.  That&amp;rsquo;s how the plugins library got populated, after all!&lt;/p&gt;
+&lt;p&gt;The easiest way to build a new sidebox is to start with the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=80&#34;&gt;Blank Sidebox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Experiment with content and layout options until you have something that&amp;rsquo;s perfect for you.  Then please consider &lt;a href=&#34;/user/plugins/contributing/&#34;&gt;contributing your work to the Plugin Library&lt;/a&gt; so that others may benefit from your efforts.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Categories sidebox</title>
+      <link>/user/sideboxes/categories_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/categories_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The categories sidebox shows links to your top level categories, as well as links to the &lt;a href=&#34;/user/storefront_pages/specials/&#34;&gt;Specials&lt;/a&gt; page, and the New Products, Featured Products and All Products &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;listing pages&lt;/a&gt; pages.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/sidebox_categories.png&#34; alt=&#34;Categories Sidebox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you see a number next to the category name, that&amp;rsquo;s the category count.  You may &lt;a href=&#34;/user/products/disable_category_count/&#34;&gt;enable or disable category counts&lt;/a&gt; in this sidebox.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Display the search box in the header only</title>
+      <link>/user/sideboxes/search_box_header_only/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/search_box_header_only/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are two sideboxes for search.  You can control both through the &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Box Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;search.php&lt;/code&gt; sidebox is a conventional sidebox and can be turned on and off as normal. If you want search in the header, you will normally turn this sidebox off, though it does have the advantage of providing a link to the advanced search page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/sidebox_search.png&#34; alt=&#34;search.php&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;search_header.php&lt;/code&gt; sidebox is specifically designed to display a search box in your Zen Cart header and so doesn&amp;rsquo;t output all the HTML needed for a sidebox. It is recommended therefore that you ensure that its left/right column status is set to OFF. To display it in the header, set the single column status to ON.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/sidebox_search_header.png&#34; alt=&#34;search.php&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Displaying sideboxes for logged in visitors only</title>
+      <link>/user/sideboxes/sideboxes_when_logged_in/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/sideboxes_when_logged_in/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Displaying a specific sidebox only for logged in customers can be done with the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Locate the module for the sidebox (or boxes) that you want to treat like this. You&amp;rsquo;ll find them in &lt;code&gt;includes/modules/sideboxes&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create override files for them by copying them to &lt;code&gt; includes/modules/sideboxes/YOURTEMPLATE&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the override file and find a couple of lines that look similar to&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// test if box should display
+$show_featured= true;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;These were taken from the featured_products products sidebox and the variable name for your box will probably differ slightly. Then change them to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// test if box should display
+if (!$_SESSION[&amp;#39;customer_id&amp;#39;]) {
+$show_featured= false;
+} else {
+$show_featured= true;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Upload to your server and enjoy.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: EZ-Pages sidebox</title>
+      <link>/user/sideboxes/ezpages_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/ezpages_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Three sideboxes show links to internal content:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/information_sidebox/&#34;&gt;Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/more_information_sidebox/&#34;&gt;More Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;extra pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages Sidebox (Important Links)&lt;/a&gt; - links to &lt;a href=&#34;/user/ezpages&#34;&gt;EZ-Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-controls-which-links-are-shown-in-the-ez-pages-sidebox&#34;&gt;What controls which links are shown in the EZ-Pages sidebox?&lt;/h3&gt;
+&lt;p&gt;To get a link to a specific page into the this sidebox, go to &lt;a href=&#34;/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt;, and edit the page you want to add.  Look at the settings for &lt;strong&gt;Sidebox&lt;/strong&gt; (between &lt;strong&gt;Header&lt;/strong&gt; and &lt;strong&gt;Footer&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;For the page to show up in the EZ-Pages sidebox, the Sidebox radio button must be set to &lt;em&gt;Yes&lt;/em&gt; and the sort order must be greater than 0.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ezpages_sidebox_on.png&#34; alt=&#34;EZ-Pages Sidebox on&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-add-a-new-link-to-the-ez-page-sidebox&#34;&gt;How do I add a new link to the EZ-Page Sidebox?&lt;/h3&gt;
+&lt;p&gt;We create the &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override file&lt;/a&gt; &lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes/tpl_ezpages.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then edit this file, and follow the instructions provided in &lt;a href=&#34;/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-add-text-to-the-ez-page-sidebox&#34;&gt;How do I add text to the EZ-Page Sidebox?&lt;/h3&gt;
+&lt;p&gt;To insert the text, we firstly create some override files. If it doesn&amp;rsquo;t already exist, create the following directory&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes  &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and copy &lt;code&gt;includes/templates/template_default/sideboxes/tpl_ezpages.php&lt;/code&gt;&lt;br&gt;
+into it. Similarly, if they don&amp;rsquo;t already exist, create an&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/languages/YOURLANGUAGE/extra_definitions/YOURTEMPLATE &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;directory for each language you are using and copy 
+&lt;code&gt;includes/languages/YOURLANGUAGE/extra_definitions/ez_pages_definitions.php&lt;/code&gt;
+into them.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s create the text for insertion. Open each of the &lt;code&gt;ez_pages_definitions.php&lt;/code&gt; files that you just created and insert the following define statement in the appropriate language&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;BOX_TEXT_EZPAGES&#39;, &#39;The text you want to insert into your EZ-Pages sidebox&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This doesn&amp;rsquo;t have to be plain text. If you wish, it can be any string of HTML.&lt;/p&gt;
+&lt;p&gt;Next we tell the EZ-Page sidebox to use the text. Open the copy that you made of &lt;code&gt;tpl_ezpages.php&lt;/code&gt; and insert the line marked below&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; $content = &amp;#34;&amp;#34;;  
+ $content .= &amp;#39;&amp;lt;div id=&amp;#34;&amp;#39; . str_replace(&amp;#39;_&amp;#39;, &amp;#39;-&amp;#39;, $box_id . &amp;#39;Content&amp;#39;) . &amp;#39;&amp;#34; class=&amp;#34;sideBoxContent&amp;#34;&amp;gt;&amp;#39;;  
+ $content .= BOX_TEXT_EZPAGES;  &amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;&amp;lt;----- this is the line that you insert&amp;lt;/font&amp;gt;  
+ $content  .= &amp;#34;\n&amp;#34; . &amp;#39;&amp;lt;ul style=&amp;#34;margin: 0; padding: 0; list-style-type: none;&amp;#34;&amp;gt;&amp;#39; . &amp;#34;\n&amp;#34;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Finally, upload the new files to your server and check the results in your browser.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I add images to a sidebox?</title>
+      <link>/user/sideboxes/add_images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/add_images/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/template/add_image_box/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the a sidebox title?</title>
+      <link>/user/sideboxes/sidebox_title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/sidebox_title/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Look in &lt;code&gt;includes/languages/YOURTEMPLATE/english.php&lt;/code&gt;. 
+Suppose you want the Categories sidebox to have a different title. Look for&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_CATEGORIES&amp;#39;, &amp;#39;Categories&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Changes for other sideboxes will follow this pattern:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_XXXXXXXX&amp;#39;, &amp;#39;New Title&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Where &lt;code&gt;XXXXXXXX&lt;/code&gt; is the name of the sidebox.&lt;/p&gt;
+&lt;p&gt;Make the needed changes. Be sure that the single quote marks are not left out.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I rearrange sideboxes?</title>
+      <link>/user/sideboxes/rearrange_sideboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/rearrange_sideboxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/template/remove_rearrange_sideboxes/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I show my documents in their own sidebox?</title>
+      <link>/user/sideboxes/documents_in_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/documents_in_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You create a new category of products that describe your documents (for example, category &lt;strong&gt;Recipes&lt;/strong&gt;), and then create products within that category (&lt;strong&gt;individual recipes&lt;/strong&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;a href=&#34;/user/admin_pages/catalog/categories/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, make your category (say it&amp;rsquo;s &lt;em&gt;Recipes&lt;/em&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit the category, and set to product type: Document General&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go into this category, and &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;create your products, the recipes&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By restricting the category to Document General your Recipes category will now show in the Document Box and not the categories box.
+You can add other restricted product types too, but Document General will make this one show in the Document Box and not the categories box.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Information sidebox</title>
+      <link>/user/sideboxes/information_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/information_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Three sideboxes show links to internal content:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/information_sidebox/&#34;&gt;Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/more_information_sidebox/&#34;&gt;More Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;extra pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages Sidebox (Important Links)&lt;/a&gt; - links to &lt;a href=&#34;/user/ezpages&#34;&gt;EZ-Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-do-i-re-arrange-the-order-of-the-links-in-the-information-sidebox&#34;&gt;How do I re-arrange the order of the links in the information sidebox?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create (if you don&amp;rsquo;t already have it) a directory named &lt;code&gt;includes/modules/sideboxes/YOURTEMPLATE/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the includes/modules/sideboxes/information.php file into your new directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit the &lt;code&gt;if&lt;/code&gt; blocks into the order that you would like them to appear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, if you wished the terms and conditions link to appear first, you would move this entire block of php:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  if (DEFINE_CONDITIONS_STATUS &amp;lt;= 1) {
+    $information[] = &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_CONDITIONS) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . BOX_INFORMATION_CONDITIONS . &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;;
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(taking care not to leave the curly bracket behind) to just below the line that says:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  unset ($information);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;what-determines-which-links-are-shown-in-the-information-sidebox&#34;&gt;What determines which links are shown in the Information Sidebox?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Most of the pages in this sidebox may have links enabled or disabled using &lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Page Status&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The About Us and Brands pages have their links controlled by the &lt;a href=&#34;/user/customizing/site_specific_overrides/&#34;&gt;site specific overrides&lt;/a&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-do-i-add-a-link-to-the-information-sidebox&#34;&gt;How do I add a link to the Information Sidebox?&lt;/h3&gt;
+&lt;p&gt;This question is answered in the FAQ &lt;a href=&#34;/user/sideboxes/add_link_information_sidebox/&#34;&gt;Adding a Link to the Information sidebox&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-if-the-link-should-only-be-available-to-logged-in-users&#34;&gt;What if the link should only be available to logged in users?&lt;/h3&gt;
+&lt;p&gt;Wrap the code that creates the link in a check for the appropriate conditions.  See &lt;a href=&#34;/user/customizing/protecting_pages/&#34;&gt;protecting pages&lt;/a&gt; for more information.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: More Information sidebox</title>
+      <link>/user/sideboxes/more_information_sidebox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/more_information_sidebox/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Three sideboxes show links to internal content:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/information_sidebox/&#34;&gt;Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/more_information_sidebox/&#34;&gt;More Information Sidebox&lt;/a&gt; - links to &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;extra pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages Sidebox (Important Links)&lt;/a&gt; - links to &lt;a href=&#34;/user/ezpages&#34;&gt;EZ-Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-do-i-remove-page-1-page-2-and-page-3-from-my-more-information-sidebox&#34;&gt;How do I remove &amp;ldquo;Page 1&amp;rdquo;, &amp;ldquo;Page 2&amp;rdquo; and &amp;ldquo;Page 3&amp;rdquo; from my More Information sidebox?&lt;/h3&gt;
+&lt;p&gt;Go to Admin &amp;gt; Configuration &amp;gt; Define Page Settings and set their values to 2 or 3.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-add-a-link-to-the-more-information-sidebox&#34;&gt;How do I add a link to the More Information Sidebox?&lt;/h3&gt;
+&lt;p&gt;We create the &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override file&lt;/a&gt; &lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes/tpl_more_information.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then edit this file, and follow the instructions provided in &lt;a href=&#34;/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Responsive Classic and Sideboxes</title>
+      <link>/user/sideboxes/sideboxes_responsive_classic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/sideboxes_responsive_classic/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The responsive classic template will display the built-in sideboxes in the following situations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;display on desktop&lt;/li&gt;
+&lt;li&gt;display on tablet in landscape mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In other modes (phone in portrait or landscape mode, tablet in portrait mode), the built-in sideboxes do not display.&lt;/p&gt;
+&lt;p&gt;This behavior is implemented in the several files, so if you want to implement it for &lt;em&gt;your custom&lt;/em&gt; sideboxes, you&amp;rsquo;ll need to make the changes described below. We&amp;rsquo;ll use the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=425&#34;&gt;MailChimp Sidebox&lt;/a&gt; as the example.&lt;/p&gt;
+&lt;p&gt;a) Edit &lt;code&gt;includes/templates/responsive_classic/css/responsive_default.css&lt;/code&gt;.  Both the landscape and portrait mode blocks of the CSS turn off the built in sideboxes like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;div#documentcategories {display:none;visibility:hidden;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is only done for built-in sideboxes.  To turn off a custom sidebox, you have to add to the CSS.  For the MailChimp sidebox, it would be:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;div#mailchimpsidebox {display:none;visibility:hidden;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to both the landscape and portrait blocks of the CSS, below where &lt;code&gt;documentcategories&lt;/code&gt; is set.&lt;/p&gt;
+&lt;p&gt;b) Make the same change in &lt;code&gt;includes/templates/responsive_classic/css/responsive_tablet.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;c) Edit &lt;code&gt;includes/templates/responsive_classic/jscript/jscript_responsive_framework.php&lt;/code&gt;.  Look for &lt;code&gt;documentcategories&lt;/code&gt; and copy that line, replacing &lt;code&gt;documentcategories&lt;/code&gt; with &lt;code&gt;mailchimpsidebox&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Suppressing sidebox display on specific pages</title>
+      <link>/user/sideboxes/suppressing_sidebox_display/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/suppressing_sidebox_display/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;: I want to display the featured sidebox on my front page only, and suppress it from all other pages.&lt;/p&gt;
+&lt;p&gt;Create an override for the sidebox&amp;rsquo;s module file. For the featured products sidebox, this would involve copying &lt;code&gt;includes/modules/sideboxes/featured_products.php&lt;/code&gt; to &lt;code&gt;includes/modules/sideboxes/YOURTEMPLATE/featured_products.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Open up your new sidebox module file and take a look at the code. 
+Generally it will look something like this&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php  
+
+BIG COMMENT BLOCK  
+
+// test if box should display  
+  $show_featured= true;  
+
+  if ($show_featured == true) {  
+
+    // MAIN PROCESSING BLOCK  
+
+  }  
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All we need to do is to change the line that reads&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$show_featured= true;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;into&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  if ($this_is_home_page) {  
+    $show_featured = true;  
+  } else {  
+    $show_featured = false;  
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If your sidebox module doesn&amp;rsquo;t have a conditional such as 
+&lt;code&gt;if ($show_featured == true) { ... } &lt;/code&gt; wrapped around the code, then just add it (changing the variable name to something suitable and unique for your sidebox to avoid unintentionally turning off other sideboxes).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;: I do not want to display any sideboxes on the checkout pages.&lt;/p&gt;
+&lt;p&gt;Modify the file &lt;code&gt;includes/templates/YOURTEMPLATE/common/tpl_main_page.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Add this after the comment block at the top of the file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (in_array($current_page_base,explode(&amp;#34;,&amp;#34;,&amp;#39;checkout_shipping,checkout_payment,checkout_confirmation,checkout_success&amp;#39;)) ) {
+  $flag_disable_right = true;
+  $flag_disable_left = true;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3&lt;/strong&gt;: I want all the sideboxes on the right removed.&lt;/p&gt;
+&lt;p&gt;Turning off each of the sideboxes set to display on the right in 
+&lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controllers&lt;/a&gt; is not enough.  You need to reclaim the space by going to 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt; and  setting &lt;em&gt;Column Right Status - Global&lt;/em&gt; to 0.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What sideboxes are available?</title>
+      <link>/user/sideboxes/sidebox_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/sideboxes/sidebox_list/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can see all the sideboxes that are available to your store by navigating to &lt;a href=&#34;/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Layout Boxes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following content shows the sideboxes that come built-in with Zen Cart.&lt;/p&gt;
+&lt;h2 id=&#34;banners&#34;&gt;Banners&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Banners Sidebox&#34; src=&#34;/images/sidebox_banner_box.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;banners&lt;/strong&gt; sidebox shows what&#39;s in the sidebox banner group. 
+This can be found in the setting &lt;em&gt;Admin &gt; Configuration &gt; Layout Settings&lt;/em&gt; - Banner Display Groups - Side Box. 
+      &lt;br&gt;&lt;br&gt;
+      There are two more banner sideboxes, &lt;strong&gt;banner_box2&lt;/strong&gt; and &lt;strong&gt;banner_box_all&lt;/strong&gt;, which are configured similarly. 
+&lt;ul&gt;
+   &lt;li&gt;&lt;strong&gt;banner_box2&lt;/strong&gt; is just a duplicate of &lt;b&gt;banners&lt;/b&gt;, which displays a single banner.&lt;/li&gt;
+   &lt;li&gt;&lt;strong&gt;banner_box_all&lt;/strong&gt; can display a random selection from the list of banners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#banner_box2&#34;&gt;- View banner_box2&lt;/button&gt;&lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#banner_boxall&#34;&gt;- View banner_boxall&lt;/button&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;banner_box2&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_banner_box2.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;div id=&#34;banner_boxall&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_banner_box_all.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;best-sellers&#34;&gt;Best Sellers&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Best Sellers Sidebox&#34; src=&#34;/images/sidebox_bestsellers.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;bestsellers&lt;/strong&gt; sidebox shows links to the best selling items in your store. 
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;categories&#34;&gt;Categories&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Categories Sidebox&#34; src=&#34;/images/sidebox_categories.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;categories&lt;/strong&gt; sidebox shows a list of your top level categories and obey the category &lt;em&gt;sort order.&lt;/em&gt;
+      &lt;br&gt;&lt;br&gt;
+      The parenthetical numbers after the category names are the number of items in that category.  This may be turned off in &lt;em&gt;Admin &gt; Configuration &gt; My Store &gt; Show Category Counts&lt;/em&gt;. The featured, special, new, and all product links can be removed in &lt;em&gt;Admin &gt; Configuration &gt; Layout Settings&lt;/em&gt;
+      &lt;br&gt;&lt;br&gt;
+       There is another categories sidebox called &lt;strong&gt;document_categories&lt;/strong&gt;, for stores with Document type products. The product type Document may be seen on the screen &lt;em&gt;Admin &gt; Catalog &gt; Product Types&lt;/em&gt;. &lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#documents_categories&#34;&gt; - View documents_categories&lt;/button&gt;
+	      &lt;/div&gt;
+	&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;div id=&#34;documents_categories&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_documents_categories.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;currencies&#34;&gt;Currencies&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Currencies Sidebox&#34; src=&#34;/images/sidebox_currencies.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;currencies&lt;/strong&gt; sidebox creates a dropdown selector list showing all the currencies supported by the store.  Selecting a new item from the list changes the pricing to use that currency. 
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;ez-pages&#34;&gt;EZ-Pages&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;EZ-Pages Sidebox&#34; src=&#34;/images/sidebox_ezpages.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;ezpages&lt;/strong&gt; sidebox creates a list of the &lt;a href=&#34;/user/ezpages/what_are_ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; in your store, with the title Important Links.
+   &lt;/div&gt;
+	&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;featured-products&#34;&gt;Featured Products&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Featured Products Sidebox&#34; src=&#34;/images/sidebox_featured.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;featured_products&lt;/strong&gt; sidebox is a random display of featured products. &lt;br&gt;
+The &lt;i&gt;[more]&lt;/i&gt; link in the header goes to the featured products page.&lt;br&gt;
+The &lt;strong&gt;specials&lt;/strong&gt; and &lt;strong&gt;new_products&lt;/strong&gt; sideboxes work similarly. &lt;br&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Information Sidebox&#34; src=&#34;/images/sidebox_information.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;information&lt;/strong&gt; sidebox presents links to the &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define pages&lt;/a&gt;. Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
+   &lt;/div&gt;
+	&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;languages&#34;&gt;Languages&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Language Sidebox&#34; src=&#34;/images/sidebox_languages.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;languages&lt;/strong&gt; sidebox shows icons for the languages in use in the store. 
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;manufacturers&#34;&gt;Manufacturers&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Manufacterers Sidebox&#34; src=&#34;/images/sidebox_manufacturers.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;manufacturers&lt;/strong&gt; sidebox is a dropdown list of the manufacturers. Selecting an entry from this list will show all that manufacturer&#39;s products. (NOTE: Only manufacturers that have products associated with them will be shown in this list. You can link manufacturers to products in your Admin panel.)&lt;br&gt;
+       A related sidebox, &lt;strong&gt;manufacturers_info&lt;/strong&gt; appears only on the product pages with information about the product&#39;s specific manufacturer.&lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#manufacturers_info&#34;&gt;- View manufacturers_info&lt;/button&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;div id=&#34;manufacturers_info&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_manufacturers_info.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-information&#34;&gt;More Information&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt;
+      &lt;img alt=&#34;More Information Sidebox&#34; src=&#34;/images/sidebox_more_information.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt; 
+      The &lt;strong&gt;more information&lt;/strong&gt; sidebox presents links to the other define pages, page_2, page_3 and page_4.  
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;new-products&#34;&gt;New Products&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;New Products Sidebox&#34; src=&#34;/images/sidebox_new_products.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;new_products&lt;/strong&gt; sidebox is a random display of &lt;a href=&#34;/user/products/new_products/&#34;&gt;new products&lt;/a&gt;. &lt;br&gt;
+The &lt;i&gt;[more]&lt;/i&gt; link in the header goes to the new products page.&lt;br&gt;
+The &lt;strong&gt;specials&lt;/strong&gt; and &lt;strong&gt;featured_products&lt;/strong&gt; sideboxes work similarly. &lt;br&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;order-history&#34;&gt;Order History&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Order History Sidebox&#34; src=&#34;/images/sidebox_order_history.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div&gt;
+	   The &lt;strong&gt;order_history&lt;/strong&gt; shows a list of previously purchased user products. 
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt; 
+&lt;h2 id=&#34;product-notifications&#34;&gt;Product Notifications&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Product Notifications Sidebox&#34; src=&#34;/images/sidebox_product_notifications.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;product_notifications&lt;/strong&gt; sidebox allows a customer to subscribe to product notifications that you post using the &lt;a href=&#34;/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter and Product Notifications Manager&lt;/a&gt;. &lt;br&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;h2 id=&#34;reviews&#34;&gt;Reviews&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Reviews Sidebox&#34; src=&#34;/images/sidebox_reviews.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;reviews&lt;/strong&gt; sidebox features a random display of reviews. &lt;br&gt;On the product info page, the sidebox changes to a review request called the &lt;b&gt;write_reviews&lt;/b&gt; sidebox. &lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#write_reviews&#34;&gt;- View write_reviews&lt;/button&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;div id=&#34;write_reviews&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_write_review.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;search&#34;&gt;Search&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Search Sidebox&#34; src=&#34;/images/sidebox_search.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;search&lt;/strong&gt; sidebox provides an interface to search products in the cart.&lt;br&gt;
+A second search sidebox, the &lt;strong&gt;search_header&lt;/strong&gt; sidebox, is designed for positioning in the page header. &lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link&#34; data-toggle=&#34;modal&#34; data-target=&#34;#search_header&#34;&gt;- View search_header&lt;/button&gt;
+   &lt;/div&gt;
+	&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;div id=&#34;search_header&#34; class=&#34;modal fade&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34;&gt;
+  &lt;div class=&#34;modal-dialog&#34;&gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+        &lt;div class=&#34;modal-body&#34;&gt;
+            &lt;img src=&#34;/images/sidebox_search_header.png&#34; class=&#34;img-responsive&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;shopping-cart&#34;&gt;Shopping Cart&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Shopping Cart Sidebox&#34; src=&#34;/images/sidebox_shopping_cart.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;shopping_cart&lt;/strong&gt; sidebox lists the items that have been added into the customer&#39;s cart.&lt;br&gt;
+The &lt;i&gt;[more]&lt;/i&gt; link in the header goes to the &lt;a href=&#34;/user/storefront_pages/shopping_cart/&#34;&gt;shopping cart page&lt;/a&gt;.&lt;br&gt;
+   &lt;/div&gt;
+	&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;specials&#34;&gt;Specials&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Specials Sidebox&#34; src=&#34;/images/sidebox_specials.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;specials&lt;/strong&gt; sidebox is a random display of specials. &lt;br&gt;
+The &lt;i&gt;[more]&lt;/i&gt; link in the header goes to the &lt;a href=&#34;/user/storefront_pages/specials/&#34;&gt;specials page&lt;/a&gt;.&lt;br&gt;
+The &lt;strong&gt;featured&lt;/strong&gt; and &lt;strong&gt;new_products&lt;/strong&gt; sideboxes work similarly. &lt;br&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;whos-online&#34;&gt;Who&amp;rsquo;s Online&lt;/h2&gt;
+&lt;br&gt;
+&lt;div&gt;
+   &lt;div class=&#34;img_col&#34;&gt; 
+      &lt;img alt=&#34;Who&#39;s Online Sidebox&#34; src=&#34;/images/sidebox_whos_online.png&#34; /&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;notes_col&#34;&gt;
+      The &lt;strong&gt;whos_online&lt;/strong&gt; sidebox shows the number of visitors presently on the site.
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

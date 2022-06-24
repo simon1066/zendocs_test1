@@ -1,0 +1,1498 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Troubleshooting</title>
+    <link>/zendocs_test1/user/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: 0 DB_ERROR_NOT_CONNECTED</title>
+      <link>/zendocs_test1/user/troubleshooting/db_error_not_connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/db_error_not_connected/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;DB_ERROR_NOT_CONNECTED&lt;/code&gt; occurs when Zen Cart has trouble connecting to your database.&lt;/p&gt;
+&lt;p&gt;Possible Causes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Your &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; files specify a &lt;a href=&#34;/zendocs_test1/user/first_steps/database/#what-are-prefixes&#34;&gt;prefix&lt;/a&gt; for your database tables (&lt;code&gt;DB_PREFIX&lt;/code&gt;) which does not match what was used when creating the tables.  Not matching the prefix value (or specifying one when it is not needed) is a very common mistake for older installations being upgraded.  View your database in phpMyAdmin and see if a prefix is used.  The first Zen Cart table should be called (something like) &lt;code&gt;address_book&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If it is called &lt;code&gt;address_book&lt;/code&gt;, then your &lt;code&gt;DB_PREFIX&lt;/code&gt; value should be &lt;code&gt;&#39;&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DB_PREFIX&#39;, &#39;&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If it is called &lt;code&gt;zen_address_book&lt;/code&gt;, then your &lt;code&gt;DB_PREFIX&lt;/code&gt; value should be &lt;code&gt;&#39;zen_&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DB_PREFIX&#39;, &#39;zen_&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If it is called &lt;code&gt;zcaddress_book&lt;/code&gt;, then your &lt;code&gt;DB_PREFIX&lt;/code&gt; value should be &lt;code&gt;&#39;zc&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;DB_PREFIX&#39;, &#39;zc&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; files contain settings for the database (&lt;code&gt;DB_SERVER&lt;/code&gt;
+&lt;code&gt;DB_SERVER_USERNAME&lt;/code&gt;, &lt;code&gt;DB_SERVER_PASSWORD&lt;/code&gt;, &lt;code&gt;DB_DATABASE&lt;/code&gt;), which are used to log in to the database.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;0 DB_ERROR_NOT_CONNECTED&lt;/code&gt; error can occur when those database settings no longer match the actual details for the MySQL server, the MySQL database, or the MySQL username+password, or if the database server is broken for some reason.&lt;/p&gt;
+&lt;p&gt;For example, if you recently changed your MySQL username/database/password and didn&amp;rsquo;t put those same changes into your &lt;code&gt;configure.php&lt;/code&gt; files, you&amp;rsquo;ll need to update those files to match what&amp;rsquo;s required by your MySQL database server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some frequently updated tables (such as &lt;code&gt;sessions&lt;/code&gt; or &lt;code&gt;whos_online&lt;/code&gt; 
+can become corrupt, and cause this problem.  Run a &amp;ldquo;repair&amp;rdquo; on the database. Most hosts have a Database Repair option listed beside the database names in the webhosting control panel. Ask your host if you need help finding this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Talk to your hosting company to determine whether they are doing some sort of maintenance on the database.  Tell them that your website cannot connect to your MySQL database, and ask them for some assistance in getting that working again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin menu item is missing</title>
+      <link>/zendocs_test1/user/troubleshooting/admin_menu_item_missing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/admin_menu_item_missing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Admin menu items are controlled by the following factors:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Profile Permissions&lt;/p&gt;
+&lt;p&gt;If you are logged into Admin with a user whose profile doesn&amp;rsquo;t have access to that page, then the menu option won&amp;rsquo;t display for you.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A database entry in the &lt;code&gt;admin_pages&lt;/code&gt; table.  Here is an example of the creation of such an entry being added:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES (&amp;#39;pricepop&amp;#39;, &amp;#39;BOX_TOOLS_PRICEPOP&amp;#39;, &amp;#39;FILENAME_PRICEPOP&amp;#39;, &amp;#39;&amp;#39;, &amp;#39;tools&amp;#39;, &amp;#39;Y&amp;#39;, 500);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(Note that &lt;code&gt;BOX_TOOLS_PRICEPOP&lt;/code&gt; and &lt;code&gt;FILENAME_PRICEPOP&lt;/code&gt; must be defined as noted below.)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Text strings defined to display the item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Menu options don&amp;rsquo;t display if the &lt;code&gt;FILENAME_&lt;/code&gt; or &lt;code&gt;BOX_&lt;/code&gt; constants for them aren&amp;rsquo;t defined.&lt;/p&gt;
+&lt;p&gt;These constants are defined in various places:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/includes/filenames.php&lt;/code&gt; (for core system files, not plugins)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/languages/english.php&lt;/code&gt; (for core system files, not plugins)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/extra_datafiles/*.php&lt;/code&gt; (for plugins)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/languages/english/extra_definitions/*.php&lt;/code&gt; (for plugins)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(And for other languages, consult the corresponding language directories/files.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin Password - Resetting or Changing</title>
+      <link>/zendocs_test1/user/troubleshooting/reset_admin_password/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/reset_admin_password/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you &lt;a href=&#34;/zendocs_test1/user/troubleshooting/cant_login/&#34;&gt;can&amp;rsquo;t login to your admin&lt;/a&gt;, you may need to reset your admin password.&lt;/p&gt;
+&lt;h2 id=&#34;1-login-and-change-it-directly&#34;&gt;1. Login and change it directly&lt;/h2&gt;
+&lt;p&gt;If you are able to login to your Admin, and merely want to change your password, simply login, then go to the &amp;ldquo;Account&amp;rdquo; menu and change your password there.&lt;/p&gt;
+&lt;h2 id=&#34;2-log-in-with-another-account&#34;&gt;2. Log in with another account.&lt;/h2&gt;
+&lt;p&gt;If you can log in to your Zen Cart admin using another account (with Super-User privilege), please do so, and reset/modify the other admin password as needed using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admins &amp;gt; Admin Users&lt;/a&gt; page.&lt;/p&gt;
+&lt;h2 id=&#34;3-forgot-password&#34;&gt;3. Forgot Password&lt;/h2&gt;
+&lt;p&gt;If you can&amp;rsquo;t login from another account, try using the &lt;em&gt;Forgot Password&lt;/em&gt; button on the admin login page. 
+Enter the admin email address, and wait for your new password to arrive by email.&lt;/p&gt;
+&lt;h2 id=&#34;4-watch-out-for-possible-stumbling-blocks&#34;&gt;4. Watch out for possible stumbling blocks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Temporary Lockout:&lt;/b&gt; If you accidentally type the wrong password twice (which can easily happen if you&amp;rsquo;re tired or distracted), remember that if you type the wrong password a third time, you get locked out of your admin account for 30 minutes - and the system won&amp;rsquo;t tell you this because it assumes you&amp;rsquo;re a bad guy trying to break in.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Password Managers:&lt;/b&gt; If you are using a &lt;a href=&#34;/zendocs_test1/user/first_steps/security/#use-a-password-manager&#34;&gt;password manager&lt;/a&gt;, the password manager &lt;em&gt;may&lt;/em&gt; be overwriting what you are filling in so your password change doesn&amp;rsquo;t work.  Try changing your password in a browser where you are not running (or logged out of) your password manager, and then save your new password in your password manager.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;www vs non-www:&lt;/b&gt; Your hoster may be configured to redirect &lt;code&gt;www.mystore.com&lt;/code&gt; to &lt;code&gt;mystore.com&lt;/code&gt;.  If this is the case, you will want to specify the non-www site (i.e. &lt;code&gt;https://mystore.com&lt;/code&gt;) in your &lt;code&gt;admin/includes/configure.php&lt;/code&gt; file.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Browser Plugins:&lt;/b&gt; The same advice applies with other browser plugins - they might be breaking the Zen Cart admin login.  Try a browser you don&amp;rsquo;t normally use and see if you can login successfully there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-use-phpmyadmin&#34;&gt;5. Use phpMyAdmin&lt;/h2&gt;
+&lt;p&gt;If the techniques above don&amp;rsquo;t work, use phpMyAdmin to create a temporary admin user directly in the database. You must have database control to do this.
+Open your phpMyAdmin (supplied by your hosting company), select your store&amp;rsquo;s database, then click the &amp;ldquo;SQL&amp;rdquo; tab.  Run this query:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;DELETE FROM admin WHERE admin_name = &amp;#39;Admin&amp;#39;; 
+INSERT INTO admin (admin_name, admin_email, admin_pass, admin_profile) 
+VALUES (&amp;#39;Admin&amp;#39;, &amp;#39;admin@localhost&amp;#39;, &amp;#39;351683ea4e19efe34874b501fdbf9792:9b&amp;#39;, 1);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: If you are using a prefix for your database tables, you&amp;rsquo;ll naturally need to add that prefix to the table name above.  For example, if your prefix is &lt;code&gt;zc_&lt;/code&gt;, you would use&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;DELETE FROM zc_admin&lt;/code&gt; and &lt;code&gt;INSERT INTO zc_admin&lt;/code&gt; in the commands above.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: If you are using a very old version of Zen Cart then the field names above may be different than your database has. See &lt;a href=&#34;https://www.zen-cart.com/content.php?44-how-do-i-change-or-reset-my-admin-password&#34;&gt;https://www.zen-cart.com/content.php?44-how-do-i-change-or-reset-my-admin-password&lt;/a&gt; for additional information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;You should now be able to login using the following details:&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;Username: Admin&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;Password: admin &lt;/b&gt;&lt;br&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Be sure to use proper case. ie. &amp;lsquo;Admin&amp;rsquo; for username, not &amp;lsquo;admin&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;You will be prompted to change the password right away.&lt;/p&gt;
+&lt;p&gt;After you log in, remember to delete this temporary admin account after creating a new one. See the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admins &amp;gt; Admin Users&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;NOTE: If you are working with an old database, you may get a message that looks like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#1292 - Incorrect datetime value: &amp;#39;0000-00-00 00:00:00&amp;#39; for column &amp;#39;pwd_last_change_date&amp;#39; at row 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When this happens, you have to fix the &lt;code&gt;admin&lt;/code&gt; table before doing the INSERT. Use the command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ALTER TABLE admin MODIFY COLUMN pwd_last_change_date datetime NOT NULL default &amp;#39;0001-01-01 00:00:00&amp;#39;, MODIFY COLUMN last_modified datetime NOT NULL default &amp;#39;0001-01-01 00:00:00&amp;#39;, MODIFY COLUMN last_login_date datetime NOT NULL default &amp;#39;0001-01-01 00:00:00&amp;#39;, MODIFY COLUMN last_failed_attempt datetime NOT NULL default &amp;#39;0001-01-01 00:00:00&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(again, adding a prefix to the tablename &lt;code&gt;admin&lt;/code&gt; if required).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin password expired</title>
+      <link>/zendocs_test1/user/troubleshooting/password_expired/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/password_expired/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The PCI rules for password management require that admin users change their password every 90 days.&lt;/p&gt;
+&lt;p&gt;So, after 90 days has elapsed, the next time you log in to your Admin it will ask you to change your password. Simply follow the prompts to select a new password. Per PCI rules, you cannot re-use the last 4 passwords.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Don&amp;rsquo;t be alarmed by the word &amp;ldquo;expire.&amp;rdquo; THE SYSTEM DOES NOT &amp;ldquo;lock you out&amp;rdquo; when your password &amp;ldquo;expires.&amp;rdquo; It merely requires you to change the password. As long as you know the last-valid password it will let you login (after also choosing a new password).&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to change it now, you will not be allowed to complete login. But your current password will let you get back to the change-your-password screen again.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/security/passwords/&#34;&gt;An overview of password requirements for Zen Cart&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Keeping track of passwords and generating new secure passwords is easier with a &lt;a href=&#34;/zendocs_test1/user/first_steps/security/#use-a-password-manager&#34;&gt;password manager&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Blank Page troubleshooting</title>
+      <link>/zendocs_test1/user/troubleshooting/blank_page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/blank_page/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A blank page (or partial blank page) occurs when the PHP interpreter 
+has a fatal error creating your page.&lt;/p&gt;
+&lt;p&gt;The image on the left is a blank page.  The image on the right, which is missing the site footer, is also a blank page.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Blank Page&lt;/th&gt;
+&lt;th&gt;Partial Blank Page&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;/zendocs_test1/images/blank_page_1.png&#34; alt=&#34;Blank Page&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;/zendocs_test1/images/blank_page_2.png&#34; alt=&#34;Partial Blank Page&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Blank pages can be caused by a number of things, and often occur just after installing, upgrading, or customizing your store. Any time you touch a PHP file, you must be sure to not introduce syntax problems, and you need to be sure that it uploaded correctly.&lt;/p&gt;
+&lt;h2 id=&#34;1-did-all-your-file-uploads-work-properly&#34;&gt;1. Did all your file-uploads work properly?&lt;/h2&gt;
+&lt;p&gt;Sometimes &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt; experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0 bytes in size.&lt;/p&gt;
+&lt;p&gt;Some programs like SmartFTP and CuteFTP are well-known to be problematic in this area.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt; for a list of alternatives.&lt;/p&gt;
+&lt;p&gt;Best to re-upload and ensure that there are no errors, and that no files are left with 0 bytes.&lt;/p&gt;
+&lt;p&gt;You can easily verify that you do not have any zero byte files in your 
+installation by using the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2193&#34;&gt;Changed Files plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#a52a2a&#34;&gt;&lt;strong&gt;Failed uploads are the MOST COMMON CAUSE of all website problems.&lt;/strong&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-have-you-created-any-syntax-errors-in-your-customizations-andor-file-edits&#34;&gt;2. Have you created any syntax errors in your customizations and/or file edits?&lt;/h2&gt;
+&lt;p&gt;A PHP syntax error will very often result in a blank screen, or a partially-blank screen.&lt;br&gt;
+When this happens, there is often also an entry in the server&amp;rsquo;s errorlog, which you can often view via your hosting control panel area. But, sometimes you can&amp;rsquo;t view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart, which is described below.&lt;/p&gt;
+&lt;h2 id=&#34;3-are-you-running-an-older-cart-on-a-newer-php&#34;&gt;3. Are you running an older cart on a newer PHP?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Your hoster may have updated your PHP underneath you; be sure to 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;check your PHP version&lt;/a&gt; to be sure!&lt;/p&gt;
+&lt;p&gt;If your hoster updated your PHP version, be aware that if you&amp;rsquo;re running an old version of Zen Cart, you could have problems - refer to the &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;PHP Version - Zen Cart version compatibility matrix&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;4-have-you-recently-made-a-code-change&#34;&gt;4. Have you recently made a code change?&lt;/h2&gt;
+&lt;p&gt;The most common customization errors include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adding or deleting apostrophes or quotations (ie: &amp;rsquo; or &amp;quot; marks) inside define() statements, resulting in mismatched quotes&lt;/li&gt;
+&lt;li&gt;removing or adding punctuation to define() statements, thus breaking the correct syntax. A define() statement should look like this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    define(&amp;#39;CONSTANT_NAME&amp;#39;, &amp;#39;value here&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;missing semi-colons and periods, unbalanced parentheses, braces, brackets&lt;/li&gt;
+&lt;li&gt;uploading files to the wrong places. For more information about overrides, see the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=192&#34;&gt;Overrides Chart&lt;/a&gt;
+and the &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;Overrides FAQs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;When renaming files (for backup), be sure to NOT keep the extension &amp;ldquo;.php&amp;rdquo;. For instance, rename header_php.php to header_php.old or header_php.php.20110701, BUT &lt;em&gt;NOT&lt;/em&gt; header_php.old.php.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-do-you-have-bad-product-data&#34;&gt;5. Do you have bad product data?&lt;/h2&gt;
+&lt;p&gt;(This refers to product pages mainly, not &amp;ldquo;all pages&amp;rdquo;.)&lt;br&gt;
+Sometimes when entering product data, if you copy+paste from another application (especially MS Word), weird &amp;ldquo;special&amp;rdquo; characters might get inserted, which can cause trouble in unexpected places. Make sure your product names and descriptions are clean.&lt;/p&gt;
+&lt;p&gt;And for product-images, make sure you don&amp;rsquo;t have spaces and hyphens in the product-image-filenames.&lt;/p&gt;
+&lt;h2 id=&#34;working-with-debug-logs&#34;&gt;Working with Debug Logs&lt;/h2&gt;
+&lt;h3 id=&#34;a-looking-at-log-files&#34;&gt;a) Looking at log files&lt;/h3&gt;
+&lt;p&gt;The built-in debug logging will create files 
+in your website&amp;rsquo;s /logs/ folder named 
+&lt;code&gt;myDEBUG-xxxxxx.log&lt;/code&gt;
+(or &lt;code&gt;myDEBUG-adm-xxxxxx.log&lt;/code&gt; if they are from the admin side).&lt;/p&gt;
+&lt;p&gt;To access these files, use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP program&lt;/a&gt; to connect to your &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#hosting-companies&#34;&gt;hoster&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to &lt;a href=&#34;/zendocs_test1/user/installing/permissions/&#34;&gt;make your /logs/ folder writable&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll want to read the contents of these files to see what the actual PHP errors are.&lt;/p&gt;
+&lt;p&gt;Once you have a log, see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;reading a myDEBUG log&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then search this FAQ area for your error message and/or see the &amp;ldquo;Dealing with Error Messages&amp;rdquo; section, later in this article.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin &amp;gt; Tools &amp;gt; Store Manager screen.&lt;/p&gt;
+&lt;p&gt;You will of course want to review the contents of those files first so you can address the problems they&amp;rsquo;re recording.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t purge them, it will eventually slow down your website&amp;rsquo;s performance, and use up a large amount of disk space.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If you&amp;rsquo;re running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=606&#34;&gt;Debug Error-Logging Tool&lt;/a&gt; from the Zen Cart plugins library.&lt;/p&gt;
+&lt;h3 id=&#34;b-using-error-messages&#34;&gt;b) Using Error Messages&lt;/h3&gt;
+&lt;p&gt;Kinds of errors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &amp;ldquo;fatal&amp;rdquo; messages are the more important ones to deal with.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Notice&amp;rdquo; messages can be ignored in most cases.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Warnings&amp;rdquo; should draw some attention, but are not fatal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How to read the errors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note that many error/warning messages will be a result of previous error/warning messages.&lt;br&gt;
+&lt;font color=&#34;#FF0000&#34;&gt;&lt;strong&gt;Deal with them in the order they appear&lt;/strong&gt;,&lt;/font&gt; and don&amp;rsquo;t blame the later errors until the earlier ones are dealt with first.&lt;/li&gt;
+&lt;li&gt;One of the MOST COMMON errors you&amp;rsquo;ll see is addressed here: &lt;a href=&#34;/zendocs_test1/user/troubleshooting/warning_headers_already_sent/&#34;&gt;Warning: Headers Already Sent &amp;hellip;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use the search option on this page to find answers to any other errors you find.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;c-missing-log-files&#34;&gt;c) Missing Log Files&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re seeing a blank screen but have no log files in your /logs/ folder,
+it could be that your configuration has changed the default logging behavior.  See &lt;a href=&#34;/zendocs_test1/user/troubleshooting/missing_log_files/&#34;&gt;Missing Log files&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;advanced-developer-option-this-approach-is-not-needed-for-most-situations&#34;&gt;Advanced Developer Option. (THIS APPROACH IS &lt;em&gt;NOT&lt;/em&gt; NEEDED FOR MOST SITUATIONS!!!!)&lt;/h3&gt;
+&lt;p&gt;While &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;the built-in myDEBUG-xxxxxx.log method above is far more reliable and secure&lt;/font&gt;&lt;/strong&gt; (since messages are never shown in your customers&amp;rsquo; browser), another way to help identify &lt;em&gt;&lt;strong&gt;where&lt;/strong&gt;&lt;/em&gt; an error is happening is to show the errors on your browser. The drawback to this is that your customers can also see the errors, and search engines might catch them too, which could be embarrassing, AND WILL CAUSE YOUR SITE TO FAIL PCI SECURITY SCANS.&lt;/p&gt;
+&lt;p&gt;To attempt to show PHP debug errors on-screen, create and upload a new file, like this:&lt;br&gt;
+Filename: &lt;strong&gt;/includes/&lt;u&gt;local&lt;/u&gt;/configure.php&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+  define(&amp;#39;STRICT_ERROR_REPORTING&amp;#39;, true);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(The missing &lt;code&gt;?&amp;gt;&lt;/code&gt; is intentional.)&lt;/p&gt;
+&lt;p&gt;Then try to access your site again. You may see many warning messages on the screen.&lt;/p&gt;
+&lt;p&gt;Be sure to delete the &lt;code&gt;/includes/local/configure.php&lt;/code&gt; file once you&amp;rsquo;ve identified the problem, lest you leave yourself with a security problem on your site.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Can&#39;t login or stay logged in or add-to-cart</title>
+      <link>/zendocs_test1/user/troubleshooting/cant_stay_logged_in/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/cant_stay_logged_in/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is likely a PHP Session Handling issue.&lt;/p&gt;
+&lt;p&gt;Before you begin, be sure you are familiar with the structure and contents of &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE FIRST THING TO TRY is this:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Close all your browser windows&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open 1 browser window, and use it to clear your browser cache AND cookies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you browser has a Private Browsing mode, make sure you&amp;rsquo;re NOT using &amp;ldquo;Private Browsing&amp;rdquo; mode, because that will prevent sessions/cookies from being usable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reboot your computer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn off your firewall software and try again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure that your stylesheets don&amp;rsquo;t contain any references to image files that don&amp;rsquo;t exist on your server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test in a completely different browser. IE and Chrome are known to be problematic with cookies sometimes. Switching to FireFox is a good troubleshooting step.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t use spaces in your domain names, nor in the foldernames in which you&amp;rsquo;ve installed your store. If yours has a space in the path anywhere, you may have troubles. Rename the folder instead.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NEXT, try to rule out a bad SSL configuration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clear browser cache AND cookies and try again. If it&amp;rsquo;s still not working:&lt;/li&gt;
+&lt;li&gt;temporarily edit your &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; and change &lt;code&gt;HTTP_SERVER&lt;/code&gt; to a URL that does NOT start with &lt;code&gt;https&lt;/code&gt; (just as a test)&lt;/li&gt;
+&lt;li&gt;clear browser cache AND cookies and try again&lt;/li&gt;
+&lt;li&gt;turn off any .htaccess URL rewrites you may have created (If you&amp;rsquo;ve created them wrong then the rewrites/redirects may be breaking everything).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;IS IT A DOMAIN NAME PROBLEM?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if your site is using just an IP address and not a named domain, then it&amp;rsquo;s possible your sessions/cookies are getting confused.  Edit your 2 &lt;code&gt;configure.php&lt;/code&gt; files and set your &lt;code&gt;HTTP_SERVER&lt;/code&gt; to an actual domain name, NOT an IP address.&lt;/li&gt;
+&lt;li&gt;if you&amp;rsquo;re using a domain name with &lt;code&gt;www&lt;/code&gt; in it, try removing the &lt;code&gt;www&lt;/code&gt; from it temporarily, again, in the &lt;code&gt;HTTP_SERVER&lt;/code&gt; setting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;IF IT STILL WON&amp;rsquo;T WORK, read on:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin login sessions (and customer login sessions) are managed via the PHP session-handling functionality.&lt;/li&gt;
+&lt;li&gt;When you log in, a session is generated. The session&amp;rsquo;s name is &lt;code&gt;zenAdminId&lt;/code&gt; for admin, or &lt;code&gt;zenid&lt;/code&gt; for the store.&lt;/li&gt;
+&lt;li&gt;When a session is started, PHP attempts to set a cookie in your browser. That cookie is intended to store that session ID so that it doesn&amp;rsquo;t need to be shown in the browser all the time (ie: with &amp;amp;zenid=243524524524525 etc) at the end of all your URLs.&lt;/li&gt;
+&lt;li&gt;If a cookie cannot be set, then PHP simply includes the session name and number (like above) on all your URLs in order to keep you logged in.&lt;/li&gt;
+&lt;li&gt;When you log out, or the session ID is lost, the session data is reset and your authentication data is removed, requiring login again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Possible causes of session-mgmt problems include:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSL misconfiguration, or URL-rewrite/redirect misconfiguration&lt;/li&gt;
+&lt;li&gt;cookies are blocked by firewall or by browser configuration&lt;/li&gt;
+&lt;li&gt;PHP is misconfigured or has certain session settings set to methods incompatible with Zen Cart such as session-auto-start and transitive-sid etc. The installer warns about these if they are a problem.&lt;/li&gt;
+&lt;li&gt;you have your site configured to store session data in files but your filesystem doesn&amp;rsquo;t have permissions set in such a way as to allow storage of the data&lt;/li&gt;
+&lt;li&gt;you have your site set to store session data in the database but the database table (&amp;ldquo;sessions&amp;rdquo;) is corrupt or database-storage is full and new records cannot be added.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Is your &amp;ldquo;cache&amp;rdquo; folder set to writable (ie: chmod 755 or some other suitable value according to your server&amp;rsquo;s configuration) ?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Other possibilities:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;a) altered files on your server. In that case a proper checkup of all your files is in order: see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/diagnosing_obscure_issues/&#34;&gt;Diagnosing obscure issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) a server configuration change by the hosting company (such as a PHP version change or anything else that might result in changes to the master php.ini configuration for the server or your hosting account).  See &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;mapping of Zen Cart versions to PHP versions&lt;/a&gt; for more information about which PHP versions are compatible with your Zen Cart version.&lt;/p&gt;
+&lt;p&gt;c) domain/SSL changes made to your DNS or hosting account.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Communication Issues with UPS, PayPal, etc.</title>
+      <link>/zendocs_test1/user/troubleshooting/communication_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/communication_issues/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart comes with a folder of utilities called &lt;code&gt;/extras&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This folder should not be kept on a live site; it should only be present during troubleshooting or debugging.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The following scripts can be run from the &lt;code&gt;/extras&lt;/code&gt; folder:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;curltester.php&lt;/code&gt; - Tests cURL communication to some common third party services.   Useful parameters for &lt;code&gt;curltester.php&lt;/code&gt; are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d=1&lt;/code&gt; or &lt;code&gt;details=1&lt;/code&gt; &amp;ndash; show CURL connection details &amp;ndash; useful for determining cause of communications problems&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r=1&lt;/code&gt; &amp;ndash; show Response obtained from destination server &amp;ndash; this may contain an error message, but usually means communication was okay&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i=1&lt;/code&gt; &amp;ndash; in conjunction with &lt;code&gt;d&lt;/code&gt; or &lt;code&gt;r&lt;/code&gt;, will show the detailed curlinfo certificate data from the host being connected to. Helpful for advanced debugging.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ipncheck.php&lt;/code&gt; - Determines if your server is able to connect TO PayPal in order to respond to an incoming IPN notification. (Note: To check whether PayPal can POST and IPN to your store, run a live transaction.)&lt;/p&gt;
+&lt;p&gt;Common symptoms of bad IPN communications:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;orders not showing up in Zen Cart but PayPal receipt issued when using PayPal IPN module&lt;/li&gt;
+&lt;li&gt;echeck updates not completing when using Express Checkout module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Execution of the scripts can be done by entering the following in your browser&amp;rsquo;s address bar (after uploading the &lt;code&gt;/extras&lt;/code&gt; folder):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://YOURSITE.com/extras/script-name.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(where &lt;code&gt;script-name&lt;/code&gt; is the name of one of the scripts above.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Constant already defined debug logs</title>
+      <link>/zendocs_test1/user/troubleshooting/constant_already_defined/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/constant_already_defined/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;Debug logs&lt;/a&gt; like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Warning: Constant TEXT_MAIN already defined in /Users/scott/Sites/store/includes/languages/english/index.php on line 9.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;occur when a PHP &lt;code&gt;define&lt;/code&gt; statement is used twice for the same constant.  The root cause of this issue is addressed in Zen Cart 1.5.8, but until then, storeowners using Zen Cart 1.5.7 can suppress this message using the following method:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to Admin &amp;gt; Configuration &amp;gt; Logging&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;Report All Errors (Admin)?&lt;/code&gt; and &lt;code&gt;Report All Errors (Store)?&lt;/code&gt; to &lt;code&gt;IgnoreDups&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Debug Logs</title>
+      <link>/zendocs_test1/user/troubleshooting/debug_logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/debug_logs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Debug logs are created by Zen Cart when the PHP interpreter has an
+error in creating a webpage.   These logs are a source of valuable information 
+that can help you resolve the underlying cause of the problem.&lt;/p&gt;
+&lt;p&gt;By default, log files are created in the &lt;code&gt;/logs&lt;/code&gt; folder at the root of your store.  Some hosting setups handle this differently - see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/missing_log_files/&#34;&gt;missing log files&lt;/a&gt; if you think this is happening to you.&lt;/p&gt;
+&lt;h3 id=&#34;reading-a-log&#34;&gt;Reading a Log&lt;/h3&gt;
+&lt;p&gt;A debug-log&amp;rsquo;s contents can be a little cryptic, here&amp;rsquo;s part of one created for &lt;em&gt;&lt;strong&gt;zc156c&lt;/strong&gt;&lt;/em&gt;, showing the spacing when multiple logs occur on a single page-load:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[25-Mar-2020 17:19:28 Europe/Berlin] Request URI: /zc156c/index.php?main_page=index&amp;amp;cPath=63, IP address: ::1
+#1  define() called at [C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php:35]
+#2  require_once(C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php) called at [C:\xampp\htdocs\zc156c\includes\modules\require_languages.php:26]
+#3  require(C:\xampp\htdocs\zc156c\includes\modules\require_languages.php) called at [C:\xampp\htdocs\zc156c\includes\modules\pages\index\header_php.php:44]
+#4  require(C:\xampp\htdocs\zc156c\includes\modules\pages\index\header_php.php) called at [C:\xampp\htdocs\zc156c\index.php:36]
+--&amp;gt; PHP Notice: Constant TABLE_HEADING_PRODUCTS already defined in C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php on line 35.
+
+[25-Mar-2020 17:19:28 Europe/Berlin] Request URI: /zc156c/index.php?main_page=index&amp;amp;cPath=63, IP address: ::1
+#1  define() called at [C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php:37]
+#2  require_once(C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php) called at [C:\xampp\htdocs\zc156c\includes\modules\require_languages.php:26]
+#3  require(C:\xampp\htdocs\zc156c\includes\modules\require_languages.php) called at [C:\xampp\htdocs\zc156c\includes\modules\pages\index\header_php.php:44]
+#4  require(C:\xampp\htdocs\zc156c\includes\modules\pages\index\header_php.php) called at [C:\xampp\htdocs\zc156c\index.php:36]
+--&amp;gt; PHP Notice: Constant TABLE_HEADING_QUANTITY already defined in C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php on line 37.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Each log-entry contains three (3) significant sections (not in this order):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A header&lt;/li&gt;
+&lt;li&gt;An identification of the &lt;em&gt;specific&lt;/em&gt; error.&lt;/li&gt;
+&lt;li&gt;A &amp;lsquo;back-trace&amp;rsquo; of the PHP modules called when the issue occurred.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;log-entry-header&#34;&gt;Log-entry: Header&lt;/h4&gt;
+&lt;p&gt;Each log-entry &lt;em&gt;starts&lt;/em&gt; with a line identifying the date and time, the URI and the IP address associated with the log&amp;rsquo;s creation, e.g. &lt;code&gt;[25-Mar-2020 17:19:28 Europe/Berlin] Request URI: /zc156c/index.php?main_page=index&amp;amp;cPath=63, IP address: ::1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This information provides you with:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The date and time that the log was created, since your web-server&amp;rsquo;s file-system time might be different from your store&amp;rsquo;s time-zone!&lt;/li&gt;
+&lt;li&gt;The URI used to access the site when the issue arose, e.g. &lt;code&gt;http://example.com/zc156c/index.php?main_page=index&amp;amp;cPath=63&lt;/code&gt;.  This gives you the link to use to replicate the issue.&lt;/li&gt;
+&lt;li&gt;The IP address being used to access the site.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;log-entry-specific-error&#34;&gt;Log-entry: Specific Error&lt;/h4&gt;
+&lt;p&gt;Each log-entry ends with a line identifying the specific issue being reported, e.g. &lt;code&gt;--&amp;gt; PHP Notice: Constant TABLE_HEADING_PRODUCTS already defined in C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php on line 35&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This information provides you with:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;em&gt;severity&lt;/em&gt; of the issue, one of &lt;code&gt;PHP Notice&lt;/code&gt;, &lt;code&gt;PHP Deprecated&lt;/code&gt;, &lt;code&gt;PHP Warning&lt;/code&gt; or &lt;code&gt;PHP Fatal error&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A text-string describing the error, e.g. &lt;code&gt;Constant TABLE_HEADING_PRODUCTS already defined&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;An identification of the line number and PHP module name that was active when the issue was logged.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;log-entry-back-trace&#34;&gt;Log-entry: Back-Trace&lt;/h4&gt;
+&lt;p&gt;The middle portion of each log-entry contains a back-trace (or &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_trace&#34;&gt;stack-trace&lt;/a&gt;) that identifies the sequence of PHP module &amp;lsquo;calls&amp;rsquo; that lead to the issue, starting (&lt;code&gt;#1&lt;/code&gt;) with the module for which the issue was logged and ending with the module name (e.g. &lt;code&gt;index.php&lt;/code&gt;, for the example above) that started the page&amp;rsquo;s output.  Each line-entry identifies a PHP statement (e.g. &lt;code&gt;define&lt;/code&gt;) that was executed from a specific line-number of a specific PHP module.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s examine the back-trace provided by the first log-entry in the example given above.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Calling Module:Line Number&lt;/th&gt;
+&lt;th&gt;PHP Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;/index.php:36&lt;/td&gt;
+&lt;td&gt;require&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/includes/modules/pages/index/header_php.php:44&lt;/td&gt;
+&lt;td&gt;require&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/includes/modules/require_languages.php:26&lt;/td&gt;
+&lt;td&gt;require_once&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/includes/languages/english/responsive_classic/index.php:35&lt;/td&gt;
+&lt;td&gt;define&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;how-to-fix-common-debug-logs&#34;&gt;How to Fix Common Debug Logs&lt;/h3&gt;
+&lt;p&gt;Many examples of debug logs and how to fix them are shown in &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages after upgrading&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;utilities&#34;&gt;Utilities&lt;/h3&gt;
+&lt;p&gt;The following tools are available for working with debug log files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2123&#34;&gt;Log Manager&lt;/a&gt; - Automatically remove logs after a certain period of time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are for older versions of Zen Cart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1583&#34;&gt;Display Log Files&lt;/a&gt; - View the contents of the log-files via an admin tool. Built in to Zen Cart since 1.5.7.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1879&#34;&gt;myDEBUG log Backtrace&lt;/a&gt; - shows stack trace when a log is created. Built in to Zen Cart after 1.5.5.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1792&#34;&gt;Report All Errors&lt;/a&gt; - shows more extensive error logging than is done by default in Zen Cart. Built in to Zen Cart since 1.5.7.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Diagnosing Obscure Issues</title>
+      <link>/zendocs_test1/user/troubleshooting/diagnosing_obscure_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/diagnosing_obscure_issues/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;general-troubleshooting-to-find-odd-problems&#34;&gt;General Troubleshooting to find odd problems&lt;/h2&gt;
+&lt;p&gt;The most detailed procedure to follow to find out what&amp;rsquo;s wrong when you&amp;rsquo;ve made some system changes or just completed an upgrade but something&amp;rsquo;s not working well, or you&amp;rsquo;re getting unexplained results, would be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download all your site&amp;rsquo;s files with your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;secure FTP tool&lt;/a&gt; to a new temporary folder on your PC (after making sure you&amp;rsquo;ve checked your PC is free of viruses and any malware).&lt;/li&gt;
+&lt;li&gt;Run a &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#file-comparison-utility&#34;&gt;file compare utility&lt;/a&gt; to compare all your site&amp;rsquo;s files against a freshly unzipped copy of the same version of Zen Cart. You can find the &lt;a href=&#34;https://sourceforge.net/projects/zencart/files/&#34;&gt;original Zen Cart release ZIP files here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Identify all the differences, and check each one to see if it could cause the problem.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Things to look for are:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unexpected blank lines or spaces at top or bottom of files.&lt;/li&gt;
+&lt;li&gt;Customized code that&amp;rsquo;s missing closing brackets ) or braces } or semicolons ; or quote marks &amp;rsquo; and &amp;ldquo;.&lt;/li&gt;
+&lt;li&gt;Incomplete files that may have not been uploaded properly.&lt;/li&gt;
+&lt;li&gt;Plugins that have been installed, and whether they&amp;rsquo;ve been done right or not.&lt;/li&gt;
+&lt;li&gt;Files that have been upgraded incompletely.&lt;/li&gt;
+&lt;li&gt;Files that have been corrupted during upload by becoming double-spaced due to improper handling of end-of-line characters.&lt;/li&gt;
+&lt;li&gt;Override files that have altered normal operation.&lt;/li&gt;
+&lt;li&gt;Recently-added widgets/snippets, especially JavaScript from 3rd party services.&lt;/li&gt;
+&lt;li&gt;Additional non-original files of any sort, especially those that contain &amp;ldquo;define&amp;rdquo; statements, since those can change normal operation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Most Common Causes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In many cases it&amp;rsquo;s a result of &lt;code&gt;define()&lt;/code&gt; statements being customized and missing the closing &lt;code&gt;&#39;&lt;/code&gt; or &lt;code&gt;&#39;)&lt;/code&gt; or &lt;code&gt;&#39;);&lt;/code&gt; or maybe using &lt;code&gt;&#39;&lt;/code&gt; marks inside strings but not using &lt;code&gt;\&#39;&lt;/code&gt; instead so the &lt;code&gt;&#39;&lt;/code&gt; is treated properly.&lt;/li&gt;
+&lt;li&gt;Second most common root cause is poorly-written plugins.&lt;/li&gt;
+&lt;li&gt;Next most common is an incomplete upgrade of PHP files.&lt;/li&gt;
+&lt;li&gt;Third-party JavaScript you&amp;rsquo;ve added to your site.&lt;/li&gt;
+&lt;li&gt;Configuration switch settings you&amp;rsquo;ve changed in your Admin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Other Causes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;While it&amp;rsquo;s not the first thing to suspect, if someone has gained unauthorized access to your website&amp;rsquo;s server and made changes to PHP or JS or CSS files, or altered contents of your database, then the side-effects of that are countless &amp;hellip; and might even be invisible until something &amp;ldquo;breaks&amp;rdquo; randomly. A deep inspection of all files and overrides plus all database table content is necessary in such cases.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Email Troubleshooting</title>
+      <link>/zendocs_test1/user/troubleshooting/email_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/email_issues/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/email_introduction/&#34;&gt;Introduction to Email and Basic Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/emails_not_received/&#34;&gt;Email is not being received&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/advanced_email_troubleshooting/&#34;&gt;Advanced Email Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: ERROR 0071 - There appears to be a problem with the database</title>
+      <link>/zendocs_test1/user/troubleshooting/error_71_maintenance_required/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/error_71_maintenance_required/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This error generally means that one or more system tables cannot be found in the database.&lt;/p&gt;
+&lt;p&gt;Common causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Database connection problem, such as when the MySQL database service is down or restarting.&lt;/li&gt;
+&lt;li&gt;Database tables are corrupt and needing repair. (Repair them using phpMyAdmin).&lt;/li&gt;
+&lt;li&gt;Empty database. This can occur if you&amp;rsquo;ve provided valid DB credentials in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt; and the database itself exists but contains no tables. In this case you need to run &lt;code&gt;zc_install&lt;/code&gt; to properly setup the database contents.&lt;/li&gt;
+&lt;li&gt;Tables missing.  Did you recently &amp;ldquo;upgrade&amp;rdquo; but haven&amp;rsquo;t yet run &lt;code&gt;zc_install&lt;/code&gt; to create the proper tables?&lt;/li&gt;
+&lt;li&gt;Wrong table-prefix setting. This symptom most commonly occurs when moving your site to another server and not properly preserving the &lt;code&gt;DB_PREFIX&lt;/code&gt; setting from the old site&amp;rsquo;s configure.php into the new site&amp;rsquo;s configure.php, thus the tablenames cannot be located because they don&amp;rsquo;t match up properly. Or you need to import the correct matching database data, since what you&amp;rsquo;ve got in the database presently isn&amp;rsquo;t suitable for your current &lt;code&gt;DB_PREFIX&lt;/code&gt; configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(To manually figure out the correct prefix to use, look at the database using phpMyAdmin and see what common 2-4 letter prefix starts all the tablenames. Then set that value into the &lt;code&gt;DB_PREFIX&lt;/code&gt; definition in your &lt;code&gt;configure.php&lt;/code&gt; file.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Error 2006 MySQL server has gone away or 2013 Lost connection to MySQL server during query</title>
+      <link>/zendocs_test1/user/troubleshooting/error_2006/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/error_2006/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;MySQL server has gone away&amp;rdquo; means that when you clicked on something to ask Zen Cart to do something, it started processing the request, but when it went to retrieve data from the database, it found that the database connection had disconnected, but not by Zen Cart&amp;rsquo;s request.&lt;/p&gt;
+&lt;p&gt;Possible causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;slow connection to external systems being accessed to produce part of page contents (e.g.: a USPS shipping quote when USPS servers are running slow)&lt;/li&gt;
+&lt;li&gt;your own webserver is running slow (perhaps due to bogged down processing while the server is handling a bunch of spam email, or if your server is overloaded because your hosting company has too many customers on the one server)&lt;/li&gt;
+&lt;li&gt;your hosting company may have configured the server to expire database connections on a very short time period. Most hosts allow connections to remain open for 30 seconds or more, depending on how they have other systems such as PHP configured.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You should be asking your hosting company what&amp;rsquo;s changed on the server, if anything, and reporting to them that you&amp;rsquo;re experiencing database disconnections (connections dropping) that you weren&amp;rsquo;t seeing earlier.&lt;/p&gt;
+&lt;p&gt;They will want to know what &lt;em&gt;you&lt;/em&gt; have changed, as well.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Errorlog access</title>
+      <link>/zendocs_test1/user/troubleshooting/error_logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/error_logs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Your hosting company typically provides this via their control panel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you use cPanel, simply log into your cPanel admin, and click on the Errorlog button.&lt;/li&gt;
+&lt;li&gt;Other hosting systems may have the button elsewhere under their server admin tools.&lt;/li&gt;
+&lt;li&gt;H-Sphere customers may have to enable errorlog support before it becomes available.&lt;/li&gt;
+&lt;li&gt;Sometimes extra &lt;code&gt;errorlog&lt;/code&gt; files may appear in your directories: these are usually from PHP errors that happen outside Zen Cart operation (or before Zen Cart actually begins). You can access them via FTP or your cPanel file manager.&lt;/li&gt;
+&lt;li&gt;Some hosts don&amp;rsquo;t offer it via the control panel; they may offer it via a &lt;code&gt;/logs&lt;/code&gt; folder instead.  Note that this is not your Zen Cart &lt;code&gt;/logs&lt;/code&gt; folder - it&amp;rsquo;s above your webroot at the top of your hosting account folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: HTTP response codes</title>
+      <link>/zendocs_test1/user/troubleshooting/http_response_codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/http_response_codes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;HTTP Response Codes come in ranges, the and most important digit in the range is the first (leftmost).  The ranges can be read as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1xx: Hold on&lt;/li&gt;
+&lt;li&gt;2xx: OK: Here you go&lt;/li&gt;
+&lt;li&gt;3xx: Go away&lt;/li&gt;
+&lt;li&gt;4xx: You messed up&lt;/li&gt;
+&lt;li&gt;5xx: I messed up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;code-1xx-informational&#34;&gt;Code 1xx: Informational&lt;/h2&gt;
+&lt;p&gt;1xx series messages just tell you the server is working on it - no status can be inferred from a message like this.&lt;/p&gt;
+&lt;h2 id=&#34;code-2xx-success&#34;&gt;Code 2xx: Success&lt;/h2&gt;
+&lt;p&gt;A code 200 is the ideal response; it means the request was successful.&lt;/p&gt;
+&lt;h2 id=&#34;code-3xx-redirection&#34;&gt;Code 3xx: Redirection&lt;/h2&gt;
+&lt;p&gt;These responses mean you are getting sent to another page, either temporarily or permanently.&lt;/p&gt;
+&lt;h2 id=&#34;code-4xx-client-error&#34;&gt;Code 4xx: Client Error&lt;/h2&gt;
+&lt;p&gt;The server is telling the client (the browser) it doesn&amp;rsquo;t know what is being asked for (eg: not found), or the request is unauthorized.&lt;/p&gt;
+&lt;h2 id=&#34;code-500-server-error&#34;&gt;Code 500: Server Error&lt;/h2&gt;
+&lt;p&gt;The server is telling the client it can&amp;rsquo;t respond, but it&amp;rsquo;s not the client&amp;rsquo;s fault.&lt;br&gt;
+These errors mean you need to check the logs.  See &lt;a href=&#34;/zendocs_test1/user/troubleshooting/500_internal_server/&#34;&gt;500 errors&lt;/a&gt; for more information.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: I can&#39;t login to the Admin after installing Zen Cart</title>
+      <link>/zendocs_test1/user/troubleshooting/cant_login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/cant_login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In most cases of difficulties logging in to the Admin area, the problem is one of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Admin pages won&amp;rsquo;t show at all, or show without styling.&lt;br&gt;
+In this case, try temporarily renaming the &lt;code&gt;admin/.htaccess&lt;/code&gt; file to &lt;code&gt;htaccess_bak&lt;/code&gt; to see if things operate differently.&lt;br&gt;
+If they do, then you need to work with your webhost to find the right way to use the supplied &lt;code&gt;.htaccess&lt;/code&gt; security protections on your site.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Something may be wrong with the way your site is configured to handle PHP sessions. This is more difficult to resolve.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start by &lt;strong&gt;clearing your browser cache and clearing all cookies&lt;/strong&gt;. ** THIS IS THE MOST COMMON PROBLEM **&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you&amp;rsquo;re not using &amp;ldquo;Private Browsing&amp;rdquo; or &amp;ldquo;Incognito&amp;rdquo; mode.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then check to be sure that you do NOT have any software &lt;strong&gt;firewall applications&lt;/strong&gt; running on your PC, as they may have been set to &amp;ldquo;disable session cookies&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Also, make sure your browser IS &lt;strong&gt;allowed to accept cookies&lt;/strong&gt;, esp from your own domain. Cookie-blocking will break your Admin area.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check your &lt;strong&gt;server&amp;rsquo;s errorlog&lt;/strong&gt; to determine if any errors are occurring at the time of the failure to login.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you are using &lt;code&gt;www.&lt;/code&gt; in your URL on one page and &lt;em&gt;not&lt;/em&gt; using &lt;code&gt;www&lt;/code&gt;  in the URL on another page, you may have problems. This related FAQ may help: &lt;a href=&#34;/zendocs_test1/user/miscellaneous/force_www/&#34;&gt;how can I force www?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Try the suggestions in this related FAQ article: &lt;a href=&#34;/zendocs_test1/user/troubleshooting/cant_stay_logged_in/&#34;&gt;I can&amp;rsquo;t stay logged in&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apart from browser cache and cookies problems, the most common problem is not having the &lt;code&gt;https&lt;/code&gt; correct in your &lt;code&gt;admin/includes/configure.php&lt;/code&gt;  file.&lt;br&gt;
+See: &lt;a href=&#34;/zendocs_test1/user/installing/enable_ssl/&#34;&gt;How do I enable SSL?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Try using another browser, turning off browser plugins or logging out of and then back in to your password manager.  Sometimes login failures are simply local environmental issues that you need to straighten out.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;ve installed your site into a folder whose name contains spaces, rename the folder so that it doesn&amp;rsquo;t have spaces anymore. Update your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt; accordingly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If all else fails, you may need to reset your admin password via the database. See the FAQ for &lt;a href=&#34;/zendocs_test1/user/troubleshooting/reset_admin_password/&#34;&gt;resetting your admin password&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: I&#39;ve got TEXT_MAIN being displayed on my page</title>
+      <link>/zendocs_test1/user/troubleshooting/text_main_uppercase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/text_main_uppercase/</guid>
+      <description>
+        
+        
+        &lt;p&gt;An uppercase set of words akin to &lt;code&gt;TEXT_MAIN&lt;/code&gt; or &lt;code&gt;ENTRY_STATE_TEXT&lt;/code&gt;  or &lt;code&gt;SOMETHING_LOOKING_LIKE_THIS&lt;/code&gt;  is called a &amp;ldquo;constant&amp;rdquo; in PHP language terms.
+A PHP &lt;code&gt;define()&lt;/code&gt; statement is used to declare a constant.&lt;/p&gt;
+&lt;p&gt;This is what Zen Cart currently uses to build language output content, among other things.&lt;/p&gt;
+&lt;p&gt;Commonly you&amp;rsquo;ll see language definitions in the form of:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;TEXT_MAIN&amp;#39;, &amp;#39;Something to display here&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, in a template file or somewhere else in the system, there will be a request to display the contents of &lt;code&gt;TEXT_MAIN&lt;/code&gt;, often in a PHP &amp;ldquo;echo&amp;rdquo; statement, but could be in many other forms too.&lt;/p&gt;
+&lt;p&gt;If the constant &lt;code&gt;TEXT_MAIN&lt;/code&gt; hasn&amp;rsquo;t been defined anywhere, or if the file in which it is defined has a syntax error above where it&amp;rsquo;s defined (causing it to not &lt;em&gt;get&lt;/em&gt; defined), then the name of the constant will be displayed &lt;em&gt;instead of&lt;/em&gt; the defined content.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re seeing &lt;code&gt;TEXT_MAIN&lt;/code&gt; on your screen instead of regular normal language words, then &lt;em&gt;somewhere&lt;/em&gt; in your files is a request to display the value defined to the &lt;code&gt;TEXT_MAIN&lt;/code&gt; constant, but, since you don&amp;rsquo;t have it defined, you&amp;rsquo;re seeing the constant name instead.&lt;/p&gt;
+&lt;p&gt;You have to find out where it was supposed to be defined, and fix it.&lt;/p&gt;
+&lt;p&gt;80% of the time this is a cause of someone editing a language file and &amp;ldquo;deleting&amp;rdquo; define statements that they don&amp;rsquo;t want to display, instead of just deleting the text that&amp;rsquo;s currently being displayed.
+ie: instead of just deleting the line altogether if they don&amp;rsquo;t like what TEXT_MAIN was defined to in the first place, one should use something like this to make it display &amp;ldquo;nothing&amp;rdquo;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;TEXT_MAIN&amp;#39;, &amp;#39;&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;10% of the time it&amp;rsquo;s a result of a syntax error where a define statement earlier in the file has mismatched quotation marks, or a &lt;code&gt;)&lt;/code&gt; or &lt;code&gt;;&lt;/code&gt; has been dropped.&lt;/p&gt;
+&lt;p&gt;10% of the time it&amp;rsquo;s because you&amp;rsquo;ve failed to upload the language file altogether, and thus the define is missing.&lt;/p&gt;
+&lt;p&gt;You might start with checking which files you&amp;rsquo;ve edited recently or plugins you&amp;rsquo;ve added, or compare your files vs a fresh set of Zen Cart files.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: max_user_connections exceeded</title>
+      <link>/zendocs_test1/user/troubleshooting/max_user_connections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/max_user_connections/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &amp;ldquo;max_user_connections exceeded&amp;rdquo; message typically only happens when you&amp;rsquo;re getting a flood of simultaneous connections to your site.&lt;/p&gt;
+&lt;p&gt;Visitors hitting your site and triggering that error would have seen a blank page. (or whatever a &lt;a href=&#34;/zendocs_test1/user/troubleshooting/http_response_codes/&#34;&gt;500-error&lt;/a&gt; page looks like for your server).&lt;/p&gt;
+&lt;p&gt;Most web applications like Zen Cart use only a single MySQL &amp;ldquo;user&amp;rdquo; to connect to the database, and most hosts configure max_user_connections to be big enough to handle typical traffic load. Traffic load includes all visits at any given second, including &amp;ldquo;you&amp;rdquo;, your customers, your visitors-who-are-not-yet-customers, search engine bots, and anybody trying bad things on your site.&lt;/p&gt;
+&lt;p&gt;Possible causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sending an email promotion and everyone opens the email and clicks on a link to your site from inside that email &amp;ldquo;all at the same time&amp;rdquo;, causing a &amp;ldquo;flood&amp;rdquo; of simultaneous traffic larger than the max_user_connections setting&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disobedient Search Engine spiders/crawlers. Normally bots crawl at a slow enough pace to not overload your site. Obedient crawlers will read a robots.txt file you can place on your site to tell each search engine what rules you want them to follow, such as how much time to wait between hits. Only the good crawlers will obey these rules, so it&amp;rsquo;s not a magic fix for bad actors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Things to check:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The IP address in the log can be used to lookup where it comes from in a Whois database. Knowing this may give you clues about the authenticity of whatever they were attempting to do.
+If the problem is chronic, you might consider IP blocking, because there&amp;rsquo;s no good reason for the same IP to be making multiple simultaneous hits that floods your server. But, be careful: a legit customer could come along while a bad flood has overloaded things and the legit customer would show up in the log, so you don&amp;rsquo;t want to block the wrong person!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you think there&amp;rsquo;s enough demand for more legit traffic, you could ask whether your hosting company will increase the max_user_connections setting to something higher.&lt;/li&gt;
+&lt;li&gt;You could block IP addresses of bad traffic after inspecting each IP in the logs to be sure it makes sense to block them.&lt;/li&gt;
+&lt;li&gt;You could configure the robots.txt file to tell bots to crawl more slowly - &lt;a href=&#34;http://www.robotstxt.org&#34;&gt;http://www.robotstxt.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Missing Log Files</title>
+      <link>/zendocs_test1/user/troubleshooting/missing_log_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/missing_log_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, Zen Cart writes debug logs into a folder called &lt;code&gt;/logs&lt;/code&gt; at the root of the store.&lt;/p&gt;
+&lt;p&gt;However, in some hosting environments (notably PHP-FPM shared), error logs are not written individually to the &lt;code&gt;/logs&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;For example, some hosts configure logging to go to a single central file.&lt;/p&gt;
+&lt;p&gt;So instead of creating individual log files in 
+&lt;code&gt;/home/YOURACCOUNT/public_html/logs/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;They append to a single log file, which is stored in&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/home/YOURACCOUNT/logs/YOURSITE_com.php.error.log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you are missing log files, you&amp;rsquo;ll want to work with your hoster to see how 
+they have configured logging.&lt;/p&gt;
+&lt;p&gt;You can determine if your host has you configured to run PHP-FPM by looking at the 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info&#34;&gt;Server/Version Info&lt;/a&gt; page, under the &lt;strong&gt;cgi-fcgi&lt;/strong&gt; section.&lt;/p&gt;
+&lt;p&gt;(Note: If you don&amp;rsquo;t see the line that says &amp;ldquo;php-fpm active,&amp;rdquo; then it&amp;rsquo;s not active.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/fpm.png&#34; alt=&#34;FPM&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If PHP-FPM is active, look under the &lt;strong&gt;Core&lt;/strong&gt; section to determine where your log is stored:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/fpm_log.png&#34; alt=&#34;FPM Log&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: My Site Seems To Be Down</title>
+      <link>/zendocs_test1/user/troubleshooting/site_is_down/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/site_is_down/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;My Site Is Down!&amp;rdquo; can feel like a scary situation.&lt;/p&gt;
+&lt;p&gt;But first one must determine what &amp;ldquo;down&amp;rdquo; means.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re seeing a blank page with no error message, or just a &amp;ldquo;partially blank page&amp;rdquo;, see the other Troubleshooting docs about those subjects.&lt;/p&gt;
+&lt;p&gt;If your browser is telling you a message like &amp;ldquo;Server Not Responding&amp;rdquo; or &amp;ldquo;ERR_NOT_CONNECTED&amp;rdquo; then perhaps your site&amp;rsquo;s server is down.&lt;/p&gt;
+&lt;p&gt;To test whether there may actually be a server problem, try these tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tools.pingdom.com&#34;&gt;Pingdom&lt;/a&gt; can test your site and its performance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://downforeveryoneorjustme.com&#34;&gt;DownForEveryoneOrJustMe&lt;/a&gt; to test the site from somewhere else.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.geopeeker.com&#34;&gt;GeoPeeker&lt;/a&gt; to view the site from 6 places around the world.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://betteruptime.com/?ref=ma9&#34;&gt;BetterUptime&lt;/a&gt; monitors your site, notifies you by email/phone/SMS if it stops responding, and lets you create Status pages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://nodeping.com/?rid=2011092618071CZGM&#34;&gt;NodePing&lt;/a&gt; monitors your site&amp;rsquo;s essential services and notifies you by email or SMS when problems occur.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ssllabs.com/ssltest/index.html&#34;&gt;SSL Validator&lt;/a&gt; can check your SSL certificates to be sure there isn&amp;rsquo;t something wrong with them that might be blocking visitors from connecting to your server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mxtoolbox.com/SuperTool.aspx&#34;&gt;MXToolbox SuperTool&lt;/a&gt; can check for DNS and other domain configuration problems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And of course, contact your Hosting Company for assistance if the site is indeed down (not responding).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: No data in my store after moving hosts</title>
+      <link>/zendocs_test1/user/troubleshooting/no_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/no_data/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;moving-to-another--server&#34;&gt;Moving To Another  Server&lt;/h3&gt;
+&lt;p&gt;To move your site to a new host, you should follow the instructions listed in the FAQ entitled &lt;a href=&#34;/zendocs_test1/user/installing/change_hoster/&#34;&gt;I want to move my Zen Cart installation to another host or a different server&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;no-data-or-1146-table-configuration-doesnt-exist-messages&#34;&gt;No Data or &amp;ldquo;1146 Table &amp;lsquo;configuration&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; messages&lt;/h3&gt;
+&lt;p&gt;After moving, or after installation, if you&amp;rsquo;re getting &lt;code&gt;1146 Table &#39;configuration&#39; doesn&#39;t exist&lt;/code&gt; (or a similar &lt;em&gt;doesn&amp;rsquo;t exist&lt;/em&gt; message), or if you&amp;rsquo;re not seeing the data you imported from your old server, then you probably missed an important step in the instructions in the FAQ article mentioned above.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s saying that the &lt;code&gt;configuration&lt;/code&gt; table doesn&amp;rsquo;t exist, then it&amp;rsquo;s connecting to a database somewhere, but not the one that contains Zen Cart tables.  Make sure that you&amp;rsquo;ve properly set the database server/host name, database name, username/password properly for the new server in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;db_prefix&#34;&gt;DB_PREFIX&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re importing data from another server, you &lt;strong&gt;must&lt;/strong&gt; use the &lt;strong&gt;same&lt;/strong&gt; setting for &lt;code&gt;DB_PREFIX&lt;/code&gt; on the new server as you had on the old server. Otherwise you&amp;rsquo;re telling the software to point to a set of tables in your database that 
+are either incorrect or non-existent.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;DB_PREFIX&lt;/code&gt; is defined in your configure.php files.&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;DB_PREFIX&lt;/code&gt; is defined as blank, then Zen Cart assumes there is no prefix added to table names.&lt;/p&gt;
+&lt;p&gt;If it is not blank, then Zen Cart adds that prefix to the start of all table names when it generates a query to extract data from the database.&lt;/p&gt;
+&lt;p&gt;So, in the case of the &amp;ldquo;configuration&amp;rdquo; table, if the prefix is left blank, then Zen Cart looks for a table named &lt;code&gt;configuration&lt;/code&gt; If the prefix is defined as &lt;code&gt;zen_&lt;/code&gt;, then Zen Cart looks for a table named &lt;code&gt;zen_configuration&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Parse error:  unexpected T_STRING (or similar)</title>
+      <link>/zendocs_test1/user/troubleshooting/parse_error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/parse_error/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are getting an error similar to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;Parse error: parse error, unexpected T_STRING in /var/www/myaccount/public_html/includes/languages/english/SOMETHING.php on line 28&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This typically means you have forgotten to put a &lt;code&gt;\&lt;/code&gt; (backslash) before a &lt;code&gt;&#39;&lt;/code&gt; mark (single quote, apostrophe) in one of your &lt;code&gt;define()&lt;/code&gt; statements in the language file reported.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;TEXT_SOMETHING&amp;#39;,&amp;#39;This is something simple that\&amp;#39;s used as an example&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(notice the &lt;code&gt;\&lt;/code&gt; in the word &lt;code&gt;that&#39;s&lt;/code&gt;).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: PayPal Debug Logging</title>
+      <link>/zendocs_test1/user/troubleshooting/paypal_debug_logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/paypal_debug_logging/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can enable debug logging of PayPal transaction activity.&lt;/p&gt;
+&lt;p&gt;The debug logs do NOT contain your PayPal password or API certificate information. This sensitive information is masked so that it cannot be stolen and used unscrupulously.
+Further, in the default configuration, there are protections in place to prevent snoops from finding and obtaining your log files, as they are named with some degree of randomness, making it virtually impossible to guess.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to Admin &amp;gt; Modules &amp;gt; Payment &amp;hellip; and choose your PayPal module (either Standard/IPN or Express Checkout, Payments Pro, etc). Click Edit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &amp;ldquo;Log to File&amp;rdquo; for your debug option. (recommend to NOT use log-to-email option, because the emails are harder to isolate.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;do some test transactions to simulate the problems you&amp;rsquo;re encountering or reporting.  You should see the logs in your &lt;code&gt;/logs&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once you&amp;rsquo;ve duplicated a problem with logging enabled, grab the log files related to that transaction (ie: look at the date/time on the files) and download and zip them for analysis &amp;hellip; ie: you may be asked to provide a link to where the zip file can be downloaded. You might alternatively post the link directly in the support thread where you&amp;rsquo;re discussing a reported problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;UNDERSTANDING THE LOG FILES
+With Express Checkout and Payments Pro, there are several kinds of log files created:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PayPal_CURL_xxxxxxxxxxx.log &amp;ndash; there are 3 of these per EC transaction: SetExpressCheckout, GetExpressCheckoutDetails, DoExpressCheckout, or 1 for a Payments Pro transaction.&lt;/li&gt;
+&lt;li&gt;paypalwpp_xxxxxxxx.log - there are up to 5 of these per EC transaction, showing individual checkpoints. This is useful in seeing what&amp;rsquo;s going on vs where things are aborting, if at all&lt;/li&gt;
+&lt;li&gt;paypaldp_xxxxxxxx.log - there are up to 5 of these per Pro transaction, also showing activity at various checkpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, for all modules (Standard/Express/Pro), there will be another log file created:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ipn_xxxxxxx.log &amp;ndash; This tracks the steps when an IPN is received &amp;hellip; which happens for all activity in your PayPal account. Zen Cart knows which ones to &amp;ldquo;use&amp;rdquo; and which to &amp;ldquo;ignore&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Standard&amp;rdquo; module relies on this step to insert orders into your store. If that step doesn&amp;rsquo;t happen or aborts prematurely, then the order won&amp;rsquo;t show. Thus, it&amp;rsquo;s better to use Express Checkout, instead of Standard, for your payments.  For more information, see &lt;a href=&#34;/zendocs_test1/user/payment/paypal_standard/&#34;&gt;PayPal Standard - Potential Problems&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pdt_xxxxxx.log - this sort of log file might appear if the Standard module is being used and a PDT token has been set.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Secure and nonsecure items</title>
+      <link>/zendocs_test1/user/troubleshooting/secure_and_nonsecure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/secure_and_nonsecure/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;problem&#34;&gt;Problem:&lt;/h3&gt;
+&lt;p&gt;One or more of these things happen on some or all of my &amp;ldquo;secure&amp;rdquo; pages, such as Login, My Account and Checkout.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I am seeing a broken padlock&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When I click the Log In link as a customer i get prompted with the security prompts stating:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;This page contains both secure and nonsecure items.
+Do you want to display the nonsecure items?&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Page contains unauthenticated content&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;connection partially encrypted&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution:&lt;/h3&gt;
+&lt;p&gt;That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to &lt;code&gt;http://xxxxxxxxx&lt;/code&gt;,  instead of using relative paths.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/relative_urls/&#34;&gt;relative URLs&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;This can also happen if you have added banners with &lt;code&gt;http://&lt;/code&gt; links and not told them to skip display on SSL pages.&lt;/p&gt;
+&lt;p&gt;This can also happen if you have added click-tracking tools to your site via JavaScript, which link to &lt;code&gt;http://&lt;/code&gt; pages somewhere.&lt;/p&gt;
+&lt;p&gt;You can identify most culprits by searching your browser&amp;rsquo;s View Source for:
+&lt;code&gt;src=&amp;quot;http://&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then work through your template files and stylesheets and remove those hard-coded links. If they are caused by click-tracking scripts somewhere, try converting them to &lt;code&gt;https://&lt;/code&gt; links or contact the vendor for assistance with alternate scripts.&lt;/p&gt;
+&lt;p&gt;Basically, &lt;em&gt;never&lt;/em&gt; hard-code a full &lt;code&gt;http://&lt;/code&gt; URL into any page/template/stylesheet on your site unless you know for certain that doing so will not produce this sort of error.  This is especially true for 
+&lt;code&gt;&amp;lt;img src=...&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;script src=...&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;h3 id=&#34;another-tip&#34;&gt;ANOTHER TIP:&lt;/h3&gt;
+&lt;p&gt;Sometimes these same errors are caused by images mentioned in your stylesheet. Double-check to be sure that all those images actually exist. If they don&amp;rsquo;t, then they&amp;rsquo;ll produce &lt;a href=&#34;/zendocs_test1/user/troubleshooting/http_response_codes/&#34;&gt;404 Not Found&lt;/a&gt; errors, and sometimes that&amp;rsquo;ll create a &amp;ldquo;loop&amp;rdquo; to attempt displaying a 404-error-page, which can in turn throw even more messages.&lt;/p&gt;
+&lt;p&gt;And, if you have created a custom 404 page, then if &lt;em&gt;that&lt;/em&gt; page has any missing images referenced on it, or on its stylesheets, you could end up in a loop that not only throws security/encryption errors, but also creates excessive traffic in your hosting account, which will make your hosting company unhappy.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Shipping Problems</title>
+      <link>/zendocs_test1/user/troubleshooting/shipping_problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/shipping_problems/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h3 id=&#34;my-shipping-is-figured-wrong-it-is-3-pounds-too-heavy&#34;&gt;My shipping is figured wrong, it is 3 pounds too heavy&lt;/h3&gt;
+&lt;p&gt;Any shipping module that uses weight for the calculations also takes into account a built-in Tare weight.
+The Tare setting (configurable in your store Admin) adds extra weight to compensate for packaging materials.&lt;/p&gt;
+&lt;p&gt;To change the Tare, go to 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging&lt;/a&gt;
+You will be able to change the Tare on this screen.&lt;/p&gt;
+&lt;p&gt;You can set either and/or both a percentage or weight for Tare and Large Package.&lt;/p&gt;
+&lt;p&gt;Entered as percentage:weight&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Disabled completely = 0:0
+10% + 1lb = 10:1
+0% +3lb = 0:3
+5% + 0lbs = 5:0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This way both the Tare for small to medium packages has a flexible option of percentage + weight and the Large Package increase has an option of a percentage + weight.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sorry-we-are-not-shipping-to-your-region-at-this-time&#34;&gt;Sorry, we are not shipping to your region at this time.&lt;/h3&gt;
+&lt;p&gt;This message usually occurs when you have no available shipping modules for that customer&amp;rsquo;s address.&lt;/p&gt;
+&lt;p&gt;A module is unavailable for one of two reasons:
+it&amp;rsquo;s not installed
+or it&amp;rsquo;s installed but has a Shipping Zone restriction set on it, and the customer&amp;rsquo;s shipping address isn&amp;rsquo;t in that specified zone.&lt;/p&gt;
+&lt;p&gt;Or maybe the order qualifies for Free Shipping, but you don&amp;rsquo;t have the freeshipper module installed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;the-usps-module-is-returning-an-error-when-i-try-to-checkout&#34;&gt;The USPS module is returning an error when I try to checkout&lt;/h3&gt;
+&lt;p&gt;If you are receiving this error:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;An error occurred with the USPS shipping calculations. If you prefer to use USPS as your shipping method, please contact the store owner.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to call or email USPS and have them move your account to the production server.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/zendocs_test1/user/shipping/usps/&#34;&gt;USPS&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Sorry, the page you were attempting to access cannot be found</title>
+      <link>/zendocs_test1/user/troubleshooting/missing_ezpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/missing_ezpage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Issue:&lt;/strong&gt; When I visit my page, I get the error message, &amp;ldquo;Sorry, the page you were attempting to access cannot be found.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This means you have not configured the EZPage correctly.  You need to set 
+the radio button to &lt;em&gt;Yes&lt;/em&gt; and the sort order to a value &amp;gt; 0 for either the
+Header, the Sidebox or the Footer.  Alternately, in Zen Cart 1.5.6 and above,
+you can set the &lt;em&gt;Page is Visible&lt;/em&gt; radio button to &lt;em&gt;Yes&lt;/em&gt;.  See the help for &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;Tools &amp;gt; EZ-Pages&lt;/a&gt; for more details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: There seems to be a problem connecting to our database</title>
+      <link>/zendocs_test1/user/troubleshooting/problem_connecting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/problem_connecting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If your database credentials have been altered incorrectly, you might receive an unexpected screen when visiting your store:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Sorry!
+There seems to be a problem connecting to our database. Please give us a few minutes to remedy the problem. Thank you.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Common causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;ve changed your database name or database username on your webserver&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ve deleted the tables from the database on your server&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ve changed the &lt;code&gt;DB_PREFIX&lt;/code&gt; setting in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt; to a value that doesn&amp;rsquo;t match the tables in your database&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ve edited your &lt;code&gt;/includes/configure.php&lt;/code&gt; file and incorrectly altered the defined values for the various &lt;code&gt;DB_XXXXXX&lt;/code&gt; settings contained therein. You should first go and fix those. Then make sure you&amp;rsquo;ve also got the correct values in the /your-renamed-admin-folder/includes/configure.php as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The error is specifically displayed when the &lt;code&gt;DB_XXXXXX&lt;/code&gt; values (which mainly denote your database login credentials for MySQL) are used but return a security login error when trying to connect to the database.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t know the correct database name, MySQL username and MySQL password, and database host name (servername),  then you need to talk to your hosting company&amp;rsquo;s tech support staff for assistance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; THIS ERROR MEANS THERE IS A PROBLEM ON &lt;em&gt;YOUR&lt;/em&gt; SERVER. THE PROBLEM IS NOT WITH zen-cart.com AND ONLY YOU CAN FIX THE ERROR!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: There was a security error when trying to login</title>
+      <link>/zendocs_test1/user/troubleshooting/security_error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/security_error/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Situation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m getting this error when trying to login from the customer screen &amp;ldquo;There was a security error when trying to login&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cause:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Zen Cart has a security feature to prevent spoofed external logins. A &amp;ldquo;security token&amp;rdquo; field must exist on all login forms, actually on all forms submitting data via POST. This token must be current (not expired), and must be submitted with the rest of the form data; in the case of login, that would be the login username+password in order for logins to work properly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remedy:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, if this is happening on a page that has been sitting at a login prompt for longer than about 20 minutes, it could be that the security token has expired in the background. Refreshing the page fixes that, and so does getting the login failure (ie: after the login failure the token is refreshed and the next login will work fine).&lt;/p&gt;
+&lt;p&gt;If it is happening &lt;em&gt;all the time&lt;/em&gt; and not just once in awhile, then it could be a coding issue with your template or customizations you&amp;rsquo;ve made to your site or with plugins you&amp;rsquo;ve installed (or maybe you upgraded from an older version that didn&amp;rsquo;t have the security protections):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All your forms, both admin and non-admin, need to use &lt;code&gt;zen_draw_form()&lt;/code&gt; instead of hard-coding a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Additionally, if you have customized your &lt;code&gt;/includes/functions/sessions.php&lt;/code&gt; file for some reason, you&amp;rsquo;ll also need to merge the new changes for this core file into your customized version.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other Considerations:
+If you&amp;rsquo;re seeing this problem,  then one of the following may be the root cause:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;old obsolete template files, as explained above&lt;/li&gt;
+&lt;li&gt;your browser is unable to set session cookies, or you&amp;rsquo;re using Private Browsing mode or Incognito mode.&lt;/li&gt;
+&lt;li&gt;you&amp;rsquo;ve set your site up on an IP address instead of a domain name, thus preventing session cookies from being set properly&lt;/li&gt;
+&lt;li&gt;your PHP configuration can&amp;rsquo;t negotiate sessions properly.  Your server&amp;rsquo;s PHP configuration has &lt;code&gt;session.use_only_cookies&lt;/code&gt; set to &lt;code&gt;1&lt;/code&gt;. It needs to be &lt;code&gt;0&lt;/code&gt;. Have your hosting company fix it.&lt;/li&gt;
+&lt;li&gt;if it only happens for a page you&amp;rsquo;ve bookmarked, then maybe your browser&amp;rsquo;s bookmark is bad and needs to be deleted and recreated&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Understanding problems that occur after upgrading PHP versions</title>
+      <link>/zendocs_test1/user/troubleshooting/php_debug_logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/php_debug_logs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page explains &lt;em&gt;why&lt;/em&gt; PHP warnings can suddenly start occurring.  An explanation of &lt;em&gt;how to fix them&lt;/em&gt; is provided in &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages after upgrading&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PHP debug logs can suddenly start appearing in the following cases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;using an older plugin which has not been updated on a newer version of PHP.&lt;/li&gt;
+&lt;li&gt;updating the PHP version on your website&lt;/li&gt;
+&lt;li&gt;upgrading your site and changing PHP versions but forgetting a few files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; On a &lt;a href=&#34;/zendocs_test1/user/first_steps/hosting/#hosting-companies&#34;&gt;shared hosting&lt;/a&gt; account, your hoster can just update PHP at any time - just because &lt;strong&gt;you&lt;/strong&gt; didn&amp;rsquo;t change anything doesn&amp;rsquo;t mean it didn&amp;rsquo;t change!&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;Admin Version link&lt;/a&gt; to verify your current version of PHP.&lt;/p&gt;
+&lt;p&gt;PHP is a dynamic language which is continually being updated.  And part of the update process is sunsetting features, functions, syntax and other language elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the language designers decide to improve/change how something works&lt;/li&gt;
+&lt;li&gt;then the new way is introduced, and the old way is deprecated for awhile,&lt;/li&gt;
+&lt;li&gt;then the old way is eliminated entirely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;php.net&lt;/code&gt; website shows you the PHP lifecycle and &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;which PHP versions are current&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The symptom you will see when this is an issue for you is that things that used to work (even yesterday) suddenly do not. 
+What might have happened in this case is that your hoster just upgraded your PHP version without warning.&lt;br&gt;
+Alternatively, perhaps you upgraded your version of Zen Cart, but wound up using some old files designed for an older PHP version.&lt;/p&gt;
+&lt;p&gt;Each version of Zen Cart (and each plugin) was developed for the version of PHP that was prevalent at the time, and may not be compatible with newer PHP versions.
+See &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;mapping of Zen Cart versions to PHP versions&lt;/a&gt; for more information about which PHP version is compatible with your Zen Cart version.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Warning: An Error occurred, please refresh the page and try again.</title>
+      <link>/zendocs_test1/user/troubleshooting/error_occurred/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/error_occurred/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is a generic message which usually indicates your site is having problems accessing data in your MySQL database.&lt;/p&gt;
+&lt;p&gt;It could be a problem with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL not running&lt;/li&gt;
+&lt;li&gt;incorrect DB_xxxxxxx settings in either of your configure.php files&lt;/li&gt;
+&lt;li&gt;syntax error in MySQL statements&lt;/li&gt;
+&lt;li&gt;an incompatible addon, on an incorrectly-installed addon (such as SQL installation steps not completed properly)&lt;/li&gt;
+&lt;li&gt;a hacker attempting to do something rogue or malicious with something on your site, and has been blocked because they&amp;rsquo;ve got syntax errors or are attempting to exploit a vulnerability that is NOT a problem on your site&lt;/li&gt;
+&lt;li&gt;something wrong with the MySQL engine on your webserver, which your hosting company will likely need to resolve for you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To find out the actual REAL error message that&amp;rsquo;s occurring, view your site&amp;rsquo;s myDEBUG-xxxxxx.log files located in your site&amp;rsquo;s &lt;code&gt;/logs&lt;/code&gt; folder.  More information on accessing those logs is provided in &lt;a href=&#34;/zendocs_test1/user/troubleshooting/blank_page/&#34;&gt;blank page troubleshooting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve found the actual error message details from those logs, search for those messages using the search option on this page or in the main Zen Cart support forum for additional steps in resolving the problem.&lt;/p&gt;
+&lt;p&gt;Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable &lt;code&gt;STRICT_ERROR_REPORTING&lt;/code&gt; as described in &lt;a href=&#34;/zendocs_test1/user/troubleshooting/strict_error_reporting/&#34;&gt;the strict error reporting FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This should ONLY be a TEMPORARY measure. FOR SECURITY REASONS, YOU MUST PUT IT BACK TO NORMAL WHEN DONE, since its use may give malicious visitors information they ought not to have about your site.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Warning: Headers already sent...</title>
+      <link>/zendocs_test1/user/troubleshooting/warning_headers_already_sent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/warning_headers_already_sent/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Symptom:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Warning: Cannot modify header information - headers already sent by (output started at /..../includes/something/something/something.php:12) in ..../includes/something_else.php on line 67  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Common Cause:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This warning is often caused by a blank space or extra line at the beginning or end of a .php file.&lt;br&gt;
+Check the error for the filename that generated the error (ie: the &amp;ldquo;output started at&amp;hellip;.&amp;rdquo; filename), open that file in your text editor and remove the extra spaces or lines immediately &lt;u&gt;before the first&lt;/u&gt; &lt;strong&gt;&lt;code&gt;&amp;lt;?php&lt;/code&gt;&lt;/strong&gt; marks in the file, &lt;u&gt;or after the&lt;/u&gt; closing &lt;strong&gt;&lt;code&gt;?&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Other Causes: Syntax errors&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the example above, you&amp;rsquo;ll see&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;output started at includes/something/something/something.php:12
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The filename in the message above is the file you need to be concerned about. 
+The number after the filename is the line that caused the problem.  For example, &lt;code&gt;12&lt;/code&gt; means that the problem you need to fix is on line 12.  In that same example,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/something_else.php on line 67
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;u&gt;can be completely ignored&lt;/u&gt;. It is not the problem. It is the one that discovered that the problem had already occurred.&lt;/p&gt;
+&lt;p&gt;If the &amp;ldquo;headers already sent&amp;rdquo; error appears AFTER any other error, then you need to fix that other error FIRST. (The error message itself is what caused headers to be sent, so fixing that error will cause the second error to go away too.)&lt;/p&gt;
+&lt;p&gt;If the &amp;ldquo;started at&amp;rdquo; refers to line 1, then the root cause is one of two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a space (possibly a blank line) before the opening &lt;strong&gt;&amp;lt;?php&lt;/strong&gt; tag or&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;incorrect encoding&lt;/strong&gt; on the file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember, if your language is in UTF8, then you MUST encode the file as &amp;ldquo;UTF8-without-BOM&amp;rdquo;, else the BOM (byte-order-mark, an invisible character at the beginning of the file) will cause this same headers-already-sent error.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;a) look for where it &amp;lsquo;started at&amp;rsquo;&lt;br&gt;
+b) track the line number&lt;br&gt;
+c) check what&amp;rsquo;s normally happening on that line.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If it&amp;rsquo;s the end of the file, and there is a &lt;code&gt;?&amp;gt;&lt;/code&gt; at the end of the file, remove the final &lt;code&gt;?&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s the start of the file, the issue is likely spaces or incorrect encoding.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s elsewhere, it could be a syntax error or the result of an &lt;code&gt;echo()&lt;/code&gt; statement which is displaying info or perhaps debug code.&lt;/li&gt;
+&lt;li&gt;Common syntax errors include the use of single-quotes inside statements that already have single-quotes. Check to be sure your quotes aren&amp;rsquo;t mismatched. If you need to use single-quotes while inside other single-quotes, change yours to &lt;code&gt;\&#39;&lt;/code&gt; instead of just &lt;code&gt;&#39;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;d) the rest of the info simply shows other execution information, mainly the part of the code that discovered that it cannot proceed as expected due to the problem that happened in the &amp;lsquo;started at&amp;rsquo; location.&lt;/p&gt;
+&lt;p&gt;To change the encoding on the file, look for the &amp;ldquo;Save As&amp;rdquo; menu item in your
+&lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Warning: I am able to write to the configuration file</title>
+      <link>/zendocs_test1/user/troubleshooting/able_to_write/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/able_to_write/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This error is triggered because the permissions on the file are set to Read,Write and Execute (UNIX) or on Windows no attributes are checked in the file properties.&lt;/p&gt;
+&lt;p&gt;On Linux/UNIX: Open the &lt;code&gt;/includes/&lt;/code&gt; directory and, using CHMOD, set the permissions to 444. (Some systems may prefer 644)&lt;/p&gt;
+&lt;p&gt;On Windows: Open the &lt;code&gt;/includes/&lt;/code&gt; directory, right click on the &lt;code&gt;configure.php&lt;/code&gt; file and check the &amp;ldquo;Read Only&amp;rdquo; status.&lt;/p&gt;
+&lt;p&gt;Sometimes you have to do this via a File Manager tool provided by your webhosting provider. In cPanel, it&amp;rsquo;s called File Manager. In other tools it might be called something different. In the file manager, you can simply navigate to the file you want to alter permissions for, then click on the File Properties link/button and set permissions. The links could have varying names.&lt;/p&gt;
+&lt;p&gt;If your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; won&amp;rsquo;t let you set CHMOD 444 and 644 doesn&amp;rsquo;t work successfully, you&amp;rsquo;ll have to use the File Manager approach above. If that doesn&amp;rsquo;t work, then you must contact your hosting company&amp;rsquo;s tech support to ask them to do it for you.  Sometimes, although rare, it&amp;rsquo;s necessary to set these files to 400 instead of the common 444 or 644.  Any lower than 400 may cause you to lose access to the file.&lt;/p&gt;
+&lt;p&gt;Some hosts have security configured such that even when you &amp;ldquo;ask&amp;rdquo; the server to set the files to 444, they remain at 644 or even get changed again later by a server security or filesystem properties check.  This is why on our support forum you&amp;rsquo;ll find folks asking you to check and double-check what the permissions &amp;ldquo;really&amp;rdquo; are set to.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t address this issue, then you leave your site vulnerable to security risks.  The warning is telling you that if someone were to get past Zen Cart&amp;rsquo;s security systems, or if they were to hack into your server using some other less-secure program even on somebody else&amp;rsquo;s hosting account, they could possibly read or change those very important configuration files.  Thus it&amp;rsquo;s important to find a way to prevent the warning message, rather than merely suppress it.&lt;/p&gt;
+&lt;p&gt;The message is saying that the webserver, using PHP, &lt;em&gt;is&lt;/em&gt; able to write to the file, according to the access check that PHP does against the file.  Zen Cart is simply reporting that there&amp;rsquo;s a risk.  Please don&amp;rsquo;t ignore or bypass it.  It&amp;rsquo;s for your own security.&lt;/p&gt;
+&lt;p&gt;For assistance on changing permissions settings, see &lt;a href=&#34;/zendocs_test1/user/installing/permissions/&#34;&gt;How Do I Set Permissions on Files/Folders&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Reference: Guide on &lt;a href=&#34;/zendocs_test1/user/installing/chmod/&#34;&gt;understanding what these CHMOD numbers mean&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Warning: Your Admin login is not secure</title>
+      <link>/zendocs_test1/user/troubleshooting/admin_login_not_secure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/admin_login_not_secure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are getting this message in your Admin area:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; Warning: Your Admin login is not secure ... either you still have default login settings for: Admin admin or have not removed or changed: demo demoonly The login(s) should be changed as soon as possible for the Security of your Shop. For additional Security for the Admin please see the /docs &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admin &amp;gt; Admins &amp;gt; Admin Users&lt;/a&gt;  You can then add/remove administrative accounts. To secure your site, you should remove the &amp;ldquo;demo&amp;rdquo; account (if there is one), or at least change its password.&lt;/p&gt;
+&lt;p&gt;You should also make sure your admin password is not &amp;ldquo;admin&amp;rdquo; (or some other easy to guess value).  To change a password, click on the &lt;em&gt;Reset Password&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;We suggest using something at least 8 characters long, and including numbers, and not dictionary words.  See &lt;a href=&#34;/zendocs_test1/user/first_steps/security/&#34;&gt;security basics&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What is STRICT mode for my database?</title>
+      <link>/zendocs_test1/user/troubleshooting/db_strict_mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/db_strict_mode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Newer versions of MySQL enforce a greater number of rules relating to interacting with the database.  This can cause issues for code which was created prior to these rules being enforced.&lt;/p&gt;
+&lt;p&gt;This issue &lt;em&gt;generally&lt;/em&gt; won&amp;rsquo;t happen to modern unaltered vanilla Zen Cart stores; this happens most often when you modify the database schema but don&amp;rsquo;t upgrade the code to go with it.&lt;/p&gt;
+&lt;h2 id=&#34;example-of-mysql-strict-mode-error&#34;&gt;Example of MySQL Strict Mode Error&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example:&lt;/p&gt;
+&lt;p&gt;You add a field called &lt;code&gt;gift_requested&lt;/code&gt; to the &lt;code&gt;orders&lt;/code&gt; table to represent something the customer requested at checkout.  The field is &lt;code&gt;NOT NULL&lt;/code&gt; but with no default.&lt;/p&gt;
+&lt;p&gt;In prior versions of MySQL, this worked.&lt;/p&gt;
+&lt;p&gt;Newer versions will fail saying:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ERROR 1364 (HY000): Field &amp;#39;gift_requested&amp;#39; doesn&amp;#39;t have a default value
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;temporary-fix-to-disable-mysql-strict-mode&#34;&gt;Temporary Fix To Disable MySQL Strict Mode&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s a (temporary) workaround for this issue.  In your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;, you can turn off the use of MySQL strict mode, until you can upgrade your Zen Cart code and your database structure.&lt;/p&gt;
+&lt;p&gt;Use or add the define, toward the bottom of the file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  define(&amp;#39;DB_MYSQL_MODE&amp;#39;, &amp;#39;NO_ENGINE_SUBSTITUTION&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(eg: according to the &lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/sql-mode.html&#34;&gt;MySQL docs&lt;/a&gt;, setting it to a mode like NO_ENGINE_SUBSTITUTION skips strict mode because there are other mode names that handle strict-related things. Again, this should only be a temporary measure until you update your database and query code.)&lt;/p&gt;
+&lt;p&gt;The define for &lt;code&gt;DB_MYSQL_MODE&lt;/code&gt; will work in Zen Cart 1.5.5 and above.&lt;br&gt;
+In Zen Cart versions older than 1.5.5, you would need to do more extensive modification to interoperate with newer versions of MySQL.  Hopefully you are not doing this!  You should really &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;upgrade Zen Cart&lt;/a&gt; instead!&lt;/p&gt;
+&lt;h2 id=&#34;properly-fixing&#34;&gt;Properly Fixing&lt;/h2&gt;
+&lt;p&gt;Also note that turning off STRICT mode &lt;strong&gt;is only a temporary workaround&lt;/strong&gt;. The correct solution is to update your code.&lt;/p&gt;
+&lt;p&gt;In the case of the example above, there are two options:&lt;/p&gt;
+&lt;p&gt;a) &lt;strong&gt;Modify the database&lt;/strong&gt;: correct the syntax to match your PHP code&amp;rsquo;s expectations:
+&lt;code&gt;ALTER TABLE orders MODIFY COLUMN gift_requested char(1) NOT NULL default &#39;N&#39;; &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;b) &lt;strong&gt;Modify your code&lt;/strong&gt;: when you perform an &lt;code&gt;INSERT&lt;/code&gt; into the orders table, include the field &lt;code&gt;gift_requested&lt;/code&gt; to the list of fields being updated (along with its value) so that it will have a value.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Setting &lt;code&gt;DB_MYSQL_MODE&lt;/code&gt; to &lt;code&gt;STRICT&lt;/code&gt; is not the same as &lt;a href=&#34;/zendocs_test1/user/troubleshooting/strict_error_reporting/&#34;&gt;strict error reporting&lt;/a&gt;. They are unrelated topics.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What is STRICT_ERROR_REPORTING</title>
+      <link>/zendocs_test1/user/troubleshooting/strict_error_reporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/strict_error_reporting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;STRICT_ERROR_REPORTING&lt;/code&gt; is a setting that can be used by developers to tell the store to override its normal security protection mode, which prevents the display of error messages to your screen.&lt;/p&gt;
+&lt;p&gt;Caveat: Outputting errors to the screen can cause some screens or features to not work correctly, especially those which involve being forwarded to another page based on certain criteria or after certain steps are completed.&lt;/p&gt;
+&lt;p&gt;Caveat: Also, using this option poses a security risk because error messages will disclose path and database information to malicious visitors who attempt rogue behaviors on your store. THUS, THIS SETTING SHOULD ONLY BE USED IN AN OFFLINE DEVELOPMENT ENVIRONMENT. Using it on a live store poses risks, and should only be used for short-term troubleshooting of a problem which can&amp;rsquo;t be solved any other way.&lt;/p&gt;
+&lt;h3 id=&#34;enabling-strict_error_reporting&#34;&gt;Enabling STRICT_ERROR_REPORTING&lt;/h3&gt;
+&lt;p&gt;To enable &lt;code&gt;STRICT_ERROR_REPORTING&lt;/code&gt;, simply use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to upload a simple file to your store&amp;rsquo;s site like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For storefront problems, put it at: &lt;code&gt;/includes/local/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For admin problems, put it at: &lt;code&gt;/admin/includes/local/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php define(&amp;#39;STRICT_ERROR_REPORTING&amp;#39;, TRUE);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;disabling-strict_error_reporting&#34;&gt;Disabling STRICT_ERROR_REPORTING&lt;/h3&gt;
+&lt;p&gt;When you&amp;rsquo;re done, simply delete the file you just created above.&lt;/p&gt;
+&lt;p&gt;If that doesn&amp;rsquo;t disable it, then that means you&amp;rsquo;ve enabled it in another file on your server. You will need to search your entire site for that define statement and remove it. (See the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/developers_tool_kit/&#34;&gt;Developer&amp;rsquo;s Toolkit&lt;/a&gt; for that.)&lt;/p&gt;
+&lt;h3 id=&#34;is-this-the-same-as-strict-mode&#34;&gt;Is this the same as STRICT mode?&lt;/h3&gt;
+&lt;p&gt;No - STRICT mode is a database setting. They are not related.  &lt;a href=&#34;/zendocs_test1/user/troubleshooting/db_strict_mode/&#34;&gt;Read about STRICT mode&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why am I getting 500 INTERNAL SERVER ERROR messages?</title>
+      <link>/zendocs_test1/user/troubleshooting/500_internal_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/500_internal_server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are many possible causes of this kind of error, and many of them are completely unrelated to each other.&lt;/p&gt;
+&lt;p&gt;Thus, use caution when reviewing the following list. DO NOT go changing permissions willy-nilly &amp;ldquo;just because&amp;rdquo; one of these points indicates that that &amp;ldquo;might&amp;rdquo; be the cause of the problem. BE SELECTIVE about what you do to try to &amp;ldquo;fix&amp;rsquo; the issue.&lt;/p&gt;
+&lt;h3 id=&#34;a-little-background&#34;&gt;A little background:&lt;/h3&gt;
+&lt;p&gt;The server your website is running on, uses a piece of software to do the &amp;ldquo;serving&amp;rdquo; of web page content to visitors browsers. THAT server has many rules defined inside it for how things are supposed to work. If &lt;em&gt;something&lt;/em&gt; goes wrong, it throws up an error, AND it logs that error.&lt;/p&gt;
+&lt;h3 id=&#34;most-important-point&#34;&gt;MOST IMPORTANT POINT:&lt;/h3&gt;
+&lt;p&gt;The &amp;ldquo;500 Internal Server Error&amp;rdquo; is a VERY generic catch-all error that simply means &amp;ldquo;oops, something went wrong, and I don&amp;rsquo;t know what it was, or at least I&amp;rsquo;m not going to publicly tell you what it was&amp;rdquo;.  The &amp;ldquo;500&amp;rdquo; is the &lt;a href=&#34;/zendocs_test1/user/troubleshooting/http_response_codes/&#34;&gt;HTTP response code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The actual cause of the error WILL BE LOGGED in the server.  It will NOT be displayed on the screen, since many times the reason might be security-related, and to display the &amp;ldquo;actual&amp;rdquo; cause on-screen would tell a hacker exactly what to do next to get around the security systems.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;THAT is why the fastest way to find the solution to a &amp;ldquo;500 Internal Server Error&amp;rdquo; problem is to look at the logs.&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-are-the-logs&#34;&gt;WHAT ARE THE LOGS?&lt;/h3&gt;
+&lt;p&gt;There are 2 kinds of logs in this case:&lt;/p&gt;
+&lt;p&gt;a) Your site&amp;rsquo;s &lt;code&gt;/logs/&lt;/code&gt; folder, which stores PHP errors happening in your store. Sometimes a Fatal PHP error will cause your website to trigger a generic 500 Internal Server error. You can find the details of the PHP error in the myDEBUG-xxxxxx.log files in your &lt;code&gt;/logs/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;More info is provided in the FAQs on &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;Zen Cart Debug Logs&lt;/a&gt; and 
+this &lt;a href=&#34;/zendocs_test1/user/troubleshooting/blank_page/&#34;&gt;blank page errors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) Your server&amp;rsquo;s webserver error logs &amp;hellip; ie: Apache/Nginx and maybe PHP itself. Your hosting company will have to give you access to this information if you don&amp;rsquo;t already have an Error Logs menu option in your hosting company&amp;rsquo;s control panel.&lt;/p&gt;
+&lt;h2 id=&#34;a-word-about-windowsiis-hosting&#34;&gt;A word about Windows/IIS hosting&lt;/h2&gt;
+&lt;p&gt;IIS is not recommended.&lt;/p&gt;
+&lt;p&gt;While Zen Cart has been known to work fine on many Windows/IIS hosting servers, it is primarily tuned best to work with Apache servers, which are more commonly driven by Linux hosts. It has also been frequently demonstrated that if a Zen Cart site is encountering 500 Internal Server Error problems on a Windows host, that moving it to a Linux host quickly removes the problem. This often means that there was something about the Windows Server configuration that was triggering the incompatibility, but no specific pattern describing those unique configuration settings has been identified yet, since the hosting companies haven&amp;rsquo;t been willing to share those details.&lt;/p&gt;
+&lt;p&gt;So, switching from Windows/IIS to Linux/Apache is definitely worthy of consideration. It&amp;rsquo;s easier to support and configure on Linux anyway!&lt;/p&gt;
+&lt;h2 id=&#34;possible-causes-in-no-particular-order&#34;&gt;POSSIBLE CAUSES (in no particular order):&lt;/h2&gt;
+&lt;table width=&#34;640&#34; cellspacing=&#34;1&#34; cellpadding=&#34;1&#34; border=&#34;1&#34; align=&#34;&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Security System  
+(mod_security)&lt;/td&gt;
+&lt;td&gt;mod_security is a security system that runs on the webserver to detect common hacker activity and trip them up if they try to do something rogue. It looks for patterns of commonly-used hacker scripts and words, and if the rule is triggered, it sends a 500 error, and might even lock out the visitor&#39;s IP address temporarily.  
+&lt;p&gt;The mod_security rule will be listed in the error logs &lt;em&gt;and&lt;/em&gt; in the mod_security logs.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/troubleshooting/product_update_errors/&#34;&gt;errors during product_updates&lt;/a&gt;.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;suexec&lt;/td&gt;
+&lt;td&gt;THIS IS BECOMING MORE AND MORE COMMON FOR PCI COMPLIANCE REASONS.  
+&lt;p&gt;If the server is configured to use php_suexec (which is intended to provide slightly better security in how files are stored and permissions are managed with PHP scripts), then you&amp;rsquo;re not allowed to set any files or folders to &amp;ldquo;777&amp;rdquo; (aka &amp;ldquo;world-writable) permission levels. The maximum allowed in such cases is typically 755.&lt;/p&gt;
+&lt;p&gt;In this situation, if you set a folder to &amp;ldquo;777&amp;rdquo;, the server throws a 500 Internal Server Error and blocks access to any scripts or files in that folder.&lt;/p&gt;
+&lt;p&gt;The blocked folder will be listed in the logs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, in that case you should use 755 instead of 777 when reading instructions that suggest using &amp;ldquo;777&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.htaccess syntax errors  
+&lt;p&gt;or .htaccess restrictions imposed by the main server configuration&lt;/td&gt;&lt;/p&gt;
+&lt;td&gt;If your server&#39;s been configured to restrict you from using certain directives in .htaccess files, but you use something disallowed, then a &#34;500 Internal Server Error&#34; will be triggered, and your site will be inaccessible until you fix the problem.  The exact rule will be recorded in the logs.  
+&lt;br /&gt;&lt;br /&gt;
+Further details on .htaccess and server requirements for Zen Cart can be found *inside* the .htaccess files that come *with* Zen Cart.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PHP errors&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Sometimes when a PHP script encounters an error, either due to a timeout or a syntax problem, or something worse like a logic problem, it &lt;em&gt;might&lt;/em&gt; trigger a 500 Internal Server Error. It may not always do so, but it may.&lt;/p&gt;
+&lt;p&gt;In such cases, if you use the &lt;a href=&#34;/zendocs_test1/user/troubleshooting/blank_page/&#34;&gt;Zen Cart debug logs&lt;/a&gt; to review PHP errors, you might discover the cause of the problem there.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Missing File&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Using PHP &lt;code&gt;require&lt;/code&gt; or &lt;code&gt;require_once&lt;/code&gt; to pull in a file that doesn&amp;rsquo;t exist will generate a 500 error.  For example, attempting to pull in the Magento infrastructure&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;require_once &amp;#39;app/Mage.php&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;doesn&amp;rsquo;t work well in Zen Cart and will cause an HTTP 500 to be returned.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bad configure.php contents&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;If the URLs or paths, or anything else for that matter, in your &lt;a href=&#34;/zendocs_test1/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt; refers to information for a different server, or is not correct for &lt;em&gt;your&lt;/em&gt; server, then many odd problems may occur, including possibly a 500 error. However, usually it will be very different symptoms. Just be sure that you DO NOT copy your configure.php files from one server to another, even localhost.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wrong email mode&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;If your blank-screen or 500-error is occurring at the same time as your store is attempting to send emails, this might be something to look into. Some hosts are extra strict about NOT using the &lt;em&gt;PHP&lt;/em&gt; setting for &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Email Options&lt;/a&gt; in the &lt;em&gt;Email Transport Protocol&lt;/em&gt; field.&lt;/p&gt;
+&lt;p&gt;Instead, set it to &lt;em&gt;SMTP&lt;/em&gt; and specify the correct email server address in the &lt;em&gt;SMTP Email Host setting&lt;/em&gt;, also on that screen. For even more assistance on email issues, see &lt;a href=&#34;/zendocs_test1/user/troubleshooting/email_issues/&#34;&gt;Email Troubleshooting&lt;/a&gt;.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why am I getting 500 or 406 or 404 or 403 errors during product updates?</title>
+      <link>/zendocs_test1/user/troubleshooting/product_update_errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/product_update_errors/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Symptom:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When updating product details (or EZ-Pages content and other areas), when certain keywords are used in the content, an error message similar to the following may appear:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Forbidden - You don&amp;#39;t have permission to access /admin/product.php on this server.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You also may see this message:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sometimes the error may appear as a &lt;code&gt;500 Internal Server Error&lt;/code&gt; or &lt;code&gt;406&lt;/code&gt; error.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cause:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many servers nowadays use a tool in their Apache Webserver software configuration called &amp;ldquo;mod_security&amp;rdquo; in order to prevent against hack attempts on the server.  This tool monitors the content of words/data submitted in forms on web pages, and if certain keywords are found, it flags the entire form-submission as at-risk, and prevents the entered data from being saved.&lt;/p&gt;
+&lt;p&gt;Common keywords which may get flagged include: &lt;code&gt;INSERT&lt;/code&gt; or &lt;code&gt;UPDATE&lt;/code&gt; and other commonly-used SQL commands.&lt;/p&gt;
+&lt;p&gt;The numbers 500, 406, 404 or 403 are 
+the &lt;a href=&#34;/zendocs_test1/user/troubleshooting/http_response_codes/&#34;&gt;HTTP response code&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;possible-solutions&#34;&gt;Possible Solutions:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t use any words which are restricted by your host&amp;rsquo;s rules.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get your host to change or relax the mod_security rules.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can try disabling mod_security for your admin area by putting this in your &lt;code&gt;/admin/.htaccess&lt;/code&gt; file:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SecFilterInheritance Off
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SecFilterScanPOST Off
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If that doesn&amp;rsquo;t work, you&amp;rsquo;ll need to talk to your hosting company for specific assistance about ways in which &lt;em&gt;they&lt;/em&gt; will allow you to override mod_security filters in your admin area.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why are my images distorted?</title>
+      <link>/zendocs_test1/user/troubleshooting/images_distorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/images_distorted/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Your images are distorted because the images sizes are set to fixed dimensions, both height and width, and if your images are not the same ratio they will appear distorted.&lt;/p&gt;
+&lt;p&gt;To remedy this situation, go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_images/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Images&lt;/a&gt;.
+On this page is a list of the various image sizes, choose the image size you wish to edit and set one of the dimensions to 0.&lt;/p&gt;
+&lt;p&gt;Make sure you also set the following two options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Calculate Image Size&lt;/em&gt; = true&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Use Proportional Images on Products and Categories&lt;/em&gt; =1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This will allow your images to be resized according to their own proportions.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/zendocs_test1/user/images/&#34;&gt;How to configure and use images&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why do my product names show up twice?</title>
+      <link>/zendocs_test1/user/troubleshooting/product_names_shown_twice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/product_names_shown_twice/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Symptom: Instead of showing a product image thumbnail and the product&amp;rsquo;s name, I&amp;rsquo;m seeing just the product name, but twice!&lt;/p&gt;
+&lt;p&gt;Cause: When an image is called there is an ALT tag and that ALT tag is the Product Name, but since you do not have images, in your browser you see the ALT Tag Product Name.  Since they are the same thing, it looks like 2 names.&lt;/p&gt;
+&lt;p&gt;Solution: Give images to your products.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why does my define page not show up in Define Pages Editor?</title>
+      <link>/zendocs_test1/user/troubleshooting/define_not_showing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/troubleshooting/define_not_showing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Define pages are &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;overridable files&lt;/a&gt;, so they can exist in &lt;code&gt;includes/languages/english/html_includes&lt;/code&gt; and/or in &lt;code&gt;includes/languages/english/html_includes/YOURTEMPLATE/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;However, the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt; has a quirk: a define file &lt;em&gt;must&lt;/em&gt; exist in &lt;code&gt;includes/languages/english/html_includes&lt;/code&gt; for it to be visible to the Define Pages Editor.   So if you create a new file and only put it in the &lt;code&gt;YOURTEMPLATE&lt;/code&gt; subfolder, it will be visible in the storefront but not in the Define Pages Editor.  Simply copy it to the level above, so that is is in &lt;code&gt;includes/languages/english/html_includes&lt;/code&gt;, and your problem will be solved.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,644 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Code Contributing and Git</title>
+    <link>/zendocs_test1/dev/contributing/</link>
+    <description>Recent content in Code Contributing and Git on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/dev/contributing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dev: Introduction</title>
+      <link>/zendocs_test1/dev/contributing/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;One of the joys of Open Source projects is the collective sharing of knowledge, skill, and creativity &amp;hellip; for the common good of everyone.&lt;/p&gt;
+&lt;p&gt;To that end, the documentation in this section is here to help you get started contributing to Open Source, specifically to the Zen Cart project.&lt;/p&gt;
+&lt;h2 id=&#34;but-what-can-i-offer&#34;&gt;But What Can I Offer?&lt;/h2&gt;
+&lt;p&gt;Your experiences will be both the same as hundreds of others and yet uniquely yours at the same time. Your own unique perspective, combined with your own creativity, coupled with your skills and experience, mean you have something to offer!&lt;/p&gt;
+&lt;p&gt;See a bug? Know of an improvement, even if it&amp;rsquo;s tiny? Feel free to share about it!&lt;/p&gt;
+&lt;h2 id=&#34;im-scared-this-is-my-first-time&#34;&gt;I&amp;rsquo;m Scared! This is my first time!&lt;/h2&gt;
+&lt;p&gt;That&amp;rsquo;s completely understandable. We all started with a sense of excitement and fear all at once. Excitement to be a contributor, and fear that my contribution might be wrong or break something or be rejected. Those are normal feelings but not to worry, all suggestions  get vetted first.&lt;/p&gt;
+&lt;h2 id=&#34;where-do-i-start&#34;&gt;Where do I start?&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s really as easy as 1-2-3 &amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start with reviewing the &lt;a href=&#34;/zendocs_test1/dev/contributing/issues&#34;&gt;Issues&lt;/a&gt; document, as a guide to first steps about exploring the issue further, checking whether it&amp;rsquo;s already being addressed someplace, whether it&amp;rsquo;s a core bug vs a &amp;ldquo;bugs-me bug&amp;rdquo;, along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re simply &amp;ldquo;looking for ways to get started&amp;rdquo;, take a look at the existing &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;Zen Cart Issues on Github&lt;/a&gt; for issues that are tagged with &amp;ldquo;up-for-grabs&amp;rdquo; or &amp;ldquo;first-timers-only&amp;rdquo;.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;re going to contribute code, read through the &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow&#34;&gt;Github Workflow&lt;/a&gt; document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As you start working on your code changes and pull request, review the &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards&#34;&gt;Coding Standards&lt;/a&gt; guide to ensure that your code matches both the formatting and testing requirements. If you&amp;rsquo;re submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;forum-links&#34;&gt;Forum Links&lt;/h2&gt;
+&lt;p&gt;New contributors may find these forum links helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?228856-How-to-Contribute-to-Zen-Cat-Part-I-XAMPP&#34;&gt;How to Contribute to Zen-Cat - Part I XAMPP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?228857-How-to-Contribute-to-Zen-Cat-Part-II-xDebug&#34;&gt;How to Contribute to Zen-Cat - Part II xDebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?228858-How-to-Contribute-to-Zen-Cart-Part-III-PHP&#34;&gt;How to Contribute to Zen-Cart - Part III PHP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Change Guidelines</title>
+      <link>/zendocs_test1/dev/contributing/change_guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/change_guidelines/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-do-you-make-a-change&#34;&gt;How do you make a change?&lt;/h2&gt;
+&lt;p&gt;Changes are made through pull requests (&amp;ldquo;PR&amp;rsquo;s&amp;rdquo;). If you are unfamiliar with pull requests, please review the project&amp;rsquo;s &lt;a href=&#34;/zendocs_test1/dev/contributing/github_workflow/&#34;&gt;Github Workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-should-go-into-a-change&#34;&gt;What should go into a change?&lt;/h2&gt;
+&lt;p&gt;For non-trivial changes, the best practice is to have a single PR for each issue you are addressing. The reasons for this include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The repo maintainer may want to merge one change but not another for the stability of the build.&lt;/li&gt;
+&lt;li&gt;A user may wish to see how to resolve a specific problem in their currently running cart, and wants to change the fewest things possible.&lt;/li&gt;
+&lt;li&gt;A small self-contained (aka &amp;ldquo;canonical&amp;rdquo;) changeset is easier to evaluate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-get-my-changes-reviewed-and-accepted&#34;&gt;How To Get My Changes Reviewed And Accepted?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://mtlynch.io/code-review-love/&#34;&gt;How To Make Your Code Reviewer Fall In Love With You&lt;/a&gt; should be required reading for everyone submitting code.&lt;/p&gt;
+&lt;h2 id=&#34;bug-fixes-and-formatting&#34;&gt;Bug Fixes and Formatting&lt;/h2&gt;
+&lt;p&gt;When changing existing files, try not to make large formatting changes. 
+Keeping the existing format allows people to more easily compare versions. 
+See &lt;a href=&#34;/zendocs_test1/dev/contributing/coding_standards/&#34;&gt;Coding Standards&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;In cases where a significant amount of reformatting is necessary and approved by the dev team, that should be done as a standalone commit and PR, where NO functional changes are made. 
+It should be formatting-only. Otherwise it becomes nearly impossible to find &amp;ldquo;who changed what when and why&amp;rdquo; when investigating code history at a later date.&lt;/p&gt;
+&lt;h2 id=&#34;how-should-i-document-a-change&#34;&gt;How should I document a change?&lt;/h2&gt;
+&lt;p&gt;Documentation starts with the title of each commit and of the PR, and extends into the commit/PR descriptions.&lt;/p&gt;
+&lt;p&gt;A good title describes succinctly the issue being solved. The commit title shows up in commit history, and is very important when exploring historical changes when troubleshooting problems or reviewing history vs new PRs. The more succinct but expressive your commit title, the better.&lt;/p&gt;
+&lt;p&gt;By default the first line of a commit description also becomes the &amp;ldquo;title&amp;rdquo; of a PR.
+Preferably the commit &amp;ldquo;title&amp;rdquo; should be under 50 characters. When subsequently submitting a PR with that commit the PR title could be expanded to longer (80-100 chars) if it makes the PR intent clearer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Good PR Title&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Check value of &lt;code&gt;foo&lt;/code&gt; in account creation submission&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(Note that &lt;code&gt;Fix bug in account creation&lt;/code&gt; and &lt;code&gt;Fixes #12345&lt;/code&gt; would NOT be good PR titles.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In the body of the PR, explain the issue, contrasting the current behavior with the expected behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Good behavior description:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Current behavior: the person submitting the form can add non-alphanumeric data to the &lt;code&gt;foo&lt;/code&gt; field; this is undesirable, since &lt;code&gt;foo&lt;/code&gt; is only alphanumeric.&lt;/li&gt;
+&lt;li&gt;Desired behavior: entry of non-alphanumeric data displays an error message and causes the submission to fail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also, screenshots of before/after for any changes affecting UI will make the intention clearer and easier for reviewers to understand.&lt;/p&gt;
+&lt;p&gt;A mere link to a forum thread or issue number is not sufficient. See &amp;ldquo;linking related issues&amp;rdquo; below.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Show your work!  Demonstrate how you tested the change you are submitting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Good Test Data:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the value of &lt;code&gt;foo&lt;/code&gt; to &lt;code&gt;4323*(!&lt;/code&gt;.  Observe that the submission fails and an error is shown.&lt;/li&gt;
+&lt;li&gt;Set the value of &lt;code&gt;foo&lt;/code&gt; to &lt;code&gt;good entry&lt;/code&gt;.  Observe that no error is shown and the submission succeeds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Linking Related Issues&lt;/strong&gt;
+Related Issues should be referenced using &lt;code&gt;#&lt;/code&gt; followed by the issue number, ie: &lt;code&gt;#12345&lt;/code&gt;.
+If the PR fully resolves a related issue, prefix the issue number with &lt;code&gt;Fixes &lt;/code&gt;, ie: &lt;code&gt;Fixes #12345&lt;/code&gt; in order to link them up so the issue is automatically closed when the PR gets merged.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Even if a topic is fully described in the related Issue, your description in the PR &lt;em&gt;should still include the details of what the PR is about&lt;/em&gt;. Merely referencing the Issue Number is seldom ideal, particularly when the related issue has had many comments/discussion notes and therefore would require a future reader of the PR (including the person reviewing the code before merge) to go and re-read the entire discussion. Save them the trouble by providing a good description as explained above. That way the reviewer knows the landscape up-front; they can refer to the related Issue for additional clarity but shouldn&amp;rsquo;t be forced to go there for it. (An occasional exception is if the issue has no comments/discussion and the best description would be merely a copy/paste; however, in that case it probably could have been a PR directly in the first place.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Coding Standards</title>
+      <link>/zendocs_test1/dev/contributing/coding_standards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/coding_standards/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;old-standard&#34;&gt;Old Standard&lt;/h2&gt;
+&lt;p&gt;Legacy Zen Cart code has used a modified &lt;em&gt;phpBB&lt;/em&gt; coding style, with notable characteristics such as &amp;ldquo;indent with 2 spaces, not tabs&amp;rdquo;, and &amp;ldquo;The opening brace (ie: &lt;code&gt;{&lt;/code&gt;) for &lt;code&gt;class&lt;/code&gt; and &lt;code&gt;function&lt;/code&gt; definitions, as well as &lt;code&gt;if/else&lt;/code&gt; statements, was kept on the same line&amp;rdquo;, etc.&lt;/p&gt;
+&lt;h2 id=&#34;new-standard-psr-2&#34;&gt;New Standard: PSR-2&lt;/h2&gt;
+&lt;p&gt;In the interest of progressively modernizing the code, going forward we are adopting &lt;a href=&#34;https://www.php-fig.org/psr/psr-2/&#34;&gt;the PSR-2 coding standard&lt;/a&gt;, which also includes PSR-1 standards.&lt;/p&gt;
+&lt;h3 id=&#34;difference-from-the-old-standard&#34;&gt;Difference from the &amp;ldquo;Old Standard&amp;rdquo;&lt;/h3&gt;
+&lt;p&gt;To be clear: PSR-2 uses &amp;ldquo;4 spaces instead of tabs&amp;rdquo;, and puts the opening &lt;code&gt;{&lt;/code&gt; braces on a new line when used with &lt;code&gt;class&lt;/code&gt; and &lt;code&gt;function&lt;/code&gt; declarations (but keeps them on the same line when used with controls structures such as &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, &lt;code&gt;foreach&lt;/code&gt;, &lt;code&gt;switch&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; loops.)&lt;/p&gt;
+&lt;p&gt;For example, the old style would be:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;foo&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;baz&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$var1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$var2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// do something
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and the new PSR-2 equivalent would be:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;foo&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;baz&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$var1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$var2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// do something
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;when-to-use-psr-2&#34;&gt;When to use PSR-2&lt;/h2&gt;
+&lt;p&gt;So, new code should use the PSR-2 standard. That is, when new files are created such as new functions or class files, they should use the PSR-2 standard.&lt;/p&gt;
+&lt;h2 id=&#34;when-to-use-old-style&#34;&gt;When to use old style&lt;/h2&gt;
+&lt;p&gt;When doing maintenance to existing code in existing files, and to some degree when adding code to existing files, the format of those files should not be radically changed.&lt;/p&gt;
+&lt;p&gt;Reasons: difficulty for people upgrading since they need familiar comparison points to merge changes, and familiarity for those working in those files &amp;hellip; it&amp;rsquo;s better for there to be one style per file.&lt;/p&gt;
+&lt;h2 id=&#34;when-to-reformat-an-entire-file&#34;&gt;When to reformat an entire file&lt;/h2&gt;
+&lt;p&gt;If a file needs reformatting, that reformatting should be a SEPARATE commit (and preferably separate Pull Request) from ANY other changes.  ie: there should be no functionality changes, no changes to the file other than white-space.&lt;/p&gt;
+&lt;p&gt;This is for the purpose of maintainability, and controlling understanding of the flow of code changes &amp;hellip; especially important if a bug is later found in the code.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;additional-guidelines&#34;&gt;Additional Guidelines&lt;/h1&gt;
+&lt;h2 id=&#34;require-and-include-statements&#34;&gt;Require and Include statements&lt;/h2&gt;
+&lt;p&gt;When doing a &lt;code&gt;require&lt;/code&gt; or &lt;code&gt;include&lt;/code&gt;, use single quotes and no parentheses.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;require DIR_WS_INCLUDES . &amp;#39;footer.php&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;quotation-marks&#34;&gt;Quotation marks&lt;/h2&gt;
+&lt;p&gt;Remember that double quoted strings are checked for interpolation.&lt;/p&gt;
+&lt;p&gt;Use single quoted strings in cases where variables are not used.  If single and double quotes are used within a string, use single quotes on the outside.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#39;Token set. You may now continue configuring the module.&amp;#39;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By convention, MySQL statements are enclosed in double quotes so that values may be entered in single quotes (without interpolation).  See below.&lt;/p&gt;
+&lt;h2 id=&#34;mysql-statements&#34;&gt;MySQL Statements&lt;/h2&gt;
+&lt;p&gt;MySQL keywords should be entered in uppercase.&lt;/p&gt;
+&lt;p&gt;Strings should be double quoted so that values may be single quoted.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$db-&amp;gt;Execute(&amp;#34;INSERT INTO &amp;#34; . TABLE_TAX_CLASS . &amp;#34; 
+              (tax_class_title, tax_class_description, date_added)
+              VALUES (&amp;#39;&amp;#34; . zen_db_input($tax_class_title) . &amp;#34;&amp;#39;,
+                      &amp;#39;&amp;#34; . zen_db_input($tax_class_description) . &amp;#34;&amp;#39;,
+                      now())&amp;#34;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;comments-in-code&#34;&gt;Comments in Code&lt;/h2&gt;
+&lt;p&gt;It is appropriate to use comments to explain what is happening in a given section of the code. This is so that other programmers coming after you (and you included!) can quickly understand intended the logic.&lt;/p&gt;
+&lt;p&gt;The standard phpDocumentor coding standard (ie: common PHP DocBlock syntax) is the preferred approach, as well as inline comments approximately every 10 lines of code.&lt;/p&gt;
+&lt;h2 id=&#34;what-about-files-containing-both-html-and-php&#34;&gt;What about files containing both HTML and PHP?&lt;/h2&gt;
+&lt;p&gt;Where possible, (new) code should always output HTML/CSS/JS directly, and NOT use PHP to echo the HTML.&lt;/p&gt;
+&lt;p&gt;Code-editing programs can properly parse and display HTML/CSS/JS if they are entered in &amp;ldquo;raw text&amp;rdquo; - but they can&amp;rsquo;t if they are &amp;ldquo;echoed&amp;rdquo; via PHP.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;h3 id=&#34;good&#34;&gt;Good:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;xxxxxx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?php echo sprintf(LANGUAGE_DEFINE, ...); ?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;bad&#34;&gt;Bad:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39; &amp;lt;div class=xxxxxx&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;sprintf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LANGUAGE_DEFINE&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;lt;/div&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that this rule is not required in cases where a block is opened by PHP (as in &lt;code&gt;zen_draw_form&lt;/code&gt;).  In this case, closing the block in straight HTML will confuse IDEs.&lt;/p&gt;
+&lt;h3 id=&#34;exception&#34;&gt;Exception:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;        echo zen_draw_form(&amp;#39;customers&amp;#39;, FILENAME_CUSTOMERS, .... 
+        ...
+        &amp;lt;?php echo &amp;#39;&amp;lt;/form&amp;gt;&amp;#39;; ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;arrays&#34;&gt;Arrays&lt;/h2&gt;
+&lt;p&gt;End an array with a comma and put the closing bracket on a new line.  In this way, plugin authors can just insert a line after the last entry and have a smaller diff:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[
+   &amp;#39;class&amp;#39; =&amp;gt; $totals-&amp;gt;fields[&amp;#39;class&amp;#39;],
+   &amp;#39;value&amp;#39; =&amp;gt; $totals-&amp;gt;fields[&amp;#39;value&amp;#39;],
+];
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;separating-content-markup-and-logic&#34;&gt;Separating content, markup and logic&lt;/h2&gt;
+&lt;p&gt;Where possible, try to keep these things separate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Files in &lt;code&gt;includes/languages&lt;/code&gt; should contain strings (not HTML/CSS markup);&lt;/li&gt;
+&lt;li&gt;Files in &lt;code&gt;includes/modules&lt;/code&gt; and &lt;code&gt;includes/functions&lt;/code&gt; should be where logic resides (not markup);&lt;/li&gt;
+&lt;li&gt;Files in &lt;code&gt;includes/templates&lt;/code&gt; should be where display markup resides (not extensive logic).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;static-data&#34;&gt;Static Data&lt;/h2&gt;
+&lt;p&gt;Try to avoid creating db tables that are strictly static data, unless they&amp;rsquo;re useful in query joins with other relational data.  Keep this information in code files instead. If it needs to be globally available, use &lt;code&gt;extra_configures&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;namespaced-autoloading&#34;&gt;Namespaced Autoloading&lt;/h2&gt;
+&lt;p&gt;In Zen Cart 1.5.7 some code is now using the &lt;a href=&#34;https://www.php-fig.org/psr/psr-4/&#34;&gt;PSR-4 autoloading standard&lt;/a&gt; for handling code in the \ZenCart namespace (ie: the files in &lt;code&gt;/includes/library&lt;/code&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;parameters&#34;&gt;Parameters&lt;/h2&gt;
+&lt;p&gt;Instead of just passing a boolean value, consider naming  the parameter for greater clarify.&lt;/p&gt;
+&lt;p&gt;Rather than this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   $filter = zen_get_linked_products_for_category($cat_id, true); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Do this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;php-short-echo-tags&#34;&gt;PHP Short Echo Tags&lt;/h2&gt;
+&lt;p&gt;At this time, PHP Short Echo Tags (&lt;code&gt;&amp;lt;?=&lt;/code&gt; in lieu of &lt;code&gt;&amp;lt;?php echo&lt;/code&gt;) are not preferred.&lt;/p&gt;
+&lt;h2 id=&#34;more-information&#34;&gt;More Information&lt;/h2&gt;
+&lt;p&gt;More information is provided in &lt;a href=&#34;/zendocs_test1/dev/code/php_idioms/&#34;&gt;PHP Idioms&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Github Workflow &#43; Pull Requests</title>
+      <link>/zendocs_test1/dev/contributing/github_workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/github_workflow/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This article is intended to help provide a basic understanding of contributing to forked repositories on github, including forking, updating your local copy, and &lt;strong&gt;making Pull Requests&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-reference-for-newcomers-to-git-or-github&#34;&gt;Quick Reference for Newcomers to git or github&lt;/h2&gt;
+&lt;p&gt;For the basics of learning git, see: &lt;a href=&#34;https://help.github.com/categories/bootcamp/&#34;&gt;https://help.github.com/categories/bootcamp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the basics of learning github, see: &lt;a href=&#34;https://help.github.com/articles/good-resources-for-learning-git-and-github/&#34;&gt;https://help.github.com/articles/good-resources-for-learning-git-and-github/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To collaborate by sharing your code suggestions, you will need to &amp;ldquo;fork&amp;rdquo; our public repository.
+For the basics of understanding forking and how to manage that fork, see: &lt;a href=&#34;https://help.github.com/articles/fork-a-repo&#34;&gt;https://help.github.com/articles/fork-a-repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re looking for paid training courses on using git/github, see: &lt;a href=&#34;https://training.github.com/&#34;&gt;https://training.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Glossary of common terms in git and github: &lt;a href=&#34;https://help.github.com/articles/github-glossary&#34;&gt;https://help.github.com/articles/github-glossary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;client-applications-to-interact-with-git&#34;&gt;Client Applications to Interact with git&lt;/h2&gt;
+&lt;p&gt;To interact with git, you can use the command line or you can use a desktop application. (There are also mobile/tablet apps, but we won&amp;rsquo;t cover that here.)&lt;/p&gt;
+&lt;p&gt;We recommend working with one of the following first two options.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;command line. Purists will use the command line, for reasons they will pine eloquently about if asked. There are hundreds of resources online showing how to use all the git features via command line, starting with the links at the top of this page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; for Windows and Mac - this is another good free desktop application which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface. We highly recommend using SourceTree due to its simplicity.&lt;/p&gt;
+&lt;p&gt;When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name+email.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There&amp;rsquo;s another option, Github&amp;rsquo;s own application: Github Desktop for &lt;a href=&#34;https://windows.github.com/&#34;&gt;Windows&lt;/a&gt; or &lt;a href=&#34;https://mac.github.com/&#34;&gt;Mac&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re intentionally not documenting how to use Github Desktop, because &lt;a href=&#34;https://docs.github.com/en/desktop&#34;&gt;the Github Desktop documentation&lt;/a&gt; covers it well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;While you won&amp;rsquo;t find us documenting how to use them, there are several &lt;a href=&#34;http://git-scm.com/downloads/guis&#34;&gt;other git GUI client apps&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the workflow you&amp;rsquo;ll want to use as a collaborator with Zen Cart® and probably most other open source projects:&lt;/p&gt;
+&lt;h3 id=&#34;cla---contributor-license-agreement&#34;&gt;CLA - Contributor License Agreement&lt;/h3&gt;
+&lt;p&gt;By contributing code, you are agreeing that you willingly offer your contributions for use without compensation or restriction and that your contributions are entirely yours and not copyrighted or licensed by someone else under restrictive rules.&lt;/p&gt;
+&lt;h3 id=&#34;basic-setup&#34;&gt;Basic setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;github account&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a github account at &lt;a href=&#34;http://www.github.com&#34;&gt;www.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Fork the Repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;On the github site, &lt;a href=&#34;https://help.github.com/articles/fork-a-repo&#34;&gt;fork the project&amp;rsquo;s repository&lt;/a&gt; (the main Zen Cart repository is at &lt;a href=&#34;https://github.com/zencart/zencart&#34;&gt;https://github.com/zencart/zencart&lt;/a&gt;).  Forking makes a copy of that repository into your own github account, which is where you will upload your changes since you only have &amp;ldquo;write&amp;rdquo; permissions in your own repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Clone the repository to your own computer. (see below)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;cloning-a-repository&#34;&gt;Cloning a repository&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Get the URL for the repository you&amp;rsquo;re cloning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;your&lt;/strong&gt; github account page&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;your&lt;/strong&gt; fork of the Zen Cart repository: &lt;code&gt;https://github.com/YOURNAMEHERE/zencart&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a green &amp;ldquo;Code&amp;rdquo; button, which if you click it, will show you the URL for cloning your repository. Click the clipboard icon to copy that URL to your computer&amp;rsquo;s clipboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now switch to your desktop application of choice and use that URL to clone the repository locally:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;pick a working directory on your PC&lt;/li&gt;
+&lt;li&gt;cd into that directory&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git clone PASTE-THAT-URL-HERE .&lt;/code&gt; (note the &lt;code&gt;.&lt;/code&gt; at the end, which says &amp;ldquo;put it in the current directory&amp;rdquo;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose File, New Clone&amp;hellip;&lt;/li&gt;
+&lt;li&gt;In the Source Path/URL, paste the URL you copied from github&lt;/li&gt;
+&lt;li&gt;For the destination path, pick a folder on your PC&lt;/li&gt;
+&lt;li&gt;For the bookmark name, call it whatever friendly name you want to remember this repo by. It will show up in &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;&amp;rsquo;s bookmarks list of repositories you&amp;rsquo;ve got.&lt;/li&gt;
+&lt;li&gt;Click Clone or OK to have it start the clone. It will take a few seconds for it to download the repository contents to your computer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;add-an-upstream-remote-for-keeping-things-up-to-date&#34;&gt;Add an upstream remote for keeping things up-to-date&lt;/h3&gt;
+&lt;p&gt;To keep your own fork up-to-date, you&amp;rsquo;ll need to periodically merge updates from the main Zen Cart repository. This involves telling your own local (on your PC) git repository about the main Zen Cart repository location. To do this you must add what&amp;rsquo;s called an &amp;ldquo;upstream remote&amp;rdquo;. (See the glossary link above for what a &amp;ldquo;remote&amp;rdquo; is.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;cd into the directory of the repository you&amp;rsquo;re adding the remote to&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git remote add upstream https://github.com/zencart/zencart.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git fetch upstream&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose Repositories from the main menu&lt;/li&gt;
+&lt;li&gt;Choose Repository Settings&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Click Add&lt;/li&gt;
+&lt;li&gt;For Remote Name, use: &lt;strong&gt;upstream&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;For the URL use: &lt;code&gt;https://github.com/zencart/zencart.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For the github username, enter your own github account name&lt;/li&gt;
+&lt;li&gt;Click OK&lt;/li&gt;
+&lt;li&gt;Click Fetch&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;making-a-working-branch-for-each-new-pull-request-or-feature-youre-working-on&#34;&gt;Making a working-branch for each new Pull Request or feature you&amp;rsquo;re working on&lt;/h3&gt;
+&lt;p&gt;Any time you&amp;rsquo;re going to contribute code changes, you&amp;rsquo;ll want to first make a working branch. (For more on branches, see the glossary and other git references at the top of this page.) Branches are how git keeps different versions of changes separate from each other until such time as someone approves merging them together into the main branch.&lt;/p&gt;
+&lt;h5 id=&#34;pick-a-branch-name&#34;&gt;Pick a branch name&lt;/h5&gt;
+&lt;p&gt;Decide on a new branch name. (The branch name should be brief, but meaningful; ideally a max of 6 words, all hyphenated, no spaces.)&lt;/p&gt;
+&lt;h5 id=&#34;make-the-branch&#34;&gt;Make the branch&lt;/h5&gt;
+&lt;p&gt;Now use that name for name-of-your-branch-here, below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;cd into the directory of the repository you&amp;rsquo;re intending to make changes to&lt;/li&gt;
+&lt;li&gt;In this example we&amp;rsquo;ll be branching from the v158 branch&lt;/li&gt;
+&lt;li&gt;Type: &lt;code&gt;git branch name-of-your-new-branch-here v158 &lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Type: &lt;code&gt;git checkout name-of-your-new-branch-here&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;First, make sure you&amp;rsquo;re in &amp;ldquo;History View&amp;rdquo;  (View, History View)&lt;/li&gt;
+&lt;li&gt;Find where it shows &lt;code&gt;upstream/v158&lt;/code&gt;, and right-click on that row. Choose Branch&amp;hellip; from the pop-up menu&lt;/li&gt;
+&lt;li&gt;Give it the new branch name&lt;/li&gt;
+&lt;li&gt;Leave the &amp;ldquo;checkout new branch&amp;rdquo; box checked&lt;/li&gt;
+&lt;li&gt;Click Create Branch or OK&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;make-your-code-changes&#34;&gt;Make your code changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit or create whatever files are applicable to the changes you wish to submit for consideration.&lt;/li&gt;
+&lt;li&gt;Test your code. Test to make sure your changes work, and that you&amp;rsquo;ve not broken anything else in the process.&lt;/li&gt;
+&lt;li&gt;Once your code is ready for submission, you&amp;rsquo;ll need to commit the changes, and push them to your github account and then create a Pull Request. Those steps are described below.&lt;/li&gt;
+&lt;li&gt;MAKE SURE YOUR CODE COMPLIES WITH ZEN CART CODING STANDARDS, else it may be rejected.&lt;/li&gt;
+&lt;li&gt;If your code can be tested with phpunit, be sure to include those tests in your commits and pull request.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commits&#34;&gt;Commits&lt;/h3&gt;
+&lt;p&gt;To commit your code, you must first &amp;ldquo;stage&amp;rdquo; the files which are to be included. See the git docs mentioned at the top of this page for more detailed explanation of what this means.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve staged the files, then you commit them, which saves that group of changes together.&lt;/p&gt;
+&lt;p&gt;You can make multiple commits (that is, stage the files and commit them) towards any given issue. This allows you to make numerous smaller commits which are easily described in connection with the specific files that relate to those smaller changes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;cd into the directory of the repository you&amp;rsquo;re committing from&lt;/li&gt;
+&lt;li&gt;type &lt;code&gt;git status&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;this will give you a list of changed/added/deleted files&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git add filename1.php filename2.php&lt;/code&gt; (and any other files, etc)&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git commit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;This will pop up your text editor where you can supply a commit message. See explanation of commit messages in the sub section below.&lt;/li&gt;
+&lt;li&gt;Save the message using whatever method your text editor uses to save-and-exit&lt;/li&gt;
+&lt;li&gt;This will have the commit saved locally. You can continue working and making more commits until you&amp;rsquo;re ready to push them all up to github (see pushing commits below)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;First, go into File Status view. Click on &amp;ldquo;Working Copy&amp;rdquo; in the left nav menu under File Status. Or, use the View menu and choose File Status View.&lt;/li&gt;
+&lt;li&gt;Here you&amp;rsquo;ll see a list of files on-screen which have changed in some way (edits, adds, deletes)&lt;/li&gt;
+&lt;li&gt;You can also see exactly what&amp;rsquo;s changed by clicking on those files and viewing the &amp;ldquo;diff&amp;rdquo; on the other side of the screen.&lt;/li&gt;
+&lt;li&gt;For each file that you wish to include in the current commit, highlight it in the bottom part of the window, and click the Stage Selected button on the button-bar. It may ask you to confirm that you wish to Add it. (The Windows version has a tiny up-arrow that lets you do the staging as well, instead of using the Add from the top button-bar).&lt;/li&gt;
+&lt;li&gt;Once your files are all staged, click the Commit button in the button bar&lt;/li&gt;
+&lt;li&gt;This will open a dialog where you can supply a commit message. See the guidance around commit messages in the next section below.&lt;/li&gt;
+&lt;li&gt;Click the commit button in the bottom right.&lt;/li&gt;
+&lt;li&gt;Your commit is now saved locally on your PC. You can continue making more commits until you&amp;rsquo;re ready to push them all to github, as described below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;about-commit-messages&#34;&gt;ABOUT COMMIT MESSAGES&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;The &amp;ldquo;subject&amp;rdquo; or &amp;ldquo;first line&amp;rdquo; of a commit message should be no more than 50 characters.&lt;/li&gt;
+&lt;li&gt;The next lines can have as much detail as you like. Consider using &lt;a href=&#34;https://help.github.com/articles/github-flavored-markdown&#34;&gt;Github Markdown syntax&lt;/a&gt; for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re contributing code to help with an &amp;ldquo;Issue&amp;rdquo; that&amp;rsquo;s already listed on the &lt;a href=&#34;https://github.com/zencart/zencart/issues?state=open&#34;&gt;Zen Cart github Issues&lt;/a&gt; page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.&lt;/li&gt;
+&lt;li&gt;Further to the point above, if your commit &lt;a href=&#34;https://help.github.com/articles/closing-issues-via-commit-messages/&#34;&gt;&amp;ldquo;fixes&amp;rdquo; or &amp;ldquo;closes&amp;rdquo; or &amp;ldquo;resolves&amp;rdquo; an existing open issue then include the word &amp;ldquo;Fixes&amp;rdquo; before the issue number&lt;/a&gt;, ie: &amp;ldquo;Fixes #101&amp;rdquo; somewhere in your commit message. This will cause Github to close the &amp;ldquo;issue&amp;rdquo; ticket when your pull request is merged, and helps keep things tidy.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re committing code that addresses a bug reported on the Zen Cart support forum, include the URL for that bug from the forum, so we can cross-reference it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Suggested reading: &lt;a href=&#34;http://chris.beams.io/posts/git-commit/#seven-rules&#34;&gt;7 Principles for Good Commit Messages&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pushing-commits-to-github&#34;&gt;Pushing Commits To Github&lt;/h3&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve made some commits to git on your local PC, you must push them to (your account on) github in order to prepare to share them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;again, cd into the directory of your working repository&lt;/li&gt;
+&lt;li&gt;type &lt;code&gt;git push origin name-of-my-working-branch&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the Push button in the top button bar.&lt;/li&gt;
+&lt;li&gt;From the pulldown for &amp;ldquo;Push to repository&amp;rdquo;, be sure that &amp;ldquo;origin&amp;rdquo; is selected. That&amp;rsquo;s &lt;strong&gt;your&lt;/strong&gt; github repository, and you must push to there.&lt;/li&gt;
+&lt;li&gt;Next make sure you check the box next to the branch you&amp;rsquo;ve been making your commits in. Uncheck all the others.&lt;/li&gt;
+&lt;li&gt;Click OK&lt;/li&gt;
+&lt;li&gt;That&amp;rsquo;s it! Now all the commits you&amp;rsquo;ve made in that branch on your PC will show up in your Github account.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;pull-request&#34;&gt;Pull Request&lt;/h3&gt;
+&lt;p&gt;(You&amp;rsquo;ll also see &lt;code&gt;Pull Request&lt;/code&gt; referred to as a &lt;code&gt;PR&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;After you&amp;rsquo;ve pushed your working branch (ie: containing your new commits) to your own Github account, you will need to create a &lt;a href=&#34;https://help.github.com/articles/using-pull-requests/&#34;&gt;Pull Request&lt;/a&gt; in order to ask the Zen Cart committers to review it and consider it for inclusion in core code.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll do this from your browser:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to your Github account in your browser.&lt;/li&gt;
+&lt;li&gt;Go to &lt;em&gt;your&lt;/em&gt; zencart repository.&lt;/li&gt;
+&lt;li&gt;You will see a green &amp;ldquo;Compare and Pull Request&amp;rdquo; button. Click it. (If it&amp;rsquo;s been several hours since you did the push, it might not show the green bar. In that case, click the &amp;lsquo;Branches&amp;rsquo; link, where you will see a Pull Request button next to each of your branches. Click the one next to the branch you want to do the pull request from.)&lt;/li&gt;
+&lt;li&gt;Now you can review the collection of commits and file changes, and add a descriptive message to the pull request. If you&amp;rsquo;re fixing something that&amp;rsquo;s already got an open issue for it, be sure that the issue number is included in your Pull Request message. ie: #101. If you believe your Pull Request fully fixes the open issue, then say &amp;ldquo;Fixes #101&amp;rdquo;, as the keyword &amp;ldquo;Fixes&amp;rdquo; helps do proper cleanup of tickets once closed.&lt;/li&gt;
+&lt;li&gt;TIP: If you are contributing to Zen Cart v158, be sure that your pull request &amp;ldquo;compare&amp;rdquo; is indeed being compared against the &lt;code&gt;zencart:v158&lt;/code&gt; branch.&lt;/li&gt;
+&lt;li&gt;Click the next green button to Create Pull Request&lt;/li&gt;
+&lt;li&gt;Now you &lt;a href=&#34;https://github.com/thoughtbot/guides/tree/master/code-review&#34;&gt;wait for others to review your code&lt;/a&gt;. The Zen Cart team (and anyone else who has clicked &amp;ldquo;Watch&amp;rdquo; on the Zen Cart main repository) will get an alert about the pull request. Anyone wishing to reply with their opinions of what you&amp;rsquo;ve submitted can engage in dialog with you and one another while the code is reviewed.&lt;/li&gt;
+&lt;li&gt;If your code hasn&amp;rsquo;t complied with the coding standards, or has bugs or is incomplete, you may be asked to submit more commits to rectify the problems. In that case, you will repeat the steps above for making code changes, making commits, and pushing those commits to github. As long as you push to the same branch on github, then all those commits will automatically be included in the pull request, so reviewers can see the updates you push.&lt;/li&gt;
+&lt;li&gt;Once the core team decides what to do with it, they have basically three options: to accept it (merge the pull request) or defer it (until a later date) or reject it (not merge it and close the pull request). Github will automatically email you about all updates and comments made about your Pull Request.  (&lt;strong&gt;NOTE:&lt;/strong&gt; Your PR won&amp;rsquo;t be merged until you have signed the CLA.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;keeping-your-local-branch-current&#34;&gt;Keeping Your Local Branch Current&lt;/h3&gt;
+&lt;p&gt;When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the &amp;ldquo;upstream remote&amp;rdquo; we created earlier.  (see: &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;https://help.github.com/articles/syncing-a-fork/&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;type: &lt;code&gt;git fetch upstream&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git checkout v158&lt;/code&gt; (ie: if you&amp;rsquo;re going to pull changes from the &lt;code&gt;v158&lt;/code&gt; branch)&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git merge upstream/v158&lt;/code&gt; (merges your local copy with the upstream remote)&lt;/li&gt;
+&lt;li&gt;type: &lt;code&gt;git push&lt;/code&gt; (brings your forked repository up-to-date)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the Pull button in the top button bar&lt;/li&gt;
+&lt;li&gt;For Pull From Repository, choose &amp;ldquo;upstream&amp;rdquo; from the pulldown menu&lt;/li&gt;
+&lt;li&gt;For Remote Branch To Pull, choose &amp;ldquo;v158&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Leave the &amp;ldquo;commit merged changes immediately&amp;rdquo; box checked, and the others unchecked.&lt;/li&gt;
+&lt;li&gt;Click OK&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;cleaning-up-old-branches-or-grabbing-new-branches&#34;&gt;Cleaning up old branches, or grabbing new branches&lt;/h3&gt;
+&lt;p&gt;From time to time you and others will add or remove branches from the github repositories, and you will want to keep your PC in sync with those.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command line:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;type: &lt;code&gt;git fetch upstream&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the Fetch button on the button bar&lt;/li&gt;
+&lt;li&gt;There are 3 checkboxes. Check them all. (You could opt to not prune/delete any local branches you&amp;rsquo;ve created, if you want to preserve them to understand your own work history, by unchecking the corresponding box.)
+(You could also fetch from individual remotes manually, and prune only when fetching from upstream, but never prune when fetching from your own github master)&lt;/li&gt;
+&lt;li&gt;Click OK&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;There are many more great resources explaining how all of this works. Some which you might wish to review include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thoughtbot/guides/tree/master/git&#34;&gt;git protocol by thoughtbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thoughtbot/guides/tree/master/code-review&#34;&gt;code review process&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;© 2014-2022 Zen Cart® Creative Commons 3.0&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and experienced developers alike.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Bug Reporting</title>
+      <link>/zendocs_test1/dev/contributing/issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/issues/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;reporting-bugs&#34;&gt;Reporting Bugs&lt;/h1&gt;
+&lt;p&gt;We welcome bug reports. Please ensure your bug reports align with the following standards:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A clear description of the symptom, ie: the actual &amp;ldquo;problem&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Clear specific (preferably numbered) steps which can be taken to recreate the problem consistently.&lt;/li&gt;
+&lt;li&gt;If there are any pre-requisites needed to make the problem possible, such as configuring a certain Tax Rate for a specific State/Country, etc, those need to be clearly listed.&lt;/li&gt;
+&lt;li&gt;Clearly state what you believe it &amp;ldquo;should&amp;rdquo; do, and why. If relevant, provide a URL to a resource which confirms the standard &amp;hellip; for example a URL to the correct address-format of a certain country if you&amp;rsquo;re reporting that the formatting is wrong in ZC for that country.&lt;/li&gt;
+&lt;li&gt;Provide screenshots if possible or relevant.&lt;/li&gt;
+&lt;li&gt;If the bug has been discussed on the Zen Cart support forum, include the URL to that discussion thread.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;posting-the-issue-on-github&#34;&gt;Posting the Issue on Github&lt;/h1&gt;
+&lt;p&gt;To post your issue on github:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Login to &lt;a href=&#34;https://www.github.com/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to the &lt;a href=&#34;https://github.com/zencart/zencart/issues&#34;&gt;Zen Cart repository &amp;ldquo;Issues&amp;rdquo;&lt;/a&gt; page&lt;/li&gt;
+&lt;li&gt;Check whether your issue has already been reported. If so, click on that existing issue and add a comment to it, explaining exactly how your situation is similar.&lt;/li&gt;
+&lt;li&gt;If your issue isn&amp;rsquo;t already reported, click on the &amp;ldquo;New Issue&amp;rdquo; button and supply the info explained above. Be thorough and as detailed as possible.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;issue-labels&#34;&gt;Issue Labels&lt;/h1&gt;
+&lt;p&gt;After you have posted an issue on Github, a Team Member may assign various labels to your Issue.&lt;/p&gt;
+&lt;p&gt;The current labels are :-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Code Location
+&lt;ol&gt;
+&lt;li&gt;Admin&lt;/li&gt;
+&lt;li&gt;Catalog&lt;/li&gt;
+&lt;li&gt;Checkout&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Issue Type
+&lt;ol&gt;
+&lt;li&gt;Possible Bug (Where you have suggested that a bug exists, but this has not been confirmed)&lt;/li&gt;
+&lt;li&gt;Confirmed Bug (where someone else has provided confirmation of the bug)&lt;/li&gt;
+&lt;li&gt;Enhancement&lt;/li&gt;
+&lt;li&gt;Code Reformatting&lt;/li&gt;
+&lt;li&gt;Feature Request&lt;/li&gt;
+&lt;li&gt;Question&lt;/li&gt;
+&lt;li&gt;Refactoring/Optimizing&lt;/li&gt;
+&lt;li&gt;Styling (where it relates to output html and/or css)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Issue Status
+&lt;ol&gt;
+&lt;li&gt;Up For Grabs (not assigned to a particular user)&lt;/li&gt;
+&lt;li&gt;First Timers Only (for simple fixes to encourage those that have not committed before)&lt;/li&gt;
+&lt;li&gt;In Progress ( Normally automatically added when a PR references an issue)&lt;/li&gt;
+&lt;li&gt;Duplicate (Should reference the duplicate issue)&lt;/li&gt;
+&lt;li&gt;On Hold&lt;/li&gt;
+&lt;li&gt;Won&amp;rsquo;t Fix&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;security-issues&#34;&gt;Security Issues&lt;/h1&gt;
+&lt;p&gt;If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the &lt;a href=&#34;/zendocs_test1/user/about_us/security_reports/&#34;&gt;security reporting protocol&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;reference-guide&#34;&gt;Reference Guide&lt;/h1&gt;
+&lt;p&gt;More information on &lt;a href=&#34;https://guides.github.com/features/issues/&#34;&gt;Github Issue Reporting&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Notices</title>
+      <link>/zendocs_test1/dev/contributing/notices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/notices/</guid>
+      <description>
+        
+        
+        &lt;p&gt;PHP notices are sometimes also called &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug log files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is recommended to test code changes against the lowest and highest versions of PHP supported for the version you are changing.  For Zen Cart 1.5.8, this means testing under PHP 7.4 and PHP 8.1.&lt;/p&gt;
+&lt;p&gt;Tests should be done with Admin &amp;gt; Configuration &amp;gt; Logging &amp;gt; Report All Errors settings of &amp;ldquo;Yes.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The help file &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings&lt;/a&gt; describes some common pitfalls that people experience and recommendations for fixing them.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Testing</title>
+      <link>/zendocs_test1/dev/contributing/tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/contributing/tests/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;preparation--initial-setup&#34;&gt;Preparation / Initial Setup&lt;/h1&gt;
+&lt;p&gt;To prepare to run the Unit Test test suite:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, install Composer:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;go to &lt;code&gt;getcomposer.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;download and install&lt;/li&gt;
+&lt;li&gt;follow the Getting Started instructions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;composer install&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;vendor/bin&lt;/code&gt; to your path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The test framework exists in the &lt;code&gt;not_for_release/testFramework&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h1 id=&#34;running-tests&#34;&gt;Running Tests&lt;/h1&gt;
+&lt;h2 id=&#34;unit-tests&#34;&gt;Unit Tests&lt;/h2&gt;
+&lt;p&gt;Unit tests can be run using&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;composer tests&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;in the root directory of your Zen Cart install.&lt;/p&gt;
+&lt;p&gt;Currently, there are no local configuration requirements needed to run unit tests.&lt;/p&gt;
+&lt;h2 id=&#34;browser-tests&#34;&gt;Browser Tests&lt;/h2&gt;
+&lt;p&gt;Automated browser tests can be run using&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;composer dusk&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;in the root directory of your Zen Cart install.&lt;/p&gt;
+&lt;p&gt;There are configuration requirements needed to run browser tests on your local machine.&lt;/p&gt;
+&lt;h3 id=&#34;browser-test-configuration&#34;&gt;Browser Test Configuration&lt;/h3&gt;
+&lt;p&gt;If you want to run browser tests on your local machine, you will need to create 3 configuration files.&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;not_for_release/testFramework/Browser/duskConfigures&lt;/code&gt; you will need to create a file called&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$user.configure.dusk/php&lt;/code&gt; where &lt;code&gt;$user&lt;/code&gt; is replaced by the user that your php scripts run as.&lt;/p&gt;
+&lt;p&gt;You can find this by echoing $_SERVER[&amp;lsquo;USER] in some php script.&lt;/p&gt;
+&lt;p&gt;An example file &lt;code&gt;dusk.configure.php&lt;/code&gt; can be used as a template.&lt;/p&gt;
+&lt;p&gt;Note: The database user &lt;code&gt;TESTING_DB_SERVER_USERNAME&lt;/code&gt; must have sufficient rights to create a database.&lt;/p&gt;
+&lt;p&gt;The other configuration files needs to be created in 
+&lt;code&gt;not_for_release/testFramework/Browser/zencartConfigures&lt;/code&gt;and be named&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;admin.$user.configure.php&lt;/code&gt; and &lt;code&gt;catalog.$user.configure.php&lt;/code&gt; again with &lt;code&gt;$user&lt;/code&gt; replaced with the user the php 
+scripts run as.&lt;/p&gt;
+&lt;p&gt;These configure files should be copies of the normal &lt;code&gt;configure.php&lt;/code&gt; files that you would have in 
+&lt;code&gt;admin/includes/configure.php&lt;/code&gt; and &lt;code&gt;includes/configure.php&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;admin-alert-page&#34;&gt;Admin Alert Page&lt;/h3&gt;
+&lt;p&gt;Normally, if the zc_install directory exists Zen Cart will display an alert page on any attempt to access
+admin URI&amp;rsquo;s. FIXME&lt;/p&gt;
+&lt;h3 id=&#34;database-regeneration&#34;&gt;Database Regeneration&lt;/h3&gt;
+&lt;p&gt;When Browser tests are run, and in order to create some isolation between various tests the framework will 
+dump whatever database you have set in the configuration files mentioned earlier.&lt;/p&gt;
+&lt;p&gt;It will then load the default database schema from &lt;code&gt;zc_install/sql/install/mysql_zencart.sql&lt;/code&gt; and the demo 
+data from &lt;code&gt;zc_install/sql/demo/mysql_demo.sql&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This means that if your testing database contains any changes from the default install, they will be lost.&lt;/p&gt;
+&lt;p&gt;If your need to keep your local changes then you must ensure that they have been added to 
+&lt;code&gt;zc_install/sql/install/mysql_zencart.sql&lt;/code&gt; and &lt;code&gt;zc_install/sql/demo/mysql_demo.sql&lt;/code&gt; before running 
+the browser tests.&lt;/p&gt;
+&lt;p&gt;FIXME&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

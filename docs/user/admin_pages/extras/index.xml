@@ -1,0 +1,211 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Extras</title>
+    <link>/user/admin_pages/extras/</link>
+    <description>Recent content in Extras on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/admin_pages/extras/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Record Artists</title>
+      <link>/user/admin_pages/extras/record_artists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/record_artists/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-a-recording-artist&#34;&gt;Add a recording artist&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the insert button.&lt;/li&gt;
+&lt;li&gt;Enter the Artist&amp;rsquo;s name in that field.&lt;/li&gt;
+&lt;li&gt;If you have a picture of the artist you can optionally upload it from your web browser by typing in the name of the file containing the image in the Artists Image field, or click on the browse button to search your computer.&lt;/li&gt;
+&lt;li&gt;If you want to store the picture in a different directory, click on the Image Directory dropdown picker to select it.&lt;/li&gt;
+&lt;li&gt;If the artist has a web site, you can enter the full site name (including http://) in the Artists Web Site field.&lt;/li&gt;
+&lt;li&gt;Click on the save button to save this entry (and upload the image if you have specified one), or click on the cancel button to discard this entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;edit-an-existing-artist&#34;&gt;Edit an existing artist&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name you want to change, then click on the edit button, or click on the green &lt;code&gt;e&lt;/code&gt; next to the name you want to change.&lt;/li&gt;
+&lt;li&gt;Change any of the values or you may do an upload, in the same manner as with the add function.&lt;/li&gt;
+&lt;li&gt;Click on the save button to save your changes (and upload the image if you have specified one), or click on the cancel button to discard this change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;delete-a-recording-artist&#34;&gt;Delete a recording artist&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name you want to change, then click on the delete button, or click on the red &lt;code&gt;x&lt;/code&gt; next to the name you want to change.&lt;/li&gt;
+&lt;li&gt;You will receive a request for confirmation. If you have attached an image to this artist and you also want to delete the attached image file, check the delete image box.&lt;/li&gt;
+&lt;li&gt;Click on the delete button again to delete the artist (and any attached image file if you have checked the delete image box), or click on the cancel button to not delete the artist.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Record Companies</title>
+      <link>/user/admin_pages/extras/record_companies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/record_companies/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-a-record-company&#34;&gt;Add a record company&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the insert button.&lt;/li&gt;
+&lt;li&gt;Enter the Record Company name in that field.&lt;/li&gt;
+&lt;li&gt;If you have a picture of the record company&amp;rsquo;s trademark or other logo you can optionally upload it from your web browser by typing in the name of the file containing the image in the Record Company Image field, or click on the browse button to search your computer.&lt;/li&gt;
+&lt;li&gt;If you want to store the picture in a different directory, click on the Image Directory dropdown picker to select it.&lt;/li&gt;
+&lt;li&gt;If the record company has a web site, you can enter the full site name (including http://) in the record company Web Site field.&lt;/li&gt;
+&lt;li&gt;Click on the save button to save this entry (and upload the image if you have specified one), or click on the cancel button to discard this entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;edit-an-existing-record-company&#34;&gt;Edit an existing record company&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the record company name you want to change, then click on the edit button, or click on the green &lt;code&gt;e&lt;/code&gt; next to the name you want to change.&lt;/li&gt;
+&lt;li&gt;Change any of the values or you may do an upload, in the same manner as with the add function.&lt;/li&gt;
+&lt;li&gt;Click on the save button to save your changes (and upload the image if you have specified one), or click on the cancel button to discard this change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;delete-a-record-company&#34;&gt;Delete a Record Company&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name you want to change, then click on the delete button, or click on the red &lt;code&gt;x&lt;/code&gt; next to the name you want to change.&lt;/li&gt;
+&lt;li&gt;You will receive a request for confirmation. If you have attached an image to this record company and you also want to delete the attached image file, check the delete image box.&lt;/li&gt;
+&lt;li&gt;Click on the delete button again to delete the record company (and any attached image file if you have checked the delete image box), or click on the cancel button to not delete the record company.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Music Genre</title>
+      <link>/user/admin_pages/extras/music_genre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/music_genre/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-new-music-genre&#34;&gt;Add New Music Genre&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the insert button.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page.&lt;/li&gt;
+&lt;li&gt;In the Music Genre Name field, enter the name, for example, Acid Rock or Light Classical.&lt;/li&gt;
+&lt;li&gt;Click on the save button to add the new Music Genre, or click on the cancel button to discard the entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;edit-existing-music-genre&#34;&gt;Edit existing Music Genre&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the Music Genre you wish to edit, until the right arrow appears in the Action heading. then click on the edit button, or click on the green &lt;code&gt;e&lt;/code&gt; button next to a particular entry to edit.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page, same as with the add function, only the pre-existing data will be pre-loaded into the field.&lt;/li&gt;
+&lt;li&gt;Make your corrections.&lt;/li&gt;
+&lt;li&gt;Click on the save button to change the Music Genre, or click on the cancel button to discard the change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;delete-existing-music-genre&#34;&gt;Delete existing Music Genre&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the Music Genre you wish to delete, until the right arrow appears in the Action heading. then click on the delete button, or click on the red &lt;code&gt;x&lt;/code&gt; button next to a particular entry to delete.&lt;/li&gt;
+&lt;li&gt;You will be asked to confirm your choice. Click on the delete button again to remove the Music Genre, or click on the cancel button to retain the Music Genre.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Media Manager</title>
+      <link>/user/admin_pages/extras/media_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/media_manager/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-collection&#34;&gt;Add Collection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the insert button.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page.&lt;/li&gt;
+&lt;li&gt;In the Media Collection Name field, enter the name, for example, Moody Blues - Days of Future Passed or The Hospital DVD.&lt;/li&gt;
+&lt;li&gt;Click on the save button to add the new collection item, or click on the cancel button to discard the entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;edit-collection&#34;&gt;Edit Collection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When editing a collection, additional information may be added that could not be entered from the Add Collection function.&lt;/li&gt;
+&lt;li&gt;Click on the name of the media you wish to edit, until the right arrow appears in the Action heading, then click on the edit button, or click on the green e button next to a particular entry to edit.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page, same as with the add function, only pre-existing data will be pre-loaded into the fields, and there are additional fields which were not present in the add collection function.&lt;/li&gt;
+&lt;li&gt;The Media Collection Name field allows you to change the name of the collection.&lt;/li&gt;
+&lt;li&gt;There is also an Add Media Clip field, and a Browse button, which will allow you the option to upload a clip file through your web browser. Type in a file name or click on the browse button to search for it on your computer.&lt;/li&gt;
+&lt;li&gt;If you have defined more than one directory to upload media into, and you want to use a different directory than the default, select it in the Upload to Media Directory picker.&lt;/li&gt;
+&lt;li&gt;In the Media Clip Type field, use the drop-down picker to select the type of clip. Media types are added through the Admin - Extras - Media Types menu.&lt;/li&gt;
+&lt;li&gt;Click on the save button to save the changes, or click on the cancel button to discard them. The save button will not attach a media clip to the entry; use the add button to save changes if you are also uploading a media clip to attach to this collection.&lt;/li&gt;
+&lt;li&gt;Click on the add button to upload a media clip, if you have specified one. The clip will be attached to this collection. The add button will also save any change to the name of the collection.&lt;/li&gt;
+&lt;li&gt;If a media clip has been uploaded and attached to this collection, it may be removed by clicking on the delete button immediately to the left of the name. Multiple attached clips will have a separate delete button for each clip. The delete button does not save this data entry form, and it remains open for further action after the media clip has been deleted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;delete-collection&#34;&gt;Delete Collection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the collection you wish to delete, until the right arrow appears in the action heading. then click on the delete button, or click on the red x button next to a particular entry to delete.&lt;/li&gt;
+&lt;li&gt;You will be asked to confirm your choice. Click on the delete button again to remove the collection, or click on the cancel button to retain the collection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;assign-a-collection-to-a-product&#34;&gt;Assign a collection to a product&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the media you wish to assign, until the right arrow appears in the Action heading, then click on the assign to product button.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page.&lt;/li&gt;
+&lt;li&gt;Select the category of the product from the first drop down. The product in the second drop down will change according to the category selected.&lt;/li&gt;
+&lt;li&gt;Select the product to assign this collection to.&lt;/li&gt;
+&lt;li&gt;Click on the add button to assign this collection to the selected product. Click on the cancel button to decline the assignment.&lt;/li&gt;
+&lt;li&gt;If the collection has been assigned to other products, each will be listed below with a delete button to their left. Click on this button to remove this collection from that product.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Media Types</title>
+      <link>/user/admin_pages/extras/media_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/media_types/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-new-media-type&#34;&gt;Add New Media Type&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the insert button.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page.&lt;/li&gt;
+&lt;li&gt;In the Media Type Name field, enter the name, for example, Ogg Vorbis/Ogg Theora or Microsoft Windows Media.&lt;/li&gt;
+&lt;li&gt;In the Media Type Extension field, enter the file-name extension for that media type, with the leading period, for example, .ogg or .wmv.&lt;/li&gt;
+&lt;li&gt;Click on the save button to add the new media type, or click on the cancel button to discard the entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;edit-existing-media-type&#34;&gt;Edit existing media type&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the media you wish to edit, until the right arrow appears in the action heading. then click on the edit button, or click on the green e button next to a particular entry to edit.&lt;/li&gt;
+&lt;li&gt;A data-entry form will appear on the right side of the page, same as with the add function, only the pre-existing data will be pre-loaded into the fields.&lt;/li&gt;
+&lt;li&gt;Change any appropriate fields.&lt;/li&gt;
+&lt;li&gt;Click on the save button to change the new media type, or click on the cancel button to discard the change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;delete-existing-media-type&#34;&gt;Delete existing media type&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the name of the media you wish to delete, until the right arrow appears in the action heading. then click on the delete button, or click on the red x button next to a particular entry to delete.&lt;/li&gt;
+&lt;li&gt;You will be asked to confirm your choice. Click on the delete button again to remove the media type, or click on the cancel button to retain the media type.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Removing Music related menu items</title>
+      <link>/user/admin_pages/extras/remove_music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/extras/remove_music/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If your store does not need music related menu items, you can hide them by editing the file &lt;code&gt;admin/includes/languages/english/extra_definitions/product_music.php&lt;/code&gt; and commenting out the defines starting with &lt;code&gt;BOX_CATALOG_&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

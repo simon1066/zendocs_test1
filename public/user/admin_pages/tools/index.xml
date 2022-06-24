@@ -1,0 +1,429 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Tools</title>
+    <link>/zendocs_test1/user/admin_pages/tools/</link>
+    <description>Recent content in Tools on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Banner Manager</title>
+      <link>/zendocs_test1/user/admin_pages/tools/banner_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/banner_manager/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page manages individual text and image banners and their groups.  When the screen is opened, a list of existing banners is displayed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/banner_manager.png&#34; alt=&#34;Banner Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each banner belongs to a banner group.  Three banner groups come with Zen Cart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wide-Banners&lt;/li&gt;
+&lt;li&gt;Sidebox-Banners&lt;/li&gt;
+&lt;li&gt;BannersAll&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Banner Positions are provided by your template.  There are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;three positions in the header (positions 1, 2 and 3),&lt;/li&gt;
+&lt;li&gt;three positions in the footer (positions 1, 2 and 3),&lt;/li&gt;
+&lt;li&gt;three sidebox positions (banner_box, banner_box2 and banner_box_all).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Generally you would choose at most one of these positions in each area.&lt;/p&gt;
+&lt;p&gt;Groups are then specified in the &lt;em&gt;Banner Display Groups&lt;/em&gt; settings in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt;.  For example, setting &lt;em&gt;Banner Display Groups - Footer Position 3&lt;/em&gt; to &lt;em&gt;Wide-Banners&lt;/em&gt; means that a banner in the Wide-Banners group will be shown in Footer Position three. Here&amp;rsquo;s what that looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/banner_footer_position_3.png&#34; alt=&#34;Wide Banner Footer Position 3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Similarly, turning on the &lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/&#34;&gt;banner_box sidebox&lt;/a&gt; and setting &lt;em&gt;Banner Display Groups - Side Box banner_box&lt;/em&gt; to &lt;em&gt;Sidebox-Banners&lt;/em&gt; means that a banner will be selected from the Sidebox-Banners group and shown in the banner_box sidebox.&lt;/p&gt;
+&lt;p&gt;To add a new banner, press the &lt;em&gt;New Banner&lt;/em&gt; button at the bottom of the Banner Manager screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/new_banner.png&#34; alt=&#34;New Banner&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some users like to name banner groups by size, using group names like HalfWidth, FullWidth, and so forth.  Others like to name banner groups by placement, using group names like BanHeadPos1, BanHeadPos2, BanHeadPos3, BanFootPos1, BanFootPos3, BanFootPos3.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Empty banner groups are deleted. Adding a banner group is done by specifying the group name in the text field below the Banner Group dropdown on the New Banner screen. Once a Banner Group is added, the new name will appear in the dropdown.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Define Pages Editor</title>
+      <link>/zendocs_test1/user/admin_pages/tools/define_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/define_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;Define pages&lt;/a&gt; are pieces of HTML content which display above normal page content for the pages listed below.  Define pages may be edited in the admin using the interface provided by this page.&lt;/p&gt;
+&lt;p&gt;Define Pages Editor gives you an option to change the content of the following pages:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page Name&lt;/th&gt;
+&lt;th&gt;Define Page File&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Ask a Question Page&lt;/td&gt;
+&lt;td&gt;define_ask_a_question.php (since 1.5.7)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Success Page&lt;/td&gt;
+&lt;td&gt;define_checkout_success.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conditions of Use&lt;/td&gt;
+&lt;td&gt;define_conditions.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Contact Us&lt;/td&gt;
+&lt;td&gt;define_contact_us.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discount Coupons&lt;/td&gt;
+&lt;td&gt;define_discount_coupon.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Index Page (Home Page)&lt;/td&gt;
+&lt;td&gt;define_main_page.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 2&lt;/td&gt;
+&lt;td&gt;define_page_2.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 3&lt;/td&gt;
+&lt;td&gt;define_page_3.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page 4&lt;/td&gt;
+&lt;td&gt;define_page_4.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page Not Found&lt;/td&gt;
+&lt;td&gt;define_page_not_found.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Privacy Notice&lt;/td&gt;
+&lt;td&gt;define_privacy.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping &amp;amp; Returns&lt;/td&gt;
+&lt;td&gt;define_shippinginfo.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shopping Cart&lt;/td&gt;
+&lt;td&gt;define_shopping_cart.php  (since 1.5.7)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Site Map&lt;/td&gt;
+&lt;td&gt;define_site_map.php&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/define_pages_editor.png&#34; alt=&#34;Define Pages Editor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Define pages content and links to define pages may be enabled or disabled in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Page Status &lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Developer&#39;s Tool Kit</title>
+      <link>/zendocs_test1/user/admin_pages/tools/developers_tool_kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/developers_tool_kit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Developers Tool Kit is an essential tool for anyone involved in customizing Zen Cart.&lt;/p&gt;
+&lt;p&gt;The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact match with the entered text. (Related article: &lt;a href=&#34;/zendocs_test1/user/new_user_topics/what_files/&#34;&gt;Finding Which Files To Edit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can use text editors and other tools directly on your PC to search through files as well.&lt;/p&gt;
+&lt;p&gt;With the Developers Tool Kit, you can filter your searches to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Language files&lt;/li&gt;
+&lt;li&gt;Function files&lt;/li&gt;
+&lt;li&gt;Class files&lt;/li&gt;
+&lt;li&gt;Template files&lt;/li&gt;
+&lt;li&gt;All files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most of the time, searching through &lt;strong&gt;All Files&lt;/strong&gt; will give the best and most reliable result.&lt;/p&gt;
+&lt;p&gt;You can also search through Configuration Settings, and even do quick edits to configuration values.&lt;/p&gt;
+&lt;h3 id=&#34;searching-for-text&#34;&gt;Searching for text&lt;/h3&gt;
+&lt;p&gt;Most text is stored in the language files, but there are a few exceptions where text is stored in the database. If you want to change some text from somewhere, just enter the text you want to modify in the input box labeled &amp;ldquo;Look-up in all files&amp;rdquo; in the Developers Tool Kit, then select the option from the drop-down menu labeled &amp;ldquo;All Files Look-ups:&amp;rdquo; and hit the search button.&lt;/p&gt;
+&lt;p&gt;If you get too many results, try to narrow it down by specifying more text to search for if possible. If you get too few results, try to increase the results by specifying less text to search for. Keep in mind that text may actually be sequenced into multiple parts as code, and html tags may also be included somewhere in the text. This means that searching for just a small part of the text, as in a few words rather than the full sentence, is sometimes necessary because the search term must be an exact match.&lt;/p&gt;
+&lt;p&gt;E.g. searching for &amp;ldquo;sales message here&amp;rdquo; does not match &amp;ldquo;sales message goes here&amp;rdquo;, so search for &amp;ldquo;sales message&amp;rdquo; instead.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: EZ-Pages</title>
+      <link>/zendocs_test1/user/admin_pages/tools/ezpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/ezpages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to add and remove special EZ-Pages, pages which are easier to create or edit than standard PHP or HTML.&lt;/p&gt;
+&lt;img src=&#34;/zendocs_test1/images/ezpages_listing.png&#34; alt=&#34;EZ-Pages list&#34; /&gt;
+&lt;p&gt;The number on the left hand side is the EZ-Page id.&lt;/p&gt;
+&lt;h1 id=&#34;adding-new-ez-pages&#34;&gt;Adding New EZ-Pages&lt;/h1&gt;
+&lt;p&gt;At the bottom right side of the page shown above is a &amp;ldquo;New Page&amp;rdquo; button.  Press it, and you&amp;rsquo;ll be taken to a page creation screen.&lt;/p&gt;
+&lt;h1 id=&#34;modifying-and-deleting-ez-pages&#34;&gt;Modifying and Deleting EZ-Pages&lt;/h1&gt;
+&lt;p&gt;If you select a specific EZ-Page, a sidebar appears with Edit and Delete buttons.&lt;/p&gt;
+&lt;h1 id=&#34;setting-visibility&#34;&gt;Setting Visibility&lt;/h1&gt;
+&lt;p&gt;A set of configurations determines where links to EZ-Pages are shown. In  Admin &amp;gt; Tools &amp;gt; EZ-Pages, you will see a set of fields like the following:&lt;/p&gt;
+&lt;br /&gt;
+&lt;img src=&#34;/zendocs_test1/images/ezpages.png&#34; alt=&#34;EZ-Pages configuration&#34; /&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Setting Header = Yes with a sort order &amp;gt; 0 means a link to this page will be displayed by &lt;code&gt;includes/templates/responsive_classic/templates/tpl_ezpages_bar_header.php&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setting Sidebox = Yes with a sort order &amp;gt; 0 means a link to this page will be displayed by &lt;code&gt;includes/modules/sideboxes/ezpages.php&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setting Footer = Yes with a sort order &amp;gt; 0 means a link to this page will be displayed by &lt;code&gt;includes/templates/responsive_classic/templates/tpl_ezpages_bar_footer.php&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you do not want the link to appear in the header, footer or sidebox, or you are not using these components in your template, you still have the ability to  show an EZ-Page link and have the EZ-Page display properly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;use the &lt;code&gt;Page is Visible&lt;/code&gt; radio button&lt;/li&gt;
+&lt;li&gt;Update the template where you want the link to appear. See &lt;a href=&#34;/zendocs_test1/user/ezpages/ezpages_display/&#34;&gt;building a link to an EZ-Page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;using-toc&#34;&gt;Using TOC&lt;/h1&gt;
+&lt;p&gt;With EZ-Pages you can build stand-alone pages or you can build a set of 
+related pages which are connected by a table of contents.&lt;/p&gt;
+&lt;p&gt;(i) When using TOC, make sure to mark all pages in a collection with TOC=yes, not just the main page.&lt;/p&gt;
+&lt;p&gt;(ii) Give all pages in the same collection the same Chapter number.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/ezpages/&#34;&gt;EZ-Page FAQs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Install SQL Patches</title>
+      <link>/zendocs_test1/user/admin_pages/tools/install_sql_patches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/install_sql_patches/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Install SQL Patches page allows you to run SQL commands directly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/install_sql_patches.png&#34; alt=&#34;Install SQL Patches&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The text box on the top allows you to type in commands.  The file selection button on the bottom allows you to import a file containing commands.&lt;/p&gt;
+&lt;p&gt;If you have used a prefix for your database, when you use Install SQL Patches, the prefix doesn&amp;rsquo;t need to be added to the script (or the command).  If you use phpMyAdmin instead, you must adjust each of your SQL statements to reflect the prefix.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Layout Boxes Controller</title>
+      <link>/zendocs_test1/user/admin_pages/tools/layout_boxes_controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/layout_boxes_controller/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to select which sideboxes are shown 
+on your storefront, and where they should be placed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/layout_boxes_controller.png&#34; alt=&#34;Layout Boxes Controller&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are many &lt;a href=&#34;/zendocs_test1/user/sideboxes/sidebox_list/&#34;&gt;built-in sideboxes&lt;/a&gt;.  Choose the ones that would be most beneficial for your store.  You can also &lt;a href=&#34;/zendocs_test1/user/sideboxes/build_sidebox/&#34;&gt;design your own sidebox&lt;/a&gt; if what you need is not already available.&lt;/p&gt;
+&lt;p&gt;For more information about sideboxes, see &lt;a href=&#34;/zendocs_test1/user/sideboxes/&#34;&gt;the sidebox FAQs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Newsletter and Product Notifications Manager</title>
+      <link>/zendocs_test1/user/admin_pages/tools/newsletter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/newsletter/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to compose a newsletter or product notification 
+email message to be sent to a customer or a group of customers.&lt;/p&gt;
+&lt;p&gt;If you have &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/#enable_html_emails&#34;&gt;HTML enabled&lt;/a&gt;, you will be allowed to create the message in
+both rich and plain text; otherwise, you will only be allowed to use plain text.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/newsletter.png&#34; alt=&#34;Newsletter Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;From there, you must select a distribution list from several options:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/newsletter_2.png&#34; alt=&#34;Newsletter Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then you get a final confirmation page with a preview of the emails and the option to send or cancel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/newsletter_3.png&#34; alt=&#34;Newsletter Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you prefer to stop after drafting the newsletter, you can always come back to it later.  A sidebar is available for each entry in your list of newsletters/product notifications that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/newsletter_sidebar.png&#34; alt=&#34;Newsletter Sidebar&#34;&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Related Pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/product_notification/&#34;&gt;Product Notifications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Send Email</title>
+      <link>/zendocs_test1/user/admin_pages/tools/send_email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/send_email/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to send email to your customers. Individual customers may be selected, or pre-defined groupings may be used.&lt;/p&gt;
+&lt;p&gt;If your store uses HTML email, you will have an additional text box in which to enter the HTML content to be sent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Sending large numbers of emails (newsletters or other marketing content) from your hosting account is no longer recommended. 
+See &lt;a href=&#34;/zendocs_test1/user/email/newsletters/&#34;&gt;Newsletters&lt;/a&gt; for alternatives.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/email/&#34;&gt;email FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can reach the Send Email screen either from Admin &amp;gt; Tools &amp;gt; Send Email, or from &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/a&gt;, selecting a customer and pressing the &lt;em&gt;Email&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/send_mail.png&#34; alt=&#34;Send Email&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Server/Version Info</title>
+      <link>/zendocs_test1/user/admin_pages/tools/server_info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/server_info/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Clicking &lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;Version&lt;/a&gt; on the top right Admin navigation menu gets you to this page.      &lt;img src=&#34;/zendocs_test1/images/skinny_version.png&#34; alt=&#34;Version Link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Server/Version info page allows you to view information about the server 
+on which you are running Zen Cart.&lt;/p&gt;
+&lt;p&gt;The information at the top of the page gives you a quick snapshot of the most 
+critical values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(a) PHP Version: Version of PHP you are using.&lt;/li&gt;
+&lt;li&gt;(b) Database Engine: Version of MySQL you are using.&lt;/li&gt;
+&lt;li&gt;(c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the &lt;a href=&#34;https://www.php.net/manual/en/ini.core.php#ini.memory-limit&#34;&gt;PHP Documentation on this setting&lt;/a&gt;.  Read more about choosing an initial value for memory limit in &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-memory-recommendations&#34;&gt;PHP memory limit and Zen Cart&lt;/a&gt;, and checking and updating the value in &lt;a href=&#34;/zendocs_test1/user/running/memory_limit/&#34;&gt;PHP memory_limit&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;(d) Database: (Since Zen Cart 1.5.6) the name of the database from your &lt;code&gt;admin/includes/configure.php&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below this is the history of your database (e).&lt;/p&gt;
+&lt;p&gt;Below (a) is the output of &lt;a href=&#34;https://www.php.net/manual/en/function.phpinfo.php&#34;&gt;&lt;code&gt;phpinfo()&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;/zendocs_test1/images/version_info_zc_156.png&#34; alt=&#34;Zen Cart Version information&#34; /&gt;
+&lt;p&gt;Be sure the version of PHP you are running is a 
+&lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;supported version&lt;/a&gt;. 
+Running an older unsupported version leaves you vulnerable to attack 
+by bad guys.  Stay up to date!&lt;/p&gt;
+&lt;p&gt;If your Database Engine value shows &lt;em&gt;MariaDB&lt;/em&gt;, 
+then, if needed, you can see the 
+&lt;a href=&#34;https://mariadb.com/kb/en/mariadb-vs-mysql-compatibility/&#34;&gt;MySQL to MariaDB compatibility matrix here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are coming to this page because of a new problem with your cart, be sure your Zen Cart version is compatible with your PHP version.  Refer to the &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;PHP Version - Zen Cart version compatibility matrix&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Store Manager</title>
+      <link>/zendocs_test1/user/admin_pages/tools/store_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/store_manager/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to reset various counts and settings in your database.
+It also allows you to remove debug logs from your cart.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/store_manager.png&#34; alt=&#34;Store Manager&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Actions available in Store Manager are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Update All Products&amp;rsquo; Attribute Sort Orders: if you decide you want (for example) the Color option to appear before the Size option on the product info screen, you would set the attribute sort order in &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_name_manager/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Option Name Manager&lt;/a&gt;, then use this button.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update ALL Products Price Sorter: The Price Sorter exists so that your listing pages can allow customers to sort by price.  You should use this action after importing price data using a tool like &lt;a href=&#34;/zendocs_test1/user/products/easypopulate/&#34;&gt;EasyPopulate&lt;/a&gt;, or manipulating prices in the database by hand or any tool other than the admin product/sale/special/pricemanager pages. 
+Note that after running &amp;ldquo;Reset ALL Products Master Categories ID&amp;rdquo; (below) you should also use the &amp;ldquo;Update ALL Products Price Sorter.&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Hit Counter: The hit counter is shown in the dashboard of your admin in the Statistics widget, and shows you the number of visitors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reset ALL Products Ordered: The products ordered counter is a field in the products table which counts the number of times a product has been sold.  It is used to build the Bestsellers list in the storefront.  Note that this field is &lt;strong&gt;not used&lt;/strong&gt; in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_purchased/&#34;&gt;Products Purchased Report&lt;/a&gt;; that report uses a more accurate (but slower) way of counting product sales.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reset ALL Products Master Categories ID: If your store uses &lt;a href=&#34;/zendocs_test1/user/products/linked_product/&#34;&gt;linked products&lt;/a&gt; and you add and delete categories frequently, the master_categories_id field for a product can wind up pointing to a deleted category.  This fixes that problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set next order number: If you want to start your order numbers at a higher initial value than 1, or need to bump them for another reason, this is the place to do it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optimize Database: Databases where large numbers of inserts, updates, and deletes are done can become less efficient over time; running this command will solve this problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cleanup Debug Log Files: This button will remove all &lt;a href=&#34;/zendocs_test1/user/troubleshooting/debug_logs/&#34;&gt;debug logs&lt;/a&gt; in your &lt;code&gt;/logs&lt;/code&gt; folder.  See &lt;a href=&#34;/zendocs_test1/user/running/removing_debug_logs/&#34;&gt;removing debug logs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Prior to 1.5.7, there was an option to &amp;ldquo;Reset ALL Products Viewed.&amp;rdquo; This option was removed because it is unnecessary since the &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_viewed/&#34;&gt;products viewed&lt;/a&gt; report now allows filtering by date range.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Selection</title>
+      <link>/zendocs_test1/user/admin_pages/tools/template_selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/template_selection/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to select which template is used when displaying pages on your storefront.&lt;/p&gt;
+&lt;p&gt;When the page loads, the current template is shown&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/template_selection.png&#34; alt=&#34;Templates list&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the right sidebar, a button permits you to change the current template.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/change_the_template.png&#34; alt=&#34;Templates right sidebar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When the Change the Template button is pressed, a dropdown selector list of available templates is shown.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/template_change_list.png&#34; alt=&#34;Switching Templates&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;/zendocs_test1/user/template/&#34;&gt;Template Documentation&lt;/a&gt; for instructions on creating your own template.&lt;/p&gt;
+&lt;p&gt;To test a template privately before making it live, use the instructions in &lt;a href=&#34;/zendocs_test1/user/template/private_testing/&#34;&gt;privately testing a template&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Who&#39;s Online</title>
+      <link>/zendocs_test1/user/admin_pages/tools/whos_online/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/whos_online/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page allows you to view information about the customers who
+are viewing your cart.&lt;/p&gt;
+&lt;p&gt;The left hand side top of the page shows a legend, which explains the icons used on the page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/who_legend.png&#34; alt=&#34;Whos online legend&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Below that, is a list of visitors to your store.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/who_center.png&#34; alt=&#34;Whos online list&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The screen can be configured to refresh automatically, to exclude spiders or to exclude admin accounts, using  the controls at the top right hand side of the page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/who_controls.png&#34; alt=&#34;Whos online list&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

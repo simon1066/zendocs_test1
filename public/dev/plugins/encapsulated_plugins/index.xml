@@ -1,0 +1,501 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Encapsulated Plugins</title>
+    <link>/zendocs_test1/dev/plugins/encapsulated_plugins/</link>
+    <description>Recent content in Encapsulated Plugins on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/dev/plugins/encapsulated_plugins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dev: Directory Structure</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/directory_structure/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;directory-structure&#34;&gt;Directory Structure&lt;/h2&gt;
+&lt;p&gt;Plugins written for the new architecture will reside in the &lt;code&gt;zc_plugins&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;Within their directory plugin authors can add subdirectories that mimic the main Zen Cart directories.&lt;/p&gt;
+&lt;p&gt;Note how each plugin starts with a versioned directory. 
+This allows for automated upgrades and the possibility of downgrading as well.&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;admin&lt;/code&gt; folder &lt;em&gt;must&lt;/em&gt; be called &lt;code&gt;admin&lt;/code&gt; here (not renamed).&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zc_plugins&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;rewardPoints&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;v1.0.0&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;manifest.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Installer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;admin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;includes
+&lt;ul&gt;
+&lt;li&gt;auto_loaders&lt;/li&gt;
+&lt;li&gt;classes&lt;/li&gt;
+&lt;li&gt;extra_datafiles&lt;/li&gt;
+&lt;li&gt;init_includes&lt;/li&gt;
+&lt;li&gt;javascript&lt;/li&gt;
+&lt;li&gt;languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;catalog&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;functions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;extra_functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;templates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;v1.0.1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;manifest.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Installer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;admin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;includes
+&lt;ul&gt;
+&lt;li&gt;auto_loaders&lt;/li&gt;
+&lt;li&gt;classes&lt;/li&gt;
+&lt;li&gt;extra_datafiles&lt;/li&gt;
+&lt;li&gt;init_includes&lt;/li&gt;
+&lt;li&gt;javascript&lt;/li&gt;
+&lt;li&gt;languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;catalog&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;functions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;extra_functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;templates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While these examples mention the &lt;code&gt;catalog&lt;/code&gt; subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.&lt;/p&gt;
+&lt;p&gt;ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The &lt;code&gt;Installer&lt;/code&gt; folder is optional; you can embed the installation logic in your plugin if you prefer.  See &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;Installer Classes&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;Plugin SQL Installation&lt;/a&gt; for details on using the &lt;code&gt;Installer&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE on JavaScript loading:&lt;/strong&gt; naming your JavaScript file the same name as your PHP file name will make it automatically load.  If you have additional .js files to load, give them names starting with the PHP file name followed by an underscore.  For example, if you create a file called &lt;code&gt;admin/rewards.php&lt;/code&gt;, the autoloader will load &lt;code&gt;admin/includes/javascript/rewards.js&lt;/code&gt;, as well as any JavaScript file whose name matches the pattern &lt;code&gt;admin/includes/javascript/rewards_*.js&lt;/code&gt;, e.g. &lt;code&gt;admin/includes/javascript/rewards_sha-256.js&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Manifest Files</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;manifest-files&#34;&gt;Manifest Files&lt;/h2&gt;
+&lt;p&gt;Each plugin must have a &lt;code&gt;manifest.php&lt;/code&gt; file in the root of its version directory.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zc_plugins
+&lt;ul&gt;
+&lt;li&gt;myPlugin
+&lt;ul&gt;
+&lt;li&gt;v1.0.0
+&lt;ul&gt;
+&lt;li&gt;manifest.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The  manifest file should look like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+return [
+    &amp;#39;pluginVersion&amp;#39; =&amp;gt; &amp;#39;v3.0.0&amp;#39;,
+    &amp;#39;pluginName&amp;#39; =&amp;gt; &amp;#39;Display logs&amp;#39;,
+    &amp;#39;pluginDescription&amp;#39; =&amp;gt; &amp;#39;Display and manage Zen Cart log files.&amp;#39;,
+    &amp;#39;pluginAuthor&amp;#39; =&amp;gt; &amp;#39;Vinos de Frutas Tropicales (lat9)&amp;#39;,
+    &amp;#39;pluginId&amp;#39; =&amp;gt; 1583, // ID from Zen Cart forum
+    &amp;#39;zcVersions&amp;#39; =&amp;gt; [&amp;#39;v157&amp;#39;],
+    &amp;#39;changelog&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, // online URL (eg github release tag page, or changelog file there) or local filename only, ie: changelog.txt (in same dir as this manifest file)
+    &amp;#39;github_repo&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, // url
+    &amp;#39;pluginGroups&amp;#39; =&amp;gt; [],
+];
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;pluginversion&#34;&gt;pluginVersion&lt;/h3&gt;
+&lt;p&gt;The version of this plugin. It should match the version number entered when submitting the plugin to the Plugins Library on the Zen Cart forum.&lt;/p&gt;
+&lt;h3 id=&#34;pluginname&#34;&gt;pluginName&lt;/h3&gt;
+&lt;p&gt;A human readable string for the name of the plugin.&lt;/p&gt;
+&lt;h3 id=&#34;plugindescription&#34;&gt;pluginDescription&lt;/h3&gt;
+&lt;p&gt;A human readable string describing the plugin.&lt;/p&gt;
+&lt;p&gt;Flagrant advertising is not permitted.&lt;/p&gt;
+&lt;h3 id=&#34;pluginauthor&#34;&gt;pluginAuthor&lt;/h3&gt;
+&lt;p&gt;A human readable string for the plugin author.&lt;/p&gt;
+&lt;h3 id=&#34;pluginid&#34;&gt;PluginId&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; number assigned by the Zen Cart forum site when submitting the plugin for review.
+e.g. &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1583&#34;&gt;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1583&lt;/a&gt;
+This is used by the store&amp;rsquo;s Plugin Manager to check for whether new versions have been submitted.&lt;/p&gt;
+&lt;p&gt;The Plugin Manager only alerts about new versions of this plugin if the store&amp;rsquo;s Zen Cart version matches one of the versions specified in a given update on the Zen Cart Plugins Library.&lt;/p&gt;
+&lt;p&gt;Set it to &lt;code&gt;0&lt;/code&gt; if you&amp;rsquo;re writing a plugin that you&amp;rsquo;re not submitting to the Plugins Library. (eg: a commercial plugin)&lt;/p&gt;
+&lt;h3 id=&#34;changelog&#34;&gt;changelog&lt;/h3&gt;
+&lt;p&gt;Online URL (eg github release tag page, or changelog file there) or local filename only, ie: changelog.txt (in same dir as this manifest file)&lt;/p&gt;
+&lt;h3 id=&#34;github_repo&#34;&gt;github_repo&lt;/h3&gt;
+&lt;p&gt;A link to the plugin&amp;rsquo;s github repo, if one exists.&lt;/p&gt;
+&lt;h3 id=&#34;zcversions&#34;&gt;zcVersions&lt;/h3&gt;
+&lt;p&gt;An array of the Zen Cart versions the plugin supports. (eg: &lt;code&gt;[&#39;v157&#39;]&lt;/code&gt;, or &lt;code&gt;[&#39;v157&#39;,&#39;v158&#39;]&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;plugingroups&#34;&gt;pluginGroups&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;not currently supported&lt;/code&gt; but will eventually support filtering the display of plugins in the admin.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Plugin Installer Language Files</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/plugin_language_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/plugin_language_files/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;plugin-installer-language-files&#34;&gt;Plugin Installer Language Files&lt;/h2&gt;
+&lt;p&gt;While most language constants for the plugin installer are managed internally there will be cases where a plugin
+needs to define some of its own language defines.&lt;/p&gt;
+&lt;p&gt;For example, if the plugin needs to test some pre-requisites before installing, the error messages for when those
+pre-requisites fail will need to be defined.&lt;/p&gt;
+&lt;p&gt;In these cases the plugin system allows for loading custom language files.&lt;/p&gt;
+&lt;p&gt;The main custom language file would reside in the &lt;code&gt;plugin version directory&lt;/code&gt;/languages/&lt;code&gt;language name&lt;/code&gt;/main
+.php file.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zc_plugins&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;rewardPoints&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;v1.0.0&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Installer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;languages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;english&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;main.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the plugin needs more customisation and wants to split off other language defines into separate files it may
+also load the language files separately.&lt;/p&gt;
+&lt;p&gt;A helper method in the installer class can be used to do this.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$this-&amp;gt;loadInstallerLanguageFile(&#39;myFile.php&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remember, we are talking here about language defines that are only used during installation. Loading
+of language files needed by the plugin itself are handled differently.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Installer Classes</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;installer-classes&#34;&gt;Installer Classes&lt;/h2&gt;
+&lt;p&gt;For most cases the base installer class can be used without customisation to install a plugin.&lt;/p&gt;
+&lt;p&gt;However there may be times when a plugin needs to override the default installer behavior.&lt;/p&gt;
+&lt;p&gt;For example a plugin may need to check some pre-requisites before allowing installation.&lt;/p&gt;
+&lt;p&gt;This may be the availability of a php extension or maybe the plugin relies on another plugin being installed.&lt;/p&gt;
+&lt;p&gt;In these cases the plugin can define its own installer class that extends the base installer.&lt;/p&gt;
+&lt;p&gt;The class must be named &lt;code&gt;PluginInstaller.php&lt;/code&gt; and be placed in the &lt;code&gt;Installer&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zc_plugins&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;rewardPoints&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;v1.0.0&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Installer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PluginInstaller.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The skeleton of this class should look like :-&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+class PluginInstaller extends BasePluginInstaller
+{
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a number of methods that the custom installer class can override.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;prerequisitesCheck&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FIXME&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Plugin SQL Installation</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Plugins may need to create/alter database tables and/or insert/amend data in database tables.&lt;/p&gt;
+&lt;p&gt;The plugin installer allows two methods for doing this. Using &lt;code&gt;.sql&lt;/code&gt; files containing just sql statements or
+using a class based migration system.&lt;/p&gt;
+&lt;h2 id=&#34;plain-sql-files&#34;&gt;Plain SQL Files&lt;/h2&gt;
+&lt;p&gt;Create a plain .sql file called &lt;code&gt;install.sql&lt;/code&gt; with the SQL statements you need for installation. Be sure to make your installation robust in the face of prior partial or failed installs (e.g. use &lt;code&gt;IF NOT EXISTS&lt;/code&gt;, &lt;code&gt;INSERT IGNORE&lt;/code&gt; and so forth).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE TABLE IF NOT EXISTS reward_master (
+                           rewards_products_id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                           scope INT( 1 ) NOT NULL DEFAULT &#39;0&#39;,
+                           scope_id INT( 11 ) NOT NULL DEFAULT &#39;0&#39;,
+                           point_ratio DOUBLE( 15, 4 ) NOT NULL DEFAULT &#39;1&#39;,
+                           bonus_points DOUBLE( 15, 4 ) NULL,
+                           redeem_ratio DOUBLE( 15, 4 ) NULL,
+                           redeem_points DOUBLE( 15, 4 ) NULL,
+                           UNIQUE unique_id ( scope , scope_id ));
+
+INSERT IGNORE INTO reward_master
+(rewards_products_id ,scope ,scope_id ,point_ratio ,bonus_points, redeem_ratio, redeem_points)
+VALUES (NULL , &#39;0&#39;, &#39;0&#39;, &#39;1.0000&#39;, NULL, 0.01, NULL);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The sql file should reside in&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zc_plugins&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;rewardPoints&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;v1.0.0&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Installer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;install.sql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; As Zen Cart currently uses mainly &lt;code&gt;MyISAM&lt;/code&gt; tables, there is no way to safely roll back any
+installer sql if an error occurs. Some support for rollback may be added later (using generated migrations).&lt;/p&gt;
+&lt;p&gt;Note that an uninstall script (called &lt;code&gt;uninstall.sql&lt;/code&gt;) may be placed in the same folder.&lt;/p&gt;
+&lt;h2 id=&#34;sql-installer-classes&#34;&gt;SQL Installer Classes&lt;/h2&gt;
+&lt;p&gt;If you have more complex needs when creating schemas or seeding the database, instead of 
+using a plain SQL install file as above, you can use a class based method.&lt;/p&gt;
+&lt;p&gt;An example of this is provided in the &lt;code&gt;DisplayLogs&lt;/code&gt; plugin, in &lt;code&gt;zc_plugins/DisplayLogs&lt;/code&gt;.  The class &lt;code&gt;ScriptedInstallBase&lt;/code&gt; may be extended to permit the execution of complex logic during the install and uninstall process.&lt;/p&gt;
+&lt;p&gt;The two key methods that must be implemented in a class which extends &lt;code&gt;ScriptedInstallBase&lt;/code&gt; are &lt;code&gt;executeInstall&lt;/code&gt; and &lt;code&gt;executeUninstall&lt;/code&gt;, which run the installation and de-installation logic.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Converting a plugin to use encapsulation</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/converting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/converting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In Zen Cart 1.5.7, only &lt;em&gt;admin&lt;/em&gt; side plugins may be encapsulated.  The intention is to support catalog side plugin encapsulation in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; For simplicity, files like &lt;code&gt;license.txt&lt;/code&gt;, &lt;code&gt;README.txt&lt;/code&gt; and &lt;code&gt;docs&lt;/code&gt; are omitted; no changes are made to those files, which are not deployed.&lt;/p&gt;
+&lt;p&gt;Converting an older plugin to use the encapsulated architecture can be done 
+following these steps:&lt;/p&gt;
+&lt;h3 id=&#34;1-create-the-plugins-file-hierarchy&#34;&gt;1. Create the plugin&amp;rsquo;s file hierarchy.&lt;/h3&gt;
+&lt;p&gt;As a general rule, this just means moving the files you currently have in the 
+plugin&amp;rsquo;s top level folder under a new folder with the name 
+&lt;i&gt;Plugin Name/Version&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2039&#34;&gt;Mod List&lt;/a&gt; files, prior to conversion, were:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./admin/includes/languages/english/extra_definitions/mod_list.php
+./admin/includes/languages/english/mod_list.php
+./admin/includes/extra_configures/mod_list.php
+./admin/mod_list.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; On a live system the admin folder will have been renamed.&lt;/p&gt;
+&lt;p&gt;These become:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/admin/includes/languages/english/extra_definitions/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/mod_list.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; It is not necessary to rename admin in the plugin directory hierarchy&lt;/p&gt;
+&lt;h3 id=&#34;2-add-the-manifest&#34;&gt;2. Add the Manifest&lt;/h3&gt;
+&lt;p&gt;Create a &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/manifests/&#34;&gt;manifest file&lt;/a&gt;. In our example, this will be placed in&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/manifest.php
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-add-the-plugin-installer-script&#34;&gt;3. Add the Plugin Installer script&lt;/h3&gt;
+&lt;p&gt;Create an &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/installer_classes/&#34;&gt;installer script&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In our example, this will be placed in&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/Installer/PluginInstaller.php
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-optional-create-install-and-uninstall-files&#34;&gt;4. (optional) Create install and uninstall files&lt;/h3&gt;
+&lt;p&gt;If the installer script you created above did not do the SQL operations 
+required by the plugin, you can use &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/&#34;&gt;plain SQL files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In our example, these will be placed in&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.0/Installer/uninstall.sql
+./zc_plugins/ModList/1.4.0/Installer/install.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-remove-old-files-and-update-documentation&#34;&gt;5. Remove old files and update documentation&lt;/h3&gt;
+&lt;p&gt;Once you have put your the &lt;code&gt;admin&lt;/code&gt;, &lt;code&gt;includes&lt;/code&gt;, etc. folders under &lt;code&gt;zc_plugins&lt;/code&gt;, &lt;em&gt;do not&lt;/em&gt; duplicate them at the top level for older versions of Zen Cart. 
+Instead, update the README file for your plugin with guidance like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
+go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Alternately, you may mark your plugin as &amp;ldquo;1.5.7 (and above) only.&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;6-final-result&#34;&gt;6. Final Result&lt;/h3&gt;
+&lt;p&gt;Now the file hierarchy looks  like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./zc_plugins/ModList/1.4.1/admin/includes/languages/english/extra_definitions/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/includes/languages/english/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/mod_list.php
+./zc_plugins/ModList/1.4.1/manifest.php
+./zc_plugins/ModList/1.4.1/Installer/uninstall.sql
+./zc_plugins/ModList/1.4.1/Installer/PluginInstaller.php
+./zc_plugins/ModList/1.4.1/Installer/install.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;things-to-watch-for-in-the-conversion&#34;&gt;Things to watch for in the conversion&lt;/h3&gt;
+&lt;p&gt;a) Scope of variables in &lt;code&gt;extra_configures&lt;/code&gt; and &lt;code&gt;extra_datafiles&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the encapsulated plugin architecture, 
+the files in &lt;code&gt;extra_configures&lt;/code&gt; and &lt;code&gt;extra_datafiles&lt;/code&gt; are run in the 
+context of  the &lt;code&gt;FileSystem&lt;/code&gt; class, 
+and therefore any variables created will be scoped into that class and not the global scope.&lt;/p&gt;
+&lt;p&gt;This means if you have a file that was in &lt;code&gt;admin/includes/extra_configures/my_plugin.php&lt;/code&gt; which created a variable (say, &lt;code&gt;$my_list&lt;/code&gt;), this variable will not be available to the plugin anymore.&lt;/p&gt;
+&lt;p&gt;Some options for overcoming this are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Move the logic to a page specific init file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make the variables into defined constants (which by definition have global scope).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;b) Explicit &lt;code&gt;include&lt;/code&gt; or &lt;code&gt;require&lt;/code&gt; of storefront files&lt;/p&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Upgrading an encapsulated plugin</title>
+      <link>/zendocs_test1/dev/plugins/encapsulated_plugins/upgrading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/plugins/encapsulated_plugins/upgrading/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once you have created an encapsulated plugin, upgrading it is 
+mostly a matter of creating a new version number under the plugin name,
+and then making your changes.&lt;/p&gt;
+&lt;p&gt;So if the old plugin was structured like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;zc_plugins/MyPlugin/1.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you can rename this to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;zc_plugins/MyPlugin/1.0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and make your changes.  Once you release, people will upload the new version and run through the upgrade process using Admin &amp;gt; Modules &amp;gt; Plugin Manager.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; One constraint is that even if your first version did not use 
+&lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/sql_installation/#sql-installer-classes&#34;&gt;SQL Installer Classes&lt;/a&gt;, your update must do so if there are database changes. 
+The plain .sql files in the Installer folder are not run on an upgrade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

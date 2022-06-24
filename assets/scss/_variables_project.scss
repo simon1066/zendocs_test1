@@ -1,0 +1,38 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+.mainpage_list {
+  list-style-type:none;
+}
+.mainpage_list > li { 
+  font-weight: bold;
+}
+.mainpage_list > li > a { 
+  color: yellow;
+  text-decoration: underline; 
+}
+.cms_table_td { 
+  padding: 15px;
+}
+
+#endcontent {
+   height: 1px;
+   background-color: black
+}
+
+.row > main { 
+   max-width: 100% !important;
+}
+
+.td-content > p {
+   max-width: 100% !important;
+}
+
+img {
+   border: 1px solid black; 
+   border-style: solid !important; 
+   margin-top: 10px; 
+}

@@ -1,0 +1,1251 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Upgrading</title>
+    <link>/user/upgrading/</link>
+    <description>Recent content in Upgrading on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/upgrading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Upgrading - Quick Reference</title>
+      <link>/user/upgrading/upgrading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/upgrading/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;key-points-related-to-upgrading&#34;&gt;Key Points Related To Upgrading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;How To Upgrade - Detailed Guide&lt;/a&gt; YES, READ THIS!!!!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/about_upgrading/&#34;&gt;Why Upgrade?&lt;/a&gt; (Protecting your site from bad actors)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;Date Standardization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release Specific Upgrade Considerations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/configuration_name_changes/&#34;&gt;Configuration Parameter Name Changes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;upgrading-approaches&#34;&gt;Upgrading Approaches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;Standard Upgrade&lt;/a&gt; - preserving your customizations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/db_only_upgrade/&#34;&gt;Database-Only Upgrade&lt;/a&gt; - quickie upgrade if you want to start over; does not preserve customizations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;after-upgrading&#34;&gt;After Upgrading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;Keep Your JavaScript Scripts Updated&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;Should I Change My Database Character Set to UTF8?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/installer_no_upgrade/&#34;&gt;Why Don&amp;rsquo;t I See An Option To Upgrade My Database?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;New PHP Warnings/Errors After Upgrading&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;question-but-it-seems-like-a-long-process-&#34;&gt;QUESTION: &amp;ldquo;But it seems like a long process &amp;hellip;&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;An &amp;ldquo;upgrade&amp;rdquo; is essentially a rebuilding of your site.&lt;/p&gt;
+&lt;p&gt;The suggested upgrade process is the recommended way to do it so that you rebuild your site in a &lt;u&gt;temporary location,&lt;/u&gt; letting you resolve all potential problems &lt;em&gt;before&lt;/em&gt; you ever touch your actual live site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This gives you time to sort out whatever needs sorting&lt;/strong&gt; &amp;ldquo;just in case&amp;rdquo;, and allows you to keep taking sales while you&amp;rsquo;re preparing the upgrade.&lt;/p&gt;
+&lt;p&gt;It also helps take some of the pressure off and makes it less urgent to do it all in one fell swoop.&lt;/p&gt;
+&lt;p&gt;The process of comparing your site against the original code for the old version is, in large part, to simply help you quickly identify what customizations you need to make to put those same capabilities into your new site. It simply speeds the process and creates a sort of checklist of things for you to do to re-build it all onto your new site.&lt;/p&gt;
+&lt;p&gt;Then, after you&amp;rsquo;ve got it all built in the temporary location, you put your live store &lt;a href=&#34;/user/running/down_for_maintenance&#34;&gt;down for maintenance&lt;/a&gt;, quickly redo the upgrade there following your checklist and notes, and then bring it online &amp;hellip; meaning your actual live store&amp;rsquo;s downtime could be as short as 5-10 minutes depending on complexities etc.&lt;/p&gt;
+&lt;p&gt;So, follow the guide, and while there may be some learning involved and remembering of things you did awhile back, it&amp;rsquo;s all time well spent.&lt;/p&gt;
+&lt;h2 id=&#34;question-i-have-a-very-old-version-do-i-upgrade-in-stages-or-all-at-once&#34;&gt;QUESTION: &amp;ldquo;I have a very old version. Do I upgrade in stages, or all-at-once?&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ANSWER:&lt;/strong&gt; You can upgrade to the latest version directly.&lt;br&gt;
+For the &amp;ldquo;files&amp;rdquo; portion of the upgrade, simply use the latest version.&lt;br&gt;
+And when you do the database-upgrade step via &lt;code&gt;zc_install&lt;/code&gt; it will show you all the database-version-levels which need upgrading, and will pre-check the checkboxes for you and will take care of upgrading through all those steps automatically. Usually you can just leave those boxes checked and put in the admin password and proceed with the upgrade, which normally will take just a few seconds.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why should I upgrade?</title>
+      <link>/user/upgrading/about_upgrading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/about_upgrading/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;how-do-i-upgrade&#34;&gt;How Do I Upgrade?&lt;/h3&gt;
+&lt;p&gt;To skip the &amp;ldquo;why&amp;rdquo; part and just get started, see the &lt;a href=&#34;/user/upgrading&#34;&gt;Upgrading section&lt;/a&gt; of the docs.&lt;/p&gt;
+&lt;h3 id=&#34;why&#34;&gt;Why?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Upgrading is important!  When you upgrade, you get security improvements, you get to use more recent versions of PHP, you get all the bug fixes from the past, and you get new features with every release!&lt;/strong&gt;  We highly encourage all users to stay upgraded.&lt;/p&gt;
+&lt;p&gt;If upgrading is beyond your ability, please post an ad in our &lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted&#34;&gt;Commercial Help Wanted Forum&lt;/a&gt; and hire a developer to do your upgrade for you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is upgrading important?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Two words: &lt;strong&gt;bad guys&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Bad guys are everywhere.  Trying to steal from you.  Trying to wreck your business.  Trying to harass you.  It&amp;rsquo;s unfortunate, but it&amp;rsquo;s part of operating online.&lt;/p&gt;
+&lt;p&gt;Upgrading PHP and your Zen Cart &lt;strong&gt;helps protect you&lt;/strong&gt; from bad guys. Both PHP and Zen Cart are constantly being improved and hardened so that it&amp;rsquo;s more difficult for bad guys to cause problems.  It&amp;rsquo;s an endless cycle - bad guys discover new ways of making trouble; good guys update the software to defend against the new attacks.  But you don&amp;rsquo;t get the benefits of the work the good guys have done unless you upgrade!&lt;/p&gt;
+&lt;h3 id=&#34;does-this-really-happen&#34;&gt;Does this really happen?&lt;/h3&gt;
+&lt;p&gt;Yes.  You can review the &lt;a href=&#34;/user/about_us/security_releases/&#34;&gt;security releases&lt;/a&gt; page and dig into these releases to discover the backstories.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-keep-my-site-safe&#34;&gt;How Do I Keep My Site Safe?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade regularly. &lt;a href=&#34;/user/about_us/security_reports/&#34;&gt;The Zen Cart team takes security seriously&lt;/a&gt;, but &lt;strong&gt;you&lt;/strong&gt; have to install the updates if you want to keep your cart safe.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/about_us/announcements&#34;&gt;Subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/li&gt;
+&lt;li&gt;Perform the &lt;a href=&#34;/user/running/regular_maintenance/&#34;&gt;recommended regular maintenance&lt;/a&gt; of your cart.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;/user/security/security_recommendations/&#34;&gt;security recommendations&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Keep track of &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; so you know when the &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;PHP version you are running&lt;/a&gt; is at or near end of life.&lt;/li&gt;
+&lt;li&gt;Watch your &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;JavaScript libraries&lt;/a&gt;.  As vulnerabilities are discovered, you will need to update them.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Standard Upgrade - Recommended Procedure</title>
+      <link>/user/upgrading/detailed_upgrading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/detailed_upgrading/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This guide assumes for simplicity that you have Zen Cart installed in a folder called &lt;code&gt;store&lt;/code&gt;.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn&amp;rsquo;t install your current store in a subfolder, you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it&amp;rsquo;s time to go live.&lt;/p&gt;
+&lt;p&gt;This guide also mentions &lt;em&gt;cPanel&lt;/em&gt; when referring to the Control Panel offered by your hosting company for managing your hosting account&amp;rsquo;s databases, file permissions, etc. While cPanel is a popular brand, your hosting company may offer something else. Consult them for help if needed.&lt;/p&gt;
+&lt;p&gt;Further, this guide is assuming that all your testing will be done in a temporary store on your same server (and a temporary database). If you are more technical and have a &amp;ldquo;local development environment&amp;rdquo; on your PC (such as XAMPP) then you could adapt all the following instructions to refer to directories/databases on your PC, and prepare everything locally before moving the files to the real server when it comes time to &amp;ldquo;go live&amp;rdquo;.&lt;/p&gt;
+&lt;h1 id=&#34;getting-ready&#34;&gt;Getting Ready&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Backup. Before you begin, remember to make a &lt;a href=&#34;/user/running/backup/&#34;&gt;complete backup of your files and database&lt;/a&gt;. This will be repeated often!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content of new versions&lt;/p&gt;
+&lt;p&gt;Upgraders, be sure to familiarize yourself with the content of each of the new versions released since the one you were previously using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Relevant &lt;a href=&#34;https://www.zen-cart.com/docs/&#34;&gt;&lt;strong&gt;What&amp;rsquo;s New&lt;/strong&gt;&lt;/a&gt; details for releases since the one you were previously using.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;/user/upgrading/release_specific_upgrade_considerations/&#34;&gt;Release-Specific Considerations&lt;/a&gt; page which points out special cases to consider.&lt;/li&gt;
+&lt;li&gt;You should also spend some time getting familiar with any additions made to the demo data in the new version, so that you can become comfortable with any new features contained in the new release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tools&lt;/p&gt;
+&lt;p&gt;To upgrade Zen Cart, you&amp;rsquo;ll need the same basic tools you used to install and customize it in the first place: An &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, a &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt; for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your hosting company&amp;rsquo;s Control Panel for managing your webspace.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;File Comparison Tool&lt;/p&gt;
+&lt;p&gt;Additionally, &lt;strong&gt;you will find a file-comparison tool to be highly beneficial. Particularly, a 3-way comparison tool is preferable.&lt;/strong&gt; See the list of &lt;a href=&#34;/user/first_steps/useful_tools/&#34;&gt;Useful Tools&lt;/a&gt; for suggestions. (While the free tools offer 2-way comparison, many offer 3-way comparisons in their paid versions.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compatibility&lt;/p&gt;
+&lt;p&gt;First, &lt;a href=&#34;/user/first_steps/server_requirements/&#34;&gt;check whether your server is compatible&lt;/a&gt; with the version you&amp;rsquo;re trying to upgrade to.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Upgrading follows 3 core stages. We suggest you take your time going through each stage carefully and methodically. Don&amp;rsquo;t rush the process.&lt;/p&gt;
+&lt;p&gt;And as always, be sure you keep good backups before you begin and perhaps additional backups at various steps along the way.&lt;/p&gt;
+&lt;h1 id=&#34;0-new-version-familiarization-optional&#34;&gt;0. New version familiarization (optional)&lt;/h1&gt;
+&lt;p&gt;This step is helpful if you have never done this before, to give you more confidence in creating databases and uploading files.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also helpful just to take a tour of the new version to see how any new features work.&lt;/p&gt;
+&lt;p&gt;Install it, just like a fresh store: Unzip a copy of the new version of Zen Cart, upload it to your webserver into a &lt;code&gt;demo&lt;/code&gt; folder.  Create a new &lt;code&gt;demo&lt;/code&gt; database in cPanel, when you install the new version of Zen Cart, set it to use the new demo database.  Be sure to include the Demo products when you install. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.&lt;/p&gt;
+&lt;p&gt;Study the new features, and the documented changes to the template structures, as well as the &amp;ldquo;changelog&amp;rdquo;. Use the demo products in the demo shop as examples. See also the supporting documentation provided with the new release.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re done with your testing, remove the &lt;code&gt;demo&lt;/code&gt; directory and the &lt;code&gt;demo&lt;/code&gt; database you created for it.&lt;/p&gt;
+&lt;h1 id=&#34;1-preparation&#34;&gt;1. Preparation&lt;/h1&gt;
+&lt;h2 id=&#34;make-backups&#34;&gt;Make backups&lt;/h2&gt;
+&lt;p&gt;Make a &lt;a href=&#34;/user/running/backup/#b-backup-your-database&#34;&gt;full backup of your live database (dump to SQL file)&lt;/a&gt;. Store this file on your PC for later reference.&lt;/p&gt;
+&lt;p&gt;Make a &lt;a href=&#34;/user/running/backup/#a-backup-your-files&#34;&gt;full backup of your live site files (ftp to your PC and zip it up for safe-keeping)&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;working-directory&#34;&gt;Working Directory&lt;/h2&gt;
+&lt;p&gt;On your PC create a directory/folder to hold your store&amp;rsquo;s &amp;ldquo;old&amp;rdquo; files.&lt;/p&gt;
+&lt;p&gt;For this document we will assume you named this folder &lt;code&gt;store&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Remember that backup you just made? Place an unzipped copy of your website&amp;rsquo;s files in this &lt;code&gt;store&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h2 id=&#34;build-a-list-of-all-your-existing-customizations&#34;&gt;Build a list of all your existing customizations&lt;/h2&gt;
+&lt;p&gt;All sites are customized in some way! There are two main kinds of customizations you need to enumerate:&lt;/p&gt;
+&lt;h3 id=&#34;plugins-templates-and-other-addons&#34;&gt;Plugins, Templates, and other Addons&lt;/h3&gt;
+&lt;p&gt;Make a list of all the plugins you&amp;rsquo;ve installed, and where you obtained them from. 
+Same with your template.&lt;/p&gt;
+&lt;p&gt;You may already have a list, but be sure to double-check it thoroughly!&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important to also find out what version of Zen Cart and PHP that old plugin/template was designed for.
+&amp;hellip; and whether there&amp;rsquo;s a new version available, particularly a version that suits your new Zen Cart and PHP requirements.&lt;/p&gt;
+&lt;p&gt;If they don&amp;rsquo;t have obvious updates posted, consider reviewing the Support Thread for the plugin (if any), and/or contacting the plugin/template author.&lt;/p&gt;
+&lt;p&gt;If you bought the plugin or template (or if a paid upgrade is available), consider paying for an upgraded version.&lt;/p&gt;
+&lt;h3 id=&#34;file-changes-alterations-made-to-the-files-on-your-server&#34;&gt;File Changes: Alterations made to the files on your server&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This is a time-consuming step, and will feel very &amp;ldquo;technical&amp;rdquo;. Be sure to set aside time when you will not be distracted.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s find out the differences/customizations between your site and the original Zen Cart files.&lt;/p&gt;
+&lt;p&gt;(You can find older versions of Zen Cart here: &lt;a href=&#34;https://sourceforge.net/projects/zencart/files/&#34;&gt;https://sourceforge.net/projects/zencart/files/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comparing Sets Of Files&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Advanced Tip: You will probably discover that combining the following &amp;ldquo;discovery of customizations&amp;rdquo; with the &amp;ldquo;execution&amp;rdquo; step will save you time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Unzip a copy of the original Zen Cart files for the version you &lt;em&gt;originally installed&lt;/em&gt; or last upgraded from (ie: perhaps v1.3.9 or even 1.5.1). This should be placed in a separate working folder on your PC (perhaps &lt;code&gt;zen_orig&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Run a tool like &lt;a href=&#34;https://winmerge.org/&#34;&gt;WinMerge&lt;/a&gt; to compare the &amp;ldquo;Original&amp;rdquo; Zen Cart files in &lt;code&gt;zen_orig&lt;/code&gt; against your current live store files in &lt;code&gt;store&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So, in WinMerge, in 2-way-compare mode, you would open the &lt;code&gt;zen_orig&lt;/code&gt; directory in the left column, and the &lt;code&gt;store&lt;/code&gt; directory in the right column.
+This way, in the right column you&amp;rsquo;ll see all the ways in which your store&amp;rsquo;s files are different from the original files on the left.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This document is written with the assumption that you&amp;rsquo;re using only a 2-way-capable comparison tool. If you have a 3-way compare tool (WinMerge can do that) things will go much faster: column 1 is &lt;code&gt;zc_orig&lt;/code&gt;, column 2 is &lt;code&gt;store&lt;/code&gt; and column 3 is &lt;code&gt;zc_new&lt;/code&gt; &amp;hellip; and you merge (copy) any changes between columns 2-3 into column 2 where they don&amp;rsquo;t clash with column 1. Anything changed between columns 1-2 is a customization you made or a plugin has made, so you want to keep that or at least merge it with whatever is new in column 3 if anything. This sounds complicated when just reading it in words, but in practice it becomes visually quite intuitive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here we are taking a list of how your actual site is customized vs the original files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Make note of all the files that are &amp;ldquo;different&amp;rdquo;, and how.&lt;/strong&gt;
+In WinMerge you can double-click on each file and note what the differences are.&lt;/p&gt;
+&lt;p&gt;Here are some examples of how WinMerge will allow you to see differences in files.&lt;/p&gt;
+&lt;h4 id=&#34;comparing-directories&#34;&gt;Comparing Directories&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/images/upg-dir-compare.png&#34; alt=&#34;Comparing Directories&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;comparing-files&#34;&gt;Comparing Files&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/images/upg-file-compare.png&#34; alt=&#34;Comparing Files&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;types-of-file-differences&#34;&gt;Types of File Differences&lt;/h4&gt;
+&lt;p&gt;There will be many differences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;language defines for displayed text - those will be simple to carry forward.&lt;/li&gt;
+&lt;li&gt;actual programming/code differences &amp;ndash; for these you will need to make detailed notes in order to carry over those changes to the new version.&lt;/li&gt;
+&lt;li&gt;plugins/addons you&amp;rsquo;ve installed &amp;ndash; these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release or a newer PHP version.  Be sure to check if there&amp;rsquo;s a more up to date version of a plugin you are using during an upgrade.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sometimes you won&amp;rsquo;t know why the code is different. You may not recognize why you would have ever changed it. Lots of times it may be that those changes are from a plugin you installed, especially one that changed original Zen Cart files. Your list of add-ons/plugins may help you narrow down the source of any differences you&amp;rsquo;re finding between versions. 
+You may have to download the add-on again (ie: the older version of it) to take a look at the readme or code contained in it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While you&amp;rsquo;re reviewing PHP/JS/CSS files you might be reminded of some plugins or template customizations that aren&amp;rsquo;t on the list you made earlier. Be sure to note them and then research them for upgrades.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;consider-moving-customizations-into-a-standard-override-structure&#34;&gt;Consider moving customizations into a standard override structure&lt;/h2&gt;
+&lt;p&gt;As you make your list of changed files, this may be a good time to move your store-specific changes into the Zen Cart template-override structure, if you haven&amp;rsquo;t already done so. See the &lt;a href=&#34;/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for help on the template system.&lt;/p&gt;
+&lt;p&gt;The benefit of moving these customizations into specific override files is that these overrides are simpler to compare/upgrade in the future, and may mean less work when it comes to the &amp;ldquo;actual&amp;rdquo; upgrade in following steps.&lt;/p&gt;
+&lt;p&gt;Using overrides isn&amp;rsquo;t a magic pill, but it does simplify things a lot if only by virtue of isolating customizations so you know which things &amp;ldquo;definitely need attention&amp;rdquo; or &amp;ldquo;these differences I see are intentional changes I made&amp;rdquo; (otherwise sometimes it&amp;rsquo;s hard to remember whether you wanted it that way or not).&lt;/p&gt;
+&lt;h2 id=&#34;handling-custom-date-fields-in-your-database&#34;&gt;Handling custom date fields in your database&lt;/h2&gt;
+&lt;p&gt;If you have modified the structure of your database to add custom date fields, please see &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;2-execution&#34;&gt;2. Execution&lt;/h1&gt;
+&lt;p&gt;Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps &lt;code&gt;store_new&lt;/code&gt;), separate from the other two folders compared above (eg &lt;code&gt;store&lt;/code&gt; and &lt;code&gt;zen_orig&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Using the list of files you made earlier, go through each &amp;ldquo;changed&amp;rdquo; file, and re-make your changes from the old version onto the new version.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means store_new contains the current version of Zen Cart, and you apply your changes to that.  &lt;strong&gt;DO NOT&lt;/strong&gt; start with your old version and apply the changes from the latest version of Zen Cart.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clarification: here you are essentially re-building your &lt;code&gt;store&lt;/code&gt; customizations onto the &lt;code&gt;store_new&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Simple language edits will be just a matter of copy-and-paste (or if you&amp;rsquo;re using WinMerge you might be able to click to copy over individual customized lines).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programming changes in core Zen Cart files will be more difficult and require significant testing.&lt;/p&gt;
+&lt;p&gt;You may sometimes find WinMerge handy at this stage to apply edits as well. However, you will see many extra differences that may not be related to your own customizations (they might be from plugins you had installed), or that may conflict. Be careful making changes to program code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to ALSO compare and review AND UPGRADE all the files that you have overridden using the template overrides system. (Merely being overridden doesn&amp;rsquo;t mean they don&amp;rsquo;t need to be upgraded too!!!!)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;So, for example, you need to compare files from &lt;code&gt;/includes/templates/MYTEMPLATE/*&lt;/code&gt; with &lt;code&gt;/includes/template/template_default/*&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;/includes/modules/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/modules/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;/includes/modules/sideboxes/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/modules/sideboxes/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;/includes/languages/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/languages/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;/includes/languages/LANGUAGE_NAME/FILE.php&lt;/code&gt; with &lt;code&gt;/includes/languages/LANGUAGE_NAME/MYTEMPLATE/FILE.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;etc (see the &lt;a href=&#34;/user/template/&#34;&gt;Template System Documentation&lt;/a&gt; for details on the &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;override directories&lt;/a&gt;!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clarification: use WinMerge to compare these original directories against your override directories, just like you&amp;rsquo;re comparing other directories with each other. Sometimes using 3-way-mode makes it easier to visualize what parts of individual files were actually customized, so you can decide whether to keep the difference or not.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While sometimes it may seem that the overrides files mean double work, it&amp;rsquo;s still very useful to know that most of your non-override files won&amp;rsquo;t require special attention, and you can focus your work on mainly the override files. (Again, this assumes you&amp;rsquo;ve diligently used overrides.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install updated versions of plugins. This includes unzipping and moving the updated files into their respective directories, and doing any installation/upgrade steps their documentation mentions. If database updates are required too, do them. &lt;br&gt;
+&lt;strong&gt;Also make detailed notes of these steps you take so you can re-do them on your live store when it comes time to do the real upgrade with real data.&lt;/strong&gt;
+Also read the plugin&amp;rsquo;s upgrade documentation to note whether it says that some &amp;ldquo;old&amp;rdquo; files (from older versions of the plugin) are no longer needed. Be sure that you don&amp;rsquo;t accidentally copy those old files from the old &lt;code&gt;store&lt;/code&gt; dir into the &lt;code&gt;store_new&lt;/code&gt;! You will want to be sure to make note of these specific files so that you can double-check the live server later after the upgrade is done to make sure you delete the necessary files there too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For any plugins/addons you are no longer using, do any uninstall instructions associated with them, including removing their files and removing any database components. If some of this can be done to your &amp;ldquo;live&amp;rdquo; site before actually going &amp;ldquo;live&amp;rdquo; then sometimes this makes the go-live step simpler.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-testing&#34;&gt;3. Testing&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; As an alternative, rather than testing on your server, you can &lt;a href=&#34;/user/running/local_testing/&#34;&gt;set up a local development environment&lt;/a&gt; and test there.&lt;/p&gt;
+&lt;h2 id=&#34;take-a-fresh-backup&#34;&gt;Take a fresh backup&lt;/h2&gt;
+&lt;p&gt;First, take a fresh database backup from your live store:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In your live store, go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/code&gt;.  Put the store in &lt;a href=&#34;/user/running/down_for_maintenance/&#34;&gt;maintenance mode&lt;/a&gt;, and add your IP to the list in the &lt;code&gt;Down For Maintenance (exclude this IP-Address)&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;Make a fresh backup of your live database.&lt;/li&gt;
+&lt;li&gt;Put your site back into normal mode (turn off Down For Maintenance).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;create-a-temporary-new-store-on-your-server-for-testing&#34;&gt;Create a temporary new store on your server, for testing&lt;/h2&gt;
+&lt;p&gt;Create a NEW database in cPanel. Create a database user that has full permissions to access this database.&lt;/p&gt;
+&lt;p&gt;Use the backup that you just made from your live site to fill the database with data. (See &lt;a href=&#34;/user/running/backup/#to-restore-your-database&#34;&gt;restoring the database&lt;/a&gt;.)&lt;/p&gt;
+&lt;h2 id=&#34;prepare-the-configurephp-files&#34;&gt;Prepare the configure.php files&lt;/h2&gt;
+&lt;p&gt;On your PC, in your &lt;code&gt;store_new&lt;/code&gt; folder, copy&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;includes/dist-configure.php&lt;/code&gt; to &lt;code&gt;includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;admin/includes/dist-configure.php&lt;/code&gt; to &lt;code&gt;admin/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Edit these two files and set all the parameters, using your existing live store as a guide.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remember to specify your &lt;strong&gt;NEW&lt;/strong&gt; database name when filling in &lt;code&gt;DB_DATABASE&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;But remember to use the same &lt;code&gt;DB_PREFIX&lt;/code&gt; value from the old site&amp;rsquo;s configure.php file, because if it is not the same then the database tables won&amp;rsquo;t be recognized correctly.&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;DB_SERVER_USERNAME&lt;/code&gt; and &lt;code&gt;DB_SERVER_PASSWORD&lt;/code&gt; to the new database user and password you created in the first step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;upload-the-files-to-a-temporary-directory-on-your-server&#34;&gt;Upload the files to a temporary directory on your server&lt;/h2&gt;
+&lt;p&gt;Upload the files from your modified &lt;code&gt;store_new&lt;/code&gt; directory on your PC (created in step 2) into a temporary directory on your server, perhaps also called &lt;code&gt;store_new&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;run-zc_install-to-upgrade-the-temporary-database&#34;&gt;Run zc_install to upgrade the temporary database&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clarification: a couple steps earlier we created a new database in cPanel, and restored your backup database to that new database. Thus it contains a (slightly) older copy of your store&amp;rsquo;s data. Here we&amp;rsquo;re doing an upgrade on that data so that its structure matches what is needed for the new Zen Cart version we&amp;rsquo;re testing in these steps. THIS IS NOT THE FINAL STEP, and the data is NOT THE FINAL DATA. This is only temporary for testing, but we&amp;rsquo;re using a copy of your prior data as a way to test that things &amp;ldquo;work&amp;rdquo; and have a sense of confidence that the data showing up is &amp;ldquo;familiar&amp;rdquo; and &amp;ldquo;reasonable&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In your browser, run &lt;code&gt;store_new/zc_install/index.php&lt;/code&gt; and choose &amp;ldquo;&lt;em&gt;Upgrade&lt;/em&gt;&amp;rdquo; when prompted. (Don&amp;rsquo;t select &amp;ldquo;Clean Install&amp;rdquo;, or you will overwrite your database.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If the &amp;ldquo;Upgrade&amp;rdquo; button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the &lt;code&gt;DB_*&lt;/code&gt; fields correspond to your new database, including that the &lt;code&gt;DB_PREFIX&lt;/code&gt; matches the &lt;code&gt;DB_PREFIX&lt;/code&gt; in your old site.&lt;/p&gt;
+&lt;h3 id=&#34;the-zc_install-process&#34;&gt;The zc_install process&lt;/h3&gt;
+&lt;p&gt;Once you press the Upgrade button, the screen will show you a list of updates to be performed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Be patient&lt;/strong&gt; - it can take a while to do all the updating required.&lt;/p&gt;
+&lt;p&gt;Once this action completes, you have an up to date copy of your database.&lt;/p&gt;
+&lt;h2 id=&#34;database-changes&#34;&gt;Database Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are changing your template, Go to Admin &amp;gt; Tools &amp;gt; Template Selection and set your template to Responsive Classic (since your old template won&amp;rsquo;t exist on your updated site).&lt;/li&gt;
+&lt;li&gt;Visit each of the admin pages Modules &amp;gt; Shipping, Modules &amp;gt; Payment, Modules &amp;gt; Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys.&lt;/li&gt;
+&lt;li&gt;Run any install/upgrade steps for any plugins you&amp;rsquo;ve installed/upgraded. And removals for any plugins you&amp;rsquo;re removing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;test-the-temporary-new-store&#34;&gt;Test the temporary new store&lt;/h2&gt;
+&lt;p&gt;Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.&lt;/p&gt;
+&lt;p&gt;Test the functionality. Test the look and feel. Make sure things visually perform as expected. Fix as needed.&lt;/p&gt;
+&lt;p&gt;When satisfied that all is OK, go live, as described below.&lt;/p&gt;
+&lt;h1 id=&#34;4-going-live&#34;&gt;4. Going Live&lt;/h1&gt;
+&lt;p&gt;Once you&amp;rsquo;re satisfied that you&amp;rsquo;ve tested everything, it&amp;rsquo;s time to go live.&lt;/p&gt;
+&lt;h2 id=&#34;checklist&#34;&gt;Checklist&lt;/h2&gt;
+&lt;p&gt;Here are a few things to double-check:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual look and feel is good on both desktop and mobile. Small screens and large.&lt;/li&gt;
+&lt;li&gt;Customer login and add-to-cart works correctly&lt;/li&gt;
+&lt;li&gt;Shipping quotes are working as expected&lt;/li&gt;
+&lt;li&gt;Checkout can complete. (It may be better to test this after really going &amp;ldquo;live&amp;rdquo;, with a real purchase)&lt;/li&gt;
+&lt;li&gt;As you click around your site, no errors are getting logged in the &lt;code&gt;/logs&lt;/code&gt; directory of the test site. Such logs would indicate possible error conditions that you will need to fix.&lt;/li&gt;
+&lt;li&gt;The Admin pages for your store can properly access product/customer/order data&lt;/li&gt;
+&lt;li&gt;Anything specific to the functionality provided by the plugins you added&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;put-your-store-down-for-maintenance-again&#34;&gt;Put your store down-for-maintenance again&lt;/h3&gt;
+&lt;p&gt;Use the same step from earlier.&lt;/p&gt;
+&lt;h3 id=&#34;take-a-fresh-database-backup&#34;&gt;Take a fresh database backup&lt;/h3&gt;
+&lt;p&gt;Same step from earlier. This is for safekeeping, and in case anything goes badly wrong. This is the last backup of your &amp;ldquo;real&amp;rdquo; data before we upgrade that data to the new format used by the new version.&lt;/p&gt;
+&lt;h3 id=&#34;go-live&#34;&gt;Go live&lt;/h3&gt;
+&lt;p&gt;To go live, do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;look at the live &lt;code&gt;store&lt;/code&gt; folder&amp;rsquo;s &lt;code&gt;/includes/configure.php&lt;/code&gt; file and note the DB_DATABASE name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rename your live &lt;code&gt;store&lt;/code&gt; folder to &lt;code&gt;store_old&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rename &lt;code&gt;store_new&lt;/code&gt; to &lt;code&gt;store&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit the &lt;code&gt;includes/configure.php&lt;/code&gt; and &lt;code&gt;admin/includes/configure.php&lt;/code&gt; files to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;change the folder references from &lt;code&gt;store_new&lt;/code&gt; to &lt;code&gt;store&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;change the DB_DATABASE name to match the OLD database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;re using the &amp;ldquo;old&amp;rdquo; DB_DATABASE name here, because you&amp;rsquo;re actually going to keep using the REAL database, so you don&amp;rsquo;t lose any data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember that your &lt;code&gt;configure.php&lt;/code&gt; files on your server are typically set to &lt;code&gt;read-only&lt;/code&gt;, and thus in order to upload these edits will require that you mark those files &lt;code&gt;read-write&lt;/code&gt; before uploading.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;zc_install&lt;/code&gt; again to upgrade the database (because now you&amp;rsquo;re using the real database)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Re-run any plugin installation/removal scripts just like you did for the temporary testing. (This is why you took notes of any special things needed for each plugin)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit each of the admin pages Modules &amp;gt; Shipping, Modules &amp;gt; Payment, Modules &amp;gt; Order Total to allow your modules to insert any missing keys.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;verify&#34;&gt;Verify&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a test order, take it all the way through to checkout success, then view the order in your admin.  Make sure everything is working as expected.  It&amp;rsquo;s a good practice to test each of your payment modules by running a test order.&lt;/li&gt;
+&lt;li&gt;Test the store to be sure that things are operating as desired.&lt;/li&gt;
+&lt;li&gt;See the checklist above. Test those things, and everything else you can think of.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turn off&lt;/strong&gt; &lt;code&gt;Down For Maintenance&lt;/code&gt; so customers can shop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have small problems to repair, turn &amp;ldquo;Down for maintenance&amp;rdquo; on and off again as necessary.&lt;/p&gt;
+&lt;h3 id=&#34;cleanup&#34;&gt;Cleanup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On the server, delete your &lt;code&gt;store_old&lt;/code&gt; directory. (Don&amp;rsquo;t leave old stuff sitting on the server because it can lead to security issues or unexpected bad side-effects. You don&amp;rsquo;t want anyone to buy something from the old site!) If you need to keep it for reference or in case you want to downgrade, be sure to rename it to include the date and something random, and set a reminder on your calendar to remove it within the next week! (Downgrading is never recommended anyway.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update your lists of plugins/templates/customizations that you prepared. Make sure it&amp;rsquo;s thorough and that your brain will understand it next time you do an upgrade. You will thank yourself later for making sure your notes make sense.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you decided during the upgrade that you&amp;rsquo;d like to put a different template on your site, now you can start working on that as a separate project, independent of your upgrade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Store your backups someplace for safekeeping. Consider a thumb-drive that you keep with your financial records. The backup can also serve as a snapshot for your data if you need to look back for reference.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Delete any extra backups you made, especially if they contained your database or customer data. You should only keep copies that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations. (Consider: you wouldn&amp;rsquo;t leave customers&amp;rsquo; credit card details in papers laying all over your file cabinets and cupboards and drawers: you&amp;rsquo;d put them in one central safe spot. Do the same with your backups, and destroy copies that don&amp;rsquo;t need to be kept.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;example-upgrade-scenario&#34;&gt;Example Upgrade Scenario:&lt;/h1&gt;
+&lt;p&gt;Suppose you are currently running Zen Cart 1.5.1 and you want to upgrade to Zen Cart 1.5.6c.&lt;/p&gt;
+&lt;p&gt;At a high level, these are the steps to use (we will skip over the New code familiarization step).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download your live store files, and put them in a folder called &lt;code&gt;store&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Download a fresh copy of Zen Cart 1.5.1, and put it in a folder called &lt;code&gt;zen_orig&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In WinMerge compare the files in &lt;code&gt;store&lt;/code&gt; to the files in &lt;code&gt;zen_orig&lt;/code&gt;, noting your changes/customizations/plugins/etc.&lt;/li&gt;
+&lt;li&gt;Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called &lt;code&gt;store_new&lt;/code&gt;. Apply the changes you found in the prior step to &lt;code&gt;store_new&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If using a 3-way compare tool, the two bullet-points above can be combined into one, so the 3-way-compare tool can visually empower you to do the copying of changes necessary. In this case you&amp;rsquo;d open all 3: &lt;code&gt;zen_orig&lt;/code&gt;, &lt;code&gt;store&lt;/code&gt;, &lt;code&gt;store_new&lt;/code&gt;, and copy the differences between &lt;code&gt;zen_orig&lt;/code&gt; and &lt;code&gt;store&lt;/code&gt; into &lt;code&gt;store_new&lt;/code&gt;. As well as still upgrading all your overrides in &lt;code&gt;store_new&lt;/code&gt; override subdirectories.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;code&gt;store_new&lt;/code&gt;, create the new configure files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;copy &lt;code&gt;includes/dist-configure.php&lt;/code&gt; to &lt;code&gt;includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;copy &lt;code&gt;admin/includes/dist-configure.php&lt;/code&gt; to &lt;code&gt;admin/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;modify these two files, setting the values in them from your original configure files in &lt;code&gt;store&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In each file, you want two changes: &lt;code&gt;DIR_FS_CATALOG&lt;/code&gt; setting should refer to &lt;code&gt;store_new&lt;/code&gt; and not &lt;code&gt;_store&lt;/code&gt;, and &lt;code&gt;DB_DATABASE&lt;/code&gt; should refer to a new database name, not the original one (since we&amp;rsquo;re only testing at this point).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upload &lt;code&gt;store_new&lt;/code&gt; to your server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a fresh backup of your live database.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a NEW database in cPanel, using the new &lt;code&gt;DB_DATABASE&lt;/code&gt; name you used in the last step of updating your configuration files. Fill this database from the backup that you just made.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;point your browser to &lt;code&gt;store_new/zc_install&lt;/code&gt;, which will take you through the database update process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;do any install/remove steps relevant to any addons you&amp;rsquo;re adding/removing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;test &lt;code&gt;store_new&lt;/code&gt;, going through the shopping, buying and order fulfillment process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you&amp;rsquo;re ready to go live, do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;take a final backup of your live store database for safekeeping&lt;/li&gt;
+&lt;li&gt;In your live store, go to &lt;code&gt;Admin &amp;gt; Configuration &amp;gt; Website Maintenance&lt;/code&gt;. Put the store in maintenance mode, and add your IP to the list in the &lt;code&gt;Down For Maintenance (exclude this IP-Address)&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;rename your live store folder to &lt;code&gt;store_old&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;rename &lt;code&gt;store_new&lt;/code&gt; to &lt;code&gt;store&lt;/code&gt;.  Edit the &lt;code&gt;includes/configure.php&lt;/code&gt; and &lt;code&gt;admin/includes/configure.php&lt;/code&gt; files to change the &lt;code&gt;DIR_FS_CATALOG&lt;/code&gt; references from &lt;code&gt;store_new&lt;/code&gt; to &lt;code&gt;store&lt;/code&gt;, and change the &lt;code&gt;DB_DATABASE&lt;/code&gt; references back to the original database name.&lt;/li&gt;
+&lt;li&gt;run the &lt;code&gt;store/zc_install&lt;/code&gt; process to upgrade your live database.&lt;/li&gt;
+&lt;li&gt;do any install/remove steps relevant to any addons you&amp;rsquo;re adding/removing&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;re now LIVE!&lt;/li&gt;
+&lt;li&gt;test your upgrade&lt;/li&gt;
+&lt;li&gt;take your store out of maintenance mode so customers can use it again&lt;/li&gt;
+&lt;li&gt;delete &lt;code&gt;store_old&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;plugin-considerations&#34;&gt;Plugin Considerations&lt;/h1&gt;
+&lt;p&gt;In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt; for an updated version of the plugin.  If you don&amp;rsquo;t see one, you can ask on the plugin&amp;rsquo;s support thread. It may be best to remove a plugin&amp;rsquo;s &amp;ldquo;old&amp;rdquo; version&amp;rsquo;s files before installing its new files (consult its documentation and file structure to see if much has changed), in case it&amp;rsquo;s important that older files be sure to be removed.&lt;/p&gt;
+&lt;h1 id=&#34;templates&#34;&gt;Templates&lt;/h1&gt;
+&lt;p&gt;When it comes to templates, if you obtained your template from the Plugins Library, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.&lt;/p&gt;
+&lt;p&gt;If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in &lt;a href=&#34;/user/template/other_templates/#responsive-classic-template-product-page&#34;&gt;responsive classic&lt;/a&gt; template introduced in v1.5.5 is a good start.&lt;/p&gt;
+&lt;p&gt;HOWEVER: If you are changing your template, YOU SHOULD CONSIDER &lt;strong&gt;TREATING A CHANGE OF TEMPLATE AS A SEPARATE STEP&lt;/strong&gt; FROM YOUR UPGRADE.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tweaking templates &amp;ldquo;to perfection&amp;rdquo; can endlessly delay implementing an upgrade if you aren&amp;rsquo;t diligent.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Better to complete your upgrade first, and do your template change as a separate step.&lt;/p&gt;
+&lt;h1 id=&#34;character-set&#34;&gt;Character Set&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you initially created your store with Zen Cart 1.5.6 or higher, you are already using utf8mb4; no action is required.&lt;/p&gt;
+&lt;p&gt;The MySQL Character set you are using defines the legal characters within a string.  Early versions of Zen Cart used the &lt;code&gt;latin1&lt;/code&gt; character set, which can be used to represent English and other Western European languages.  (You may also hear this character set referred to as &amp;ldquo;iso-8859-1.&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;As of Zen Cart v1.5.0 all &lt;strong&gt;new&lt;/strong&gt; sites created database tables with the UTF8 character-set.&lt;/p&gt;
+&lt;p&gt;As of Zen Cart v1.5.6 all &lt;strong&gt;new&lt;/strong&gt; sites created database tables with the UTF8MB4 character-set.&lt;/p&gt;
+&lt;p&gt;If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see &lt;a href=&#34;/user/upgrading/convert_to_utf8&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other terms you might hear which are related to character set:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;collation: how strings are compared during a sort (arranging in alphabetical order).&lt;/li&gt;
+&lt;li&gt;accent insensitivity (ai).  With accent insensitivity, there is no difference between e, è, é, ê and ë when sorting.&lt;/li&gt;
+&lt;li&gt;case insensitivity (ci).  With case insensitivity, there is no difference between p and P when sorting.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Database-Only Upgrade Instructions</title>
+      <link>/user/upgrading/db_only_upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/db_only_upgrade/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;font size=&#34;12&#34; color=&#34;red&#34;&gt;Warning!&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;This is not the &lt;a href=&#34;/user/upgrading/detailed_upgrading/&#34;&gt;standard upgrade procedure&lt;/a&gt;.  It will DEFINITELY cause you to lose functionality associated with your older customizations and could break things as you will have configuration settings with no associated files (sideboxes, template, etc.).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Doing a database only upgrade might be appropriate in situations like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you are coming from Zen Cart 1.5.4 or older version, and you don&amp;rsquo;t have time or budget for a proper upgrade.&lt;/li&gt;
+&lt;li&gt;your hoster just &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;updated PHP to a version which is not compatible with your older Zen Cart software&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;you have minimal customizations and your current template is not mobile compatible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You will lose your customizations, but you won&amp;rsquo;t lose your data and you&amp;rsquo;ll be using the latest software, which is more secure.&lt;/p&gt;
+&lt;p&gt;You will be using the &lt;code&gt;responsive_classic&lt;/code&gt; template initially.  You can always add a new template later after your store is up and running.&lt;/p&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/user/running/backup/#step-1-backup-your-files&#34;&gt;Back up your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; &lt;a href=&#34;/user/running/backup/#step-2-backup-your-database&#34;&gt;Backup your database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a new directory called &amp;ldquo;test&amp;rdquo; and put the latest version of Zen Cart into it. We&amp;rsquo;ll call this your &lt;em&gt;test site&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Then create a new database and load your old database in it&lt;/li&gt;
+&lt;li&gt;Do any database conversions necessary - only necessary if you have &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;custom
+date fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Next, change the two configure.php files to utilize the new directory and
+database  This way &amp;hellip; when you attempt to upgrade you are &amp;ldquo;practicing&amp;rdquo; to see
+where the problems, if any will happen&lt;/li&gt;
+&lt;li&gt;Run the installer at &lt;code&gt;https://www.YOURSITE.com/zc_install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Choose the &lt;em&gt;Upgrade&lt;/em&gt; option&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-zc_install-process&#34;&gt;The zc_install process&lt;/h3&gt;
+&lt;p&gt;Once you press the Upgrade button, the screen will show you a list of updates to be performed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/full_db_upgrade.png&#34; alt=&#34;Updates being performed&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Be patient&lt;/strong&gt; - it can take a while to do all the updating required.&lt;/p&gt;
+&lt;p&gt;Once this action completes, you have an up to date copy of your database.&lt;/p&gt;
+&lt;h3 id=&#34;database-changes&#34;&gt;Database Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to Admin &amp;gt; Tools &amp;gt; Template Selection and set your template to Responsive Classic (since your old template won&amp;rsquo;t exist on your updated site).&lt;/li&gt;
+&lt;li&gt;Visit each of the admin pages Modules &amp;gt; Shipping, Modules &amp;gt; Payment, Modules &amp;gt; Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;copy-from-live-site&#34;&gt;Copy from live site&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy the &lt;code&gt;/images&lt;/code&gt; folder from your live site onto your test site&lt;/li&gt;
+&lt;li&gt;Copy in any new images you created from your live site&amp;rsquo;s &lt;code&gt;includes/templates/YOURTEMPLATE/images&lt;/code&gt; folder to the test site&amp;rsquo;s &lt;code&gt;includes/templates/responsive_classic/images&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Copy in any new images you created from your live site&amp;rsquo;s &lt;code&gt;email&lt;/code&gt; folder to the test site&amp;rsquo;s &lt;code&gt;email&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;customization&#34;&gt;Customization&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Customize the following files, referring to your live site to see what needs to be changed:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;includes/languages/responsive_classic/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;includes/languages/english/responsive_classic/email_extras.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;admin/includes/languages/english/email_extras.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testing&#34;&gt;Testing&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a test order, take it all the way through to checkout success, then view the order in your test admin.  Make sure everything is working as expected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;updating-php&#34;&gt;Updating PHP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/php_version/&#34;&gt;Update your PHP version&lt;/a&gt; if appropriate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;if-you-have-a-little-more-time-&#34;&gt;If you have a little more time &amp;hellip;&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s worth your while to switch from the Responsive Classic template to the &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.  It looks much better and it&amp;rsquo;s just a bit more work.  Redo the customization step above for the storefront files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;includes/languages/bootstrap/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;includes/languages/english/bootstrap/email_extras.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Character Sets</title>
+      <link>/user/upgrading/character_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/character_sets/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A character set is a set of codes which represent a written language.  For example, the latin1 character set can represent 256 unique characters, which is sufficient for written English.&lt;/p&gt;
+&lt;p&gt;As people began to Internationalize computer user interfaces, it was realized that larger character sets were required.  The current standard character set (used by the current version of Zen Cart) is called UTF8MB4.&lt;/p&gt;
+&lt;p&gt;When you try to display a character using a character set that cannot represent it, often the result will look like this:&lt;/p&gt;
+&lt;p&gt;�&lt;/p&gt;
+&lt;p&gt;Seeing this symbol indicates that you may not be using UTF8MB4 throughout your cart.  Things to check are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;DB_CHARSET&lt;/code&gt; value in your &lt;a href=&#34;/user/miscellaneous/configure/&#34;&gt;configure.php&lt;/a&gt; file.  This setting is the encoding between your database and the output of pages on your site.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;CHARSET&lt;/code&gt; value in your language files in &lt;code&gt;includes/languages/YOURTEMPLATE/&lt;/code&gt;.  For example, if your template is bootstrap and your store uses English and French, check both &lt;code&gt;includes/languages/bootstrap/english.php&lt;/code&gt; and &lt;code&gt;includes/languages/bootstrap/french.php&lt;/code&gt;.  This setting controls the &lt;code&gt;&amp;lt;meta charset=&amp;quot;YOURENCODING&amp;quot;&amp;gt;&lt;/code&gt; tag at the top of your web pages.&lt;/li&gt;
+&lt;li&gt;Your database tables.  If you have not yet gone through the process of &lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;converting from iso-8859-1 to utf8&lt;/a&gt;, you may need to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may also need to check:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;$locales&lt;/code&gt; value in your language files in &lt;code&gt;includes/languages/YOURTEMPLATE/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;Converting from iso-8859-1 to utf8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/detailed_upgrading/#character-set&#34;&gt;Character Set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Configuration Parameter Name Changes</title>
+      <link>/user/upgrading/configuration_name_changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/configuration_name_changes/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;changes-in-158&#34;&gt;Changes in 1.5.8&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Database Key&lt;/th&gt;
+&lt;th&gt;Old Name&lt;/th&gt;
+&lt;th&gt;New Name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_SPECIAL_PRODUCTS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Products on Special&lt;/td&gt;
+&lt;td&gt;Products on Special Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_PRODUCTS_NEW&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;New Products Listing- Number Per Page&lt;/td&gt;
+&lt;td&gt;New Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_PRODUCTS_FEATURED_PRODUCTS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Maximum Display of Featured Products Page&lt;/td&gt;
+&lt;td&gt;Featured Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_PRODUCTS_LISTING&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Products Listing- Number Per Page&lt;/td&gt;
+&lt;td&gt;Products Listing Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_PRODUCTS_ALL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Maximum Display of Products All Page&lt;/td&gt;
+&lt;td&gt;All Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_SPECIAL_PRODUCTS_INDEX&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Maximum Display of Specials Products - Main Page&lt;/td&gt;
+&lt;td&gt;Products on Special Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_NEW_PRODUCTS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;New Products Module&lt;/td&gt;
+&lt;td&gt;New Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_SEARCH_RESULTS_FEATURED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Maximum Display of Featured Products - Main Page&lt;/td&gt;
+&lt;td&gt;Featured Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MAX_DISPLAY_UPCOMING_PRODUCTS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Upcoming Products&lt;/td&gt;
+&lt;td&gt;Upcoming Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Converting from iso-8859-1 to utf8 or utf8mb4</title>
+      <link>/user/upgrading/convert_to_utf8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/convert_to_utf8/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+Please note: This is technical content suitable only for individuals with software development skills; it is not intended for general Zen Cart users. 
+&lt;br&gt;
+
+
+&lt;h2 id=&#34;do-i-need-to-convert-to-utf-8&#34;&gt;Do I need to convert to UTF-8?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Short answer: yes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Modern databases can handle &amp;ldquo;multibyte characters&amp;rdquo; such as emojis. Older databases cannot.&lt;/p&gt;
+&lt;p&gt;If your customers enter emoji symbols in order-comments or contact-us emails, it may trigger errors on your store resulting in unexpected results and lost details. Sometimes spammers use these symbols in an effort to trip up your store with error logs and wasted CPU processing.&lt;/p&gt;
+&lt;p&gt;Also, older database structures don&amp;rsquo;t handle non-english characters as well as utf8 does, &lt;a href=&#34;https://www.youtube.com/watch?v=MijmeoH9LT4&#34;&gt;which is why utf8&lt;/a&gt; has been the international &amp;ldquo;standard&amp;rdquo; for many years.&lt;/p&gt;
+&lt;h3 id=&#34;what-does-my-store-currently-use&#34;&gt;What does my store currently use?&lt;/h3&gt;
+&lt;p&gt;Since Zen Cart v1.5.0 all &lt;strong&gt;new&lt;/strong&gt; sites create database tables with the UTF8 character-set.&lt;br&gt;
+Since Zen Cart v1.5.6 all &lt;strong&gt;new&lt;/strong&gt; sites create database tables with the UTF8MB4 character-set.&lt;/p&gt;
+&lt;p&gt;If your site was created from an older version, your database might still contain older database structures that don&amp;rsquo;t support modern multibyte characters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To change the database to utf8mb4, use the instructions below.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;converting-to-utf8mb4&#34;&gt;Converting to UTF8MB4:&lt;/h2&gt;
+&lt;h3 id=&#34;1-converting-the-database&#34;&gt;1. Converting the database&lt;/h3&gt;
+&lt;p&gt;Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1318&#34;&gt;https://github.com/zencart/utf8mb4-converter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;bad date formats&lt;/a&gt; in existing data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/fixing_broken_tables/&#34;&gt;broken tables&lt;/a&gt;, such as broken auto-increments or corrupt indexes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-configuring-your-store&#34;&gt;2. Configuring your store&lt;/h3&gt;
+&lt;p&gt;You must also update your PHP files to indicate your UTF-8 intentions.&lt;/p&gt;
+&lt;p&gt;If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you.&lt;br&gt;
+But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following:&lt;/p&gt;
+&lt;p&gt;a. Check each of the following files to be sure that &lt;strong&gt;if&lt;/strong&gt; a define for &lt;code&gt;CHARSET&lt;/code&gt; is present that it is defined as &lt;strong&gt;utf-8&lt;/strong&gt;. (If no define for &lt;code&gt;CHARSET&lt;/code&gt; is present, skip that file and check the next one).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/languages/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/languages/OTHER_LANGUAGE_NAME.php&lt;/code&gt; (if any)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/includes/languages/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/includes/languages/TEMPLATE_NAME/english.php&lt;/code&gt; (if any)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/includes/languages/OTHER_LANGUAGE_NAME.php&lt;/code&gt; (if any)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/includes/languages/TEMPLATE_NAME/OTHER_LANGUAGE_NAME.php&lt;/code&gt; (if any)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;b. Check your &lt;code&gt;configure.php&lt;/code&gt; files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/admin/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/includes/configure.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If they have a define for &lt;code&gt;DB_CHARSET&lt;/code&gt;, make sure it is set to &lt;strong&gt;utf8&lt;/strong&gt; without the dash (not &lt;code&gt;utf-8&lt;/code&gt;). (It may not be present: if so, that&amp;rsquo;s fine, go to the next file.)&lt;/p&gt;
+&lt;p&gt;(Remember, the &lt;code&gt;configure.php&lt;/code&gt; files are most likely set to read-only on your server, so you&amp;rsquo;ll need to change their permissions on the server to be writable before you can save the changes you&amp;rsquo;re making.)&lt;/p&gt;
+&lt;h2 id=&#34;issues-with-converting-prior-to-03052021&#34;&gt;Issues with Converting prior to 03/05/2021&lt;/h2&gt;
+&lt;p&gt;Versions of the converter &lt;code&gt;utf8mb4-conversion.php&lt;/code&gt; and the older version, which was called &lt;code&gt;latin1-to-utf8-conversion.php&lt;/code&gt;, prior to 03/05/2021 had an issue with incorrectly removing default values during the conversion.  A script exists to fix this issue; see the section &amp;ldquo;Missing Defaults&amp;rdquo; in the readme file for &lt;a href=&#34;https://github.com/zencart/utf8mb4-converter&#34;&gt;https://github.com/zencart/utf8mb4-converter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please note this issue only affects people who ran versions of this script prior to 03/05/2021.&lt;/p&gt;
+&lt;p&gt;You will know you have this issue if database insert operations are failing because fields don&amp;rsquo;t have default values.  For example, creating a new admin will fail with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Fatal error: 1364:Field &amp;#39;prev_pass1&amp;#39; doesn&amp;#39;t have a default value :: INSERT INTO admin
+SET admin_name = &amp;#39;admin&amp;#39;,
+admin_email = &amp;#39;help@thatsoftwareguy.com&amp;#39;,
+admin_pass = &amp;#39;....&amp;#39;,
+admin_profile = 1,
+pwd_last_change_date = now(),
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also tell by schema inspection if you have this problem - instead of&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  prev_pass1 varchar(255) NOT NULL default &amp;#39;&amp;#39; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you will see&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  prev_pass1 varchar(255) NOT NULL 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similarly, creating a new customer account will fail with a message like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Fatal error: 1364:Field &amp;#39;customers_referral&amp;#39; doesn&amp;#39;t have a default value :: INSERT INTO zen_customers 
+...
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Could not upgrade to version X</title>
+      <link>/user/upgrading/could_not_upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/could_not_upgrade/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you get a message like,&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Could not upgrade to version 1.5.7.  We detect that you currently have v1.5.5, and must perform the updates to get to version 1.5.6 first.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/could_not_upgrade.png&#34; alt=&#34;Could not upgrade&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What has happened is that the upgrade has stopped because one of the tests which ensures prior updates were done has failed.  Each database upgrade to version X will spot check whether all prior upgrades have been completed, and stop if not.&lt;/p&gt;
+&lt;p&gt;The file &lt;code&gt;zc_install/includes/systemChecks.yml&lt;/code&gt; contains the list of checks done at each version to ensure that the database has actually been up to date.  So in the case above, reviewing the 1.5.6 checks will narrow down the things to check to see what might have failed.&lt;/p&gt;
+&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Date standardization</title>
+      <link>/user/upgrading/date_standardization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/date_standardization/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This guidance is only required if you have modified the structure
+of your database to add custom &lt;code&gt;datetime&lt;/code&gt; or &lt;code&gt;date&lt;/code&gt; fields.&lt;/p&gt;
+&lt;h4 id=&#34;handling-custom-datetimedate-fields-in-your-database&#34;&gt;Handling custom datetime/date fields in your database&lt;/h4&gt;
+&lt;p&gt;Zen Cart uses a specific string (rather than NULL) for &lt;code&gt;datetime&lt;/code&gt; and &lt;code&gt;date&lt;/code&gt; fields to indicate that a value has not been set.&lt;/p&gt;
+&lt;p&gt;In older versions of Zen Cart, the string was &lt;code&gt;0000-00-00&lt;/code&gt;. However, since then, MySQL has updated their definition of allowable date formats to exclude this string.&lt;/p&gt;
+&lt;p&gt;Since Zen Cart 1.5.6, the upgrade process has included steps necessary to fix these older style dates as follows&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;update all rows in the table to change any &lt;code&gt;date&lt;/code&gt; columns with the value &lt;code&gt;0000-00-00&lt;/code&gt; to &lt;code&gt;0001-01-01&lt;/code&gt;, and set the field&amp;rsquo;s default value to &lt;code&gt;0001-01-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;update all rows in the table to change any &lt;code&gt;datetime&lt;/code&gt; columns with the value &lt;code&gt;0000-00-00 00:00:00&lt;/code&gt; to &lt;code&gt;0001-01-01 00:00:00&lt;/code&gt;, and set the field&amp;rsquo;s default value to &lt;code&gt;0001-01-01 00:00:00&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(In the case of &lt;code&gt;datetime&lt;/code&gt; values, the appended value for time remains 00:00:00; it has not changed.)&lt;/p&gt;
+&lt;p&gt;However, the upgrade process can only do this for built-in fields.  If you have customized your database to include additional fields (perhaps via a plugin, or perhaps with your own custom code), you will need to make the same changes to your own database.  Failure to do so can mean an incomplete upgrade that will have to be fixed by hand by re-applying the failed SQL statements.&lt;/p&gt;
+&lt;p&gt;The debug log which is produced when a bad date is present will look like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Fatal error: 1292:Incorrect datetime value: &amp;#39;0000-00-00 00:00:00&amp;#39; for column &amp;#39;customers_dob&amp;#39; at row 3048 :: ALTER TABLE zen_customers ADD tax_exempt tinyint(1) default 0; ==&amp;gt; (as called by) /Users/scott/Sites/store/admin/sqlpatch.php on line 291 &amp;lt;== in /Users/scott/Sites/store/includes/classes/db/mysql/query_factory.php on line 170.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Examples of plugins which add a &amp;lsquo;bad&amp;rsquo; datetime or date field are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=683&#34;&gt;Order Delivery Date&lt;/a&gt;.  It adds a &lt;code&gt;datetime&lt;/code&gt; field called &lt;code&gt;order_delivery_date&lt;/code&gt; to the &lt;code&gt;orders&lt;/code&gt; table. (Note: Some earlier versions of the plugin created this field as a &lt;code&gt;date&lt;/code&gt;.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=773&#34;&gt;Ceon Back In Stock Notifications&lt;/a&gt;.  It creates a &lt;code&gt;datetime&lt;/code&gt; field called &lt;code&gt;date_subscribed&lt;/code&gt; in a new table called &lt;code&gt;back_in_stock_notification_subscriptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1726&#34;&gt;Flexible Footer Menu Columns for 1.5.x&lt;/a&gt;. It creates a field named &lt;code&gt;date_added&lt;/code&gt; in the &lt;code&gt;flexible_footer_menu&lt;/code&gt; table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example fix:&lt;/p&gt;
+&lt;p&gt;To get the custom &lt;code&gt;datetime&lt;/code&gt; field &lt;code&gt;order_delivery_date&lt;/code&gt; into the new format, use following command in phpMyAdmin or in &lt;a href=&#34;/user/admin_pages/tools/install_sql_patches/&#34;&gt;Install SQL Patches&lt;/a&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;```
+UPDATE orders SET order_delivery_date = &amp;#39;0001-01-01 00:00:00&amp;#39; WHERE order_delivery_date IS NOT NULL AND CAST(order_delivery_date AS CHAR(19)) = &amp;#39;0000-00-00 00:00:00&amp;#39;;
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then update the default value using&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ALTER TABLE orders MODIFY COLUMN order_delivery_date datetime NOT NULL default &amp;#39;0001-01-01 00:00:00&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To fix a custom field which is a &lt;code&gt;date&lt;/code&gt; (instead of a &lt;code&gt;datetime&lt;/code&gt;), the process is similar:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;UPDATE thetablename SET thefieldname = &amp;#39;0001-01-01&amp;#39; WHERE CAST(thefieldname AS CHAR(10)) = &amp;#39;0000-00-00&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then update the default value of the field:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ALTER TABLE thetablename MODIFY COLUMN thefieldname date NOT NULL default &amp;#39;0001-01-01&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If you run any commands via phpMyAdmin and your site uses a &lt;code&gt;DB_PREFIX&lt;/code&gt; (e.g. &lt;code&gt;zen_&lt;/code&gt;), you will need to add that prefix to any database table name.  For the example above, you&amp;rsquo;ll replace &lt;code&gt;orders&lt;/code&gt; with &lt;code&gt;zen_orders&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The PHP code that uses that custom field might be checking for the field&amp;rsquo;s value to be &amp;lsquo;0000-00-00 00:00:00` (for a datetime field) or &amp;lsquo;0000-00-00&amp;rsquo; (for a date field).  Be sure to inspect the associated PHP code and make any changes required, too!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For reference, the script that does the date updating is stored in &lt;code&gt;zc_install/sql/install/zero_dates_cleanup.sql&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Fixing broken tables</title>
+      <link>/user/upgrading/fixing_broken_tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/fixing_broken_tables/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Common problems in this class include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;broken auto-increments&lt;/li&gt;
+&lt;li&gt;corrupt indexes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Methods of fixing them are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;running a repair on the table from phpMyAdmin’s Operations tab or executing &lt;code&gt;REPAIR TABLE tablename;&lt;/code&gt; phpMyAdmin&amp;rsquo;s SQL tab&lt;/li&gt;
+&lt;li&gt;Doing a repair from your hosting control panel’s databases page (if they don&amp;rsquo;t offer phpMyAdmin)&lt;/li&gt;
+&lt;li&gt;Manually running &lt;code&gt;REPAIR TABLE tablename;&lt;/code&gt; from within &lt;code&gt;mysql&lt;/code&gt; from the command line on your server, if you have &lt;code&gt;ssh&lt;/code&gt; access.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Installer does not show an Upgrade button</title>
+      <link>/user/upgrading/installer_no_upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/installer_no_upgrade/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you have begun the upgrade process by going to &lt;code&gt;YOURSITE.com/zc_install&lt;/code&gt;, but you don&amp;rsquo;t see an &lt;strong&gt;Upgrade &amp;hellip;&lt;/strong&gt; button, it means the system can&amp;rsquo;t recognize your existing database.  Look at your &lt;code&gt;includes/configure.php&lt;/code&gt; file and check these things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is the &lt;code&gt;DB_DATABASE&lt;/code&gt; the correct name for the database you are importing?&lt;/li&gt;
+&lt;li&gt;Does &lt;code&gt;DB_PREFIX&lt;/code&gt; correctly reflect the prefix used on the tables in the database?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When everything is configured correctly, you should see this at the bottom of the screen on the first page of &lt;code&gt;zc_install&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/upgrade_button.png&#34; alt=&#34;Use the upgrade button!&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: JavaScript Libraries</title>
+      <link>/user/upgrading/javascript_updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/javascript_updates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Most modern templates, as well as the Zen Cart admin, bundle in the JavaScript library &lt;code&gt;jQuery&lt;/code&gt;, as well as other JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;You must check the versions of any libraries you are importing to ensure that you are running the latest, and not an older version with known vulnerabilities.&lt;/p&gt;
+&lt;p&gt;Your template&amp;rsquo;s &lt;code&gt;html_header.php&lt;/code&gt; or &lt;code&gt;jscript/jscript_xxxxxxx.*&lt;/code&gt; files are common places to check for direct references to old libraries.  You will also want to check the &lt;code&gt;includes/templates/YOURTEMPLATE/jscript&lt;/code&gt; folder to see if there are old versions stored there.&lt;/p&gt;
+&lt;p&gt;Remember that addons to templates often bring in their own jQuery version that is likely older than the one you want to use for your template. Make sure you&amp;rsquo;re only loading &lt;strong&gt;one&lt;/strong&gt; copy of jQuery, and that the copy you are loading is current and compatible with all the other JavaScript and/or jQuery features you&amp;rsquo;re already using.&lt;/p&gt;
+&lt;p&gt;A very easy way to test whether your libraries are current is to use Google Lighthouse utility.  In Google Chrome, right click and select &amp;ldquo;Inspect.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then in the dialog that comes up, on the right side, click &amp;ldquo;Lighthouse.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/lighthouse.png&#34; alt=&#34;Lighthouse&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click the Generate Report button, and look under &amp;ldquo;Best Practices.&amp;rdquo;  The message in this screenshot indicates that the Bootstrap and jQuery libraries need to be updated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/best_practices.png&#34; alt=&#34;Lighthouse error&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Mixed Collation Errors</title>
+      <link>/user/upgrading/mixed_collations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/mixed_collations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are getting PHP log files that say things like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Illegal mix of collations (latin1_general_cs,IMPLICIT) and (latin1_general_ci,IMPLICIT) for operation &amp;#39;=&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the easiest way to fix this is to simply convert your database to use UTF8.  Fortunately there is a &lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;UTF8 Conversion Tool&lt;/a&gt; you can run to do this.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: PHP Configuration</title>
+      <link>/user/upgrading/php_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/php_configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The process of changing your PHP version is server-specific:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some hosts running cPanel provide MultiPHP Manager tool&lt;/li&gt;
+&lt;li&gt;Some hosts running cPanel provide PHP Selector&lt;/li&gt;
+&lt;li&gt;Some hosts use a &lt;code&gt;php.ini&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process of changing PHP settings is also server-specific:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some hosts running cPanel provide MultiPHP INI Editor&lt;/li&gt;
+&lt;li&gt;Some hosts running cPanel provide PHP Selector which has a page for configuring PHP settings&lt;/li&gt;
+&lt;li&gt;Some hosts use a &lt;code&gt;php.ini&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed.&lt;/p&gt;
+&lt;p&gt;Once you are done changing PHP version or a PHP setting, use the 
+&lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;Version&lt;/a&gt; link on the top right navigation menu to confirm that the change you made is recognized by Zen Cart.&lt;/p&gt;
+&lt;h2 id=&#34;changing-php-versions-with-multiphp-manager&#34;&gt;Changing PHP Versions with MultiPHP Manager&lt;/h2&gt;
+&lt;p&gt;MultiPHP Manager provides a dropdown list of PHP versions; simply select the one that is right for your cart, select the domain from the list below it, and press Apply.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/multiphp.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;changing-php-versions-with-php-selector&#34;&gt;Changing PHP Versions with PHP Selector&lt;/h2&gt;
+&lt;p&gt;PHP Selector (Select PHP Version) provides a dropdown list of PHP versions; simply select the one that is right for your cart, select the domain from the list below it, and press Apply.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/phpselector.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;changing-php-configuration-with-multiphp-ini-editor&#34;&gt;Changing PHP Configuration with MultiPHP INI Editor&lt;/h2&gt;
+&lt;p&gt;The Basic Mode of MultiPHP INI Editor allows you to use a form to set some key variables, such as &lt;code&gt;memory_limit&lt;/code&gt;.   For other variables, it provides a file editor for you to use a &lt;code&gt;php.ini&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/multiphpini.png&#34; alt=&#34;MultiPHP Manager&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;changing-php-configuration-with-php-selector&#34;&gt;Changing PHP Configuration with PHP Selector&lt;/h2&gt;
+&lt;p&gt;The PHP Options screen (launched from the Options tab) at the top of PHP Selector allows you to set common configuration variables for PHP.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/phpselector_options.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The PHP Extensions screen (launched from the Extensions tab) at the top of PHP Selector allows you to include PHP libraries.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/phpselector_extensions.png&#34; alt=&#34;PHP Selector&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: PHP Warnings and Deprecated messages after upgrading</title>
+      <link>/user/upgrading/php_warnings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/php_warnings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As you upgrade PHP from an older version, these are &lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;debug log messages&lt;/a&gt; you will commonly see.  An explanation of &lt;em&gt;why this can happen&lt;/em&gt; is provided in &lt;a href=&#34;/user/troubleshooting/php_debug_logs&#34;&gt;understanding errors after upgrading PHP versions&lt;/a&gt;. This article explains &lt;em&gt;how to fix&lt;/em&gt; some of the most common problems you will see.&lt;/p&gt;
+&lt;p&gt;There are several levels of PHP problems, with the least serious being &lt;em&gt;notices&lt;/em&gt; and &lt;em&gt;warnings&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;More serious are PHP &lt;em&gt;errors&lt;/em&gt;, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the &lt;a href=&#34;/user/troubleshooting/blank_page/&#34;&gt;blank pages troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please take these as examples, not exact matches for every log you might come across.&lt;/p&gt;
+&lt;h2 id=&#34;undefined-constant&#34;&gt;Undefined constant&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Warning: Use of undefined constant MODULE_SHIPPING_BOXES_MANAGER_STATUS - assumed &amp;#39;MODULE_SHIPPING_BOXES_MANAGER_STATUS&amp;#39; (this will throw an Error in a future version of PHP) in /public_html/zen-cart-v1.5.7/includes/modules/shipping/fedexwebservices.php on line 85.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When you get a message like this, it means you are referencing a constant that hasn&amp;rsquo;t been defined.  You can work around this by defining the constant or just by putting a check in where the constant is referenced.  The latter would be done as follows:&lt;/p&gt;
+&lt;p&gt;Change&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (MODULE_SHIPPING_BOXES_MANAGER_STATUS == &amp;#39;true&amp;#39;) {
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (defined(&amp;#39;MODULE_SHIPPING_BOXES_MANAGER_STATUS&amp;#39;) &amp;amp;&amp;amp; MODULE_SHIPPING_BOXES_MANAGER_STATUS == &amp;#39;true&amp;#39;) {
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Another variant of the undefined constant problem can occur in language files.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Warning: Use of undefined constant BUTTON_IMAGE_ADD_TO_CART - assumed &amp;#39;BUTTON_IMAGE_ADD_TO_CART&amp;#39; (this will throw an Error in a future version of PHP) in /public_html/zen-cart-v1.5.7/includes/modules/YOURTEMPLATE/specials_index.php on line 86.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this case, your template is using a defined constant which does not exist in your language file set.  If the define is used in multiple places, you can add it to &lt;code&gt;includes/languages/YOURTEMPLATE/english.php&lt;/code&gt; or another globally loaded file; otherwise, add it to the language file for the page in question.&lt;/p&gt;
+&lt;p&gt;In this case, we&amp;rsquo;ll add this statement to the file &lt;code&gt;includes/languages/english/YOURTEMPLATE/button_names.php&lt;/code&gt;, which is loaded for all pages.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BUTTON_IMAGE_ADD_TO_CART&amp;#39;, &amp;#39;button_add_to_cart.gif&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;methods-with-the-same-name-as-their-class-&#34;&gt;Methods with the same name as their class &amp;hellip;&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;--&amp;gt; PHP Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; fedexwebservices has a deprecated constructor in /public_html/zen-cart-v1.5.7/includes/modules/shipping/fedexwebservices.php on line 2.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To fix this, change the class constructor from being the same as the name of the class like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;class fedexwebservices 
+{
+    function fedexwebservices() 
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;class fedexwebservices 
+{
+    function __construct() 
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;cannot-use-string-offset-as-an-array&#34;&gt;Cannot use string offset as an array&lt;/h2&gt;
+&lt;p&gt;In older versions of PHP, it was acceptable to initialize a variable as an empty string even though it was later being accessed as an array. So in some older code you might have something like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$list_box_contents = &amp;#39;&amp;#39;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;where newer versions require the correct initialization as:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$list_box_contents = array();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(or you may see the more modern &amp;ldquo;short array syntax&amp;rdquo; like this):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$list_box_contents = [];
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;each-deprecated&#34;&gt;&lt;code&gt;each()&lt;/code&gt; deprecated&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PHP Deprecated: The each() function is deprecated. This message will be suppressed on further calls in /includes/functions/extra_functions/sfl_functions.php on line 160.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The direction for PHP 7.2+ is to refactor &lt;code&gt;each&lt;/code&gt; to &lt;code&gt;foreach&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;foreach()&lt;/code&gt; doesn&amp;rsquo;t need a &lt;code&gt;reset()&lt;/code&gt; to be called before it runs, so those can be removed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are 3 syntax formats, depending on how the parameters are presented in the &lt;code&gt;list()&lt;/code&gt; call:&lt;/p&gt;
+&lt;p&gt;a) &lt;code&gt;while(list($key, $value) = each($foo))&lt;/code&gt;
+This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;b) &lt;code&gt;while(list(, $value) = each($foo))&lt;/code&gt;
+This becomes &lt;code&gt;foreach($foo as $value)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;c) &lt;code&gt;while(list($key, ) = each($foo))&lt;/code&gt;
+This becomes &lt;code&gt;foreach($foo as $key =&amp;gt; $value)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ereg_replace-deprecated&#34;&gt;&lt;code&gt;ereg_replace&lt;/code&gt; deprecated&lt;/h2&gt;
+&lt;p&gt;Some older functions were removed from PHP. The &lt;code&gt;ereg&lt;/code&gt; series can usually be replaced with a &lt;code&gt;preg&lt;/code&gt; equivalent, but note that the &amp;ldquo;pattern&amp;rdquo; parameter needs to have a delimiter added. In many cases a &lt;code&gt;/&lt;/code&gt; or &lt;code&gt;~&lt;/code&gt; is used for the delimiter &amp;hellip; this must be adapted to your situation.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ereg(&#39;searchtext&#39;, &#39;a_string&#39;, $optionalVar)&lt;/code&gt; becomes &lt;code&gt;preg_match(&#39;/searchtext/&#39;, &#39;a_string&#39;, $optionalVar)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;eregi(&#39;searchtext&#39;, &#39;a_string&#39;, $optionalVar)&lt;/code&gt; becomes &lt;code&gt;preg_match(&#39;/searchtext/i&#39;, &#39;a_string&#39;, $optionalVar)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ereg_replace(&#39;searchtext&#39;,.....)&lt;/code&gt; becomes &lt;code&gt;preg_replace(&#39;/searchtext/&#39;,....)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&amp;hellip; or if the &lt;code&gt;&#39;searchtext&#39;&lt;/code&gt; parameter is just a single character then just change &lt;code&gt;ereg_replace&lt;/code&gt; with &lt;code&gt;str_replace&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;eregi_replace(&#39;searchtext&#39;,.....)&lt;/code&gt; becomes &lt;code&gt;preg_replace(&#39;/searchtext/i&#39;,....)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;split(&#39;x&#39;, $var)&lt;/code&gt; has a couple options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if &amp;lsquo;x&amp;rsquo; is a single character, then &lt;code&gt;split(&lt;/code&gt; becomes &lt;code&gt;explode(&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;if &amp;lsquo;x&amp;rsquo; is multiple characters, then &lt;code&gt;split(&#39;chars&#39;, $var)&lt;/code&gt; becomes &lt;code&gt;preg_split(&#39;/chars/&#39;, $var)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;syntax-error-unexpected-&#34;&gt;syntax error, unexpected &amp;lsquo;[&amp;rsquo;&lt;/h2&gt;
+&lt;p&gt;This may be a result of new indirection syntax (or &amp;ldquo;variable variables&amp;rdquo; syntax), where double-dollar-signs are used.&lt;/p&gt;
+&lt;p&gt;This situation is sometimes found in old not-yet upgraded payment modules where additional braces &lt;code&gt;{&lt;/code&gt;, &lt;code&gt;}&lt;/code&gt; must be added. For example:&lt;/p&gt;
+&lt;p&gt;Replace this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;global $$order_totals[$i][&amp;#39;code&amp;#39;];
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;global ${$order_totals[$i][&amp;#39;code&amp;#39;]};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if ($$order_totals[$i][&amp;#39;code&amp;#39;]-&amp;gt;credit_class == true) $credits_applied += $order_totals[$i][&amp;#39;value&amp;#39;];
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (${$order_totals[$i][&amp;#39;code&amp;#39;]}-&amp;gt;credit_class == true) $credits_applied += $order_totals[$i][&amp;#39;value&amp;#39;];
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a technical note, what&amp;rsquo;s required is the addition of braces for adding the necessary specificity. More generic examples include the following:&lt;/p&gt;
+&lt;p&gt;Use of &lt;code&gt;$$foo[&#39;bar&#39;][&#39;baz&#39;]&lt;/code&gt; needs to be rewritten with braces around the whole of it, like &lt;code&gt;${$foo[&#39;bar&#39;][&#39;baz&#39;]}&lt;/code&gt; else it will be treated incorrectly as &lt;code&gt;($$foo)[&#39;bar&#39;][&#39;baz&#39;]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Also when referring to an object, &lt;code&gt;$foo-&amp;gt;$bar[&#39;baz&#39;]&lt;/code&gt; has to be rewritten as &lt;code&gt;$foo-&amp;gt;{$bar[&#39;baz&#39;]}&lt;/code&gt; if that&amp;rsquo;s what was intended in the older code.&lt;/p&gt;
+&lt;h2 id=&#34;unknown-function-mysql&#34;&gt;Unknown function &lt;code&gt;mysql(&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Since PHP 5.5 the &lt;code&gt;mysql_xxxxx()&lt;/code&gt; functions were removed in favor of the &lt;code&gt;mysqli_xxxxx()&lt;/code&gt; function series.&lt;/p&gt;
+&lt;p&gt;You cannot just rename the functions.&lt;/p&gt;
+&lt;p&gt;While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to rewrite your code to use Zen Cart&amp;rsquo;s own DB querying logic, which is both more secure and more consistent across the application.&lt;/p&gt;
+&lt;h2 id=&#34;undefined-constant-warnings-in-module-files&#34;&gt;Undefined constant warnings in module files&lt;/h2&gt;
+&lt;p&gt;Files under &lt;code&gt;/includes/modules/payment&lt;/code&gt;, &lt;code&gt;/includes/modules/shipping&lt;/code&gt; and &lt;code&gt;/includes/modules/order_total&lt;/code&gt; were updated in Zen Cart 1.5.6 so that module defines were not referenced until it was determined that the module had been installed.&lt;/p&gt;
+&lt;p&gt;Using the example of &lt;code&gt;shipping/flat.php&lt;/code&gt;, prior to 1.5.6, the constructor would do&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;      $this-&amp;gt;sort_order = MODULE_SHIPPING_FLAT_SORT_ORDER;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will generate a warning in newer versions of PHP if &lt;code&gt;flat&lt;/code&gt; is not installed, since the variable &lt;code&gt;MODULE_SHIPPING_FLAT_SORT_ORDER&lt;/code&gt; will not be in the database.&lt;/p&gt;
+&lt;p&gt;Newer versions of Zen Cart check the sort order as an indication that a module has been installed, and return early if it is not defined.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;      $this-&amp;gt;sort_order = defined(&amp;#39;MODULE_SHIPPING_FLAT_SORT_ORDER&amp;#39;) ? MODULE_SHIPPING_FLAT_SORT_ORDER : null;
+      if (null === $this-&amp;gt;sort_order) return false;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you have custom modules, you should make the analagous change to those files to avoid creating PHP warnings.&lt;/p&gt;
+&lt;h2 id=&#34;sizeof-and-related-issues&#34;&gt;Sizeof and related issues&lt;/h2&gt;
+&lt;p&gt;Older PHP code might check to see if a string is null using something like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (sizeof($categories-&amp;gt;fields[&amp;#39;categories_image&amp;#39;]) == 0) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The newer way to test this is to use the &lt;code&gt;empty&lt;/code&gt; PHP function:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (empty($categories-&amp;gt;fields[&amp;#39;categories_image&amp;#39;])) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similarly, checks for a non-empty array may need changes:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (sizeof($array) &amp;gt; 0) {
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Could give a PHP warning like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Warning: sizeof(): Parameter must be an array or an object that implements Countable
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To avoid this, check the value using &lt;code&gt;empty&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (!empty($array)) {
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More suggestions and recommendations are available in the &lt;a href=&#34;/dev/plugins/php_updating/&#34;&gt;PHP migration guides&lt;/a&gt; in the Developer Docs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Release Specific Upgrade Considerations</title>
+      <link>/user/upgrading/release_specific_upgrade_considerations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/release_specific_upgrade_considerations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This document lists things you may wish to take into account as you upgrade.  This includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;changes to the database schema or contents which deserve special notice&lt;/li&gt;
+&lt;li&gt;changes to basic template operation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please be sure to also check &lt;a href=&#34;/user/template/template_changes/&#34;&gt;Template Changes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;all-versions&#34;&gt;ALL Versions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to &lt;a href=&#34;/user/upgrading/javascript_updates/&#34;&gt;find outdated JavaScript libraries with known vulnerabilities&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Part of keeping modern is embracing newer PHP versions. You will need to address various &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;common issues with PHP version incompatibility&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Be sure external links are constructed with &lt;code&gt;rel=&amp;quot;noreferrer noopener&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you use a custom template, check it against &lt;a href=&#34;/user/template/template_changes/&#34;&gt;the template changes list&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-158-currently-in-development-phase-not-released-yet&#34;&gt;Zen Cart 1.5.8 (currently in development phase, not released yet)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Most &amp;ldquo;functions&amp;rdquo; (both admin and non-admin) have been consolidated into files located in &lt;code&gt;/includes/functions/&lt;/code&gt;. Some have been merged together. Some changes are listed below.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Language file inclusions must be changed to comply with the new language file format.  See &lt;a href=&#34;/dev//languages/158_language_files/&#34;&gt;Developer Information on Array based Language files&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The function &lt;code&gt;zen_parse_search_string&lt;/code&gt; input parameters have been reversed. Plugins that use this function will require modification.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The function &lt;code&gt;zen_get_countries&lt;/code&gt; returns different array keys than previously. Admin plugins that use this function may use the new admin function &lt;code&gt;zen_get_countries_for_admin_pulldown&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The function &lt;code&gt;zen_cfg_read_only&lt;/code&gt; has been added.  This means any plugin authors who provided their own version of this function should remove it from their plugin (for 1.5.7+) or wrap it in &lt;code&gt;if (!function_exists(&#39;zen_cfg_read_only&#39;))&lt;/code&gt; (for older versions of Zen Cart).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The misspelled notifier &lt;code&gt;NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt; has been deprecated and replaced by &lt;code&gt;NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE&lt;/code&gt;. Code that references the misspelled notifier will continue to work (due to the &lt;a href=&#34;/dev/code/notifiers/#event-aliasing&#34;&gt;event aliasing&lt;/a&gt; feature), but plugins should be updated to use the corrected name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The constant &lt;code&gt;ROBOTS_PAGES_TO_SKIP&lt;/code&gt; was previously located in the language file &lt;code&gt;meta_tags.php&lt;/code&gt; despite not being language-related.&lt;br&gt;
+It has been moved to its own file in &lt;code&gt;/includes/extra_configures/robots_pages_to_skip.php&lt;/code&gt;.&lt;br&gt;
+Plugin pages that do not require indexing (such as Back In Stock subscribe/unsubscribe) should be added to the list in the constant definition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-157&#34;&gt;Zen Cart 1.5.7&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The configuration constant &lt;code&gt;UPLOAD_FILENAME_EXTENSIONS&lt;/code&gt; was removed from the database and replaced with an entry in &lt;code&gt;includes/classes/upload.php&lt;/code&gt;.   If you have modified this constant from its original setting of &lt;code&gt;jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip&lt;/code&gt; you will want to add a custom define (in a new file) in both your &lt;code&gt;/includes/extra_configures/&lt;/code&gt; and &lt;code&gt;YOUR_ADMIN/includes/extra_configures/&lt;/code&gt; directories to set all the allowed extensions you want to support site-wide.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Internal changes necessitated removing the following inclusions from &lt;code&gt;admin/includes/auto_loaders/currency_cron.core.php&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class.base.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;init_file_db_names.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;init_database.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The database field &lt;code&gt;products_description.products_viewed&lt;/code&gt; has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table &lt;code&gt;count_product_views&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;External links have been updated to use &lt;code&gt;rel=&amp;quot;noopener&amp;quot;&lt;/code&gt; or &lt;code&gt;rel=&amp;quot;noreferrer noopener&amp;quot;&lt;/code&gt;.  If you use external links (for social networking, manufacturer sites, product URLs, etc.) you should update your template to adopt this practice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;shopping_cart&lt;/code&gt; page no longer uses &lt;code&gt;TEXT_INFORMATION&lt;/code&gt; from the &lt;code&gt;shopping_cart.php&lt;/code&gt; language file. You will need to move the content of that define to the new &lt;code&gt;html_includes/YOURTEMPLATE/define_shopping_cart.php&lt;/code&gt; page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A number of constants which were unused by the core were removed from language files.  If you use a plugin which relied on these defines, you should expect a PHP Notice in your &lt;code&gt;/logs&lt;/code&gt; folder.   To resolve this, define the needed constants in a plugin specific file or an override, as appropriate. Some of the defines removed are &lt;code&gt;DATE_FORMAT_SHORT&lt;/code&gt; and &lt;code&gt;DATE_TIME_FORMAT&lt;/code&gt;, which some plugins may have used even though core Zen Cart code does not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1583&#34;&gt;Display Logs plugin&lt;/a&gt; is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade. Then if you want to enable the plugin simply go to Admin &amp;gt; Modules &amp;gt; Plugins.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=583&#34;&gt;Admin Login as Customer plugin&lt;/a&gt;, which allowed you to login on a customer&amp;rsquo;s behalf, is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade, and configure as described on the &lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;Place Order&lt;/a&gt; help page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The login form built by &lt;code&gt;includes/templates/template_default/templates/tpl_login_default.php&lt;/code&gt; was changed so that the &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;class&lt;/code&gt; are both &lt;code&gt;loginForm&lt;/code&gt;, rather than &lt;code&gt;login&lt;/code&gt;, as in prior releases.  This is important since a direct reference to &lt;code&gt;loginForm&lt;/code&gt; is made in includes/modules/pages/login/on_load_main.js.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-156&#34;&gt;Zen Cart 1.5.6&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The variable &lt;code&gt;$downloads&lt;/code&gt;, returned from &lt;code&gt;includes/modules/downloads&lt;/code&gt;, changed from a query result to an array.  The following template files had to be updated to accommodate this change:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tpl_modules_downloads.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tpl_account_history_info_default.php&lt;/code&gt; (possibly)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You will want to adjust any copies of these files in your template to process an array rather than a database query.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The table containing the EZ-Pages data (&lt;code&gt;ezpages&lt;/code&gt;) was split into two tables, &lt;code&gt;ezpages&lt;/code&gt; and &lt;code&gt;ezpages_content&lt;/code&gt;.  This was done in order to add multi-language capabilities. Accordingly, any files (template overrides or custom files) which reference the &lt;code&gt;ezpages&lt;/code&gt; table will need adjustment to account for this division.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Date format updates began in this release - see &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-155&#34;&gt;Zen Cart 1.5.5&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The arguments for the notifier &lt;code&gt;NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL&lt;/code&gt; were changed.  This necessitated a code change in the observers watching for it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;responsive_classic&lt;/code&gt; template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Starting in this version, the email css was pulled out of the individual templates into a shared file called &lt;code&gt;email/email_common.css&lt;/code&gt;.  If you are creating or updating email templates, you should follow this new practice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The phpBB object was removed&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-152&#34;&gt;Zen Cart 1.5.2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The list of pages created by &lt;code&gt;includes/modules/pages/header_php.php&lt;/code&gt; changed from a query result to an array.  So the template file &lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_page_default.php&lt;/code&gt; had to be updated to accommodate this change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zen-cart-150&#34;&gt;Zen Cart 1.5.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The admin menus are no longer built by files ending in &lt;code&gt;.dhtml&lt;/code&gt;.  Instead, a new database table called &lt;code&gt;admin_pages&lt;/code&gt; was introduced.  Mods which create their own menu entries must also follow this convention.  Guidelines for &lt;a href=&#34;/dev/plugins/upgrading_to_1.5/&#34;&gt;upgrading plugins to 1.5&lt;/a&gt; include instructions on this step.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: The PHP Lifecycle</title>
+      <link>/user/upgrading/php_lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/php_lifecycle/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The PHP language (which Zen Cart uses) is constantly evolving.  And as this occurs, older versions are left behind and no longer supported.&lt;/p&gt;
+&lt;p&gt;You can see the currently supported versions of PHP on &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;the PHP Version Support Policy&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;To see which version of PHP is appropriate for a particular version of Zen Cart, refer to &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your admin panel will show you &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;your PHP version&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you see a message like this in your control panel:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/php_deprecated.png&#34; alt=&#34;PHP deprecated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;it means you have to update your PHP version (and likely your Zen Cart version as well).&lt;/p&gt;
+&lt;p&gt;Not updating PHP and Zen Cart in a timely manner puts you at risk of being hacked, so staying up to date is highly recommended.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Unknown column error after upgrade</title>
+      <link>/user/upgrading/unknown_column/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/unknown_column/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you get a message like,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; PHP Fatal error: 1054:Unknown column &#39;c.customers_secret&#39; in &#39;field list&#39; ...&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; PHP Fatal error: 1054:Unknown column &#39;o.language_code&#39; in &#39;field list&#39; ...&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;What is happening is that one or more of the &lt;code&gt;ALTER TABLE&lt;/code&gt; commands in the upgrade process run by &lt;code&gt;zc_install&lt;/code&gt; failed, and now a column which is expected to exist does not.&lt;/p&gt;
+&lt;p&gt;One very common root cause for this issue is a failure running an &lt;code&gt;ALTER TABLE&lt;/code&gt; required by an upgrade because the table in question still has old format dates.  See the page &lt;a href=&#34;/user/upgrading/date_standardization/&#34;&gt;date standardization&lt;/a&gt; for instructions on how to fix this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once you fix the issue that caused the &lt;code&gt;ALTER TABLE&lt;/code&gt; to fail, you will still need to run the original command to add the new field.  You may do this in phpMyAdmin or in Admin &amp;gt; Tools &amp;gt; Install SQL Patches.   Example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ALTER TABLE orders ADD language_code char(2) NOT NULL default &amp;#39;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Updating your PHP Version</title>
+      <link>/user/upgrading/php_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/php_version/</guid>
+      <description>
+        
+        
+        &lt;p&gt;After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4.&lt;/p&gt;
+&lt;p&gt;You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  &lt;a href=&#34;/user/first_steps/server_requirements/#php-version&#34;&gt;Server Requirements for running Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The process of changing your PHP is server-specific, depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other utility. See &lt;a href=&#34;/user/upgrading/php_configuration/&#34;&gt;PHP Configuration&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit.  For more details, see &lt;a href=&#34;/user/running/memory_limit/&#34;&gt;memory_limit&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;watch-out-for-new-php-warnings-after-updating-php&#34;&gt;Watch out for new PHP warnings after updating PHP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/php_debug_logs/&#34;&gt;Understanding problems that occur after upgrading PHP versions&lt;/a&gt; explains &lt;em&gt;why&lt;/em&gt; PHP warnings can suddenly start occurring.&lt;/li&gt;
+&lt;li&gt;An explanation of &lt;em&gt;how to fix them&lt;/em&gt; is provided in &lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages after upgrading&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you are suddenly seeing &amp;ldquo;out of memory&amp;rdquo; PHP notices, your memory_limit setting has likely been reset. Go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; to verify the setting of your PHP Memory Limit, and update it if required - see &lt;a href=&#34;/user/running/memory_limit/&#34;&gt;PHP memory_limit&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Upgrading and Templates</title>
+      <link>/user/upgrading/templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/upgrading/templates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are currently using a template which is not &lt;a href=&#34;/user/template/responsive/&#34;&gt;responsive&lt;/a&gt;, you may wish to migrate to the &lt;a href=&#34;/user/template/bootstrap/&#34;&gt;Bootstrap template&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you wish to retain your current template, review the guidance on &lt;a href=&#34;/user/template/template_changes/&#34;&gt;template updates&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

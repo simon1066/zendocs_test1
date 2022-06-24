@@ -1,0 +1,596 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Languages</title>
+    <link>/dev/languages/</link>
+    <description>Recent content in Languages on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/dev/languages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dev: Introduction</title>
+      <link>/dev/languages/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/languages/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Translations are done on a volunteer basis, so the quality and even installation instructions may vary. The standard installation instructions are in the &lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Storeowner Docs &amp;gt; Admin Pages &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You are always welcome to help improve a translation, by either making your suggestions known to the author of the translation or by making your wanted changes yourself.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Creating a New Translation</title>
+      <link>/dev/languages/creating_a_language_pack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/languages/creating_a_language_pack/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;create-folders-and-copy-files&#34;&gt;Create Folders and Copy Files&lt;/h2&gt;
+&lt;h3 id=&#34;essential-files&#34;&gt;Essential Files&lt;/h3&gt;
+&lt;p&gt;To create a new language pack you should start by copying all the English files to your new language folder structure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Copy &lt;code&gt;includes/languages/english.php&lt;/code&gt; to &lt;code&gt;includes/languages/YOURLANGUAGE.php&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy &lt;code&gt;includes/languages/english/&lt;/code&gt; and all sub directories to &lt;code&gt;includes/languages/YOURLANGUAGE/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy &lt;code&gt;admin/includes/languages/english.php&lt;/code&gt; to &lt;code&gt;admin/includes/languages/YOURLANGUAGE.php&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy &lt;code&gt;admin/includes/languages/english/&lt;/code&gt; and all sub directories to &lt;code&gt;admin/includes/languages/YOURLANGUAGE/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If old style image buttons are being used then you will also need to create&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/template_default/buttons/YOURLANGUAGE/&lt;/code&gt; and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/responsive_classic/buttons/YOURLANGUAGE/&lt;/code&gt; then fill with images of the buttons in your language&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;prior-to-157&#34;&gt;Prior to 1.5.7&lt;/h3&gt;
+&lt;p&gt;Prior to version 1.5.7  the &lt;code&gt;emails&lt;/code&gt; folder contained some English language sections in the templates.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;emails&lt;/code&gt; modify the email template files contents from English to your language (these files will overwrite the original distribution files).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;admin-extras&#34;&gt;Admin Extras&lt;/h3&gt;
+&lt;p&gt;The Admin pages store a lot of information in the configuration table on the database. 
+To do a complete conversion it will be necessary to convert the description fields to your chosen language. This will require a SQL patch.&lt;/p&gt;
+&lt;h3 id=&#34;locations-of-language-files&#34;&gt;Locations of Language Files&lt;/h3&gt;
+&lt;p&gt;These are the locations where you will find language files that may need translating.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;emails (Only required for v1.5.6 and earlier)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;email_common.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;email_template_checkout.htm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more html files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;admin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;languages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;english.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;english&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;admin_account.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;extra_definitions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ckeditor.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;images&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;buttons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;button_add_profile.gif&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more gif files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;modules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;newsletters&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;newsletter.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;languages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;english.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;english&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;account.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;header.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;extra_definitions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;cardinal3dsecure.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;empty.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;responsive_classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;product_free_shipping.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;html_includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;define_ask_a_question.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;define_checkout_success.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;responsive_classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;define_checkout_success.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;images&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;icon.gif&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;modules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;order_total&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ot_cod_fee.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;empty.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;payment&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;authorizenet.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;empty.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shipping&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;flat.php&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more php files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;empty.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;responsive_classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;icon_names.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;templates (&lt;strong&gt;NOTE&lt;/strong&gt; The folders below are only needed if the store has turned OFF the CSS buttons feature.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;responsive_classic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;buttons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;english&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;button_update_cart.png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;template_default&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;buttons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;english&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;button_add_address.gif&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more gif files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; You should have this complete directory structure with &lt;code&gt;english&lt;/code&gt; replaced by &lt;code&gt;YOURLANGUAGE&lt;/code&gt; so for welsh &lt;code&gt;YOURLANGUAGE&lt;/code&gt; becomes &lt;code&gt;cymraeg&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;modifying-the-language-files&#34;&gt;Modifying the Language Files&lt;/h2&gt;
+&lt;p&gt;Having copied all the English files you should modify the define statements within the files to your chosen language.&lt;/p&gt;
+&lt;p&gt;e.g. for a Welsh language translation modifying english.php&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Define the name of your Gift Certificate as Gift Voucher, Gift Certificate, Zen Cart Dollars, etc. here for use through out the shop
+  define(&amp;#39;TEXT_GV_NAME&amp;#39;,&amp;#39;Tystysgrif Rhodd&amp;#39;);
+  define(&amp;#39;TEXT_GV_NAMES&amp;#39;&amp;#39;Tystysgrifau Rhodd&amp;#39;);
+
+// used for redeem code, redemption code, or redemption id
+  define(&amp;#39;TEXT_GV_REDEEM&amp;#39;,&amp;#39;Cod Adbrynu&amp;#39;);
+
+// text for gender
+  define(&amp;#39;MALE&amp;#39;, &amp;#39;Br.&amp;#39;);
+  define(&amp;#39;FEMALE&amp;#39;, &amp;#39;Bns.&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; Any files named &lt;code&gt;english.php&lt;/code&gt; must be renamed to &lt;code&gt;YOURLANGUAGE.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Eg. For Welsh &lt;code&gt;english.php&lt;/code&gt; becomes &lt;code&gt;cymraeg.php&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-language-overrides-for-admin-configuration-menu-headings&#34;&gt;Creating Language Overrides for Admin Configuration Menu Headings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Get a full list of the descriptions used in admin.&lt;/p&gt;
+&lt;p&gt;You can extract a full set of the admin descriptions from the configuration table using any database management tool (eg phpMyAdmin) and saving to a CSV or text file. A query you could run is:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SELECT configuration_key, configuration_title, configuration_description FROM configuration;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You will get a file containing:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-csv&#34; data-lang=&#34;csv&#34;&gt;STORE_COUNTRY, Country, The country my store is located in &amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;strong&amp;gt;Note: Please remember to update the store zone.&amp;lt;/strong&amp;gt;
+STORE_NAME, Store Name, The name of my store
+STORE_OWNER, Store Owner, The name of my store owner
+STORE_ZONE, Zone, The zone my store is located in
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create an override language defines file to override the descriptions on the database.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Edit &lt;code&gt;admin/includes/languages/YOURLANGUAGE/configuration.php&lt;/code&gt;. This is where you will add the following &lt;code&gt;defines&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For each entry extracted from the database you need to create 2 &lt;code&gt;define&lt;/code&gt; statements&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;One for the title, preceding the configuration key with &lt;code&gt;CFGTITLE_&lt;/code&gt;:&lt;br&gt;
+&lt;code&gt;define(&#39;CFGTITLE_STORE_NAME&#39;, &#39;Store Name&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;One for the description, preceding the configuration key with &lt;code&gt;CFGDESC_&lt;/code&gt;:&lt;br&gt;
+&lt;code&gt;define(&#39;CFGDESC_STORE_NAME&#39;, &#39;The name of my store&#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;E.g. To change the descriptions above from English to the Welsh your file could contain:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+///... pre-existing defines here
+///... your new entries will come after them, like this:
+/*
+ * Admin configuration title and description overrides
+ */
+define(&amp;#39;CFGTITLE_STORE_COUNTRY&amp;#39;, &amp;#39;Gwlad&amp;#39;);
+define(&amp;#39;CFGDESC_STORE_COUNTRY&amp;#39;, &amp;#39;Y wlad y mae fy siop wedi\&amp;#39;i lleoli yn &amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;strong&amp;gt; Nodyn: Cofiwch ddiweddaru\&amp;#39;r parth storfa. &amp;lt;/strong&amp;gt;&amp;#39;);
+define(&amp;#39;CFGTITLE_STORE_NAME&amp;#39;, &amp;#39;Enw\&amp;#39;r Storfa&amp;#39;);
+define(&amp;#39;CFGDESC_STORE_NAME&amp;#39;, &amp;#39;Enw fy siop&amp;#39;);
+define(&amp;#39;CFGTITLE_STORE_OWNER&amp;#39;, &amp;#39;Perchennog y Siop&amp;#39;);
+define(&amp;#39;CFGDESC_STORE_OWNER&amp;#39;, &amp;#39;Enw perchennog fy siop&amp;#39;);
+define(&amp;#39;CFGTITLE_STORE_ZONE&amp;#39;, &amp;#39;Parth&amp;#39;);
+define(&amp;#39;CFGDESC_STORE_ZONE&amp;#39;, &amp;#39;Mae\&amp;#39;r parth y mae fy siop wedi\&amp;#39;i leoli ynddo&amp;#39;);
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It will be necessary to do this for every key you want to change in the Configuration menus.&lt;/p&gt;
+&lt;h2 id=&#34;add-your-language-icon&#34;&gt;Add Your Language Icon&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Place an small image file into &lt;code&gt;includes\languages\images&lt;/code&gt; to represent your language. This is often the flag of YOURLANGUAGE country. Ideally the image &lt;code&gt;height&lt;/code&gt; will be approx &lt;code&gt;14px&lt;/code&gt; in order to match the fonts and line-heights where the image is usually displayed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;making-the-translation-package-user-friendly&#34;&gt;Making The Translation Package User Friendly&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Include a file named &lt;em&gt;README.txt&lt;/em&gt; where you say something about what has been translated and what has not, along with any other information you feel is appropriate and helpful to the person using it (including your future self!).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create installation instructions (&lt;em&gt;Install.txt&lt;/em&gt; or &lt;em&gt;Install.html&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the &lt;code&gt;locale&lt;/code&gt; cues in your language files. This lets Zen Cart match up the locale using the call to &lt;em&gt;setlocale()&lt;/em&gt; in the following files:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/languages/YOURLANGUAGE.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;admin/includes/languages/YOURLANGUAGE.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Specifically, set the correct lookups in the &lt;code&gt;$locales = ....&lt;/code&gt; line below, as well as the relevant date formats.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// look in your $PATH_LOCALE/locale directory for available locales..
+  $locales = [&amp;#39;en_US&amp;#39;, &amp;#39;en_US.utf8&amp;#39;, &amp;#39;en&amp;#39;, &amp;#39;English_United States.1252&amp;#39;];
+  @setlocale(LC_TIME, $locales);
+  define(&amp;#39;DATE_FORMAT_LONG&amp;#39;, &amp;#39;%A %d %B, %Y&amp;#39;); // this is used for strftime()
+  define(&amp;#39;DATE_FORMAT&amp;#39;, &amp;#39;m/d/Y&amp;#39;); // this is used for date()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;making-language-pack-available-to-others&#34;&gt;Making Language Pack Available to Others&lt;/h2&gt;
+&lt;p&gt;Having completed your language pack please upload it to the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Language Packs&lt;/a&gt; section of the Plugins Library.&lt;/p&gt;
+&lt;h2 id=&#34;updating-an-older-language-pack&#34;&gt;Updating an Older Language Pack&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;/dev/languages/updating_older_translation/&#34;&gt;updating an older translation&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Developer Information on Array based Language files</title>
+      <link>/dev/languages/158_language_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/languages/158_language_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Zen Cart 1.5.8, the language file structure was modified so that the PHP &lt;code&gt;define&lt;/code&gt; statement is no longer used directly to set a language constant.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined (in an override vs core file), so the old approach would create debug logs if something wasn&amp;rsquo;t done.&lt;/p&gt;
+&lt;p&gt;The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called &lt;em&gt;array based language files&lt;/em&gt; (as opposed to the older &lt;em&gt;define based language files&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;So for example, in Zen Cart 1.5.7, the file &lt;code&gt;includes/languages/english/login.php&lt;/code&gt; would have:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADING_TITLE&amp;#39;, &amp;#39;Welcome, Please Sign In&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In Zen Cart 1.5.8, the file &lt;code&gt;includes/languages/english/lang.login.php&lt;/code&gt; would have:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$define = [
+...
+    &amp;#39;HEADING_TITLE&amp;#39; =&amp;gt; &amp;#39;Welcome, Please Sign In&amp;#39;,
+... ]; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;with a &lt;code&gt;define&lt;/code&gt; to be done later after all the strings had been gathered.&lt;/p&gt;
+&lt;p&gt;Using arrays allows for the following kinds of behavior:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create a set of language definitions in the storefront override files, but run the base file to ensure that any missing definitions are created, while not updating any definitions that are changed in the override.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a definition in the main language file which works for most cases, but allow it to be overridden in a per-page language file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators.&lt;/p&gt;
+&lt;p&gt;Developers seeking to build new translations for 1.5.8 and above have two options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start with the English files, and do the translations by hand.  The advantage of this approach is that it is just translation; all the necessary code changes in each language file have been done.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start with an older translation, and run the &lt;a href=&#34;https://github.com/torvista/Zen_Cart-Language_File_Converter&#34;&gt;Language File Converter&lt;/a&gt;. This reduces the translation burden, but requires coding skills, since the produced files will need to be hand edited in cases where the tool didn&amp;rsquo;t produce perfect results.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Of course, a hybrid approach is possible where (2) is performed, and then issues are resolved on a per-file basis using approach (1).&lt;/p&gt;
+&lt;h3 id=&#34;issues-with-the-converter&#34;&gt;Issues with the Converter&lt;/h3&gt;
+&lt;p&gt;The Converter is not perfect.  It allows rapid conversion of language files, but some portion of the output will still need manual correction.  Translators following approach (2) above will need to make changes in the following situations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;references to global variables such as &lt;code&gt;$template&lt;/code&gt; (example: &lt;code&gt;credit_cards.php&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;separate code paths for admin vs storefront (example: &lt;code&gt;square.php&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;backward references to language definitions from earlier within the same file (example: &lt;code&gt;shopping_cart.php&lt;/code&gt; reference to &lt;code&gt;TEXT_CART_HELP&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Parameterized calls to &lt;code&gt;zen_href_link&lt;/code&gt; (example: &lt;code&gt;checkout_success.php&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PHP statements in isolation (example: &lt;code&gt;setlocale&lt;/code&gt; in &lt;code&gt;english.php&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;checks for &lt;code&gt;if (!defined(&lt;/code&gt; (example: &lt;code&gt;paypalwpp.php&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;links to javascript functions (example: &lt;code&gt;shopping_cart.php&lt;/code&gt; definition for &lt;code&gt;TEXT_CART_HELP&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;definitions which begin with a constant (example: &lt;code&gt;gv_faq.php&lt;/code&gt; definition for &lt;code&gt;NAVBAR_TITLE&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Referring to the &lt;code&gt;english&lt;/code&gt; translation will demonstrate a known-working approach for fixing these issues.&lt;/p&gt;
+&lt;p&gt;One common failure the converter has is failing to change a comma to a double arrow operator in a &lt;code&gt;define&lt;/code&gt;.  For example, changing&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;define(&#39;TEXT_ONETIME_CHARGES_EMAIL&#39;,&amp;quot;\t&amp;quot; . &#39;*onetime charges = &#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;TEXT_ONETIME_CHARGES_EMAIL&#39;, &amp;quot;\t&amp;quot; . &#39;*onetime charges = &#39;,&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;These failures can be detected with this grep pattern:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grep &amp;#34;&amp;#39;[A-Z0-9_]*&amp;#39;[\s]*,&amp;#34; *.php | grep -v &amp;#34;=&amp;gt;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;available-array-based-language-packs-for-zen-cart-158-and-above&#34;&gt;Available Array Based Language Packs for Zen Cart 1.5.8 and above&lt;/h3&gt;
+&lt;p&gt;Please see &lt;a href=&#34;/user/localization/158_language_files/&#34;&gt;User information on Array based Language files&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;code-conversion&#34;&gt;Code Conversion&lt;/h2&gt;
+&lt;p&gt;If you need to include a language file directly, see the code example in the &lt;a href=&#34;/dev/plugins/upgrading_to_158/#array-based-language-files&#34;&gt;Upgrading plugins for 1.5.8&lt;/a&gt; FAQ.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Updating an Older Translation</title>
+      <link>/dev/languages/updating_older_translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/languages/updating_older_translation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If a language pack is out of date, you can easily bring it up to date by comparing the English language files from the Zen Cart version the language pack was made for (or last updated for) against the English language files of the current Zen Cart version.&lt;/p&gt;
+&lt;h1 id=&#34;heres-how-to-do-that&#34;&gt;Here&amp;rsquo;s How to do That:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourceforge.net/projects/zencart/files/&#34;&gt;Download the Zen Cart version&lt;/a&gt; that matches the original language pack and the Zen Cart version you wish to update the language pack for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unpack the two packages into two separate directories.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a comparison program like &lt;a href=&#34;https://www.scootersoftware.com/download.php&#34;&gt;Beyond Compare&lt;/a&gt; or &lt;a href=&#34;https://winmerge.org/downloads/&#34;&gt;WinMerge&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the two versions of the directories &lt;code&gt;includes/languages and admin/includes/languages&lt;/code&gt;, and be sure to include subfolders.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a file exists only in the older release, delete it from your language pack. (TIP: You might do the deletes last in case some of the things in these files have been relocated to other files &amp;hellip; in which case you might want to move those already-translated defines to the new location to save yourself some translating work)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a file exists only in the newer release, copy that English language file into your language pack and translate it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a file has changed between the two versions, compare those English files to see what exact changes has been made, and update your language pack accordingly. This includes adding new defines and translating them, as well as identifying what got changed in existing English text that requires updating the prior translation of that define.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;to support older stores which have turned &lt;strong&gt;OFF&lt;/strong&gt; the CSS buttons feature (or are so old that they don&amp;rsquo;t have the choice), you could update the button images:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the two versions of the directory &lt;code&gt;includes/templates/template_default/buttons/english/&lt;/code&gt; and see if there are any new files. You may also consider updating the images if any have changed, but that&amp;rsquo;s probably not strictly necessary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the two versions of the directory &lt;code&gt;includes/templates/responsive_classic/buttons/english/&lt;/code&gt; and see if there are any new files. You may also consider updating the images if any have changed, but that&amp;rsquo;s probably not strictly necessary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Please &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;share your updated translation with the community&lt;/a&gt;. Thank you!&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,708 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – New User Topics</title>
+    <link>/zendocs_test1/user/new_user_topics/</link>
+    <description>Recent content in New User Topics on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/new_user_topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Caching</title>
+      <link>/zendocs_test1/user/new_user_topics/browser_caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/browser_caching/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;Why don&amp;rsquo;t I see my new image?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Why don&amp;rsquo;t I see my new CSS style?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Where&amp;rsquo;s my JavaScript function update?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/new_user_topics/change_header_logo/#image-caching&#34;&gt;Image Caching&lt;/a&gt; is one form of caching, but many other things can also be cached, meaning you won&amp;rsquo;t see your changes right away.&lt;/p&gt;
+&lt;p&gt;If you upload a new file with the same name as an existing file, in many cases you won&amp;rsquo;t see the change right away in your browser.  This could be for an image, a CSS file or a JavaScript file.  Why is this?&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s because of a browser behavior called &lt;em&gt;caching&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The reason for this is that the default configuration of browsers (and Zen Cart) is to assume that you are a &lt;em&gt;user&lt;/em&gt;, not a &lt;em&gt;developer&lt;/em&gt;, so it tries to make your browsing experience faster by caching images.  Caching an image means retrieving it one time from the webserver to your local computer, and then using the local copy next time the image is needed, thereby saving the time required to retrieve it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can clear the cached version of the current page by doing a hard refresh:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On Windows, use  &lt;strong&gt;Ctrl+Shift+R&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On Mac, use &lt;strong&gt;Cmd+Shift+R&lt;/strong&gt; (or &lt;strong&gt;Cmd+Option+R&lt;/strong&gt; on Safari)&lt;/li&gt;
+&lt;li&gt;On most computers, hold &lt;strong&gt;SHIFT&lt;/strong&gt; while clicking the Reload Icon with the mouse&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For images, you can also right click on the image, select &amp;ldquo;Open Image in New Tab&amp;rdquo;,  and do a hard refresh there.&lt;/p&gt;
+&lt;h3 id=&#34;disabling-browser-cache&#34;&gt;Disabling Browser Cache&lt;/h3&gt;
+&lt;p&gt;Since you are acting as a developer while you work on your site, you may want to turn caching off.  The way this is done is specific to every browser and environment, so you&amp;rsquo;ll have to do a web search to figure out how to do it with the tools you are working with.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The easiest way&lt;/em&gt; to get this working the first time is to use Google Chrome on a desktop computer, and follow these steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Right click and select Inspect.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/browser_inspect.png&#34; alt=&#34;Inspect&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the Network Tab&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/browser_network.png&#34; alt=&#34;Network&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the box that says Disable Cache&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/browser_disable_cache.png&#34; alt=&#34;disable_cache&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With the Inspect window open, refresh the page being tested.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you have mastered this technique, you can figure out how to do it in other browsers and environments.  &lt;em&gt;It is particularly tedious to do this on a mobile device&lt;/em&gt;, so use a desktop computer until you have more experience doing this sort of thing.&lt;/p&gt;
+&lt;h2 id=&#34;other-forms-of-caching&#34;&gt;Other forms of Caching&lt;/h2&gt;
+&lt;p&gt;There are other kinds of caching which can be set up server-side that you might need to check or disable during development, or your changes won&amp;rsquo;t be immediately visible.  For example,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some hosters (notably SiteGround) run a utility called Dynamic Cache&lt;/li&gt;
+&lt;li&gt;CloudFlare has built-in caching&lt;/li&gt;
+&lt;li&gt;Some sites running Securi and/or WordPress have caching&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the &#34;Congratulations! you have successfully installed...&#34; Message?</title>
+      <link>/zendocs_test1/user/new_user_topics/congratulations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/congratulations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The default &lt;code&gt;Congratulations! You have successfully installed your Zen Cart; E-Commerce Solution&lt;/code&gt; text is rendered as an &lt;code&gt;H1&lt;/code&gt; tag in the site template&amp;rsquo;s HTML code. It is a perfect opportunity to provide some rich SEO text related to your store/business. It is best to put something useful here, instead of merely deleting it.&lt;/p&gt;
+&lt;p&gt;To edit this important text, do the following:&lt;/p&gt;
+&lt;p&gt;Open the &lt;code&gt;includes/languages/english/index.php&lt;/code&gt; file and find the following code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  define(&amp;#39;HEADING_TITLE&amp;#39;, &amp;#39;Congratulations! You have successfully installed your Zen Cart&amp;amp;reg; E-Commerce Solution.&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace the text starting “Congratulations” with your own text that is welcoming and describes your business.&lt;/p&gt;
+&lt;p&gt;Make sure that the single quote marks at the beginning and end are not left out. If your text includes single-quotes (apostrophes) be sure to add a &lt;code&gt;\&lt;/code&gt; before them to &amp;ldquo;escape&amp;rdquo; them for proper PHP syntax.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: This line occurs twice, so be sure to replace both lines.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Save the edited file to &lt;code&gt;includes/languages/english/YOURTEMPLATE/index.php&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the &#34;Sales Message Goes Here&#34; or &#34;Tagline Here&#34; text?</title>
+      <link>/zendocs_test1/user/new_user_topics/sales_message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/sales_message/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To change the &lt;code&gt;Sales Message Goes Here&lt;/code&gt; or &lt;code&gt;Tagline Here&lt;/code&gt; text to say what you want, do the following:&lt;/p&gt;
+&lt;p&gt;Open &lt;code&gt;includes/languages/english/header.php&lt;/code&gt; in your text editor. Find the following line of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADER_SALES_TEXT&amp;#39;, &amp;#39;Tagline Here&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;Tagline Here&lt;/code&gt; with your own text, making sure that the single quote marks are not left out.&lt;/p&gt;
+&lt;p&gt;Save the edited file to &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the &#34;Welcome Guest&#34; message?</title>
+      <link>/zendocs_test1/user/new_user_topics/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/welcome/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you want to eliminate “Welcome Guest! Would you like to log yourself in?” message completely, turn off the Customer Greeting in your 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout settings&lt;/a&gt;.  Go to &lt;em&gt;Customer Greeting - Show on Index Page&lt;/em&gt; and set it to 0.&lt;/p&gt;
+&lt;p&gt;If you want to replace this message with one of your own, 
+edit the file 
+&lt;code&gt;includes/languages/english/YOURTEMPLATE/index.php&lt;/code&gt;, 
+and locate these lines of code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (STORE_STATUS == &amp;#39;0&amp;#39;) {
+   define(&amp;#39;TEXT_GREETING_GUEST&amp;#39;, &amp;#39;Welcome &amp;lt;span class=&amp;#34;greetUser&amp;#34;&amp;gt;Guest!&amp;lt;/span&amp;gt; Would you like to &amp;lt;a href=&amp;#34;%s&amp;#34;&amp;gt;log yourself in&amp;lt;/a&amp;gt;?&amp;#39;);
+} else {
+   define(&amp;#39;TEXT_GREETING_GUEST&amp;#39;, &amp;#39;Welcome, please enjoy our online showcase.&amp;#39;);
+}
+define(&amp;#39;TEXT_GREETING_PERSONAL&amp;#39;, &amp;#39;Hello &amp;lt;span class=&amp;#34;greetUser&amp;#34;&amp;gt;%s&amp;lt;/span&amp;gt;!&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see, there are two Welcome messages depending upon whether you wish Zen Cart to be a fully functioning store, or just a showroom.&lt;/p&gt;
+&lt;p&gt;Edit the message starting from the word “Welcome” but be careful not to change the text in angled brackets, or the brackets themselves. Make sure that the single quote marks are not left out. If you want to include an apostrophe in your text e.g. “Lucy&amp;rsquo;s Store”, you will need to put an escape character before the apostrophe, i.e. “Lucy&#39;s Store”.&lt;/p&gt;
+&lt;p&gt;Save the edited file and upload it to your server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the &#34;Welcome to Zen Cart!&#34; image?</title>
+      <link>/zendocs_test1/user/new_user_topics/welcome_image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/welcome_image/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To remove this image, you want to modify the file &lt;code&gt;includes/languages/english/html_includes/define_main_page.php&lt;/code&gt;, or the file &lt;code&gt;includes/languages/english/html_includes/responsive_classic/define_main_page.php&lt;/code&gt; if you are using the responsive classic template.&lt;/p&gt;
+&lt;p&gt;Open this file, and remove the first line, which displays the image.  You may want  to make additional changes to customize the content for your specific needs. 
+Save the edited file to &lt;code&gt;includes/languages/english/html_includes/YOURTEMPLATE/define_main_page.php&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+&lt;p&gt;If you are using a language other than English, save the file to &lt;code&gt;includes/languages/YOURLANGUAGE/html_includes/YOURTEMPLATE/define_main_page.php&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; See &lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; for an 
+explanation of &lt;code&gt;YOURLANGUAGE&lt;/code&gt; and &lt;code&gt;YOURTEMPLATE&lt;/code&gt; if these terms are 
+unfamiliar.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the header background image</title>
+      <link>/zendocs_test1/user/new_user_topics/change_header_image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/change_header_image/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This content does not apply to the responsive_classic template, and may not apply to your template.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/template/template_default/&#34;&gt;default template&lt;/a&gt; and its derivatives use a background image in the header.&lt;/p&gt;
+&lt;img src=&#34;/zendocs_test1/images/header_bg.jpg&#34; alt=&#34;Zen Cart background Image&#34; /&gt;
+&lt;p&gt;You can see this by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/template_selection/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Template Selection&lt;/a&gt; and switching to &lt;em&gt;Classic Contemporary Green&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;By default Zen Cart uses &lt;code&gt;header_bg.jpg&lt;/code&gt; for the name of this image, but you can use you own filename for the background image.&lt;/p&gt;
+&lt;p&gt;Using an &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#graphics-editors&#34;&gt;image editor&lt;/a&gt;, create a new background graphic and save it to 
+&lt;code&gt;includes/templates/YOURTEMPLATE/images/yourheaderimage.jpg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now open your stylesheet.css and find or add the following code.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#logoWrapper {
+  width:760px;
+  height:110px;
+  background-image:url(&amp;#39;../images/yourheaderimage.jpg&amp;#39;);
+  background-repeat:no-repeat;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the file name to that of your own header image, adjust the width and height to those of your header image, save the stylesheet and upload both files to your server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the logo or the logo alt text in the header?</title>
+      <link>/zendocs_test1/user/new_user_topics/change_header_logo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/change_header_logo/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;storefront-header&#34;&gt;Storefront Header&lt;/h2&gt;
+&lt;p&gt;By default, Zen Cart uses &lt;code&gt;includes/templates/YOURTEMPLATE/images/logo.gif&lt;/code&gt; for the filename of the logo image, but you can use your own filename for the logo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If your logo is already available as a .gif image, it&amp;rsquo;s faster to just upload your logo by naming the file as logo.gif and replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.&lt;/p&gt;
+&lt;p&gt;Using an &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#graphics-editors&#34;&gt;image editor&lt;/a&gt;, create your new logo and save it to &lt;code&gt;includes/templates/YOURTEMPLATE/images/yourname&lt;/code&gt; and upload it to your server.&lt;/p&gt;
+&lt;p&gt;The name &lt;code&gt;yourname&lt;/code&gt; will also include a file extension, such as &lt;code&gt;.png&lt;/code&gt;, &lt;code&gt;.jpg&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;p&gt;After creating your logo you can adjust the alt text, width, height, and image name in &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If you don&amp;rsquo;t have the file &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt;, then copy &lt;code&gt;includes/languages/english/header.php&lt;/code&gt; to &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt; before editing.  See &lt;a href=&#34;/zendocs_test1/user/new_user_topics/no_such_file/&#34;&gt;What if I don’t have a file that some instructions mention?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the purpose of this example, let&amp;rsquo;s assume &lt;code&gt;yourname&lt;/code&gt; is &lt;code&gt;newlogo.png&lt;/code&gt;, and that the logo is 200px wide and 80px tall.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADER_ALT_TEXT&amp;#39;, &amp;#39;My new alt text&amp;#39;);
+define(&amp;#39;HEADER_LOGO_WIDTH&amp;#39;, &amp;#39;200&amp;#39;); // this is the number of pixels
+define(&amp;#39;HEADER_LOGO_HEIGHT&amp;#39;, &amp;#39;80&amp;#39;); // this is the number of pixels
+define(&amp;#39;HEADER_LOGO_IMAGE&amp;#39;, &amp;#39;newlogo.png&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save this file and upload it to your server.&lt;/p&gt;
+&lt;p&gt;By default, the logo is left aligned. Changing the alignment involves making a modification to your &lt;code&gt;includes/templates/YOURTEMPLATE/css/stylesheet.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Open the file and find the following:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {float: left;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Since this is a collection of several “selectors” (#logo, .centerBoxContents, etc) and in order not to interfere with the layout of other sections, split this into two separate statements and create a new selector/definition below it, like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {float: left;}
+
+#logo {float: left;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To center the logo use &lt;code&gt;text-align: center;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To right align the logo use &lt;code&gt;float: right;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;admin-header&#34;&gt;Admin Header&lt;/h2&gt;
+&lt;p&gt;A similar change should be made in &lt;code&gt;admin/includes/languages/english.php&lt;/code&gt;, which contains the same four PHP define statements. You might use a different image in your admin. The filename mentioned here refers to a &lt;em&gt;different&lt;/em&gt; file and location than the one used above for the storefront. See notes below.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADER_ALT_TEXT&amp;#39;, &amp;#39;My new alt text&amp;#39;);
+define(&amp;#39;HEADER_LOGO_WIDTH&amp;#39;, &amp;#39;200&amp;#39;);
+define(&amp;#39;HEADER_LOGO_HEIGHT&amp;#39;, &amp;#39;80&amp;#39;);
+define(&amp;#39;HEADER_LOGO_IMAGE&amp;#39;, &amp;#39;newlogo.png&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The image itself should be placed in the &lt;code&gt;admin/images/&lt;/code&gt; folder.
+See &lt;a href=&#34;/zendocs_test1/user/orders/high_res_logo&#34;&gt;Using your logo on packing slips and invoices&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;If the logo in your admin is too wide for the white background, adjust the size of the div in &lt;code&gt;admin/login.php&lt;/code&gt;. You&amp;rsquo;ll see 3 lines that look like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;      &amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt;
+        &amp;lt;div class=&amp;#34;col-sm-offset-1 col-md-offset-3 col-lg-offset-4 col-xs-12 col-sm-10 col-md-6 col-lg-4 text-center&amp;#34;&amp;gt;
+          &amp;lt;div class=&amp;#34;login-main-div login-box-shadow&amp;#34;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For desktop display, try adjusting &lt;code&gt;col-lg-4&lt;/code&gt; to &lt;code&gt;col-lg-6&lt;/code&gt;, for example, then adjust &lt;code&gt;col-lg-offset-4&lt;/code&gt; to &lt;code&gt;col-lg-offset-3&lt;/code&gt;.  Experiment with different values until you find one that works.&lt;/p&gt;
+&lt;h2 id=&#34;image-caching&#34;&gt;Image Caching&lt;/h2&gt;
+&lt;p&gt;The reason the instructions above recommend using the new name &lt;code&gt;newlogo.png&lt;/code&gt; is to ensure that the cache isn&amp;rsquo;t used.&lt;/p&gt;
+&lt;p&gt;If you simply replace &lt;code&gt;includes/templates/YOURTEMPLATE/images/logo.gif&lt;/code&gt; with your own logo using the same filename, your browser will likely not pick up the change immediately because of &lt;a href=&#34;/zendocs_test1/user/new_user_topics/browser_caching/&#34;&gt;caching&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/logo/&#34;&gt;Logos in HTML emails&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/orders/high_res_logo&#34;&gt;Using your logo on packing slips and invoices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I change the title of main_page=page_X?</title>
+      <link>/zendocs_test1/user/new_user_topics/title_change_for_page_x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/title_change_for_page_x/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;PAGE_2&lt;/code&gt;, &lt;code&gt;PAGE_3&lt;/code&gt; and &lt;code&gt;PAGE_4&lt;/code&gt; are called the &lt;a href=&#34;/zendocs_test1/user/template/extra_pages/&#34;&gt;extra pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To change the name of &lt;code&gt;page_2&lt;/code&gt;, &lt;code&gt;page_3&lt;/code&gt; or &lt;code&gt;page_4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;1. open the appropriate file: &lt;code&gt;/includes/languages/YOURLANGUAGE/page_?.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2. make the changes to fit your needs&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;NAVBAR_TITLE&amp;#39;, &amp;#39;Page ?&amp;#39;);  
+define(&amp;#39;HEADING_TITLE&amp;#39;, &amp;#39;Page ?&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3. then save the file to:&lt;br&gt;
+&lt;code&gt;/includes/languages/YOURLANGUAGE/YOURTEMPLATE/page_?.php&lt;/code&gt; and upload to your server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; See &lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; for an 
+explanation of &lt;code&gt;YOURLANGUAGE&lt;/code&gt; and &lt;code&gt;YOURTEMPLATE&lt;/code&gt; if these terms are 
+unfamiliar.&lt;/p&gt;
+&lt;p&gt;This technique applies to these pages:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Define&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PAGE_2&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PAGE_3&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PAGE_4&lt;/td&gt;
+&lt;td&gt;index.php?main_page=page_4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I determine which files to edit?</title>
+      <link>/zendocs_test1/user/new_user_topics/what_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/what_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;I want to make changes to the text that shows up in xxxxxxxxx spot on xxxxxx page. How do I find out what where it is, and what file to change?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use a &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#text-search-tools&#34;&gt;text-search tool&lt;/a&gt; that can handle standard text files.  Alternatively, you may use the built-in 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/developers_tool_kit/&#34;&gt;Developers Toolkit&lt;/a&gt;.  You can enter the words you&amp;rsquo;re looking for right there, and it will find them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Search everything under the &amp;ldquo;includes&amp;rdquo; folder for the text you are trying to change/edit/delete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;That will show you the text inside a &amp;ldquo;define&amp;rdquo; statement much like this:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   define(&amp;#39;TEXT_GREET_USER&amp;#39;,&amp;#39;Welcome to my site&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;This is where you&amp;rsquo;ll be making your changes. You should be sure to save the file according to the Template Overrides 
+concept (see the &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;Overrides Explained FAQ&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then use this article to be sure you put your CHANGES into the right place:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IF YOU ARE desiring to modify the PHP code that &amp;ldquo;uses&amp;rdquo; the text you just located, then you need to do another search &amp;ndash; ie: for the &lt;code&gt;TEXT_GREET_USER&lt;/code&gt; (constant name that you just found), and find the files that reference it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I remove the logo completely?</title>
+      <link>/zendocs_test1/user/new_user_topics/remove_logo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/remove_logo/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you don&amp;rsquo;t want or need a logo, open &lt;code&gt;includes/templates/YOURTEMPLATE/common/tpl_header.php&lt;/code&gt;, and find and remove this line of code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div id=&amp;#34;logo&amp;#34;&amp;gt;
+&amp;lt;?php // echo &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . HTTP_SERVER . DIR_WS_CATALOG . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . zen_image($template-&amp;gt;get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,&amp;#39;images&amp;#39;). &amp;#39;/&amp;#39; . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;; ?&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I remove the word &#34;Home&#34; in the middle column?</title>
+      <link>/zendocs_test1/user/new_user_topics/home_in_middle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/home_in_middle/</guid>
+      <description>
+        
+        
+        &lt;p&gt;On some pages, to the right of the categories sidebox, the word &amp;ldquo;Home&amp;rdquo; (or perhaps &amp;ldquo;Home &amp;gt; some-category-name&amp;rdquo;) appears above the page content.&lt;/p&gt;
+&lt;p&gt;These are called the &lt;em&gt;breadcrumbs&lt;/em&gt; (think Hansel and Gretel).  They show where you are and how to get back to previous locations. You can either turn them off completely or you can turn them off only on the main page. Although breadcrumbs may look a little odd on your home page, they can very useful to your users as they go deeper into your site.&lt;/p&gt;
+&lt;p&gt;To turn them off, go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout settings&lt;/a&gt; and set &lt;em&gt;Define Breadcrumb Status&lt;/em&gt; to 0.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I turn off the listing of categories that goes across the top of my page?</title>
+      <link>/zendocs_test1/user/new_user_topics/categories_tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/categories_tabs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &amp;ldquo;Category Header Menu&amp;rdquo; (originally called &lt;em&gt;Category Tabs&lt;/em&gt;), can be switched off by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Layout Settings&lt;/a&gt; and setting &lt;em&gt;Category Header Menu ON/OFF&lt;/em&gt; (or it might read &lt;em&gt;Categories-Tabs Menu ON/OFF&lt;/em&gt; ) to zero.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: I don&#39;t have the file YOURTEMPLATE/some-name</title>
+      <link>/zendocs_test1/user/new_user_topics/no_such_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/no_such_file/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You&amp;rsquo;re reading the instructions for a plugin or a FAQ page or a forum post
+and it tells you to update&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and you say, &amp;ldquo;Wait a minute - that file doesn&amp;rsquo;t exist in my cart!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;First of all, let&amp;rsquo;s review a few things:&lt;/p&gt;
+&lt;p&gt;a) The FAQ &lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt; explains what YOURTEMPLATE means.&lt;/p&gt;
+&lt;p&gt;b) The concept of a &lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;default file&lt;/a&gt; which can be overridden.&lt;/p&gt;
+&lt;p&gt;c) The FAQ &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;template overrides system&lt;/a&gt; explains what template overrides are.&lt;/p&gt;
+&lt;p&gt;So now you know &lt;code&gt;YOURTEMPLATE&lt;/code&gt; is an alias for the name of your template,
+and you know that template override files are files that are modified 
+to create a custom look for your store.&lt;/p&gt;
+&lt;p&gt;So if your template is &lt;code&gt;responsive_sheffield_blue&lt;/code&gt;, this file would be 
+&lt;code&gt;includes/templates/responsive_sheffield_blue/templates/tpl_product_info_display.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you are using the built-in default &lt;code&gt;responsive_classic&lt;/code&gt; template, 
+this file would be &lt;code&gt;includes/templates/responsive_classic/templates/tpl_product_info_display.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But what if the file still doesn&amp;rsquo;t exist, even if you now know the real 
+name of the file?&lt;/p&gt;
+&lt;p&gt;Template files (the ones with &lt;code&gt;YOURTEMPLATE&lt;/code&gt; - the &lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/#yourtemplate&#34;&gt;template name&lt;/a&gt; in their path) are all
+altered copies of the default file.&lt;/p&gt;
+&lt;p&gt;So if a referenced template file doesn&amp;rsquo;t exist, you would create it from the default file.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;To create&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;copy
+&lt;code&gt;includes/languages/english/header.php&lt;/code&gt; to &lt;code&gt;includes/languages/english/YOURTEMPLATE/header.php&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;how-do-you-find-the-default-file&#34;&gt;How do you find the default file?&lt;/h3&gt;
+&lt;p&gt;a) For files under &lt;code&gt;/includes/templates&lt;/code&gt;, the default file is &lt;code&gt;includes/templates/template_default/FOLDER/FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;b) For all other files, the default file is one level above the template folder.&lt;/p&gt;
+&lt;p&gt;If the templated file being referenced doesn&amp;rsquo;t exist in your cart, you can 
+create it by copying the original from the default file.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/#default-files&#34;&gt;Learn more about default files&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-about-language-files&#34;&gt;What about language files?&lt;/h3&gt;
+&lt;p&gt;Language files are very similar.  If your language is French, and the instructions say,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Update includes/languages/english/YOURTEMPLATE/checkout_shipping.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;then you would want to update&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/languages/french/YOURTEMPLATE/checkout_shipping.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and if that file doesn&amp;rsquo;t exist, you would create it from&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;includes/languages/french/checkout_shipping.php
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;installing-a-file&#34;&gt;Installing a file&lt;/h1&gt;
+&lt;p&gt;Unless you are creating these files directly on your server, 
+you need to copy these files to your server.  Use your 
+&lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to connect to your server, then go to your &lt;a href=&#34;/zendocs_test1/user/first_steps/how_do_i_install#what-is-my-webroot&#34;&gt;webroot&lt;/a&gt;,
+then to the folder where the file is supposed to exist.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your webroot is &lt;code&gt;/home/johndoe/public_html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Your template is &lt;code&gt;custom&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The file you are changing is &lt;code&gt;includes/languages/custom/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using FTP, connect to &lt;code&gt;YOURSITE.com&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Change directories so you get to the webroot.&lt;/li&gt;
+&lt;li&gt;Change directories from there so that you get to the folder for the file you are changing.  At this point, you will be in &lt;code&gt;/home/johndoe/public_html/includes/languages/custom&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Transfer the file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like for a live store.  Click the image to make it larger if needed.  As you can see, the template is &lt;code&gt;bootstrap&lt;/code&gt; and the webroot is &lt;code&gt;/home/thatsoft/public_html&lt;/code&gt;.&lt;/p&gt;
+&lt;a href=&#34;/zendocs_test1/images/ftp_using_filezilla.png&#34;&gt;
+&lt;img src=&#34;/zendocs_test1/images/ftp_using_filezilla.png&#34; alt=&#34;FTP Using Filezilla&#34; /&gt;
+&lt;/a&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Language Files - What are they and how are they used?</title>
+      <link>/zendocs_test1/user/new_user_topics/language_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/language_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart uses language files or a &amp;ldquo;languages system&amp;rdquo;  to define the text content used by the various display pages of your cart.&lt;/p&gt;
+&lt;p&gt;An obvious benefit of the &amp;ldquo;languages system&amp;rdquo; is the ability to run Zen Cart in another language or several languages at the same time. Using these files allows you to edit/change the content that appears on every page of your shop without needing to understand databases or programming languages.&lt;/p&gt;
+&lt;p&gt;The information in these files can be placed into four categories as follows:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global information&lt;/strong&gt; which contains text that is used across the entire site. This information is contained in &lt;code&gt;includes/languages/english.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Page Specific information&lt;/strong&gt; contains text used by individual pages in your cart. This information is contained in &lt;code&gt;includes/languages/english/PAGENAME.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Your Own Definitions&lt;/strong&gt; can contain text you might find necessary in your particular shop. This information is contained in &lt;code&gt;.php&lt;/code&gt; files stored in the folder 
+&lt;code&gt;include/languages/english/extra_definitions/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Define pages&lt;/strong&gt; are default pages used by Zen Cart and can be edited as necessary. You can also add your own pages if you find that necessary. These files are located in &lt;code&gt;includes/languages/english/html_includes/&lt;/code&gt;.  For more information on this topic, see &lt;a href=&#34;/zendocs_test1/user/new_user_topics/setting_up_define_pages&#34;&gt;setting up Define Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The information in language files (other than the define pages described above) is constructed using PHP &amp;ldquo;define statements,&amp;rdquo; which consist of a CONSTANT and the information contained in that CONSTANT as shown in the example below.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;MY_CONSTANT&amp;#39;, &amp;#39;This is my information&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The advantage of these &amp;ldquo;define statements&amp;rdquo; is that text information can be included in your template files using a constant rather than a hardcoded value, 
+allowing you to easily change templates but preserve your language customizations.  It also facilitates &lt;a href=&#34;/zendocs_test1/user/localization/languages/&#34;&gt;making your store multi-language&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;examples-and-usage&#34;&gt;&lt;strong&gt;Examples and Usage&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Global Definitions&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The definitions in english.php include the footer text, the sidebox headings, text used by the forms in Zen Cart and various error messages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From english.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_CATEGORIES&amp;#39;, &amp;#39;Categories&amp;#39;);
+...
+define(&amp;#39;ENTRY_FIRST_NAME&amp;#39;, &amp;#39;First Name:&amp;#39;);
+... 
+define(&amp;#39;ENTRY_STREET_ADDRESS_ERROR&amp;#39;, &amp;#39;Your Street Address must contain a minimum of &amp;#39; . ENTRY_STREET_ADDRESS_MIN_LENGTH . &amp;#39; characters.&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Page Specific Definitions&lt;/strong&gt;&lt;br&gt;
+These definitions are exactly what the title says; They define text information for specific display pages in your cart.&lt;br&gt;
+The basic information in these files includes the text for the page heading and the text for the navbar. Depending on the page, you will also find information for e-mail messages and for the tasks carried out by a particular display page.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;From conditions.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;NAVBAR_TITLE&amp;#39;, &amp;#39;Conditions of Use&amp;#39;);
+define(&amp;#39;HEADING_TITLE&amp;#39;, &amp;#39;Conditions of Use&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;From header.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADER_ALT_TEXT&amp;#39;, &amp;#39;Powered by Zen Cart :: The Art of E-Commerce&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADER_SALES_TEXT&amp;#39;, &amp;#39;TagLine Here&amp;#39;);  
+define(&amp;#39;HEADER_LOGO_WIDTH&amp;#39;, &amp;#39;192px&amp;#39;);  
+define(&amp;#39;HEADER_LOGO_HEIGHT&amp;#39;, &amp;#39;64px&amp;#39;);  
+define(&amp;#39;HEADER_LOGO_IMAGE&amp;#39;, &amp;#39;logo.gif&amp;#39;);&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;From contact_us.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;ENTRY_NAME&amp;#39;, &amp;#39;Full Name:&amp;#39;);
+define(&amp;#39;ENTRY_EMAIL&amp;#39;, &amp;#39;Email Address:&amp;#39;);
+define(&amp;#39;ENTRY_ENQUIRY&amp;#39;, &amp;#39;Message:&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Your Own Definitions&lt;/strong&gt;&lt;br&gt;
+As you customize your cart, you may find that you need to include additional definitions. You can do this by creating a definition file (say, &lt;code&gt;yourdefinitionfile.php&lt;/code&gt;) and saving it to &lt;code&gt;includes/languages/ENGLISH/extra_definitions&lt;/code&gt;
+Constructing your own defines would follow the pattern shown above.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;From product_free_shipping.php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;TEXT_PRODUCT_FREE_SHIPPING_ICON&amp;#39;, zen_image(DIR_WS_TEMPLATE_IMAGES . &amp;#39;always-free-shipping.gif&amp;#39;, &amp;#39;Always Free Shipping&amp;#39;)); // for an image or comment out to use another
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Define Pages&lt;/strong&gt;&lt;br&gt;
+These pages include your privacy statement, your conditions of use and shipping and handling information.&lt;br&gt;
+These files can be edited in a text editor and uploaded to your server, or you can edit them in your admin control panel in the &lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Pages from this folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define_privacy.php  
+define_conditions.php  
+define_shippinginfo.php
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Overrides for New Users</title>
+      <link>/zendocs_test1/user/new_user_topics/overrides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/overrides/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This article assumes you are familiar with 
+&lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/&#34;&gt;template default and default files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Template Override&amp;rdquo; and &amp;ldquo;Override System&amp;rdquo; are terms used to describe the collection of files needed to create your own template to customize the look of your cart. Using Overrides allows you to make and save changes to your cart without the fear of losing them when upgrades and patches are released.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Override System includes:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Language Files: includes/languages&lt;br&gt;
+Module Files: includes/modules&lt;br&gt;
+Template Files: includes/templates/template_default&lt;br&gt;
+Extra Definitions: includes/languages/YOURLANGUAGE/extra_definitions&lt;br&gt;
+Extra Data Files: includes/extra_datafiles&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; See &lt;a href=&#34;/zendocs_test1/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt; for an 
+explanation of &lt;code&gt;YOURLANGUAGE&lt;/code&gt; and &lt;code&gt;YOURTEMPLATE&lt;/code&gt; if these terms are 
+unfamiliar.&lt;/p&gt;
+&lt;p&gt;Remember only files which have been modified should be copied to your /YOURTEMPLATE directory. If you do not make modifications, then by Zen Cart will use the &lt;a href=&#34;/zendocs_test1/user/first_steps/overrides/#default-files&#34;&gt;default file&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main Language File&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default File: &lt;code&gt;/includes/languages/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Suppose you want to change the Heading of your Categories sidebox.&lt;br&gt;
+Here are the steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new directory &lt;code&gt;/includes/languages/YOURTEMPLATE/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy &lt;code&gt;includes/languages/english.php&lt;/code&gt; to this new directory&lt;/li&gt;
+&lt;li&gt;You now have &lt;code&gt;includes/languages/YOURTEMPLATE/english.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the file in a text editor, and find and modify the following line of code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;BOX_HEADING_CATEGORIES&amp;#39;, &amp;#39;Categories&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save the file and upload your new directory and its contents to your server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Page Specific Language File&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s assume you want to change the heading on this page from &amp;ldquo;My Account Information&amp;rdquo; to just &amp;ldquo;My Account&amp;rdquo;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default File: &lt;code&gt;/includes/languages/english/account.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are the steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new directory &lt;code&gt;/includes/languages/english/YOURTEMPLATE/&lt;/code&gt; if it doesn&amp;rsquo;t exist&lt;/li&gt;
+&lt;li&gt;Copy &lt;code&gt;includes/languages/english/account.php&lt;/code&gt; to this new directory&lt;/li&gt;
+&lt;li&gt;You now have &lt;code&gt;includes/languages/english/YOURTEMPLATE/account.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the file in a text editor, and find and modify the following line of code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HEADING_TITLE&amp;#39;, &amp;#39;My Account Information&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save the file and upload it to your server.
+(If the folder is new, just upload the folder, which will do 
+the folder and all files inside it .)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Module File&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose you want to add a link to the Information Sidebox.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default File: &lt;code&gt;includes/modules/sideboxes/information.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are the steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new directory &lt;code&gt;/includes/modules/sideboxes/YOURTEMPLATE/&lt;/code&gt; if it doesn&amp;rsquo;t exist&lt;/li&gt;
+&lt;li&gt;Copy &lt;code&gt;includes/modules/sideboxes/information.php&lt;/code&gt; to this new directory&lt;/li&gt;
+&lt;li&gt;You now have &lt;code&gt;includes/modules/sideboxes/YOURTEMPLATE/information.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the file in a text editor, and add a line to the information array.  We won&amp;rsquo;t use language constants for clarity:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$information[] = &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_EZPAGES, &amp;#34;id=27&amp;#34;) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . &amp;#34;My New EZ-Page&amp;#34;. &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Template File&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose you want to add a link to the Shopping Cart Page&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default File: &lt;code&gt;includes/templates/template_default/templates/tpl_shopping_cart_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are the steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Presumably the directory &lt;code&gt;/includes/templates/YOURTEMPLATE/templates&lt;/code&gt; exists, but if it doesn&amp;rsquo;t, create it.&lt;/li&gt;
+&lt;li&gt;Copy &lt;code&gt;includes/templates/template_default/templates/tpl_shopping_cart_default.php&lt;/code&gt; to this new directory&lt;/li&gt;
+&lt;li&gt;You now have &lt;code&gt;includes/templates/YOURTEMPLATE/templates/tpl_shopping_cart_default.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the file in a text editor, and below the &lt;code&gt;bof shopping cart buttons&lt;/code&gt;, add the line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#39;&amp;lt;a href=&amp;#34;&amp;#39; . zen_href_link(FILENAME_EZPAGES, &amp;#34;id=27&amp;#34;) . &amp;#39;&amp;#34;&amp;gt;&amp;#39; . &amp;#34;My New EZ-Page&amp;#34;. &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Zen Cart Upgrades&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using the override system means you don&amp;rsquo;t have to worry about overwriting your YOURTEMPLATE files when an upgrade comes along, because they are all in YOURTEMPLATE directories.&lt;/p&gt;
+&lt;p&gt;During an upgrade you may find that new code was added to some of the core files that you are overriding. Its very easy to  compare the files in your override directories to the upgraded files. Using a 
+&lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#file-comparison-utility&#34;&gt;file compare utility&lt;/a&gt;,
+you can incorporate the changes into your override files.&lt;/p&gt;
+&lt;p&gt;Save the changed files and upload them to your server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h3&gt;
+&lt;p&gt;Ready to read more about overrides? &lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;Go here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or get started &lt;a href=&#34;/zendocs_test1/user/template/creating_template/&#34;&gt;creating your new template&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Setting up Define Pages</title>
+      <link>/zendocs_test1/user/new_user_topics/setting_up_define_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/setting_up_define_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Define Pages are pieces of content that storeowners can easily add to their sites with the built-in HTML Editor in the Zen Cart Admin.&lt;/p&gt;
+&lt;p&gt;Filling in the define pages allow you to write about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;your store&amp;rsquo;s shipping policy&lt;/li&gt;
+&lt;li&gt;your store&amp;rsquo;s terms and conditions&lt;/li&gt;
+&lt;li&gt;how coupons work in your store&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and many other topics.&lt;/p&gt;
+&lt;p&gt;More details on define pages are provided in &lt;a href=&#34;/zendocs_test1/user/template/define_pages/&#34;&gt;the template document about Define Pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template Files - What are they and how are they used?</title>
+      <link>/zendocs_test1/user/new_user_topics/template_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/template_files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The template files used in Zen Cart provide the structure and layout of the various pages of your cart. They make use of the definitions from your &lt;a href=&#34;/zendocs_test1/user/new_user_topics/language_files/&#34;&gt;language files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These files are located in &lt;code&gt;includes/templates/template_default&lt;/code&gt;.
+Template files are of three types; common, specific pages and sideboxes. 
+The files can be identified by
+a &lt;code&gt;tpl&lt;/code&gt; prefix (e.g. &lt;code&gt;tpl_shopping_cart_default.php&lt;/code&gt;)
+These files contain all the information necessary to construct the pages used by your shop.&lt;/p&gt;
+&lt;p&gt;Common Template Files are located in 
+&lt;code&gt;includes/templates/template_default/common&lt;/code&gt;.
+These files are &amp;ldquo;common&amp;rdquo; to every page used throughout Zen Cart.
+These files consist of the Main Page, the Header, the Footer and the Box files used for the sideboxes.&lt;/p&gt;
+&lt;p&gt;Page Specific Template Files are located in 
+&lt;code&gt;includes/templates/template_default/templates&lt;/code&gt;.
+These files represent the pages of your cart and include the Index page, the Log in page and the Product Display pages.&lt;/p&gt;
+&lt;p&gt;You can change the layout of each page in your shop by editing these 
+page-specific template files.&lt;/p&gt;
+&lt;p&gt;Sidebox Template Files are located in
+&lt;code&gt;includes/templates/template_default/sideboxes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These files contain the instructions for placing content into the sideboxes you are using.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Timezone (TZ) setting</title>
+      <link>/zendocs_test1/user/new_user_topics/timezone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/new_user_topics/timezone/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To set the correct time zone for your store, set the $TZ value in
+the file &lt;code&gt;includes/extra_configures/set_time_zone.php&lt;/code&gt; to &lt;a href=&#34;https://www.php.net/manual/en/timezones.php&#34;&gt;your timezone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For example, if you live on the East Coast of the United States, you would use&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   $TZ = &amp;#39;America/New_York&amp;#39;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In versions prior to Zen Cart 1.5.2, see &lt;a href=&#34;https://www.zen-cart.com/showthread.php?208662-date-timezone-patch-for-v1-5-1&#34;&gt;this forum post&lt;/a&gt;.  But you should really &lt;a href=&#34;/zendocs_test1/user/upgrading/&#34;&gt;upgrade&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

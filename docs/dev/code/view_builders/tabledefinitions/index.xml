@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – A DTO to define Tabular data</title>
+    <link>/dev/code/view_builders/tabledefinitions/</link>
+    <description>Recent content in A DTO to define Tabular data on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/dev/code/view_builders/tabledefinitions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

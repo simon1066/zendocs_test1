@@ -1,0 +1,406 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Olds</title>
+    <link>/old/</link>
+    <description>Recent content in Olds on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/old/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Old: Welcome to Habitat</title>
+      <link>/old/habitat/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;welcome-to-habitat&#34;&gt;Welcome to Habitat&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: We are no longer maintaining Habitat, since 2018. You are free to use it, or even use Laravel Homestead if you wish.
+We&amp;rsquo;re leaving this documentation up temporarily for your reference in case you are still using Habitat yourself. We will probably remove this section of the docs in 2020.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Habitat is a &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt;-based virtual machine, with the ability to custom-provision the VM automatically based on settings you decide.&lt;/p&gt;
+&lt;p&gt;This is great for use on a laptop for portable offline use, or for doing development testing without installing special versions of PHP/MySQL/Apache/etc.&lt;/p&gt;
+&lt;p&gt;With default settings, it will link a current checkout of the zencart github repository to a domain name that you can access directly from your browser, all from within your own computer.&lt;/p&gt;
+&lt;p&gt;A yaml-based configuration system lets you customize your system by adding new shared directories which may map to new websites, and automatically clone other github repositories/branches into those websites.&lt;/p&gt;
+&lt;p&gt;See the links to the left for detailed instructions for installation and customization.&lt;/p&gt;
+&lt;p&gt;Habitat was inspired by &lt;a href=&#34;http://github.com/laravel/homestead&#34;&gt;Laravel Homestead&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can contribute to this documentation by forking the &lt;a href=&#34;https://github.com/zencart/documentation&#34;&gt;zencart/documentation&lt;/a&gt; repository on github and submitting Pull Requests.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Old: Installing Habitat</title>
+      <link>/old/habitat/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/installation/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Install Virtualbox and Vagrant&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Ubuntu&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;sudo apt-get install virtualbox&lt;br&gt;
+sudo apt-get install vagrant&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Windows or Mac OSX&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.vagrantup.com/downloads.html&#34;&gt;https://www.vagrantup.com/downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install-habitat&#34;&gt;Install Habitat&lt;/h2&gt;
+&lt;p&gt;Clone the habitat repository.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;git clone &lt;a href=&#34;https://github.com/zencart/habitat&#34;&gt;https://github.com/zencart/habitat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then change into the newly created habitat directory.&lt;/p&gt;
+&lt;p&gt;OPTIONAL: Add the Virtual Machine to Vagrant. (You don&amp;rsquo;t have to do this manually. It will happen automatically for you.)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;br&gt;
+vagrant box add zencart/habitat &lt;a href=&#34;https://s3.amazonaws.com/zencart-vagrant-boxes/habitat.box&#34;&gt;https://s3.amazonaws.com/zencart-vagrant-boxes/habitat.box&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Update your hosts file&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Ubuntu or Mac OSX&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Windows&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;%systemroot%\system32\drivers\etc\hosts&lt;br&gt;
+Where %systemroot% is usually c:/windows&lt;/p&gt;
+&lt;p&gt;And add this line&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;172.22.22.22 zen.local&lt;br&gt;
+172.22.22.22 devdocs.local&lt;/p&gt;
+&lt;p&gt;Before you start up the VM you may want to customise the environment. If so see the &lt;a href=&#34;customising&#34;&gt;Customising&lt;/a&gt; page before starting the VM.&lt;/p&gt;
+&lt;p&gt;To start the VM:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;vagrant up&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Old: Coding with Habitat</title>
+      <link>/old/habitat/code_dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/code_dev/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;code-development&#34;&gt;Code Development&lt;/h1&gt;
+&lt;p&gt;The Habitat VM initially links a domain, &lt;code&gt;zen.local&lt;/code&gt;, to a checkout of the Zen Cart® develop branch, unless you have customised the Habitat.local.yaml.&lt;/p&gt;
+&lt;p&gt;You should be able to just open a browser and enter the &lt;a href=&#34;http://zen.local&#34;&gt;http://zen.local&lt;/a&gt; URL to see the site.
+The directory that the code is stored in within the VM is shared to the habitat directory that was created earlier under the habitat/web/zen folder.&lt;/p&gt;
+&lt;p&gt;As this directory is shared with the virtual machine, you can edit the files locally in your favorite editor, and see the changes immediately reflected in your browser.&lt;/p&gt;
+&lt;p&gt;More information on managing your VM can be found on the Vagrant website.&lt;/p&gt;
+&lt;h2 id=&#34;passwords&#34;&gt;Passwords&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The user/password for MySQL is&lt;br&gt;
+user = zencart&lt;br&gt;
+password = zencart&lt;br&gt;
+The root password for MySQL is also zencart&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Old: Customizing Habitat</title>
+      <link>/old/habitat/customising/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/customising/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;customising-habitat&#34;&gt;Customising Habitat&lt;/h1&gt;
+&lt;p&gt;When Habitat first creates the development environment, it looks for a file called Habitat.yaml, which it will use to provision you Virtual Machine.&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;Habitat.yaml&lt;/code&gt; does not exist, it will copy the included &lt;code&gt;Habitat.yaml.example&lt;/code&gt; to &lt;code&gt;Habitat.yaml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;By default the example file will do a checkout of the latest develop branch from Github. If you want that checkout to say be your forked branch, then you will need to create the Habitat.yaml first and adjust it to point to your own forked repo instead of the github.com/zencart repo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; If you make changes to the yaml file after doing &lt;code&gt;Vagrant up&lt;/code&gt;, you will need to run &amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;vagrant provision&lt;/p&gt;
+&lt;p&gt;in order for the changes to take affect.&lt;/p&gt;
+&lt;h1 id=&#34;habitatyaml-configuration-options&#34;&gt;Habitat.yaml Configuration Options&lt;/h1&gt;
+&lt;p&gt;The configuration options for the YAML file are as follows. NOTE: Some of these are NOT shown in the example file.&lt;/p&gt;
+&lt;p&gt;###hostname:&lt;/p&gt;
+&lt;p&gt;This defaults to &lt;code&gt;habitat&lt;/code&gt;. If you want to rename the machine to differentiate multiple instances (as they show up in VirtualBox), you can set this here.&lt;/p&gt;
+&lt;p&gt;Normally best left as-is, or skipped altogether.&lt;/p&gt;
+&lt;p&gt;###ip:&lt;/p&gt;
+&lt;p&gt;This is the ip that is assigned to your virtual machine. You should only change it if the current IP clashes with settings on your local machine/network
+If assigning a new IP address, you should not use a publicly available IP, but an IP from one of the private IP spaces.&lt;/p&gt;
+&lt;p&gt;The default is &lt;code&gt;172.22.22.22&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;###memory:&lt;/p&gt;
+&lt;p&gt;The amount of memory assigned to your virtual machine.&lt;/p&gt;
+&lt;p&gt;The default is &lt;code&gt;1024&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;###cpus:&lt;/p&gt;
+&lt;p&gt;The number of cpu cores assigned to your virtual machine.&lt;/p&gt;
+&lt;p&gt;The default is &lt;code&gt;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;###sites:&lt;/p&gt;
+&lt;p&gt;This option can be used create other virtual domains that map to a directory and optionally clone a github repository into that directory&lt;/p&gt;
+&lt;p&gt;By default it contains:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;            sites:
+              - domain: zen.local
+                dir: develop
+                skeleton: apache.default
+                git_url: https://github.com/zencart/zencart.git
+                branch: develop
+              - domain: devdocs.local
+                dir: devdocs
+                skeleton: apache.default
+                git_url: https://github.com/zencart/documentation.git
+                branch: master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want to add another site, you can add something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;              - domain: v154.local
+                dir: v154
+                skeleton: apache.default
+                git_url: https://github.com/zencart/documentation.git
+                branch: v154
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The options within the &lt;code&gt;sites:&lt;/code&gt; directive are:&lt;/p&gt;
+&lt;p&gt;####domain:&lt;/p&gt;
+&lt;p&gt;This is the name of the domain that you want to map to your shared site. You will also have to create an entry in your &lt;code&gt;hosts&lt;/code&gt; file for this same domain.&lt;/p&gt;
+&lt;p&gt;####dir:&lt;/p&gt;
+&lt;p&gt;This is the directory, relative to the shared Habitat/web directory, that you want to be the web root of your site.&lt;/p&gt;
+&lt;p&gt;See &lt;code&gt;do_default_map:&lt;/code&gt; and &lt;code&gt;to:&lt;/code&gt; below for more info.&lt;/p&gt;
+&lt;p&gt;####skeleton:&lt;/p&gt;
+&lt;p&gt;In order to provision apache correctly, we use a skeleton apache vhost file.&lt;/p&gt;
+&lt;p&gt;These skeleton files are stored in the shared scripts/skeletons directory.&lt;/p&gt;
+&lt;p&gt;Currently only the &lt;code&gt;apache.default&lt;/code&gt; skeleton is used.&lt;/p&gt;
+&lt;p&gt;####git_url:&lt;/p&gt;
+&lt;p&gt;This directive is optional, but if set will be used as the repository to clone. It is typical to use a github.com or bitbucket.org URL here, for example: &lt;code&gt;https://github.com/zencart/zencart.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;####branch:&lt;/p&gt;
+&lt;p&gt;This directive is optional, but if set will be used as the branch to checkout, in reference to the &lt;code&gt;git_url&lt;/code&gt; directive.&lt;/p&gt;
+&lt;p&gt;####docroot:&lt;/p&gt;
+&lt;p&gt;This directive is optional, but if you need to override or set a different document-root (ie: re-point to a subdir like &amp;lsquo;public&amp;rsquo;) set that by adding this directive. For example: &lt;code&gt;docroot: /public&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;###do_default_map:&lt;/p&gt;
+&lt;p&gt;This controls whether to share the internal Habitat directory with the host machine.&lt;/p&gt;
+&lt;p&gt;The default is true. There is little reason to change this setting unless you have advanced knowledge of managing a vagrant virtual machine.&lt;/p&gt;
+&lt;p&gt;###folders:&lt;/p&gt;
+&lt;p&gt;The default mapping is to map the &lt;code&gt;map:&lt;/code&gt; folder from your host PC to the &lt;code&gt;to:&lt;/code&gt; folder in your VM. If &lt;code&gt;create:&lt;/code&gt; is set to &lt;code&gt;true&lt;/code&gt; then it will also create the folder on both ends if it doesn&amp;rsquo;t already exist.&lt;/p&gt;
+&lt;p&gt;####map:&lt;/p&gt;
+&lt;p&gt;The local PC folder where files are stored on your PC. These files will be synced into the &lt;code&gt;to:&lt;/code&gt; folder of the vm, and vice-versa.&lt;/p&gt;
+&lt;p&gt;The default is assumed to be the local folder from which you&amp;rsquo;re running vagrant/habitat.&lt;/p&gt;
+&lt;p&gt;####to:&lt;/p&gt;
+&lt;p&gt;This is the name of the folder inside vagrant/habitat which the files from the &lt;code&gt;map:&lt;/code&gt; folder will be synced to/from the vm.&lt;/p&gt;
+&lt;p&gt;The default is &lt;code&gt;/home/vagrant/web&lt;/code&gt;, and the &lt;code&gt;dir:&lt;/code&gt; directive will be put inside this folder.&lt;/p&gt;
+&lt;p&gt;####create:&lt;/p&gt;
+&lt;p&gt;This determines whether to create the folder automatically if it doesn&amp;rsquo;t already exist.&lt;/p&gt;
+&lt;p&gt;The default is true.&lt;/p&gt;
+&lt;p&gt;###authorize:&lt;/p&gt;
+&lt;p&gt;This can be used to specify which RSA public key file you want copied to the vm for easy login from your host machine&amp;rsquo;s command-line if you don&amp;rsquo;t want to use the default &lt;code&gt;vagrant ssh&lt;/code&gt; command. See the vagrantup.com documentation for more detail.&lt;/p&gt;
+&lt;p&gt;###keys:&lt;/p&gt;
+&lt;p&gt;This is a list of private RSA keys you want copied to the VM. This can be useful if you&amp;rsquo;re having any difficulty connecting to github or bitbucket due to private-key problems.&lt;/p&gt;
+&lt;p&gt;###localize_tools:&lt;/p&gt;
+&lt;p&gt;This determines whether to map the vm&amp;rsquo;s &lt;code&gt;/tools&lt;/code&gt; folder to your host machine. This is required (useful) to run the supplied unittesting tools. See the &lt;a href=&#34;dev-tools&#34;&gt;Tools&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;The default is &lt;code&gt;true&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Old: Tools in Habitat</title>
+      <link>/old/habitat/dev_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/dev_tools/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;development-tools&#34;&gt;Development Tools&lt;/h1&gt;
+&lt;p&gt;More coming Soon&lt;/p&gt;
+&lt;h2 id=&#34;phpmyadmin&#34;&gt;phpMyAdmin&lt;/h2&gt;
+&lt;p&gt;phpMyAdmin is pre-installed on the vm, and can be easily accessed via &lt;code&gt;http://172.22.22.22/phpmyadmin&lt;/code&gt; and logging in as zencart/zencart.&lt;/p&gt;
+&lt;p&gt;###TIP:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For easy importing of .sql files, note that on your host PC there is a &lt;code&gt;habitat/tmp&lt;/code&gt; folder. This is shared with phpMyAdmin and makes quick importing of .sql files very simple.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Simply copy any desired .sql files to your host PC&amp;rsquo;s &lt;code&gt;habitat/tmp&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Open phpmyadmin in your browser, &lt;code&gt;select a database&lt;/code&gt;, and then click the &lt;code&gt;Import&lt;/code&gt; button. There will be a dropdown available with a list of all the .sql files above.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;database-backup-and-restore&#34;&gt;Database Backup and Restore&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;BACKUP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To do a complete backup of all databases in the vm:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ssh into the habitat vm, so you have a command-line prompt&lt;/li&gt;
+&lt;li&gt;cd into the folder that you&amp;rsquo;ve shared back to your host machine&lt;/li&gt;
+&lt;li&gt;Enter this command to tell MySQL to dump all databases to a single gzipped file using the current date/time stamp as the filename:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;mysqldump -u zencart -pzencart  &amp;ndash;all-databases  &amp;ndash;hex-blob | gzip -9 &amp;gt; ./habitat_$(date +%Y-%0m-%0d_at_%0I_%0M_%0p.sql.gz)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RESTORE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Similarly, to restore:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Put the &amp;ldquo;backup&amp;rdquo; file into your shared folder&lt;/li&gt;
+&lt;li&gt;Unzip it so the file is a .sql file with text content (not zipped)&lt;/li&gt;
+&lt;li&gt;ssh into the habitat vm&lt;/li&gt;
+&lt;li&gt;cd into the shared folder&lt;/li&gt;
+&lt;li&gt;Use the following command to initiate the restore, replacing HABITAT_FILENAME with the actual filename of your .sql file (ie: &lt;code&gt;habitat_YYYY-MM-DD_at_HH_MM.sql&lt;/code&gt;):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;mysql -u zencart -pzencart &amp;lt; HABITAT_FILENAME&lt;/p&gt;
+&lt;h2 id=&#34;unit-testing&#34;&gt;Unit Testing&lt;/h2&gt;
+&lt;p&gt;Habitat includes a helper script to help with running unit tests within the Zen Cart testFramework.  This depends on having &lt;code&gt;localize_tools:&lt;/code&gt; and &lt;code&gt;do_default\_map:&lt;/code&gt; set to true in your yaml file. It may encounter some difficulties if the &lt;code&gt;folders:map&lt;/code&gt; or &lt;code&gt;folders:to&lt;/code&gt; settings have been customized.&lt;/p&gt;
+&lt;p&gt;From the command line you can do&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;cd habitat/tools&lt;br&gt;
+./unittest DIRNAME&lt;/p&gt;
+&lt;p&gt;The option given to the unittest script is a reference to a site in your habitat VM. In other words it should match the &lt;code&gt;dir&lt;/code&gt; option given in a &lt;code&gt;sites:&lt;/code&gt; block of your yaml file. To run the tests on the &lt;code&gt;develop&lt;/code&gt; branch, on your host machine you&amp;rsquo;d use &lt;code&gt;./unittest develop&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;phpdocumentor&#34;&gt;phpDocumentor&lt;/h2&gt;
+&lt;p&gt;Habitat also includes a helper script to generate phpDocumentor output, which will be placed in the &lt;code&gt;DIRNAME/docs/phpdocs&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Syntax is similar to the unit-testing above, and depends on the same prerequisites.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Command Line&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;cd habitat/tools
+./generatedocs DIRNAME&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Old: Tech Specs</title>
+      <link>/old/habitat/technical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/old/habitat/technical/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;technical-specs&#34;&gt;Technical Specs.&lt;/h1&gt;
+&lt;p&gt;##Software Installed in Habitat&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu 14.04.2 LTS trusty64 x86&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apache 2.4.12 with SSL along with the following modules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mod_access_compat&lt;/li&gt;
+&lt;li&gt;mod_alias&lt;/li&gt;
+&lt;li&gt;mod_auth_basic&lt;/li&gt;
+&lt;li&gt;mod_authn_core&lt;/li&gt;
+&lt;li&gt;mod_authn_file&lt;/li&gt;
+&lt;li&gt;mod_authz_core&lt;/li&gt;
+&lt;li&gt;mod_authz_host&lt;/li&gt;
+&lt;li&gt;mod_authz_user&lt;/li&gt;
+&lt;li&gt;mod_autoindex&lt;/li&gt;
+&lt;li&gt;mod_deflate&lt;/li&gt;
+&lt;li&gt;mod_dir&lt;/li&gt;
+&lt;li&gt;mod_env&lt;/li&gt;
+&lt;li&gt;mod_filter&lt;/li&gt;
+&lt;li&gt;mod_mime&lt;/li&gt;
+&lt;li&gt;mod_mpm_prefork&lt;/li&gt;
+&lt;li&gt;mod_negotiation&lt;/li&gt;
+&lt;li&gt;mod_php5&lt;/li&gt;
+&lt;li&gt;mod_rewrite&lt;/li&gt;
+&lt;li&gt;mod_setenvif&lt;/li&gt;
+&lt;li&gt;mod_socache_shmcb&lt;/li&gt;
+&lt;li&gt;mod_ssl&lt;/li&gt;
+&lt;li&gt;mod_status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MySQL 5.5.43&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;phpMyAdmin 4.0.10&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PHP 5.6.10, with customized PHP configurations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;error_reporting&lt;/code&gt; = E_ALL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display_errors&lt;/code&gt; = On&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;memory_limit&lt;/code&gt; = 512M&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date.timezone&lt;/code&gt; = UTC&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;post_max_size&lt;/code&gt; = 512M&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;upload_max_filesize&lt;/code&gt; = 512M&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;html_errors&lt;/code&gt; = Off&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;error_log&lt;/code&gt; = &lt;code&gt;\home\vagrant\habitat\php_errors.log&lt;/code&gt; (Thus the &lt;code&gt;error_log&lt;/code&gt; is mapped to the host machine for easy reference)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git 1.9.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Composer 1.0-dev 2015-06-26&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You can update &lt;code&gt;composer&lt;/code&gt; to the latest version from the Habitat console (via &lt;code&gt;vagrant ssh&lt;/code&gt;) by running &lt;code&gt;composer self-update&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other tools installed via Composer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;phpunit&lt;/li&gt;
+&lt;li&gt;phpmd&lt;/li&gt;
+&lt;li&gt;php_codesniffer&lt;/li&gt;
+&lt;li&gt;php-coveralls&lt;/li&gt;
+&lt;li&gt;vfsStream&lt;/li&gt;
+&lt;li&gt;phpdocumentor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###Updating&lt;/p&gt;
+&lt;p&gt;From time to time updates will be published for the Habitat VM.&lt;/p&gt;
+&lt;p&gt;But in the meantime if you need to apply updates, use &lt;code&gt;vagrant ssh&lt;/code&gt; and run &lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;source&#34;&gt;Source&lt;/h3&gt;
+&lt;p&gt;The Habitat Virtual Machine is built using &lt;a href=&#34;https://github.com/zencart/pioneer&#34;&gt;zencart/pioneer&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

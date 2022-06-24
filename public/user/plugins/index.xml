@@ -1,0 +1,384 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Plugins</title>
+    <link>/zendocs_test1/user/plugins/</link>
+    <description>Recent content in Plugins on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/plugins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: About Plugins</title>
+      <link>/zendocs_test1/user/plugins/about_plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/about_plugins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart is an open source software tool, which means the code may be 
+modified to fit your own specific needs.&lt;/p&gt;
+&lt;p&gt;Plugins allow users to extend the capabilities of Zen Cart without knowing 
+all the details of what&amp;rsquo;s involved in writing software.  Plugins each 
+have their own support thread on the Zen Cart forum, and are supported 
+by  the community.&lt;/p&gt;
+&lt;p&gt;Plugins are sometimes also called &lt;em&gt;Add-Ons&lt;/em&gt; (or &lt;em&gt;Addons&lt;/em&gt;), &lt;em&gt;Mods&lt;/em&gt;, or &lt;em&gt;Downloads&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The free plugins in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt; are sometimes called &lt;em&gt;Contributions&lt;/em&gt;, whereas 
+commercial plugins that must be paid for are sometimes called 
+&lt;em&gt;Extensions&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;All these terms really mean the same thing: 
+code modifications for Zen Cart that modify or extend the default behavior.&lt;/p&gt;
+&lt;h3 id=&#34;plugin-interfaces&#34;&gt;Plugin Interfaces&lt;/h3&gt;
+&lt;p&gt;To enable developers to build plugins 
+without touching core files, 
+a number of facilities are provided:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/template/template_overrides/&#34;&gt;Overrides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/customizing/site_specific_overrides/&#34;&gt;Site Specific Overrides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/notifiers/&#34;&gt;Notifiers/Observers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/init_system/&#34;&gt;Init System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/extra_folders/&#34;&gt;Extra folders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/dev/code/inclusion/&#34;&gt;Auto Inclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;more-information&#34;&gt;More Information&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re a developer who wishes to create a plugin, please see 
+the &lt;a href=&#34;/zendocs_test1/dev/plugins/&#34;&gt;Plugins Pages&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re a storeowner who wishes to see what plugins are available, please see &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;the Plugins Library&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Contributing your plugin</title>
+      <link>/zendocs_test1/user/plugins/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/contributing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sharing your work with the Zen Cart community is easy!&lt;/p&gt;
+&lt;p&gt;Just review the &lt;a href=&#34;/zendocs_test1/dev/plugins/rules/&#34;&gt;Rules for Plugins&lt;/a&gt;, then fill out the 
+&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=add&#34;&gt;Submit New Plugin form&lt;/a&gt;.   Your plugin should be available in the plugins library in about a week.  Thanks for your contribution!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How to install a plugin</title>
+      <link>/zendocs_test1/user/plugins/how_to_install_a_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/how_to_install_a_plugin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you installed your Zen Cart using Fantastico or perhaps had a friend or subcontractor install it for you, installing a plugin might seem daunting. Don&amp;rsquo;t worry - there&amp;rsquo;s nothing to it as long as you follow some basic principles.&lt;/p&gt;
+&lt;h2 id=&#34;reading-the-instructions&#34;&gt;Reading the instructions&lt;/h2&gt;
+&lt;p&gt;This page shows you how to copy files into your cart. This is just one part of installation; there may be many associated tasks that need to be done. 
+Most plugins come with a README file; please take the time to review it to get the whole picture of how installation is to be done.&lt;/p&gt;
+&lt;p&gt;Reading the instructions &lt;strong&gt;before&lt;/strong&gt; starting installation is a great way to reduce grief.  This cannot be overstated.  Even a straightforward plugin like 
+&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=272&#34;&gt;Simple Google Analytics&lt;/a&gt; 
+has steps in the README which must be done manually for the plugin to work; 
+simply uploading the files under &lt;code&gt;includes&lt;/code&gt; is not sufficient.&lt;/p&gt;
+&lt;p&gt;Why do plugin authors do this?  Most often, it is done because the files that 
+need to be updated manually are generally very customized on a per cart 
+and per template 
+basis (in the example of Google Analytics above, it&amp;rsquo;s &lt;code&gt;includes/templates/YOURTEMPLATE/common/tpl_main_page.php&lt;/code&gt; that needs to be modified, and including 
+this file as a whole would make no sense because it is always customized.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Before you start, you&amp;rsquo;ll need to verify that you have some things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plugins are provided in zip format, so you&amp;rsquo;ll need a tool to unzip the file.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll need a tool to transfer the files from your local PC to your webserver.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll need a simple text editor to do customizations to files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;zip-file-structure&#34;&gt;Zip File Structure&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete structure of the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=135&#34;&gt;Quantity Discounts&lt;/a&gt; plugin, as an example.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./includes
+./includes/languages
+./includes/languages/english
+./includes/languages/english/modules
+./includes/languages/english/modules/order_total
+./includes/languages/english/modules/order_total/ot_quantity_discount.php
+./includes/modules
+./includes/modules/order_total
+./includes/modules/order_total/ot_quantity_discount.php
+./README.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There are only two code files here and one README; the other things you see are parent directories for those files. An abbreviated listing of this is&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./includes/languages/english/modules/order_total/ot_quantity_discount.php
+./includes/modules/order_total/ot_quantity_discount.php
+./README.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The hierarchy of these files is intended to exactly duplicate the structure of your cart. So if your cart is installed on your webserver under (say) 
+&lt;code&gt;/public_html/zencart&lt;/code&gt;, then to install the file &lt;code&gt;./includes/modules/order_total/ot_quantity_discount.php&lt;/code&gt; you would use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to go to your site, change directory to &lt;code&gt;public_html/zencart&lt;/code&gt;, and then transfer the &amp;ldquo;includes&amp;rdquo; folder from the plugin over.&lt;/p&gt;
+&lt;p&gt;If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; FTP to your site; cd to &lt;code&gt;/httpdocs/public_html/&lt;/code&gt;
+then transfer the &lt;code&gt;includes&lt;/code&gt; folder over.&lt;/p&gt;
+&lt;p&gt;So in fact, to install this plugin, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin &amp;gt; Modules &amp;gt; Order Totals), and you&amp;rsquo;re done.&lt;/p&gt;
+&lt;h2 id=&#34;templates-and-core-files&#34;&gt;Templates and Core Files&lt;/h2&gt;
+&lt;p&gt;I chose the example of Quantity Discounts because it&amp;rsquo;s the simplest form of a plugin - it contains only new, original files. What about something more complex which modifies existing files in the cart?&lt;/p&gt;
+&lt;p&gt;Zen Cart has two facilities for dealing with situations like this, and you need to understand them prior to installing plugins to save yourself grief the next time you upgrade your cart.&lt;/p&gt;
+&lt;p&gt;Since changing the &amp;ldquo;skin&amp;rdquo; or &amp;ldquo;theme&amp;rdquo; of the cart is the most common customization, the user interface is built to accommodate relatively easy customization. Zen Cart calls this mechanism &amp;ldquo;template overrides&amp;rdquo; and provides guidelines on how to 
+&lt;a href=&#34;/zendocs_test1/user/template/creating_template/&#34;&gt;create a custom template&lt;/a&gt;.
+A common convention is to assume the template name is &amp;ldquo;custom.&amp;rdquo; So if you see a file with the name &amp;ldquo;custom&amp;rdquo; as part of its name, you know it&amp;rsquo;s a template component. If you&amp;rsquo;ve used a name other than &amp;ldquo;custom&amp;rdquo; then you will have to move the file accordingly. &lt;strong&gt;Note:&lt;/strong&gt; If you are using Zen Cart 1.5.5 or higher, your template name will be &amp;ldquo;responsive_classic&amp;rdquo; if you have not changed it.&lt;/p&gt;
+&lt;p&gt;Some examples: the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=969&#34;&gt;Better Together Promotional Page&lt;/a&gt; contains a file called&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./includes/templates/custom/templates/tpl_bettertogether_promo_default.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If your template name is &amp;ldquo;scott&amp;rdquo;, you would install this file in&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./includes/templates/scott/templates/tpl_bettertogether_promo_default.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1185&#34;&gt;What&amp;rsquo;s On Sale&lt;/a&gt; contains a file called&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./includes/modules/custom/sales_index.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If your template name is &amp;ldquo;apple&amp;rdquo;, you would install this file in&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./includes/modules/apple/sales_index.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Not all files can be handled by the template system. For instance, files in &lt;code&gt;includes/modules/pages&lt;/code&gt; cannot be overridden. A recommendation for files like this is that during the installation process, you make a backup of the original file, and name it &lt;original-filename&gt;.orig. For instance, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=267&#34;&gt;Gift Wrap at Checkout&lt;/a&gt; plugin modifies the file &lt;code&gt;./admin/invoice.php&lt;/code&gt; Prior to installation, rename this file &lt;code&gt;./admin/invoice.php.orig&lt;/code&gt;&lt;br&gt;
+This serves two purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the event of a problem, you can easily restore the original file&lt;/li&gt;
+&lt;li&gt;When it comes time to upgrade your cart, you can easily identify the core files you&amp;rsquo;ve changed by searching for files named &lt;code&gt;*.orig&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that &amp;ldquo;.orig&amp;rdquo; should be a suffix onto the original filename. (Don&amp;rsquo;t name the file &lt;code&gt;invoice_orig.php&lt;/code&gt; or &lt;code&gt;orig_invoice.php&lt;/code&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;merging-template-files&#34;&gt;Merging Template Files&lt;/h2&gt;
+&lt;p&gt;If a plugin includes a template file change, you can simply 
+compare the file provided to the unaltered file from a fresh 
+Zen Cart download (using either &lt;code&gt;template_default&lt;/code&gt; or &lt;code&gt;responsive_classic&lt;/code&gt; as the base template, as appropriate) to see how to apply 
+those changes to your template files.&lt;/p&gt;
+&lt;h2 id=&#34;database-changes&#34;&gt;Database Changes&lt;/h2&gt;
+&lt;p&gt;Some plugins require database changes. For instance, Gift Wrap at Checkout includes a file called orders_wrap.sql, which modifies your database.&lt;/p&gt;
+&lt;p&gt;These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin &amp;gt; Tools &amp;gt; Install SQL patches.&lt;/p&gt;
+&lt;p&gt;Alternately, you can run them using phpMyAdmin, but you will need to edit the .sql script to account for the prefix.&lt;/p&gt;
+&lt;p&gt;For instance, if the file creates a table called &amp;ldquo;orders_giftwrap&amp;rdquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CREATE TABLE orders_giftwrap(
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you will need to change this to reflect your prefix, i.e.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CREATE TABLE zen_orders_giftwrap(
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;assuming your prefix is &lt;code&gt;zen_&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you have used a prefix, it is stored in &lt;code&gt;includes/configure.php&lt;/code&gt;; look for the variable DB_PREFIX.&lt;/p&gt;
+&lt;p&gt;If you do an install and get an error like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1146 Table &amp;#39;yourdb.zen_better_together_admin&amp;#39; doesn&amp;#39;t exist
+in:
+[SELECT * FROM zen_better_together_admin ORDER BY id DESC ]
+If you were entering information, press the BACK button in your browser and re-check the information you had entered to be sure you left no blank fields.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This means you used phpMyAdmin but forgot to edit the .sql file to include your prefix.&lt;/p&gt;
+&lt;p&gt;The most important principle to remember when changing your database is that you must do a backup prior to making the change. You can do a backup using phpMyAdmin.&lt;/p&gt;
+&lt;p&gt;Not all database modifications will be done through a .sql file; for instance, any file which requires you to click an &amp;ldquo;Install&amp;rdquo; link from Admin &amp;gt; Modules is modifying your database. Be sure to make a backup!&lt;/p&gt;
+&lt;p&gt;Some plugins use the &amp;ldquo;TYPE=MyISAM&amp;rdquo; syntax when doing a CREATE TABLE, which is not accepted by some newer versions of MySQL. If you get a message like this when running an SQL script:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near &amp;#39;TYPE=MyISAM&amp;#39;
+at line 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To fix this, simply edit the .sql file and change all instances of&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TYPE=MyISAM&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ENGINE=MyISAM&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uploading&#34;&gt;Uploading&lt;/h2&gt;
+&lt;p&gt;The best way to upload is to upload the ENTIRE includes directory from the unzipped file onto your includes directory, and the ENTIRE admin directory (if one exists) from the unzipped file onto your admin directory (after the appropriate renames):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If your admin folder is named ABCDEF, rename the admin folder in the unzipped plugin to ABCDEF, and upload the entire folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the unzipped file contains template specific files, rename the containing directories to the name of your template. For instance, if your template is named &amp;ldquo;blue&amp;rdquo; and the plugin has a directory named&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/modules/YOURTEMPLATE/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;rename this to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/modules/blue&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Similarly, if the plugin contains a directory called&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/custom&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;rename this to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/blue&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;too-much&#34;&gt;Too Much?&lt;/h2&gt;
+&lt;p&gt;If this sounds like too much for you, the best route is to go onto the 
+&lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted&#34;&gt;Zen Cart Commercial Help Wanted forum&lt;/a&gt; and hire a pro.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How to uninstall a plugin</title>
+      <link>/zendocs_test1/user/plugins/how_to_uninstall_a_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/how_to_uninstall_a_plugin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Uninstalling a plugin is harder than installing one; there are no
+two ways around it.&lt;/p&gt;
+&lt;h2 id=&#34;reading-the-instructions&#34;&gt;Reading the instructions&lt;/h2&gt;
+&lt;p&gt;Plugins often have their own uninstall instructions.  When this is
+the case, follow the instructions.&lt;/p&gt;
+&lt;p&gt;Otherwise, keep reading.&lt;/p&gt;
+&lt;h2 id=&#34;basic-steps&#34;&gt;Basic Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If you have a backup from before you did the installation, simply 
+restore the backup.  If you don&amp;rsquo;t - well, now you see the importance
+of &lt;a href=&#34;/zendocs_test1/user/running/backup/&#34;&gt;creating a backup&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove any NEW files that you added in the process of installing the plugin.   A NEW file is a file that doesn&amp;rsquo;t exist in the default distribution of Zen Cart.  These files can simply be deleted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove any modifications to EXISTING files that you performed as part of installing the plugin.  A plugin might modify a core file (part of the default distribution of Zen Cart) or a template file (a file you have put in one of your template folders as an override).  These changes will need to be removed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Undo any changes to the database. Ideally there will be an uninstall
+script.  &lt;strong&gt;THIS IS THE MOST DANGEROUS PHASE OF THE PROCESS&lt;/strong&gt;, so be sure
+you make a backup first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you need help during this process, post to the support thread
+for the plugin.  This can be found on the plugin&amp;rsquo;s page in the 
+&lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;too-much&#34;&gt;Too Much?&lt;/h2&gt;
+&lt;p&gt;If this sounds like too much for you, the best route is to go onto the 
+&lt;a href=&#34;https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted&#34;&gt;Zen Cart Commercial Help Wanted forum&lt;/a&gt; and hire a pro.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Plugins Library</title>
+      <link>/zendocs_test1/user/plugins/plugin_library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/plugin_library/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Zen Cart forum hosts the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt;, where open source modifications to Zen Cart may be obtained.&lt;/p&gt;
+&lt;p&gt;These plugins are supported on the Zen Cart forum by volunteers.&lt;/p&gt;
+&lt;p&gt;If you are a developer who&amp;rsquo;d like to submit a plugin, take a look at the &lt;a href=&#34;/zendocs_test1/dev/plugins/rules/&#34;&gt;developer&amp;rsquo;s plugin help&lt;/a&gt; for guidance.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What are the best plugins?</title>
+      <link>/zendocs_test1/user/plugins/best_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/best_plugin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;Beauty is in the eye of the beholder,&amp;rdquo; as the saying goes.  Ten users will
+have ten different opinions about what&amp;rsquo;s important.&lt;/p&gt;
+&lt;p&gt;Look through the &lt;a href=&#34;https://www.zen-cart.com/downloads.php&#34;&gt;Plugins Library&lt;/a&gt;. If you find something that appeals to you, here are some next steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On the plugin&amp;rsquo;s own page, click the orange 
+&lt;img src=&#34;/zendocs_test1/images/support_thread.png&#34; alt=&#34;Forum Support Thread&#34; style=&#34;height: 30px !important; border-style: none !important;&#34; /&gt; Forum Support Thread button, and browse the support thread for the plugin.  Is the thread active?  Is the plugin still supported?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the plugin and take a look at the README file.  Many plugins are easy to install.  See &lt;a href=&#34;/zendocs_test1/user/plugins/how_to_install_a_plugin/&#34;&gt;how to install a plugin&lt;/a&gt;.  If it looks too complicated or there are too many steps, place an ad on the &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/chw/&#34;&gt;Commercial Help Wanted forum&lt;/a&gt; to hire a pro to do it for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;plugins-and-the-zen-cart-core&#34;&gt;Plugins and the Zen Cart Core&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sometimes a plugin is so popular, it becomes part of Zen Cart!  In the 1.3.X days, a feature called &lt;strong&gt;Admin Profiles&lt;/strong&gt; feature was created 
+to allow storeowners to create subsets of capabilities for their staff 
+when full admin access was not desired.  This feature was pulled in to 
+Zen Cart core in the 1.5.0 release, and it is now under the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/&#34;&gt;Admins menu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zen Cart 1.5.7 includes a number of popular and powerful plugins from the user community, including &lt;strong&gt;Default Attribute&lt;/strong&gt;, &lt;strong&gt;Report All Errors&lt;/strong&gt;, &lt;strong&gt;Ask a Question&lt;/strong&gt;, &lt;strong&gt;Sortable Orders Status&lt;/strong&gt;, &lt;strong&gt;zenNonCAPTCHA&lt;/strong&gt;, and perhaps most importantly, &lt;strong&gt;Login as Customer&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Zen Cart 1.5.6, &lt;strong&gt;Sales Reports with Graphs&lt;/strong&gt; was migrated from a plugin to a core feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Zen Cart 1.5.5, &lt;strong&gt;myDEBUG log backtrace&lt;/strong&gt; was migrated from a plugin to a core feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, even though a plugin is popular, there&amp;rsquo;s no guarantee 
+it will be pulled into the core  There are good reasons for &lt;a href=&#34;/zendocs_test1/user/plugins/why_plugins/&#34;&gt;keeping some plugins separate from the Zen Cart core&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;no-really-what-are-the-best-plugins&#34;&gt;No really, what are the best plugins&lt;/h3&gt;
+&lt;p&gt;Plugins which are pretty much universally useful and have earned honorable mention in this documentation are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/orders/edit_orders/&#34;&gt;Edit Orders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/email_archive_manager&#34;&gt;Email Archive Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2069&#34;&gt;EasyPopulate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=425&#34;&gt;MailChimp Integration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2095&#34;&gt;One Page Checkout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=9&#34;&gt;Sales Report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why plugins?</title>
+      <link>/zendocs_test1/user/plugins/why_plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/why_plugins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;Why isn&amp;rsquo;t plugin &lt;em&gt;X&lt;/em&gt; part of the Zen Cart core?&amp;rdquo; is a question that comes up frequently.&lt;br&gt;
+Although the reasons are complicated and varied, here are some common explanations:&lt;/p&gt;
+&lt;h2 id=&#34;the-functionality-is-not-universally-needed&#34;&gt;The functionality is not universally needed&lt;/h2&gt;
+&lt;p&gt;Although a specific modification may seem vital to you, many people are successfully running 
+online stores without it.  Such a modification would be rejected for inclusion into the core for that reason.&lt;/p&gt;
+&lt;h2 id=&#34;the-functionality-is-os-dependent&#34;&gt;The functionality is OS dependent&lt;/h2&gt;
+&lt;p&gt;A plugin like &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL&lt;/a&gt; requires extensive logic to check various OS-specific settings. 
+This is difficult to maintain and subject to change outside the release schedule for Zen Cart,
+so it&amp;rsquo;s not a candidate for inclusion into the core. 
+Similar logic applies to URL rewriting plugins, which are often tied to a particular web server such as Apache.&lt;/p&gt;
+&lt;h2 id=&#34;the-plugin-is-an-integration-with-an-external-system&#34;&gt;The plugin is an integration with an external system&lt;/h2&gt;
+&lt;p&gt;As an example, consider the USPS shipping module.&lt;/p&gt;
+&lt;p&gt;The USPS shipping module is not bundled with Zen Cart because it changes on a schedule set by USPS, not Zen Cart.
+Thus, any particular release of Zen Cart which included USPS could be shipping an obsolete version of the software.&lt;/p&gt;
+&lt;p&gt;For this reason, USPS functionality is provided by a plugin.&lt;/p&gt;
+&lt;p&gt;The same is true for UPS and many other modules.&lt;/p&gt;
+&lt;h2 id=&#34;desire-to-keep-the-core-small&#34;&gt;Desire to keep the core small&lt;/h2&gt;
+&lt;p&gt;The smaller Zen Cart is, the easier it is to maintain, for both the developers on the core team and for individual store owners.&lt;br&gt;
+For this reason, even very powerful and popular plugins are often rejected for inclusion into the core.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Will this plugin work with my Zen Cart version?</title>
+      <link>/zendocs_test1/user/plugins/will_it_work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/plugins/will_it_work/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A frequently asked question on the Zen Cart forum is, &amp;ldquo;Does this plugin work with &lt;em&gt;latest Zen Cart version&lt;/em&gt;?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Generally you can figure this out yourself by downloading and looking at the plugin.&lt;/p&gt;
+&lt;p&gt;Assuming it was last updated for Zen Cart 1.5.x, check the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Does it overwrite any core files?  If no, then it will likely work as-is.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it does overwrite core files, and those core files have been changed since the plugin was last updated, you will need to merge those changes into your copy of the core file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it modifies template files, you will want to merge the changes required into your copy of the template file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If it hasn&amp;rsquo;t been updated for a while, it &lt;em&gt;may&lt;/em&gt; need updating for the current version of PHP.  See &lt;a href=&#34;/zendocs_test1/user/upgrading/php_warnings/&#34;&gt;PHP Warnings and Deprecated messages&lt;/a&gt; for some common fixes.&lt;/p&gt;
+&lt;p&gt;If the plugin was last updated prior to Zen Cart 1.5.0, you should probably assume it has been abandoned and avoid it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

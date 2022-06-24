@@ -1,0 +1,218 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – EU Digital VAT</title>
+    <link>/zendocs_test1/dev/eu_digital_vat/</link>
+    <description>Recent content in EU Digital VAT on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/dev/eu_digital_vat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dev: Introduction</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;New rules regarding the selling of Digital Goods to EU countries come into force on January 1st 2015. These rules affect both EU based and Non EU based suppliers.&lt;/p&gt;
+&lt;p&gt;The rules are meant to apply to business to customer (B2C) transactions and not Business to Business (B2B) transactions. To distinguish between the two, the suggested method is to ask the customer to supply a EU VAT number, in which case the transaction should be classed as B2B.&lt;/p&gt;
+&lt;p&gt;The new rules basically say that anyone selling Digital Goods to a EU customer must charge VAT on that sale at the rate applicable in the customers country. Furthermore, the supplier must either register in every EU country that they make a supply to, or register using one of the EU countries Mini One Stop Shops (MOSS).&lt;/p&gt;
+&lt;p&gt;Suppliers must then account for and pay the VAT on a quarterly basis.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Scoping</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/scoping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/scoping/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;scoping&#34;&gt;Scoping&lt;/h1&gt;
+&lt;p&gt;There are a number of issues that have to be addressed when scoping the code changes necessary.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Flagging which products should be considered Digital Goods as per EU rules&lt;/li&gt;
+&lt;li&gt;Determining correct tax rate to  use&lt;/li&gt;
+&lt;li&gt;Complying with the &amp;lsquo;Two Location identifiers&amp;rsquo; rule&lt;/li&gt;
+&lt;li&gt;Allow shop to opt out of supplying EU countries for Digital Goods&lt;/li&gt;
+&lt;li&gt;Identify B2B or B2C customers&lt;/li&gt;
+&lt;li&gt;Reporting Quarterly relevant sales&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Flagging Products</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/flagging_products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/flagging_products/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;flagging-products&#34;&gt;Flagging Products&lt;/h1&gt;
+&lt;p&gt;A method is needed to determine which goods within a store should be classified as Digital Goods. For some stores this may be all of their inventory, for others it may just be a subset.&lt;/p&gt;
+&lt;p&gt;Generally it would be expected that any &amp;lsquo;virtual&amp;rsquo; product would be Digital Goods, however this may not always be the case. We may therefore need some extra &amp;lsquo;flag&amp;rsquo; for digital goods.&lt;/p&gt;
+&lt;p&gt;There are further complications in that some EU countries have specific VAT rates for e-books, so these may need to be flagged separately. Although that flagging may simple be done by assigning a Tax Class to the product.&lt;/p&gt;
+&lt;p&gt;(See Determining Tax Rate)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Tax Rate</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/determining_tax_rate/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;determining-tax-rate&#34;&gt;Determining Tax Rate&lt;/h1&gt;
+&lt;p&gt;In essence, this is really just a problem of defining correct  Zone/Geo Zone definitions for EU member states, and Design75&amp;rsquo;s post at &lt;a href=&#34;https://www.zen-cart.com/showthread.php?213763-Digital-Seller-New-2015-EU-Digital-VAT-Affects-You&amp;amp;p=1265814#post1265814&#34;&gt;https://www.zen-cart.com/showthread.php?213763-Digital-Seller-New-2015-EU-Digital-VAT-Affects-You&amp;amp;p=1265814#post1265814&lt;/a&gt; may be useful here.&lt;/p&gt;
+&lt;p&gt;However there are some gotchas to look out for.
+With standard goods in Zen Cart where the supplier is in the EU, prices are shown with tax included, and the tax rate is determined by the Store Country.
+However with Digital Goods, the VAT is determined by the customers country. For a guest account/not logged in customer we don&amp;rsquo;t know the customer country. This could mean that prices initially displayed will change once we actually determine the customer country, a really quick way to generate abandoned carts.&lt;/p&gt;
+&lt;p&gt;The only real way to help mitigate this, is to do some initial geoIP.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Location</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/location_identification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/location_identification/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;location-identification&#34;&gt;Location Identification&lt;/h1&gt;
+&lt;p&gt;Currently, the rules expect the store to collect 2 pieces of location information, although 3 may be needed if the the first 2 conflict.
+e.g.&lt;/p&gt;
+&lt;p&gt;If the customer supplies their address, that is one piece of information. Location can also be determined by IP address (geoIp).
+However if for some reason the geoIP returns a different country, then some 3rd method would be needed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Restrict Digital Downloads by Country</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/opt_out_by_country/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;restrict-digital-downloads-by-country&#34;&gt;Restrict Digital Downloads by Country&lt;/h1&gt;
+&lt;p&gt;Lat9 has a contribution &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1933&#34;&gt;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1933&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Should this be incorporated into a bigger contribution ?
+My feeling is it shouldn&amp;rsquo;t.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: B2B or B2C</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/identifying_b2b_or_b2c/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;identifying-b2b-or-b2c&#34;&gt;Identifying B2B or B2C&lt;/h1&gt;
+&lt;p&gt;B2B supplies, at least between EU countries do not have to account for Digital Goods VAT. However some method of distinguishing B2B/B2C transactions is needed. Traditionally this is done by asking for the customers VAT Reference number, and also verifying same.&lt;/p&gt;
+&lt;p&gt;There are some contributions that allow for collection of VAT numbers. Need to look at them, and maybe incorporate.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Reporting</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/reporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/reporting/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;reporting&#34;&gt;Reporting&lt;/h1&gt;
+&lt;p&gt;Initially, I don&amp;rsquo;t think we need to scope out the reporting. Given that reports would only need to be generated once a first quarter has passed (i.e. after March 2015). What&amp;rsquo;s more important is to ensure we are capturing information correctly.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Resources</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/resources/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;resources&#34;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.maxmind.com/en/geoip2-services-and-databases&#34;&gt;https://www.maxmind.com/en/geoip2-services-and-databases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mikejolley/EU-VAT-Rates-for-Digital-Goods&#34;&gt;https://github.com/mikejolley/EU-VAT-Rates-for-Digital-Goods&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://euvataction.org/updates/&#34;&gt;http://euvataction.org/updates/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gov.uk/government/publications/vat-supplying-digital-services-to-private-consumers/vat-businesses-supplying-digital-services-to-private-consumers&#34;&gt;https://www.gov.uk/government/publications/vat-supplying-digital-services-to-private-consumers/vat-businesses-supplying-digital-services-to-private-consumers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.binlist.net/&#34;&gt;http://www.binlist.net/&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Collaboration</title>
+      <link>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/dev/eu_digital_vat/conference_call_2014_12_30/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;precis-of-conference-call-2014-12-30&#34;&gt;Precis of Conference Call 2014-12-30&lt;/h1&gt;
+&lt;p&gt;EU digital VAT Precis&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ian Wilson (wilt) Zen Cart Founder&lt;/li&gt;
+&lt;li&gt;Linda McGrath (ajeh) Zen Cart Founder&lt;/li&gt;
+&lt;li&gt;Enlightened&lt;/li&gt;
+&lt;li&gt;Marge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I initially suggested there were two ways of supporting EU digital vat in Zen Cart
+Either thru an integration with Taxamo, and with custom integration code for Zen Cart.
+Those on the call were not really interested in a Taxamo integration based on the cost this would apply.&lt;/p&gt;
+&lt;p&gt;We then had some discussion of price display. So how do we apply differing vat percentages for EU countries, before a customer registers. The problem being that given we don&amp;rsquo;t initially know a customer&amp;rsquo;s location that prices may change as they move through the cart, and the fact that the prices may change, could cause cart abandonment. The only feasible solution here is some geoIP location.&lt;/p&gt;
+&lt;p&gt;Marge, who is from South Africa mentioned problems she would have, in terms of paying VAT to another country, due to SA currency rules. Hence, she wouldn&amp;rsquo;t want to use the Taxamo option, but something that means she would not have to apply the Digital vat rules at all. The method Marge would prefer would be to have a manual email option which attached the downloadable product to the email.&lt;/p&gt;
+&lt;p&gt;Enlightened explained that this wouldn&amp;rsquo;t work for her as the size of her downloadable products would probably run it to size limits for most email systems. She would need to use something like dropbox or similar to address that. However Enlightened said that even the email option would not suit her, as she runs a digital market place, where other craft suppliers sell through her website, and the size and volume of orders makes individual emails onerous.&lt;/p&gt;
+&lt;p&gt;Some discussion of the politics around exemption limits and the fact that in the future other countries may implement similar customer located tax rules.&lt;/p&gt;
+&lt;p&gt;Discussion then moved back to tax rates, and how we determine the rate for a particular product/customer location. Given the each EU country has 
+a) A different base line tax rate
+b) May have a different tax rate for digital goods/E-books etc
+Enlightened suggested that she would like an automated system to update VAT rates, rather than have to manually change, especially when an EU country might change their rate for whatever reason.&lt;/p&gt;
+&lt;p&gt;Some discussion on enforcement. Given that VAT on E-Service Scheme (VoES) has been applicable since 2003, and as far as I know, no non EU supplier has been taken to court for non compliance, and also because HMRC have suggested they will take a very &amp;rsquo;light touch&amp;rsquo; approach regarding compliance to the new rules for micro businesses, that even though the deadline was upon us, that businesses affected should not simply consider shutting down, but &amp;rsquo;think&amp;rsquo; about how likely it would be that they would be detected. I of course also said, that I would never suggest a company should knowingly break the law :)&lt;/p&gt;
+&lt;p&gt;Discussion returned to the fact that HMRC will now (at least till June 2015) accept the payment providers &amp;lsquo;knowledge&amp;rsquo; of the customers location as definitive (rather than requiring 2 separate agreeing definitive tests of location). Again, we came back to the fact that while that would ease compliance, it didn&amp;rsquo;t help with initial display of prices to &amp;lsquo;guests&amp;rsquo;
+Some clarification that the currency that prices are displayed would have no effect on other aspects of displaying prices with regard to EU Digital Vat&lt;/p&gt;
+&lt;p&gt;Enlightened highlighted this problem with showing prices, in that she would be deterred in buying (e.g. for Zen Cart Modules) if price changed between initial browsing, and checkout price.
+(We haven&amp;rsquo;t so far had any feedback from stores that sell Zen Cart Modules)&lt;/p&gt;
+&lt;p&gt;Enlightened then asked about checking VAT numbers, in terms of separating B2B/B2C customers. I mentioned that there are already some contributions that allow for collection of VAT numbers, either at registration or at checkout. However, verifying those vat numbers is problematic. i.e. While api&amp;rsquo;s exist to verify a VAT number exists, we can&amp;rsquo;t verify that the person supplying that VAT number actually &amp;lsquo;owns&amp;rsquo; the VAT number.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

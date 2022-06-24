@@ -1,0 +1,365 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Search</title>
+    <link>/user/search/</link>
+    <description>Recent content in Search on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Admin search</title>
+      <link>/user/search/admin_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/admin_search/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The search in admin is shown as a field on the upper right hand side of the page Admin &amp;gt; Catalog &amp;gt; Categories/Products.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/admin_search.png&#34; alt=&#34;Admin Search&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The contents of the &lt;code&gt;search&lt;/code&gt; field is used to search the following fields:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Table&lt;/th&gt;
+&lt;th&gt;Fields&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;categories_description&lt;/td&gt;
+&lt;td&gt;categories_name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;products_description&lt;/td&gt;
+&lt;td&gt;products_name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;products_description&lt;/td&gt;
+&lt;td&gt;products_description&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;products&lt;/td&gt;
+&lt;td&gt;products_id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;products&lt;/td&gt;
+&lt;td&gt;products_model&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can see &lt;a href=&#34;/dev/schema/&#34;&gt;the database schema&lt;/a&gt; if you wish to learn more about how the database is structured.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How can I disable &#34;search in description&#34; in the search sidebox?</title>
+      <link>/user/search/disable_search_in_description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/disable_search_in_description/</guid>
+      <description>
+        
+        
+        &lt;p&gt;For the regular sidebox search, make the following change:&lt;/p&gt;
+&lt;p&gt;Edit &lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes/tpl_search.php&lt;/code&gt; and change&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= zen_draw_hidden_field(&amp;#39;search_in_description&amp;#39;, &amp;#39;1&amp;#39;) . zen_hide_session_id();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$content .= zen_hide_session_id();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For the header sidebox search, make the same change, but in &lt;code&gt;includes/templates/YOURTEMPLATE/sideboxes/tpl_search_header.php&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I put a search box in my site header</title>
+      <link>/user/search/header_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/header_search/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/sideboxes/search_box_header_only/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Search related configuration settings</title>
+      <link>/user/search/search_configs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/search_configs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are several entries in the configuration table that affect the behavior of search.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Admin Search Results Per Page&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Controls &lt;a href=&#34;/user/template/pagination/&#34;&gt;pagination&lt;/a&gt; for admin search&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Default Search Operator&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Should &lt;strong&gt;AND&lt;/strong&gt; or &lt;strong&gt;OR&lt;/strong&gt; be used between search terms?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Include meta-tags in product search&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Should search scan the meta tags data?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Products Listing - Number Per Page&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Maximum Values&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Controls &lt;a href=&#34;/user/template/pagination/&#34;&gt;pagination&lt;/a&gt; for storefront search&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The flag for whether or not to search the description is not a config variable; it&amp;rsquo;s hardcoded in your template.  See &lt;a href=&#34;/user/search/disable_search_in_description/&#34;&gt;disable search in description&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: SEO Optimization</title>
+      <link>/user/search/optimizing_seo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/optimizing_seo/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;best-practices-for-optimizing-seo&#34;&gt;Best Practices for Optimizing SEO&lt;/h2&gt;
+&lt;p&gt;First and foremost, make sure you understand who your customers are, how they write their search terms when seeking for something you offer, and what their real needs/wants are.
+Specifically, understand what problems your products actually solve and how your customers will feel after they buy the product you offer for solving those problems.&lt;/p&gt;
+&lt;p&gt;Then use that information in your category, product, page content and metatags.&lt;/p&gt;
+&lt;p&gt;Specific areas to focus on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;product descriptions and titles. Make sure that the most-likely search terms for each product are reflected in title and description. Ideally 2-3 times on the page. (Never &amp;ldquo;stuff&amp;rdquo; keywords dozens of times on a page.)&lt;/li&gt;
+&lt;li&gt;product &lt;a href=&#34;/user/admin/meta_tags/&#34;&gt;metatags&lt;/a&gt;: title, description, and keywords. Make sure to optimize these for search engines to show in search results.&lt;/li&gt;
+&lt;li&gt;category names and descriptions and metatags. Make sure that the common search terms for each category&amp;rsquo;s products are found in the category description and metatags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;keywords-defined&#34;&gt;Keywords: defined&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;keywords&amp;rdquo; = &amp;ldquo;popular search terms&amp;rdquo;, specifically the terms used to shop for any specific product or research a certain category of products.&lt;/p&gt;
+&lt;p&gt;To clarify again, the point here is: when you think about &amp;ldquo;keywords&amp;rdquo;, don&amp;rsquo;t think about &amp;ldquo;a magical term&amp;rdquo;. Think about &amp;ldquo;the phrases people search with&amp;rdquo; when they&amp;rsquo;re shopping for a solution to their problem, for which your product provides a solution.&lt;/p&gt;
+&lt;p&gt;Think in the mind of the customer who is looking for an answer to a problem. This is the added &amp;ldquo;edge&amp;rdquo; that a lot of people never consider, and adjusting to this can boost your results.&lt;/p&gt;
+&lt;h2 id=&#34;assessing&#34;&gt;Assessing&lt;/h2&gt;
+&lt;p&gt;Consider that the &lt;strong&gt;category/subcategory&lt;/strong&gt; pages drive most of the visitors to your site from search engine results. You should find a lot of traffic to these pages.&lt;/p&gt;
+&lt;p&gt;Secondarily you also want to see a decent share of traffic coming to product pages from long-tail search terms/phrases (longer, more product-specific search queries).&lt;/p&gt;
+&lt;p&gt;Analyze performance (which products/pages get decent traffic) 3-6 months after making changes. Then go through and adjust. Even consider removing things that don&amp;rsquo;t get traffic or don&amp;rsquo;t sell.&lt;/p&gt;
+&lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
+&lt;p&gt;For EVERY INDIVIDUAL page, category, product on your site, look at these parts:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parts To Look At&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Page Title (Product/Category Name, or EZ Page Title)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Page Content (eg: Product/Category description, or Article text)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Metatags Title (This will be shown in search results)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Metatags Description (This is the sub-text shown in search results)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Metatags Keywords (These are used by your own store&amp;rsquo;s search, and can be partially helpful to search engines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Images&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And ask yourself these questions:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Questions To Ask About EACH Part&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Is it helpful?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Is the content Unique? (Not the same as on any other website)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Does it use phrases a customer would search with?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;What problem does it say it solves/answers for a buyer? Is that what the customer would ask a search engine?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;For images, do they provide value to the shopper? Are they unique (not the same as on any other website)?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Why do customers want to buy your products/services? (Ask them directly!) Work those answers into content on your site.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Do customers think in the same &amp;ldquo;terminology&amp;rdquo; words that I&amp;rsquo;m writing on my website and products and category names and descriptions?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;category-pages&#34;&gt;Category pages&lt;/h3&gt;
+&lt;p&gt;Good quality category pages that line up well with popular search terms is key, as that’s where the bulk of traffic comes in on ecommerce websites.&lt;/p&gt;
+&lt;p&gt;Find out what popular keywords your site is already ranking for on pages 2 or 3 of Google and other search engines.
+Make sure that your category and subcategory pages line up with those keywords, by building those search phrases into your category descriptions and metatags.&lt;/p&gt;
+&lt;p&gt;And then work on ways to establish good links to those pages from other websites. (See &amp;ldquo;backlinks&amp;rdquo; below).&lt;/p&gt;
+&lt;h3 id=&#34;product-pages&#34;&gt;Product pages&lt;/h3&gt;
+&lt;p&gt;Focus first on your top 10 to 50 products.&lt;/p&gt;
+&lt;p&gt;Identify the popular (high search-volume) search terms for each product you sell. Not only on your own website, but everywhere.
+Then optimize your product pages for those search terms by building those phrases into your content.&lt;/p&gt;
+&lt;p&gt;Make sure that you write unique valuable text on these pages – DO NOT use stock manufacturer text that could be found on any other website.&lt;/p&gt;
+&lt;p&gt;Be sure to have a paragraph of three or four sentences and build in the primary keyword (search phrases) into that text at least twice, in a way that feels totally human and natural.&lt;/p&gt;
+&lt;p&gt;If there are a lot of different keywords/phrases that relate to your product, consider writing Articles/Blogs that use those words/phrases more heavily than your product descriptions do. The &amp;ldquo;authority&amp;rdquo; given to your product by the &amp;ldquo;other page&amp;rdquo; can be more beneficial than having too many of those words in the product description itself.&lt;/p&gt;
+&lt;h3 id=&#34;backlinks-are-important&#34;&gt;Backlinks are important!&lt;/h3&gt;
+&lt;p&gt;Links to your site, from other sites, are important. While it&amp;rsquo;s ideal if those other sites are in the same industry that&amp;rsquo;s not always important.
+If what you sell is useful then there are certainly related sites out there writing about &amp;ldquo;how to use&amp;rdquo; your products, etc.&lt;/p&gt;
+&lt;p&gt;Consider being a guest on a popular podcast whose listeners would use your products, as &amp;ldquo;links to your site in their site&amp;rsquo;s show notes&amp;rdquo; can be beneficial.&lt;/p&gt;
+&lt;p&gt;You could publish YouTube videos related to your products, such as how-to-use them, what exact &amp;ldquo;real world problems the product solves&amp;rdquo;, etc.  Be sure the videos contain meaningful content, and aren&amp;rsquo;t posted just to create a link. Remember: &lt;strong&gt;meaningful content&lt;/strong&gt; is more important than just creating links or stuffing keywords.&lt;/p&gt;
+&lt;p&gt;Be creative about other similar possibilities.&lt;/p&gt;
+&lt;h3 id=&#34;internal-linking&#34;&gt;Internal Linking&lt;/h3&gt;
+&lt;p&gt;Zen Cart cross-links product and category pages extensively in a way that&amp;rsquo;s logical for most visitors&lt;/p&gt;
+&lt;p&gt;However, if you write content on EZ-Pages or other places on your site, you should include links to the specific products that your page content is referring to.&lt;/p&gt;
+&lt;p&gt;And, if you have products that are related to other products, where it feels like it would be logical to link to another product from its description, add links to connect them.&lt;/p&gt;
+&lt;h3 id=&#34;articles-and-other-content&#34;&gt;Articles and other content&lt;/h3&gt;
+&lt;p&gt;EZ Pages can be a place to write articles that can educate customers, celebrate creative uses of your products, and highlight success stories.&lt;/p&gt;
+&lt;p&gt;Articles should contain keywords (phrases) that your customers are searching for. And these articles should contain links to the products that your articles are referring to.&lt;/p&gt;
+&lt;p&gt;Work on getting backlinks to your articles which line up with popular search terms for your site or the products discussed on those pages.&lt;/p&gt;
+&lt;h3 id=&#34;related-resources&#34;&gt;Related resources&lt;/h3&gt;
+&lt;p&gt;Consider some of the following references:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/webmasters/answer/35624&#34;&gt;Create Good Titles And Descriptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.link-assistant.com/news/content-optimization/&#34;&gt;Content Optimization Tips for SEO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_TBTSGREx5A&#34;&gt;Non-Technical Strategies for Ranking Well With Your Article Content&lt;/a&gt; (video)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;plugins-to-consider&#34;&gt;Plugins To Consider&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/search/xml_site_map/&#34;&gt;XML Sitemap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/showthread.php?221868-Structured-Data-Markup-for-Schema&#34;&gt;Structured Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Storefront search</title>
+      <link>/user/search/storefront_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/storefront_search/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are two sideboxes which permit your visitors to search your store - the &lt;code&gt;search.php&lt;/code&gt; sidebox (shown left) and the &lt;code&gt;search_header.php&lt;/code&gt; sidebox (on the right).  The former is designed to be shown on the left or right sidebar, where the latter is designed for positioning in the store&amp;rsquo;s header.&lt;/p&gt;
+&lt;br&gt;
+&lt;div style=&#34;float: left;&#34;&gt;
+  &lt;div style=&#34;float: left; margin-right: 10px;&#34;&gt;
+    &lt;img alt=&#34;Search Sidebox&#34; src=&#34;/images/sidebox_search.png&#34; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;float: left;&#34;&gt;
+    &lt;img alt=&#34;Search Header Sidebox&#34; src=&#34;/images/sidebox_search_header.png&#34; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br clear=&#34;all&#34;&gt;
+&lt;br&gt;
+&lt;p&gt;The link in the &lt;code&gt;search.php&lt;/code&gt; sidebox to the Advanced Search page goes to a screen that looks like this:&lt;/p&gt;
+&lt;h2 id=&#34;advanced-search-page&#34;&gt;Advanced Search Page&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/advanced_search.png&#34; alt=&#34;Advanced Search&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The advanced search page allows visitors to narrow their search to only specific categories, manufacturers, price ranges, and product creation dates. This can be useful for stores with a large number of SKUs.&lt;/p&gt;
+&lt;p&gt;The contents of the &lt;code&gt;keywords&lt;/code&gt; field is used to search the following fields:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Table&lt;/th&gt;
+&lt;th&gt;Fields&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;products&lt;/td&gt;
+&lt;td&gt;products_model&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;products_description&lt;/td&gt;
+&lt;td&gt;products_description &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;manufacturers&lt;/td&gt;
+&lt;td&gt;manufacturers_name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;meta_tags_products_description&lt;/td&gt;
+&lt;td&gt;metatags_description &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can see &lt;a href=&#34;/dev/schema/&#34;&gt;the database schema&lt;/a&gt; if you wish to learn more about how the database is structured.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Search in Product Descriptions&lt;/em&gt; checkbox is provided because sometimes searching the product description produces false positive search results.&lt;/p&gt;
+&lt;p&gt;If the configuration setting &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/#skip_1prod_categories&#34;&gt;SKIP_SINGLE_PRODUCT_CATEGORIES&lt;/a&gt; is true, and a search returns a single value, the product listing page will be bypassed and the product info page will be displayed for the resulting product.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;if the &lt;code&gt;Search in Product Descriptions&lt;/code&gt; checkbox is checked, or if the search is done from one of the search sideboxes.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;if the configuration setting &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search&#34;&gt;Include meta-tags in product search?&lt;/a&gt; is set to &lt;code&gt;true&lt;/code&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: XML Site Map Page</title>
+      <link>/user/search/xml_site_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/search/xml_site_map/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Search engines like Google prefer to consume site maps in XML, which is more efficient than a site map created in HTML, with markup to make it attractive to humans.  Sitemaps produced for search engines are designed using the format defined by &lt;a href=&#34;https://www.sitemaps.org/index.html&#34;&gt;sitemaps.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A plugin is available to produce an &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=367&#34;&gt;XML sitemap for your store&lt;/a&gt;.  After installing and running this plugin, you can submit the resultant files to Google for indexing.&lt;/p&gt;
+&lt;p&gt;The XML sitemap is a series of text files that follow a specific format.  Here&amp;rsquo;s what one entry from the product sitemap might look like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;lt;url&amp;gt;
+  &amp;lt;loc&amp;gt;http://YOURSTORE.com/shop/index.php?main_page=product_info&amp;amp;amp;products_id=181&amp;lt;/loc&amp;gt;
+  &amp;lt;lastmod&amp;gt;2020-08-21&amp;lt;/lastmod&amp;gt;
+  &amp;lt;changefreq&amp;gt;weekly&amp;lt;/changefreq&amp;gt;
+  &amp;lt;priority&amp;gt;1.00&amp;lt;/priority&amp;gt;
+ &amp;lt;/url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This site map is produced for the benefit of search engines, and should not be confused with the &lt;a href=&#34;/user/storefront_pages/site_map/&#34;&gt;storefront sitemap&lt;/a&gt;, which is produced for the benefit of human visitors.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

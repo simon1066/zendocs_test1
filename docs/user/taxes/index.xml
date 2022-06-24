@@ -1,0 +1,446 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Taxes</title>
+    <link>/user/taxes/</link>
+    <description>Recent content in Taxes on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/taxes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: How do I set up a default tax class for new products?</title>
+      <link>/user/taxes/default_tax_class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/default_tax_class/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; Is there a way I can get the system to select a certain Tax class automatically when I&amp;rsquo;m adding a product?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; Yes - here&amp;rsquo;s how:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Find out the tax class ID number in &lt;a href=&#34;/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.  (It&amp;rsquo;s the number on the left hand side.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types_edit_layout/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types &amp;gt; Layout Settings&lt;/a&gt;
+for the product type you&amp;rsquo;re using (probably &lt;code&gt;Product - General&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Choose 
+&lt;em&gt;Product Price Tax Class Default - When adding new products?&lt;/em&gt;
+and enter the tax class ID number you obtained in step 1 above.&lt;/p&gt;
+&lt;p&gt;Next time you add a product, the tax class is pre-selected.&lt;/p&gt;
+&lt;p&gt;If you want to do an audit of your database to see if any products are mis-coded, you can use a query like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT p.products_id, pd.products_name FROM products p, products_description pd WHERE p.products_id = pd.products_id AND products_tax_class_id != 1;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(This assumes that &amp;ldquo;Taxable Goods&amp;rdquo; is Tax Class id &amp;ldquo;1&amp;rdquo;.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Should I charge taxes?  How much?</title>
+      <link>/user/taxes/taxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/taxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You should consult your local tax authority for tax advice as it relates to your business. For professional assistance or &amp;ldquo;creative&amp;rdquo; strategies, you may want to consult a Tax Accountant or Attorney.&lt;/p&gt;
+&lt;p&gt;Zen Cart does not supply tax advice due to the complexities of each business and locale. Determining the right strategy is the responsibility of the shopowner. Your local tax authority should be able to direct you easily.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax calculations are wrong</title>
+      <link>/user/taxes/tax_calc_wrong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/tax_calc_wrong/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you haven&amp;rsquo;t configured taxes yet, please see the related articles on setting up taxes in &lt;a href=&#34;/user/taxes/&#34;&gt;Taxes&lt;/a&gt;.  If you have set up taxes according to the instructions, but they don&amp;rsquo;t seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What are your store settings for these values in 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    a. Country/Zone
+    b. Basis of Product Tax
+    c. Basis of Shipping Tax
+    d. Display Prices With Tax
+    e. Display Prices With Tax-Admin
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;What Zone Definitions have you created?
+See &lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inside each of those zone definitions, what country/zone combinations have been selected?
+In &lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions&lt;/a&gt;, click on &amp;ldquo;Details&amp;rdquo; button for each zone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What tax classes do you have?
+Check &lt;a href=&#34;/user/admin_pages/locations/tax_classes/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What tax rates have you created?
+Check &lt;a href=&#34;/user/admin_pages/locations/tax_rates/&#34;&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What tax class have you associated with your products?
+Check &lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Categories/Products&lt;/a&gt;, then click on a product to edit it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What tax class have you associated with each of your shipping modules?
+Check &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax configuration in Canada</title>
+      <link>/user/taxes/canada_taxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/canada_taxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Vendors operating in Canada need to accommodate numerous tax configurations to support proper tax collection on sales to customers in provinces where they are registered to sell. There&amp;rsquo;s a Federal GST, HST, and provincial PST/RST.&lt;/p&gt;
+&lt;p&gt;Tax Zones / Rates configuration can be a little confusing at times, as the terms are easily and accidentally swapped.&lt;/p&gt;
+&lt;p&gt;Hopefully this short article will help clarify.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;=========================&lt;br&gt;
+Understanding Terminology&lt;br&gt;
+=========================&lt;/strong&gt;&lt;br&gt;
+TAX CLASS = A setting assigned to PRODUCTS and to SHIPPING that&amp;rsquo;s used to calculate final taxes.&lt;br&gt;
+TAX ZONE = A regional setting used to help determine tax rates by geography.&lt;br&gt;
+TAX RATE = A rate calculated by combining a product&amp;rsquo;s tax class and shipping zone with the relevant tax percentage.&lt;/p&gt;
+&lt;p&gt;Zen Cart uses SHIPPING ADDRESS to determine appropriate taxes, i.e. which TAX ZONE you are shipping into. &lt;strong&gt;NOTE:&lt;/strong&gt; this is the shipping address, and &lt;em&gt;NOT&lt;/em&gt; the billing address.&lt;/p&gt;
+&lt;p&gt;A TAX RATE is determined by comparing SHIPPING ADDRESS to the Tax ZONE set up for the TAX RATE; and also by Tax Class assigned to each product.&lt;/p&gt;
+&lt;p&gt;You can only assign ONE TAX CLASS to a product.&lt;br&gt;
+In many stores, you will only have one TAX CLASS (GST/HST/PST) since all goods are either taxable or non-taxable.&lt;br&gt;
+When would you use different rates? One example would be if, say, CLOTHES were taxed at a different rate than BOOKS which are in turn different from DVDs. You could create a different TAX CLASS for each family (&amp;ldquo;class&amp;rdquo;) of product in that case.&lt;/p&gt;
+&lt;p&gt;In the following examples, we will be dealing with only ONE tax CLASS for products.&lt;br&gt;
+You likely want the GST for SHIPPING to show up separately, so we will make a separate &amp;ldquo;TAX CLASS&amp;rdquo; for &amp;ldquo;GST on Shipping&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;========= PROBLEMS: =========&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The method below shows the GST and PST totaled together on the same line (see sample output below).&lt;/p&gt;
+&lt;p&gt;Having said that, the only problem is that the two taxes are summed together onto one line.&lt;br&gt;
+However, the GST number is displayed, and the percentages (rates) used are displayed, and nothing is hidden, so I believe that this will be acceptable according to Federal &amp;amp; Provincial Gov&amp;rsquo;t requirements (but I AM NOT AN ACCOUNTANT!!!!).&lt;/p&gt;
+&lt;p&gt;Best part is: IT DOESN&amp;rsquo;T REQUIRE ANY CONTRIBUTIONS!!!!! Just a careful setup of the zones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;===================&lt;br&gt;
+Step-by-Step SETUP:&lt;br&gt;
+===================&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;STEP (1): Set the location for your store:&lt;/p&gt;
+&lt;p&gt;Configuration &amp;gt; My Store&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country: Canada&lt;/li&gt;
+&lt;li&gt;Zone: Ontario&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;STEP (2): Create the &amp;ldquo;Tax Zones&amp;rdquo;. The are geographical regions where a particular set of tax laws applies&lt;br&gt;
+Locations/Taxes &amp;gt; Zones Definitions&lt;/p&gt;
+&lt;p&gt;Create the Zone for all of Canada&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zone Name: Canada GST Zone&lt;/li&gt;
+&lt;li&gt;Description: GST (except Eastern Canada: NS, NB, NL)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now click on the newly created &amp;ldquo;Canada GST Zone&amp;rdquo; row to drill down one level to &amp;ldquo;Sub Zones&amp;rdquo;&lt;br&gt;
+Click INSERT to create 10 new sub-zones, one at a time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country: Canada; Zone: Alberta&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: British Columbia&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Manitoba&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Northwest Territories&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Nunavut&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Ontario&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Prince Edward Island&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Quebec&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Saskatchewan&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Yukon Territory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Click on &amp;ldquo;BACK&amp;rdquo; to go up one level.&lt;br&gt;
+Now create the Ontario Provincial Tax Zone:&lt;br&gt;
+Click Insert&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zone Name: Ontario PST Zone&lt;/li&gt;
+&lt;li&gt;Description: PST (only when shipping to Ontario)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now click on the newly created &amp;ldquo;Ontario PST Zone&amp;rdquo; row to drill down one level to &amp;ldquo;Sub Zones&amp;rdquo;&lt;br&gt;
+Click INSERT to create new sub-zone:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country: Canada&lt;/li&gt;
+&lt;li&gt;Zone: Ontario&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Click on &amp;ldquo;BACK&amp;rdquo; to go up one level.&lt;br&gt;
+Now create the HST Tax Zone:&lt;br&gt;
+Click Insert&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zone Name: Eastern Canada - HST Zone&lt;/li&gt;
+&lt;li&gt;Description: NS, NB, NL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now click on the newly created &amp;ldquo;HST Zone&amp;rdquo; row to drill down one level to &amp;ldquo;Sub Zones&amp;rdquo;&lt;br&gt;
+Click INSERT to create new sub-zone:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Country: Canada; Zone: Nova Scotia&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: New Brunswick&lt;/li&gt;
+&lt;li&gt;Country: Canada; Zone: Newfoundland&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Do NOT create a separate Tax ZONE for Shipping. You will simply use the &amp;ldquo;Canada&amp;rdquo; tax zone for the GST Shipping tax CLASS (below).&lt;/p&gt;
+&lt;p&gt;Important: this means that SHIPPING GST will only be charged to destinations within Canada, but NOT charged on exports. 
+According to Canada Customs &amp;amp; Revenue Agency (1-800-959-5525), you do &lt;em&gt;NOT&lt;/em&gt; charge GST on the shipping fee for EXPORTS.&lt;/p&gt;
+&lt;p&gt;STEP (3): Create the &amp;ldquo;Tax Classes&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Note: You can only assign ONE Tax CLASS to a product.&lt;br&gt;
+But since we want shipping GST to show up separately, we will make a separate Tax CLASS just for it.&lt;/p&gt;
+&lt;p&gt;Locations/Taxes &amp;gt; Tax Classes&lt;/p&gt;
+&lt;p&gt;create TWO (2) tax classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Class Title: GST/HST/PST Class&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description: All taxable goods&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Class Title: GST on Shipping&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description: GST on shipping within Canada&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;STEP (4): TAX RATES&lt;/p&gt;
+&lt;p&gt;Here is where it all comes together: Tax Rates.&lt;br&gt;
+Tax RATES associate Tax ZONES &amp;amp; Tax CLASSES to determine the correct Tax Rate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; The &amp;ldquo;DESCRIPTION&amp;rdquo; is what shows up on the invoice, so use it judiciously!!!!!!!!!!!!!&lt;/p&gt;
+&lt;p&gt;Locations/Taxes &amp;gt; Tax Rates&lt;/p&gt;
+&lt;p&gt;create SIX (6) Tax Rates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tax Class Title: GST/PST/HST Class&lt;/li&gt;
+&lt;li&gt;Zone: Canada GST Zone&lt;/li&gt;
+&lt;li&gt;Tax Rate (%): 6.0000&lt;/li&gt;
+&lt;li&gt;Description: 6.0% GST&lt;/li&gt;
+&lt;li&gt;Priority: 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!&lt;br&gt;
+&lt;strong&gt;HINT:&lt;/strong&gt; Leave PRIORITY at &amp;ldquo;1&amp;rdquo; for a non-cumulative tax (i.e. Ontario)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tax Class Title: GST/PST/HST Class // &lt;strong&gt;HINT:&lt;/strong&gt; Yes, this is the same one you just used&lt;/li&gt;
+&lt;li&gt;Zone: Ontario PST Zone&lt;/li&gt;
+&lt;li&gt;Tax Rate (%): 8.0000&lt;/li&gt;
+&lt;li&gt;Description: 8.0% PST (Ontario)&lt;/li&gt;
+&lt;li&gt;Priority: 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; Leave PRIORITY at &amp;ldquo;1&amp;rdquo; for a non-cumulative tax (i.e. Ontario)&lt;br&gt;
+but change to &amp;ldquo;2&amp;rdquo; for cumulative tax (i.e. You are a Quebec store)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tax Class Title: GST/PST/HST Class // &lt;strong&gt;HINT:&lt;/strong&gt; Yes, this is the same one you just used&lt;/li&gt;
+&lt;li&gt;Zone: HST Zone&lt;/li&gt;
+&lt;li&gt;Tax Rate (%): 14.0000&lt;/li&gt;
+&lt;li&gt;Description: 14% HST&lt;/li&gt;
+&lt;li&gt;Priority: 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That takes care of taxes on products. And now, the Shipping taxes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Class Title: GST Shipping Class&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zone: Canada GST Zone&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Rate (%): 6.0000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description: 6.0% GST on shipping&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Priority: 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Class Title: GST Shipping Class&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zone: Ontario PST Zone&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Rate (%): 8.0000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description: 8.0% PST (shipping)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Priority: 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Class Title: GST Shipping Class&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zone: HST Zone&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tax Rate (%): 14.0000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description: 14% shipping HST&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Priority: 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; The above will calculate PST on shipping. Although there might&lt;br&gt;
+be a tendency to think of shipping as a PST exempt service, in fact&lt;br&gt;
+the Ontario Ministry of Finance says that for calculating the PST,&lt;br&gt;
+&amp;ldquo;The total selling price includes delivery, mailing, transportation, or&lt;br&gt;
+handling charges, but does not include the GST&amp;rdquo;. With the above set-up,&lt;br&gt;
+the PST for the shipping gets calculated (albeit separately).&lt;br&gt;
+If you wanted them calculated together, you could assign &amp;ldquo;GST/PST/HST Class&amp;rdquo;&lt;br&gt;
+as the Tax Class when setting up the shipping method.&lt;br&gt;
+Personally, I prefer to break it out separately.&lt;/p&gt;
+&lt;p&gt;STEP (5): Specify the appropriate Tax Class for SHIPPING MODULES&lt;/p&gt;
+&lt;p&gt;MODULES &amp;gt; SHIPPING&lt;/p&gt;
+&lt;p&gt;Edit whichever shipping module(s) you are using.&lt;/p&gt;
+&lt;p&gt;Tax Class: GST Shipping Class&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SEE PREVIOUS HINT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;STEP (6): Specify the appropriate Tax for PRODUCTS&lt;/p&gt;
+&lt;p&gt;This may take some time&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;CATALOG &amp;gt; Categories/Products&lt;/p&gt;
+&lt;p&gt;Drill down to each product. Click EDIT&lt;/p&gt;
+&lt;p&gt;TAX CLASS: &amp;ldquo;GST/PST/HST CLASS&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;==============&lt;br&gt;
+The following SQL statement could be helpful:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;UPDATE products SET products_tax_class_id = 1 WHERE products_model NOT LIKE &#39;GIFT%&#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(you&amp;rsquo;d need to confirm that the desired products_tax_class_id = 1, first )&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;===============&lt;br&gt;
+Example Output:&lt;br&gt;
+===============&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shipping to Ontario:&lt;/p&gt;
+&lt;p&gt;Sub-Total: $69.00&lt;br&gt;
+Per Item (Best Way): $10.00&lt;br&gt;
+8.0% PST (Ontario) + 6.0% GST: $9.66&lt;br&gt;
+6.0% GST (shipping) + 8.0% PST (shipping): $ 1.40&lt;br&gt;
+Total: $90.06&lt;/p&gt;
+&lt;p&gt;Shipping into the HST zone (NB, NS, or NL):&lt;/p&gt;
+&lt;p&gt;Sub-Total: $69.00&lt;br&gt;
+Per Item (Best Way): $10.00&lt;br&gt;
+14% HST: $9.66&lt;br&gt;
+14% shipping HST: $ 1.40&lt;br&gt;
+Total: $90.06&lt;/p&gt;
+&lt;p&gt;Shipping to Canada, but non-HST, and non-Ontario:&lt;br&gt;
+Sub-Total: $69.00&lt;br&gt;
+Per Item (Best Way): $10.00&lt;br&gt;
+6.0% GST: $ 4.25&lt;br&gt;
+6.0% GST (shipping): $ 0.60&lt;br&gt;
+Total: $83.74&lt;/p&gt;
+&lt;p&gt;Shipping to non-Canada zone:&lt;br&gt;
+Sub-Total: $69.00&lt;br&gt;
+Per Item (Best Way): $10.00&lt;br&gt;
+Total: $79.00&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax configuration in the United States</title>
+      <link>/user/taxes/us_taxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/us_taxes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This advice should work for state with a single rate of sales tax.&lt;/p&gt;
+&lt;p&gt;FIRST, set your store&amp;rsquo;s zone properly:&lt;br&gt;
+&lt;strong&gt;Admin &amp;gt; Configuration &amp;gt; My Store &amp;gt; Zone&lt;/strong&gt;&lt;br&gt;
+Choose your country and zone from the lists provided by the edit button.&lt;/p&gt;
+&lt;p&gt;Here is an example, for setting up taxes for the state of Colorado:&lt;/p&gt;
+&lt;p&gt;Go to:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zones Definitions &amp;gt; Insert&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Zone Name: Colorado&lt;br&gt;
+Description: Colorado State Sales Tax (or whatever you like)&lt;br&gt;
+click on &amp;lsquo;insert&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Click on &amp;lsquo;Details&amp;rsquo; after creating a zone&lt;br&gt;
+Click on &amp;lsquo;Insert&amp;rsquo;&lt;br&gt;
+Country = United States&lt;br&gt;
+Zone = Colorado&lt;br&gt;
+Click on &amp;lsquo;insert&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Go to:&lt;br&gt;
+&lt;strong&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Click on &amp;lsquo;New Tax Class&amp;rsquo;&lt;br&gt;
+Title = Taxable Goods&lt;br&gt;
+Description = Whatever you like&lt;br&gt;
+Click on &amp;lsquo;insert&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Go to:&lt;br&gt;
+&lt;strong&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Click on &amp;lsquo;New Tax Rate&amp;rsquo;&lt;br&gt;
+Select your zone, &amp;lsquo;Colorado&amp;rsquo;&lt;br&gt;
+Set your tax rate&lt;br&gt;
+give it a description, ex: Colorado State Sales Tax&lt;br&gt;
+Click on insert&lt;/p&gt;
+&lt;p&gt;Last, make sure you apply the new tax class that you created (Taxable Goods) to any and all products that you might be charging tax on.&lt;/p&gt;
+&lt;p&gt;To make this faster when adding new products, in the Admin area, you can select a default Tax Class to be applied to all new products you create.&lt;br&gt;
+Go to &lt;a href=&#34;/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;, then choose a product type (likely &lt;code&gt;Product - General&lt;/code&gt;), and click
+&lt;em&gt;Edit Layout&lt;/em&gt;, then  &lt;em&gt;Default Tax Class&lt;/em&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tax Inclusive Pricing</title>
+      <link>/user/taxes/tax_inclusive_pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/tax_inclusive_pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Whether or not to include taxes when displaying prices is a global setting, which is enabled with the &amp;ldquo;Display Prices with Tax&amp;rdquo; setting in &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the same place, there is a separate setting which determines whether or not to show prices with tax included in the Admin.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: VAT setup instructions</title>
+      <link>/user/taxes/vat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/taxes/vat/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here&amp;rsquo;s how to do it, and I am assuming here that you want to have VAT added for goods shipping to any EEC country.&lt;/p&gt;
+&lt;p&gt;Admin &amp;gt; Locations/Taxes &amp;gt; Zone Definitions&lt;/p&gt;
+&lt;p&gt;Click on insert.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Name of Zone: EEC VAT Zone
+Description: EEC Countries Zone for VAT
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now click on the details button, or the folder Icon next to EEC VAT Zone&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Click on Insert - Select United kingdom for the country - Click on insert
+Click on Insert - Select Germany for the country - Click on insert
+Click on Insert - Select France for the country - Click on insert
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;repeat this for all countries in the EEC&lt;/p&gt;
+&lt;p&gt;Now goto to Admin &amp;gt; Locations/Taxes &amp;gt; Tax Classes make sure that there is an entry called Taxable Goods. If not, create one.&lt;/p&gt;
+&lt;p&gt;Now goto to Admin &amp;gt; Locations/Taxes &amp;gt; Tax Rates&lt;/p&gt;
+&lt;p&gt;Click on new tax rate&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Tax Class Title should be - Taxable Goods
+Zone should be - EEC VAT Zone
+Tax Rate - 17.5
+Description - VAT 17.5% or similar
+priority can be left blank - Click on insert
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note the above assumes you have no zone definitions/tax rates already set up. If you do just delete them.&lt;/p&gt;
+&lt;p&gt;Now any goods that you wish to charge VAT on must have their &lt;em&gt;Tax Class&lt;/em&gt; set to &lt;em&gt;Taxable Goods&lt;/em&gt;. You can do this on the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product edit screen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, in Admin &amp;gt; Configuration &amp;gt; My Store make sure that &lt;em&gt;Basis of Product Tax&lt;/em&gt; is set to &lt;em&gt;Shipping&lt;/em&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

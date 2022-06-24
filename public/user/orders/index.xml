@@ -1,0 +1,127 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Orders</title>
+    <link>/zendocs_test1/user/orders/</link>
+    <description>Recent content in Orders on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/orders/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Can I print a high resolution logo on my invoices and packing slips?</title>
+      <link>/zendocs_test1/user/orders/high_res_logo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/orders/high_res_logo/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can. Firstly, if you don&amp;rsquo;t already have it, create your high resolution logo at the size and resolution that you would like to print it. Then upload it to the &lt;code&gt;admin/images&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s called something other than &lt;code&gt;logo.gif&lt;/code&gt;, edit the following block in the &lt;code&gt;admin/includes/languages/english.php&lt;/code&gt; file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// added defines for header alt and text
+define(&amp;#39;HEADER_ALT_TEXT&amp;#39;, &amp;#39;Admin Powered by Zen Cart :: The Art of E-Commerce&amp;#39;);
+define(&amp;#39;HEADER_LOGO_IMAGE&amp;#39;, &amp;#39;logo.gif&amp;#39;);
+define(&amp;#39;HEADER_LOGO_WIDTH&amp;#39;, &amp;#39;200px&amp;#39;);
+define(&amp;#39;HEADER_LOGO_HEIGHT&amp;#39;, &amp;#39;70px&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Within this block, your should also set appropriate width and height settings for display - they will be used for the logo that appears at the top of all your Admin pages. However, they will not be used for the pages where you generate invoices or packing slips. We&amp;rsquo;ll manage that by adding the following to your &lt;code&gt;admin/includes/stylesheet.css&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.pageHeading img {width:200px; height:70px}
+
+@media print {
+    .pageHeading img {width:4in; height:1.4in}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The first line dictates the size you want the logo to appear on the invoices and packingslips screen, and the block of three lines that follows it determines the physical size that you want it to print at. This would ideally be the actual size that created and saved your logo. I&amp;rsquo;ve defined this in images, but if your browser supports it you can equally well use cm, mm, em, ex, % and even for very serious designers pc (picas).&lt;/p&gt;
+&lt;p&gt;Finally,  to prevent your big new image from blowing up all your Admin pages find the following code in your &lt;code&gt;admin/includes/header.php&lt;/code&gt; file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;zen_image(DIR_WS_IMAGES . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and replace it with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;zen_image(DIR_WS_IMAGES . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;related-articles&#34;&gt;Related Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/email/logo/&#34;&gt;How do I change the logo in my HTML emails?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/new_user_topics/change_header_logo/&#34;&gt;Changing the logo in the header&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customer Approval</title>
+      <link>/zendocs_test1/user/orders/customer_approval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/orders/customer_approval/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Most stores allow customers to visit, browse and buy the same day with no prior approval.  However, it is possible to configure your store with restrictions on this process.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/#customer_approval_status__authorization_pending&#34;&gt;Customer Approval Status&lt;/a&gt; setting allows you to set restrictions on customers in three possible ways:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1= Must be Authorized to Browse
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This means customers are locked out of the store until they are approved. 
+This is the highest level of restriction available.  It is suitable for 
+&amp;ldquo;Members-only&amp;rdquo; stores, or stores which are designed for a company intranet.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2= May browse but no prices unless Authorized
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This setting allows potential customers to create accounts and look at products,
+but not see prices until an administrator approves them.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3= Customer May Browse and May see Prices but Must be Authorized to Buy
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This setting allows potential customers to create accounts and shop, but not complete transactions until they are approved.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Edit Orders</title>
+      <link>/zendocs_test1/user/orders/edit_orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/orders/edit_orders/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1513&#34;&gt;Edit Orders&lt;/a&gt; is a plugin which allows you to modify orders after they have been placed. This can be useful in a number of situations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refunds or cancelled orders&lt;/li&gt;
+&lt;li&gt;Customer changed their mind or made a mistake&lt;/li&gt;
+&lt;li&gt;Product no longer available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Viewing an order in Edit Orders looks the same as viewing it in the Order Details screen, except that all fields are presented in an editable form.  In addition, products may be added to or removed from the order.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/edit_orders.jpg&#34; alt=&#34;Edit Orders&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Order Statuses</title>
+      <link>/zendocs_test1/user/orders/orders_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/orders/orders_status/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/orders_status/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Returns / Return Merchandise Authorization</title>
+      <link>/zendocs_test1/user/orders/returns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/orders/returns/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You are free to institute whatever return policy you like.&lt;/p&gt;
+&lt;p&gt;If you want to require an RMA for returns, there is an &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1692&#34;&gt;RMA plugin&lt;/a&gt; in the Plugins Library which may help.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

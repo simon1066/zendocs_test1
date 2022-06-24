@@ -1,0 +1,415 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Images</title>
+    <link>/zendocs_test1/user/images/</link>
+    <description>Recent content in Images on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Image Configuration</title>
+      <link>/zendocs_test1/user/images/image_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/images/image_configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME incomplete&lt;/p&gt;
+&lt;p&gt;These settings are on the &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_images/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Images&lt;/a&gt; page.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Where Used&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Small Image Width&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Small Image Height&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Heading Image Width - Admin&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Heading Image Height - Admin&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subcategory Image Width&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subcategory Image Height&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Calculate Image Size&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image Required&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Shopping Cart Status&lt;/td&gt;
+&lt;td&gt;Shopping Cart page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Shopping Cart Width&lt;/td&gt;
+&lt;td&gt;Shopping Cart page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Shopping Cart Height&lt;/td&gt;
+&lt;td&gt;Shopping Cart page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Category Icon Image Width - Product Info Pages&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Category Icon Image Height - Product Info Pages&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Top Subcategory Image Width&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Top Subcategory Image Height&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Info - Image Width&lt;/td&gt;
+&lt;td&gt;product info page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Info - Image Height&lt;/td&gt;
+&lt;td&gt;product info page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Info - Image Medium Suffix&lt;/td&gt;
+&lt;td&gt;product info page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Info - Image Large Suffix&lt;/td&gt;
+&lt;td&gt;product info page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Info - Number of Additional Images per Row&lt;/td&gt;
+&lt;td&gt;product info page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product Listing Width&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product Listing Height&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product New Listing Width&lt;/td&gt;
+&lt;td&gt;New Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product New Listing Height&lt;/td&gt;
+&lt;td&gt;New Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - New Products Width&lt;/td&gt;
+&lt;td&gt;New Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - New Products Height&lt;/td&gt;
+&lt;td&gt;New Products Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Featured Products Width&lt;/td&gt;
+&lt;td&gt;Featured Products Page and Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Featured Products Height&lt;/td&gt;
+&lt;td&gt;Featured Products Page and Centerbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product All Listing Width&lt;/td&gt;
+&lt;td&gt;All Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Product All Listing Height&lt;/td&gt;
+&lt;td&gt;All Products Page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Image - No Image Status&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Image - No Image picture&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image - Use Proportional Images on Products and Categories&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Image Plugins</title>
+      <link>/zendocs_test1/user/images/image_plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/images/image_plugins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following plugins may be useful to you in keeping your images folder organized:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1887&#34;&gt;Missing Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2268&#34;&gt;Missing Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1690&#34;&gt;Image Purge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2169&#34;&gt;Image Handler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;image-handler-and-multiple-images&#34;&gt;Image Handler and Multiple Images&lt;/h3&gt;
+&lt;p&gt;If you would prefer not to have to learn the &lt;a href=&#34;/zendocs_test1/user/images/image_filename_conventions/&#34;&gt;Image Filename Conventions&lt;/a&gt;, you can use Image Handler to add &lt;a href=&#34;/zendocs_test1/user/images/additional_images/&#34;&gt;additional images to a product&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Image Preparation - how to</title>
+      <link>/zendocs_test1/user/images/images_howto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/images/images_howto/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are uploading photographic type images, the format should be &lt;code&gt;.jpg&lt;/code&gt;; if you are using clip-art style pictures, the images should be in &lt;code&gt;.gif&lt;/code&gt; or &lt;code&gt;.png&lt;/code&gt; format.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You cannot have a transparent background with a &lt;code&gt;.jpg&lt;/code&gt; but you can with a &lt;code&gt;.gif&lt;/code&gt; or &lt;code&gt;.png&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Never save a photograph as a &lt;code&gt;.gif&lt;/code&gt; - not only do you lose a lot of quality, but due to the way data is stored as a &lt;code&gt;.gif&lt;/code&gt;, the file size will be far larger than it ought to be! Use &lt;code&gt;.jpg&lt;/code&gt; for photographs.&lt;/li&gt;
+&lt;li&gt;The file size of an image is entirely dependent three factors: the physical dimensions, the format it is saved in, and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size.&lt;/li&gt;
+&lt;li&gt;These file types use what is called “lossy” compression i.e. when the file is compressed, some information is discarded.&lt;br&gt;
+Once the file is saved in a lossy format, the lost information cannot be recovered! Therefore, always start with a copy of the best image you have and never compress the original.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;File size is still an important issue: It&amp;rsquo;s always best to use smaller sizes whenever possible, because mobile devices use slower download speeds unless they&amp;rsquo;re on a fast wifi connection. Always plan your website assets for the slowest connection your customers will usually use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Images for the Internet&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While we all want the best graphics for our websites, we need to make sure we don&amp;rsquo;t make it difficult for our customers&amp;rsquo; browsers to process our files.  Not all of these suggestions are written in stone, but following these guidelines in the beginning of image preparation will help you immensely.  The most important is image naming.&lt;/p&gt;
+&lt;p&gt;Three suggestions when naming an image are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do not use spaces in a filename.  It&amp;rsquo;s tempting to create &lt;code&gt;image of main product.jpg&lt;/code&gt; but the spaces can often be misinterpreted. (Even adding &lt;code&gt;%20&lt;/code&gt; as sometimes is done can be problematic. Better not to do that.) Use something like &lt;code&gt;mainProductImage.jpg&lt;/code&gt;. That way the filename is still able to be read and understood that this is the image for the main product.  Spaces can be used in alt text and image titles (which Zen Cart provides from the product/category name).&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t use capitals to start an image filename or for the file extension.  &lt;code&gt;MainProductImage.jpg&lt;/code&gt;, &lt;code&gt;MainProductImage.JPG&lt;/code&gt;, &lt;code&gt;mainProductImage.jpg&lt;/code&gt; and &lt;code&gt;mainProductImge.JPG&lt;/code&gt; are not the same on the web.  They would be considered as four different files.  Capitals &amp;ldquo;can&amp;rdquo; help make sense of an image name but, save the use of beginning capital letters for the alt text and image title.&lt;/li&gt;
+&lt;li&gt;Try to be as descriptive as possible in your image name.  The previous &lt;code&gt;mainProductImage.jpg&lt;/code&gt; mentioned above may make perfect sense to you but not to anyone else who doesn&amp;rsquo;t know what your main product is.  If your main product is a children&amp;rsquo;s dresser made from natural pine and has four drawers, it can be presented in several ways. Consider how customers find your site when naming a file: If they are looking for children&amp;rsquo;s items, perhaps &lt;code&gt;childrens-dresser-4drawer-pine.jpg&lt;/code&gt; would work.  If folks come to your site looking for a particular wood, then &lt;code&gt;pine-4drawer-childrens-dresser.jpg&lt;/code&gt; might be better for your site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are recommendations to help create a standard naming practice before adding images to your site.  We hope they make dealing with images much easier.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Zen Cart and image handling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Zen Cart displays images in 3 sizes - the small ones (thumbnails) shown in the various listings, a medium size used just on the Product Info page and a large version accessed from the &amp;ldquo;larger image&amp;rdquo; link on the Product Info page.&lt;/p&gt;
+&lt;p&gt;You can set the display-size for the small and medium images by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_images/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Images&lt;/a&gt;. If you want all your images to be the same width but the heights may vary, then set the Width to the fixed maximum you require and the height to 0 and make sure &lt;em&gt;Calculate Image Size&lt;/em&gt; is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the maximum you require.&lt;/p&gt;
+&lt;p&gt;After this you could simply upload all your pictures using your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to your &lt;code&gt;/images&lt;/code&gt; folder and let the coding do all the work - but this will generally end up with you having a far from perfect result.&lt;/p&gt;
+&lt;p&gt;Why are the results not (usually) perfect? The ideal we are seeking is a clear image that displays quickly, but by only loading one image to be used in a variety of sizes by ZC, there is usually going to be a compromise on one or the other - or both.&lt;/p&gt;
+&lt;p&gt;For example, if you only provide the images at the small 100 pixels width and you have your medium image width set to 400 for the Product Info page, then the quality of your medium-size image is going to be degraded (remember the “lossy” compression?) when the code expands it to four times the size.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you’ve uploaded image files at say 400 pixels wide, then although Zen Cart will display them correctly for both small 100px and medium 400px sizes in the right places, the those 400px images might be 25KB (larger than needed for displaying at 100px size) &amp;hellip; so if you have 10 100px thumbnails on a page at 25KB each that makes 250KB which starts to slow your listings down to a crawl for mobile visitors.&lt;/p&gt;
+&lt;p&gt;To avoid these issues, the solution is to create 3 sets of images – small, medium and large, compressed and saved at the dimensions you wish to display them and then uploaded to the &lt;strong&gt;images&lt;/strong&gt;, &lt;strong&gt;images/medium&lt;/strong&gt; and &lt;strong&gt;images/large&lt;/strong&gt; directories. If you have hundreds of images, this may seem like a daunting prospect, but it shouldn’t be quite as bad as it sounds. Any decent image-editing application will have some system for batch-processing (carrying out the same actions on multiple files).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; the basic &amp;ldquo;images&amp;rdquo; (thumbnails, normal-size images) should be uploaded via your admin in the usual way via the product-edit screen, and then FTP should be used for uploading your &lt;code&gt;_MED&lt;/code&gt; and &lt;code&gt;_LRG&lt;/code&gt; images, as mentioned in the following section.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Optimising images for Zen Cart&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Start by deciding on the size you want the large image to display at.&lt;/p&gt;
+&lt;p&gt;You can’t set the dimensions of the large image (shown when the visitor clicks the Larger Image link) in Zen Cart, but it will display at the dimensions you upload it.&lt;/p&gt;
+&lt;p&gt;You shouldn’t choose a size larger than that of the original (if you have to expand it, you will likely lose quality). For most purposes, making the large image 480 or perhaps 640 pixels wide should be sufficient.&lt;/p&gt;
+&lt;p&gt;Scenario:
+Let’s assume you are working with a collection of photographs taken with a digital camera, with a mix of landscape and portrait images. This in itself poses another “problem” in that the layout of your pages will vary slightly depending on whether your image is sideways or upright. For the sake of uniformity throughout your site, it would be good to decide on a square image size and re-size your photographs to fit horizontally or vertically as required and the remaining area is just “white space” (unless you have a different colour as your background, in which case you could choose that colour or transparent if you&amp;rsquo;re saving as &lt;code&gt;.png&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;In this example scenario we want the large picture to be either 480 pixels wide or 480 pixels high depending on its orientation so that everything remains in proportion; we want the medium picture to be 240 and the small to be 120. Let&amp;rsquo;s assume that all your images will have unique names (see the naming suggestions above). Having said that, Zen Cart requires that the image filenames follow a pattern, where the base/thumbnail images are called &lt;code&gt;imagename.jpg&lt;/code&gt; and large images are called &lt;code&gt;imagename_LRG.jpg&lt;/code&gt; and medium are called &lt;code&gt;imagename_MED.jpg&lt;/code&gt; – &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#graphics-editors&#34;&gt;graphics editors&lt;/a&gt; allow renaming of multiple files. They also allow some of the processing below.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gather all the images in a folder on your hard drive.&lt;/li&gt;
+&lt;li&gt;Copy all the landscape orientated pics to a new folder (call it &lt;strong&gt;landscape&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Copy all the portrait orientated pics to another new folder (&lt;strong&gt;portrait&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Run your image-editor’s batch processor (&lt;font color=&#34;red&#34;&gt;you’ll have to find out how to do this from your image-editor manual/help files&lt;/font&gt;) on the files in the &lt;strong&gt;landscape&lt;/strong&gt; folder to re-size them all to the same width (use 480px – and if you are using standard digital photos, this should give you a height of 360)&lt;/li&gt;
+&lt;li&gt;Repeat the above on the files in the &lt;strong&gt;portrait&lt;/strong&gt; folder to re-size them all to the same height (i.e. 480px – should give you a width of 360)&lt;/li&gt;
+&lt;li&gt;Now run another batch process on the two folders to&lt;br&gt;
+• resize your canvas or paper (depends what your image-editor calls it) to 500 pixels x 500 pixels and set the canvas or paper colour you want with the image centred. (Using a canvas slightly larger than your picture ensures a margin from anything else that may be on the webpage.)&lt;br&gt;
+• Optimize the images for the web&lt;/li&gt;
+&lt;li&gt;Unless you want to keep them separate you can now combine all the images into one folder called &lt;strong&gt;large&lt;/strong&gt; as they are all 500 pixels square.&lt;/li&gt;
+&lt;li&gt;Upload them all to &lt;strong&gt;images/large&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Create another folder called &lt;strong&gt;medium&lt;/strong&gt;. Copy all the images from &lt;strong&gt;large&lt;/strong&gt; to it.&lt;/li&gt;
+&lt;li&gt;Run a batch-process on the files in &lt;strong&gt;medium&lt;/strong&gt; to resize to 250 pixels square; you may as well optimize for web as well.&lt;/li&gt;
+&lt;li&gt;Upload them all to &lt;strong&gt;images/medium&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Create another folder called &lt;strong&gt;small&lt;/strong&gt;. Copy all the images from &lt;strong&gt;large&lt;/strong&gt; to it.&lt;/li&gt;
+&lt;li&gt;Run a batch-process on the files in &lt;strong&gt;small&lt;/strong&gt; to resize to 125 pixels square; you may as well optimize for web as well.&lt;/li&gt;
+&lt;li&gt;Upload the resized &lt;strong&gt;images/small&lt;/strong&gt; files to the &lt;strong&gt;images&lt;/strong&gt; folder (yes, &amp;ldquo;images&amp;rdquo;, not &amp;ldquo;images/small&amp;rdquo;) on the server.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You have now given Zen Cart the best chance of giving your visitors the best visual display at the optimum download time.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Working with Additional Images</title>
+      <link>/zendocs_test1/user/images/additional_images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/images/additional_images/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;how-do-i-enable-the-additional-images-feature&#34;&gt;How do I enable the additional images feature?&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;,
+then selecting &lt;code&gt;Product - General&lt;/code&gt; (or whatever your product type is),
+then clicking &lt;em&gt;Layout Settings&lt;/em&gt;, and setting &lt;code&gt;Show Product Additional Images&lt;/code&gt; to 1.&lt;/p&gt;
+&lt;p&gt;Then add additional images for your products, following the naming 
+conventions set out in &lt;a href=&#34;/zendocs_test1/user/images/image_filename_conventions/&#34;&gt;Image Filename conventions&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-disable-the-additional-images-feature&#34;&gt;How do I disable the additional images feature?&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Product Types&lt;/a&gt;,
+then selecting &lt;code&gt;Product - General&lt;/code&gt; (or whatever your product type is),
+then clicking &lt;em&gt;Layout Settings&lt;/em&gt; and setting &lt;code&gt;Show Product Additional Images&lt;/code&gt; to 0.&lt;/p&gt;
+&lt;h3 id=&#34;why-do-i-see-images-for-other-products-on-my-product-pages&#34;&gt;Why do I see images for other products on my product pages?&lt;/h3&gt;
+&lt;p&gt;The additional images feature is causing this because of misconfigured image filenames.&lt;/p&gt;
+&lt;p&gt;You have two options:&lt;/p&gt;
+&lt;p&gt;a) rename your images so they don&amp;rsquo;t share a common filename.  Right now since you have one product with &amp;ldquo;abc.jpg&amp;rdquo; as the name, and another product with &amp;ldquo;abcde.jpg&amp;rdquo; as the name, both images will show for the &amp;ldquo;abc.jpg&amp;rdquo; product, because &amp;ldquo;abc&amp;rdquo; is common to both, and &amp;ldquo;abc&amp;rdquo; is the full filename of the main image of one of the products. &lt;/p&gt;
+&lt;p&gt;This is explained further in &lt;a href=&#34;/zendocs_test1/user/images/image_filename_conventions/&#34;&gt;Image Filename Conventions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) or turn off all extra-image functionality by following 
+the directions above to disable additional images.&lt;/p&gt;
+&lt;h3 id=&#34;is-there-an-easier-way-to-manage-multiple-product-images&#34;&gt;Is there an easier way to manage multiple product images?&lt;/h3&gt;
+&lt;p&gt;The popular plugin &lt;a href=&#34;/zendocs_test1/user/images/image_plugins/&#34;&gt;Image Handler&lt;/a&gt; allows you to manage multiple product images.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Image Filename conventions</title>
+      <link>/zendocs_test1/user/images/image_filename_conventions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/images/image_filename_conventions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart permits you to associate &lt;a href=&#34;/zendocs_test1/user/images/additional_images/&#34;&gt;multiple images with a single product&lt;/a&gt;, but doing so requires knowledge of how products and images are associated.&lt;/p&gt;
+&lt;h2 id=&#34;a-product-owns-one-filename&#34;&gt;A Product Owns One Filename&lt;/h2&gt;
+&lt;p&gt;Note: the base image name is the original image name loaded for the product.&lt;/p&gt;
+&lt;p&gt;The concept of multiple images is best explained using an example:&lt;/p&gt;
+&lt;p&gt;From the Admin, you &lt;a href=&#34;/zendocs_test1/user/products/product_edit/&#34;&gt;edit a product&lt;/a&gt; and specify an image file called:&lt;br&gt;
+&lt;code&gt;a_bugs_life.gif&lt;/code&gt; and put it in the &lt;code&gt;/images/dvd&lt;/code&gt;
+directory via the drop down.&lt;/p&gt;
+&lt;p&gt;Now you use your &lt;a href=&#34;/zendocs_test1/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to upload additional images to &lt;code&gt;/images/dvd&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a_bugs_life_01.gif&lt;/li&gt;
+&lt;li&gt;a_bugs_life_02.gif&lt;/li&gt;
+&lt;li&gt;a_bugs_life_03.gif&lt;/li&gt;
+&lt;li&gt;a_bugs_life_04.gif&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I used the numbers so these would load in order, as the additional images are loaded alpha/numeric.&lt;/p&gt;
+&lt;p&gt;For the large image (used in popups) I use FTP and upload:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/images/large/dvd/a_bugs_life_01_LRG.gif&lt;/li&gt;
+&lt;li&gt;/images/large/dvd/a_bugs_life_02_LRG.gif&lt;/li&gt;
+&lt;li&gt;/images/large/dvd/a_bugs_life_03_LRG.gif&lt;/li&gt;
+&lt;li&gt;/images/large/dvd/a_bugs_life_04_LRG.gif&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the medium image (used as the main image on the product_info page) I upload via FTP:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/images/medium/dvd/a_bugs_life_MED.gif&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; There is &lt;font color=&#34;#ff0000&#34;&gt;ONLY ONE Medium Image&lt;/font&gt; used per Product on the Product Info page: (pages named product_info, product_music_info etc.) The naming is related directly to the original image.&lt;/p&gt;
+&lt;p&gt;Now you do not need to use subdirectories for loading your images.&lt;/p&gt;
+&lt;p&gt;All images can be loaded to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/images&lt;/li&gt;
+&lt;li&gt;/images/large&lt;/li&gt;
+&lt;li&gt;/images/medium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;suffixes&#34;&gt;Suffixes&lt;/h2&gt;
+&lt;p&gt;You can also change the suffix for Large and Medium from &lt;code&gt;_LRG&lt;/code&gt; and &lt;code&gt;_MED&lt;/code&gt; to something else or to nothing at all.&lt;/p&gt;
+&lt;p&gt;I use the suffixes so when looking at 2000 images I can tell what size I am really looking at just from the name. (Very handy for troubleshooting whether the right image is being loaded.)&lt;/p&gt;
+&lt;h2 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h2&gt;
+&lt;p&gt;Note: the &lt;strong&gt;base image name is the original image name loaded for the product.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The suffix of &lt;code&gt;_MED&lt;/code&gt; and &lt;code&gt;_LRG&lt;/code&gt; is optionally defined but very handy for distinguishing image names from a visual standpoint.&lt;br&gt;
+The medium images are kept in the &lt;code&gt;/images/medium&lt;/code&gt; directory, and the large in the &lt;code&gt;/images/large&lt;/code&gt; directory&lt;/p&gt;
+&lt;p&gt;Additional images can be the base name of the original image plus anything after that. For example:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original Image:&lt;/strong&gt; fred.jpg&lt;/p&gt;
+&lt;p&gt;All of these are considered additional images because they contain the base image name:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/images/fredabc.jpg  
+/images/fred_73b2.jpg  
+/images/fred_01.jpg  
+/images/fred_02.jpg  
+/images/freddy.jpg  
+/images/fredrick.jpg  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The advantage of the numbering on the additional images like: &lt;code&gt;_01&lt;/code&gt;, &lt;code&gt;_02&lt;/code&gt;, &lt;code&gt;_03&lt;/code&gt; is that they will sort in this order when displayed.&lt;/p&gt;
+&lt;p&gt;These images are places in the same directory as the main image such as &lt;code&gt;/images&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The large image match would then go in &lt;code&gt;/images/large&lt;/code&gt; or &lt;code&gt;/images/large&lt;/code&gt; with the Admin defined suffix added to it of &lt;code&gt;_LRG&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fredabc_LRG.jpg  
+fred_73b2_LRG.jpg  
+fred_01_LRG.jpg  
+fred_02_LRG.jpg  
+freddy_LRG.jpg  
+fredrick_LRG.jpg  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However, if you are using SUBDIRECTORIES such as &lt;code&gt;/images/mystuff&lt;/code&gt;
+then you need to use the underscore:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original Image:&lt;/strong&gt; fred.jpg&lt;/p&gt;
+&lt;p&gt;All of these are considered additional images because they contain the base image name:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/images/mystuff/fred_abc.jpg  
+/images/mystuff/fred_73b2.jpg  
+/images/mystuff/fred_01.jpg  
+/images/mystuff/fred_02.jpg  
+/images/mystuff/fred_dy.jpg  
+/images/mystuff/fred_rick.jpg  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The advantage of the numbering on the additional images like: &lt;code&gt;_01&lt;/code&gt;, &lt;code&gt;_02&lt;/code&gt;, &lt;code&gt;_03&lt;/code&gt; is that they will sort in this order when displayed.&lt;/p&gt;
+&lt;p&gt;The large image match would then go in 
+&lt;code&gt;/images/large/mystuff&lt;/code&gt; or &lt;code&gt;/images/large/dvd&lt;/code&gt;
+with the Admin defined suffix added to it of &lt;code&gt;_LRG&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fred_abc_LRG.jpg  
+fred_73b2_LRG.jpg  
+fred_01_LRG.jpg  
+fred_02_LRG.jpg  
+fred_dy_LRG.jpg  
+fred_rick_LRG.jpg  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;While both methods are available with or without the underscore, it is recommended to utilize the underscore to avoid confusion. This also provides more flexibility on the image names. However, if you prefer to do without, both methods are available.&lt;/p&gt;
+&lt;p&gt;The use of subdirectories help on speed or directory limits, especially on slower servers or servers with limitations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; not all files show via your FTP program when you get into the 1000s of filenames within a directory.&lt;/p&gt;
+&lt;h3 id=&#34;another-way-to-look-at-it&#34;&gt;ANOTHER WAY TO LOOK AT IT&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;the thumbnail, which is the smaller image, in the /images/ folder.&lt;/li&gt;
+&lt;li&gt;the &amp;ldquo;medium&amp;rdquo; image, which is ONLY used on the Product Info page as the primary product image. And ONLY the first &amp;ldquo;medium&amp;rdquo; image is ever used.&lt;/li&gt;
+&lt;li&gt;the &amp;ldquo;large&amp;rdquo; images matching the name patterns of all your thumbnails, which if the thumbnail is clicked, will show the large image.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- /images/abcd.jpg -- the thumbnail shown in all the category pages and sideboxes  
+- /images/medium/abcd_MED.jpg -- the main product image shown on the product page itself  
+- /images/large/abcd_LRG.jpg -- the large version of the main product image, which is shown if the medium image is clicked  
+
+- /images/abcd_1.jpg - extra thumbnail shown only on the bottom of the product page  
+- /images/large/abcd_1_LRG.jpg - large version of the abcd_1 thumbnail  
+
+- /images/abcd_2.jpg - extra thumbnail shown only on the bottom of the product page  
+- /images/large/abcd_2_LRG.jpg - large version of the abcd_2 thumbnail  
+
+- /images/abcd_3.jpg - extra thumbnail shown only on the bottom of the product page  
+- /images/large/abcd_3_LRG.jpg - large version of the abcd_3 thumbnail  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;related-topics&#34;&gt;Related Topics&lt;/h3&gt;
+&lt;p&gt;a. Attribute images can be added to individual attribute options via &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Admin &amp;gt; Catalog &amp;gt; Attributes Controller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b. You can edit the &lt;code&gt;_MED&lt;/code&gt; and &lt;code&gt;_LRG&lt;/code&gt; defined suffixes in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_images/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Images&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;tips&#34;&gt;TIPS&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Do no use the following symbols in your image filenames: 
+&lt;font color=&#34;#ff0000&#34;&gt;**+ [ ] $ &amp;rsquo; &amp;quot; \ / ()  **&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Also, in case it&amp;rsquo;s not self-evident, the files have to actually exist on your server. So, if you&amp;rsquo;re selecting the &amp;ldquo;Use an image on the server&amp;rdquo; instead of uploading a file directly, and things aren&amp;rsquo;t showing up, then that probably means the image file you specified doesn&amp;rsquo;t actually exist on the server.&lt;/p&gt;
+&lt;p&gt;If you wish to bypass the multiple image capability, you have two options, which are explained in &lt;a href=&#34;/zendocs_test1/user/images/additional_images/&#34;&gt;Working with Additional Images&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

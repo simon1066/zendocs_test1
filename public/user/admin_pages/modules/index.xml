@@ -1,0 +1,141 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Modules</title>
+    <link>/zendocs_test1/user/admin_pages/modules/</link>
+    <description>Recent content in Modules on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/modules/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Installing, Editing and Removing Modules</title>
+      <link>/zendocs_test1/user/admin_pages/modules/management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/management/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Payment, Shipping, and Order Total modules are all managed the same way.&lt;/p&gt;
+&lt;p&gt;They appear in a list with a green or red icon, indicating if they are installed or not.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/order_total_modules.png&#34; alt=&#34;Order Total Modules&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To install a module, 
+click on the row showing the module, then on the right in the sidebar, click &lt;em&gt;Install Module&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/install_coupon.png&#34; alt=&#34;Install Coupons&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then set the module&amp;rsquo;s configuration as needed.&lt;/p&gt;
+&lt;p&gt;To update a module&amp;rsquo;s configuration, click the row showing the module, and then on the right sidebar, click &lt;em&gt;Edit&lt;/em&gt;.  Modify the settings as needed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/edit_coupon.png&#34; alt=&#34;Edit Coupon&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To uninstall a module, click the row showing the module, and then on the right sidebar, click &lt;em&gt;Remove Module&lt;/em&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Payment</title>
+      <link>/zendocs_test1/user/admin_pages/modules/payment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/payment/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Payment modules allow you to accept payment from your customers.&lt;/p&gt;
+&lt;p&gt;They appear on the screen shown when you click Admin &amp;gt; Modules &amp;gt; Payment.&lt;/p&gt;
+&lt;p&gt;As of Zen Cart 1.5.7, the built-in payment modules are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;authorizenet&lt;/li&gt;
+&lt;li&gt;authorizenet_aim&lt;/li&gt;
+&lt;li&gt;cod&lt;/li&gt;
+&lt;li&gt;firstdata_hco&lt;/li&gt;
+&lt;li&gt;moneyorder&lt;/li&gt;
+&lt;li&gt;PayPal (Standard, Pro, Express Checkout)&lt;/li&gt;
+&lt;li&gt;Square&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/payment/&#34;&gt;payment FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/payment_modules.png&#34; alt=&#34;Payment&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the Managing Modules FAQ for information on &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/management/&#34;&gt;Installing, editing and removing payment modules&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Shipping</title>
+      <link>/zendocs_test1/user/admin_pages/modules/shipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/shipping/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Shipping modules allow you to charge your customers for delivery.&lt;/p&gt;
+&lt;p&gt;They appear on the screen shown when you click Admin &amp;gt; Modules &amp;gt; Shipping.&lt;/p&gt;
+&lt;p&gt;As of Zen Cart 1.5.7, the built-in shipping modules are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flat&lt;/li&gt;
+&lt;li&gt;freeoptions&lt;/li&gt;
+&lt;li&gt;freeshipper&lt;/li&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;perweightunit&lt;/li&gt;
+&lt;li&gt;storepickup&lt;/li&gt;
+&lt;li&gt;table&lt;/li&gt;
+&lt;li&gt;zones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/zendocs_test1/user/shipping/&#34;&gt;shipping FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/shipping_modules.png&#34; alt=&#34;Shipping Modules&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the Managing Modules FAQ for information on &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/management/&#34;&gt;Installing, editing and removing shipping modules&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Order Total</title>
+      <link>/zendocs_test1/user/admin_pages/modules/order_total/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/order_total/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Order Total modules allow you to add fees or discounts to the subtotal and thereby increase or decrease the total charge for the order.&lt;/p&gt;
+&lt;p&gt;They appear on the screen shown when you click Admin &amp;gt; Modules &amp;gt; Order Total.&lt;/p&gt;
+&lt;p&gt;As of Zen Cart 1.5.7, the built-in order total modules are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_fees/&#34;&gt;cod_fee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;coupons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/group_pricing/&#34;&gt;group_pricing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/gift_certificates/&#34;&gt;gift certificates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_fees/&#34;&gt;loworderfee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_line_items/&#34;&gt;shipping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_line_items/&#34;&gt;subtotal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_line_items/&#34;&gt;tax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/default_line_items/&#34;&gt;total&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;/zendocs_test1/user/order_total/&#34;&gt;the order total FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/order_total_modules.png&#34; alt=&#34;Order Total Modules&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the Managing Modules FAQ for information on &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/management/&#34;&gt;Installing, editing and removing order total modules&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Plugin Manager</title>
+      <link>/zendocs_test1/user/admin_pages/modules/plugin_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/plugin_manager/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Plugin Manager page provides a single place to install and uninstall plugins created in accordance with the new &lt;a href=&#34;/zendocs_test1/dev/plugins/encapsulated_plugins/&#34;&gt;encapsulated plugin architecture&lt;/a&gt; introduced in 1.5.7.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

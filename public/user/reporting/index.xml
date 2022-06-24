@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Reporting</title>
+    <link>/zendocs_test1/user/reporting/</link>
+    <description>Recent content in Reporting on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/reporting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Built In Reports</title>
+      <link>/zendocs_test1/user/reporting/built_in_reports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/reporting/built_in_reports/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following reports come with Zen Cart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/customer_orders_total/&#34;&gt;Customer Orders-Total&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/customers_referral/&#34;&gt;Customers Referral&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_purchased/&#34;&gt;Products Purchased&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_viewed/&#34;&gt;Products Viewed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/graphical_sales_report/&#34;&gt;Sales Report with Graphs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, many other reports are available in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=1&#34;&gt;Admin Tools section of the Plugins Library&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customer Referral Processing</title>
+      <link>/zendocs_test1/user/reporting/customer_referral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/reporting/customer_referral/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart has referral-tracking functionality built-in, using coupon codes or using a customer-entered referral code. This can be ideal for tracking commissions for specific salespeople, crowdsourcing, campaign tracking, fundraising, etc.&lt;/p&gt;
+&lt;h3 id=&#34;configuring-tracking-using-the-coupon-code&#34;&gt;Configuring Tracking Using the Coupon Code&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; create a coupon&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;b)&lt;/strong&gt;  give that coupon code it to your friend/salesperson/campaign/fundraiser/etc&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;c)&lt;/strong&gt; they give it to their friend/mailinglist/fundraising-customer, who buys&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;d)&lt;/strong&gt; the coupon code is stored as the referral source and tied to that customer when they place their order&lt;/p&gt;
+&lt;p&gt;Repeat steps &lt;strong&gt;a&lt;/strong&gt;-&lt;strong&gt;c&lt;/strong&gt; for the rest of your friends, and step &lt;strong&gt;d&lt;/strong&gt; takes care of the rest.&lt;/p&gt;
+&lt;p&gt;Turn tracking on by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Customer Details&lt;/a&gt; and setting  &lt;em&gt;Customers Referral Status&lt;/em&gt; = 1:&lt;/p&gt;
+&lt;h3 id=&#34;configuring-tracking-using-customer-entered-values&#34;&gt;Configuring Tracking Using Customer Entered Values&lt;/h3&gt;
+&lt;p&gt;Turn tracking on by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Customer Details&lt;/a&gt; and setting  &lt;em&gt;Customers Referral Status&lt;/em&gt; = 2:&lt;/p&gt;
+&lt;h3 id=&#34;tracking-the-results&#34;&gt;Tracking the Results&lt;/h3&gt;
+&lt;p&gt;In the Admin &amp;gt; Reports menu there is a &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/customers_referral/&#34;&gt;Customers Referral&lt;/a&gt; report, which shows you the sales made to customers using those coupons or tracking codes.&lt;/p&gt;
+&lt;h3 id=&#34;related-topics&#34;&gt;Related Topics:&lt;/h3&gt;
+&lt;p&gt;Affiliate tracking would probably be handled differently by engaging a third-party software tool, using a method similar to what is described in the following articles:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/template/tracking_pixel/&#34;&gt;Adding a tracking pixel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/orders/sales_analytics_affiliate_tools/&#34;&gt;Integrating Sales Analytics/Affiliate Tools&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Sales Report with Graphs</title>
+      <link>/zendocs_test1/user/reporting/graphical_sales_report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/reporting/graphical_sales_report/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/graphical_sales_report/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,492 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Installing</title>
+    <link>/user/installing/</link>
+    <description>Recent content in Installing on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/installing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: How do I create a MySQL database?</title>
+      <link>/user/installing/create_mysql_database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/create_mysql_database/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To use Zen Cart, you need a database.&lt;/p&gt;
+&lt;h2 id=&#34;to-prepare-a-mysql-database-for-zen-cart-to-use&#34;&gt;To prepare a MySQL database for Zen Cart to use:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your hosting account&amp;rsquo;s control panel.&lt;/li&gt;
+&lt;li&gt;Find the &amp;ldquo;Databases&amp;rdquo; section&lt;/li&gt;
+&lt;li&gt;Choose the MySQL option&lt;/li&gt;
+&lt;li&gt;Click on the option to Create a database.  Enter a name for it and submit. (Record the name so you can use it later in Zen Cart).
+If you are given an option for choosing a Character Set, choose &lt;code&gt;utf8mb4&lt;/code&gt;; if offered a Collation option, choose &lt;code&gt;utf8mb4_0900_ai_ci&lt;/code&gt; or &lt;code&gt;utf8mb4_unicode_520_ci&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Now create a user and password. (Record these for use in Zen Cart)&lt;/li&gt;
+&lt;li&gt;Now you need to &amp;ldquo;grant&amp;rdquo; or &amp;ldquo;assign&amp;rdquo; the user to the database, granting appropriate permissions.  See the section about Permissions, below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s it !!&lt;/p&gt;
+&lt;p&gt;Now in the Zen Cart Installer, on the Database Setup section, supply all of the database information you just set up: name, user, password, and host. Usually the &amp;ldquo;host&amp;rdquo; is &amp;ldquo;localhost&amp;rdquo; unless your hosting company uses a specific different configuration.&lt;/p&gt;
+&lt;h2 id=&#34;what-database-permissionsprivileges-do-i-give-to-my-database-user&#34;&gt;What Database Permissions/Privileges Do I Give to my Database User?&lt;/h2&gt;
+&lt;p&gt;For the purposes of Zen Cart sites, the following permissions (&amp;ldquo;privileges&amp;rdquo;) are required for the database user:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SELECT&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;INSERT&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UPDATE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DELETE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FILE  (not used by core code, but easiest to leave it checked)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CREATE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ALTER&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;INDEX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DROP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CREATE TEMPORARY TABLES (not required by the core code, but may be required by some addons)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LOCK TABLES  (not used by core code; required only for database backups)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&amp;rsquo;re using a cPanel hosting account, you would usually check the box for &amp;ldquo;ALL PRIVILEGES&amp;rdquo; instead of checking off individual options.&lt;/p&gt;
+&lt;p&gt;Using any of the optional items noted above does not create any significant security risk.  Recommended approach for most storeowners is &amp;ldquo;All Privileges&amp;rdquo;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I enable SSL after I have installed Zen Cart?</title>
+      <link>/user/installing/enable_ssl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/enable_ssl/</guid>
+      <description>
+        
+        
+        &lt;p&gt;See also &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Basic Hosting and Domain concepts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar &lt;code&gt;https://&lt;/code&gt; in the URL in your browser&amp;rsquo;s address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the address bar with the URL or in the status bar at the bottom of the browser window.&lt;/p&gt;
+&lt;p&gt;Considerations:&lt;/p&gt;
+&lt;h1 id=&#34;1-purchase-your-ssl-certificate&#34;&gt;1. Purchase your SSL certificate&lt;/h1&gt;
+&lt;p&gt;You will need to arrange with your hosting company to have SSL capability added to your hosting account.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;URL looks like: &lt;code&gt;https://www.YOURSITE.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;requires purchase of an SSL certificate, at an annual fee ranging from $20 to $900 per year.  You do NOT need the most expensive one for simple secure SSL use on your site; from a technical perspective, a low cost certificate is just as secure as the more expensive one. The certificate is usually installed by your hosting company. You can purchase one yourself or have your hosting company purchase it for you.&lt;/li&gt;
+&lt;li&gt;when you purchase the certificate, decide FIRST whether you want your SSL URL to include the &lt;code&gt;www&lt;/code&gt; prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NOTE ABOUT SSL AND ZEN CART:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is important that your hosting company&amp;rsquo;s servers be configured to serve both SSL and non-SSL content from the SAME folder on the SAME server. Attempting to use a hosting service whose SSL service is on a separate server or points to a separate folder will result in numerous operational problems, and possibly very complicated maintenance problems.&lt;/p&gt;
+&lt;p&gt;The hosting company should allow the &lt;code&gt;$_SERVER&lt;/code&gt; variable values to be set via traditional means (ie: &amp;lsquo;SSL=on&amp;rsquo; or &amp;lsquo;SERVER_PORT=443&amp;rsquo; or &amp;lsquo;HTTPS=1&amp;rsquo;, etc). If they can&amp;rsquo;t do that, then Zen Cart may have challenges switching into SSL mode automatically. Most good reputable hosting companies already do this. Those who don&amp;rsquo;t should generally be avoided.&lt;/p&gt;
+&lt;h1 id=&#34;2-make-sure-ssl-is-working&#34;&gt;2. Make sure SSL is working&lt;/h1&gt;
+&lt;p&gt;FIRST, make sure you&amp;rsquo;ve got SSL enabled on your hosting account. Work with your hosting company to get a certificate installed and to purchase one if necessary. As mentioned above, IT IS RECOMMENDED THAT YOU REGISTER IT TO YOUR &lt;code&gt;www&lt;/code&gt; address, such as &lt;code&gt;www.YOURSITE.com&lt;/code&gt; (and not just &amp;ldquo;YOURSITE.com&amp;rdquo;), or alias it to both URL forms.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you get to &lt;code&gt;https://www.YOURSITE.com&lt;/code&gt; ?&lt;/li&gt;
+&lt;li&gt;If not, ask your hosting company how to do it.&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t access your site using an &lt;code&gt;https://&lt;/code&gt; address, don&amp;rsquo;t try to enable SSL in Zen Cart or you&amp;rsquo;ll just end up with broken pages in your store!!! &lt;strong&gt;Get the SSL working first before you enable it in your store.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-enable-ssl-support-in-zen-cart&#34;&gt;3. Enable SSL support in Zen Cart&lt;/h1&gt;
+&lt;p&gt;Once you&amp;rsquo;ve had your hosting company install your SSL certificate, and you have confirmed that going to &lt;code&gt;https://www.YOURSITE.com&lt;/code&gt; actually works without an error, you can turn on SSL support in Zen Cart using the following information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You will need to make changes in both the &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/YOURADMIN/includes/configure.php.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Change &lt;code&gt;includes/configure.php&lt;/code&gt; to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HTTP_SERVER&amp;#39;, &amp;#39;https://www.YOURSITE.com&amp;#39;);  
+define(&amp;#39;HTTPS_SERVER&amp;#39;, &amp;#39;https://www.YOURSITE.com&amp;#39;);  // In older Zen Carts only 
+define(&amp;#39;ENABLE_SSL&amp;#39;, &amp;#39;true&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change &lt;code&gt;YOURADMIN/includes/configure.php&lt;/code&gt; to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HTTP_SERVER&amp;#39;, &amp;#39;https://www.YOURSITE.com&amp;#39;);  
+...
+define(&amp;#39;HTTP_CATALOG_SERVER&amp;#39;, &amp;#39;https://www.YOURSITE.com&amp;#39;);  
+define(&amp;#39;HTTPS_CATALOG_SERVER&amp;#39;, &amp;#39;https://www.YOURSITE.com&amp;#39;);  
+...
+define(&amp;#39;ENABLE_SSL_CATALOG&amp;#39;, &amp;#39;true&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Modern versions of Zen Cart 
+(1.5.5 and above) 
+do not have &lt;code&gt;HTTPS_SERVER&lt;/code&gt; in the 
+&lt;code&gt;YOURADMIN/includes/configure.php&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NOTE:&lt;/strong&gt; Remember, your configure.php files are probably marked read-only. You&amp;rsquo;ll need to change them to read-write in order to upload your updates, and then put them back to read-only. &lt;a href=&#34;/user/installing/permissions/&#34;&gt;See the FAQ on setting file permissions.&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;4-clear-your-browsers-cache-and-cookies&#34;&gt;4. Clear your browser&amp;rsquo;s cache and cookies&lt;/h1&gt;
+&lt;p&gt;After making these changes, if you don&amp;rsquo;t &lt;a href=&#34;/user/new_user_topics/browser_caching/&#34;&gt;clear your browser&amp;rsquo;s cache and cookies&lt;/a&gt;, it&amp;rsquo;s possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.&lt;/p&gt;
+&lt;h1 id=&#34;5-your-site-is-now-secure&#34;&gt;5. Your site is now secure!&lt;/h1&gt;
+&lt;p&gt;Once your done, your browser&amp;rsquo;s address bar will show a non-broken padlock like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/good_padlock.png&#34; alt=&#34;Good Padlock&#34;&gt;&lt;/p&gt;
+&lt;p&gt;and if you click on your SSL certificate, you&amp;rsquo;ll see it&amp;rsquo;s valid, like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/good_cert_details.png&#34; alt=&#34;Good Certificate Details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You will want to keep checking your SSL certificate as part of your &lt;a href=&#34;/user/running/regular_maintenance/&#34;&gt;regular website maintenance&lt;/a&gt; so that you don&amp;rsquo;t get a &lt;a href=&#34;/user/running/broken_padlock/&#34;&gt;broken padlock&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I validate the integrity of a downloaded file?</title>
+      <link>/user/installing/validate_sha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/validate_sha/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When downloading files from the internet, it&amp;rsquo;s very important to verify that the file you downloaded IS in fact the file you EXPECTED to download. Authors of software typically zip up their software and then calculate a &amp;ldquo;checksum&amp;rdquo; based on the contents, and post that checksum next to the link to download the file. YOU should then re-calculate the checksum on the file AFTER downloading, and compare to be sure that the checksum YOU calculated matches the one posted by the author. If they don&amp;rsquo;t match, then you should NOT use the downloaded file, because it may have been tampered with. In such cases you should also report the discrepancy to the author so they can investigate the tampering or fix a mistake.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/first_steps/useful_tools/#hash-validation-tools&#34;&gt;the useful tools page&lt;/a&gt; for a list of checksum validation tools.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Moving to another server</title>
+      <link>/user/installing/change_hoster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/change_hoster/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you haven&amp;rsquo;t yet selected a hoster, please read &lt;a href=&#34;/user/installing/pick_hosting/&#34;&gt;picking a hoster&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FIRST:&lt;/strong&gt;  If you are moving your site, DO NOT UPGRADE AT THE SAME TIME!!!   Do your Zen Cart upgrade BEFORE moving, or AFTER moving, but never DURING the move. Otherwise you&amp;rsquo;ll typically run into problems that can&amp;rsquo;t be quickly resolved because you&amp;rsquo;ve intertwined software issues with server issues thus confusing the picture. YOU HAVE BEEN WARNED!&lt;/p&gt;
+&lt;p&gt;1. On your &lt;strong&gt;NEW host&lt;/strong&gt;, create a new MySQL &lt;strong&gt;database&lt;/strong&gt;. Note the username, password, database name, and host name (usually localhost).&lt;/p&gt;
+&lt;p&gt;2. Using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, go to your &lt;strong&gt;NEW host&lt;/strong&gt; and upload a &lt;strong&gt;fresh NEW install&lt;/strong&gt; using the same version files that you built your other site on.  This will make sure that you get the proper settings in your &lt;a href=&#34;/user/miscellaneous/configure/&#34;&gt;configure.php files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You&amp;rsquo;ll find that in the &lt;code&gt;DB_PREFIX&lt;/code&gt; setting of your old store&amp;rsquo;s configure.php files.&lt;/p&gt;
+&lt;p&gt;b. Test it.&lt;/p&gt;
+&lt;p&gt;c. Make &lt;strong&gt;backups&lt;/strong&gt; of the NEW server&amp;rsquo;s &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; files by downloading them (FTP) to your PC.&lt;/p&gt;
+&lt;p&gt;3. On your &lt;strong&gt;OLD host&lt;/strong&gt;, Make a &lt;strong&gt;COMPLETE backup&lt;/strong&gt; of your DATABASE and STORE.&lt;br&gt;
+a. Use either the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=7&#34;&gt;Backup MySQL Database&lt;/a&gt; plugin to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the &amp;ldquo;DROP&amp;rdquo; tables command, and under Data, choose &amp;ldquo;Complete Inserts&amp;rdquo; and &amp;ldquo;Extended Inserts&amp;rdquo;.&lt;br&gt;
+Save the SQL file to your PC for later.     Click here for 
+advice on &lt;a href=&#34;/user/running/backup/&#34;&gt;doing a backup&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b. Download all your old site&amp;rsquo;s files via FTP (or if you have the option, zip them up on the server and download the zip)&lt;/p&gt;
+&lt;p&gt;4. Now &lt;strong&gt;upload your OLD files over the NEW files&lt;/strong&gt; on the NEW server, WITH TWO EXCEPTIONS: Don&amp;rsquo;t overwrite the &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/YOURADMIN/includes/configure.php&lt;/code&gt; files on the NEW server.&lt;/p&gt;
+&lt;p&gt;IMPORTANT NOTE: Your &amp;ldquo;admin&amp;rdquo; folder from the old site is probably a different name than the one that was auto-renamed in the new site. Pick one of the names and rename the other to match. Otherwise you will have two admin folders, which will leave you with confusion.&lt;/p&gt;
+&lt;p&gt;5. Go back to phpMyAdmin on your &lt;strong&gt;NEW server&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;a. Select your NEW database (that you installed the NEW Zen Cart into)&lt;/p&gt;
+&lt;p&gt;b. DROP all the tables. (Check them all and scroll down and on &amp;ldquo;With Selected&amp;hellip;&amp;rdquo; select DROP. Confirm Yes.)&lt;/p&gt;
+&lt;p&gt;c. Click on Import and click Browse.&lt;/p&gt;
+&lt;p&gt;d. Select the SQL file you made in step 3a when you exported your old database, and click Go.&lt;/p&gt;
+&lt;p&gt;6. You&amp;rsquo;re done. Open your store and admin areas to see it all ready to go! Do a test transaction. Turn off the Down For Maintenance mode.&lt;/p&gt;
+&lt;p&gt;7. You should review all your email settings in Admin &amp;gt; Configuration &amp;gt; Email Options &amp;ndash; especially any SMTP server/account settings, and of course all your email addresses.&lt;/p&gt;
+&lt;p&gt;8. Once your new site is up and running, the OLD server should be cleaned up: you should DELETE the database and all the PHP files/folders, etc from the OLD server.  There&amp;rsquo;s no point leaving that data behind for prying eyes or worse.&lt;/p&gt;
+&lt;h2 id=&#34;a-note-about-nameservers-and-timing&#34;&gt;A Note About NameServers And Timing&lt;/h2&gt;
+&lt;p&gt;On a store that&amp;rsquo;s taking live orders, you need to prevent orders from being accepted on the old site once you&amp;rsquo;ve made your database backup to move to the new site.&lt;br&gt;
+So, make the following adjustments to the steps above:&lt;/p&gt;
+&lt;p&gt;a) BEFORE taking the backup in Step 3, first login to your old site&amp;rsquo;s admin, and set Admin &amp;gt; Configuration &amp;gt; Website Maintenance &amp;gt; Down For Maintenance = TRUE.
+This is called &lt;a href=&#34;/user/running/down_for_maintenance/&#34;&gt;taking your store down for maintenance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) AFTER step 5 or 6, login to your NEW store&amp;rsquo;s admin, and set Down For Maintenance = FALSE.&lt;/p&gt;
+&lt;p&gt;c) NEVER disable down-for-maintenance in the OLD site. Once you&amp;rsquo;ve copied the database from it, you don&amp;rsquo;t want to take any more orders in the old site, else they&amp;rsquo;ll be lost. 
+You may even want to put up a message on the old server telling customers that the store has been updated, and that they may need to clear their browser cache and reboot in order to see the new updated site. (This is because browsers remember the old IP address.)  You could optionally delete Zen Cart and the database from the old server and just put up a simple index.html page on that server saying the same sort of message. Eventually people&amp;rsquo;s browsers will all look to the new address. See the Advanced section below for ways to expedite the updates.&lt;/p&gt;
+&lt;p&gt;d) Once your nameserver updates have propagated (up to 48 hours), you should be able to delete the files and database from the old server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This means your store will appear as down-for-maintenance until the DNS/Nameserver details are propagated to the region where your customers connect online. Once the propagation is done, they will see the new site on the new server, and be able to place orders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ADVANCED TIP:&lt;/strong&gt;
+If you know 3 or 4 days or maybe a week ahead of time that you&amp;rsquo;re going to do this sort of move, get your old hosting company to change the TTL (Time To Live) setting on your domain DNS settings to 3600 (1 hour). This will help speed the effects of propagation.&lt;br&gt;
+Then, a couple days after you&amp;rsquo;ve completed the move, and propagation is completed, change the TTL back to normal values (whatever your new hosting company prefers to use, often 86400).&lt;/p&gt;
+&lt;h2 id=&#34;just-moving-folders&#34;&gt;Just moving folders?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This FAQ handles moving a cart to a NEW server.
+If you just want to move your cart to another folder on the same server, please see the &lt;a href=&#34;/user/installing/move_cart/&#34;&gt;move cart FAQ&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Moving your Zen Cart folder</title>
+      <link>/user/installing/move_cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/move_cart/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can install Zen Cart in the root folder of your hosting account or in a subdirectory.  See &lt;a href=&#34;/user/first_steps/deployment_configurations/&#34;&gt;deployment configurations&lt;/a&gt; for examples.&lt;/p&gt;
+&lt;p&gt;If you change your mind, you can move your cart (from a subfolder to root or vice versa); you just have to update some settings when you do so.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Scenario:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have been building my cart behind the scenes at: 
+&lt;code&gt;http://www.mysite.com/shop/&lt;/code&gt;
+I am nearly ready to go live with it at: &lt;code&gt;http://www.mysite.com/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;What steps do I need to follow to move my site to another folder 
+on the same server?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Determine the new foldername where your Zen Cart files will be running from&lt;/li&gt;
+&lt;li&gt;In the case above, move your files from &lt;code&gt;/shop/&lt;/code&gt; to the root level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are moving from &lt;code&gt;/shop/&lt;/code&gt; to &lt;code&gt;/store/&lt;/code&gt;, rename the folder.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Modify your &lt;code&gt;/includes/configure.php&lt;/code&gt; and &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; files to point to the right folders.  Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;DIR_FS_CATALOG
+DIR_WS_CATALOG
+DIR_WS_HTTPS_CATALOG
+DIR_FS_LOGS (if present or uncommented)
+DIR_FS_SQL_CACHE (if present or uncommented)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that the configure.php files are normally &amp;ldquo;read-only&amp;rdquo;. You&amp;rsquo;ll need to change their permissions to &amp;ldquo;writable&amp;rdquo; before you can upload your changes. Be sure to note level the permissions were at before changing, so that you can put them back to the read-only permissions again after updating.&lt;/p&gt;
+&lt;h3 id=&#34;older-versions-zen-cart-139-and-below&#34;&gt;Older Versions (Zen Cart 1.3.9 and below)&lt;/h3&gt;
+&lt;p&gt;In older versions (ie: v1.3.9h and older) you&amp;rsquo;ll need to also adjust these in your &lt;code&gt;/admin/includes/configure.php&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;DIR_WS_ADMIN
+DIR_WS_HTTPS_ADMIN (in admin)
+DIR_FS_ADMIN (in admin)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;If you could not set the Session Write Directory in step 1 above, you can use a utility to do it for you. The goal is to make sure that the new path information (specifically the &lt;code&gt;DIR_FS_SQL_CACHE&lt;/code&gt; setting in your new configure.php file) matches the Session Write Directory setting. If it doesn&amp;rsquo;t, you may end up with difficulties logging in to the Admin area or maintaining login sessions in the store. The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=8&#34;&gt;Fix Cache Key Utility&lt;/a&gt; will help you to do this if you need assistance. There is no harm running it to have it check that things are set properly. Be sure to delete the file from your server when done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This FAQ handles moving a cart to a new folder on the 
+same server.  If you need to move your cart to a new server, 
+please see the &lt;a href=&#34;/user/installing/change_hoster/&#34;&gt;FAQ on changing hosters&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Permissions on files and folders</title>
+      <link>/user/installing/permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/permissions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FIXME - please review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While the following instructions talk about making files/folders writable, it is wise to review your security settings after installation to be sure you&amp;rsquo;re not leaving yourself open to hacking vulnerability by having too many &amp;ldquo;world-writable&amp;rdquo; files on your site.  
+There are &lt;a href=&#34;/user/security/security_recommendations/&#34;&gt;detailed security recommendations on this topic&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;using-ftp&#34;&gt;Using FTP&lt;/h2&gt;
+&lt;p&gt;You will be using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to do this.&lt;/p&gt;
+&lt;p&gt;Most FTP programs will allow you to change file permissions.&lt;/p&gt;
+&lt;p&gt;Connect to your site with your FTP program.&lt;/p&gt;
+&lt;p&gt;Move to your &lt;code&gt;public_html&lt;/code&gt; directory, and perhaps into your &lt;code&gt;zencart&lt;/code&gt; folder underneath &lt;code&gt;public_html&lt;/code&gt;, if you&amp;rsquo;ve installed into a subfolder.&lt;/p&gt;
+&lt;p&gt;Then look for a &amp;ldquo;Properties&amp;rdquo; command that can be applied to that directory (often if you right click, Properties will be one of the options).&lt;/p&gt;
+&lt;p&gt;Then change the permissions to the needed setting for the following folders:&lt;/p&gt;
+&lt;p&gt;If prompted whether to include files/folders underneath them (also called &amp;ldquo;recursive&amp;rdquo;), say or check &amp;ldquo;Yes&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;All of these folders to &amp;ldquo;writable&amp;rdquo; (often this means 755).&lt;/p&gt;
+&lt;p&gt;(Specifically, these need to be writable so that files can be uploaded to them, or created in them or written to them by PHP.)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;*   /cache
+*   /images
+*   /includes/languages/english/html_includes
+*   /media
+*   /pub
+*   /admin/backups
+*   /admin/images/graphs
+*   /zc_install/includes/nginx_conf
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;using-cpanel&#34;&gt;Using cPanel&lt;/h3&gt;
+&lt;p&gt;In cPanel, you have File Manager.&lt;/p&gt;
+&lt;p&gt;Open File Manager, and browse to the folder where you have put your Zen Cart files, and make the changes to particular files/folders as needed.&lt;/p&gt;
+&lt;p&gt;Example: /includes/languages/english/html_includes&lt;/p&gt;
+&lt;p&gt;Browse down through&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;includes&lt;/li&gt;
+&lt;li&gt;languages&lt;/li&gt;
+&lt;li&gt;english&lt;/li&gt;
+&lt;li&gt;html_includes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Click on html_includes.&lt;/p&gt;
+&lt;p&gt;Then you&amp;rsquo;ll get another page, and likely in the top right corner there will be a &amp;ldquo;folder permissions&amp;rdquo; or &amp;ldquo;permissions&amp;rdquo; link. Click on that.&lt;/p&gt;
+&lt;p&gt;Then set the permissions to read, write, and execute for ALL categories of users (usually 9 checkboxes). If it has an option to process all files under this subdirectory, check that box. Then click OK (or whatever button to process the changes).&lt;/p&gt;
+&lt;h3 id=&#34;using-ssh&#34;&gt;Using SSH&lt;/h3&gt;
+&lt;p&gt;If you have SSH access instead of cPanel, you could type the following commands:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chdir /home/myaccount/public_html/zencart
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(substitute your actual working directory)&lt;/p&gt;
+&lt;p&gt;Type the following commands in the case shown:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chmod -R 755 ./logs
+chmod -R 755 ./cache
+chmod -R 755 ./pub
+chmod -R 755 ./images
+chmod -R 755 ./includes/languages/english/html_includes
+chmod -R 755 ./admin/backups
+chmod -R 755 ./zc_install/includes/nginx_conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;OPTIONAL:&lt;/strong&gt; And this line changes all the files (not folders) and files within subfolders (but not the folders themselves) to be ideal for typical webserver use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;find ./ -type f -exec chmod 644 {} \;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If these methods don&amp;rsquo;t work, then you&amp;rsquo;ll need to contact your hosting company for assistance in changing file permissions.&lt;/p&gt;
+&lt;h2 id=&#34;additional-permissions-to-set&#34;&gt;Additional Permissions to Set&lt;/h2&gt;
+&lt;p&gt;Using which ever method you used above, you also need to make the following 
+permission changes:&lt;/p&gt;
+&lt;h3 id=&#34;images&#34;&gt;Images&lt;/h3&gt;
+&lt;p&gt;Open the &lt;code&gt;/images&lt;/code&gt; directory and change &lt;strong&gt;all&lt;/strong&gt; of the subdirectories and their subdirectories to 755 as well. For example (this is a partial list):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;*   /images/attributes
+*   /images/banners
+*   /images/categories
+*   /images/large
+*   /images/large/dvd
+*   /images/manufacturers
+*   /images/medium
+*   /images/upload
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If you miss any of the images directories and subdirectories inside 
+&lt;code&gt;/images&lt;/code&gt; and try to use them later, you will get an error message that you cannot write to these directories.&lt;/p&gt;
+&lt;p&gt;As for other files, they can be CHMOD 644, or 444, depending on your webserver configuration.  Folders don&amp;rsquo;t usually get set below 755.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Picking a hoster</title>
+      <link>/user/installing/pick_hosting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/pick_hosting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As noted in &lt;a href=&#34;/user/first_steps/hosting/#hosting-companies&#34;&gt;Basics - Hosting and Domain concepts&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your easiest installation option will be a Linux host running Apache with cPanel.&lt;/li&gt;
+&lt;li&gt;The decision on whether to use Shared or VPS hosting will be determined by your budget, but VPS is recommended.&lt;/li&gt;
+&lt;li&gt;The Zen Cart project recommends a number of hosting providers on
+their &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Recommended Services&lt;/a&gt; page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ssllabs-evaluation&#34;&gt;SSLLabs Evaluation&lt;/h3&gt;
+&lt;p&gt;One way to evaluate hosts is to run the &lt;a href=&#34;https://ssllabs.com/ssltest&#34;&gt;test offered by SSLLabs&lt;/a&gt;.  You will want to make sure any host you consider has an &amp;ldquo;A&amp;rdquo; or &amp;ldquo;A+&amp;rdquo; rating.&lt;/p&gt;
+&lt;p&gt;A highly rated host will help make any PCI scan you run more likely to succeed.  The more secure your host, the more secure your site.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of an excellent report:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ssltest_aplus_grade.png&#34; alt=&#34;SSL Test - A+ Grade&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a poor report:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ssltest_c_grade.png&#34; alt=&#34;SSL Test - C Grade&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Renaming Your Admin Folder</title>
+      <link>/user/installing/rename_admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/rename_admin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;While access to your admin area is protected by the requirement of your admin password, it is recommended for additional security that you rename your &lt;em&gt;admin&lt;/em&gt; directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.&lt;/p&gt;
+&lt;p&gt;Before making the following changes, make sure to have a current backup of your files and your database. &lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re going to do three steps:&lt;/p&gt;
+&lt;p&gt;A) edit the configure.php settings and upload them,&lt;/p&gt;
+&lt;p&gt;B) rename the admin folder,&lt;/p&gt;
+&lt;p&gt;C) test login to the new folder. &lt;/p&gt;
+&lt;p&gt;Details are below:&lt;/p&gt;
+&lt;h2 id=&#34;zen-cart-v15x&#34;&gt;Zen Cart v1.5.x:&lt;/h2&gt;
+&lt;h3 id=&#34;a---configurephp&#34;&gt;A - configure.php&lt;/h3&gt;
+&lt;p&gt;If you are using v1.5.x, go to step B to rename the folder. If you are using v1.3.x, see the section below about v1.3.x which explains how to edit this file properly in that case.&lt;/p&gt;
+&lt;p&gt;There is no need to alter the admin configure.php in v1.5.x when renaming your admin folder. Simply proceed to step B.&lt;/p&gt;
+&lt;h3 id=&#34;b---rename-the-admin-folder&#34;&gt;B - Rename the Admin folder&lt;/h3&gt;
+&lt;p&gt;Using your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; or your webhost&amp;rsquo;s &lt;em&gt;File Manager&lt;/em&gt;, find your Zen Cart &lt;em&gt;/admin/&lt;/em&gt; directory_._ Rename the directory to match the settings you just made in step A.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!&lt;/p&gt;
+&lt;h3 id=&#34;c---login-to-your-admin-using-the-new-url&#34;&gt;C - Login to your admin using the new URL&lt;/h3&gt;
+&lt;p&gt;To login to your admin system you will now have to visit a new URL that matches the new name used in steps A and B above.&lt;/p&gt;
+&lt;p&gt;For example instead of visiting&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;www.example.com/admin/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;visit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;www.example.com/NeW-NamE4u&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;zen-cart-v13x&#34;&gt;Zen Cart v1.3.x:&lt;/h2&gt;
+&lt;h3 id=&#34;a---font-colorff0000this-step-for-zen-cart-v13x-onlyfont-&#34;&gt;A - (&lt;font color=&#34;#FF0000&#34;&gt;This step for Zen Cart v1.3.x ONLY:&lt;/font&gt; )&lt;/h3&gt;
+&lt;p&gt;Edit /admin/includes/configure.php&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#800080&#34;&gt;IMPORTANT NOTE: &lt;font size=&#34;4&#34;&gt;If you&amp;rsquo;re using Zen Cart v1.5.0 or newer, you can skip this step&lt;/font&gt;, and proceed to step B to rename the folder using your FTP program.  With v1.5.0 there&amp;rsquo;s no need to edit your configure.php file when renaming your admin folder.&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using your FTP program, download a copy of your &lt;strong&gt;/admin/includes/configure.php&lt;/strong&gt; file to your computer.&lt;/p&gt;
+&lt;p&gt;Using a &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;plain text editor&lt;/a&gt; change all instances of &lt;strong&gt;&lt;em&gt;admin&lt;/em&gt;&lt;/strong&gt; to your chosen &lt;strong&gt;new admin folder-name&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For maximum security, you may want to consider that new folder name should include numbers and a combination of upper and lower case letters. The longer you make this folder&amp;rsquo;s name the more secure it will be.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When editing, make sure you leave all the &lt;code&gt;/&lt;/code&gt; (slashes) alone.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;5&#34; color=&#34;#ff0000&#34;&gt;&lt;strong&gt;DO NOT USE SEARCH-AND-REPLACE TO DO THESE EDITS!!!!!!!!!!!&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;5&#34; color=&#34;#FF0000&#34;&gt;Change ONLY THE WORD &lt;font color=&#34;#0000FF&#34;&gt;&lt;strong&gt;admin&lt;/strong&gt;&lt;/font&gt;, in 3 places, AS SHOWN HERE:&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Change this section:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; define(&amp;#39;DIR_WS_ADMIN&amp;#39;, &amp;#39;/**&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;admin&amp;lt;/font&amp;gt;**/&amp;#39;);  
+ define(&amp;#39;DIR_WS_CATALOG&amp;#39;, &amp;#39;/&amp;#39;);  
+ define(&amp;#39;DIR_WS_HTTPS_ADMIN&amp;#39;, &amp;#39;/&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;**admin**&amp;lt;/font&amp;gt;/&amp;#39;);  
+ define(&amp;#39;DIR_WS_HTTPS_CATALOG&amp;#39;, &amp;#39;/&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And this section:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; define(&amp;#39;DIR_FS_ADMIN&amp;#39;, &amp;#39;/home/mystore.com/www/public/&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;**admin**&amp;lt;/font&amp;gt;/&amp;#39;);  
+ define(&amp;#39;DIR_FS_CATALOG&amp;#39;, &amp;#39;/home/mystore.com/www/public/&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will end up with something that looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; define(&amp;#39;DIR_WS_ADMIN&amp;#39;, &amp;#39;/&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;**mysecretadminarea**&amp;lt;/font&amp;gt;/&amp;#39;);
+ define(&amp;#39;DIR_WS_CATALOG&amp;#39;, &amp;#39;/&amp;#39;);  
+ define(&amp;#39;DIR_WS_HTTPS_ADMIN&amp;#39;, &amp;#39;/&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;**mysecretadminarea**&amp;lt;/font&amp;gt;/&amp;#39;);  
+ define(&amp;#39;DIR_WS_HTTPS_CATALOG&amp;#39;, &amp;#39;/&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+define(&amp;#39;DIR_FS_ADMIN&amp;#39;, &amp;#39;/home/mystore.com/www/public/&amp;lt;font color=&amp;#34;#ff0000&amp;#34;&amp;gt;**mysecretadminarea**&amp;lt;/font&amp;gt;/&amp;#39;);  
+define(&amp;#39;DIR_FS_CATALOG&amp;#39;, &amp;#39;/home/mystore.com/www/public/&amp;#39;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, you must upload the changes back to the server, using your FTP program.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;#ff0000&#34;&gt;&lt;strong&gt;IMPORTANT NOTE:&lt;/strong&gt; Your configure.php file should be set as Read-Only for normal use. So, &lt;strong&gt;you&amp;rsquo;ll need to make it Writable before you&amp;rsquo;ll be able to upload/save your changes&lt;/strong&gt; to the file.  (In &lt;em&gt;some&lt;/em&gt; cases, your server might require you to DELETE the file from your server before you can upload the edited version to replace it.)&lt;br&gt;
+Be sure to make it Read-Only again when finished.  Often you can right-click the file in your FTP program and change the permissions settings there.  There&amp;rsquo;s another FAQ article on how to change file permissions on different hosting servers.&lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;b---rename-the-admin-folder-1&#34;&gt;B - Rename the Admin folder&lt;/h2&gt;
+&lt;p&gt;Using your FTP software or your webhost&amp;rsquo;s File Manager, find your Zen Cart admin/ directory. Rename the directory to match the settings you just made in step A.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!&lt;/p&gt;
+&lt;h2 id=&#34;c---login-to-your-admin-using-the-new-url-1&#34;&gt;C - Login to your admin using the new URL&lt;/h2&gt;
+&lt;p&gt;To login to your admin system you will now have to visit a new URL that matches the new name used in steps A and B above.&lt;/p&gt;
+&lt;p&gt;For example instead of visiting &lt;code&gt;www.example.com/admin/&lt;/code&gt; visit &lt;code&gt;www.example.com/NeW-NamE4u/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use of &lt;a href=&#34;http://en.wikipedia.org/wiki/SSL&#34; title=&#34;http://en.wikipedia.org/wiki/SSL&#34;&gt;SSL&lt;/a&gt; is highly recommended to protect your and your customers information. 
+&lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;Learn how to enable SSL on your site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;font-color000000d---what-if-it-doesnt-workfont&#34;&gt;&lt;font color=&#34;#000000&#34;&gt;D - What if it doesn&amp;rsquo;t work?&lt;/font&gt;&lt;/h2&gt;
+&lt;p&gt;If it doesn&amp;rsquo;t work, then you&amp;rsquo;ve missed one or more of the steps. &lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;THE MOST COMMON MISTAKE is ignoring the read-only vs writable alert&lt;/strong&gt;&lt;/font&gt; in &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;BRIGHT RED TEXT&lt;/font&gt;&lt;/strong&gt; in step A.&lt;br&gt;
+The second most common mistake is changing the WRONG THINGS!  In step A, change ONLY the word &amp;ldquo;/admin/&amp;rdquo; in the 3 places shown.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What does &#34;Connection to Database failed&#34; mean?</title>
+      <link>/user/installing/connection_failed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/connection_failed/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This suggests you have something wrong with any of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;username&lt;/li&gt;
+&lt;li&gt;password&lt;/li&gt;
+&lt;li&gt;database name&lt;/li&gt;
+&lt;li&gt;database host/server&lt;/li&gt;
+&lt;li&gt;security settings on your database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you created your database, did you grant the user access to the database?&lt;/p&gt;
+&lt;p&gt;Proper database-configuration includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;make a database&lt;/li&gt;
+&lt;li&gt;make a user, with password&lt;/li&gt;
+&lt;li&gt;grant the user permission to use the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See also &lt;a href=&#34;/user/installing/create_mysql_database/&#34;&gt;How do I create a MySQL database for Zen Cart?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specific steps for creating and securing a database on your server can be obtained from your hosting company tech support.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What is CHMOD?</title>
+      <link>/user/installing/chmod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/installing/chmod/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The recommended permission for configure.php files is 444. 
+A number of hosts do not allow setting permissions to 644 for some reason (mine included). Setting to 444 is perfectly acceptable. If you should need to modify the file you may need to temporarily change the permissions to something like 755 while you make the modification. Be sure that when you are finished modifying the file to set it back to 444 so as to prevent others from being able to mess with it (security issue).&lt;/p&gt;
+&lt;p&gt;Here is what the numbers mean:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;444 = (r-- r-- r--): owner/group/others are all only able to read the file. They cannot write to it or execute it.
+644 = (rw- r-- r--): same as 444 except the owner can write to it.
+755 = (rwx r-x r-x): owner can read, write and execute the file, members in the user group and others can read and execute the file but cannot write to it.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;r = read, w = write and x = execute.&lt;/p&gt;
+&lt;p&gt;In the format above, the first group of three characters represents the owner&amp;rsquo;s level of permission, the second group represents permission for others in the same user group as the owner, and the final 3 characters represent the permission for all others (including website visitors).&lt;/p&gt;
+&lt;p&gt;If you were able to set to 644 the owner (you) could modify the file while all others would be restricted. In that case you would not need to change permissions in order to modify it. Just leave it at 644.&lt;/p&gt;
+&lt;p&gt;The permissions are set on the host server usually through the user&amp;rsquo;s control panel. They can also be set using the chmod command in many &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt;, or or through SSH access to the server, if available.&lt;/p&gt;
+&lt;p&gt;This article on &lt;a href=&#34;/user/installing/permissions/&#34;&gt;file permissions&lt;/a&gt; goes into more detail.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

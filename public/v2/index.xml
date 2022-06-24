@@ -1,0 +1,1178 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – V2s</title>
+    <link>/zendocs_test1/v2/</link>
+    <description>Recent content in V2s on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/v2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/admin_action_classes/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/admin_action_classes/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Admin action classes are a new way of writing code for admin pages. Previously admin pages were called using a URL like &lt;code&gt;http://localhost/admin_dir/categories.php&lt;/code&gt; and each page was a mixture of procedural php and html.&lt;/p&gt;
+&lt;p&gt;Zen Cart v2 allows you to write code that is object oriented and separates code from html.&lt;/p&gt;
+&lt;p&gt;It does this by using a similar URL structure to catalog (storefront). Instead of accessing code for a &amp;lsquo;page&amp;rsquo; directly, it uses a &lt;code&gt;front controller&lt;/code&gt;.
+e.g the URL &lt;code&gt;http://localhost/admin_dir/categories.php&lt;/code&gt; would be written as &lt;code&gt;http://localhost/admin_dir/index.php?cmd=categories&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Two things to note here.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You don&amp;rsquo;t need to manually create these links in your code. The admin version of &lt;code&gt;zen_href_link()&lt;/code&gt; will create them automatically, so there are no changes required to existing code if you&amp;rsquo;re already using &lt;code&gt;zen_href_link()&lt;/code&gt; correctly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The controller supports legacy code, such that if an admin action class for &lt;code&gt;categories&lt;/code&gt; does not exist it will default back to using &lt;code&gt;admin_dir/categories.php&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Admin action classes are stored in the &lt;code&gt;/includes/library/zencart/Controllers/src/admin/&lt;/code&gt; directory&lt;/p&gt;
+&lt;p&gt;The action class must extend one of the abstract base admin classes, currently either &lt;code&gt;AbstractController&lt;/code&gt; or &lt;code&gt;AbstractLeadController&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;how-it-works&#34;&gt;How it works&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;admin/index.php&lt;/code&gt; is replaced by code that provides a minimal front controller. The code in &lt;code&gt;admin/index.php&lt;/code&gt; looks at the URL and sees if there is a &lt;code&gt;&#39;cmd&#39;&lt;/code&gt; parameter. If not, it assumes this is a legacy URL e.g. &lt;code&gt;http://localhost/admin/categories.php&lt;/code&gt; and does a redirect to set the &amp;lsquo;cmd&amp;rsquo; parameter e.g. to &lt;code&gt;cmd=categories&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;&#39;cmd&#39;&lt;/code&gt; parameter does exist, it checks to see if an action class exists in &lt;code&gt;admin/includes/classes/actions/admin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If an action class exists it will load it, and call the class&amp;rsquo;s &lt;code&gt;&#39;invoke&#39;&lt;/code&gt; method. The &lt;code&gt;invoke&lt;/code&gt; method checks whether an &lt;code&gt;&#39;action&#39;&lt;/code&gt; parameter exists in the URL and if so calls a method in the action class based on the &lt;code&gt;&#39;action&#39;&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;p&gt;e.g. if the &amp;lsquo;action&amp;rsquo; parameter = &amp;lsquo;insert&amp;rsquo; then the &lt;code&gt;insertExecute&lt;/code&gt; method of the action class will be called.&lt;/p&gt;
+&lt;p&gt;If no &amp;lsquo;action&amp;rsquo; parameter exists then the default &lt;code&gt;mainExecute&lt;/code&gt; method will be called.&lt;/p&gt;
+&lt;p&gt;If an action class does not exist, then again it assumes that we are trying to load legacy code. e.g. if &lt;code&gt;cmd=categories&lt;/code&gt; it will load &lt;code&gt;admin/categories.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned earlier, Admin action classes should extend the &lt;code&gt;AbstractController&lt;/code&gt; class, or another class that has &lt;code&gt;AbstractController&lt;/code&gt; as its ultimate parent.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/admin_lead_pages/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/admin_lead_pages/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The Zen Cart Administration Interface contains a number of pages that are used to manage simple lists of items. Examples are the Countries and Zones pages under Locations/Taxes.&lt;/p&gt;
+&lt;p&gt;What is common amongst these pages is that they initially show a paginated list of entries, and then allow you to edit an existing entry, add new entries, and delete entries.&lt;/p&gt;
+&lt;p&gt;The pre-v2 pages that manage these lists have a number of problems. They are difficult to create easily, they are almost impossible to customize using add-ons and the code is usually quite messy, with php code interspersed with output HTML.&lt;/p&gt;
+&lt;p&gt;The new style admin LEAD (List/Edit/Add/Delete) pages are completely object oriented. Code is separate from the output templates. They are easy to create, in fact a lot of LEAD pages can be created by simply defining some simple array structures.&lt;/p&gt;
+&lt;p&gt;The LEAD pages also integrate a simple filtering system, that allows the admin user to select a subset of the items in the list.&lt;/p&gt;
+&lt;p&gt;LEAD pages leverage a number of new classes/structures which have been added to v2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Admin Action Controllers define a new way of writing admin pages, where the code is separated from the template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Listing Box classes allow for complex querying of the database using a structured array.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Service classes that separate domain specific concerns from the controllers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will show examples of using all three of the above classes in the documentation.&lt;/p&gt;
+&lt;h1 id=&#34;lead-controllers&#34;&gt;LEAD Controllers&lt;/h1&gt;
+&lt;p&gt;New pages that are being written for Zen Cart admin should use the new controller classes. Documentation for controller classes can be found here.&lt;/p&gt;
+&lt;p&gt;Generally the controller classes for Admin LEAD pages are very simple.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+namespace ZenCart\Controllers;
+
+/**
+ * Class Countries
+ * @package ZenCart\Controllers
+ */
+class Countries extends AbstractLeadController
+{
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There may be reasons to override methods in the AbstractLeadController and examples will be given later.&lt;/p&gt;
+&lt;p&gt;LEAD Controller names are expected to follow Camel Case conventions.  So 
+for the command &lt;code&gt;admin/index.php?cmd=geo_zones&lt;/code&gt;, the Controller would be &lt;code&gt;GeoZones.php&lt;/code&gt; in &lt;code&gt;includes/library/zencart/Controllers/src/admin/&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;listingqueryandoutput-classes&#34;&gt;ListingQueryAndOutput Classes&lt;/h1&gt;
+&lt;p&gt;The main workhorse of the LEAD pages are the ListingQueryAndOutput classes.&lt;/p&gt;
+&lt;p&gt;ListingQueryAndOutput file names are also expected to follow Camel Case conventions, and to start with the string &amp;ldquo;Lead&amp;rdquo;.  So 
+continuing with the example &lt;code&gt;admin/index.php?cmd=geo_zones&lt;/code&gt;, the ListingQueryAndOutput 
+would be &lt;code&gt;LeadGeoZones.php&lt;/code&gt; in &lt;code&gt;includes/library/zencart/ListingQueryAndOutput/src/definitions/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Reports (pages using the LEAD infrastructure but without edit, add or delete
+capability) start with &amp;ldquo;ReportStats&amp;rdquo; instead of &amp;ldquo;Lead&amp;rdquo;.  So for the report 
+which is reached using &lt;code&gt;admin/index.php?cmd=stats_products_lowstock&lt;/code&gt;, 
+the corresponding ListingQueryAndOutput class&lt;br&gt;
+would be &lt;code&gt;ReportStatsProductsLowStock.php&lt;/code&gt; in &lt;code&gt;includes/library/zencart/ListingQueryAndOutput/src/definitions/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The ListingQueryAndOutput object is built out in the call initQueryAndOutput().&lt;/p&gt;
+&lt;h3 id=&#34;objects-in-querybuilderdefinition&#34;&gt;Objects in QueryBuilderDefinition:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;listingQuery - array of fields controlling the query of data to be displayed&lt;/li&gt;
+&lt;li&gt;outputLayout - array of fields controlling how the data will be displayed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;fields-in-listingquery&#34;&gt;Fields in listingQuery&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;mainTable - The first table in the query (array)&lt;/li&gt;
+&lt;li&gt;joinTables - Additional tables in the query which are joined with a foreign key (array)&lt;/li&gt;
+&lt;li&gt;whereClauses - The WHERE statement used in the query (array)&lt;/li&gt;
+&lt;li&gt;selectList - Fields specified in the listMap which must be calculated from database fields, not just queried (array)&lt;/li&gt;
+&lt;li&gt;groupBys - The GROUP BY statement used in the query (array)&lt;/li&gt;
+&lt;li&gt;orderBys - The ORDER BY statement used in the query (array)&lt;/li&gt;
+&lt;li&gt;language - Flag which indicates the table has translations (boolean, default false)&lt;/li&gt;
+&lt;li&gt;singleTable - Flag which indicates whether translations are in the same table vs another table (boolean, default: false)&lt;/li&gt;
+&lt;li&gt;languageInfoTable - Table where translations are stored (string)&lt;/li&gt;
+&lt;li&gt;languageKeyField - some tables use &lt;code&gt;languages_id&lt;/code&gt; and some use &lt;code&gt;language_id&lt;/code&gt; as their key; this field indicates which value to use (string, default: &lt;code&gt;languages_id&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;isPaginated - Whether all results should be shown on one page, or broken up so that only a specific number are displayed with navigation buttons to go forward and backward in the complete set (boolean, default true)&lt;/li&gt;
+&lt;li&gt;pagination - Structure controlling display of pagination controls (array)&lt;/li&gt;
+&lt;li&gt;derivedItems - fields which are not stored in the database but must be constructed out of other fields (array)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;fields-in-listingquery-deriveditems&#34;&gt;Fields in listingQuery-&amp;gt;derivedItems&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;field - name of the field to be constructed&lt;/li&gt;
+&lt;li&gt;handler - a function, typically defined in either &lt;code&gt;includes/library/zencart/QueryBuilder/src/DerivedItemManager.php&lt;/code&gt; or the &lt;code&gt;initQueryAndOutput&lt;/code&gt; function of the class, which returns the value of the field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;fields-in-outputlayout&#34;&gt;Fields in outputLayout&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;relatedLinks - Second set of boxes on the left hand side of a LEAD page (array of arrays)&lt;/li&gt;
+&lt;li&gt;listMap - The order in which the fields are displayed when viewing the list (array of strings)&lt;/li&gt;
+&lt;li&gt;editMap - The order in which the fields are displayed when editing an entry (array of strings)&lt;/li&gt;
+&lt;li&gt;showActionLinkListList - The first set of boxes on the left hand side of a LEAD Page (boolean, default true)&lt;/li&gt;
+&lt;li&gt;allowAdd - Whether or not you are allowed to add new items to this list (boolean, default true).&lt;/li&gt;
+&lt;li&gt;fields - provides specifics on how individual fields should be queried and displayed&lt;/li&gt;
+&lt;li&gt;boxTitle - provides a title for centerbox or page&lt;/li&gt;
+&lt;li&gt;formatter - The formatter takes data from the query and organizes it so the template may display it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;fields-in-outputlayout-formatter&#34;&gt;Fields in outputLayout-&amp;gt;formatter&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;class - One of the classes in &lt;code&gt;includes/library/zencart/ListingQueryAndOutput/src/formatters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;template - template used when drawing the page&lt;/li&gt;
+&lt;li&gt;params - settings for output:
+&lt;ul&gt;
+&lt;li&gt;columnCount - number of columns to use for the box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sortMainPage - controls how the box is sorted with respect to other boxes on the index listing page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;fields-in-outputlayout-fields&#34;&gt;Fields in outputLayout-&amp;gt;fields&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;bindVarsType - The type of the variable used as a parameter in the query.  (This is used in the &lt;code&gt;$db-&amp;gt;bindVars&lt;/code&gt; call.&lt;/li&gt;
+&lt;li&gt;language - Flag which indicates the table has translations (boolean, default false)&lt;/li&gt;
+&lt;li&gt;layout: array of arrays showing how field is to be displayed.  Keys for top level array are &lt;code&gt;common&lt;/code&gt; (for add and update), &lt;code&gt;edit&lt;/code&gt; (for update) and &lt;code&gt;list&lt;/code&gt; (for listing display).  Each array entry contains:
+&lt;ul&gt;
+&lt;li&gt;title - title to be used as the column header&lt;/li&gt;
+&lt;li&gt;type - data type of field&lt;/li&gt;
+&lt;li&gt;size - width of column&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;total - whether the column should be totaled in the last line.  Possible values are:
+&lt;ul&gt;
+&lt;li&gt;currencySum (add all figures and display total as a currency value)&lt;/li&gt;
+&lt;li&gt;count (count number of rows on the page)&lt;/li&gt;
+&lt;li&gt;sum (add all figures and display total)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                &amp;#39;artists_url&amp;#39; =&amp;gt; array(
+                    &amp;#39;bindVarsType&amp;#39; =&amp;gt; &amp;#39;string&amp;#39;,
+                    &amp;#39;language&amp;#39; =&amp;gt; true,
+                    &amp;#39;layout&amp;#39; =&amp;gt; array(
+                        &amp;#39;common&amp;#39; =&amp;gt; array(
+                            &amp;#39;title&amp;#39; =&amp;gt; TEXT_ENTRY_RECORD_ARTIST_URL,
+                            &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39;,
+                            &amp;#39;size&amp;#39; =&amp;gt; &amp;#39;30&amp;#39;
+                        )
+                    )                    
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;building-queries&#34;&gt;Building Queries&lt;/h1&gt;
+&lt;p&gt;Queries are built piece by piece from the listingQuery and outputLayout structures described above. The first time you create a new query, the easiest approach is likely to simply review how a similar query was constructed and use that approach.&lt;/p&gt;
+&lt;h1 id=&#34;language-handling&#34;&gt;Language Handling&lt;/h1&gt;
+&lt;h2 id=&#34;language-files&#34;&gt;Language Files&lt;/h2&gt;
+&lt;p&gt;Language file names have the name of the command, so using again the example of the low stock report &lt;code&gt;admin/index.php?cmd=stats_products_lowstock&lt;/code&gt;, 
+the language file would be 
+&lt;code&gt;includes/languages/english/stats_products_lowstock.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The only rules around strings in this file relate to the strings required by the LEAD framework.  The &amp;ldquo;List&amp;rdquo; button, which is the first of the buttons on the left side of the LEAD page, requires the define &lt;code&gt;TEXT_LEAD_ACTION_LIST&lt;/code&gt;.
+The &amp;ldquo;Add&amp;rdquo; button requires the define &lt;code&gt;TEXT_LEAD_ACTION_ADD_ENTRY&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;language-handling-in-queries&#34;&gt;Language Handling in Queries&lt;/h2&gt;
+&lt;p&gt;Some queries which join tables containing a language key field will need to use only the current language.  This is specified in the &lt;code&gt;whereClauses&lt;/code&gt; and &lt;code&gt;bindVars&lt;/code&gt; of the &lt;code&gt;listingQuery&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;            &amp;#39;whereClauses&amp;#39; =&amp;gt; array(
+                array(
+                    &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;AND&amp;#39;,
+                    &amp;#39;table&amp;#39; =&amp;gt; TABLE_PRODUCTS_DESCRIPTION,
+                    &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;language_id&amp;#39;,
+                    &amp;#39;value&amp;#39; =&amp;gt; &amp;#39;:language_id:&amp;#39;
+                )
+            ),  
+            &amp;#39;bindVars&amp;#39; =&amp;gt; array(
+                array(
+                    &amp;#39;:language_id:&amp;#39;,
+                    $_SESSION [&amp;#39;languages_id&amp;#39;],
+                    &amp;#39;integer&amp;#39;
+                )   
+            ),  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For an example of this, see `includes/library/zencart/ListingQueryAndOutput/src/definitions/LeadGeoZonesDetail.php&lt;/p&gt;
+&lt;h2 id=&#34;process-flow-and-filenames&#34;&gt;Process Flow and Filenames&lt;/h2&gt;
+&lt;p&gt;The flow of logic when building a LEAD report on the admin side uses both catalog and admin side files, so you may need to look on the catalog side to determine where changes need to be make when working on a LEAD report.&lt;/p&gt;
+&lt;p&gt;The file naming conventions were touched on above, but now we&amp;rsquo;ll walk through a whole example for the flow when an admin requests Locations/Taxes-&amp;gt;Countries (&lt;code&gt;admin/index.php?cmd=countries&lt;/code&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The controller is &lt;code&gt;includes/library/zencart/Controllers/src/admin/Countries.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The language file is &lt;code&gt;admin/includes/languages/english/countries.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The query for the report is &lt;code&gt;includes/library/zencart/ListingQueryAndOutput/src/definitions/LeadCountries.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The template matching &lt;code&gt;tplCountries.php&lt;/code&gt; does not exist, so the template is  &lt;code&gt;admin/includes/template/templates/tplAdminLead.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/dashboard_widgets/dashboard_widgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/dashboard_widgets/dashboard_widgets/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;WARNING: it is expected that the interface to dashboard widgets will change before v2 is released to better support the use of new controllers/ajax interfaces&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In previous versions of Zen Cart the admin home page contains a number of boxes displaying various statistics/information that may be relevant to the Shop Owner.&lt;/p&gt;
+&lt;p&gt;e.g. Recent Orders, Recent Customers. Whos-Online etc.&lt;/p&gt;
+&lt;p&gt;There are 3 problems with the pre-v2 approach.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;s not really possible for 3rd party developers to add extra boxes to that display without hacking core code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The information displayed is not integrated into the admin profiles system, which could potentially mean someone with a restricted admin profile seeing information that they are not authorized for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is no simple way to re-order the information so that more relevant information has higher priority.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So in v2 we have introduced the concept of dashboard widgets. Each widget is a self contained pairing of code/template that can be displayed on the admin home page. The store owner can drag and drop each widget, so allowing information important to the store owner to have greater priority. Widgets can be deleted from the dashboard if the store owner wishes, and they can add widgets to the dashboard even when these are provided by third parties. Widgets can be independently dynamically refreshed, so that the information they display is always relevant. Widgets can also be restricted using the Admin Profiles system used in v1.5+.&lt;/p&gt;
+&lt;h1 id=&#34;how-to-build-a-widget&#34;&gt;How to build a widget&lt;/h1&gt;
+&lt;p&gt;As mentioned earlier, widgets consist of 2 parts, A class file that builds the information that will be displayed in the widget, and a template that displays that information.&lt;/p&gt;
+&lt;p&gt;The class files are stored in admin/includes/library/zencart/DashboardWidget/src&lt;/p&gt;
+&lt;p&gt;and the template files are stored in admin/includes/template/dashboardWidgets&lt;/p&gt;
+&lt;h2 id=&#34;class-files&#34;&gt;Class Files&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OrderSummary&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AbstractWidget&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;prepareContent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;global&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$db&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;$orders_status_list&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$db&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;Execute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;SELECT  orders_status_name, orders_status_id FROM &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TABLE_ORDERS_STATUS&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; WHERE language_id = &amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$_SESSION&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;languages_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#39;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$orders_status_list&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$orders_status&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000&#34;&gt;$orders_pending&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$db&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;Execute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;SELECT count(*) as count FROM &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TABLE_ORDERS&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; WHERE orders_status = &amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$orders_status&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;orders_status_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#39;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;][]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;lt;a href=&amp;#34;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;\zen_href_link&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FILENAME_ORDERS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;selected_box=customers&amp;amp;status=&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$orders_status&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;orders_status_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;NONSSL&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$orders_status&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;orders_status_name&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;lt;/a&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;value&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$orders_pending&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The class needs only one function called prepareContent. (see the example above).&lt;/p&gt;
+&lt;p&gt;This function creates an array $tplVars, which is initialized as an empty array.  This array contains the information that needs to be displayed in the template, returning it as shown above.  In this way, content and markup are separate.&lt;/p&gt;
+&lt;p&gt;Data should be added to $tplVars[&amp;lsquo;content&amp;rsquo;] as arrays with entries &amp;rsquo;text&amp;rsquo; and &amp;lsquo;content&amp;rsquo;.  So the following code fragment&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$tplVars[&amp;#39;content&amp;#39;][] = array(&amp;#39;text&amp;#39;=&amp;gt;&amp;#34;foo&amp;#34;, &amp;#39;value&amp;#39;=&amp;gt;&amp;#39;123&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;would add a line saying &amp;ldquo;foo 123&amp;rdquo; to the widget.&lt;/p&gt;
+&lt;h2 id=&#34;template-files&#34;&gt;Template Files&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;isset&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;widget&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;][&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;sizeof&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;widget&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;][&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;widget&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;][&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$entry&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;      &amp;lt;div class=&amp;#34;widget-row&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;?php echo $entry[&amp;#39;text&amp;#39;]; ?&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;right&amp;#34;&amp;gt;&amp;lt;?php echo $entry[&amp;#39;value&amp;#39;]; ?&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;lt;?php
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The information returned by the Class is available in the template as the $tplVars variable.&lt;/p&gt;
+&lt;p&gt;NOTE: In a lot of cases you may not need to define your own template. Where the information you want to display consists of a 2 column report where the first column is text titles and the 2nd column is information, then the tplDefault.php template should suffice.&lt;/p&gt;
+&lt;p&gt;If your template is more complex then you need to name it like &amp;rsquo;tpl[camelized-widget-name].php&amp;rsquo;. So if your widget is called &amp;lsquo;order-summary&amp;rsquo; or &amp;lsquo;order_summary&amp;rsquo;, then the template should be called &amp;rsquo;tplOrderSummary.php&amp;rsquo;&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;For third party developers creating their own widgets, installation is done using the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Place the widget class and widget template files in the appropriate folders, as described above.&lt;/li&gt;
+&lt;li&gt;Insert widget definition data into the database, as described below.&lt;/li&gt;
+&lt;li&gt;If you have any non-super-users in your admin, use the Admin Profiles screen to assign permissions to users or profiles, so that they are available to those users to configure.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;widget-definitions-in-the-database&#34;&gt;Widget Definitions in the Database&lt;/h3&gt;
+&lt;p&gt;Entries are required in these three tables:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dashboard_widgets (TABLE_DASHBOARD_WIDGETS)
+dashboard_widgets_description (TABLE_DASHBOARD_WIDGETS_DESCRIPTION)
+dashboard_widgets_groups (TABLE_DASHBOARD_WIDGETS_GROUPS)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;dashboard_widgets&lt;/code&gt; table consists of 3 fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;widget_key&lt;/code&gt; is a unique string representing the name/identity of the widget. This should be lower case, with words separated by hyphens. e.g. order-summary.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_group&lt;/code&gt; is a foreign key to &lt;code&gt;widget_group&lt;/code&gt;  in the &lt;code&gt;dashboard_widgets_groups&lt;/code&gt; table.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_status&lt;/code&gt; is a boolean flag which denotes whether the widget is a available for use (0 = disabled, 1 = enabled).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;dashboard_widgets_description&lt;/code&gt; table consists of 4 fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;widget_key&lt;/code&gt; is a unique string representing the name of the widget, and must match widget_key in the &lt;code&gt;dashboard_widgets&lt;/code&gt; table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_name&lt;/code&gt; is the human-readable name of the widget in the specified language&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_description&lt;/code&gt; is the human-readable description in the specified language&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;language_id&lt;/code&gt;  is the language key and must correspond to &lt;code&gt;language_id&lt;/code&gt;  entries in the &lt;code&gt;languages&lt;/code&gt; table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;dashboard_widgets_groups&lt;/code&gt; table consists of 3 fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;widget_group&lt;/code&gt; is the identifier name of the group - This should be lower case, with words separated by hyphens. e.g. customer-data&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;language_id&lt;/code&gt;  is the language key and must correspond to &lt;code&gt;language_id&lt;/code&gt; entries in the &lt;code&gt;languages&lt;/code&gt; table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_group_name&lt;/code&gt; is the human-readable description of the group, in the specified language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Admin Profiles permissions restrictions use the following table:&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;dashboard_widgets_to_profiles&lt;/code&gt; table consists of 2 fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;profile_id&lt;/code&gt; is an integer which corresponds to the foreign key in the admin_profiles table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_key&lt;/code&gt; is a unique string representing the name of the widget, and must match widget_key in the dashboard_widgets table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When users add widgets to their own dashboard, their settings are saved in the &lt;code&gt;dashboard_widgets_to_users&lt;/code&gt; table:&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;dashboard_widgets_to_users&lt;/code&gt; table consists of 3 fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;widget_key&lt;/code&gt; is a unique string representing the name of the widget, and must match &lt;code&gt;widget_key&lt;/code&gt; in the &lt;code&gt;dashboard_widgets&lt;/code&gt; table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;admin_id&lt;/code&gt;  is an integer value which corresponds to the foreign key in the * &lt;code&gt;admin&lt;/code&gt; table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_row&lt;/code&gt; is the row-coordinate where the user requested the widget to appear&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_column&lt;/code&gt; is the column-coordinate where the user requested the widget to appear&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;widget_refresh&lt;/code&gt; is the refresh cycle requested by the us&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/database/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/database/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;A number of changes have been made in 1.5.5 and v2 to make interacting with the database simpler.&lt;/p&gt;
+&lt;h2 id=&#34;looping&#34;&gt;Looping&lt;/h2&gt;
+&lt;p&gt;Starting with v1.5.5 looping through database queries no longer requires the complex while loop, and can instead use a simple foreach iterator. This is more intuitive and more maintainable.&lt;/p&gt;
+&lt;pre&gt;
+while (!$result-&gt;EOF) { 
+  // some action
+  $result-&gt;MoveNext();
+}
+&lt;/pre&gt;
+&lt;p&gt;becomes:&lt;/p&gt;
+&lt;pre&gt;
+foreach($result as $row) {
+  // some action
+}
+&lt;/pre&gt; 
+&lt;h2 id=&#34;returned-data-references&#34;&gt;Returned Data References&lt;/h2&gt;
+&lt;p&gt;The syntax of referring to data returned from a query is now shorter.&lt;/p&gt;
+&lt;pre&gt;
+  $result = $db-&gt;Execute(some query) 
+  $data = $result-&gt;fields[&#39;filename&#39;];
+&lt;/pre&gt;
+&lt;p&gt;becomes:&lt;/p&gt;
+&lt;pre&gt;
+  $result = $db-&gt;Execute(some query) 
+  $data = $row[&#39;fieldname&#39;];
+&lt;/pre&gt; 
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/external_downloads/externally_hosted_downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/external_downloads/externally_hosted_downloads/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Prior to Zen Cart v2, downloads had to be placed in the folder pointed to by the &lt;code&gt;DIR_FS_DOWNLOAD&lt;/code&gt; define in &lt;code&gt;admin/includes/configure.php&lt;/code&gt;.  Now downloads may be hosted externally.  The following options are provided:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AWS Hosting: Use &lt;code&gt;aws:bucketname/filename.ext&lt;/code&gt; as the filename in attributes controller, with expiring links to prevent theft&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dropbox: Change the URL parameter &lt;code&gt;dl=0&lt;/code&gt; to &lt;code&gt;dl=1&lt;/code&gt; on the &amp;ldquo;sharing link&amp;rdquo; that Dropbox gives you&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/multi_language_menus/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/multi_language_menus/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;multi-language-configuration-menus&#34;&gt;Multi Language Configuration Menus&lt;/h1&gt;
+&lt;p&gt;In v2, you can now have multilanguage Configuration menu entries.  However, the creation of the language strings for the Configuration menu is done differently from the regular way other strings in a language pack are created.&lt;/p&gt;
+&lt;p&gt;To add strings for your a new language for the Configuration Menu, look up the database entry in the zc_install/sql/install/mysql_zencart.sql file.&lt;/p&gt;
+&lt;p&gt;For example, the strings used to set the Store Name in Configuration-&amp;gt;My Store-&amp;gt;Store Name are associated with database key STORE_NAME.
+To create non-english equivalents for these strings, create or edit the file&lt;/p&gt;
+&lt;p&gt;admin/includes/languages/your-language/configuration.php&lt;/p&gt;
+&lt;p&gt;and preface the key with CFGTITLE_ to set the title and CFGDESC to set the description.  So using the STORE_NAME example again,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;CFGTITLE_STORE_NAME&amp;#39;, &amp;#39;Nombre de la Tienda&amp;#39;);
+define(&amp;#39;CFGDESC_STORE_NAME&amp;#39;, &amp;#39;El nombre de mi tienda&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/pagination/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/pagination/pagination/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In previous versions of Zen Cart, pagination has been handled by the split_page_results class. 
+This class has lots of problems.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It has a poor API&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s difficult to change the html output&lt;/li&gt;
+&lt;li&gt;It is bound to using sql results.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For v2, we realised we needed to have a better class structure for doing pagination. 
+The new structure defines 2 sets of objects.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Adapters,&lt;/code&gt; which are responsible for producing the lists of items that might appear in a paginated view.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Scrollers&lt;/code&gt; which define how the actual link lists for a paginated result set are built.&lt;/p&gt;
+&lt;h2 id=&#34;adapter-classes&#34;&gt;Adapter Classes&lt;/h2&gt;
+&lt;h3 id=&#34;introduction-1&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Adapter classes are meant to return a list of items that will be displayed in the pagination results/template.
+In the old split_page_results_class, the only way to get this list of items was to use an sql query. 
+However there might be other ways we want to generate that list.&lt;/p&gt;
+&lt;p&gt;e.g. 
+Using queryFactory to take an sql query string
+Using a queryFactory resultset
+Using an array generated either from queryFactory  or from some other db layer (pdo, doctrine, noSql etc)&lt;/p&gt;
+&lt;p&gt;The Adapter class expects us to pass a $data array and a $params array.&lt;/p&gt;
+&lt;p&gt;The $data array, is dependant on the concrete adapter class, but can generally be thought of as providing information that
+will create a result set.&lt;/p&gt;
+&lt;p&gt;The $params array is fluid, however is expected to provide at least 2 pieces of information.&lt;/p&gt;
+&lt;p&gt;The currentPage and the itemsPerPage. 
+If these are not passed in the $params array, defaults will be set&lt;/p&gt;
+&lt;h3 id=&#34;interface&#34;&gt;Interface&lt;/h3&gt;
+&lt;p&gt;Adapter Classes implement a simple interface.&lt;/p&gt;
+&lt;p&gt;getResultList which returns a list of items, based on $data/$param settings.&lt;/p&gt;
+&lt;p&gt;getTotalItemCount which returns the total number of items. regardless of limits.&lt;/p&gt;
+&lt;h3 id=&#34;parameters&#34;&gt;Parameters&lt;/h3&gt;
+&lt;p&gt;currentPage &lt;strong&gt;required&lt;/strong&gt;&lt;br&gt;
+itemsPerPage &lt;strong&gt;required&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;Adapter Classes return a simple array via the getResults() method. 
+The array consists of the following.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;totalItemCount&lt;br&gt;
+currentItem&lt;br&gt;
+itemsPerPage&lt;br&gt;
+resultList&lt;br&gt;
+totalPages&lt;/p&gt;
+&lt;h3 id=&#34;example-using-the-queryfactory-adapter&#34;&gt;Example using the QueryFactory Adapter&lt;/h3&gt;
+&lt;p&gt;The QueryFactory adapter class expects its data array to be formatted as follows&lt;/p&gt;
+&lt;p&gt;[&amp;lsquo;mainSql&amp;rsquo;] is an sql query string to select the items to be paginated.&lt;br&gt;
+[&amp;lsquo;count&amp;rsquo;] is an sql query string to get the total item count for the items to be paginated.&lt;br&gt;
+[&amp;lsquo;dbConn&amp;rsquo;] is a queryfactory connection object. e.g. the global $db variable.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$data[&#39;sqlQueries&#39;][&#39;main&#39;] = &amp;quot;SELECT * FROM &amp;quot; . TABLE_PRODUCTS;  
+$data[&#39;sqlQueries&#39;][&#39;count&#39;] = &amp;quot;SELECT count(*) as total FROM &amp;quot; . TABLE_PRODUCTS;  
+$data[&#39;dbConn&#39;] = $db;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting the params&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; $currentPage = $zcRequest-&amp;gt;readGet(&#39;page&#39;, 1); 
+ $params[&#39;currentPage&#39;] = $currentPage;  
+ $params[&#39;itemsPerPage&#39;] = 10;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then instantiate the adapter&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; $ds = new QueryFactory($data, $params);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;results can then be gotten using&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; $results = $ds-&amp;gt;getResults()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;scroller-classes&#34;&gt;Scroller Classes&lt;/h2&gt;
+&lt;h3 id=&#34;introduction-2&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;There are lots of different ways to show pagination controls in a template.&lt;br&gt;
+Legacy Zen Cart has one way of doing it,&lt;br&gt;
+Google has another way of doing it.&lt;/p&gt;
+&lt;p&gt;Scroller classes allow for different methods of building the Link list that a template will render.&lt;/p&gt;
+&lt;h3 id=&#34;interface-1&#34;&gt;Interface&lt;/h3&gt;
+&lt;p&gt;Scroller classes need only provide a public process method.&lt;/p&gt;
+&lt;h3 id=&#34;parameters-1&#34;&gt;Parameters&lt;/h3&gt;
+&lt;h4 id=&#34;pagingvarname&#34;&gt;pagingVarName&lt;/h4&gt;
+&lt;p&gt;This is the name of the URL GET parameter that denotes the current page.
+e.g. localhost.com/main_page=list?page=1
+by default his is set to &lt;code&gt;page&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;####cmd&lt;/p&gt;
+&lt;p&gt;cmd represents the current page controller. 
+e.g. in catalog where we have a url like 
+localhost.com/main_page=reviews 
+cmd would be &lt;code&gt;reviews&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;scrollerlinkparams-optional&#34;&gt;scrollerLinkParams (optional)&lt;/h4&gt;
+&lt;p&gt;When building the href links for scroller outout, these params will be added to the link.
+Should take the form of a string like &lt;code&gt;linkParam1=value1&amp;amp;LinkParam2=value2&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;maxpagelinks&#34;&gt;maxPageLinks&lt;/h4&gt;
+&lt;h4 id=&#34;exclude&#34;&gt;exclude&lt;/h4&gt;
+&lt;p&gt;Generally, page links will use the zen_get_all_get_params() function to add GET params to the paging links,
+you can add GET params to exclude using this array;&lt;/p&gt;
+&lt;h4 id=&#34;disablezengetallgetparams&#34;&gt;disableZenGetAllGetParams&lt;/h4&gt;
+&lt;p&gt;Don&amp;rsquo;t use zen_get_all_get_params to build paging links.&lt;/p&gt;
+&lt;h4 id=&#34;currentpage&#34;&gt;currentPage&lt;/h4&gt;
+&lt;p&gt;An integer value for the current page being displayed, will default to 1&lt;/p&gt;
+&lt;h4 id=&#34;totalpages&#34;&gt;totalPages&lt;/h4&gt;
+&lt;p&gt;The total number of pages that the Adapter class returned.&lt;/p&gt;
+&lt;h3 id=&#34;results-1&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;The public process method should create a results array containing values to be used in the paginator output template.
+The format of this array is flexible, being dependant on how you want the view output to be rendered, but a look at the 
+standard scroller should provide some hints as to the general values that should be returned.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    $results[&#39;linkList&#39;]
+    $results[&#39;pagingVarName&#39;]
+    $results[&#39;hasItems&#39;]
+    $results[&#39;nextPage&#39;]
+    $results[&#39;totalItems&#39;]
+    $results[&#39;prevPage&#39;]
+    $results[&#39;fromItem&#39;]
+    $results[&#39;toItem&#39;]
+    $results[&#39;flagHasPrevious&#39;]
+    $results[&#39;flagHasNext&#39;]
+    $results[&#39;previousLink&#39;]
+    $results[&#39;nextLink&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;example-using-the-standard-scroller&#34;&gt;Example using the Standard Scroller&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;    $params = array(&#39;pagingVarName&#39;=&amp;gt;&#39;page&#39;, &#39;scrollerLinkParams&#39;=&amp;gt;&#39;&#39;, &#39;itemsPerPage&#39;=&amp;gt;&#39;10&#39;, &#39;currentItem&#39;=&amp;gt;&#39;1&#39;, &#39;currentPage&#39;=&amp;gt;&#39;1&#39;, &#39;maxPageLinks&#39;=&amp;gt;&#39;10&#39;, &#39;cmd&#39;=&amp;gt;&#39;countries&#39;);
+    $scroller = new Standard($ds, $params);
+    $dsr = $scroller-&amp;gt;getResults();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How you pass the $dsr results to the template is up to you. 
+Remember, templates currently will need to have variables in the Global scope. 
+So you may need to do something like&lt;/p&gt;
+&lt;p&gt;$GLOBALS[&amp;rsquo;tplVars&amp;rsquo;][&amp;lsquo;paginator&amp;rsquo;] = $dsr;&lt;/p&gt;
+&lt;p&gt;and you can then access the results in the template 
+i.e.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php if ($tplVars[&#39;paginator&#39;][&#39;flagHasPrevious&#39;]) { ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilder/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilder/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The QueryBuilder class allows for the construction of sql queries based on an array format to define base tables, foreign keys, select options, where options and other options. 
+It is used by a number of other classes, such as ListingQueryAndOutput, LEAD pages etc.&lt;/p&gt;
+&lt;p&gt;While initially written to produce queries against the Products Table, it can be used to produce queries against any table used by Zen Cart.&lt;/p&gt;
+&lt;h1 id=&#34;instantiation&#34;&gt;Instantiation&lt;/h1&gt;
+&lt;p&gt;Instantiation of the class would look like&lt;/p&gt;
+&lt;p&gt;$qb = new ZenCart\QueryBuilder\QueryBuilder($db, $queryBuilderDefinition);&lt;/p&gt;
+&lt;p&gt;where $db is a instance of QueryFactory and 
+$queryBuilderDefinition is an array defining the query to be executed.&lt;/p&gt;
+&lt;p&gt;Sometimes the $queryBuilderDefinition would be empty or not defined at the point of instantiation, as we may want to inject a clean object and later use the process method to pass the actual array.&lt;/p&gt;
+&lt;p&gt;so we can instantiate and run the query builder in two ways.&lt;/p&gt;
+&lt;h1 id=&#34;querybuilderdefinition&#34;&gt;queryBuilderDefinition&lt;/h1&gt;
+&lt;p&gt;Whether we pass the definition in the constructor or the process method, the definition can include the following entries.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mainTable&lt;/li&gt;
+&lt;li&gt;mainTableName&lt;/li&gt;
+&lt;li&gt;mainTableAlias&lt;/li&gt;
+&lt;li&gt;mainTableFkeyField&lt;/li&gt;
+&lt;li&gt;tableAliases&lt;/li&gt;
+&lt;li&gt;selectList&lt;/li&gt;
+&lt;li&gt;filters&lt;/li&gt;
+&lt;li&gt;derivedItems&lt;/li&gt;
+&lt;li&gt;joinTables&lt;/li&gt;
+&lt;li&gt;whereClauses&lt;/li&gt;
+&lt;li&gt;orderBys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;maintable&#34;&gt;mainTable&lt;/h2&gt;
+&lt;p&gt;If set the mainTable entry should consist of an array.&lt;/p&gt;
+&lt;p&gt;e,g,&lt;/p&gt;
+&lt;p&gt;[&amp;lsquo;mainTable&amp;rsquo;] = array(&amp;rsquo;table&amp;rsquo; =&amp;gt; TABLE_PRODUCTS, &amp;lsquo;alias&amp;rsquo; =&amp;gt; &amp;lsquo;p&amp;rsquo;, &amp;lsquo;fKeyFieldLeft&amp;rsquo; =&amp;gt; &amp;lsquo;products_id&amp;rsquo;);&lt;/p&gt;
+&lt;p&gt;The &amp;rsquo;table&amp;rsquo; entry wil be mapped to &amp;lsquo;mainTableName&amp;rsquo;
+The &amp;lsquo;alias&amp;rsquo; entry will be mapped to &amp;lsquo;mainTableAilas&amp;rsquo;
+The &amp;lsquo;fKeyFieldLeft will be mapped to the &amp;lsquo;mainTableFKeyField&amp;rsquo;&lt;/p&gt;
+&lt;h2 id=&#34;maintablename&#34;&gt;mainTableName&lt;/h2&gt;
+&lt;p&gt;Optional, and by default is set to TABLE_PRODUCTS.
+Or set by [&amp;lsquo;maintable&amp;rsquo;][&amp;rsquo;name&amp;rsquo;]&lt;/p&gt;
+&lt;h2 id=&#34;maintablealias&#34;&gt;mainTableAlias&lt;/h2&gt;
+&lt;p&gt;Optional and by default is set to &amp;lsquo;p&amp;rsquo;
+Or set by [&amp;lsquo;maintable&amp;rsquo;][&amp;lsquo;mainTableAlias&amp;rsquo;]&lt;/p&gt;
+&lt;h2 id=&#34;maintablefkeyfield&#34;&gt;mainTableFkeyField&lt;/h2&gt;
+&lt;p&gt;Optional and by default is set to &amp;lsquo;products_id&amp;rsquo;
+Or set by [&amp;lsquo;maintable&amp;rsquo;][&amp;lsquo;fkeyFieldLeft&amp;rsquo;]&lt;/p&gt;
+&lt;h2 id=&#34;tablealiases&#34;&gt;tableAliases&lt;/h2&gt;
+&lt;p&gt;Associates a table alias with a table name. 
+Generally these associations are handled internally for the main table and join tables.&lt;br&gt;
+However if needed take the form of&lt;/p&gt;
+&lt;h2 id=&#34;selectlist&#34;&gt;selectList&lt;/h2&gt;
+&lt;p&gt;Generally the fields selected from a query are managed automatically. However there are times when you may want to add something to the select list, especially if you want to alias it.&lt;/p&gt;
+&lt;h2 id=&#34;filters&#34;&gt;filters&lt;/h2&gt;
+&lt;h2 id=&#34;deriveditems&#34;&gt;derivedItems&lt;/h2&gt;
+&lt;h2 id=&#34;jointables&#34;&gt;joinTables&lt;/h2&gt;
+&lt;h2 id=&#34;whereclauses&#34;&gt;whereClauses&lt;/h2&gt;
+&lt;h2 id=&#34;orderbys&#34;&gt;orderBys&lt;/h2&gt;
+&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/definition_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/definition_classes/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;definition-classes&#34;&gt;definition Classes&lt;/h1&gt;
+&lt;p&gt;The definitions were previously called &amp;ldquo;listing boxes&amp;rdquo;, and you will 
+see that this naming convention sometimes carries over.&lt;/p&gt;
+&lt;p&gt;Classes for definitions are stored in includes/library/zencart/ListingQueryAndOutput/src/definitions which should be  namespaced as ZenCart\ListingQueryAndOutput\definitions&lt;/p&gt;
+&lt;p&gt;The class definition should look like&lt;/p&gt;
+&lt;p&gt;class myDefinition extends AbstractLeadDefinition&lt;/p&gt;
+&lt;p&gt;The AbstractLeadDefinition class contains most of the logic for building definition output. The actual class that is used to build a custom definition generally needs to define only a very few methods.&lt;/p&gt;
+&lt;p&gt;Only one method must be defined&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;initQueryAndOutput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There are other methods in AbstractLeadDefinition that can be overridden to allow for more customization and these will be discussed later.&lt;/p&gt;
+&lt;h1 id=&#34;instantiation&#34;&gt;Instantiation&lt;/h1&gt;
+&lt;p&gt;definitions boxes can be instantiated in 2 ways. Either as a single definition or as a group of definitions.&lt;/p&gt;
+&lt;h2 id=&#34;single-box-instantiation&#34;&gt;Single Box Instantiation&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$box&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ZenCart\ListingQueryAndOutput\definitions\FeaturedProductsPage&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$zcRequest&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$db&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;listingBox&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$box&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;getTplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Line 1 Instantiates the class.&lt;/p&gt;
+&lt;p&gt;Line 2 Gets the output from the class. This output is an array, and while it&amp;rsquo;s format is somewhat customizable, it will always contain an array key = &amp;lsquo;formattedItems&amp;rsquo; that will be used in the template.&lt;/p&gt;
+&lt;p&gt;Note that between line 1 and line 2 there are additional steps to build
+the output of the box.&lt;/p&gt;
+&lt;h2 id=&#34;group-instantiation&#34;&gt;Group Instantiation&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingBoxManager&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ZenCart\ListingQueryAndOutput\Manager&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;INDEX_DEFAULT&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$db&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$zcRequest&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingBoxes&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingBoxManager&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;getListingBoxes&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$tplVars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;listingBoxes&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingBoxes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Line 1 instantiates the listing box group manager.&lt;/p&gt;
+&lt;p&gt;Line 2 tells the listing box manager to build all the listing boxes in the group which returns an output array.&lt;/p&gt;
+&lt;p&gt;Line 3 assigns the output to a $tplVars array.&lt;/p&gt;
+&lt;p&gt;see &lt;a href=&#34;schema&#34;&gt;Database Schema&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;initqueryandoutput&#34;&gt;initQueryAndOutput()&lt;/h2&gt;
+&lt;p&gt;The initQueryAndOutput method must define 2 arrays&lt;/p&gt;
+&lt;h2 id=&#34;listingquery&#34;&gt;listingQuery&lt;/h2&gt;
+&lt;p&gt;$this-&amp;gt;listingQuery is an array that is used to define an SQL query. As such it has array elements to define JOIN tables, WHERE clauses, ORDER BY clauses, LIMIT clauses etc.
+Other entries can define derived items, filter methods etc.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;listingQuery&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;derivedItems&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;displayPrice&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;handler&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;displayPriceBuilder&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;productCpath&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;handler&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;productCpathBuilder&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;filters&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;CategoryFilter&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;parameters&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;queryLimit&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MAX_DISPLAY_NEW_PRODUCTS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;joinTables&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;TABLE_PRODUCTS_DESCRIPTION&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;table&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TABLE_PRODUCTS_DESCRIPTION&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;alias&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;pd&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;fkeyFieldLeft&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;products_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;addColumns&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;whereClauses&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;table&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TABLE_PRODUCTS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;products_status&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;value&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;AND&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;table&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TABLE_PRODUCTS_DESCRIPTION&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;language_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;value&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$_SESSION&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;languages_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;AND&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;zen_get_new_date_range&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;orderBys&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;RAND()&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;mysql&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;outputlayout&#34;&gt;outputLayout&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;outputLayout&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;boxTitle&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;sprintf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TABLE_HEADING_NEW_PRODUCTS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;strftime&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;%B&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;formatter&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;class&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Columnar&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;template&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;tpl_listingbox_columnar.php&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;params&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;columnCount&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SHOW_PRODUCT_INFO_COLUMNS_NEW_PRODUCTS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The outputLayout array must contain the &amp;lsquo;formatter&amp;rsquo; option. Other options are dependant on the formatter used.&lt;/p&gt;
+&lt;p&gt;More details on the fields listingQuery and outputLayout are provided in 
+&lt;a href=&#34;/zendocs_test1/v2/code_docs/admin_lead_pages/introduction&#34;&gt;Admin LEAD pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/filter_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/filter_classes/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;filter-classes&#34;&gt;Filter Classes&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Filter classes are meant to respond to URL parameters and alter the results returned from a listing box query, based on
+those URL parameters.&lt;/p&gt;
+&lt;p&gt;Some examples of filters are&lt;/p&gt;
+&lt;h3 id=&#34;category-filtering&#34;&gt;Category Filtering&lt;/h3&gt;
+&lt;p&gt;Lists of products will be filtered depending on the category selected from the category sidebox.&lt;/p&gt;
+&lt;h3 id=&#34;alpha-filtering&#34;&gt;Alpha Filtering&lt;/h3&gt;
+&lt;p&gt;Lists of products will be filtered depending on the selection from a dropdown based on the first character of the product name.
+e.g. return all products that begin with &lt;code&gt;A&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;order-filtering&#34;&gt;Order Filtering&lt;/h3&gt;
+&lt;p&gt;Order the list of products returned based on some arbitrary requirement.&lt;/p&gt;
+&lt;p&gt;e.g. Order by Price Low to High or Order by Model Name.&lt;/p&gt;
+&lt;h2 id=&#34;defining-filters&#34;&gt;Defining Filters&lt;/h2&gt;
+&lt;p&gt;Filter actions are defined as part of the $this-&amp;gt;listingQuery definition in the initQueryAndOutput method of a listing box class.&lt;/p&gt;
+&lt;p&gt;The filters entry will look something like :-&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        &#39;filters&#39; =&amp;gt; array(
+            array(
+                &#39;name&#39; =&amp;gt; &#39;DisplayOrderSorter&#39;,
+                &#39;parameters&#39; =&amp;gt; array(
+                    &#39;defaultSortOrder&#39; =&amp;gt; PRODUCT_ALL_LIST_SORT_DEFAULT
+                )
+            ),
+            array(
+                &#39;name&#39; =&amp;gt; &#39;CategoryFilter&#39;,
+                &#39;parameters&#39; =&amp;gt; array(
+                    &#39;new_products_category_id&#39; =&amp;gt; $GLOBALS[&#39;new_products_category_id&#39;],
+                    &#39;cPath&#39; =&amp;gt; $this-&amp;gt;request-&amp;gt;readGet(&#39;cPath&#39;, &#39;&#39;)
+                )
+            )
+        ),
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Each filter entry requires 2 parameters&lt;/p&gt;
+&lt;h3 id=&#34;name&#34;&gt;name&lt;/h3&gt;
+&lt;p&gt;This is the name of the class that manages the filter.
+The class should be defined in the library/zencart/ListingQueryAndOutput/src/filters directory and should extend the AbstractFilter
+class and implement the FilterInterface class&lt;/p&gt;
+&lt;p&gt;e.g. 
+&lt;code&gt;class DisplayOrderSorter extends AbstractFilter implements FilterInterface&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;parameters&#34;&gt;parameters&lt;/h3&gt;
+&lt;p&gt;Parameters are dependant on the filter class and are passed as an array of key/value pairs.&lt;/p&gt;
+&lt;h2 id=&#34;filter-classes-1&#34;&gt;Filter Classes&lt;/h2&gt;
+&lt;p&gt;Classes for filters are stored in includes/library/zencart/ListingQueryAndOutput/src/filters which should be namespaced as ZenCart\ListingQueryAndOutput\filters&lt;/p&gt;
+&lt;p&gt;The class definition should look like&lt;/p&gt;
+&lt;p&gt;class CategoryFilter extends AbstractFilter implements FilterInterface&lt;/p&gt;
+&lt;p&gt;Only one method must be defined&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;filterItem&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingQuery&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;which will contain the logic to carry out the filtering, and return an amended listingQuery array.&lt;/p&gt;
+&lt;p&gt;for example&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AlphaFilter&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AbstractFilter&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;implements&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FilterInterface&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;/**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;     * @param array $listingQuery
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;     * @return array
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;     */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;filterItem&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingQuery&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;((&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;request&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;readGet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;alpha_filter_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingQuery&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$alphaSortListSearch&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;explode&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;0:reset_placeholder;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PRODUCT_LIST_ALPHA_SORTER_LIST&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$j&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$n&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;sizeof&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$alphaSortListSearch&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$j&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$n&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$j&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;((&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;request&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;readGet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;alpha_filter_id&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$j&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000&#34;&gt;$elements&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;explode&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;:&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$alphaSortListSearch&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$j&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000&#34;&gt;$pattern&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;str_replace&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$elements&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000&#34;&gt;$listingQuery&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;whereClauses&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; AND pd.products_name REGEXP &amp;#39;^[&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$pattern&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;]&amp;#39; &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listingQuery&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/formatter_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/formatter_classes/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;formatter-classes&#34;&gt;Formatter Classes&lt;/h1&gt;
+&lt;p&gt;Formatter classes take the ordered list of items that are produced by the listingBox/queryBuilder and format them into an array that an output template can use.&lt;/p&gt;
+&lt;h2 id=&#34;defining-formatters&#34;&gt;Defining Formatters&lt;/h2&gt;
+&lt;p&gt;Formatters are defined as part of the $this-&amp;gt;outputLayout definition in the initQueryAndOutput method of a listing box class.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;outputLayout&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;boxTitle&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;sprintf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TABLE_HEADING_NEW_PRODUCTS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;strftime&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;%B&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;formatter&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;class&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;ListStandard&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;template&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;tpl_listingbox_productliststd.php&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;params&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;imageListingWidth&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;IMAGE_PRODUCT_NEW_LISTING_WIDTH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;imageListingHeight&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;IMAGE_PRODUCT_NEW_LISTING_HEIGHT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;definePrefix&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;PRODUCT_NEW_&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;boxtitle&#34;&gt;boxTitle&lt;/h3&gt;
+&lt;p&gt;This is optional, but if present will be displayed as the title of the box.&lt;/p&gt;
+&lt;h3 id=&#34;formatter&#34;&gt;formatter&lt;/h3&gt;
+&lt;p&gt;This consists of 3 entries&lt;/p&gt;
+&lt;h4 id=&#34;class&#34;&gt;class&lt;/h4&gt;
+&lt;p&gt;This is the name of the class that manages the formatting.
+The class should be defined in the library/zencart/listingbox/src/formatters directory and should extend the AbstractFormatter
+class and implement the FormatterInterface class&lt;/p&gt;
+&lt;p&gt;e.g. 
+&lt;code&gt;class Columnar extends AbstractFormatter implements FormatterInterface&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;template&#34;&gt;template&lt;/h4&gt;
+&lt;p&gt;This is the name of the template used to display the listing box. 
+It is assumed that the template will be in includes/templates/templates_default/listingboxes or includes/templates/YOURTEMPLATE/listingboxes directory.&lt;/p&gt;
+&lt;h4 id=&#34;params&#34;&gt;params&lt;/h4&gt;
+&lt;p&gt;The params entry is optional and if set will define parameters used to customize the formatter output.&lt;/p&gt;
+&lt;h2 id=&#34;formatter-classes-1&#34;&gt;Formatter Classes&lt;/h2&gt;
+&lt;p&gt;As mentioned earlier formatter classes should extend the AbstractFormatter class and implement the FormatterInterface class.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Columnar&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AbstractFormatter&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;implements&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FormatterInterface&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;/**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;     *
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;     */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$items&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;itemList&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$formatterParams&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;outputLayout&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;formatter&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;][&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;params&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$columnCount&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$formatterParams&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;columnCount&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$row&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$listBoxContents&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;count&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$items&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$col_width&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;floor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$columnCount&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;count&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$items&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$columnCount&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$columnCount&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000&#34;&gt;$col_width&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;floor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;count&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$items&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$items&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$item&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000&#34;&gt;$item&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;colWidth&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$col_width&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000&#34;&gt;$item&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;useImage&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$item&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;products_image&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PRODUCTS_IMAGE_NO_IMAGE_STATUS&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000&#34;&gt;$listBoxContents&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$row&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$col&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$item&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000&#34;&gt;$col&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$columnCount&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000&#34;&gt;$col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000&#34;&gt;$row&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;formattedResults&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$listBoxContents&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note also that the formatter class takes the unformatted array &lt;code&gt;$this-&amp;gt;itemList&lt;/code&gt; and after formatting assigns it to &lt;code&gt;$this-&amp;gt;formattedResults&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;ListingQueryAndOutput are lists of product items that appear in the main content area of a Zen Cart page. Examples are the Specials/Feature/new and upcoming product lists that appear mainly on the home page and sometimes on other pages as well.&lt;/p&gt;
+&lt;p&gt;In previous versions of Zen Cart each listing box had its own code that used hard coded queries and fixed templates to show the output. This has proven inflexible and makes it difficult for 3rd party contributions to add or alter these, without changing core code or templates.&lt;/p&gt;
+&lt;p&gt;To address this, Zen Cart v2 includes a Class based system for building listing box output  and simpler more designer friendly templates for displaying the results.&lt;/p&gt;
+&lt;p&gt;The system contains 4 main parts.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Classes that allow you to define the  products will be displayed, and how they will be displayed. This uses an array to define the query that is used to find products, and an array to manage the output format.&lt;/li&gt;
+&lt;li&gt;Decorator classes that take the items returned from above and filter/re-order those items in preparation for display.&lt;/li&gt;
+&lt;li&gt;Formatter classes that take the final results and prepare an array of the results ready for a template.&lt;/li&gt;
+&lt;li&gt;Output templates. These may be overridden to use 3rd party templates.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/schema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/schema/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;database-schema&#34;&gt;Database Schema&lt;/h1&gt;
+&lt;p&gt;There are 4 tables associated with definitions. The purpose of the tables is to allow for the defining of groups of definitions , that can then be assigned to location.&lt;/p&gt;
+&lt;p&gt;This allows for easier instantiation, as opposed to instantiating each definition separately.&lt;/p&gt;
+&lt;p&gt;##listingbox_locations&lt;/p&gt;
+&lt;p&gt;fields :-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;location_key varchar(40) : should be in uppercase with underscores separating words&lt;/li&gt;
+&lt;li&gt;location_name varchar(255) : A string containing a friendly name for the location.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Used to define a location. e.g. If you want to display a group of definitions beneath the shopping cart, you would create a entry here&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO `zencart`.`listingbox_locations` (`location_key`, `location_name`) VALUES (&amp;#39;SHOPPING_CART&amp;#39;, &amp;#39;Shopping Cart&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;listingboxgroups&#34;&gt;listingboxgroups&lt;/h2&gt;
+&lt;p&gt;fields :-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;group_id int(11) autoincrement : table key. Not user alterable&lt;/li&gt;
+&lt;li&gt;group_name varchar(255) : A string containing a display friendly name for the group&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Used to define a group. You may want to define a group that contains say featured, new, special definitions. You would first create an entry here.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INSERT INTO `zencart`.`listingboxgroups` (`group_id` ,`group_name`) VALUES (NULL , &amp;#39;Featured - Specials - New&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;listingboxes_to_listingboxgroups&#34;&gt;listingboxes_to_listingboxgroups&lt;/h2&gt;
+&lt;p&gt;fields:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;listingbox varchar(80) : the name of a definition class&lt;/li&gt;
+&lt;li&gt;group_id int(11) : the group_id from listingboxgroups table that you want this listingbox assigned to.&lt;/li&gt;
+&lt;li&gt;sort_order int(11) : if you have multiple listingboxes assigned to a group you can determine the sort order with this field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##listingboxgroups_to_locations&lt;/p&gt;
+&lt;p&gt;fields:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;group_id int(11) : the group_id from listingboxgroups table that you want to assign to the location.&lt;/li&gt;
+&lt;li&gt;location_key varchar(40) : the location_key from the listingbox_locations table that you are assigning the group to&lt;/li&gt;
+&lt;li&gt;sort_order int(11) : as its possible to assign multiple groups to a location, you can determine the sort order with this field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Used to assign listingboxgroups to a location. Note you can assign multiple groups to the location.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/querybuilderdefinitions/templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/querybuilderdefinitions/templates/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;templates&#34;&gt;Templates&lt;/h1&gt;
+&lt;p&gt;Templates for core catalog listing boxes are stored in
+&lt;code&gt;includes/templates/template_default/listingBoxes&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/code_docs/request/request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/code_docs/request/request/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The Request class is meant to replace direct references to the Super Global $_GET, $_POST etc. arrays. 
+It is based on &lt;a href=&#34;https://github.com/auraphp/Aura.Web&#34;&gt;Aura.Web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is instantiated in the Global namespace as $zcRequest, and provides the following methods.&lt;/p&gt;
+&lt;h3 id=&#34;get&#34;&gt;get&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;public function get($param, $default = null, $source = &#39;get&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;param-required-string&#34;&gt;$param required string&lt;/h4&gt;
+&lt;p&gt;The parameter to get&lt;/p&gt;
+&lt;h4 id=&#34;default-optional-mixed&#34;&gt;$default optional mixed&lt;/h4&gt;
+&lt;p&gt;If the parameter does not exist, then return this default value&lt;/p&gt;
+&lt;h4 id=&#34;source-optional-string&#34;&gt;$source optional string&lt;/h4&gt;
+&lt;p&gt;The superglobal to query, either &lt;code&gt;get&lt;/code&gt; or &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;readget&#34;&gt;readGet&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;public function readGet($param, $default = null)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An alias to the get function where the source = &amp;lsquo;get&amp;rsquo;&lt;/p&gt;
+&lt;h3 id=&#34;readpost&#34;&gt;readPost&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;public function readPost($param, $default = null)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An alias to the get function where the source = &amp;lsquo;post&amp;rsquo;&lt;/p&gt;
+&lt;h3 id=&#34;has&#34;&gt;has&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;public function has($param, $source = &#39;get&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;DEPRECATED&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;all&#34;&gt;all&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;public function all($source = &#39;get&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;source-optional-string-1&#34;&gt;$source optional string&lt;/h4&gt;
+&lt;p&gt;The superglobal to query, either &lt;code&gt;get&lt;/code&gt; or &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;introduction-to-v2&#34;&gt;Introduction to v2&lt;/h1&gt;
+&lt;p&gt;Zen Cart v2 represents a major shift from previous versions. We are introducing a lot of new re-written code,
+which is meant to make life easier for those developing with/for Zen Cart, and to make plugin code easier to install.&lt;/p&gt;
+&lt;p&gt;To help developers we are also creating lots of new documentation resources for that code.&lt;/p&gt;
+&lt;h2 id=&#34;getting-composer&#34;&gt;Getting Composer&lt;/h2&gt;
+&lt;p&gt;If you don&amp;rsquo;t yet have composer installed, do this first:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;go to &lt;code&gt;getcomposer.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;download and install&lt;/li&gt;
+&lt;li&gt;follow the Getting Started instructions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;generating-code-level-documentation-php-documentor&#34;&gt;Generating code-level documentation (php-documentor)&lt;/h2&gt;
+&lt;p&gt;Assuming you have a complete checkout of Zen Cart on your local machine, and have run &lt;code&gt;composer install&lt;/code&gt; to set it up for development work, you can generate the php-doc documentation by running the following from the root of the repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;phpdoc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you get errors that it won&amp;rsquo;t/can&amp;rsquo;t run, be sure to run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;composer install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or even&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;composer update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to set up the dependencies.&lt;/p&gt;
+&lt;h2 id=&#34;unit-testing&#34;&gt;Unit Testing&lt;/h2&gt;
+&lt;p&gt;To run unit tests with phpunit, you must have &lt;code&gt;composer&lt;/code&gt; set up, similar to above, and then you can run the following from the root of the repository directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;phpunit -c testFramework/unittests/phpunit.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/template_customization/css_and_javascript/css_and_javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/template_customization/css_and_javascript/css_and_javascript/</guid>
+      <description>
+        
+        
+        &lt;p&gt;NOTE: This document is a work-in-progress&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Interception&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a notifier at the start to completely change the defined css-js handler if one wishes to completely bypass the built-in one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;BODY Classes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BODY classes dynamically added based on page-name, current-product-id, current-mfg-id, current-category-id, current-cPath, current-language
+&amp;hellip; and a notifier to allow complete alteration/override of all those&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Framework injected css, js&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;notifier to set which CSS framework is in use (in case elsewhere something needs to be set based on the named framework)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stylesheet files
+Stylesheet filenames are loaded in this order, if present:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;all stylesheets for your selected CSS framework, or whatever were set via the notifier hook (if any), followed by:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;stylesheet.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;stylesheet-responsive.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;font.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_en_stylesheet.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_pagename.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_en_pagename.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_c_cpath.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_en_c_cPath.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_m_mfgId.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_en_m_mfgId.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_p_productId.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inline_en_p_productId.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;print*.css&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;De-duplication is done to ensure duplicates/conflicts are managed when the framework dictates certain files, and the template has same files.&lt;/p&gt;
+&lt;p&gt;CSS &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tags are assigned an &lt;code&gt;id&lt;/code&gt; so that javascripts can enable/disable them if necessary.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It is generally advisable to avoid using inline-styling wherever possible; however, due to popular demand for maximum flexibility, this is included for granular control at the per-page and per-feature level.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;JS files&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jscript_top_xxxx.php and jscript_top_xxxxx.js files are loaded at the top of the page (in HEAD)&lt;/li&gt;
+&lt;li&gt;other jscript_xxxxx.php and jscript_xxxxx.js files are loaded at the bottom of the page (below footer) to prevent blocking&lt;/li&gt;
+&lt;li&gt;De-duplication is done to ensure duplicates/conflicts are managed when the framework dictates certain files, and the template has same files.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>V2: </title>
+      <link>/zendocs_test1/v2/template_customization/php/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/v2/template_customization/php/introduction/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;new-templating-features-in-v2&#34;&gt;New Templating Features in v2&lt;/h1&gt;
+&lt;h2 id=&#34;shared-folder&#34;&gt;shared folder&lt;/h2&gt;
+&lt;p&gt;Zen Cart v2 adds a middle-tier to the template structure, to allow for &amp;ldquo;shared&amp;rdquo; customizations which might apply to multiple templates.  These folders are available everywhere the &amp;ldquo;classic&amp;rdquo; folder exists (showing a templatable directory).  So for example, if you create &lt;code&gt;includes/languages/english/html_includes/shared/define_main_page.php&lt;/code&gt;, then any template you install will use this content for the main page; you don&amp;rsquo;t need to replicate this file to &lt;code&gt;includes/languages/english/html_includes/&amp;lt;new_template&amp;gt;/define_main_page.php&lt;/code&gt; when you create a new template.&lt;/p&gt;
+&lt;h2 id=&#34;product-stock-indicators&#34;&gt;Product Stock Indicators&lt;/h2&gt;
+&lt;p&gt;Product-stock &amp;ldquo;availability&amp;rdquo; and product-&amp;ldquo;condition&amp;rdquo; indicators are now available.&lt;/p&gt;
+&lt;h2 id=&#34;product-microdata-markup&#34;&gt;Product microdata markup&lt;/h2&gt;
+&lt;p&gt;Product microdata markup is provided for search engines to use.&lt;/p&gt;
+&lt;h2 id=&#34;localephp-file&#34;&gt;Locale.php file&lt;/h2&gt;
+&lt;p&gt;Language files simplified to relocate locale-specific content into a new locale.php file.  Such things as date format, weight units and are now specified in &lt;code&gt;includes/languages/english/locale.php&lt;/code&gt;.  This file can be added to a template folder or to the &amp;lsquo;shared&amp;rsquo; folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

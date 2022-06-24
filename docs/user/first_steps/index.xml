@@ -1,0 +1,1655 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – First Steps</title>
+    <link>/user/first_steps/</link>
+    <description>Recent content in First Steps on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/first_steps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Basics - Components of Zen Cart</title>
+      <link>/user/first_steps/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/components/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart is what&amp;rsquo;s called a database-backed web application.&lt;/p&gt;
+&lt;p&gt;This means it doesn&amp;rsquo;t run on your computer, the way Microsoft Excel does - instead, it is set up on a &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;web host&lt;/a&gt; and uses web technologies like PHP, MySQL and Apache to create your store.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-a-database&#34;&gt;What is a database?&lt;/h3&gt;
+&lt;p&gt;The database is a collection of tables. Tables are like spreadsheets, storing data in rows and columns, related to whatever the structure of that table is for. For customers, it means email addresses, passwords, etc. For address books, it means all the address info for each customer. For orders, all the order details. For products, the details of each aspect of each product. And so on. You could look at a database as a multi-sheet spreadsheet, but way more optimized and efficient in how it automatically handles indexing and storage/retrieval.&lt;/p&gt;
+&lt;p&gt;Unlike a file, which you view through an editor like Notepad++, a database must be viewed through a tool which provides a database interface.  One such tool is &lt;a href=&#34;https://www.phpmyadmin.net/&#34;&gt;phpMyAdmin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a screenshot of phpMyAdmin viewing the records in the specials table, which contains a list of all the products on special.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/phpmyadmin_specials.png&#34; alt=&#34;Specials table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can view the &lt;a href=&#34;/dev/schema/&#34;&gt;database schema for Zen Cart&lt;/a&gt; to learn more about how the data is structured .&lt;/p&gt;
+&lt;h3 id=&#34;what-about-all-the-files-in-zen-cart&#34;&gt;What about all the files in Zen Cart?&lt;/h3&gt;
+&lt;p&gt;The files contain computer code that allows you to access the database, and code that displays the data that&amp;rsquo;s in the database.   So for example, &lt;code&gt;admin/customers.php&lt;/code&gt; is a file, which allows the administrator to access the &lt;code&gt;customers&lt;/code&gt; table in the database.&lt;/p&gt;
+&lt;h3 id=&#34;how-is-the-website-broken-up&#34;&gt;How is the website broken up?&lt;/h3&gt;
+&lt;p&gt;The website created by Zen Cart has two parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Storefront - Visible to everyone.  The part of the website that allows products to be viewed and purchased.  Also called &lt;em&gt;the catalog&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Admin - Only visible to the store administrator.  Provides the back-office functions of order processing and inventory management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;is-there-a-file-that-corresponds-to-each-page-in-the-storefront&#34;&gt;Is there a file that corresponds to each page in the storefront?&lt;/h3&gt;
+&lt;p&gt;Zen Cart pages are dynamically created, so there&amp;rsquo;s no single file like (say) &lt;code&gt;specials.html&lt;/code&gt; for the specials page.  Instead, the specials page&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://YOURSITE.com/index.php?main_page=specials 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;is created on the fly by executing a number of PHP files.  One part of your &lt;a href=&#34;/user/template/what_is_a_template/&#34;&gt;template&lt;/a&gt; is the &lt;a href=&#34;/user/template/template_pages/&#34;&gt;template page&lt;/a&gt; for specials.  It controls how the specials are displayed, and you can modify it as you see fit.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Default files, template default and overrides</title>
+      <link>/user/first_steps/overrides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/overrides/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart has a templating capability that allows you to modify the 
+functionality and appearance of the cart.  This capability sometimes called 
+&amp;ldquo;overrides,&amp;rdquo; &amp;ldquo;template overrides,&amp;rdquo; or &amp;ldquo;overriding a file.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Once you have built a new template (more on this later) and overridden
+the files you want to change, you can switch back and forth between
+your new template and the default template from the admin using 
+&lt;a href=&#34;/user/admin_pages/tools/template_selection/&#34;&gt;Tools &amp;gt; Template Selection&lt;/a&gt;.
+Thus, the advantage of using overrides versus modifying the original files directly
+is that with overrides, you can &amp;ldquo;revert&amp;rdquo; to original behavior and appearance 
+quickly and easily for troubleshooting.&lt;/p&gt;
+&lt;p&gt;When you first install Zen Cart, the template which is in use is called
+&lt;code&gt;responsive_classic&lt;/code&gt;.  This is a new template, introduced in Zen Cart 1.5.5,
+which works on both desktop computers and mobile devices.&lt;/p&gt;
+&lt;h3 id=&#34;template-files&#34;&gt;Template Files&lt;/h3&gt;
+&lt;p&gt;The files which determine how the page will appear are called 
+&lt;em&gt;template files&lt;/em&gt;.  In the case of &lt;code&gt;responsive_classic&lt;/code&gt;, they can be 
+found in the following folders:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./templates/responsive_classic
+./modules/responsive_classic
+./languages/english/extra_definitions/responsive_classic
+./languages/english/responsive_classic
+./languages/english/html_includes/responsive_classic
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The files under these folders are called &lt;code&gt;overrides&lt;/code&gt;.  In other words, Zen Cart&amp;rsquo;s basic functionality and appearance has been &lt;code&gt;overridden&lt;/code&gt; by these files.&lt;/p&gt;
+&lt;p&gt;Some files &lt;em&gt;could&lt;/em&gt; be overridden but are currently not - for example, 
+the site map template file (&lt;code&gt;tpl_site_map_default.php&lt;/code&gt;) is not part of 
+the &lt;code&gt;responsive_classic&lt;/code&gt; template.  When this happens, Zen Cart uses 
+the &lt;em&gt;default file&lt;/em&gt; instead.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Sometimes the default file is called the &lt;em&gt;base file&lt;/em&gt; or the &lt;em&gt;core file&lt;/em&gt; instead. These terms are all interchangeable.&lt;/p&gt;
+&lt;h3 id=&#34;default-files&#34;&gt;Default Files&lt;/h3&gt;
+&lt;p&gt;How do you find the default file?&lt;/p&gt;
+&lt;p&gt;There are two possibilities:&lt;/p&gt;
+&lt;p&gt;a) For files under &lt;code&gt;/includes/templates&lt;/code&gt;, the default file is &lt;code&gt;includes/templates/template_default/FOLDER/FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So the file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/templates/responsive_sheffield_blue/templates/tpl_product_info_display.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;is a template modification file based on&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/templates/template_default/templates/tpl_product_info_display.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is the &lt;a href=&#34;/user/template/template_default/&#34;&gt;default template&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) For all other files, the default file is one level above the template folder.&lt;/p&gt;
+&lt;p&gt;So the file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/modules/responsive_sheffield_blue/additional_images.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;is a template modification file based on&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/modules/additional_images.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Likewise, the file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/languages/responsive_classic/english.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;is a template modification of&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;includes/languages/english.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If a templated file doesn&amp;rsquo;t exist in your cart, you can 
+create it by simply copying the default file.  See the &lt;a href=&#34;/user/new_user_topics/no_such_file/&#34;&gt;I don&amp;rsquo;t have the file &amp;hellip;&lt;/a&gt; FAQ for more detail.&lt;/p&gt;
+&lt;p&gt;And remember: if you aren&amp;rsquo;t changing a file, there is &lt;em&gt;no need&lt;/em&gt; to copy it 
+from the default file - the default file will be used by Zen Cart
+automatically.  For this reason, you should expect your template to have
+many fewer files than the default template.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re ready, you can &lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;read more about overrides&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Deployment Configurations</title>
+      <link>/user/first_steps/deployment_configurations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/deployment_configurations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are different ways to install Zen Cart, depending on your needs. 
+Any of these are legitimate deployments.&lt;/p&gt;
+&lt;p&gt;Please be sure you&amp;rsquo;re familiar with &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms in Zen Cart&lt;/a&gt; prior to reading this FAQ.&lt;/p&gt;
+&lt;p&gt;For instructions on moving your cart from the root to a subfolder (or vice versa), see &lt;a href=&#34;/user/installing/move_cart/&#34;&gt;moving your Zen Cart folder&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For clarity, we will use the folder names &lt;code&gt;store&lt;/code&gt; for the cart in a subfolder, and &lt;code&gt;blog&lt;/code&gt; for the blog (or other web application) in a subfolder, although of course any other folder names could be used.&lt;/p&gt;
+&lt;h2 id=&#34;deployment-model-1-cart-in-root&#34;&gt;Deployment Model 1: Cart in root&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cart URL: https://www.YOURSTORE.com 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The configuration that is assumed throughout the Storeowner Docs is that you have installed Zen Cart in the root of your hosting account.&lt;/p&gt;
+&lt;p&gt;Your files would be under the &lt;code&gt;public_html&lt;/code&gt; folder in your hosting account.&lt;/p&gt;
+&lt;h2 id=&#34;deployment-model-2-cart-in-root-blog-in-subfolder&#34;&gt;Deployment Model 2: Cart in root, blog in subfolder&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cart URL: https://www.YOURSTORE.com 
+Blog URL: https://www.YOURSTORE.com/blog 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is very common for people who want the kind of additional content management capabilities offered by a blog (or other tool).&lt;/p&gt;
+&lt;p&gt;The cart is the same as the prior example.&lt;/p&gt;
+&lt;p&gt;The blog would be addressed by appending its folder name to the store URL.&lt;/p&gt;
+&lt;p&gt;This would also apply for a forum in a subfolder, CMS in a subfolder, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; Exercise caution when adding software to your Zen Cart installation.  See the &lt;a href=&#34;/user/running/blogging&#34;&gt;blogging FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;deployment-model-3-existing-website-in-root-cart-in-subfolder&#34;&gt;Deployment Model 3: Existing website in root, cart in subfolder&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Website URL: https://www.YOURSTORE.com/
+Cart URL: https://www.YOURSTORE.com/store  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you have an existing website, and you&amp;rsquo;d like to add ecommerce, you can put your store in a subfolder.&lt;/p&gt;
+&lt;p&gt;Your files would be under the &lt;code&gt;public_html/store&lt;/code&gt; folder in your hosting account.&lt;/p&gt;
+&lt;h2 id=&#34;deployment-model-4-empty-root-cart-in-subfolder&#34;&gt;Deployment Model 4: Empty root, cart in subfolder&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cart URL: https://www.YOURSTORE.com/store  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Even if you don&amp;rsquo;t have an existing website in the root folder, you can still place your cart in a subfolder.   The URL and file placement are like the previous case.  In this case, you&amp;rsquo;ll want an &lt;code&gt;.htaccess&lt;/code&gt; file to redirect anyone who comes to the root folder to the subdomain.&lt;/p&gt;
+&lt;p&gt;As an example, if your subfolder were called &lt;code&gt;store&lt;/code&gt;, you would do this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;RewriteEngine On
+RewriteRule ^index\.php$ /store/ [L]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;deployment-model-5-advanced-separate-subdirectories-for-different-versions&#34;&gt;Deployment Model 5: (Advanced) Separate subdirectories for different versions&lt;/h2&gt;
+&lt;p&gt;Technical staff with advanced server understanding may prefer to use version-numbered directories for their Zen Cart folder, and then redirect the site&amp;rsquo;s DocumentRoot setting to point to the versioned-subdirectory either by editing a vhost configuration or using a symlink. This can be convenient for staging upgrades that allow for near-zero downtime, and also very convenient downgrading if a problem were to occur. This is a strategy that should only be used by someone with advanced understanding of Zen Cart and how server vhost configurations and symlinks work.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Hosting and Domain concepts</title>
+      <link>/user/first_steps/hosting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/hosting/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;domains&#34;&gt;Domains&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;domain&lt;/strong&gt; is the mnemonic name of your website.  It provides an
+easy-to-remember address that is used in place of the IP Address where
+your website is hosted. Using the example 
+from &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt;, your domain would be 
+&lt;code&gt;JohnDoeTools.com&lt;/code&gt;.  Domain names are leased for a specific time 
+interval, generally between 1 and 5 years.  After this time, you 
+must renew your domain or it will go back on the market.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The domain name includes a TLD or &amp;ldquo;top-level-domain&amp;rdquo;.  The most common
+TLD in the United States in the commercial space is &lt;code&gt;.com&lt;/code&gt;, but many 
+other TLDs are available, including country specific TLDs (&lt;code&gt;.co.uk&lt;/code&gt; for the 
+United Kingdom, for example).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;strong&gt;domain registrar&lt;/strong&gt; keeps your domain.  Popular domain registrars 
+include GoDaddy, NameCheap, and Network Solutions.  Generally you 
+will buy your domain name&lt;/p&gt;
+&lt;p&gt;If a domain is &lt;em&gt;not&lt;/em&gt; owned by someone else, you may simply buy it 
+from a registrar for a small fixed fee.  Then you just have to renew it
+every so often, and it&amp;rsquo;s yours for the life of your business.&lt;/p&gt;
+&lt;p&gt;If a domain &lt;em&gt;is&lt;/em&gt; owned by a third party but not in use, they &lt;em&gt;may&lt;/em&gt; be willing to sell it to you
+(generally through an escrow agent like Sedo or Afternic), but
+it will be significantly more expensive.   Your best choice in a case like 
+this may be to go with a different TLD (&lt;code&gt;JohnDoeTools.net&lt;/code&gt;), 
+a different spelling of your name, perhaps adding hyphens or adding/removing
+a plural (&lt;code&gt;JohnDoe-Tools.com&lt;/code&gt;, &lt;code&gt;JohnDoeTooling.com&lt;/code&gt;), or a 
+different name entirely (&lt;code&gt;ToolsFromJohnDoe.com&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Registrar Transfer&lt;/strong&gt; is the process of moving your domain name
+from one registrar to another.&lt;/p&gt;
+&lt;p&gt;Contact information is used to confirm any requested changes to domain registration info, including change of registrar, and renewals.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re thinking of transferring your domain to a new Registrar, you need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unlock the domain to allow Domain Transfer&lt;/li&gt;
+&lt;li&gt;authorize the transfer by confirming the email sent to your domain&amp;rsquo;s Administrative Contact&lt;/li&gt;
+&lt;li&gt;pay the one-year-renewal fee (which buys you one more year after your current expiry date) to complete the transfer, based on the fee set by the registrar you&amp;rsquo;re transferring to.
+&lt;br /&gt;   &lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DNS&lt;/strong&gt; is a system of computers that maintain a directory of 
+domain name to IP Address mappings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;name-servers&#34;&gt;Name Servers&lt;/h3&gt;
+&lt;p&gt;A name server converts a name to an IP Address.  Your nameservers 
+(there are generally two) are values you specify in your 
+domain registration with your registrar, and they point (generally)
+to your hosting company.  As an example, the nameservers for 
+A2 Hosting&amp;rsquo;s shared accounts are called 
+&lt;code&gt;ns1.a2hosting.com&lt;/code&gt; and &lt;code&gt;ns2.a2hosting.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you decide to change hosting companies, you will have to update
+your name server settings at your domain registrar.  This change 
+will take some time to ripple through the system - the guidance is
+24 to 48 hours, but it often takes less.  Just be prepared for
+some downtime.&lt;/p&gt;
+&lt;h3 id=&#34;hosting-companies&#34;&gt;Hosting Companies&lt;/h3&gt;
+&lt;p&gt;Your hosting company (or &lt;em&gt;hoster&lt;/em&gt; or &lt;em&gt;website host&lt;/em&gt;) is the company that provides server space 
+for you to run your website.  You will pay monthly or annually 
+for this service.&lt;/p&gt;
+&lt;p&gt;Hosting accounts are offered in two flavors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Shared Hosting - You share server space with other accounts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Virtual Private Server (VPS) Hosting - You have your own isolated server space.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VPS is more expensive but more secure and provides greater flexibility.&lt;/p&gt;
+&lt;p&gt;Hosting accounts also offer different OS versions.  The
+Zen Cart project recommends Linux with Apache (or Linux with Nginx),
+but &lt;strong&gt;not&lt;/strong&gt; Windows with IIS.&lt;/p&gt;
+&lt;p&gt;Most users will want a hosting account that offers a Control Panel, such
+as cPanel.  The control panel gives you easy access to the underlying 
+operating system functionality.&lt;/p&gt;
+&lt;p&gt;The Zen Cart project recommends a number of hosting providers on 
+their &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Recommended Services&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t yet selected a hoster, please read &lt;a href=&#34;/user/installing/pick_hosting/&#34;&gt;picking a hoster&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;webserver&#34;&gt;Webserver&lt;/h3&gt;
+&lt;p&gt;The word &lt;em&gt;webserver&lt;/em&gt; (or &lt;em&gt;web server&lt;/em&gt;) can mean different things based on context. 
+Sometimes when people use this word, they mean the computer associated with your 
+hosting account that runs your website.  And sometimes, they mean the 
+piece of software that &lt;em&gt;runs&lt;/em&gt; on the computer associated with your 
+hosting account, which &lt;em&gt;serves&lt;/em&gt; up web pages.&lt;/p&gt;
+&lt;p&gt;Here, we are using the second meaning. 
+For programs like Zen Cart, running on commercial hosters, 
+there are three main options for webserver software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache (runs on Linux)&lt;/li&gt;
+&lt;li&gt;Nginx (runs on Linux)&lt;/li&gt;
+&lt;li&gt;IIS (runs on Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Zen Cart team recommends Apache or Nginx, &lt;strong&gt;not&lt;/strong&gt; IIS.&lt;/p&gt;
+&lt;h3 id=&#34;ftp&#34;&gt;FTP&lt;/h3&gt;
+&lt;p&gt;You will need to use an &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP Tool&lt;/a&gt;
+to transfer files between your computer and your server.&lt;br&gt;
+An example of transferring a file is provided in &lt;a href=&#34;/user/new_user_topics/no_such_file/#installing-a-file&#34;&gt;Installing a File&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;cron&#34;&gt;cron&lt;/h3&gt;
+&lt;p&gt;Cron is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the &lt;a href=&#34;/user/admin_pages/localization/currencies/#update-currencies&#34;&gt;exchange rate updater&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Facilities for setting up cron jobs vary; contact your hoster for details.&lt;/p&gt;
+&lt;h3 id=&#34;ssl-certificates&#34;&gt;SSL Certificates&lt;/h3&gt;
+&lt;p&gt;An SSL certificate allows your content to be securely accessed 
+using encryption.&lt;/p&gt;
+&lt;p&gt;When an SSL Certificate is purchased, it is issued to a particular domain name. Certificates are purchased in 1-year blocks. The certificate is installed on your Hosting Server and linked to your site so that your customers can shop with encryption protection when needed. Some hosting companies offer free SSL certificates with certain plans. Check the &lt;a href=&#34;https://www.zen-cart.com/content.php?3-services&#34;&gt;Recommended Services&lt;/a&gt; page to see which of our recommended hosts provides free SSL certificates.&lt;/p&gt;
+&lt;p&gt;SSL Certificates are an add-on to a hosting account, and are not directly tied to a hosting plan&amp;rsquo;s expiry dates, etc. However, since hosting plans are usually purchased first, and SSL certificates are issued a few days later, it is quite common for a hosting plan to expire a couple days before an SSL certificate expires.&lt;/p&gt;
+&lt;p&gt;Certificates cannot be directly transferred to another host due to the public/private key generation systems. This is primarily to protect you against theft of identity or the certificate. To move an existing certificate to another server requires that the Issuer (whoever you bought the certificate from originally) re-issue the certificate tied to the new private/public key of your new hosting server, sometimes for a nominal re-issuance fee. Thus, it&amp;rsquo;s simplest to issue certificates around the same time as switching hosting from one place to another.&lt;/p&gt;
+&lt;p&gt;Certificates can be issued for &lt;code&gt;www.&lt;/code&gt;, &lt;code&gt;non-www.&lt;/code&gt;, or wildcard. Some hosters recommend not using wildcard.&lt;/p&gt;
+&lt;p&gt;It is important to know which way your certificate is issued. Settings in the &lt;code&gt;configure.php&lt;/code&gt; files that address &lt;code&gt;https://&lt;/code&gt; need to match the form of your SSL to prevent possible log in problems. If your SSL is for &lt;code&gt;www.&lt;/code&gt;, then the settings should show &lt;code&gt;https://www.YOURSITE.com&lt;/code&gt;.  If &lt;code&gt;non-www.&lt;/code&gt;, the settings should show &lt;code&gt;https://YOURSITE.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For more information on SSL, see these articles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;What is an SSL certificate?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;How do I enable SSL?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Security</title>
+      <link>/user/first_steps/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/security/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;having-an-ssl-certificate&#34;&gt;Having an SSL certificate&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;You need an SSL certificate&lt;/a&gt;; 
+it&amp;rsquo;s part of running an online store. It doesn&amp;rsquo;t matter that you don&amp;rsquo;t do onsite credit card collection; you still need an SSL certificate.  Search engines will penalize you if you don&amp;rsquo;t have one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t let this be you!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/insecure_cart.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;secure-file-transfer&#34;&gt;Secure File Transfer&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Do not&lt;/strong&gt; use plain FTP to access your server&amp;rsquo;s files.&lt;/p&gt;
+&lt;p&gt;Although this was a common way to do it back in 2003, it is no longer a good practice, since it is not secure.&lt;/p&gt;
+&lt;p&gt;Some secure options are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FTPS&lt;/li&gt;
+&lt;li&gt;SFTP&lt;/li&gt;
+&lt;li&gt;Require explicit FTP over TLS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Availability of these specific options is hoster-dependent but at least one
+of them should be available.&lt;/p&gt;
+&lt;p&gt;If your hosting company does not offer some mechanism for secure file transfer, then they are most likely not PCI Compliant either, and you should be choosing a different hosting company who takes security seriously.&lt;/p&gt;
+&lt;h2 id=&#34;secure-access-to-your-admin&#34;&gt;Secure access to your Admin&lt;/h2&gt;
+&lt;p&gt;Be sure your &lt;code&gt;admin/includes/configure.php&lt;/code&gt; file has all URL settings using &lt;code&gt;https&lt;/code&gt;.  This includes &lt;code&gt;HTTP_SERVER&lt;/code&gt;, &lt;code&gt;HTTP_CATALOG_SERVER&lt;/code&gt; and &lt;code&gt;HTTPS_CATALOG_SERVER&lt;/code&gt;, and if it exists, &lt;code&gt;HTTPS_SERVER&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use an admin username other than &lt;code&gt;admin&lt;/code&gt; (or &lt;code&gt;nimda&lt;/code&gt;).  Make it hard to guess.&lt;/p&gt;
+&lt;h2 id=&#34;secure-cpanel-access&#34;&gt;Secure cPanel Access&lt;/h2&gt;
+&lt;p&gt;Just because you run an SSL on your site doesn&amp;rsquo;t mean your cPanel access is secure.  Look for the padlock in your browser&amp;rsquo;s address bar, and tell your hoster to fix it if it&amp;rsquo;s not there!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t let this be you!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/cpanel_insecure.png&#34; alt=&#34;Insecure cPanel&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;secure-passwords&#34;&gt;Secure Passwords&lt;/h2&gt;
+&lt;p&gt;Make hard to guess!  Passwords like &amp;ldquo;ABC123&amp;rdquo; or &amp;ldquo;P@ssw0rd&amp;rdquo; are &lt;em&gt;not hard enough to guess&lt;/em&gt;.  Bad guys will try weak passwords, and if you use one, will get access to your site.   Use a random combination of letters, numbers and symbols which is at least 8 characters long.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=aHaBH4LqGsI&#34;&gt;You Should Probably Change Your Password&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;But it&amp;rsquo;s hard to remember all these passwords!&amp;rdquo;  Yes, I know.  That&amp;rsquo;s why there are Password Managers.&lt;/p&gt;
+&lt;h2 id=&#34;use-a-password-manager&#34;&gt;Use a Password Manager&lt;/h2&gt;
+&lt;p&gt;Don&amp;rsquo;t rely on your memory or some Post-It notes for password storage.  Use a proper password manager, and use the password generation functions that it has to keep your passwords hard to guess.&lt;/p&gt;
+&lt;p&gt;There are many password managers on the market, and many have free tiers; here are a few:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lastpass.com/&#34;&gt;LastPass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dashlane.com&#34;&gt;Dashlane&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;use-different-passwords-for-each-site&#34;&gt;Use different passwords for each site&lt;/h2&gt;
+&lt;p&gt;Don&amp;rsquo;t reuse passwords! Now that you have a password manager, allow it to generate and store your passwords so that each one can be unique and hard to guess.&lt;/p&gt;
+&lt;h2 id=&#34;transfer-passwords-securely&#34;&gt;Transfer passwords securely&lt;/h2&gt;
+&lt;p&gt;Do not put passwords in an email.  This is not a secure practice.  If you have to send a password to a developer or co-worker, use a more secure means of transmission:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Over the telephone using the &lt;a href=&#34;https://en.wikipedia.org/wiki/NATO_phonetic_alphabet&#34;&gt;phonetic alphabet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Over SMS&lt;/li&gt;
+&lt;li&gt;One time link generators like &lt;a href=&#34;https://privnote.com&#34;&gt;privnote.com&lt;/a&gt; or &lt;a href=&#34;https://noteshred.com&#34;&gt;noteshred.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Your own password manager&amp;rsquo;s sharing facility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;scan-your-own-computer-regularly&#34;&gt;Scan your own computer regularly&lt;/h2&gt;
+&lt;p&gt;Your own computer is also a potential target for bad guys, and if it gets infected, your website will too.  Use anti-virus / anti-malware software and scan regularly.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Store Setup Checklist</title>
+      <link>/user/first_steps/basic_checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/basic_checklist/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;After &lt;a href=&#34;/user/first_steps/how_do_i_install/&#34;&gt;installation&lt;/a&gt;, you&amp;rsquo;ll want to address several things to get your basic shop operational. One suggested order of operations is the following:&lt;/p&gt;
+&lt;h3 id=&#34;language-file-setup&#34;&gt;Language File setup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;When English is not your preferred language, you should download, install and setup
+a language pack for 
+your preferred language from the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=6&#34;&gt;Zen Cart Downloads&lt;/a&gt;. More details are in the help page for 
+&lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Admin &amp;gt; Localization &amp;gt; Languages&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;checklist&#34;&gt;Checklist&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis of Product Tax - choose what level tax is calculated at.&lt;/li&gt;
+&lt;li&gt;Basis of Shipping Tax - choose what level tax is calculated at for shipping.&lt;/li&gt;
+&lt;li&gt;HTML Editor - select your editor for product descriptions and emails/newsletters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;Admin - Configuration - E-Mail Options&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to send HTML-based emails, turn on Use MIME HTML When Sending Emails&lt;/li&gt;
+&lt;li&gt;Set the format of emails for &lt;em&gt;Admin&lt;/em&gt; to receive in Email Admin Format&lt;/li&gt;
+&lt;li&gt;Set the email address and status for all extra emails. These are copies sent to the &lt;em&gt;Admin&lt;/em&gt; when various messages are sent to the customer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_images/&#34;&gt;Admin - Configuration - Images&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify that the image sizes are acceptable for your setup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_gzipcompression/&#34;&gt;Admin - Configuration - GZip Compression&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable GZip Compression if your server supports it. This makes page display much faster in most cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Admin - Configuration - Customer Details&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose whether various components are displayed/requested or not.&lt;/li&gt;
+&lt;li&gt;If you require authorization for customers to access your store, choose those settings here as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_creditcards/&#34;&gt;Admin - Configuration - Credit Cards&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose which cards to enable acceptance for. This does &lt;em&gt;not&lt;/em&gt; turn on payment processing, it&amp;rsquo;s just a check for later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/modules/payment/&#34;&gt;Admin - Modules - Payment&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select and configure any desired payment methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Admin - Configuration - Shipping/Packaging&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify the Country of Origin.&lt;/li&gt;
+&lt;li&gt;Set the Postal/ZIP Code (if you don&amp;rsquo;t, your shipping quotes won&amp;rsquo;t work).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin - Modules - Shipping&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select and configure any desired shipping providers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/locations/zones_definitions/&#34;&gt;Admin - Locations/Taxes - Zones Definitions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Insert applicable tax zones for the regions in which you must collect tax.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/locations/tax_classes/&#34;&gt;Admin - Locations/Taxes - Tax Classes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create classes for the varying tax combinations you must assign to a product. In most cases, you only require one category.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/locations/tax_rates/&#34;&gt;Admin - Locations/Taxes - Tax Rates&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Link tax classes and zones and enter the tax rate for those combinations here.&lt;/li&gt;
+&lt;li&gt;If you only charge tax in one zone, and most of your products are taxable, consider &lt;a href=&#34;/user/taxes/default_tax_class/&#34;&gt;setting a default tax class&lt;/a&gt; for new products.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/localization/currencies/&#34;&gt;Admin - Localization - Currencies&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configure the various currencies your shop will accept/process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;Admin - Localization - Languages&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up the languages you wish to support in your shop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/catalog/manufacturers/&#34;&gt;Admin - Catalog - Manufacturers&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter the manufacturers that your products will be linked to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;categories--products&#34;&gt;Categories &amp;amp; Products&lt;/h3&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve done basic setup, you can enter your categories and products.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/user/admin_pages/catalog/categories_products/&#34;&gt;Admin - Catalog - Categories/Products&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new categories to hold your products - see &lt;a href=&#34;/user/products/category_management_admin/&#34;&gt;category management in admin&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add new products within relevant categories - see &lt;a href=&#34;/user/products/product_management_admin/&#34;&gt;product management in admin&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you have multiple languages defined, you&amp;rsquo;ll be able to enter product and category names and descriptions in each of your languages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add images, click on the &lt;em&gt;Browse&lt;/em&gt; button beside the category/product image field, and select the file on your computer. Then choose the &lt;em&gt;upload to directory&lt;/em&gt; folder to store the image in on your server. If the folder you wish to use isn&amp;rsquo;t there, you&amp;rsquo;ll need to go and create it with your &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;documenting-your-policies&#34;&gt;Documenting your Policies&lt;/h3&gt;
+&lt;p&gt;The key business policies you will need to document have pages set up for you by default; all you need to do is fill them in.  Go to Admin &amp;gt; Tools &amp;gt; Define Pages Editor and flush out these files:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;define_conditions.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;your store&amp;rsquo;s terms and conditions&lt;/td&gt;
+&lt;td&gt;index.php?main_page=conditions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;define_privacy.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;your store&amp;rsquo;s privacy policy&lt;/td&gt;
+&lt;td&gt;index.php?main_page=privacy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;define_shippinginfo.php&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;your store&amp;rsquo;s shipping and returns policy&lt;/td&gt;
+&lt;td&gt;index.php?main_page=shippinginfo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Terms and Definitions</title>
+      <link>/user/first_steps/basic_terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/basic_terms/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page explains some terms you will see throughout the documentation site
+that are used as variables to represent site specific path information.&lt;/p&gt;
+&lt;p&gt;You may also wish to browse the &lt;a href=&#34;/user/first_steps/glossary/&#34;&gt;glossary&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;yoursite&#34;&gt;YOURSITE&lt;/h3&gt;
+&lt;p&gt;The variable &lt;code&gt;YOURSITE&lt;/code&gt; is used to to represent your domain name, and thus
+to show the path to access your site over the web.  If your site is 
+called &amp;ldquo;John Doe Tools&amp;rdquo; and your domain is &amp;ldquo;JohnDoeTools.com&amp;rdquo;, then 
+&lt;code&gt;http://www.YOURSITE.com&lt;/code&gt; really means &lt;code&gt;http://www.JohnDoeTools.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  If you wish, you may install your Zen Cart in a subfolder under your &lt;code&gt;public_html&lt;/code&gt; folder. For example, the site above could be stored in 
+&lt;code&gt;/home/johndoe/public_html/shop/&lt;/code&gt;, which would make the URL 
+&lt;code&gt;http://www.JohnDoeTools.com/shop&lt;/code&gt;.  See &lt;a href=&#34;/user/first_steps/deployment_configurations&#34;&gt;deployment configurations&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, for the sake of simplicity, the explanations on this site assume you did not do this.  Don&amp;rsquo;t get hung up on the fact that an article will say 
+&lt;code&gt;http://www.YOURSITE.com&lt;/code&gt; rather than &lt;code&gt;http://www.YOURSITE.com/YOURSUBFOLDER/&lt;/code&gt;  - 
+it was a decision made for simplicity and consistency.  If your site is 
+in a subfolder, just add on the &lt;code&gt;/YOURSUBFOLDER/&lt;/code&gt; wherever it is needed as you are reading.&lt;/p&gt;
+&lt;p&gt;Common values for &lt;code&gt;YOURSUBFOLDER&lt;/code&gt; are &lt;code&gt;site&lt;/code&gt;, &lt;code&gt;shop&lt;/code&gt;, &lt;code&gt;cart&lt;/code&gt; or &lt;code&gt;store&lt;/code&gt;. 
+Using a subfolder is especially appropriate if you have a large, built-out
+website, and Zen Cart is being used to add-on ecommerce functionality 
+(rather than to provide your entire website).&lt;/p&gt;
+&lt;h3 id=&#34;yourtemplate&#34;&gt;YOURTEMPLATE&lt;/h3&gt;
+&lt;p&gt;To allow you to customize the appearance of your site, Zen Cart has a 
+templating capability.  Names of templates vary, so they are 
+referred to in this document with the variable &lt;code&gt;YOURTEMPLATE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So if your template is &lt;code&gt;responsive_sheffield_blue&lt;/code&gt;, then when you read 
+&lt;code&gt;YOURTEMPLATE&lt;/code&gt;, just think &lt;code&gt;responsive_sheffield_blue&lt;/code&gt;.  So the folder&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/YOURTEMPLATE/templates/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would be&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/templates/responsive_sheffield_blue/templates/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;in your cart.&lt;/p&gt;
+&lt;p&gt;You will see lots of different variables used in place of &lt;code&gt;YOURTEMPLATE&lt;/code&gt; - 
+we have just chosen this for consistency.  Some people will instead call 
+this &lt;code&gt;YOUR_TEMPLATE&lt;/code&gt;, or &lt;code&gt;custom&lt;/code&gt; or &lt;code&gt;YOUR_CUSTOM_TEMPLATE&lt;/code&gt; - but it&amp;rsquo;s all
+the same thing, just the name of your template.&lt;/p&gt;
+&lt;h3 id=&#34;yourlanguage&#34;&gt;YOURLANGUAGE&lt;/h3&gt;
+&lt;p&gt;If an article has multilanguage dimensions, the variable &lt;code&gt;YOURLANGUAGE&lt;/code&gt; 
+will be used to refer to language specific folders.&lt;/p&gt;
+&lt;p&gt;For English language only stores, the path&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/includes/languages/YOURLANGUAGE/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;is just&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/includes/languages/english/&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;youraccount&#34;&gt;YOURACCOUNT&lt;/h3&gt;
+&lt;p&gt;The variable &lt;code&gt;YOURACCOUNT&lt;/code&gt; is used to refer to the name of your hosting company
+gives to your account.  For cPanel users, this will often be your login username and the name of the folder where your webroot resides.&lt;/p&gt;
+&lt;h3 id=&#34;youraccountfolder&#34;&gt;YOURACCOUNTFOLDER&lt;/h3&gt;
+&lt;p&gt;The variable &lt;code&gt;YOURACCOUNTFOLDER&lt;/code&gt; is used to refer to the folder in your hosting 
+account which holds your site&amp;rsquo;s files.  A very common setup is the following,
+assuming the value of &lt;code&gt;YOURACCOUNT&lt;/code&gt; is &lt;code&gt;johndoe&lt;/code&gt; (i.e. that your account name is &lt;code&gt;johndoe&lt;/code&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/home/johndoe/&lt;/code&gt; - the top level directory you can access using FTP.  Putting files here will mean they are out of reach of a web browser, which can be useful for security;  see &lt;a href=&#34;/user/security/relocate_download_folder/&#34;&gt;relocating your download folder&lt;/a&gt; for an example.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/home/johndoe/public_html/&lt;/code&gt; - the top level directory your webserver 
+can access (your webroot).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Everything will be under &lt;code&gt;YOURACCOUNTFOLDER&lt;/code&gt; when you view files, either in an &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; or in your cPanel&amp;rsquo;s File Manager.&lt;/p&gt;
+&lt;p&gt;Once you are familiar with these basic terms, you should learn about 
+&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;overrides&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - URLs</title>
+      <link>/user/first_steps/urls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/urls/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some commonly referenced pages and their URLs are shown in this table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;About Us&lt;/td&gt;
+&lt;td&gt;index.php?main_page=about_us&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Advanced Search&lt;/td&gt;
+&lt;td&gt;index.php?main_page=advanced_search&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;All Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conditions of Use&lt;/td&gt;
+&lt;td&gt;index.php?main_page=conditions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Contact Us&lt;/td&gt;
+&lt;td&gt;index.php?main_page=contact_us&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Featured Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=featured&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;New Products&lt;/td&gt;
+&lt;td&gt;index.php?main_page=products_new&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Privacy&lt;/td&gt;
+&lt;td&gt;index.php?main_page=privacy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reviews&lt;/td&gt;
+&lt;td&gt;index.php?main_page=reviews&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping&lt;/td&gt;
+&lt;td&gt;index.php?main_page=shippinginfo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shopping Cart&lt;/td&gt;
+&lt;td&gt;index.php?main_page=shopping_cart&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Specials&lt;/td&gt;
+&lt;td&gt;index.php?main_page=specials&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Some pages cannot be accessed unless a visitor is logged in.
+These are the pages in the checkout flow.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Shipping&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_shipping&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Payment&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_payment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Confirmation&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_confirmation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checkout Success&lt;/td&gt;
+&lt;td&gt;index.php?main_page=checkout_success&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Other pages which cannot be accessed unless a customer is logged in pertain to 
+account management:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Page&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Account&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account Edit&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_edit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Account History&lt;/td&gt;
+&lt;td&gt;index.php?main_page=account_history&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+Product and Category URLs have additional parameters.  The URL for product 27, which is in category 5 under category 1 would be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;cPath=1_5&amp;amp;products_id=27
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;products_id=27
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The URL for category 5 would be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=index&amp;amp;cPath=1_5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If the setting &lt;a href=&#34;/user/admin_pages/configuration/configuration_layoutsettings/#skip_1prod_categories&#34;&gt;Skip 1-prod Categories&lt;/a&gt; is True, and there was only one product in category 5, this page would be skipped and the product info page would be shown directly.&lt;/p&gt;
+&lt;p&gt;For a more complete list of pages, see &lt;a href=&#34;/user/storefront_pages/complete_list/&#34;&gt;storefront pages - complete list&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Basics - Useful Tools</title>
+      <link>/user/first_steps/useful_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/useful_tools/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Descriptions of these tools can be found at the individual web sites&lt;/p&gt;
+&lt;h2 id=&#34;php-html-and-text-editors&#34;&gt;PHP, HTML and Text Editors&lt;/h2&gt;
+&lt;p&gt;You need a plain text editor to modify the Zen Cart files.  You cannot use MS Word or other document editors. 
+Here are some options.&lt;/p&gt;
+&lt;h3 id=&#34;freeware&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sublimetext.com&#34;&gt;Sublime Text&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com&#34;&gt;VS Code&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notepad-plus-plus.org&#34;&gt;Notepad++&lt;/a&gt; (Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commercial&#34;&gt;Commercial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sublimetext.com&#34;&gt;Sublime Text&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/phpstorm/&#34;&gt;PhpStorm&lt;/a&gt; (Windows, Mac, Linux) &lt;strong&gt;Full-featured IDE&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ultraedit.com/&#34;&gt;UltraEdit&lt;/a&gt; (Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hash-validation-tools&#34;&gt;Hash Validation Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://implbits.com/products/hashtab/&#34;&gt;HashTab&lt;/a&gt; - Windows tool for validating MD5/SHA1 hashes of downloaded files&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.microsoft.com/kb/889768&#34;&gt;Microsoft checksum tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-ca/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.1&#34;&gt;Get-FileHash checksum tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;text-search-tools&#34;&gt;Text-Search Tools&lt;/h2&gt;
+&lt;p&gt;Text search tools are useful for finding the locations of strings you want to change.&lt;/p&gt;
+&lt;h3 id=&#34;freeware-1&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The Developers Toolkit in your Zen Cart Admin&lt;/li&gt;
+&lt;li&gt;Any of the PHP and Text Editors mentioned above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;imagegraphic-editors&#34;&gt;Image/Graphic Editors&lt;/h2&gt;
+&lt;h3 id=&#34;freeware-2&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gimp.org/&#34;&gt;GIMP&lt;/a&gt; (Win/Mac/Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.irfanview.com/&#34;&gt;IrfanView&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;online-image-editors&#34;&gt;Online Image Editors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://start.glorifyapp.com&#34;&gt;GlorifyApp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://create.vista.com/&#34;&gt;VistaCreate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getstencil.com/&#34;&gt;Stencil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://canva.com&#34;&gt;Canva&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;file-comparison-utility&#34;&gt;File Comparison Utility&lt;/h2&gt;
+&lt;p&gt;File comparison tools allow you to compare older versions of Zen Cart with newer versions, 
+or compare a vanilla copy of a file with a copy from a modification or plugin.&lt;/p&gt;
+&lt;h3 id=&#34;freeware-3&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://winmerge.org/&#34;&gt;WinMerge&lt;/a&gt; (Windows) ** Offers 3-way comparisons! **&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kdiff3.sourceforge.net/&#34;&gt;Kdiff3&lt;/a&gt; (Unix, Windows, Mac)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commercial-1&#34;&gt;Commercial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.araxis.com/merge-overview.html&#34;&gt;Araxis Merge&lt;/a&gt; (Windows, Mac) ** Offers 3-way comparisons **&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.scootersoftware.com/features.php&#34;&gt;Beyond Compare&lt;/a&gt; (Windows and Mac and Linux) ** Offers 3-way comparisons! **&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ftp-tools&#34;&gt;FTP Tools&lt;/h2&gt;
+&lt;p&gt;FTP stands for &amp;ldquo;File Transfer Protocol.&amp;rdquo;  You use FTP to connect to your hoster and upload files to your cart. 
+An example of transferring a file is provided in &lt;a href=&#34;/user/new_user_topics/no_such_file/#installing-a-file&#34;&gt;Installing a File&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that whatever tool you select &lt;strong&gt;must have&lt;/strong&gt; the ability to do &lt;a href=&#34;/user/first_steps/security/#secure-file-transfer&#34;&gt;secure file transfer&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;freeware-4&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://winscp.net/&#34;&gt;WinSCP&lt;/a&gt; A great Windows-based secure-FTP program. &lt;strong&gt;RECOMMENDED&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://filezilla-project.org/&#34;&gt;FileZilla&lt;/a&gt; (Windows, Mac, Linux) &lt;br&gt;
+&lt;strong&gt;NOTE:&lt;/strong&gt; download from the official &lt;a href=&#34;https://filezilla-project.org&#34;&gt;https://filezilla-project.org&lt;/a&gt; link only.&lt;br&gt;
+&lt;strong&gt;NOTE:&lt;/strong&gt; do not store passwords in Filezilla; type them in each time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cyberduck.io&#34;&gt;CyberDuck FTP&lt;/a&gt; (Windows, Mac)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commercial-2&#34;&gt;Commercial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.panic.com/transmit/&#34;&gt;Transmit&lt;/a&gt; (Mac)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.binarynights.com/&#34;&gt;Forklift&lt;/a&gt; (Mac)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;file-archiverzipunzip-utility&#34;&gt;File Archiver/Zip/Unzip Utility&lt;/h2&gt;
+&lt;p&gt;The Zen Cart code and plugins come in &lt;code&gt;.zip&lt;/code&gt; format, so you need a way to handle files like this.&lt;/p&gt;
+&lt;h3 id=&#34;freeware-5&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.7-zip.org/&#34;&gt;7-Zip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commercial-3&#34;&gt;Commercial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://macitbetter.com&#34;&gt;BetterZip&lt;/a&gt; (Mac)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rarlab.com/&#34;&gt;WinRAR&lt;/a&gt; (Windows)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.winzip.com/&#34;&gt;WinZip&lt;/a&gt; (Windows, Mac)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;webpage-validators&#34;&gt;Webpage Validators&lt;/h2&gt;
+&lt;h3 id=&#34;freeware-6&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jigsaw.w3.org/css-validator/&#34;&gt;CSS Validation Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://validator.w3.org/&#34;&gt;W3C Markup Validation Service&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;database-manipulation-tools&#34;&gt;Database Manipulation Tools&lt;/h2&gt;
+&lt;h3 id=&#34;freeware-7&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.phpMyAdmin.net&#34;&gt;phpMyAdmin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tableplus.com/&#34;&gt;TablePlus&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/webyog/sqlyog-community/wiki/Downloads&#34;&gt;SQLyog CE&lt;/a&gt; (Windows)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/downloads/workbench/&#34;&gt;MySQL Workbench&lt;/a&gt; Free tool for analyzing MySQL database queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commercial-4&#34;&gt;Commercial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://navicat.com&#34;&gt;Navicat&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.webyog.com/product/sqlyog&#34;&gt;SQLyog&lt;/a&gt; (Windows)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.araelium.com/querious/&#34;&gt;Querious&lt;/a&gt; (Mac)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/datagrip/&#34;&gt;JetBrains DataGrip&lt;/a&gt; (Windows, Mac, Linux) (part of phpStorm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;local-web-server-for-development-environment&#34;&gt;Local Web Server for Development Environment&lt;/h2&gt;
+&lt;h3 id=&#34;freeware-8&#34;&gt;Freeware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.apachefriends.org/&#34;&gt;XAMPP&lt;/a&gt; (Windows, Mac, Linux)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mamp.info/&#34;&gt;MAMP&lt;/a&gt; (Windows, Mac)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://laravel.com/docs/master/valet&#34;&gt;Valet&lt;/a&gt; (Mac)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Categories and Products - Adding them to your store</title>
+      <link>/user/first_steps/products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/products/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before you begin populating your store there is one restriction in Zen Cart which you must be aware of: only products &lt;em&gt;or&lt;/em&gt; categories may exist at any specific level.  This means that you will almost certainly want the top level of your store to be categories.  From there, you can create whatever hierarchy you want of products and categories.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/products/add_delete_categories/&#34;&gt;How to add or delete categories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/products/add_delete/&#34;&gt;How to add or delete products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/products/easypopulate/&#34;&gt;EasyPopulate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Databases</title>
+      <link>/user/first_steps/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/database/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are completely new to databases, please review the &lt;a href=&#34;/user/first_steps/components/&#34;&gt;basics of Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;where-do-i-find-the-database-files&#34;&gt;Where do I find the database files?&lt;/h2&gt;
+&lt;p&gt;A database is not stored in any files that are directly accessible to you as a storeowner. Instead, you access it via phpMyAdmin or similar tools, and query (request) data from the database according to what you wish to read from it.  In the case of taking a 
+&lt;a href=&#34;/user/running/backup/&#34;&gt;backup&lt;/a&gt;. 
+you&amp;rsquo;re exporting the entire database content into one great big file that can be used for offline storage, or restoring if needed. That&amp;rsquo;s the only way &lt;em&gt;you&lt;/em&gt; will ever see the database as &amp;ldquo;a file&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;how-are-databases-connected-to-zen-cart&#34;&gt;How are databases connected to Zen Cart?&lt;/h2&gt;
+&lt;p&gt;When installing Zen Cart, you tell Zen Cart which database to store its data in. Those details are stored in the configure.php files (usually by zc_install when you&amp;rsquo;re installing the site for the first time).&lt;/p&gt;
+&lt;h2 id=&#34;how-many-databases-does-zen-cart-use&#34;&gt;How many databases does Zen Cart use?&lt;/h2&gt;
+&lt;p&gt;Generally speaking, a Zen Cart store only uses &lt;strong&gt;one&lt;/strong&gt; database at a time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THIS MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store&amp;rsquo;s database unless you&amp;rsquo;re absolutely certain that you wish to WIPE OUT the existing data!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-permissions-does-a-database-need&#34;&gt;What permissions does a database need?&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href=&#34;/user/first_steps/how_do_i_install/#5-have-you-created-a-database&#34;&gt;Installation docs&lt;/a&gt; for database creation and permissions details.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-prefixes&#34;&gt;What are prefixes?&lt;/h2&gt;
+&lt;p&gt;Zen Cart supports the use of &amp;ldquo;table prefixes&amp;rdquo; to differentiate between its own tables and the tables used by other web applications sharing the database. It identifies the tables which it uses &lt;em&gt;within&lt;/em&gt; that database by the &lt;code&gt;DB_PREFIX&lt;/code&gt; setting in your configure.php file.  Prefixes often have the value &lt;code&gt;zen_&lt;/code&gt; or &lt;code&gt;zc_&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using prefixes is no longer a recommended practice; simply create one database for your Zen Cart store, and only use that database for that store.&lt;/p&gt;
+&lt;p&gt;Prefixes are sometimes used by Zen Cart auto-installers, which are also &lt;strong&gt;not recommended&lt;/strong&gt;.  See &lt;a href=&#34;/user/first_steps/how_do_i_install/&#34;&gt;how do I install&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2 id=&#34;how-many-tables-are-in-the-zen-cart-database&#34;&gt;How many tables are in the Zen Cart database?&lt;/h2&gt;
+&lt;p&gt;As of version 1.5.7, there are 94 tables in the Zen Cart database. 
+You can see a list of them by looking at the file &lt;code&gt;includes/database_tables.php&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-the-schema-for-zen-cart&#34;&gt;What is the schema for Zen Cart?&lt;/h2&gt;
+&lt;p&gt;Recent releases have a schema file stored in the documentation.  Go to the &lt;a href=&#34;/dev/schema/&#34;&gt;Zen Cart Schema page&lt;/a&gt; to find the version which corresponds to your Zen Cart version.   If you&amp;rsquo;re not sure what version you are running, take a look at the FAQ &lt;a href=&#34;/user/first_steps/version/&#34;&gt;how to find your Zen Cart version&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Demo Data</title>
+      <link>/user/first_steps/demo_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/demo_data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When you install Zen Cart, one of the prompts asks if you wish to install 
+the demo data.  Doing so is an excellent way to see a store which is fully set up, allowing you to explore the features of Zen Cart.&lt;/p&gt;
+&lt;p&gt;Here are some common scenarios which are shown in the demo data.  To view a particular product using its id, use the URL&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;products_id=YOURPRODUCTID
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, &lt;code&gt;product 123&lt;/code&gt; would mean the URL above would be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;index.php?main_page=product_info&amp;amp;products_id=123
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;attribute with weight - product 34 has radio buttons that increase the product&amp;rsquo;s weight&lt;/li&gt;
+&lt;li&gt;attribute with price - product 1 has two dropdown attributes that increase the product&amp;rsquo;s price; product 34 has radio buttons that increase the product&amp;rsquo;s price.&lt;/li&gt;
+&lt;li&gt;attribute quantity discount - product 159 demonstrates this feature.&lt;/li&gt;
+&lt;li&gt;call for price - products 40, 41 and 174 demonstrate the use of the &lt;code&gt;call for price&lt;/code&gt; setting.&lt;/li&gt;
+&lt;li&gt;color swatches -  product 54 shows the use of color samples on a product.  Note that product 44 also offers multiple colors but does not show swatches.&lt;/li&gt;
+&lt;li&gt;combo product - product 173 may be purchased as a downloaded or a shipped physical product.&lt;/li&gt;
+&lt;li&gt;customer uploads - product 34 has attributes called &amp;ldquo;Logo Front&amp;rdquo; and &amp;ldquo;Logo Back&amp;rdquo; which are images the customer would upload.&lt;/li&gt;
+&lt;li&gt;document products - products 170 is a document which is not for sale; product 171 is a document which is for sale.&lt;/li&gt;
+&lt;li&gt;downloads - product 166 has a downloadable attribute to show how to attach a digital media file to a product; product 180 shows a PDF file being attached to a product.&lt;/li&gt;
+&lt;li&gt;downloads, multiple - product 133 has multiple downloads.&lt;/li&gt;
+&lt;li&gt;dropdown attributes - product 1 has dropdown attributes.&lt;/li&gt;
+&lt;li&gt;free products - products 39, 57, 42 and 43 show how to create a free product.&lt;/li&gt;
+&lt;li&gt;free shipping - products 51, 52, 99, 107 demonstrate this feature.&lt;/li&gt;
+&lt;li&gt;gift certificates - product 28-32 and 47 demonstrate this feature.&lt;/li&gt;
+&lt;li&gt;pricing by attributes - product 47 shows how to modify the price according to which radio button is selected.  (Note that &lt;code&gt;priced by attributes&lt;/code&gt; differs from &lt;code&gt;attributes with prices&lt;/code&gt; see &lt;a href=&#34;/user/products/attribute_pricing/&#34;&gt;attribute pricing&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;pricing by length - products 154 and 165 are sold by length.&lt;/li&gt;
+&lt;li&gt;pricing by letter - product 134 has per letter pricing.&lt;/li&gt;
+&lt;li&gt;pricing by word - product 131 has per word pricing.&lt;/li&gt;
+&lt;li&gt;quantity discounts - products 127 and 176 demonstrate this feature.&lt;/li&gt;
+&lt;li&gt;quantity limits - products 105 and 106 have maximum purchase quantities; products 53-56 have other quantity restrictions.&lt;/li&gt;
+&lt;li&gt;sales - search for &amp;ldquo;Sale&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;specials - search for &amp;ldquo;Special&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Demonstrations of many other features can be found simply by searching for the feature name.&lt;/p&gt;
+&lt;h3 id=&#34;demo-images&#34;&gt;Demo Images&lt;/h3&gt;
+&lt;p&gt;After Zen Cart 1.5.8, the demo images are not deployed by default.&lt;/p&gt;
+&lt;p&gt;If you wish to use the demo images to make the demo data look more realistic, they may be obtained from the &lt;code&gt;zc_install/demo_images&lt;/code&gt; folder, i.e.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd images
+unzip ../zc_install/demo_images/images.zip
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Documentation</title>
+      <link>/user/first_steps/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/documentation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There&amp;rsquo;s no question about it - your first view of the admin is daunting. So many menus!  What are all these settings!  It can be overwhelming.&lt;/p&gt;
+&lt;p&gt;Rather than try to understand it all at once, a better discovery strategy is to focus on the changes you want, and how to implement them.  Use the documentation as your guide.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt; The main page shows a box with the title &amp;ldquo;New Products For &lt;em&gt;current-month&lt;/em&gt;.&amp;rdquo; How do I get rid of that?&lt;/p&gt;
+&lt;p&gt;Quite often there&amp;rsquo;s a configuration switch that allows you to make this change without needing to modify any code.  Let&amp;rsquo;s see if that holds true in this case.&lt;/p&gt;
+&lt;p&gt;There is an &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configs&lt;/a&gt; link shown at the top of the &lt;a href=&#34;/user/&#34;&gt;storeowner documentation page&lt;/a&gt;.  It shows all the configuration values which can be set under &lt;code&gt;Admin &amp;gt; Configuration&lt;/code&gt;.  Click this link, and then search on the page it opens for &amp;ldquo;New Products&amp;rdquo; and you&amp;rsquo;ll find a setting that looks like this:&lt;/p&gt;
+&lt;div style=&#34;margin-left: 20px;&#34;&gt; 
+&lt;div style=&#34;font-size: 2rem; font-weight:500; line-height:1.2; margin-bottom:10px;&#34;&gt;Show New Products on Main Page&lt;/div&gt;
+&lt;div class=&#39;indent&#39;&gt;Key: &lt;b&gt;SHOW_PRODUCT_INFO_MAIN_NEW_PRODUCTS&lt;/b&gt;&lt;br /&gt;
+Path: &lt;b&gt;Configuration &gt; Index Listing&lt;/b&gt;&lt;br /&gt;
+Description: Show New Products on Main Page&lt;br /&gt;0= off or set the sort order&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;So this means that in order to turn the display of new products on the main page off, you must go to the &lt;code&gt;Configuration &amp;gt; Index Listing&lt;/code&gt;.  In your admin, go to that page.  Find &amp;ldquo;Show New Products on Main Page&amp;rdquo;, and edit this value, setting it to 0.&lt;/p&gt;
+&lt;p&gt;If you now refresh your Storefront page, you&amp;rsquo;ll see the new products are no longer shown.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt; Where do I find the list of supported languages?&lt;/p&gt;
+&lt;p&gt;Sometimes you&amp;rsquo;re not sure where to look for something in your admin.
+There is a list of &lt;a href=&#34;/user/admin_pages/menu_sections/&#34;&gt;All Admin Menus&lt;/a&gt; shown at the top of the &lt;a href=&#34;/user/&#34;&gt;storeowner documentation page&lt;/a&gt;.  Click on that link, and then search for &amp;ldquo;Languages&amp;rdquo; - you&amp;rsquo;ll see there&amp;rsquo;s a menu item &lt;code&gt;Localization &amp;gt; Languages&lt;/code&gt;.  If you click the link provided in the All Admin Menus, you&amp;rsquo;ll see the &lt;a href=&#34;/user/admin_pages/localization/languages/&#34;&gt;help for the Localization &amp;gt; Languages page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt; How do I show some items on an empty shopping cart page?&lt;/p&gt;
+&lt;p&gt;If your empty shopping cart page just shows the message, &amp;ldquo;Your Shopping Cart is empty,&amp;rdquo; you have the option of adding more content to the page.&lt;/p&gt;
+&lt;p&gt;Go to the list of &lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configuration Values&lt;/a&gt;, and search for &amp;ldquo;empty&amp;rdquo;.  You&amp;rsquo;ll come to a set of four configuration values, starting with &amp;ldquo;Show New Products on empty Shopping Cart Page.&amp;rdquo;  These configs allow you to show New Products, Featured Products, Specials or Upcoming Products when the shopping cart is empty.  And you can do this all from your admin without needing to change a line of code.&lt;/p&gt;
+&lt;h3 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h3&gt;
+&lt;p&gt;Explore these pages and investigate a topic that is of interest to you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/all/&#34;&gt;All Configuration Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/menu_sections/&#34;&gt;All Admin Menus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/all_time_favorites/&#34;&gt;Top FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/learning_trails/&#34;&gt;Learning Trails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Downloading Zen Cart</title>
+      <link>/user/first_steps/get_zen_cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/get_zen_cart/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;current-version&#34;&gt;Current Version&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;Click here to download the latest Zen Cart software&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;older-versions&#34;&gt;Older Versions&lt;/h3&gt;
+&lt;p&gt;SourceForge retains an archive of &lt;a href=&#34;https://sourceforge.net/projects/zencart/files/&#34;&gt;older versions of Zen Cart&lt;/a&gt;.  Note that depending on the age of the desired version, you may have to navigate to the older files using the menus provided.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Glossary</title>
+      <link>/user/first_steps/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/glossary/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Note: If a term is not in this list, use a web search to learn more about it.  This list is intended to be specific to Zen Cart, with only a minimal number of additional generic terms.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AOSC - Attestation of Scan Compliance; a document provided by an ASV that your site has been successfully scanned and found to be secure.&lt;/li&gt;
+&lt;li&gt;ASV - Approved Scanning Vendor; a company that has been certified as qualified to evaluate the security of your website.&lt;/li&gt;
+&lt;li&gt;Categories Tabs - &lt;a href=&#34;/user/new_user_topics/categories_tabs/&#34;&gt;Categories Tabs&lt;/a&gt; is the name of a feature that places a set of links to every category in your store across the width of your home page just below the logo and tagline.&lt;/li&gt;
+&lt;li&gt;Centerbox - a &lt;a href=&#34;/user/template/centerboxes/&#34;&gt;centerbox&lt;/a&gt; is a block of content in the middle of the page.&lt;/li&gt;
+&lt;li&gt;Character Set - A set of codes which represent a written language. Current versions of Zen Cart use the utf8mb4 character set.&lt;/li&gt;
+&lt;li&gt;cPanel - a branded hosting control panel which is very popular.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Hosting and Domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Default Files - The file provided by the base software that provides some functionality which can be overridden using a template file.  See &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;Default files, template default and overrides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Define Pages - &lt;a href=&#34;/user/template/define_pages/&#34;&gt;Define pages&lt;/a&gt; are special pieces of content that appear above normal page content for certain pages.&lt;/li&gt;
+&lt;li&gt;Document Root - another term for &amp;ldquo;webroot.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Domain Name - (also &amp;ldquo;domain&amp;rdquo;) the mnemonic name of your website.  The domain name of this site is &lt;code&gt;zen-cart.com&lt;/code&gt;.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.  A Name Server converts this mnemonic name into an IP Address.&lt;/li&gt;
+&lt;li&gt;Downloadable Product - A &lt;a href=&#34;/user/products/downloadable/&#34;&gt;downloadable product&lt;/a&gt; is a digital item such as an ebook, a music file, an image or a software product.&lt;/li&gt;
+&lt;li&gt;DTK - Short for &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Tool Kit&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;ESP - Short for &lt;a href=&#34;/user/email/newsletters/#using-an-email-service-provider&#34;&gt;Email Service Provider&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Extra Pages - &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;Extra pages&lt;/a&gt; are the three built-in additional content pages that people can use without needing to add software to their installation.&lt;/li&gt;
+&lt;li&gt;EZ-Pages - Zen Cart provides the ability for storeowners to create their own content pages without a developer through the &lt;a href=&#34;/user/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; facility.&lt;/li&gt;
+&lt;li&gt;Hoster - a company that provides servers for you to run your site on. See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Index Listing Page - sometimes the  &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; is called the index listing page.  There is no difference between the two terms.&lt;/li&gt;
+&lt;li&gt;Info Box - an info box is like a sidebox for the admin side.  When an item from a list is selected, an info box appears on the right with more details on that item. For example, on the customers page, details on the selected customer would appear; on the orders page, details on that order.&lt;/li&gt;
+&lt;li&gt;IP Address - a number assigned to a piece of hardware connected to the Internet.  Computers identify each other by IP Address.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;JavaScript - a scripting language that adds dynamic effects to your website.&lt;/li&gt;
+&lt;li&gt;Linked Product - a &lt;a href=&#34;/user/products/linked_product/&#34;&gt;linked product&lt;/a&gt; is a product which exists in multiple categories (categories other than the product&amp;rsquo;s master category).&lt;/li&gt;
+&lt;li&gt;Listing Page - a &lt;a href=&#34;/user/template/listing_page_layout/&#34;&gt;listing page&lt;/a&gt; in Zen Cart shows a group of products with certain things in common, such as age or being featured .&lt;/li&gt;
+&lt;li&gt;Master Category - The category in which a product was originally created.  Products can be added to other categories by creating linked products.  See &lt;a href=&#34;/user/products/product_management_admin/&#34;&gt;product management&lt;/a&gt; and &lt;a href=&#34;/user/products/linked_product/&#34;&gt;linked products&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Name Server - a piece of Internet infrastructure that converts a domain name to an IP Address.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Order Total - an &lt;a href=&#34;/user/order_total/order_total/&#34;&gt;order total module&lt;/a&gt; allows you to add a fee or a discount to an order.&lt;/li&gt;
+&lt;li&gt;Overrides - Zen Cart provides the capability of partitioning your changes from the base software; this is called the override feature.  See &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;Default files, template default and overrides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Prefix - Using a &lt;a href=&#34;/user/first_steps/database/#what-are-prefixes&#34;&gt;prefix&lt;/a&gt; in your &lt;code&gt;configure.php&lt;/code&gt; files allows you to have a special naming convention for your Zen Cart tables, to distinguish them from the tables of other applications.  Using a prefix is no longer encouraged; instead, use one database per application.&lt;/li&gt;
+&lt;li&gt;Plugin - A &lt;a href=&#34;/user/plugins/about_plugins/&#34;&gt;plugin&lt;/a&gt; is a packaged software modification you can use to change the behavior of your Zen Cart installation.&lt;/li&gt;
+&lt;li&gt;Responsive - a template is responsive if it is designed for mobile viewing (on a phone or tablet) as well as desktop viewing.  See &lt;a href=&#34;/user/template/responsive/&#34;&gt;Responsive Templates&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Sale - a &lt;a href=&#34;/user/admin_pages/catalog/salemaker/&#34;&gt;sale&lt;/a&gt; is a price reduction on one or more categories of products. See also Special.&lt;/li&gt;
+&lt;li&gt;Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Hosting and Domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Sidebox - a &lt;a href=&#34;/user/template/sideboxes/&#34;&gt;sidebox&lt;/a&gt; is a block of content on the left or right hand side of your page, when viewed on a desktop.&lt;/li&gt;
+&lt;li&gt;SNAF - an acronym meaning Specials, New Products, All Products and Featured.&lt;/li&gt;
+&lt;li&gt;Special - a &lt;a href=&#34;/user/admin_pages/catalog/specials/&#34;&gt;special&lt;/a&gt; is a price reduction on one product. See also Sale.&lt;/li&gt;
+&lt;li&gt;Spider - a spider is a computer program running on the Internet which tries to index the contents of a website. Spiders are also called &amp;ldquo;web crawlers.&amp;rdquo;  Zen Cart keeps a list of spiders in the file &lt;code&gt;includes/spiders.txt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Sub-Zone: This term refers to a zone which is an element of a larger zone.  For example, Florida is a sub-zone of United States of America.&lt;/li&gt;
+&lt;li&gt;SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Template - Set of files which provide the theme or skin (eg: layout, colors, fonts) for the site. See &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;Default files, template default and overrides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;Default files, template default and overrides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;UTF8 - A variable width character set which can represent a large number of characters.&lt;/li&gt;
+&lt;li&gt;VPS - Virtual Private Server - a hosting configuration that puts you on your own dedicated server.  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Hosting and Domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Webroot - The top level folder that is visible to someone using a web browser.  See &lt;a href=&#34;/user/first_steps/how_do_i_install/&#34;&gt;how do I install Zen Cart&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Webserver - the computer associated with your hosting account that runs your website &lt;em&gt;or&lt;/em&gt; the program on that hosting account that serves web pages (e.g. Apache).  See &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;hosting and domain concepts&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;YOURACCOUNTFOLDER - the folder  in your hosting account which holds your site&amp;rsquo;s files. See &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;YOURLANGUAGE - the language your site is presented in, which is english by default.  See &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;YOURSITE - the domain name you are using.  See &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;YOURTEMPLATE - the template you are using.  See &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;basic terms&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: How do I Install Zen Cart?</title>
+      <link>/user/first_steps/how_do_i_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/how_do_i_install/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;The hoster-provided or publicly available &lt;strong&gt;&amp;ldquo;packaged bundles&amp;rdquo; of Zen Cart are not endorsed&lt;/strong&gt; by Zen-Cart.com.   To specifically enumerate some well-known options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do not use Softaculous to install Zen Cart.&lt;/li&gt;
+&lt;li&gt;Do not use &amp;ldquo;Web Application Installer&amp;rdquo; to install Zen Cart.&lt;/li&gt;
+&lt;li&gt;Do not use Installatron to install Zen Cart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, &lt;strong&gt;we recommend manual installation&lt;/strong&gt;.  Manual installation of files from the &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;official download&lt;/a&gt; enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know &lt;em&gt;exactly&lt;/em&gt; what &lt;em&gt;you&lt;/em&gt; have put onto your site.&lt;/p&gt;
+&lt;p&gt;This is a basic guide to installing Zen Cart. If you already have Zen Cart installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions &lt;a href=&#34;https://www.zen-cart.com/docs/&#34;&gt;in the Release document&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-the-basics&#34;&gt;A. The Basics&lt;/h2&gt;
+&lt;p&gt;You have &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;downloaded the Zen Cart software from an official source&lt;/a&gt;, and want to build an online shopping cart.&lt;/p&gt;
+&lt;p&gt;Questions to ask yourself:&lt;/p&gt;
+&lt;h3 id=&#34;1-do-you-have-a-domain-and-hosting-account&#34;&gt;1. Do you have a domain and hosting account?&lt;/h3&gt;
+&lt;p&gt;If No, stop, and see our &lt;a href=&#34;https://www.zen-cart.com/hosting&#34;&gt;Certified Hosting&lt;/a&gt; Sites and find a fast, reliable hosting site that can help you register your own personal domain, as well as provide for your hosting needs that meet the Zen Cart software requirements.&lt;/p&gt;
+&lt;p&gt;Not sure what a domain or hosting account is?  &lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;See this article&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;2-do-you-have-ftp-software&#34;&gt;2. Do you have FTP software?&lt;/h3&gt;
+&lt;p&gt;If No, stop.  You need to obtain a good &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt; to transfer files back and forth from your computer to &lt;a href=&#34;/user/first_steps/hosting/#hosting-companies&#34;&gt;your web host&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Many people have had timeout and other problems when using programs like SmartFTP and CuteFTP. We recommend that you do NOT use these problematic programs.  See &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tools&lt;/a&gt; for a list of alternatives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE 2:&lt;/strong&gt; If your hosting company provides an FTP program that runs inside your browser, we recommend that you do NOT use that for uploading large amounts of files such as a fresh install of Zen Cart. Those are okay for single-file uploads, but unreliable for several files at once.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE 3:&lt;/strong&gt; While some programs like Dreamweaver have built-in FTP capability, we DO NOT recommend using these programs for uploading more than one file at a time, since they often fail to do mass uploads properly, and do a very poor job of informing you of any failures. Always better to use a program dedicated to FTP activity, and not something that&amp;rsquo;s merely got rudimentary FTP capability bolted on.&lt;/p&gt;
+&lt;h3 id=&#34;3-do-you-have-a-good-text-editor&#34;&gt;3. Do you have a good Text Editor?&lt;/h3&gt;
+&lt;p&gt;If No stop.  You will need a &lt;a href=&#34;/user/first_steps/useful_tools/#php-html-and-text-editors&#34;&gt;text editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Do not use cPanel File Manager for editing files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Do not use MS Word for editing files.&lt;/p&gt;
+&lt;h3 id=&#34;4-do-you-have-access-to-your-webhosting-control-panel&#34;&gt;4. Do you have access to your webhosting control panel?&lt;/h3&gt;
+&lt;p&gt;Your webhoster&amp;rsquo;s control panel - often &lt;a href=&#34;https://cPanel.net&#34;&gt;cPanel&lt;/a&gt; but sometimes a hoster-built tool -  is where you will create a MySQL database and user.&lt;/p&gt;
+&lt;h3 id=&#34;5-have-you-created-a-database&#34;&gt;5. Have you created a database?&lt;/h3&gt;
+&lt;p&gt;If your hosting account has cPanel, 
+scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.&lt;/p&gt;
+&lt;p&gt;Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.&lt;/p&gt;
+&lt;p&gt;You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (i.e.: don&amp;rsquo;t re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.&lt;/p&gt;
+&lt;p&gt;Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVILEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.&lt;/p&gt;
+&lt;p&gt;(You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be &amp;ldquo;dba&amp;rdquo; access, or at least read/write.)&lt;/p&gt;
+&lt;h3 id=&#34;all-set&#34;&gt;All set?&lt;/h3&gt;
+&lt;p&gt;If you have answered Yes to all of the above questions, then you are ready to go on.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;h3 id=&#34;what-is-my-webroot&#34;&gt;What is my webroot?&lt;/h3&gt;
+&lt;p&gt;Each web host has his/her own preference in naming folders for use in running a website.&lt;br&gt;
+You can have many files that don&amp;rsquo;t even get shown to the public. The ones that are available for access via a browser are usually in a folder called something like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/home/YOURNAME/public_html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/var/www/YOURNAME/httpdocs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/usr/accounts/a/b/YOURNAME/httpd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;p&gt;Basically, in your FTP area look for a &lt;code&gt;www&lt;/code&gt; or &lt;code&gt;public_html&lt;/code&gt; or &lt;code&gt;htdocs&lt;/code&gt; or &lt;code&gt;httpdocs&lt;/code&gt; or &lt;code&gt;wwwroot&lt;/code&gt; folder. These are the common folder names for what is referred to as the &lt;strong&gt;webroot&lt;/strong&gt;, which is where all website content is served from.&lt;/p&gt;
+&lt;p&gt;Your Zen Cart files (or &lt;em&gt;any&lt;/em&gt; files to run your website, for that matter) need to be under that folder. If they&amp;rsquo;re not, then you&amp;rsquo;re going to get &amp;ldquo;not found&amp;rdquo; errors - because the content is not found!&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your &lt;strong&gt;webroot&lt;/strong&gt; folder should be.&lt;/p&gt;
+&lt;p&gt;Generally you will install Zen Cart either in your webroot or in a subfolder below it.  See &lt;a href=&#34;/user/first_steps/deployment_configurations/&#34;&gt;deployment configurations&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h3 id=&#34;where-will-my-files-be-in-cpanel&#34;&gt;Where will my files be in cPanel?&lt;/h3&gt;
+&lt;p&gt;Your files will go into your webroot, as defined above.&lt;/p&gt;
+&lt;p&gt;The default webroot in a cPanel environment is usually something like &lt;code&gt;/home/user/public_html&lt;/code&gt; where &lt;code&gt;user&lt;/code&gt; is the name given to your cPanel account.&lt;/p&gt;
+&lt;p&gt;In short, in cPanel you&amp;rsquo;ll almost always see it as &lt;code&gt;public_html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For initial installation or for staging upgrades; we&amp;rsquo;ll be setting up a sub-folder with the Zen Cart files, below the &lt;code&gt;public_html&lt;/code&gt; folder.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;b-installing-the-zen-cart-fileset-using-cpanel&#34;&gt;B. Installing the Zen Cart fileset using cPanel&lt;/h2&gt;
+&lt;p&gt;This is the easiest and least error prone method of installing Zen Cart
+Installing by FTP is described in the following step.&lt;/p&gt;
+&lt;p&gt;If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or plugin installation.&lt;/p&gt;
+&lt;h3 id=&#34;getting-the-files-on-the-server&#34;&gt;Getting the files on the server.&lt;/h3&gt;
+&lt;p&gt;At this point, it is assumed you have a copy of 
+the &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;official download&lt;/a&gt; of Zen Cart.&lt;/p&gt;
+&lt;p&gt;Open the cPanel provided by your host.  Normally, this is done by going to &lt;code&gt;https://YOURSITE.com/cpanel&lt;/code&gt; OR &lt;code&gt;https://YOURSITE.com:2083&lt;/code&gt;.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.&lt;/p&gt;
+&lt;p&gt;The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting &amp;lsquo;WebRoot&amp;rsquo; as the default opening directory.  Refreshing the page will bring up the files currently in your &lt;code&gt;public_html&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Next, you will upload &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;the latest zip file&lt;/a&gt; to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the &amp;ldquo;Drop files here to start uploading&amp;rdquo; area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your &lt;code&gt;/public_html&lt;/code&gt; folder.  If you don&amp;rsquo;t see the zip file in the &lt;code&gt;public_html&lt;/code&gt; folder, click on Reload in the menu to refresh the page.&lt;/p&gt;
+&lt;p&gt;Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: &lt;code&gt;zen-cart-CURRENT_VERSION-RELEASE_DATE.zip&lt;/code&gt;.  Right-click on the file and select Extract.  You should see a home icon with &lt;code&gt;/public_html&lt;/code&gt; pre-filled in the box.  Make sure your browser matches &lt;code&gt;/public_html&lt;/code&gt; with no trailing &lt;code&gt;/&lt;/code&gt; and click on the Extract File(s) button.  Click Close on the Extraction Results screen.&lt;/p&gt;
+&lt;p&gt;You now have a new folder in &lt;code&gt;public_html&lt;/code&gt; that should match the naming convention of the zip file.  &lt;code&gt;zen-cart-CURRENT_VERSION-RELEASE_DATE&lt;/code&gt;.  All the Zen Cart installation files are in this directory.&lt;/p&gt;
+&lt;p&gt;For clarity, rename the directory to something like &lt;code&gt;catalog&lt;/code&gt; or &lt;code&gt;store&lt;/code&gt; for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we&amp;rsquo;ll give the files a break while we create the database.&lt;/p&gt;
+&lt;p&gt;Skip step &amp;ldquo;Installing the Zen Cart fileset using FTP&amp;rdquo; and go to the following step.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;c-installing-the-zen-cart-fileset-using-ftp&#34;&gt;C. Installing the Zen Cart fileset using FTP&lt;/h2&gt;
+&lt;p&gt;This step is only required if you did not install your files using
+cPanel in the previous step.&lt;/p&gt;
+&lt;p&gt;At this point, it is assumed you have a copy of 
+the &lt;a href=&#34;https://www.zen-cart.com/latest&#34;&gt;official download&lt;/a&gt; 
+of Zen Cart.&lt;/p&gt;
+&lt;p&gt;Upload, via FTP, the whole Zen Cart distribution into a directory on your server.  You can put it in your webroot or in a folder below that.&lt;/p&gt;
+&lt;p&gt;You can choose to upload to your webroot, or you can choose to upload to a subfolder.  Assuming your webroot is &lt;code&gt;/home/johndoe/public_html&lt;/code&gt; and your domain is &lt;code&gt;johndoetools&lt;/code&gt;, this is how things will work (assuming you have SSL):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you upload to your webroot, your Zen Cart will be accessed as &lt;a href=&#34;&#34;&gt;https://www.johndoetools.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you upload to the catalog subfolder of your webroot (i.e. &lt;code&gt;/home/johndoe/public_html/catalog/&lt;/code&gt;, your Zen Cart will be accessed as &lt;a href=&#34;&#34;&gt;https://www.johndoetools.com/catalog&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This guide uses the &lt;code&gt;/catalog&lt;/code&gt; subfolder AS AN EXAMPLE.   You don&amp;rsquo;t have to use &lt;code&gt;/catalog&lt;/code&gt;.  You could use something else (like &lt;code&gt;/shop&lt;/code&gt;), or no subfolder at all (upload directly to webroot).&lt;/p&gt;
+&lt;p&gt;So in the language defined by &lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic Terms&lt;/a&gt;, we&amp;rsquo;ll
+be using a &lt;code&gt;YOURSUBFOLDER&lt;/code&gt; value of &lt;code&gt;/catalog/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Choosing a subfolder versus loading the files into webroot is entirely your 
+choice.  The only time when you would really need to use a subfolder is if you
+already have a well established website are just adding on ecommerce using 
+Zen Cart.  In that case, you&amp;rsquo;d want to put your store below your existing site.&lt;/p&gt;
+&lt;p&gt;If you want to read more about using &lt;code&gt;YOURSUBFOLDER&lt;/code&gt;, please see &lt;a href=&#34;/user/first_steps/deployment_configurations/&#34;&gt;deployment configurations&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;d-set-permissions-on-folders&#34;&gt;D. Set Permissions on folders&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/installing/permissions/&#34;&gt;Permissions on files and folders&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;e-prepare-to-run-the-installer&#34;&gt;E. Prepare to Run the Installer&lt;/h2&gt;
+&lt;p&gt;The installer is fairly intelligent and should be able to automatically supply answers to the questions listed below.&lt;/p&gt;
+&lt;p&gt;You will, however, need to confirm that the auto-detected answers are, in fact, correct as on some servers they may differ.&lt;/p&gt;
+&lt;p&gt;You will need the following information for the installation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The physical path to your new Zen Cart directory&lt;/strong&gt;&lt;br&gt;
+Example: &lt;code&gt;/home/myusername/public_html/catalog&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Virtual HTTP Path (the URL to your domain and directory for your shop)&lt;/strong&gt;&lt;br&gt;
+Example: &lt;code&gt;http://www.mydomain.com/catalog&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Virtual HTTPS Server (the secure URL to your domain)&lt;/strong&gt;&lt;br&gt;
+Example: &lt;code&gt;https://www.mydomain.com&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Virtual HTTPS Path (the secure URL to your domain and directory for your shop)&lt;/strong&gt;&lt;br&gt;
+Example: &lt;code&gt;https://www.mydomain.com/catalog&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;f-run-the-installer&#34;&gt;F. Run the Installer&lt;/h2&gt;
+&lt;p&gt;In your browser, enter the URL to your new shop, and the Installer should automatically start.&lt;br&gt;
+Example: &lt;code&gt;http://www.mydomain.com/catalog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Or, to start the installer directly, use: &lt;code&gt;http://www.mydomain.com/catalog/zc_install&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;welcome&#34;&gt;Welcome&lt;/h3&gt;
+&lt;p&gt;You will be presented with a &amp;ldquo;Welcome to Zen Cart&amp;rdquo; page, explaining the features of Zen Cart.&lt;/p&gt;
+&lt;h3 id=&#34;license&#34;&gt;License&lt;/h3&gt;
+&lt;p&gt;Clicking on Continue takes you to the license screen where you are asked to read and confirm acceptance of the GPL licensing agreement.&lt;/p&gt;
+&lt;h3 id=&#34;system-inspection&#34;&gt;System Inspection&lt;/h3&gt;
+&lt;p&gt;Next, it will examine your server for compliance with technical requirements for running Zen Cart, presenting you with several items you may need or want to address with your host. Anything marked in red or with an &amp;ldquo;X&amp;rdquo; must be addressed before the installer can continue. Things marked with an orange or yellow &amp;ldquo;caution&amp;rdquo; symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you&amp;rsquo;ve made before proceeding.&lt;/p&gt;
+&lt;p&gt;If a previous version of Zen Cart is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an &amp;ldquo;upgrade&amp;rdquo; button will display at the bottom of the screen offering you the ability to upgrade if needed.&lt;/p&gt;
+&lt;p&gt;Once you are satisfied that the &amp;ldquo;pre-flight-check&amp;rdquo; inspection is OK for your needs (ideally, all green check-marks), you may click the &amp;ldquo;Install&amp;rdquo; button at the bottom of the screen.&lt;/p&gt;
+&lt;h3 id=&#34;system-setup&#34;&gt;System Setup&lt;/h3&gt;
+&lt;p&gt;On the System Setup page you will need to complete the information we described in &amp;ldquo;Before Running the Installer&amp;rdquo; earlier in this document.&lt;/p&gt;
+&lt;p&gt;Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, &lt;strong&gt;do not enable this feature now&lt;/strong&gt;.It can be changed at a later date. (See the &lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;SSL FAQ&lt;/a&gt; for detailed instructions).&lt;/p&gt;
+&lt;p&gt;Note: If you receive any of the following error messages, go through the above steps to make sure you have not left anything out. All error messages have context-sensitive help via a popup window if you click on the &lt;span class=&#34;pseudolink&#34;&gt;more info&amp;hellip;&lt;/span&gt; links supplied:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;** Warning: Problems Found **  
+*   /includes/configure.php does not exist.  more info... 
+*   /admin/includes/configure.php does not exist.  more info...  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;database-setup&#34;&gt;Database Setup&lt;/h3&gt;
+&lt;p&gt;On the next screen, you are asked for Database Information about your MySQL database, username and password. These can be obtained from your cPanel or equivalent control screen provided by your host. If you do not have a clean MySQL database setup with a username and password, you will need to create one.&lt;/p&gt;
+&lt;p&gt;Contact your Hosting site if you need assistance in creating a MySQL database table and/or username and password. &lt;strong&gt;Note that you need to have your database and userID created before the Zen Cart installer can continue past this screen&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Other information on this screen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;At this time, MySQL is the primary operational database type.&lt;br&gt;
+Future releases may support other database types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We recommend that you store your Database Sessions in your database for security purposes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;store-setup&#34;&gt;Store Setup&lt;/h3&gt;
+&lt;p&gt;Now, complete the Store Information about your Shop.&lt;/p&gt;
+&lt;p&gt;Note: except for &amp;ldquo;demo data&amp;rdquo;, all of the information here can be (re)configured later in the Admin area of your shop.&lt;/p&gt;
+&lt;h3 id=&#34;demo-data&#34;&gt;Demo Data&lt;/h3&gt;
+&lt;p&gt;If you would like to install the demo data, select yes.&lt;/p&gt;
+&lt;p&gt;We recommend that you install the demo data to familiarize yourself with many of the examples created that explain and demonstrate the vast number of features available in Zen Cart.&lt;/p&gt;
+&lt;p&gt;You may also decide later to set up a test site with the demo data AND a separate working site for your live data so that you have the ability to refer back to the demo data for help and to see examples of a feature.  This is an excellent way to learn how things work, and then try your hand at setting up your own site and testing to be sure you&amp;rsquo;ve done things right. Later on it can be used to help you test an upgrade or test new features you&amp;rsquo;re working on before affecting your live site.&lt;/p&gt;
+&lt;p&gt;After you click Save Store Settings, there will be some hesitation as the database tables are created and the demo data is optionally loaded. You will see some progress indicators as the database is loaded.&lt;/p&gt;
+&lt;p&gt;For a list of features shown by the demo data, please see &lt;a href=&#34;/user/first_steps/demo_data&#34;&gt;demo data&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;demo-images&#34;&gt;Demo Images&lt;/h3&gt;
+&lt;p&gt;After 1.5.8, the demo images are no longer automatically installed; to install them, see the instructions in &lt;a href=&#34;/user/first_steps/demo_data/#demo-images&#34;&gt;demo images&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;admin-setup&#34;&gt;Admin Setup&lt;/h3&gt;
+&lt;p&gt;Now, complete the Admin Information to set your Login name, Admin email address and password.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; both the login name and password are case sensitive.&lt;/p&gt;
+&lt;p&gt;Save the Admin settings and your installation is now complete!&lt;/p&gt;
+&lt;p&gt;Providing there were no errors during installation, you should be able to now enter the Admin or the Catalog.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;g-after-installation&#34;&gt;G. After Installation&lt;/h2&gt;
+&lt;p&gt;a) &lt;a href=&#34;/user/installing/rename_admin/&#34;&gt;RENAME YOUR ADMIN FOLDER&lt;/a&gt;.  Note that 
+current versions of Zen Cart do this for you.&lt;/p&gt;
+&lt;p&gt;b) When you enter the catalog, you will receive security warnings about the &lt;code&gt;configure.php&lt;/code&gt; files and the &lt;code&gt;/zc_install&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;configure.php files&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You will now want to change the permissions on the configure.php files with &lt;code&gt;chmod 644&lt;/code&gt; (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host&amp;rsquo;s control panel or file manager to set the permissions level.)&lt;/p&gt;
+&lt;p&gt;These are located here (remember, &amp;ldquo;catalog&amp;rdquo; is what we used as an example here &amp;ndash; your site may or may not include &amp;ldquo;catalog&amp;rdquo; as a folder name):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/catalog/includes/configure.php
+/catalog/admin/includes/configure.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It would also be a good idea to download a copy of these files to your computer from the server as they have been setup and configured to your server specifications based on the Installation process.&lt;/p&gt;
+&lt;p&gt;If you have any errors or problems, most of these can be corrected by minor adjustments to these two files.&lt;/p&gt;
+&lt;p&gt;c) Remove the &lt;strong&gt;zc_install directory&lt;/strong&gt;&lt;br&gt;
+Next, you will want to delete the &lt;code&gt;/catalog/zc_install&lt;/code&gt; directory&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;h-next-steps&#34;&gt;H. Next Steps&lt;/h2&gt;
+&lt;p&gt;Now you&amp;rsquo;ll want to &lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;install your SSL certificate&lt;/a&gt; and change your admin password.  &lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;Yes, you need an SSL certificate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For information on first steps to setting up your online shop, see the article &lt;a href=&#34;/user/first_steps/basic_checklist/&#34;&gt;basic checklist&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You should also familiarize yourself with the Zen Cart &lt;a href=&#34;/user/admin/developers_toolkit/&#34;&gt;Developer&amp;rsquo;s Toolkit&lt;/a&gt;, located in your store&amp;rsquo;s Admin area, under &lt;code&gt;Tools&lt;/code&gt;. This will help you locate almost anything you want to customize in your shop!&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;re set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article &lt;a href=&#34;/user/security/security_recommendations/&#34;&gt;Important Security Recommendations&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Learning Trails for Zen Cart</title>
+      <link>/user/first_steps/learning_trails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/learning_trails/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Take a look at &lt;a href=&#34;/user/first_steps/documentation/&#34;&gt;exploring the documentation&lt;/a&gt; then follow one of these trails:&lt;/p&gt;
+&lt;h2 id=&#34;learn-web-basics&#34;&gt;Learn Web Basics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/hosting/&#34;&gt;Hosting and Domain Concepts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/database/&#34;&gt;Databases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;What is an SSL certificate?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-about-installing-zen-cart&#34;&gt;Learn about installing Zen Cart&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/components/&#34;&gt;Components of Zen Cart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;You need an SSL certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/how_do_i_install/&#34;&gt;How do I install Zen Cart?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/basic_checklist/&#34;&gt;Store setup checklist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-about-zen-cart-templates&#34;&gt;Learn about Zen Cart Templates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/what_is_a_template/&#34;&gt;What is a Template?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/basic_customizations/&#34;&gt;Basic Template Customizations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/mobile_mode/&#34;&gt;Responsiveness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/sideboxes/&#34;&gt;Sideboxes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/stylesheet/&#34;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-about-zen-cart-overrides&#34;&gt;Learn about Zen Cart Overrides&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/basic_terms/&#34;&gt;Basic terms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;Template default and default files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/new_user_topics/overrides/&#34;&gt;Overrides for new users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/template/template_overrides/&#34;&gt;Template Overrides System&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-the-zen-cart-admin&#34;&gt;Learn the Zen Cart Admin&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin/why_admin/&#34;&gt;What&amp;rsquo;s the purpose of the admin?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/where_is_backend/&#34;&gt;Where is the backend?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/installing/rename_admin/&#34;&gt;How do I rename my admin folder?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/menu_sections/&#34;&gt;Browse the Admin menu sections&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-about-running-your-zen-cart&#34;&gt;Learn about Running your Zen Cart&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/running/regular_maintenance/&#34;&gt;Regular Maintenance for Zen Cart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;Logging in as a Customer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/running/stock/&#34;&gt;Tracking Inventory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-about-troubleshooting-and-debugging&#34;&gt;Learn about Troubleshooting and Debugging&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/debug_logs/&#34;&gt;Interpreting Debug Logs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/php_debug_logs/&#34;&gt;Why am I getting new logs?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/upgrading/php_warnings/&#34;&gt;How do I fix these new logs?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/troubleshooting/diagnosing_obscure_issues/&#34;&gt;Diagnosing obscure issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn-zen-cart-development&#34;&gt;Learn Zen Cart Development&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/first_steps/technologies/&#34;&gt;Technologies used in Zen Cart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/database_querying/&#34;&gt;Querying the Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/notifiers/&#34;&gt;Observer/Notifier System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/admin_sanitization/&#34;&gt;Sanitization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/code/inclusion/&#34;&gt;Auto Inclusion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/contributing/github_workflow/&#34;&gt;Github Workflow for Zen Cart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/dev/plugins/&#34;&gt;Plugins for Developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Relative URLs</title>
+      <link>/user/first_steps/relative_urls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/relative_urls/</guid>
+      <description>
+        
+        
+        &lt;p&gt;New Zen Cart users will often customize a file like &lt;code&gt;includes/templates/responsive_classic/templates/tpl_modules_mobile_menu.php&lt;/code&gt; by adding an internal URL to their store with a full path.  For example,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;li&amp;gt;
+  &amp;lt;a href=&amp;#34;https://YOURSTORE.com/index.php?main_page=page&amp;amp;id=25&amp;#34;&amp;gt;Important information&amp;lt;/a&amp;gt;  &amp;lt;!-- NO --&amp;gt; 
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;This is not a good practice&lt;/strong&gt;.  This URL will not work as expected in the following circumstances:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You move the store to a subfolder (YOURSTORE.com/shop)&lt;/li&gt;
+&lt;li&gt;You change domain names&lt;/li&gt;
+&lt;li&gt;You work on a temporary or local domain&lt;/li&gt;
+&lt;li&gt;You work on an IP address during a hoster change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, it is better to use a relative URL, which will always work.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;li&amp;gt;
+  &amp;lt;a href=&amp;#34;index.php?main_page=page&amp;amp;id=25&amp;#34;&amp;gt;Important information&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The same applies to the use of image tags.  In a &lt;a href=&#34;/user/template/define_pages/&#34;&gt;define page&lt;/a&gt; or an &lt;a href=&#34;/user/ezpages/&#34;&gt;EZ-Page&lt;/a&gt;, be careful not to start image URLs with a &lt;code&gt;/&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;img src=&amp;#34;/images/POINTS.jpg&amp;#34; alt=&amp;#34;Get Points&amp;#34;&amp;gt;   &amp;lt;!-- NO --&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The reason is, this will work when the site is at the top level, but it won&amp;rsquo;t work if the store is moved to a subfolder, which is common when setting up a test site.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t start the path name with a slash, it &lt;em&gt;will&lt;/em&gt; work correctly, whether the store is at the top level or in a subfolder.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;img src=&amp;#34;images/POINTS.jpg&amp;#34; alt=&amp;#34;Get Points&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Server Requirements for running Zen Cart</title>
+      <link>/user/first_steps/server_requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/server_requirements/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;zen-cart-specifications---server-requirements&#34;&gt;Zen Cart specifications - Server Requirements&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(Last updated: March 5, 2021)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Minimum&lt;/em&gt; server requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zen Cart operates on a standard &amp;ldquo;LAMP&amp;rdquo; stack: PHP, Apache, MySQL and should be hosted on a Linux server&lt;/li&gt;
+&lt;li&gt;See the detailed version-compatibility details in the sections below.&lt;/li&gt;
+&lt;li&gt;Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components, including using a Zen Cart version that&amp;rsquo;s compatible with those software component versions too!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#php-version&#34;&gt;PHP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mysql-version&#34;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ssl-openssl-curl&#34;&gt;SSL, OpenSSL, CURL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#apache&#34;&gt;Apache/Nginx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;php-version&#34;&gt;PHP Version&lt;/h2&gt;
+&lt;p&gt;The following table shows the PHP versions compatible with each version of Zen Cart.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; future versions of Zen Cart including v1.5.8 will require PHP 7.3+.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;Zen Cart v1.5.8 (not yet released)&lt;/strong&gt; is designed for PHP 7.3 through PHP 8.1&lt;/font&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;Zen Cart v1.5.7&lt;/strong&gt; is designed for PHP 5.6 through PHP 8.0&lt;/font&gt;&lt;br&gt;
+(If you are using PHP 8.0, be sure to &lt;a href=&#34;/user/troubleshooting/constant_already_defined/&#34;&gt;suppress logging duplicate-language definitions&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;Zen Cart v1.5.6&lt;/strong&gt; is designed for PHP 5.5 through PHP 7.3&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;Zen Cart v1.5.5&lt;/strong&gt; is designed for PHP 5.5 through PHP 7.1&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;Zen Cart v1.5.4&lt;/strong&gt; is designed for PHP 5.5 and PHP 5.6&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.5.3&lt;/strong&gt; is compatible with PHP 5.3.7 through PHP 5.6&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.5.2&lt;/strong&gt; is compatible with PHP 5.3.7 through PHP 5.6 (or PHP 5.2.14+ with weakened security)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.5.1&lt;/strong&gt; is compatible with PHP 5.2.14 through PHP 5.3.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.5.0&lt;/strong&gt; is compatible with PHP 5.2.14 through PHP 5.3.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.3.9&lt;/strong&gt; series is compatible with PHP 5.2.10 through PHP 5.3.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.3.7-v1.3.8a&lt;/strong&gt; are compatible with PHP 4.3.2 through PHP 5.2.x, but &lt;em&gt;not&lt;/em&gt; PHP 5.3.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zen Cart v1.2.x through v1.3.6&lt;/strong&gt; are compatible with PHP 4.3.2 - 4.4.x. They are NOT compatible with PHP 5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PHP compatibility requirements of Plugins may vary. Consult each plugin&amp;rsquo;s documentation and support discussion-thread for details.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt; &lt;strong&gt;Using the latest version of Zen Cart is always recommended for maximum compatibility.&lt;/strong&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;which-php-version-should-i-use&#34;&gt;Which PHP version should I use?&lt;/h3&gt;
+&lt;p&gt;It is best to &lt;strong&gt;use the most recent PHP version that your Zen Cart version supports&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;FYI: Consult &lt;a href=&#34;https://www.php.net/supported-versions.php&#34;&gt;PHP&amp;rsquo;s Version Support Policy&lt;/a&gt; to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed &amp;ldquo;secure&amp;rdquo; if they are out of the maintenance period.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; PHP 5.X IS OFFICIALLY OBSOLETE as are early PHP 7 versions like 7.0, 7,1, 7.2. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;php-extensionsmodules-used-by-zen-cart&#34;&gt;PHP Extensions/Modules used by Zen Cart&lt;/h3&gt;
+&lt;p&gt;Zen Cart requires a few PHP modules/extensions installed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bcmath&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctype&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl&lt;/code&gt;, &lt;code&gt;openssl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fileinfo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getimagesize()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;iconv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysqli&lt;/code&gt;, &lt;code&gt;pdo_mysql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pcre&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zlib&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is recommended to also enable the following PHP extensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intl&lt;/code&gt;, &lt;code&gt;mbstring&lt;/code&gt;, &lt;code&gt;pcntl&lt;/code&gt;, &lt;code&gt;pdo_sqlite&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;php-memory-recommendations&#34;&gt;PHP Memory Recommendations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;memory_limit&lt;/strong&gt; suggested: &lt;strong&gt;128M&lt;/strong&gt; or higher such as 256M or 512M if your server can handle it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;post_max_size&lt;/strong&gt; and &lt;strong&gt;upload_max_filesize&lt;/strong&gt; should be set to whatever max file size you or your customers may upload. Usually &lt;strong&gt;8M&lt;/strong&gt; is sufficient for most sites, but if you&amp;rsquo;re accepting huge uploads, set both to the max size of accepted combined uploads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;version page&lt;/a&gt; after updating PHP to verify the setting of your PHP Memory Limit - see &lt;a href=&#34;/user/running/memory_limit/&#34;&gt;PHP memory_limit&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;php-settings-for-optimum-security&#34;&gt;PHP Settings for optimum security:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ENABLE: &lt;code&gt;allow_url_fopen&lt;/code&gt; is needed for checking things that don&amp;rsquo;t/can&amp;rsquo;t use &lt;code&gt;curl&lt;/code&gt; (many shipping-quote and currency-update modules use this).&lt;/li&gt;
+&lt;li&gt;DISABLE: &lt;code&gt;allow_url_include&lt;/code&gt; should be OFF. Zen Cart never needs this.&lt;/li&gt;
+&lt;li&gt;DISABLE FUNCTIONS: &lt;code&gt;passthru&lt;/code&gt;, &lt;code&gt;system&lt;/code&gt;, &lt;code&gt;shell_exec&lt;/code&gt;. These are not used by Zen Cart core (BUT might be used by some plugins).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You may wonder: &amp;ldquo;How do I configure all these things?&amp;rdquo; They&amp;rsquo;re server-side configuration, entirely outside of Zen Cart itself. Talk to your hosting company for assistance. They deal with this stuff every day, and they know exactly how to do this stuff on the server you&amp;rsquo;re paying them for.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;mysql-version&#34;&gt;MySQL Version&lt;/h2&gt;
+&lt;p&gt;The following table shows the MySQL versions compatible with each version of Zen Cart.&lt;/p&gt;
+&lt;p&gt;(If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the &lt;a href=&#34;/user/upgrading/convert_to_utf8/&#34;&gt;utf8mb4 character set&lt;/a&gt; and upgrading to the latest Zen Cart version.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Future versions of Zen Cart including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.5&lt;/li&gt;
+&lt;li&gt;Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 (&amp;ldquo;strict&amp;rdquo; errors may occur with 5.7 or 10.2-10.5)&lt;/li&gt;
+&lt;li&gt;Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 (&amp;ldquo;strict&amp;rdquo; errors may occur with 5.7 or 10.2)&lt;/li&gt;
+&lt;li&gt;Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5, and &lt;u&gt;may&lt;/u&gt; work with MariaDB 10.1&lt;/li&gt;
+&lt;li&gt;Zen Cart v1.3.9 is compatible with MySQL 4.1.3+ thru 5.1&lt;/li&gt;
+&lt;li&gt;Zen Cart v1.2.x thru 1.3.8a were designed for MySQL 4, and will give errors on MySQL5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plugin compatibility may vary.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt; &lt;strong&gt;Using the latest version of Zen Cart is always recommended for maximum compatibility.&lt;/strong&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;FYI: &lt;a href=&#34;https://en.wikipedia.org/wiki/MySQL#Release_history&#34;&gt;MySQL&amp;rsquo;s Version Support Policy&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ssl-openssl-curl&#34;&gt;SSL, OpenSSL, cURL&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation&amp;rsquo;s system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.&lt;/li&gt;
+&lt;li&gt;You should always use HTTPS (SSL) on your store. Yes, &lt;a href=&#34;/user/first_steps/yes_you_need_ssl/&#34;&gt;you really do need an SSL certificate&lt;/a&gt;. Be sure to regularly test your site&amp;rsquo;s SSL (https) using &lt;a href=&#34;https://www.ssllabs.com/ssltest/index.html&#34;&gt;www.ssllabs.com/ssltest/&lt;/a&gt; and have your hosting company resolve all reported issues. If your hosting company doesn&amp;rsquo;t know how to resolve the issues to at least a &amp;ldquo;B&amp;rdquo; rating, find a more reliable hosting company.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;apache&#34;&gt;Apache&lt;/h2&gt;
+&lt;p&gt;Zen Cart works primarily with Apache 2.4 or 2.2&lt;/p&gt;
+&lt;h3 id=&#34;apache-modules&#34;&gt;Apache modules&lt;/h3&gt;
+&lt;p&gt;The Apache configuration must have &lt;code&gt;AllowOverride&lt;/code&gt; set to &lt;code&gt;All&lt;/code&gt; or at least &lt;code&gt;Limit Indexes Options&lt;/code&gt;. (Without this the &lt;code&gt;.htaccess&lt;/code&gt; rules will fail and trigger &lt;code&gt;500 Server Error&lt;/code&gt; errors.)&lt;/p&gt;
+&lt;p&gt;Recommended Apache modules include: &lt;code&gt;expires&lt;/code&gt;, &lt;code&gt;headers&lt;/code&gt;, &lt;code&gt;env&lt;/code&gt;, &lt;code&gt;alias&lt;/code&gt;, &lt;code&gt;deflate&lt;/code&gt;, &lt;code&gt;ssl&lt;/code&gt;, &lt;code&gt;http2&lt;/code&gt;, &lt;code&gt;mime&lt;/code&gt;, &lt;code&gt;phpX&lt;/code&gt;, &lt;code&gt;rewrite&lt;/code&gt; (in addition to other standard/default modules for a typical webserver serving PHP applications).&lt;/p&gt;
+&lt;h2 id=&#34;nginx&#34;&gt;Nginx&lt;/h2&gt;
+&lt;p&gt;Zen Cart runs well on Nginx. But you must handle directory-security manually, as described here:&lt;/p&gt;
+&lt;h3 id=&#34;nginx-directory-security&#34;&gt;Nginx Directory Security&lt;/h3&gt;
+&lt;p&gt;The default Zen Cart distribution contains numerous Apache &lt;code&gt;.htaccess&lt;/code&gt; rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you&amp;rsquo;re running Nginx, so you will need to do those yourself.&lt;/p&gt;
+&lt;p&gt;At the end of initial installation some Nginx &lt;code&gt;conf&lt;/code&gt; file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.&lt;/p&gt;
+&lt;h2 id=&#34;windows-servers--iis-are-not-supported&#34;&gt;Windows Servers / IIS are &lt;strong&gt;NOT SUPPORTED&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Zen Cart is not regularly tested or supported on Windows Servers or IIS.  We don&amp;rsquo;t recommend IIS, and we don&amp;rsquo;t provide any default-configuration scripts for IIS.&lt;/p&gt;
+&lt;h2 id=&#34;perl-python-cgi-and-other-languages&#34;&gt;Perl, Python, CGI and other languages?&lt;/h2&gt;
+&lt;p&gt;Zen Cart does not use Perl or Python or CGI.  See &lt;a href=&#34;/user/first_steps/technologies/&#34;&gt;technologies used in Zen Cart&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: SSL certificate - yes you need one</title>
+      <link>/user/first_steps/yes_you_need_ssl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/yes_you_need_ssl/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Using HTTPS for secure communication is the norm, and expected, on all websites &amp;ndash; especially those engaged in e-commerce.&lt;/p&gt;
+&lt;p&gt;If you understand that you need to use HTTPS and already have an SSL certificate, you can skip this article.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not sure what an SSL certificate is, please review &lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;what is an SSL certificate&lt;/a&gt; first.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Many storeowners are uncertain whether they should use HTTPS (add SSL to their site), citing various reasons, including cost and complexity of setup.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MODERN ANSWER: Yes, you should use SSL on your site. Not only does it lend to protecting sensitive information, it is also important for good search engine ranking nowadays.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now for the technical and bigger-picture explanation:&lt;/p&gt;
+&lt;p&gt;Here are the things to consider:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WHY USE SSL?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SSL encrypts communications between your customer&amp;rsquo;s browser and your webserver. This means nobody can snoop on what they&amp;rsquo;re transmitting to you (such as someone spying on internet traffic in a cafe or wifi hotspot, or library)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DO I NEED SSL?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, you need SSL.&lt;/p&gt;
+&lt;p&gt;Years ago, there was a line of thinking that if your site did payment collection offsite (e.g. PayPal Standard), you didn&amp;rsquo;t really need SSL.&lt;/p&gt;
+&lt;p&gt;Even back then, this was bad advice.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why: without using HTTPS (SSL), traffic to and from your website transmits over the Internet in clear plain text.  So, anyone who&amp;rsquo;s watching can see what&amp;rsquo;s being sent.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Without an SSL certificate, your admin credentials are transmitted in plain text, meaning anyone can see them and get access to your admin panel.&lt;/li&gt;
+&lt;li&gt;Without an SSL certificate, your customer&amp;rsquo;s personal information and purchase data are transmitted in plain text, meaning anyone who is watching can record these details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, SSL is considered a ranking factor by Google. And, many browsers now warn customers not to purchase from sites that don&amp;rsquo;t use SSL / HTTPS.&lt;/p&gt;
+&lt;p&gt;See that ugly warning?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t let this be you!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/insecure_cart.png&#34; alt=&#34;Insecure Cart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HOW DOES ZEN CART IMPLEMENT MY SSL?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Arrange for an SSL certificate with your hosting company, and then update your &lt;code&gt;configure.php&lt;/code&gt; files to use your SSL URL address (the one starting with &lt;code&gt;https&lt;/code&gt; rather than &lt;code&gt;http&lt;/code&gt;) for the value (second parameter, the URL) of each of these defines:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/configure.php&lt;/code&gt;: update your &lt;code&gt;HTTP_SERVER&lt;/code&gt; and &lt;code&gt;HTTPS_SERVER&lt;/code&gt; defines.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;admin/includes/configure.php&lt;/code&gt;:  update your &lt;code&gt;HTTP_SERVER&lt;/code&gt;, &lt;code&gt;HTTP_CATALOG_SERVER&lt;/code&gt; and &lt;code&gt;HTTPS_CATALOG_SERVER&lt;/code&gt; defines.  If it exists, update your &lt;code&gt;HTTPS_SERVER&lt;/code&gt; define.&lt;/p&gt;
+&lt;p&gt;For example, if you have&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HTTP_SERVER&amp;#39;,&amp;#39;http://mysite.com&amp;#39;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;change this to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;define(&amp;#39;HTTP_SERVER&amp;#39;,&amp;#39;https://mysite.com&amp;#39;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change all these defines, even the ones that start with &lt;code&gt;HTTP_&lt;/code&gt;.  Why?  Because you want your &lt;em&gt;whole site&lt;/em&gt; to be running SSL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HOW DO I INSTALL A CERTIFICATE?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Installing an SSL certificate is a subject specific to your hosting account. Work with your hosting company or follow their FAQ documentation to buy and install an SSL certificate in your hosting account.  Many hosts will provide a free SSL certificate with certain hosting plans.&lt;/p&gt;
+&lt;p&gt;Then make sure you can visit your site using your SSL URL without getting server errors.&lt;/p&gt;
+&lt;p&gt;And then you can tell Zen Cart to use your new SSL URL. See the defines above, or consult the FAQs below for that part.&lt;/p&gt;
+&lt;h3 id=&#34;further-related-reading&#34;&gt;Further Related Reading:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/installing/enable_ssl/&#34;&gt;How do I enable SSL?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/user/security/ssl_cert/&#34;&gt;What is an SSL certificate?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Technologies used in Zen Cart</title>
+      <link>/user/first_steps/technologies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/technologies/</guid>
+      <description>
+        
+        
+        &lt;p&gt;An understanding of this area is not required to use Zen Cart; it is simply provided for people who want to dig deeper.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Zen Cart operates on a standard &amp;ldquo;LAMP&amp;rdquo; stack: Linux, Apache, MySQL and PHP.&lt;/p&gt;
+&lt;p&gt;The programming language used to build Zen Cart is PHP, which contains embedded HTML, JavaScript and CSS.&lt;/p&gt;
+&lt;p&gt;MySQL is a relational database, which holds the Zen Cart tables.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d like to learn more about Zen Cart development, follow &lt;a href=&#34;/user/first_steps/learning_trails/#learn-zen-cart-development&#34;&gt;this trail&lt;/a&gt;.  You can also do web searches on any of the terms in this FAQ to learn more.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Version Information for Zen Cart, PHP and MySQL</title>
+      <link>/user/first_steps/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/version/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To find out what version of Zen Cart or PHP or MySQL you are currently using, there are two options that both get you what you need.&lt;/p&gt;
+&lt;p&gt;You can click &lt;a href=&#34;/user/admin_pages/admin_version/&#34;&gt;Version&lt;/a&gt; on the top right navigation menu.      &lt;img src=&#34;/images/skinny_version.png&#34; alt=&#34;Version Link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Or you can go to &lt;a href=&#34;/user/admin_pages/tools/server_info/&#34;&gt;Admin &amp;gt; Tools &amp;gt; Server/Version Info&lt;/a&gt;.       &lt;img src=&#34;/images/tools_server_version.png&#34; alt=&#34;Tools Version Link&#34;&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Either of these options will take you to the &lt;a href=&#34;/user/admin_pages/tools/server_info&#34;&gt;Server/Version Info&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;On that screen you will see a lot of detail about your server configuration. Your Zen Cart version will be shown, as well as your server&amp;rsquo;s PHP version, MySQL version, database parameters, PHP settings, and more.&lt;/p&gt;
+&lt;p&gt;You can also see your database upgrade history.&lt;/p&gt;
+&lt;p&gt;Version information is particularly important if you are upgrading Zen Cart 
+or your hoster is upgrading PHP.  You want to be sure you have a 
+&lt;a href=&#34;/user/first_steps/server_requirements/&#34;&gt;compatible PHP for your Zen Cart version&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Where is the Admin / Back-end / Control Panel interface?</title>
+      <link>/user/first_steps/where_is_backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/where_is_backend/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can access the Zen Cart admin area using your browser by pointing it to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http://WWW.YOURSITE.COM/admin-foldername/index.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or, if you installed your site in a subfolder, like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http://WWW.YOURSITE.COM/subfolder/admin-foldername/index.php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Out-of-the-box, the admin foldername is &lt;code&gt;admin&lt;/code&gt;, but the system requires you to change that on first install, because any hacker can guess &amp;ldquo;admin&amp;rdquo;, or read this very article you&amp;rsquo;re reading to discover the word &amp;ldquo;admin&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;See the instructions for &lt;a href=&#34;/user/installing/rename_admin/&#34;&gt;renaming the admin folder for security reasons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WHAT IF I DON&amp;rsquo;T KNOW MY ADMIN FOLDER NAME?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You will require access to the files on your webserver to find out the actual admin foldername. This is typically done via a secure &lt;a href=&#34;/user/first_steps/useful_tools/#ftp-tools&#34;&gt;FTP tool&lt;/a&gt;, or via your browser by logging in to your hosting company&amp;rsquo;s control panel and using their provided &amp;ldquo;file manager&amp;rdquo; to browse your site&amp;rsquo;s files.&lt;/p&gt;
+&lt;p&gt;The Zen Cart structure is like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;admin (which contains the following 3 folders and a bunch of .php files):
+    - backups
+    - images
+    - includes  (looks a LOT like the other non-admin &amp;#34;includes&amp;#34; folder)
+- cache
+- download
+- editors
+- email
+- images
+- includes
+- logs
+- media
+- index.php
+- ipn_main_handler.php
+- nddbc.html
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What&#39;s Next?</title>
+      <link>/user/first_steps/whats_next/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/first_steps/whats_next/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;a href=&#34;/user/new_user_topics/&#34;&gt;New User Topics&lt;/a&gt; category contains a list of the things that new users want to do first.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

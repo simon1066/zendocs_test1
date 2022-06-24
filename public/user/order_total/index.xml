@@ -1,0 +1,286 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Order Total</title>
+    <link>/zendocs_test1/user/order_total/</link>
+    <description>Recent content in Order Total on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/order_total/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: About Order Total Modules</title>
+      <link>/zendocs_test1/user/order_total/order_total/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/order_total/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Order Total modules allow you to add a surcharge or a discount to the order.  They also display computed values, such as the order subtotal and order total.&lt;/p&gt;
+&lt;p&gt;The list of available order total modules may be seen by going to &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/order_total/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Order Total&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zen Cart has a number of built-in order total modules which allow you to 
+increase or reduce the total owed based on various factors in the order.
+&lt;em&gt;Increasing&lt;/em&gt; the total is done using &lt;a href=&#34;/zendocs_test1/user/order_total/default_fees/&#34;&gt;fees&lt;/a&gt;. 
+&lt;em&gt;Reducing&lt;/em&gt; the total is done using &lt;a href=&#34;/zendocs_test1/user/order_total/default_discounts&#34;&gt;discounts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All the line items in an order below the cart contents are order totals.
+This means the Sub-Total, Tax, Shipping, and Total are displayed via order total modules.&lt;/p&gt;
+&lt;p&gt;Plugins provide a number of additional fee and discount options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=267&#34;&gt;Gift Wrapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=201&#34;&gt;Better Together&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=135&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More order total plugins may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=7&#34;&gt;Other Modules section of the Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Developers wishing to create an order total module should see the &lt;a href=&#34;/zendocs_test1/dev/code/modules/&#34;&gt;order total dev FAQs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Coupons</title>
+      <link>/zendocs_test1/user/order_total/coupons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/coupons/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Coupons allow you to offer discounts on products and/or shipping.&lt;/p&gt;
+&lt;p&gt;If you want to offer a coupon, you need to first enable the coupon system:  Go to: Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Discount Coupons (ot_coupon).   If it&amp;rsquo;s not already installed, click &lt;em&gt;Install Module&lt;/em&gt; to enable it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/install_coupon.png&#34; alt=&#34;Install Coupons&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-coupons&#34;&gt;Creating Coupons&lt;/h2&gt;
+&lt;p&gt;To create coupons, click &lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/coupon_admin/&#34;&gt;Admin &amp;gt; Discounts &amp;gt; Coupon Admin&lt;/a&gt;, then &lt;em&gt;insert&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;(To edit an existing coupon, use the same steps but press &lt;em&gt;edit&lt;/em&gt; at the end instead of &lt;em&gt;insert&lt;/em&gt;.)&lt;/p&gt;
+&lt;p&gt;Fill in the details.&lt;/p&gt;
+&lt;p&gt;If the coupon is for a percentage discount, enter the percent sign after the number.  If it is for a fixed amount, just enter the amount.&lt;/p&gt;
+&lt;p&gt;If the coupon is for free shipping, check the free shipping box.&lt;/p&gt;
+&lt;p&gt;You can enter a coupon code, or if you leave it blank, the system will generate a random code for you.&lt;/p&gt;
+&lt;p&gt;Save the coupon.&lt;/p&gt;
+&lt;p&gt;Now you can either take the coupon code and manually give it to your customers in advertisements (in print or on your website) or you can click the Email button and send it to a list of customers.&lt;/p&gt;
+&lt;p&gt;If you want to set up restrictions so the coupon applies to only to certain products or categories, click the Restrictions button to set them up.  You can do this at a later date if you desire.&lt;/p&gt;
+&lt;h2 id=&#34;coupon-restrictions&#34;&gt;Coupon Restrictions&lt;/h2&gt;
+&lt;p&gt;To set coupon restrictions, click &lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/coupon_restrictions/&#34;&gt;Admin &amp;gt; Discounts &amp;gt; Coupon Restrictions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Coupon Restrictions are designed to limit Discount Coupons to Categories or Products.&lt;/p&gt;
+&lt;p&gt;When using Coupon Restrictions, it is best to start with the setting for the Categories of:&lt;br&gt;
+TOP &lt;strong&gt;DENY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This starts with the Discount Coupon not allowing any Product or Category of Products to work.&lt;/p&gt;
+&lt;p&gt;Next, you would add the Category or Categories allowed, if any.&lt;/p&gt;
+&lt;p&gt;Then, you would add the Product or Products allowed, specifically, if not already covered by the Categories.&lt;/p&gt;
+&lt;p&gt;These Restrictions will then &lt;strong&gt;ALLOW&lt;/strong&gt; or &lt;strong&gt;DENY&lt;/strong&gt; the use of the Discount Coupon.&lt;/p&gt;
+&lt;p&gt;These Restrictions can then be seen by the Customer via the &lt;strong&gt;Discount Coupons&lt;/strong&gt; link in the &lt;strong&gt;Information sidebox&lt;/strong&gt;, which opens the Discount Coupon page.  On this page, the customer can enter the Discount Coupon redemption code to see any limits placed on the Discount Coupon.&lt;/p&gt;
+&lt;h2 id=&#34;discount-coupon-page&#34;&gt;Discount Coupon Page&lt;/h2&gt;
+&lt;p&gt;This page allows customers to look up any coupon codes they have and see the restrictions (if any) on their coupon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/discount_coupon.png&#34; alt=&#34;Discount Coupon Page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Looking up a specific coupon code will show the restrictions for that coupon.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/discount_coupon_lookup.png&#34; alt=&#34;Discount Coupon Restrictions&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;redeeming-coupons&#34;&gt;Redeeming Coupons&lt;/h2&gt;
+&lt;p&gt;When a customer adds something to their cart and proceeds to checkout, they will see a spot to enter a coupon code on the Payments page.&lt;br&gt;
+Once they fill in the code and press Enter, it will be checked for validity, and if it is valid and not restricted against what&amp;rsquo;s in their cart, a Success message will show on the screen, and their order Total will be adjusted appropriately.&lt;/p&gt;
+&lt;p&gt;If they wish to remove a coupon, they can enter a different coupon code, or they can type &amp;ldquo;REMOVE&amp;rdquo;, and press Enter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/discount_coupon_entry.png&#34; alt=&#34;Discount Coupon Entry&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;coupon-types&#34;&gt;Coupon Types&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;coupons&lt;/code&gt; table has a &lt;code&gt;coupon_type&lt;/code&gt; field. The possible values for coupon_type are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;S - Free Shipping&lt;/li&gt;
+&lt;li&gt;P - Percent Off&lt;/li&gt;
+&lt;li&gt;E - Percent Off and Free Shipping&lt;/li&gt;
+&lt;li&gt;F - Fixed Amount Off&lt;/li&gt;
+&lt;li&gt;O - Fixed Amount Off and Free Shipping&lt;/li&gt;
+&lt;li&gt;G - Gift Certificate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;display-of-coupon-discounts&#34;&gt;Display of Coupon Discounts&lt;/h2&gt;
+&lt;p&gt;Coupon Discounts are shown in the order summary on the checkout payment and
+checkout confirmation pages.  See &lt;a href=&#34;/zendocs_test1/user/products/price_reductions/&#34;&gt;price reductions&lt;/a&gt; for details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Default line items on an order</title>
+      <link>/zendocs_test1/user/order_total/default_line_items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/default_line_items/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The basic order total line items, which are enabled by default and will show for most taxable orders, are as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Subtotal:
+Shipping:
+Tax:
+Total: 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The entries for subtotal, tax and total have no configuration other than sort order.&lt;/p&gt;
+&lt;p&gt;Order total shipping has additional configuration settings which allow the configuration of free shipping (optionally over a threshold, and optionally limited to national and/or international).&lt;/p&gt;
+&lt;p&gt;There are also &lt;a href=&#34;/zendocs_test1/user/order_total/order_total/&#34;&gt;discounts&lt;/a&gt; and &lt;a href=&#34;/zendocs_test1/user/order_total/default_fees/&#34;&gt;fees&lt;/a&gt; which can be added to an order.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Discounts</title>
+      <link>/zendocs_test1/user/order_total/default_discounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/default_discounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart permits you to add discounts to specific types of orders.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/coupons/&#34;&gt;Coupons&lt;/a&gt; - Create discount coupons for price reductions and free shipping&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/zendocs_test1/user/order_total/group_pricing/&#34;&gt;Group Pricing&lt;/a&gt; - Offer discounts to groups of customers&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are also &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=7&#34;&gt;plugins which allow you to discount and reduce the order total&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The discounts described above are &lt;em&gt;order total&lt;/em&gt; discounts, which means they reduce the order total.  There are also product discounts which reduce the price of an individual product.  Take a look at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/products/quantity_discounts/&#34;&gt;Quantity Discounts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Fees</title>
+      <link>/zendocs_test1/user/order_total/default_fees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/default_fees/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Zen Cart permits you to add fees to specific types of orders.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;COD Fee - a COD fee may be applied to any shipping module.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Low Order Fee - if small orders incur costs for your business that make them unprofitable, you may add a low order fee.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are also &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=7&#34;&gt;plugins which allow you to charge fees&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Gift Certificates</title>
+      <link>/zendocs_test1/user/order_total/gift_certificates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/gift_certificates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To sell Gift Certificates in your store, you need to create them as products, according to the specifications below.&lt;/p&gt;
+&lt;p&gt;Gift Certificates may be optionally queued for release by the administrator so that they are not available immediately after purchase. (Some storeowners prefer to do this for extra security.)&lt;/p&gt;
+&lt;p&gt;If the &lt;em&gt;Queue Purchases&lt;/em&gt; setting in Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Gift Certificates is used, then after purchase, the administrator must &amp;ldquo;release&amp;rdquo; the gift certificate. A button indicating queued gift certificates is shown in the admin panel.  Once the release is done, the Gift Certificate funds are made available to the customer, by adding them to the Customer&amp;rsquo;s Gift Certificate balance.&lt;/p&gt;
+&lt;p&gt;If the &lt;em&gt;Queue Purchases&lt;/em&gt; setting is not used, the funds are made available in the Customer&amp;rsquo;s Gift Certificate balance immediately after purchase.&lt;/p&gt;
+&lt;p&gt;The customer can then USE those funds for themselves, OR they can email them to friend(s) via the links provided automatically in the store (esp shopping cart sidebox). They can email as much as they want, to various people, up to the amount they&amp;rsquo;ve purchased. Whoever they email it to will receive a new redemption code and can follow the redemption process, either redeeming via the email link, going to the Gift Certificate FAQ page or redeeming during checkout. The customer can email the funds again if they wish or use the GV Balance for themselves.&lt;/p&gt;
+&lt;p&gt;Gift Certificates show up at checkout on the Payment page:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/gift_certificates.png&#34; alt=&#34;Gift Certificates at Checkout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And on the My Account page:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/my_account_gift_certificates.png&#34; alt=&#34;Gift Certificates on My Account&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Your customers can also redeem gift certificates on the GV FAQ page (&lt;code&gt;index.php?main_page=gv_faq&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-create-a-gift-certificate&#34;&gt;How do I create a Gift Certificate?&lt;/h3&gt;
+&lt;p&gt;1. In the Admin, make a new category called Gift Certificates. Add a product to the category called Gift Certificates.&lt;/p&gt;
+&lt;p&gt;2. On the Product Information Page, use these settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Products Name: Gift Certificate&lt;/li&gt;
+&lt;li&gt;Product Priced by Attributes: This is up to you, if you choose to price by attributes you only need a single &amp;lsquo;product&amp;rsquo;.  Otherwise you need gift certificates at various price points.&lt;/li&gt;
+&lt;li&gt;Tax Class: choose appropriate&lt;/li&gt;
+&lt;li&gt;Products Price (Net): Your price or zero if pricing by attributes.&lt;/li&gt;
+&lt;li&gt;Products Price (Gross): figured automatically&lt;/li&gt;
+&lt;li&gt;Product is Virtual: Yes, Skip Shipping&lt;/li&gt;
+&lt;li&gt;Always Free Shipping: No.&lt;/li&gt;
+&lt;li&gt;Products Description: Your description.&lt;/li&gt;
+&lt;li&gt;Products Quantity: leave blank or put in a large number to track number sold.&lt;br&gt;
+If you are finding that you cannot add a Gift Certificate to your cart while shopping, try adding a quantity here!&lt;/li&gt;
+&lt;li&gt;Products Model: GIFT-xxxxx (Note: The model MUST begin with the string &amp;ldquo;GIFT&amp;rdquo;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3. Click Preview and then Save it.&lt;/p&gt;
+&lt;p&gt;4. Now go to Modules &amp;gt; Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-i-sell-gift-certificates&#34;&gt;How do I sell Gift Certificates?&lt;/h3&gt;
+&lt;p&gt;1. Create Gift Certificate products as described above&lt;br&gt;
+2. Enable the Gift Certificate order-total module, as described above&lt;br&gt;
+3. Draw attention to gift certificates on your store, perhaps by creating a home-page graphic with a link to your gift-certificates category.  Sometimes people will create a new sidebox just for drawing attention to this sort of thing.&lt;br&gt;
+4. When Gift Certificates are purchased, be sure to log into your Admin area and release them if you&amp;rsquo;ve configured it to queue them rather than auto-release them.&lt;/p&gt;
+&lt;h3 id=&#34;can-a-customer-use-multiple-gift-certificates-at-a-time&#34;&gt;Can a customer use multiple gift certificates at a time?&lt;/h3&gt;
+&lt;p&gt;A customer can enter as many Gift Certificates as they want on the checkout_payment page or gift-certificate redemption page (&lt;code&gt;index.php?main_page=gv_faq&lt;/code&gt;), and then apply what ever portion of their Gift Certificate Balance to the order.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Gift Certificates can also be claimed by using the link provided in the email and logging in to claim the Gift Certificate to add it to their available balance.   And then they are free to apply the amount to use against any future order during checkout on the checkout_payment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Gift Certificates are sometimes also called &amp;ldquo;Gift Vouchers&amp;rdquo; by our friends in the United Kingdom.  You will hear these terms used interchangeably.&lt;/p&gt;
+&lt;h3 id=&#34;what-admin-pages-show-gift-certificate-activity&#34;&gt;What admin pages show Gift Certificate activity?&lt;/h3&gt;
+&lt;p&gt;The Zen Cart admin has the following pages related to Gift Certificates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/&#34;&gt;Admin &amp;gt; Discounts &amp;gt; Gift Certificate Queue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/&#34;&gt;Admin &amp;gt; Discounts &amp;gt; Gift Certificates Sent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/&#34;&gt;Admin &amp;gt; Discounts &amp;gt; Send Gift Certificate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you don&amp;rsquo;t see these pages, it&amp;rsquo;s because you haven&amp;rsquo;t yet installed gift certificates. Go to Admin &amp;gt; Modules &amp;gt; Order Total, select Gift Certificates, and press Install.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Group Pricing</title>
+      <link>/zendocs_test1/user/order_total/group_pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/group_pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Group Pricing allows you to offer a percent-off discount to specific customers.  Customers are organized into groups according to their discount.&lt;/p&gt;
+&lt;p&gt;If you want to offer a group discount, you need to first enable group pricing&lt;/p&gt;
+&lt;p&gt;Go to: &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/order_total/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Order Total&lt;/a&gt; and select Group Pricing (ot_group_pricing). &lt;br&gt;
+If it&amp;rsquo;s not already installed, click Install to enable it.&lt;/p&gt;
+&lt;h2 id=&#34;group-pricing&#34;&gt;Group Pricing&lt;/h2&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/group_pricing/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Group Pricing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, you create a pricing group by clicking &lt;em&gt;Insert&lt;/em&gt;.  (Or &lt;em&gt;Edit&lt;/em&gt; to edit an existing pricing group.)&lt;br&gt;
+Fill in the details.&lt;/p&gt;
+&lt;h2 id=&#34;assigning-customers-to-pricing-groups&#34;&gt;Assigning Customers to Pricing Groups&lt;/h2&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customers/&#34;&gt;Admin &amp;gt; Customers &amp;gt; Customers&lt;/a&gt; and find the customer you want to 
+add to a group.  Edit the customer, and set the &lt;em&gt;Discount Pricing Group&lt;/em&gt;
+field at the bottom of the screen.  Press &lt;em&gt;Update&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The customer will now be entitled to the Group Discount you have configured.  The discount will be shown as a line item under the Subtotal at checkout time.&lt;/p&gt;
+&lt;h2 id=&#34;other-uses-for-pricing-groups&#34;&gt;Other Uses for Pricing Groups&lt;/h2&gt;
+&lt;p&gt;While not ideal, there is the possibility that custom code can use customer pricing groups for other purposes as well.  For example, the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=131&#34;&gt;Invoice Payment Method plugin&lt;/a&gt; checks the customer&amp;rsquo;s group and only becomes visible if their group name begins with the string &amp;ldquo;invoice_&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;display-of-group-discounts&#34;&gt;Display of Group Discounts&lt;/h2&gt;
+&lt;p&gt;Group Discounts are shown in the order summary on the checkout payment and
+checkout confirmation pages.  See &lt;a href=&#34;/zendocs_test1/user/products/price_reductions/&#34;&gt;price reductions&lt;/a&gt; for details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Why don&#39;t order total modules change item prices?</title>
+      <link>/zendocs_test1/user/order_total/why_no_price_change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/order_total/why_no_price_change/</guid>
+      <description>
+        
+        
+        &lt;p&gt;New users sometimes ask, &amp;ldquo;Why don&amp;rsquo;t order total modules change item prices?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Because that&amp;rsquo;s not how &lt;a href=&#34;/zendocs_test1/user/order_total/order_total/&#34;&gt;order total modules&lt;/a&gt; work. They apply to the &lt;strong&gt;total&lt;/strong&gt; order value, not to
+any individual product.  So they are line items which are added or subtracted after the Sub-Total is computed.&lt;/p&gt;
+&lt;p&gt;There are ways to &lt;em&gt;reduce&lt;/em&gt; individual product prices - you can use &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;Sales&lt;/a&gt; or &lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt;, for example.
+See &lt;a href=&#34;/zendocs_test1/user/products/price_reductions/&#34;&gt;Price Reductions&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;There are ways to &lt;em&gt;increase&lt;/em&gt; individual product prices through &lt;a href=&#34;/zendocs_test1/user/products/attributes/&#34;&gt;attributes&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

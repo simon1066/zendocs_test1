@@ -1,0 +1,429 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Sitemap - Admin Pages</title>
+    <link>/zendocs_test1/user/admin_pages/</link>
+    <description>Recent content in Sitemap - Admin Pages on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/zendocs_test1/user/admin_pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Admin menu sections</title>
+      <link>/zendocs_test1/user/admin_pages/menu_sections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/menu_sections/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;configurationuseradmin_pagesconfiguration&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/&#34;&gt;Configuration&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You can now see &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/all/&#34;&gt;all the configuration values on one page&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;My Store&lt;/a&gt; — General information about your site.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_minimumvalues/&#34;&gt;Minimum Values&lt;/a&gt; — Defines minimum values for various options in validation of user input.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_maximumvalues/&#34;&gt;Maximum Values&lt;/a&gt; — Defines maximum values for various items that will appear on each page/in each block.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_images/&#34;&gt;Images&lt;/a&gt; — Controls size of images on each page/each type of content.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_customerdetails/&#34;&gt;Customer Details&lt;/a&gt; — Controls options to include in &lt;em&gt;User Login/Registration&lt;/em&gt; and &lt;em&gt;My Account&lt;/em&gt; pages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Shipping/Packaging&lt;/a&gt; — General shipping information including locations, weight and size limits, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productlisting/&#34;&gt;Product Listing&lt;/a&gt; — Controls appearance of main &lt;em&gt;Product Listing&lt;/em&gt; pages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_stock/&#34;&gt;Stock&lt;/a&gt; — Control various options regarding stock control.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_logging/&#34;&gt;Logging&lt;/a&gt; — Controls how events are logged.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_emailoptions/&#34;&gt;E-Mail Options&lt;/a&gt; — Various email configuration options.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_attributesettings/&#34;&gt;Attribute Settings&lt;/a&gt; — Controls how product attributes are handled.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_gzipcompression/&#34;&gt;GZip Compression&lt;/a&gt; — Controls compression settings if the information is transmitted to the user&amp;rsquo;s web browser in compressed format.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_sessions/&#34;&gt;Sessions&lt;/a&gt; - Controls PHP Sessions settings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_regulations/&#34;&gt;Regulations&lt;/a&gt; — Provision of terms and conditions for customers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_gvcoupons/&#34;&gt;GV Coupons&lt;/a&gt; — Various configuration options for the &lt;em&gt;Gift Voucher&lt;/em&gt; module.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_creditcards/&#34;&gt;Credit Cards&lt;/a&gt; — Determine which credit cards to accept.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_productinfo/&#34;&gt;Product Info&lt;/a&gt; — Basic options controlling elements to include on &lt;em&gt;Product Info&lt;/em&gt; page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_layoutsettings/&#34;&gt;Layout Settings&lt;/a&gt; — Controls certain layout options.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_websitemaintenance/&#34;&gt;Website Maintenance&lt;/a&gt; — Controls how your store appears to customers when it is down for maintenance.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_newlisting/&#34;&gt;New Listing&lt;/a&gt; — How the New Products listing page should be laid out.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_featuredlisting/&#34;&gt;Featured Listing&lt;/a&gt; — How the Featured Products listing page should be laid out.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_alllisting/&#34;&gt;All Listing&lt;/a&gt; — How the All Products listing page should be laid out.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_indexlisting/&#34;&gt;Index Listing&lt;/a&gt; — Whether certain items show on main page and other category and product listing pages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Define Page Status&lt;/a&gt; — Controls whether define pages editor text is used and whether a link to a certain page is displayed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_ezpagessettings/&#34;&gt;EZ-Pages Settings&lt;/a&gt; — Various options to configure the EZ-Pages; an easy way to add new pages of content.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cataloguseradmin_pagescatalog&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/&#34;&gt;Catalog&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/categories/&#34;&gt;Categories/Products&lt;/a&gt; — Create and edit products and categories.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/product_types/&#34;&gt;Product Types&lt;/a&gt; — View and edit product types.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_price_manager/&#34;&gt;Products Price Manager&lt;/a&gt; — Edit product pricing by category.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_name_manager/&#34;&gt;Option Name Manager&lt;/a&gt; — View, edit, add and delete option names.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_value_manager/&#34;&gt;Option Value Manager&lt;/a&gt; — View, edit, add and delete option values.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/attributes_controller/&#34;&gt;Attributes Controller&lt;/a&gt; — View and edit product attributes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/downloads_manager/&#34;&gt;Downloads Manager&lt;/a&gt; — View and edit certain information about downloadable items.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_name_sorter/&#34;&gt;Option Name Sorter&lt;/a&gt; — View and edit sort order for option names.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/option_value_sorter/&#34;&gt;Option Value Sorter&lt;/a&gt; — Change sort order for option values.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/manufacturers/&#34;&gt;Manufacturers&lt;/a&gt; — View, add, edit or delete manufacturer information.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/reviews/&#34;&gt;Reviews&lt;/a&gt; — Edit or delete customer supplied reviews&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/specials/&#34;&gt;Specials&lt;/a&gt; — View, edit or delete special pricing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/featured/&#34;&gt;Featured Products&lt;/a&gt; — View, add, edit or delete featured products.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/salemaker/&#34;&gt;SaleMaker&lt;/a&gt; — View, add, edit or delete sales.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_expected/&#34;&gt;Products Expected&lt;/a&gt; — View or edit expected products.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/catalog/products_to_categories/&#34;&gt;Products to Categories&lt;/a&gt; — Manage product-category mappings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;modulesuseradmin_pagesmodules&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/&#34;&gt;Modules&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/payment/&#34;&gt;Payment&lt;/a&gt; — Install, edit or disable payment processing systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/shipping/&#34;&gt;Shipping&lt;/a&gt; — Install, edit or disable shipping methods.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/order_total/&#34;&gt;Order Total&lt;/a&gt; — Install, edit or disable checkout surcharges or discounts.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/plugin_manager/&#34;&gt;Plugin Manager&lt;/a&gt; - Install, activate and deactivate plugins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;customersuseradmin_pagescustomers&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/&#34;&gt;Customers&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/customers/&#34;&gt;Customers&lt;/a&gt; - View all customers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/orders/&#34;&gt;Orders&lt;/a&gt; - View all orders.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/customers/group_pricing/&#34;&gt;Group Pricing&lt;/a&gt; - Provide discounts to specific groups of customers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;locationstaxesuseradmin_pageslocations&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/&#34;&gt;Locations/Taxes&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/countries/&#34;&gt;Countries&lt;/a&gt; — Defines every country and ISO-3166 2-letter and 3-letter country code. Also defines the address format for letters sent by postal mail.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones/&#34;&gt;Zones&lt;/a&gt; — Defines subdivisions of countries such as states/provinces or counties.  This organization may be used to apply taxes to specific areas, or limit a shipping, payment or order total module to a specific region.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/zones_definitions/&#34;&gt;Zones Definitions&lt;/a&gt; — Create a zone of your own to apply taxes or limit a module&amp;rsquo;s availability.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_classes/&#34;&gt;Tax Classes&lt;/a&gt; — Used to differentiate between the type of tax calculations that apply to a given product.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/locations/tax_rates/&#34;&gt;Tax Rates&lt;/a&gt; — Create a specific tax rate for a zone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;localizationuseradmin_pageslocalization&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/&#34;&gt;Localization&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/currencies/&#34;&gt;Currencies&lt;/a&gt; — Add new currencies or edit existing ones.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/languages/&#34;&gt;Languages&lt;/a&gt; in order to internationalize the output generated by Zen Cart.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/localization/orders_status/&#34;&gt;Orders Status&lt;/a&gt; — Add names of new order status entries, edit existing order status name entries, or delete an order status name entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reportsuseradmin_pagesreports&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/&#34;&gt;Reports&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/customer_orders_total/&#34;&gt;Customer Orders-Total&lt;/a&gt; — List of customers sorted by total order volume.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/customers_referral/&#34;&gt;Customers Referral&lt;/a&gt; — List of orders having a referral or coupon code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_low_stock/&#34;&gt;Products Low Stock&lt;/a&gt; — List of items sorted by number available in stock, low to high.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_purchased/&#34;&gt;Products Purchased&lt;/a&gt; — List of products ranked by sales order.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/products_viewed/&#34;&gt;Products Viewed&lt;/a&gt; — List of the number of views of all products.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/reports/graphical_sales_report/&#34;&gt;Sales Report with Graphs&lt;/a&gt; — Shows sales in a graphical format.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;toolsuseradmin_pagestools&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/&#34;&gt;Tools&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/template_selection/&#34;&gt;Template Selection&lt;/a&gt; — Sets the template to be used in your storefront.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/layout_boxes_controller/&#34;&gt;Layout Boxes Controller&lt;/a&gt; — Shows how and where certain side boxes are to be displayed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/banner_manager/&#34;&gt;Banner Manager&lt;/a&gt; — Manage banners.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/send_email/&#34;&gt;Send Email&lt;/a&gt; - Allows you to send an email message to a customer or a group of customers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/newsletter/&#34;&gt;Newsletter Manager&lt;/a&gt; - Allows you to create and send newsletters.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info/&#34;&gt;Server/Version Info&lt;/a&gt; — Information about the web server running Zen Cart.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/whos_online/&#34;&gt;Who&amp;rsquo;s Online&lt;/a&gt; — View certain information about the users who are currently connected to Zen Cart.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/store_manager/&#34;&gt;Store Manager&lt;/a&gt; - reset various counts and settings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/developers_tool_kit/&#34;&gt;Developers Tool Kit&lt;/a&gt; - search for strings in your files.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; — Add and remove special &lt;em&gt;EZ-Pages&lt;/em&gt; pages which are easier to create or edit than standard PHP or HTML.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt; — Edit certain definition pages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/install_sql_patches/&#34;&gt;Install SQL Patches&lt;/a&gt; — Run SQL commands directly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;discountsuseradmin_pagesdiscounts&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/&#34;&gt;Discounts&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/coupon_admin/&#34;&gt;Coupon Admin&lt;/a&gt; — Manage discount coupons.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/gift_certificate_queue/&#34;&gt;Gift Certificates Queue&lt;/a&gt; — View and release gift certificates which have been issued.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/send_gift_certificate/&#34;&gt;Send a Gift Certificate&lt;/a&gt; — Generate gift certificates and issue them by e-mail.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/discounts/gift_certificates_sent/&#34;&gt;Gift Certificates sent&lt;/a&gt; — View gift vouchers which have been sent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;adminsuseradmin_pagesadmins&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/&#34;&gt;Admins&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profiles&lt;/a&gt; — Profiles allow you to create restricted admin accounts.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admin Users&lt;/a&gt; — Shows all admin users.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_page_registration/&#34;&gt;Admin Page Registration&lt;/a&gt; — Allows developers to create new pages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/&#34;&gt;Admin Activity Logs&lt;/a&gt; — Access logging data created by admin activity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;extrasuseradmin_pagesextras&#34;&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/&#34;&gt;Extras&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/record_artists/&#34;&gt;Record Artists&lt;/a&gt; — View, add, edit and delete recording artists.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/record_companies/&#34;&gt;Record Companies&lt;/a&gt; — View, add, edit and delete record companies.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/music_genre/&#34;&gt;Music Genre&lt;/a&gt; — View, add, edit and delete music genres.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/media_manager/&#34;&gt;Media Manager&lt;/a&gt; — View, add, edit and delete collection names, which may be assigned to products.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/extras/media_types/&#34;&gt;Media Types&lt;/a&gt; - View, add, edit and delete media types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-admin-elements&#34;&gt;Other Admin Elements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_dashboard/&#34;&gt;Admin Dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_version/&#34;&gt;Admin &amp;gt; Version link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_account/&#34;&gt;Admin &amp;gt; Account link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_view_activity_log/&#34;&gt;Admin View Activity Log button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/zendocs_test1/user/admin_pages/admin_new_version_available/&#34;&gt;Admin &amp;gt; New Version Available message&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Configuration</title>
+      <link>/zendocs_test1/user/admin_pages/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/configuration/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Catalog</title>
+      <link>/zendocs_test1/user/admin_pages/catalog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/catalog/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Modules</title>
+      <link>/zendocs_test1/user/admin_pages/modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/modules/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customers</title>
+      <link>/zendocs_test1/user/admin_pages/customers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/customers/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Locations/Taxes</title>
+      <link>/zendocs_test1/user/admin_pages/locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/locations/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Localization</title>
+      <link>/zendocs_test1/user/admin_pages/localization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/localization/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Reports</title>
+      <link>/zendocs_test1/user/admin_pages/reports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/reports/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Tools</title>
+      <link>/zendocs_test1/user/admin_pages/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/tools/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Discounts</title>
+      <link>/zendocs_test1/user/admin_pages/discounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/discounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Other discounts are configured under &lt;a href=&#34;/zendocs_test1/user/admin_pages/modules/order_total/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Order Total&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admins</title>
+      <link>/zendocs_test1/user/admin_pages/admins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admins/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Extras</title>
+      <link>/zendocs_test1/user/admin_pages/extras/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/extras/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin Dashboard</title>
+      <link>/zendocs_test1/user/admin_pages/admin_dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_dashboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Admin Dashboard is your home page in the Zen Cart admin.&lt;/p&gt;
+&lt;p&gt;It is structured to give you the maximum amount of information possible about 
+your store one one page.&lt;/p&gt;
+&lt;p&gt;Each of the boxes on the admin page under the menu is called a widget. 
+Here&amp;rsquo;s the statistics widget, as an example.&lt;/p&gt;
+&lt;img src=&#34;/zendocs_test1/images/widget.png&#34; alt=&#34;Widgets on home page&#34; /&gt;
+&lt;p&gt;The following widgets are pre-built on your admin home page:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Statistics (product and category counts, reviews, etc.)&lt;/li&gt;
+&lt;li&gt;Special, Featured and Sale counts&lt;/li&gt;
+&lt;li&gt;Order counts by status&lt;/li&gt;
+&lt;li&gt;New Customers&lt;/li&gt;
+&lt;li&gt;Who&amp;rsquo;s Online&lt;/li&gt;
+&lt;li&gt;Visitor History&lt;/li&gt;
+&lt;li&gt;New Orders&lt;/li&gt;
+&lt;li&gt;Monthly Sales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have specific things you&amp;rsquo;d like to monitor on your site, you
+can build your own widget.  See &lt;a href=&#34;/zendocs_test1/dev/code/widget/&#34;&gt;building an admin widget&lt;/a&gt; for details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin &gt; Support link</title>
+      <link>/zendocs_test1/user/admin_pages/admin_support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_support/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;Admin &amp;gt; Support&lt;/code&gt; link takes you to the &lt;a href=&#34;https://www.zen-cart.com/forum.php&#34;&gt;Zen Cart forum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Participating in the Zen Cart forum is a great way to build your 
+knowledge of Zen Cart and to have fun and help other users at the same time.&lt;/p&gt;
+&lt;p&gt;Read more about &lt;a href=&#34;/zendocs_test1/user/zen_cart_forum/&#34;&gt;how to use the Zen Cart forum&lt;/a&gt; here to prepare to make effective use of this resource.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin &gt; Version link</title>
+      <link>/zendocs_test1/user/admin_pages/admin_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_version/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;Version&lt;/code&gt; link at the top right hand side or your admin page takes you to the 
+&lt;a href=&#34;/zendocs_test1/user/admin_pages/tools/server_info/&#34;&gt;Tools &amp;gt; Server/Version Info&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;It shows information about your server configuration,
+including PHP and MySQL versions and settings, as well as 
+your Zen Cart version and database history.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Clicking this link is the fastest way to get your store&amp;rsquo;s version information&lt;/strong&gt;.
+Providing this information when asking for support will help improve the usefulness of the responses you get and avoid having to be asked for it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/version_link.png&#34; alt=&#34;Zen Cart Version information&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If your hoster updated your PHP version, be aware that if you&amp;rsquo;re running an old version of Zen Cart, you could have problems - refer to the &lt;a href=&#34;/zendocs_test1/user/first_steps/server_requirements/#php-version&#34;&gt;PHP Version - Zen Cart version compatibility matrix&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin &gt; Account link</title>
+      <link>/zendocs_test1/user/admin_pages/admin_account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_account/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;Admin &amp;gt; Account&lt;/code&gt; page allows the currently-logged-in Admin user to change their email address or reset their password.&lt;/p&gt;
+&lt;p&gt;Administrators with an un-restricted &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_profiles/&#34;&gt;Admin Profile&lt;/a&gt; can perform these same changes 
+for other admin users using the &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_users/&#34;&gt;Admins &amp;gt; Admin Users&lt;/a&gt; page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin View Activity Log button</title>
+      <link>/zendocs_test1/user/admin_pages/admin_view_activity_log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_view_activity_log/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;em&gt;View Activity Log&lt;/em&gt; button is shown when your Admin Activity Log table has records over 2 months old.&lt;/p&gt;
+&lt;p&gt;Pressing the button takes you to the page &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/&#34;&gt;Admins &amp;gt; Admin Activity Logs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/admin_activity_log.png&#34; alt=&#34;Zen Cart Admin Activity Log button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On the Admin Activity Logs page, you can export your old logs and 
+purge log history.  &lt;a href=&#34;/zendocs_test1/user/admin_pages/admins/admin_activity_logs/#purging-logs&#34;&gt;Here is the procedure to purge old logs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Admin &gt; New Version Available message</title>
+      <link>/zendocs_test1/user/admin_pages/admin_new_version_available/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zendocs_test1/user/admin_pages/admin_new_version_available/</guid>
+      <description>
+        
+        
+        &lt;br /&gt;
+&lt;p&gt;If you are running an older version of Zen Cart, a message will appear at 
+the top right hand side of your Admin page, reminding you to upgrade.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/new_version.png&#34; alt=&#34;New Zen Cart Version available&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This message can be disabled by setting &lt;code&gt;Show if version update available&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; in &lt;a href=&#34;/zendocs_test1/user/admin_pages/configuration/configuration_mystore/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you do that, instead of a new version announcement, you&amp;rsquo;ll see a link that allows you to check for a new version.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/zendocs_test1/images/check_new_version.png&#34; alt=&#34;Check for New Zen Cart Version&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In addition to this message, &lt;a href=&#34;/zendocs_test1/user/about_us/announcements&#34;&gt;subscribing to release announcements&lt;/a&gt; is a great way to stay informed about new releases and security updates.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

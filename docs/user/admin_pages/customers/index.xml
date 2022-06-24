@@ -1,0 +1,266 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Customers</title>
+    <link>/user/admin_pages/customers/</link>
+    <description>Recent content in Customers on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/admin_pages/customers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Customers</title>
+      <link>/user/admin_pages/customers/customers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/customers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Customers page allows you to view your customers.&lt;/p&gt;
+&lt;p&gt;It shows your customers in a paginated list, with one line per customer. 
+The most recently added customer is shown first.&lt;/p&gt;
+&lt;img src=&#34;/images/customers_list.png&#34; alt=&#34;Zen Cart Customers&#34; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;The columns in the list are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customer ID&lt;/li&gt;
+&lt;li&gt;Customer Last and First Name&lt;/li&gt;
+&lt;li&gt;Customer Company&lt;/li&gt;
+&lt;li&gt;Date the customer record was created&lt;/li&gt;
+&lt;li&gt;Date the customer last logged in&lt;/li&gt;
+&lt;li&gt;Customer&amp;rsquo;s &lt;a href=&#34;/user/admin_pages/customers/group_pricing/&#34;&gt;pricing group&lt;/a&gt; (if set)&lt;/li&gt;
+&lt;li&gt;Customers &lt;a href=&#34;/user/order_total/gift_certificates/&#34;&gt;Gift Certificate&lt;/a&gt; balance (if any)&lt;/li&gt;
+&lt;li&gt;Customer&amp;rsquo;s &lt;a href=&#34;/user/orders/customer_approval/&#34;&gt;authorization status&lt;/a&gt; (You can ban a customer by clicking the green icon so it turns red)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Clicking a customers record selects that customer and opens a preview on the right hand side of the page.  From there, the customer record may be edited or deleted.  Other available actions are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;view the customer&amp;rsquo;s orders&lt;/li&gt;
+&lt;li&gt;email the customer&lt;/li&gt;
+&lt;li&gt;reset the customer&amp;rsquo;s password (since 1.5.5)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/running/login_as_customer/&#34;&gt;login as a customer&lt;/a&gt; and place an order (since 1.5.7)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/images/customers_sidebar.png&#34; alt=&#34;Customers sidebar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Editing the customer record takes you to the customer details screen, which shows the customer&amp;rsquo;s default address, telephone number and email address, as well as other settings specific to that customer.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/user/orders/&#34;&gt;customer and order data FAQs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Orders</title>
+      <link>/user/admin_pages/customers/orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/orders/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Orders page allows you to view your orders.&lt;/p&gt;
+&lt;p&gt;It shows your orders in paginated list, with one line per order.  The most recently received order is shown first.&lt;/p&gt;
+&lt;img src=&#34;/images/orders_list.png&#34; alt=&#34;Zen Cart Orders Screen&#34; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;The columns in the list are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Order ID&lt;/li&gt;
+&lt;li&gt;Payment and Shipping - the payment module and shipping module names are shown in stacked format.&lt;/li&gt;
+&lt;li&gt;Customer&amp;rsquo;s name (with company name, if applicable, shown below)&lt;/li&gt;
+&lt;li&gt;Total value of the order&lt;/li&gt;
+&lt;li&gt;Date purchased&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/localization/orders_status/&#34;&gt;Order Status&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Customer comments on the order are indicated by a yellow square.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To the left of the order id, a red dot indicates that the order&amp;rsquo;s shipping address is different from the billing address. Such orders are a greater fraud risk, which is why they are flagged in this way.&lt;/p&gt;
+&lt;p&gt;Clicking an order selects it and opens a preview on the right hand side of the page.  From there, the order may be opened or deleted.  The invoice or packingslip for an order may also be opened from the preview.&lt;/p&gt;
+&lt;p&gt;Since Zen Cart 1.5.7, the preview window also allows you to change the status of the order (and optionally send an email to the customer).  The &lt;em&gt;Send Email&lt;/em&gt; checkbox is prefilled according to the setting in &lt;a href=&#34;/user/admin_pages/configuration/configuration_mystore/#default_for_notify_customer_on_order_status_update&#34;&gt;Admin &amp;gt; Configuration &amp;gt; My Store &amp;gt; Default for Notify Customer on Order Status Update?&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Opening an order displays the order details screen, which shows the customer information, order contents, and order history.  The order status may be updated from this screen.  Updating the order status permits you to optionally send an email to the customer with the updated status and a brief note.&lt;/p&gt;
+&lt;img src=&#34;/images/order_update.png&#34; alt=&#34;Zen Cart Orders Updating &#34; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;In this order, the first history entry is from when the order was placed, the second was done by an administrator and resulted in an email to the customer, and the third was done by an administrator and will only be visible in the admin, and not to the customer.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;/user/orders/&#34;&gt;customer and order FAQs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some display features on this page may be switched off and on - see &lt;a href=&#34;/user/admin_pages/customers/order_display_options/&#34;&gt;switchable features on order pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Customer Groups</title>
+      <link>/user/admin_pages/customers/customer_groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/customer_groups/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Customer Groups page allows you to view your customer groups. This is a new feature which was added in Zen Cart 1.5.8.&lt;/p&gt;
+&lt;p&gt;It shows your groups in a paginated list, with one line per customer. 
+The most recently added group is shown first.&lt;/p&gt;
+&lt;img src=&#34;/images/customer_groups.png&#34; alt=&#34;Zen Cart Customer Groups&#34; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;The columns in the list are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Group ID&lt;/li&gt;
+&lt;li&gt;Group Name&lt;/li&gt;
+&lt;li&gt;Count of customers in group&lt;/li&gt;
+&lt;li&gt;Description of group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Clicking a group record selects that group and opens a preview on the right hand side of the page.  From there, the group record may be edited or deleted.&lt;/p&gt;
+&lt;p&gt;A customer may only belong to one &lt;a href=&#34;/user/admin_pages/customers/group_pricing/&#34;&gt;pricing group&lt;/a&gt;, but may be in any number of customer groups.&lt;/p&gt;
+&lt;p&gt;The Groups feature is highly specific to store needs.  See &lt;a href=&#34;/user/customizing/customer_groups&#34;&gt;Using Customer Groups&lt;/a&gt; for ideas.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Group Pricing</title>
+      <link>/user/admin_pages/customers/group_pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/group_pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Group Pricing page allows you to create customer pricing groups.  These can be 
+used to give group discounts if you enable &lt;code&gt;Admin &amp;gt; Modules &amp;gt; Order Total &amp;gt; Group Pricing&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For more information on group discounts, see the &lt;a href=&#34;/user/order_total/group_pricing/&#34;&gt;group pricing FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A separate concept of &lt;a href=&#34;/user/admin_pages/customers/customer_groups/&#34;&gt;customer group&lt;/a&gt; exists in Zen Cart 1.5.8 and above. A customer may only belong to a single customer pricing group, but may belong to any number of customer groups.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Order Display Options</title>
+      <link>/user/admin_pages/customers/order_display_options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/order_display_options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Orders, Invoice and PackingSlip pages have features that may be enabled or disabled depending on your preferences and the regulatory requirements where you operate.&lt;/p&gt;
+&lt;p&gt;To modify these settings, set up your &lt;a href=&#34;/user/admin/site_specific_overrides/&#34;&gt;Admin site specific overrides&lt;/a&gt; file with these entries:&lt;/p&gt;
+&lt;h2 id=&#34;orders-page&#34;&gt;Orders Page&lt;/h2&gt;
+&lt;p&gt;The following flags may be set for the Orders page:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Behavior&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$quick_view_popover_enabled&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;Enables clickable icon on order listing to show order contents&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$includeAttributesInProductDetailRows&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Shows attributes in popover&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_product_tax&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Shows tax columns&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_zone_info&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;shows zone where the order was shipped&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;invoice-page&#34;&gt;Invoice Page&lt;/h2&gt;
+&lt;p&gt;The following flags may be set for the Invoice page:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Behavior&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_product_images&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Display product images on invoice&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_attrib_images&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Display attribute images on invoice&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;packingslip-page&#34;&gt;Packingslip Page&lt;/h2&gt;
+&lt;p&gt;The following flags may be set for the Packingslip page:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Behavior&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_product_images&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Display product images on packingslip&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$show_attrib_images&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;Display attribute images on packingslip&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Orders &gt; Invoice</title>
+      <link>/user/admin_pages/customers/orders_invoice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/orders_invoice/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Orders Invoice page allows you to view an invoice for a particular order.&lt;/p&gt;
+&lt;p&gt;In this context, &amp;ldquo;invoice&amp;rdquo; means a summary of the order, not an account to be paid.  The invoice contains the full order information, in contrast to the &lt;a href=&#34;/user/admin_pages/customers/orders_packingslip/&#34;&gt;packing slip&lt;/a&gt;, which only contains the products in the order.&lt;/p&gt;
+&lt;img src=&#34;/images/invoice.png&#34; alt=&#34;Zen Cart Invoice&#34; /&gt; 
+&lt;p&gt;Some display features on this page may be switched off and on - see &lt;a href=&#34;/user/admin_pages/customers/order_display_options/&#34;&gt;switchable features on order pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Orders &gt; Packing Slip</title>
+      <link>/user/admin_pages/customers/orders_packingslip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/admin_pages/customers/orders_packingslip/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Orders Packing Slip page allows you to view a packing slip for a particular order.&lt;/p&gt;
+&lt;p&gt;In this context, an &amp;ldquo;invoice&amp;rdquo; means a summary of the order, not an account to be paid.  The invoice&lt;/p&gt;
+&lt;p&gt;The packing slip only contains the products in the order and the customer&amp;rsquo;s billing and shipping address, in contrast to the &lt;a href=&#34;/user/admin_pages/customers/orders_invoice/&#34;&gt;order invoice&lt;/a&gt;, which contains the full order information.&lt;/p&gt;
+&lt;img src=&#34;/images/packingslip.png&#34; alt=&#34;Zen Cart Packing Slip&#34; /&gt; 
+&lt;p&gt;Some display features on this page may be switched off and on - see &lt;a href=&#34;/user/admin_pages/customers/order_display_options/&#34;&gt;switchable features on order pages&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

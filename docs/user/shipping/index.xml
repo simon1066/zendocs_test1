@@ -1,0 +1,438 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Shipping</title>
+    <link>/user/shipping/</link>
+    <description>Recent content in Shipping on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/shipping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: About Shipping Modules</title>
+      <link>/user/shipping/shipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/shipping/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Shipping modules allow you to charge your customers for delivery.&lt;/p&gt;
+&lt;h2 id=&#34;how-shipping-rates-are-quoted&#34;&gt;How Shipping Rates Are Quoted&lt;/h2&gt;
+&lt;p&gt;By default, most shipping modules prepare quotes based on weight and destination.&lt;/p&gt;
+&lt;h3 id=&#34;determining-weight&#34;&gt;Determining Weight&lt;/h3&gt;
+&lt;p&gt;Zen Cart takes the items in your shopping cart and looks at the product details you&amp;rsquo;ve configured for them &amp;ndash; particularly the weight.&lt;/p&gt;
+&lt;p&gt;It uses that information to assemble a list of all the packages that need to be shipped. By default it uses a very simplified calculation of &amp;ldquo;how much do all the products weigh?&amp;rdquo; and then &amp;ldquo;how many boxes must be used, based on max weight per package?&amp;rdquo;. It also incorporates a &amp;ldquo;tare&amp;rdquo; amount (packaging materials weight) for each package. See &lt;a href=&#34;/user/shipping/shipping_calculations/&#34;&gt;How Weight and Tare Are Determined&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Then it takes those packages and lets each active shipping module determine available rates.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-transmitted-to-carriers&#34;&gt;What is Transmitted To Carriers?&lt;/h3&gt;
+&lt;p&gt;Several basic shipping modules that are based on defined rates for defined zones (both defined by the storeowner) don&amp;rsquo;t transmit anything to anyone.&lt;/p&gt;
+&lt;p&gt;Modules that are configured to get real-time quotes from carriers will transmit the following information to the carrier&amp;rsquo;s quoting service:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;store&amp;rsquo;s zip/postal code&lt;/li&gt;
+&lt;li&gt;customer&amp;rsquo;s zip/postal code&lt;/li&gt;
+&lt;li&gt;number of packages&lt;/li&gt;
+&lt;li&gt;weight of each package&lt;/li&gt;
+&lt;li&gt;some modules might transmit package dimensions if the module supports this feature&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-shipping-rate-selected-by-customer&#34;&gt;How To Use Shipping Rate Selected By Customer&lt;/h3&gt;
+&lt;p&gt;At checkout the customer chooses from the available shipping options presented. Their choice is stored in their order as the description of the &amp;ldquo;shipping&amp;rdquo; subtotal.&lt;/p&gt;
+&lt;p&gt;Then when you have packaged up the order and take it to the carrier you tell the person at the counter what Service the customer selected, and you pay them to ship it.&lt;/p&gt;
+&lt;h2 id=&#34;applying-shipping-restrictions-to-modules&#34;&gt;Applying Shipping Restrictions To Modules&lt;/h2&gt;
+&lt;p&gt;Many shipping modules may be restricted so that they only work in specific zones - an existing one, or one you have created.&lt;/p&gt;
+&lt;p&gt;To learn how to create a new zone, see &lt;a href=&#34;/user/locations/zone_definitions/&#34;&gt;creating zone definitions&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;available-shipping-modules&#34;&gt;Available Shipping Modules&lt;/h2&gt;
+&lt;p&gt;The list of available shipping modules may be seen by going to &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zen Cart has a number of built-in shipping modules which allow you to charge for shipping based on various factors in the order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flat - Charge a single flat rate on all shipments&lt;/li&gt;
+&lt;li&gt;Item - Charge per item&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/shipping/zones/&#34;&gt;Zones&lt;/a&gt; - Charge different rates for delivering to different zones&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/shipping/table/&#34;&gt;Table&lt;/a&gt; - Charge according to a table of rates based on weight, item count or item price, entered as &lt;a href=&#34;/user/running/colon-separated-pairs/&#34;&gt;colon-separated pairs&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart also integrates with a number of shipping vendors using plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1293&#34;&gt;UPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=126&#34;&gt;UPS XML with Negotiated Rates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1292&#34;&gt;USPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=4&#34;&gt;Canada Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=190&#34;&gt;Royal Mail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More shipping plugins may be found in the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=cat&amp;amp;id=11&#34;&gt;Shipping module section of the Plugins Library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;considering-developing-a-shipping-module&#34;&gt;Considering Developing A Shipping Module?&lt;/h2&gt;
+&lt;p&gt;Developers wishing to create a shipping module should see the &lt;a href=&#34;/dev/code/modules/&#34;&gt;dev FAQs on modules&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Free Shipping</title>
+      <link>/user/shipping/free_shipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/free_shipping/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Note: During Checkout, the Shipping Selection page is automatically skipped if all products in the cart are virtual.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-i-tell-the-shopping-cart-that-shipping-does-not-apply&#34;&gt;How do I tell the shopping cart that shipping does not apply?&lt;/h2&gt;
+&lt;p&gt;Individually set products as &lt;code&gt;free shipping&lt;/code&gt; by visiting the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing screen&lt;/a&gt; for each one, and setting radio button &lt;code&gt;Always Free Shipping&lt;/code&gt; to &lt;code&gt;Yes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then enable the &lt;code&gt;FREE SHIPPING!&lt;/code&gt; module on &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This will allow checkout to totally bypass the shipping page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;how-do-i-make-shipping-free&#34;&gt;How do I make shipping free?&lt;/h2&gt;
+&lt;p&gt;There are several ways to offer free shipping:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mark the product as free-shipping (see above)&lt;/li&gt;
+&lt;li&gt;mark the product as virtual&lt;/li&gt;
+&lt;li&gt;associate downloads with the product and mark it as free shipping&lt;/li&gt;
+&lt;li&gt;create coupons that have Free Shipping as part of the discounting they provide&lt;/li&gt;
+&lt;li&gt;use the Free Options shipping module, which offers free-shipping based on special criteria you can set (see below)&lt;/li&gt;
+&lt;li&gt;set the product weight to 0, and set &lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging/#order_free_shipping_0_weight_status&#34;&gt;Order Free Shipping 0 Weight Status&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;how-do-i-enable-free-shipping-for-orders-more-than-xx&#34;&gt;How do I enable free shipping for orders more than $XX?&lt;/h2&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/modules/order_total/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Order Total&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then select &lt;em&gt;Shipping&lt;/em&gt; from the list. 
+If the module is not installed click the install button.&lt;/p&gt;
+&lt;p&gt;Click edit to configure the criteria to allow free shipping.&lt;/p&gt;
+&lt;h2 id=&#34;how-can-i-allow-free-shipping-but-still-show-other-shipping-options-as-choices&#34;&gt;How can I allow free shipping but still show other shipping options as choices?&lt;/h2&gt;
+&lt;p&gt;You may wish to offer free shipping but still present paid shipping options,for example if your other shipping options are expedited for a higher fee.&lt;/p&gt;
+&lt;p&gt;If this case, use the &lt;code&gt;Free Shipping Options&lt;/code&gt; module on &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You may configure shipping to be free under any of these conditions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always&lt;/li&gt;
+&lt;li&gt;Order Total less than or greater than a specified value&lt;/li&gt;
+&lt;li&gt;Order Weight less than or greater than a specified value&lt;/li&gt;
+&lt;li&gt;Order Item Count less than or greater than a specified value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;my-store-shows-free-shipping-but-i-dont-want-it&#34;&gt;My store shows free shipping but I don&amp;rsquo;t want it!&lt;/h2&gt;
+&lt;p&gt;You may need to do one or more of these things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/modules/order_total/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Order Total&lt;/a&gt;, and select &lt;em&gt;Shipping&lt;/em&gt;, then press Edit.   If &lt;em&gt;Allow Free Shipping&lt;/em&gt; is true, turn it to false, or if you simply want to raise the  threshold, update the field &lt;em&gt;Free Shipping For Orders Over&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;, and adjust or remove &lt;code&gt;Free Shipping Options&lt;/code&gt; and/or &lt;code&gt;FREE SHIPPING!&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging&lt;/a&gt; and set &lt;code&gt;Order Free Shipping 0 Weight Status&lt;/code&gt; to 0.  Or, if you wish zero weight packages to generally be shipped free, but you&amp;rsquo;re finding some products are zero weight and shouldn&amp;rsquo;t be, you&amp;rsquo;ll want to find all of those and fix them.  See options below for finding these misconfigured products.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-do-i-find-products-incorrectly-configured-with-zero-weight&#34;&gt;How do I find products incorrectly configured with zero weight?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You could &lt;a href=&#34;/dev/code/reports/&#34;&gt;build a report&lt;/a&gt; to show items with zero weight.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could &lt;a href=&#34;/dev/code/widget/&#34;&gt;build a dashboard widget&lt;/a&gt; to display zero weight items on your admin home page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could run a SQL query from phpMyAdmin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT p.products_id, pd.products_name FROM products p, products_description pd WHERE p.products_id = pd.products_id AND p.products_weight = 0 AND products_virtual = 0; 
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Individual Per Item shipping charges</title>
+      <link>/user/shipping/per_item_shipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/per_item_shipping/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The per-weight shipping module can be used for this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Turn on the Per-Unit (perweightunit) shipping module in &lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now manually edit &lt;em&gt;each&lt;/em&gt; product and enter the shipping cost as the product &amp;ldquo;weight&amp;rdquo;.
+This module uses the product-weight as the shipping rate for this product.  This means the &lt;code&gt;weight&lt;/code&gt; field is no longer the weight &amp;ndash; it is only the shipping cost.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn off weight display everywhere, since it is no longer meaningful.&lt;/p&gt;
+&lt;p&gt;a) &lt;a href=&#34;/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page&#34;&gt;Turn off weight display on the product info page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;b) Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging &amp;gt; Display Number of Boxes and Weight Status&lt;/p&gt;
+&lt;p&gt;c) Admin &amp;gt; Configuration &amp;gt; Index Listing / All Listing / New Listing / Featured Listing - all must be changed to not display the weight.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Printing Shipping Labels</title>
+      <link>/user/shipping/labels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/labels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;While Zen Cart doesn&amp;rsquo;t provide a Carrier Shipping Label service/feature, here are some options to consider.&lt;/p&gt;
+&lt;h2 id=&#34;packing-slip&#34;&gt;Packing Slip&lt;/h2&gt;
+&lt;p&gt;In some cases the Packing Slip, which you can print from your Admin screens, can be used directly on the package, or in a windowed-envelope affixed to the package.&lt;/p&gt;
+&lt;h2 id=&#34;printing-labels-from-paypal&#34;&gt;Printing Labels from PayPal&lt;/h2&gt;
+&lt;p&gt;One little-known tip is that &lt;a href=&#34;https://www.paypal.com/us/cgi-bin/webscr?cmd=_ship-now&#34;&gt;PayPal&amp;rsquo;s Ship Now feature&lt;/a&gt; allows you to Pay for and Print shipping labels] from your account on their website.&lt;/p&gt;
+&lt;p&gt;You enter the details of the shipment (address, package dimensions), select a service, pay for it, and they provide you the label for printing.
+Their fees are often better than many of the other companies providing broader services.&lt;/p&gt;
+&lt;h2 id=&#34;shipstation&#34;&gt;ShipStation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.shipstation.com&#34;&gt;ShipStation&lt;/a&gt; allows you to pring pre-paid mailing labels for Zen Cart orders.&lt;/p&gt;
+&lt;h2 id=&#34;plugins&#34;&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2274&#34;&gt;Copy Shipping Label&lt;/a&gt; plugin copies an order&amp;rsquo;s destination shipping address to your computer&amp;rsquo;s clipboard so that you can paste it into a labelmaker.&lt;/p&gt;
+&lt;p&gt;There are some commercial plugins which interact with the shipping/carrier companies to allow submission of orders, retrieval of tracking numbers, etc.  Many do not charge any extra fee for this ability beyond the actual shipping cost.&lt;/p&gt;
+&lt;p&gt;Be sure to assess the company&amp;rsquo;s offer to ensure that it meets your needs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Shipping Calculations</title>
+      <link>/user/shipping/shipping_calculations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/shipping_calculations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To view the settings related to shipping, go to 
+&lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight. (There are some Plugins that handle dimensions if you need that capability.)&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;small to medium box&amp;rdquo; corresponds to &amp;ldquo;an order whose weight does not exceed the maximum package weight.&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the weight of all the products in the order is less than or equal to the setting in &lt;em&gt;Enter the Maximum Package Weight you will ship&lt;/em&gt;, 
+then the order is assumed to fit in a small/medium box.&lt;br&gt;
+The weight of the package will be grossed up by &lt;em&gt;Package Tare Small to Medium  - added percentage:weight&lt;/em&gt;, 
+and this weight will be passed to the shipping modules for your cart, to prepare quotes.&lt;/li&gt;
+&lt;li&gt;If the weight of all the products in the order is greater than the setting in &lt;em&gt;Enter the Maximum Package Weight you will ship&lt;/em&gt;, 
+the weight of the package will be grossed up by &lt;em&gt;Larger packages - added packaging percentage:weight&lt;/em&gt;, 
+and that weight will be passed to the shipping modules for your cart, to prepare quotes.&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;number of boxes&lt;/em&gt; calculated by the shipping module does &lt;em&gt;not&lt;/em&gt; take into account that products generally cannot be split into &amp;ldquo;equal parts&amp;rdquo; to meet weight restrictions.
+For this reason most shopowners will choose not to display this value (i.e. they will set &lt;em&gt;Display Number of Boxes and Weight Status&lt;/em&gt; to either 0 or 2).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tare&#34;&gt;Tare&lt;/h2&gt;
+&lt;p&gt;Tare weight is the additional weight of the box, including any protective materials such as foam or wrap, 
+and all the other things that add to the weight of your final shipment,
+over and above the weight of the product(s).&lt;/p&gt;
+&lt;p&gt;On &lt;a href=&#34;/user/admin_pages/configuration/configuration_shippingpackaging/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging&lt;/a&gt;, you can set the tare for small to medium sized packages and for large packages.&lt;/p&gt;
+&lt;p&gt;The tare is entered as a percentage increase, followed  by a colon, followed by a flat increase.
+So &lt;code&gt;10:1&lt;/code&gt; means a &lt;code&gt;10% increase over the weight of the product plus 1 pound&lt;/code&gt;,
+and 
+&lt;code&gt;0:0.5&lt;/code&gt; means a &lt;code&gt;an increase of half a pound over the weight of the product&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Consider a 5 lb product which fits in a small box with a tare setting of &lt;code&gt;10:1&lt;/code&gt;. 
+This means the final weight of the package, which will be passed to shipping modules, 
+is &lt;code&gt;5 lbs + 10% of 5 pounds + 1 pound&lt;/code&gt;, or &lt;code&gt;6.5 pounds&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;package-size&#34;&gt;Package Size&lt;/h2&gt;
+&lt;p&gt;The first tare value, which is called &lt;em&gt;Package Tare Small to Medium&lt;/em&gt;, is used
+for shipments whose product weight is less or equal to the value you entered for 
+&lt;em&gt;Enter the Maximum Package Weight you will ship&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So if your maximum weight is 60 pounds, an order whose product weight is 
+60 pounds or less will be increased by the tare settings in &lt;em&gt;Package Tare Small to Medium&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If your maximum weight is 60 pounds and the product weight of an order is over 60 pounds, 
+the weight will be increased by the value of &lt;em&gt;Larger packages - added packaging percentage:weight&lt;/em&gt;, 
+and quotes prepared as though the order is being shipped in multiple boxes (each of which will weigh 60 pounds or less).&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;In these examples the following short forms will be used for configuration values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Maximum Weight&amp;rdquo; - &amp;ldquo;Enter the Maximum Package Weight you will ship&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Small Tare&amp;rdquo; - &amp;ldquo;Package Tare Small to Medium - added percentage:weight&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Large Tare&amp;rdquo; - &amp;ldquo;Larger packages - added packaging percentage:weight&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-1-max-weight-60-lbs-order-weight--60-lbs&#34;&gt;Example 1 (Max weight 60 lbs, order weight &amp;lt; 60 lbs)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings: Maximum Weight = 60 pounds, both tare settings 10:1.&lt;/li&gt;
+&lt;li&gt;Order: 3 products each weighing 15 pounds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart will return these values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number of boxes = 1&lt;/li&gt;
+&lt;li&gt;total weight: 50.5 lbs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calculation of total weight: 45 pounds of product, grossed up by 10% = 49.5 pounds, plus 1 pound = 50.5 pounds.&lt;/p&gt;
+&lt;h3 id=&#34;example-2-max-weight-60-lbs-order-weight--60-lbs&#34;&gt;Example 2 (Max weight 60 lbs, order weight &amp;gt; 60 lbs)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings: Maximum Weight = 60 pounds, both tare settings 10:1.&lt;/li&gt;
+&lt;li&gt;Order: 5 products each weighing 15 pounds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart will return these values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number of boxes = 2 &lt;em&gt;(*)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;total weight: 83.5 lbs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;(*) Note that the number of boxes might not be accurate: if you use 2 boxes, one will be heavier than the other since each of 5 items is 15 lbs.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Calculation of total weight: 75 pounds of product, grossed up by 10% = 82.5 pounds, plus 1 pound = 83.5 pounds.&lt;/p&gt;
+&lt;h3 id=&#34;example-3-max-weight-15-lbs-order-weight--15-lbs&#34;&gt;Example 3 (Max weight 15 lbs, order weight &amp;lt; 15 lbs)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings: Maximum Weight = 15 pounds, both tare settings 10:1.&lt;/li&gt;
+&lt;li&gt;Order: 2 products each weighing 5 pounds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart will return these values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number of boxes = 1&lt;/li&gt;
+&lt;li&gt;total weight: 12 lbs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calculation of total weight: 10 pounds of product, grossed up by 10% = 11 pounds, plus 1 pound = 12 pounds.&lt;/p&gt;
+&lt;h3 id=&#34;example-4-max-weight-15-lbs-order-weight--15-lbs-tares-same&#34;&gt;Example 4 (Max weight: 15 lbs, order weight &amp;gt; 15 lbs, tares same)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Settings: Maximum Weight = 15 pounds, both tare settings 10:1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Order: 3 products each weighing 10 pounds&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart will return these values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number of boxes = 2 &lt;em&gt;(*)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;total weight: 34 lbs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;(*) Note that the number of boxes is misleading because a product cannot be split in half; you will really need 3 boxes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 1 pound = 34 pounds.&lt;/p&gt;
+&lt;h3 id=&#34;example-5-max-weight-15-lbs-order-weight--15-lbs-tares-differ&#34;&gt;Example 5 (Max weight: 15 lbs, order weight &amp;gt; 15 lbs, tares differ)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Settings: Maximum Weight = 15 pounds, small tare setting 10:1, large tare setting 10:5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Order: 3 products each weighing 10 pounds&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zen Cart will return these values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number of boxes = 2 &lt;em&gt;(*)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;total weight: 38 lbs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;(*) See note in examples above&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 5 pounds = 38 pounds.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Table Rate Shipping Module Setup</title>
+      <link>/user/shipping/table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/table/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Table Rate Shipping module allows you to price your shipping in any one of three possible ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;according to the total weight of the shipment&lt;/li&gt;
+&lt;li&gt;according to the total price of the shipment&lt;/li&gt;
+&lt;li&gt;according to the number of items in the shipment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The rate table is specified as a series of &lt;a href=&#34;/user/running/colon-separated-pairs/&#34;&gt;colon-separated pairs&lt;/a&gt;.   For example, you might want an order than weighs more than 0 and less than or equal to 3 to cost 5.50 to ship.&lt;/p&gt;
+&lt;p&gt;You would use the following setting for Shipping Table:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3:5.5
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: UPS Setup</title>
+      <link>/user/shipping/ups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/ups/</guid>
+      <description>
+        
+        
+        &lt;p&gt;UPS integration is provided as a &lt;a href=&#34;/user/plugins/why_plugins/&#34;&gt;plugin for Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are two options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1293&#34;&gt;UPS Shipping Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=126&#34;&gt;UPS XML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The UPS Shipping module provides retail rates for your cart based on shipping from the zip code entered at: Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging &amp;gt; Postal Code.&lt;/p&gt;
+&lt;p&gt;The UPS XML module provides the option of receiving retail rates or negotiated rates. To use this module, you must have an XML rate access key.  The process for getting an access key is described in the module documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: USPS Setup</title>
+      <link>/user/shipping/usps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/usps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1292&#34;&gt;USPS Shipping Module&lt;/a&gt; is provided as a &lt;a href=&#34;/user/plugins/why_plugins/&#34;&gt;plugin for Zen Cart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In order to use the USPS module you need to have a USPS WebTools account registered for access to their Rate Calculator API. You must have a separate WebTools user ID for each web store.&lt;/p&gt;
+&lt;p&gt;If you have an account with USPS for using shipping assistance, this is not the same as the WebTools user ID needed for the shopping cart.&lt;/p&gt;
+&lt;p&gt;Here is the &lt;a href=&#34;https://www.usps.com/business/web-tools-apis/welcome.htm&#34;&gt;link for registering&lt;/a&gt;.
+When registering a new account, after 24-48 government hours you will receive an email from USPS with your user ID and some generic instructions.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;In your Zen Cart admin area, make sure you have a zip code entered at: Admin &amp;gt; Configuration &amp;gt; Shipping/Packaging &amp;gt; Postal Code.&lt;/p&gt;
+&lt;p&gt;In your Zen Cart admin area, go to Admin &amp;gt; Modules &amp;gt; Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.&lt;/p&gt;
+&lt;p&gt;Call USPS 1-800-344-7779 and ask them to take account out of Test (i.e.: Put it into production mode).&lt;/p&gt;
+&lt;p&gt;If your module doesn&amp;rsquo;t generate quotes properly after this, call USPS back and make sure they have enabled the RateCalculator on your account profile.&lt;/p&gt;
+&lt;h2 id=&#34;troubleshooting-rate-calculations&#34;&gt;Troubleshooting Rate Calculations&lt;/h2&gt;
+&lt;p&gt;The USPS module has a setting called &amp;ldquo;Debug Mode&amp;rdquo; which you can configure when you go to Admin &amp;gt; Modules &amp;gt; Shipping &amp;gt; USPS &amp;gt; Edit.  Turning debug on (i.e. to &lt;code&gt;Email&lt;/code&gt;, &lt;code&gt;Logs&lt;/code&gt; or &lt;code&gt;Screen&lt;/code&gt;) will show you the raw responses from the USPS server.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Zones Module Setup</title>
+      <link>/user/shipping/zones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/shipping/zones/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, the Zones shipping module comes with support for 3 zones. This can be easily altered with a coding change by editing the Zones Shipping Module file (If you make this change and your Zones module is already installed/active, you&amp;rsquo;ll need to record your settings, click Remove, click Install, and re-enter all your settings. Otherwise your change will have peculiar visual side-effects).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/modules/shipping/zones.php&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  // CUSTOMIZE THIS SETTING FOR THE NUMBER OF ZONES NEEDED  
+  $this-&amp;gt;num_zones = 3;  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, you will want to activate the module by going to 
+&lt;a href=&#34;/user/admin_pages/modules/shipping/&#34;&gt;Admin &amp;gt; Modules &amp;gt; Shipping&lt;/a&gt;.&lt;br&gt;
+A list of all shipping modules should appear. Click on Zone Shipping. Click on the install button.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#800000&#34;&gt;YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS (in this module) IF YOU &amp;ldquo;REMOVE&amp;rdquo; THIS SHIPPING METHOD.&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Make sure you keep a backup of your shipping settings somewhere at all times.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you want an additional handling charge applied to orders that use this method, set the Handling Fee field.&lt;/p&gt;
+&lt;p&gt;Next, you will need to define which countries are in each zone. Determining this might take some time and effort. You should group a set of countries that has similar shipping charges for the same weight. For instance, when shipping from the US, the countries of Japan, Australia, New Zealand, and Singapore have similar shipping rates. As an example, one of my customers is using this set of zones:&lt;/p&gt;
+&lt;p&gt;1: USA&lt;br&gt;
+2: Canada&lt;br&gt;
+3: Austria, Belgium, Great Britain, France, Germany, Greenland, Iceland, Ireland, Italy, Norway, Holland/Netherlands, Denmark, Poland, Spain, Sweden, Switzerland, Finland, Portugal, Israel, Greece&lt;br&gt;
+4: Japan, Australia, New Zealand, Singapore&lt;br&gt;
+5: Taiwan, China, Hong Kong&lt;/p&gt;
+&lt;p&gt;When you enter these country lists, enter them into the Zone X Countries fields, where &amp;ldquo;X&amp;rdquo; is the number of the zone. They should be entered as two character ISO country codes in all capital letters. They should be separated by commas with no spaces or other punctuation. For example:&lt;/p&gt;
+&lt;p&gt;1: US&lt;br&gt;
+2: CA&lt;br&gt;
+3: AT,BE,GB,FR,DE,GL,IS,IE,IT,NO,NL,DK,PL,ES,SE,CH,FI,PT,IL,GR
+4: JP,AU,NZ,SG&lt;br&gt;
+5: TW,CN,HK&lt;/p&gt;
+&lt;p&gt;Now you need to set up the shipping rate tables for each zone. Again, some time and effort will go into setting the appropriate rates. You will define a set of weight ranges and the shipping price for each range.&lt;/p&gt;
+&lt;p&gt;These values are entered as &lt;a href=&#34;/user/running/colon-separated-pairs/&#34;&gt;colon-separated pairs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For instance, you might want an order than weighs more than 0 and less than or equal to 3 to cost 5.50 to ship to a certain zone.&lt;/p&gt;
+&lt;p&gt;You would then use the following setting in the Shipping Table:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3:5.5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should combine a bunch of these rates together in a comma delimited list and enter them into the &amp;ldquo;Zone X Shipping Table&amp;rdquo; fields where &amp;ldquo;X&amp;rdquo; is the zone number. For example, this might be used for Zone 1:&lt;/p&gt;
+&lt;p&gt;1:3.5,2:3.95,3:5.2,4:6.45,5:7.7,6:10.4,7:11.85, 8:13.3,9:14.75,10:16.2,11:17.65,12:19.1,13:20.55,14:22,15:23.45&lt;/p&gt;
+&lt;p&gt;The above example includes weights over 0 and up to 15. Note that units are not specified in this explanation since they should be specific to your locale.&lt;/p&gt;
+&lt;h2 id=&#34;caveats&#34;&gt;CAVEATS&lt;/h2&gt;
+&lt;p&gt;At this time, it does not deal with weights that are above the highest amount defined. For now, you could have one last very high range with a very high shipping rate to discourage orders of that magnitude.&lt;/p&gt;
+&lt;p&gt;For instance: 999:1000&lt;/p&gt;
+&lt;p&gt;If you want to be able to ship to any country in the world, you will need to enter every country code into the Country fields. For most shops, you will not want to enter every country. This is often because of too much fraud from certain places. If a country is not listed, then the module will add a $0.00 shipping charge and will indicate that shipping is not available to that destination.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#800000&#34;&gt;THE ORDER CAN STILL BE COMPLETED AND PROCESSED!&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Lastly, there is a limit of 255 characters on each of the Zone Shipping Tables and Zone Countries. This can be changed in the database to suit your needs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

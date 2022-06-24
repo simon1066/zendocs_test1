@@ -1,0 +1,697 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Customizing your Site</title>
+    <link>/user/customizing/</link>
+    <description>Recent content in Customizing your Site on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/customizing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Adding Pages to my site</title>
+      <link>/user/customizing/add_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/add_pages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You have several options if you want to add a page to your site.  Here they are, in increasing order of complexity:&lt;/p&gt;
+&lt;h3 id=&#34;use-ez-pages&#34;&gt;Use EZ-Pages&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;/user/ezpages/what_are_ezpages/&#34;&gt;EZ-Pages&lt;/a&gt; are a great way to add new text content to your site. 
+The one restriction they have is that you can&amp;rsquo;t execute any PHP code on them,
+but for many situations, this is not required.&lt;/p&gt;
+&lt;h3 id=&#34;use-the-built-in-extra-pages&#34;&gt;Use the built-in extra pages&lt;/h3&gt;
+&lt;p&gt;The built-in &lt;a href=&#34;/user/template/extra_pages&#34;&gt;extra pages&lt;/a&gt; are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_2&#34;&gt;page_2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_3&#34;&gt;page_3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/#define_page_4&#34;&gt;page_4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may use these pages to add content to your site.&lt;/p&gt;
+&lt;p&gt;Turn on creation of links to these pages from &lt;a href=&#34;/user/admin_pages/configuration/configuration_definepagestatus/&#34;&gt;Admin &amp;gt; Configuration &amp;gt; Define Page Status&lt;/a&gt;, then modify the page content using the &lt;a href=&#34;/user/admin_pages/tools/define_pages/&#34;&gt;Define Pages Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;use-a-plugin&#34;&gt;Use a Plugin&lt;/h3&gt;
+&lt;p&gt;This plugin adds six new define pages which can be used just like page_2 .. page_4.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2319&#34;&gt;Twitch Add Extra Pages - Add Define Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;build-a-new-custom-page&#34;&gt;Build a new custom page&lt;/h3&gt;
+&lt;p&gt;A number of files go into building a new page.  The best way to create a new page is to use one of these plugins as a starting point:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=86&#34;&gt;About Us&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2198&#34;&gt;Skinny About Us&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The latter is somewhat less customizable but contains fewer files.&lt;/p&gt;
+&lt;p&gt;(Note that the About Us page is built in to Zen Cart 1.5.8 and higher; these plugins are referenced only as examples of how to build a page.)&lt;/p&gt;
+&lt;p&gt;The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages.  Being able to use PHP means you can add conditional logic, do database lookups, customize for specific groups or customer characteristics, etc.&lt;/p&gt;
+&lt;h3 id=&#34;add-infrastructure-to-build-multiple-pages&#34;&gt;Add infrastructure to build multiple pages&lt;/h3&gt;
+&lt;p&gt;Use this plugin as a starting point:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=2264&#34;&gt;News Box Manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;linking-to-your-new-page&#34;&gt;Linking to your New Page&lt;/h2&gt;
+&lt;p&gt;Once you have created your new page, you&amp;rsquo;ll want to link to it. A few options are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have created the page as an EZ-Page, use the &lt;a href=&#34;/user/sideboxes/ezpages_sidebox/&#34;&gt;EZ-Pages sidebox&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you want the link in the Information Sidebox, use the instructions on &lt;a href=&#34;/user/sideboxes/add_link_information_sidebox/&#34;&gt;adding a link to the Information Sidebox&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You can put the link in the &lt;a href=&#34;/user/template/header/&#34;&gt;header&lt;/a&gt; or &lt;a href=&#34;/user/template/footer/&#34;&gt;footer&lt;/a&gt; of your site, but the method of doing so will depend on your template.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;direct-access-to-files&#34;&gt;Direct Access to Files&lt;/h2&gt;
+&lt;p&gt;You may wish to simply provide files (such as PDFs) on your site without requiring the registration and purchase steps associated with paid downloads.&lt;/p&gt;
+&lt;p&gt;The recommended method of doing this is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new folder at the top level of your cart.  Remember that Zen Cart already comes with &lt;code&gt;/docs&lt;/code&gt; and &lt;code&gt;/download&lt;/code&gt; folders, so choose another name.&lt;/li&gt;
+&lt;li&gt;Prior to populating the folder, create an &lt;code&gt;index.html&lt;/code&gt; and &lt;code&gt;.htaccess&lt;/code&gt; file that limits access in the folder.  You can copy these files from the &lt;code&gt;/download&lt;/code&gt; folder and customize as needed.&lt;br&gt;
+Note: If you are using Ngnix or another webserver other than Apache, you will have to make the appropriate security changes for that system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If what you want to do is associate PDFs with specific products, look at the &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1642&#34;&gt;PDF Attachment in Product Description&lt;/a&gt; plugin.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Changing your site&#39;s appearance</title>
+      <link>/user/customizing/appearance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/appearance/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are many things you can do to change the appearance of your cart.&lt;/p&gt;
+&lt;h3 id=&#34;language-file-changes&#34;&gt;Language file changes&lt;/h3&gt;
+&lt;p&gt;You can change any string in your cart by 
+using &lt;a href=&#34;/user/first_steps/overrides/&#34;&gt;overrides&lt;/a&gt; to 
+customize the language file which contains that string.&lt;/p&gt;
+&lt;h3 id=&#34;templating&#34;&gt;Templating&lt;/h3&gt;
+&lt;p&gt;You can completely change the appearance of your site, or just any one 
+page, using the &lt;a href=&#34;/user/template/&#34;&gt;template system&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;stylesheets&#34;&gt;Stylesheets&lt;/h3&gt;
+&lt;p&gt;Stylesheets control visual aspects of your site, such  as font choices,
+colors and text sizes.  You can &lt;a href=&#34;/user/template/stylesheet/&#34;&gt;customize stylesheets&lt;/a&gt; as part 
+of your template.&lt;/p&gt;
+&lt;h3 id=&#34;adding-pages&#34;&gt;Adding Pages&lt;/h3&gt;
+&lt;p&gt;You have several options for &lt;a href=&#34;/user/customizing/add_pages/&#34;&gt;adding a new page&lt;/a&gt; to your cart.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Protecting pages</title>
+      <link>/user/customizing/protecting_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/protecting_pages/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;restricting-page-to-logged-in-users&#34;&gt;Restricting page to logged in users&lt;/h2&gt;
+&lt;p&gt;As an example, we&amp;rsquo;ll use the &lt;a href=&#34;/user/template/extra_pages/&#34;&gt;built-in extra page&lt;/a&gt;  page_2 (&lt;code&gt;index.php?main_page=page_2&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Modify &lt;code&gt;includes/modules/pages/page_2/header_php.php&lt;/code&gt; to include at the top:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// if the customer is not logged on, redirect them to the login page
+  if (!zen_is_logged_in() || zen_in_guest_checkout()) {
+    global $messageStack; 
+    $messageStack-&amp;gt;add_session(&amp;#39;login&amp;#39;,&amp;#39;Restricted content for approved accountholders only - please login&amp;#39;, &amp;#39;warning&amp;#39;); 
+    $_SESSION[&amp;#39;navigation&amp;#39;]-&amp;gt;set_snapshot();
+    zen_redirect(zen_href_link(FILENAME_LOGIN, &amp;#39;&amp;#39;, &amp;#39;SSL&amp;#39;));
+  } 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;restricting-page-to-a-customer-group&#34;&gt;Restricting page to a Customer Group&lt;/h2&gt;
+&lt;p&gt;Note: This takes advange of the 1.5.8 feature &lt;a href=&#34;/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so is only available in Zen Cart 1.5.8 and above.&lt;/p&gt;
+&lt;p&gt;Use the logic above to give the right message to non-logged-in users, then add this block next.  We are assuming group &amp;ldquo;1&amp;rdquo; is Wholesalers, and we&amp;rsquo;ll restrict page_2 to this group.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// if the customer is not in group 1, redirect to page not found
+  $allowed_group = 1; 
+  if (!zen_customer_belongs_to_group((int)$_SESSION[&amp;#39;customer_id&amp;#39;], $allowed_group, true)) {
+    global $messageStack; 
+    $messageStack-&amp;gt;add_session(&amp;#39;header&amp;#39;,&amp;#39;Restricted content for wholesale accounts only&amp;#39;, &amp;#39;warning&amp;#39;); 
+    zen_redirect(zen_href_link(FILENAME_PAGE_NOT_FOUND, &amp;#39;&amp;#39;, &amp;#39;SSL&amp;#39;));
+  } 
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Show Flags</title>
+      <link>/user/customizing/show_flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/show_flags/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To allow users to modify the appearance of their cart without modifying core files (or indeed, any code file), a series of flags are provided in admin whose names begin with &lt;code&gt;SHOW_&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;configuration_key&lt;/th&gt;
+&lt;th&gt;configuration_title&lt;/th&gt;
+&lt;th&gt;configuration_group_id&lt;/th&gt;
+&lt;th&gt;Admin Page&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_COUNTS&lt;/td&gt;
+&lt;td&gt;Show Category Counts&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; My Store&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_COUNTS_ADMIN&lt;/td&gt;
+&lt;td&gt;Show Category Counts - Admin&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_VERSION_UPDATE_IN_HEADER&lt;/td&gt;
+&lt;td&gt;Show if version update available&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORY_PRODUCTS_LINKED_STATUS&lt;/td&gt;
+&lt;td&gt;Show linked status for categories&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SPLIT_TAX_CHECKOUT&lt;/td&gt;
+&lt;td&gt;Show Split Tax Lines&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_NEW_PRODUCTS_LIMIT&lt;/td&gt;
+&lt;td&gt;New Product Listing - Limited to &amp;hellip;&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Min Values&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CREATE_ACCOUNT_DEFAULT_COUNTRY&lt;/td&gt;
+&lt;td&gt;Create Account Default Country ID&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHIPPING_ESTIMATOR_BUTTON&lt;/td&gt;
+&lt;td&gt;Shipping Estimator Display Settings for Shopping Cart&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Shipping&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCTS_SOLD_OUT&lt;/td&gt;
+&lt;td&gt;Products status in Catalog when out of stock should be set to&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Stock&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_EMPTY_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Featured Products on empty Shopping Cart Page&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_EMPTY_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show New Products on empty Shopping Cart Page&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_COMBINED&lt;/td&gt;
+&lt;td&gt;Show Notice of Combining Shopping Cart on Login&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_DELETE&lt;/td&gt;
+&lt;td&gt;Show Shopping Cart - Delete Checkboxes or Delete Button&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_UPDATE&lt;/td&gt;
+&lt;td&gt;Show Shopping Cart - Update Cart Button Location&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCTS_SOLD_OUT_IMAGE&lt;/td&gt;
+&lt;td&gt;Show Sold Out Image in place of Add to Cart&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_EMPTY_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Special Products on empty Shopping Cart Page&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_EMPTY_UPCOMING&lt;/td&gt;
+&lt;td&gt;Show Upcoming Products on empty Shopping Cart Page&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_NEWSLETTER_UNSUBSCRIBE_LINK&lt;/td&gt;
+&lt;td&gt;Display &amp;ldquo;Newsletter Unsubscribe&amp;rdquo; Link?&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Email&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_ACCEPTED_CREDIT_CARDS&lt;/td&gt;
+&lt;td&gt;Credit Card Enabled - Show on Payment&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Credit Cards&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_COLUMNS_ALSO_PURCHASED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Also Purchased Products Columns per Row&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Product Info&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PREVIOUS_NEXT_IMAGES&lt;/td&gt;
+&lt;td&gt;Previous Next - Button and Image Settings&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PREVIOUS_NEXT_STATUS&lt;/td&gt;
+&lt;td&gt;Previous Next - Button and Image Status&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SALE_DISCOUNT&lt;/td&gt;
+&lt;td&gt;Product Info - Show Sales Discount Savings Dollars or Percentage&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SALE_DISCOUNT_DECIMALS&lt;/td&gt;
+&lt;td&gt;Product Info - Show Sales Discount Savings Percentage Decimals&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SALE_DISCOUNT_STATUS&lt;/td&gt;
+&lt;td&gt;Product Info - Show Sales Discount Savings Status&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET_ALL&lt;/td&gt;
+&lt;td&gt;Banner Display Group - Side Box banner_box_all&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Layout Settings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET4&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Footer Position 1&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET5&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Footer Position 2&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET6&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Footer Position 3&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET1&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Header Position 1&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET2&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Header Position 2&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET3&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Header Position 3&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET7&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Side Box banner_box&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_BANNERS_GROUP_SET8&lt;/td&gt;
+&lt;td&gt;Banner Display Groups - Side Box banner_box2&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_SUBCATEGORIES_ALWAYS&lt;/td&gt;
+&lt;td&gt;Categories - Always Open to Show SubCategories&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_ALWAYS&lt;/td&gt;
+&lt;td&gt;Categories - Always Show on Main Page&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_BOX_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Categories Box - Show Featured Products Link&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_BOX_PRODUCTS_ALL&lt;/td&gt;
+&lt;td&gt;Categories Box - Show Products All Link&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_BOX_PRODUCTS_NEW&lt;/td&gt;
+&lt;td&gt;Categories Box - Show Products New Link&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_BOX_SPECIALS&lt;/td&gt;
+&lt;td&gt;Categories Box - Show Specials Link&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CATEGORIES_SEPARATOR_LINK&lt;/td&gt;
+&lt;td&gt;Categories Separator between links Status&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_CUSTOMER_GREETING&lt;/td&gt;
+&lt;td&gt;Customer Greeting - Show on Index Page&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_FOOTER_IP&lt;/td&gt;
+&lt;td&gt;Footer - Show IP Address status&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_TOTALS_IN_CART&lt;/td&gt;
+&lt;td&gt;Shopping Cart - Show Totals&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_SHOPPING_CART_BOX_STATUS&lt;/td&gt;
+&lt;td&gt;Shopping Cart Box Status&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_ACCOUNT_LINKS_ON_SITE_MAP&lt;/td&gt;
+&lt;td&gt;Site Map - include My Account Links?&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_NEW_PRODUCTS_UPCOMING_MASKED&lt;/td&gt;
+&lt;td&gt;Mask Upcoming Products from being included as New Products&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; New Listing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_COLUMNS_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Featured Products Columns per Row&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;Configuration &amp;gt; Index Listing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_ALL_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Filter Product Listing for Current Top Level Category When Enabled&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_COLUMNS_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;New Products Columns per Row&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_LISTING_BELOW_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Featured Products - below Product Listing&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MAIN_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Featured Products on Main Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_CATEGORY_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Featured Products on Main Page - Category with SubCategories&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MISSING_FEATURED_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Featured Products on Main Page - Errors and Missing Products Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_LISTING_BELOW_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show New Products - below Product Listing&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MAIN_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show New Products on Main Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_CATEGORY_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show New Products on Main Page - Category with SubCategories&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MISSING_NEW_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show New Products on Main Page - Errors and Missing Products Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_LISTING_BELOW_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Special Products - below Product Listing&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MAIN_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Special Products on Main Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_CATEGORY_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Special Products on Main Page - Category with SubCategories&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MISSING_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Show Special Products on Main Page - Errors and Missing Products Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_LISTING_BELOW_UPCOMING&lt;/td&gt;
+&lt;td&gt;Show Upcoming Products - below Product Listing&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MAIN_UPCOMING&lt;/td&gt;
+&lt;td&gt;Show Upcoming Products on Main Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_CATEGORY_UPCOMING&lt;/td&gt;
+&lt;td&gt;Show Upcoming Products on Main Page - Category with SubCategories&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_MISSING_UPCOMING&lt;/td&gt;
+&lt;td&gt;Show Upcoming Products on Main Page - Errors and Missing Products Page&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SHOW_PRODUCT_INFO_COLUMNS_SPECIALS_PRODUCTS&lt;/td&gt;
+&lt;td&gt;Special Products Columns per Row&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Site Specific Overrides</title>
+      <link>/user/customizing/site_specific_overrides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/site_specific_overrides/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Starting in Zen Cart 1.5.8, a file called &lt;code&gt;includes/extra_datafiles/dist-site_specific_overrides.php&lt;/code&gt; is provided.&lt;/p&gt;
+&lt;p&gt;Copy this file to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;includes/extra_datafiles/site_specific_overrides.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and customize to taste.&lt;/p&gt;
+&lt;p&gt;The following behaviors can be enabled or disabled by this file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;displaying the &lt;a href=&#34;/user/storefront_pages/brands/&#34;&gt;Brands page&lt;/a&gt; link in the Information sidebox&lt;/li&gt;
+&lt;li&gt;displaying the About Us link in the Information sidebox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example: turn on the Brands page link in the Information sidebox:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$flag_show_brand_sidebox_link = true;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Information on the &lt;a href=&#34;/user/admin/site_specific_overrides/&#34;&gt;admin site-specific overrides file&lt;/a&gt; is also available.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Sort Order for product listing pages</title>
+      <link>/user/customizing/sort_order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/sort_order/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Products shown on a &lt;a href=&#34;/user/storefront_pages/listing_pages/&#34;&gt;product listing page&lt;/a&gt; are sorted in one of two ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using the per-product sort order set on the &lt;a href=&#34;/user/products/product_edit/&#34;&gt;product editing&lt;/a&gt; page.&lt;/li&gt;
+&lt;li&gt;Using the value &lt;a href=&#34;/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order&#34;&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/a&gt; from the Admin &amp;gt; Configuration &amp;gt; Product Listing page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; is set to blank, the per-product sort order is used.&lt;/p&gt;
+&lt;p&gt;When it is non-blank, it is interpreted as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;There are a list of Display &lt;em&gt;field name&lt;/em&gt; settings on the Admin &amp;gt; Configuration &amp;gt; Product Listing page.  In 1.5.7, they are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Display Product Image&lt;/li&gt;
+&lt;li&gt;Display Product Manufacturer Name&lt;/li&gt;
+&lt;li&gt;Display Product Model&lt;/li&gt;
+&lt;li&gt;Display Product Name&lt;/li&gt;
+&lt;li&gt;Display Product Price/Add to Cart&lt;/li&gt;
+&lt;li&gt;Display Product Quantity&lt;/li&gt;
+&lt;li&gt;Display Product Weight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The settings for each of these values (0 or non-zero) determine whether or not this column will be shown on a product listing page.  For specifics, see 
+&lt;a href=&#34;/user/template/product_listing_page_configuration&#34;&gt;Product Listing Configuration Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The configuration settings with non-zero values are ordered according to their setting.  Then the sort is done using the field number specified in the first character of &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt;, in ascending or descending order according to the second character.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is best illustrated by an example.  Consider the following configuration:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/pl_config_1.png&#34; alt=&#34;Listing Page configuration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;This shows that the listing page will display four fields per row, in the following order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;product image&lt;/li&gt;
+&lt;li&gt;product name&lt;/li&gt;
+&lt;li&gt;product price / add to cart&lt;/li&gt;
+&lt;li&gt;product quantity in stock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the value of &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; is blank, the rows will be sorted according to the per product sort order and product name.   Since frequently per product sort order is zero, this means the products are shown sorted by name, like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/pl_config_2.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
+&lt;p&gt;But if the &lt;code&gt;PRODUCT_LISTING_DEFAULT_SORT_ORDER&lt;/code&gt; value is 4d, the products are shown sorted by the 4th displayed field (product quantity) in descending order.  The result will look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/pl_config_3.png&#34; alt=&#34;Listing Page sorted by product name&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Template System</title>
+      <link>/user/customizing/template_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/template_system/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/template/&#34;&gt;this folder&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Using Customer Groups</title>
+      <link>/user/customizing/customer_groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/customizing/customer_groups/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Note: These ideas take advange of the 1.5.8 feature &lt;a href=&#34;/user/admin_pages/customers/customer_groups/&#34;&gt;Customer Groups&lt;/a&gt;, so they will only be applicable to Zen Cart 1.5.8 and above.&lt;/p&gt;
+&lt;h2 id=&#34;restricting-page-to-a-customer-group&#34;&gt;Restricting page to a Customer Group&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/customizing/protecting_pages/#restricting-page-to-a-customer-group&#34;&gt;Protecting Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;restricting-a-shipping-method-to-a-customer-group&#34;&gt;Restricting a Shipping Method to a Customer Group&lt;/h2&gt;
+&lt;p&gt;In the &lt;code&gt;__construct&lt;/code&gt; method of the shipping module, below the other checks for enabled, add&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;     if (IS_ADMIN_FLAG !== true) { 
+       $allowed_group = 1; 
+       if (!(zen_is_logged_in() &amp;amp;&amp;amp; zen_customer_belongs_to_group((int)$_SESSION[&amp;#39;customer_id&amp;#39;],$allowed_group, true))) {
+          $this-&amp;gt;enabled = false;
+       } 
+     } 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;restricting-a-payment-method-to-a-customer-group&#34;&gt;Restricting a Payment Method to a Customer Group&lt;/h2&gt;
+&lt;p&gt;In the &lt;code&gt;__construct&lt;/code&gt; method of the payment module, below the check which ensres &lt;code&gt;sort_order&lt;/code&gt; is set, add&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;     if (IS_ADMIN_FLAG !== true) { 
+       $allowed_group = 1; 
+       if (!(zen_is_logged_in() &amp;amp;&amp;amp; zen_customer_belongs_to_group((int)$_SESSION[&amp;#39;customer_id&amp;#39;],$allowed_group, true))) {
+          return false; 
+       } 
+     } 
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

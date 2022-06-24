@@ -1,0 +1,269 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – Analytics</title>
+    <link>/user/analytics/</link>
+    <description>Recent content in Analytics on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/user/analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>User: Admin Dashboard</title>
+      <link>/user/analytics/admin_dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/analytics/admin_dashboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please see &lt;a href=&#34;/user/admin_pages/admin_dashboard/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Integrating Sales Analytics/Affiliate Tools</title>
+      <link>/user/analytics/sales_analytics_affiliate_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/analytics/sales_analytics_affiliate_tools/</guid>
+      <description>
+        
+        
+        &lt;p&gt;On the &amp;ldquo;checkout_success&amp;rdquo; page, there are several pieces of data available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;order_number&amp;rsquo;]&lt;/strong&gt; = The current order number&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;order_subtotal&amp;rsquo;]&lt;/strong&gt; = The subtotal of the price of all products in the cart, before shipping etc&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;credits_applied&amp;rsquo;]&lt;/strong&gt; = A sum of all discounts/credits applied to the order (ie: handled by &amp;ldquo;credit&amp;rdquo; ot modules such as coupons and gift certificates and customer-group-discounts etc)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;commissionable_order&amp;rsquo;]&lt;/strong&gt; = The amount of the purchase that is commissionable, ie: subtotal minus discounts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;commissionable_order_formatted&amp;rsquo;]&lt;/strong&gt; = Formatted according to the current currency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;coupon_code&amp;rsquo;]&lt;/strong&gt; = The coupon code used in this order, if any&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;currency_code&amp;rsquo;]&lt;/strong&gt; = The currency used when making this sale&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;currency_value&amp;rsquo;]&lt;/strong&gt; = The exchange rate applied while using this currency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;payment_module_code&amp;rsquo;]&lt;/strong&gt; = The payment module used to facilitate payment&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;shipping_method&amp;rsquo;]&lt;/strong&gt; = The shipping method selected by the customer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;orders_status&amp;rsquo;]&lt;/strong&gt; = The status number denoting the order&amp;rsquo;s status in the system&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;rsquo;tax&amp;rsquo;]&lt;/strong&gt; = The amount of tax on the order&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;shipping&amp;rsquo;]&lt;/strong&gt; = The shipping cost&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;order_total&amp;rsquo;]&lt;/strong&gt; = The final/net total of the order, the amount for payment&lt;br&gt;
+Also available starting with ZC v1.5.5 are the following (or add them to older versions using the extra PHP code shown below the following examples)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;products_ordered_models&amp;rsquo;]&lt;/strong&gt; = a list of product model numbers, delimited by &amp;lsquo;|&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$order_summary[&amp;lsquo;products_ordered_ids&amp;rsquo;]&lt;/strong&gt; = a list of product ID numbers, delimited by &amp;lsquo;|&amp;rsquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An analytics or affiliate-tracking system can use these variables as part of their tracking-pixel or other callback notification by simply referencing these variables in their callback/tracking code.&lt;/p&gt;
+&lt;p&gt;Advanced tip: If passing product ID/model numbers needs a different delimiter in your system, simply do a replacement on it while doing your output, such as:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;str_replace(&amp;#39;|&amp;#39;, &amp;#39;@&amp;#39;, $order_summary[&amp;#39;products_ordered_models&amp;#39;]);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;if you wanted to replace &lt;code&gt;|&lt;/code&gt; with &lt;code&gt;@&lt;/code&gt;, for example.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value to replace&lt;/th&gt;
+&lt;th&gt;What to replace it with&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Order Number&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;order_number&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subtotal&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;order_subtotal&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Amount of credits/discounts on the order&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;credits_applied&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Final Total&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;order_total&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Commissionable Order Amount (does not include discounts)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;commissionable_order&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Commissionable amount, formatted per currently selected currency formatting rules set in your admin&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;commissionable_order_formatted&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coupon Code, if any (often used for referral tracking)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;coupon_code&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Currency Code (3-letter ISO code)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;currency_code&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exchange Rate applied, if any&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;currency_value&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Payment Module used&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;payment_module_code&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping Method selected by customer&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;shipping_method&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Order Status (number) denoting the order&amp;rsquo;s status in your store at this present time.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;orders_status&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tax on the order&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;tax&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping Cost on the order&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;shipping&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Order Total (the final/net total of the order, the amount sent for payment)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;order_total&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Model Numbers (delimited with &amp;lsquo;&lt;code&gt;|&lt;/code&gt;&amp;rsquo;)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;products_ordered_models&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product IDs (delimited with &amp;lsquo;&lt;code&gt;|&lt;/code&gt;&amp;rsquo;)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;?php echo $order_summary[&#39;products_ordered_ids&#39;]; ?&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples:&lt;/h2&gt;
+&lt;h3 id=&#34;snap-affiliates&#34;&gt;Snap Affiliates&lt;/h3&gt;
+&lt;p&gt;No need to edit any core Zen Cart files.&lt;br&gt;
+Use the plugin &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1635&#34;&gt;Snap Affiliates&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;idevaffiliate&#34;&gt;iDevAffiliate&lt;/h3&gt;
+&lt;p&gt;No need to edit any core Zen Cart files.&lt;br&gt;
+Simply create a new file: &lt;code&gt;/includes/modules/pages/checkout_success/jscript_idevaffiliate.php&lt;/code&gt; and be sure to set the correct URL for your iDevAffiliate system, and appropriate profile number:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+  echo &amp;#39;&amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;http://www.yourdomain.com/idevaffiliate/sale.php?profile=1&amp;amp;idev_saleamt=&amp;#39; . $order_summary[&amp;#39;commissionable_order_formatted&amp;#39;] . 
+       &amp;#39;&amp;amp;idev_ordernum=&amp;#39; . $order_summary[&amp;#39;order_number&amp;#39;] . &amp;#39;&amp;amp;products_purchased=&amp;#39; . $order_summary[&amp;#39;products_ordered_models&amp;#39;] . &amp;#39;&amp;amp;coupon_code=&amp;#39; . urlencode($order_summary[&amp;#39;coupon_code&amp;#39;]) .
+       &amp;#39;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or use an image pixel instead, by adding it to your tpl_footer.php:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if ($current_page_base == &amp;#39;checkout_success&amp;#39;) {
+    echo &amp;#39;&amp;lt;img border=&amp;#34;0&amp;#34; src=&amp;#34;http://www.yoursite.com/idevaffiliate/sale.php?profile=1&amp;amp;idev_saleamt=&amp;#39; . $order_summary[&amp;#39;commissionable_order&amp;#39;] . &amp;#39;&amp;amp;idev_ordernum=&amp;#39; . $order_summary[&amp;#39;order_number&amp;#39;] . &amp;#39;&amp;amp;coupon_code=&amp;#39; . $order_summary[&amp;#39;coupon_code&amp;#39;] . &amp;#39;&amp;amp;products_purchased=&amp;#39; . $order_summary[&amp;#39;products_ordered_ids&amp;#39;] . &amp;#39;&amp;#34; height=&amp;#34;1&amp;#34; width=&amp;#34;1&amp;#34;&amp;gt;&amp;#39;;
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;jrox-jam&#34;&gt;JROX JAM&lt;/h3&gt;
+&lt;p&gt;No need to edit any core Zen Cart files.&lt;br&gt;
+Simply create a new file: &lt;code&gt;/includes/modules/pages/checkout_success/jscript_jam.php&lt;/code&gt; and be sure to set the correct URL for your JAM system:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   echo &amp;#39;&amp;lt;script type=&amp;#34;text/javascript&amp;#34;  src=&amp;#34;http://www.yourdomain.com/affiliates/sale.php?amount=&amp;#39; . $order_summary[&amp;#39;commissionable_order&amp;#39;] . &amp;#39;&amp;amp;trans_id=&amp;#39; . $order_summary[&amp;#39;order_number&amp;#39;] . &amp;#39;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Adding product IDs or Model Numbers on older versions:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Add the following extra code before the tracking pixel/script code above if you want to have product ID or Model data available:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (!isset($order_summary[&amp;#39;products_ordered_models&amp;#39;])) {
+  $products_array = array();
+  $products_query = &amp;#34;SELECT products_id, products_model
+                     FROM &amp;#34; . TABLE_ORDERS_PRODUCTS . &amp;#34;
+                     WHERE orders_id = :ordersID
+                     ORDER BY products_id&amp;#34;;
+  $products_query = $db-&amp;amp;gt;bindVars($products_query, &amp;#39;:ordersID&amp;#39;, $orders_id, &amp;#39;integer&amp;#39;);
+  $products = $db-&amp;amp;gt;Execute($products_query);
+  while (!$products-&amp;amp;gt;EOF) {
+    $products_array[urlencode($products-&amp;amp;gt;fields[&amp;#39;products_id&amp;#39;])] = urlencode($products-&amp;gt;fields[&amp;#39;products_model&amp;#39;]);
+    $products-&amp;amp;gt;MoveNext();
+  }
+  $order_summary[&amp;#39;products_ordered_ids&amp;#39;] = implode(&amp;#39;|&amp;#39;, array_keys($products_array));
+  $order_summary[&amp;#39;products_ordered_models&amp;#39;] = implode(&amp;#39;|&amp;#39;, array_values($products_array));
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;advanced-use&#34;&gt;Advanced Use&lt;/h2&gt;
+&lt;p&gt;Advanced programmers might choose programmatic hooks instead of JavaScript callbacks, by invoking the &lt;a href=&#34;/dev/code/notifiers/&#34;&gt;notifier system&lt;/a&gt;. This involves hooking 
+&lt;code&gt;NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES&lt;/code&gt; and referencing the 
+&lt;code&gt;$_SESSION[&#39;order_summary&#39;]&lt;/code&gt; array in place of the non-global 
+&lt;code&gt;$order_summary&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;This could allow a bespoke tracking service to be invoked without needing to force extra activities down to the customer&amp;rsquo;s browser.&lt;/p&gt;
+&lt;p&gt;Related article: &lt;a href=&#34;/user/template/tracking_pixel/&#34;&gt;Adding a tracking pixel&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User: Integrating with Google Analytics</title>
+      <link>/user/analytics/analytics_services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/analytics/analytics_services/</guid>
+      <description>
+        
+        
+        &lt;p&gt;One of the most popular analytics tracking services is Google Analytics. 
+Other excellent competing tools include Fathom Analytics and Piwik/Matomo.&lt;/p&gt;
+&lt;h2 id=&#34;basic-snippet-installation&#34;&gt;Basic snippet installation&lt;/h2&gt;
+&lt;p&gt;These services will provide you with a &amp;ldquo;JavaScript snippet&amp;rdquo; to insert onto your site.&lt;/p&gt;
+&lt;p&gt;The simplest way to do this is to create a new file called&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/includes/template/YOURTEMPLATENAME/jscript/jscript_piwik_analytics.js&lt;/code&gt; (or rename for your desired service)&lt;/p&gt;
+&lt;p&gt;and paste the JavaScript snippet code inside it.&lt;/p&gt;
+&lt;h2 id=&#34;google-tag-manager&#34;&gt;Google Tag Manager&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;/user/running/external_javascript_services/&#34;&gt;/user/running/external_javascript_services/&lt;/a&gt; for information about Tag Manager.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-integration-to-provide-calculated-data&#34;&gt;Advanced Integration To Provide Calculated Data&lt;/h2&gt;
+&lt;p&gt;If you need to do some data queries or numeric calculations, you will need to change the &lt;code&gt;.js&lt;/code&gt; extension in the above file to &lt;code&gt;.php&lt;/code&gt;
+and then you can write PHP code intertwined with the JavaScript code.&lt;/p&gt;
+&lt;p&gt;Commonly-requested data which you can incorporate is explained in &lt;a href=&#34;/user/analytics/sales_analytics_affiliate_tools/&#34;&gt;Integrating Sales/Analytics/Affiliate Tools&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;advanced-google-e-commerce-analytics&#34;&gt;Advanced Google E-Commerce Analytics&lt;/h2&gt;
+&lt;p&gt;An &lt;a href=&#34;https://www.zen-cart.com/downloads.php?do=file&amp;amp;id=1997&#34;&gt;Advanced Ecommerce Analytics&lt;/a&gt; plugin exists to feed Google&amp;rsquo;s ecommerce-specific analytics data with sales numbers from your store. It may require some custom coding changes to suit your store&amp;rsquo;s unique products, but it&amp;rsquo;s a handy starting point.&lt;/p&gt;
+&lt;h2 id=&#34;google-adwords-conversion-tracking&#34;&gt;Google Adwords Conversion Tracking&lt;/h2&gt;
+&lt;p&gt;A script for tracking Adwords conversions is below. Place the code into a new file at: 
+&lt;code&gt;/includes/modules/pages/checkout_success/jscript_google_adwords_conversion_tracking.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Be sure to enter your Adwords conversion_id into the &lt;code&gt;AW_CONVERSION_ID&lt;/code&gt; line where shown.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?php
+define(&amp;#39;AW_CONVERSION_ID&amp;#39;, &amp;#39;&amp;#39;); // enter your Adwords account conversion_id between the empty quotes.
+
+
+// abort if AW_CONVERSION_ID not configured 
+if (!defined(&amp;#39;AW_CONVERSION_ID&amp;#39;) || empty(AW_CONVERSION_ID)) return;
+
+// abort if this is a page-reload, to prevent duplicate submissions
+if (empty($order_summary)) return;
+?&amp;gt;
+
+&amp;lt;!-- Google Code for purchase Conversion Page --&amp;gt;
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34; title=&amp;#34;Google Ad Conversion Tracking&amp;#34;&amp;gt;
+    var google_conversion_id = &amp;#34;&amp;lt;?php echo AW_CONVERSION_ID; ?&amp;gt;&amp;#34;;
+    var google_conversion_language = &amp;#34;en_US&amp;#34;;
+    var google_conversion_format = &amp;#34;1&amp;#34;;
+    var google_conversion_color = &amp;#34;6633CC&amp;#34;;
+    &amp;lt;?php if (isset($order_summary[&amp;#39;order_total&amp;#39;])) { ?&amp;gt;
+    var google_conversion_value = &amp;lt;?php echo $order_summary[&amp;#39;order_total&amp;#39;] ?&amp;gt;;
+    var google_conversion_currency = &amp;#34;&amp;lt;?php echo $order_summary[&amp;#39;currency_code&amp;#39;]; ?&amp;gt;&amp;#34;;
+    &amp;lt;?php } ?&amp;gt;
+    var google_conversion_label = &amp;#34;purchase&amp;#34;;
+&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;#34;https://www.googleadservices.com/pagead/conversion.js&amp;#34; title=&amp;#34;Google Ad Conversion Tracking JS&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;noscript&amp;gt;
+&amp;lt;img height=1 width=1 border=0 src=&amp;#34;https://www.googleadservices.com/pagead/conversion/&amp;lt;?php echo AW_CONVERSION_ID; ?&amp;gt;/?value=&amp;lt;?php echo $order_summary[&amp;#39;order_total&amp;#39;]; ?&amp;gt;&amp;amp;currency_code=&amp;lt;?php echo $order_summary[&amp;#39;currency_code&amp;#39;]; ?&amp;gt;&amp;amp;label=purchase&amp;amp;script=0&amp;#34;&amp;gt;
+&amp;lt;/noscript&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>User: What do the numbers in the Counter History box mean?</title>
+      <link>/user/analytics/counter_history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/analytics/counter_history/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The counter counts two things:&lt;/p&gt;
+&lt;p&gt;Session count is the number of first hits to your site based on unique browser sessions.  This is approximately the number of visits that day.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; this does not distinguish between someone coming to your site at 9:00am and then returning with a new session at 3:00pm on the same day&lt;/p&gt;
+&lt;p&gt;The Total is the number of pages viewed.  This counts how many pages does the customer actually go to during that session.&lt;/p&gt;
+&lt;p&gt;The database actually contains all the days of the year, unless you delete them manually.&lt;/p&gt;
+&lt;p&gt;The display on the Admin Home page will be for the last 10 days.  It will roll over by itself as the site is used.&lt;/p&gt;
+&lt;h3 id=&#34;what-about-google-analytics-differences&#34;&gt;What about Google Analytics differences?&lt;/h3&gt;
+&lt;p&gt;Google analytics holds a cookie for 24 hours, so re-visitors are not counted within that time frame. Zen Cart does not.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

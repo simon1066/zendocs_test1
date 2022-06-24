@@ -1,0 +1,224 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen Cart Documentation – View Builders</title>
+    <link>/dev/code/view_builders/</link>
+    <description>Recent content in View Builders on Zen Cart Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/dev/code/view_builders/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dev: A DTO to define Tabular data</title>
+      <link>/dev/code/view_builders/tabledefinitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/tabledefinitions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;fixme: This page is still under construction, and will change during the 
+v158 branch changes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When displaying tabular data we need to define the columns we want to
+display along with some metadata as to how the table will appear.&lt;/p&gt;
+&lt;p&gt;The table definition DTO holds that data in an object that can be passed
+to other classes that manipulate it, to provide a final output.&lt;/p&gt;
+&lt;p&gt;The basic definition consists of a number of entries.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;colKeyName: the get parameter name that passes the primary key&lt;/li&gt;
+&lt;li&gt;colKey: The primary key of the table being displayed&lt;/li&gt;
+&lt;li&gt;maxRowCount: The number of entries to be displayed using pagination&lt;/li&gt;
+&lt;li&gt;columns: A definition of the columns to be displayed for the table&lt;/li&gt;
+&lt;li&gt;paginated: whether the results are paginated or not&lt;/li&gt;
+&lt;li&gt;pagerVariable: the name of the get parameter that holds the current page&lt;/li&gt;
+&lt;li&gt;buttonActions: buttons to do certain action, e.g. new entry et.&lt;/li&gt;
+&lt;li&gt;rowActions: actions that affect just a row in the table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;colkeyname&#34;&gt;colKeyName&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;default: colKey&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In legacy Zen Cart admin, table views might have used something like
+pID, or cID etc. In general there is no reason to change from the default
+unless it is to support legacy plugins.&lt;/p&gt;
+&lt;h2 id=&#34;colkey&#34;&gt;colKey&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;default: id&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The name of the unique primary key for the database table being displayed&lt;/p&gt;
+&lt;h2 id=&#34;maxrowcount&#34;&gt;maxRowCount&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;default: 10&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The maximum number of rows to be displayed per paginated page.&lt;/p&gt;
+&lt;h2 id=&#34;paginated&#34;&gt;paginated&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;default: true&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Whether the table data should be paginated or not.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; as an implementation detail, and because we force final query results
+to be an instance of &lt;code&gt;illuminate\Pagination\LengthAwarePaginator&lt;/code&gt;, then 
+if paginated is set to false, we do still paginate the results, but with a 
+&lt;code&gt;maxRowCount&lt;/code&gt; of 100000.&lt;/p&gt;
+&lt;h2 id=&#34;pagervariable&#34;&gt;pagerVariable&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;default: page&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The name of the GET parameter that holds the current page number&lt;/p&gt;
+&lt;h2 id=&#34;buttonactions&#34;&gt;buttonActions&lt;/h2&gt;
+&lt;p&gt;Button actions are for displaying buttons that carry out some global action.
+e.g. creating a new entry for a table.&lt;/p&gt;
+&lt;p&gt;The array format for an entry in the &lt;code&gt;buttonActions&lt;/code&gt; array is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;action: the name of the action to be carried out&lt;/li&gt;
+&lt;li&gt;whitelist: a list of actions that allow the button to be displayed&lt;/li&gt;
+&lt;li&gt;blacklist: a list of actions that prevent the button being displayed&lt;/li&gt;
+&lt;li&gt;linkParams: info on how to build extra parameters for the button link&lt;/li&gt;
+&lt;li&gt;title: The text to be displayed as the button title&lt;/li&gt;
+&lt;li&gt;buttonClass: a bootstrap class applied to the button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;linkParams&lt;/code&gt; entry contains&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;source: for now only &lt;code&gt;request&lt;/code&gt; is allowed&lt;/li&gt;
+&lt;li&gt;field: the name of the request param to use&lt;/li&gt;
+&lt;li&gt;param: the name of the GET param added to the link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;h2 id=&#34;rowactions&#34;&gt;rowActions&lt;/h2&gt;
+&lt;p&gt;row actions are buttons that appear along side every row in a table, 
+and use the data in that row to carry out some action.&lt;/p&gt;
+&lt;p&gt;The array format for an entry in the &lt;code&gt;rowActions&lt;/code&gt; array is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;action: the name of the action to be carried out.&lt;/li&gt;
+&lt;li&gt;icon: the name of a &lt;a href=&#34;/user/template/font_awesome/&#34;&gt;Fontawesome&lt;/a&gt; icon to display&lt;/li&gt;
+&lt;li&gt;linkParams: info on how to build extra parameters for the 
+buttons link.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The linkParams entry contains&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;source: for now only &lt;code&gt;tableRow&lt;/code&gt; is allowed.&lt;/li&gt;
+&lt;li&gt;field: the field from the source to be used&lt;/li&gt;
+&lt;li&gt;param: the name of the GET param added to the link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;linkParams&#39; =&amp;gt; [
+    [
+    &#39;source =&amp;gt; &#39;tableRow&#39;,
+    &#39;field&#39; =&amp;gt; &#39;status&#39;,
+    &#39;param =&amp;gt; &#39;status&#39;
+    ]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;for the above a link would be built with the following added&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;status={value of tableRow status}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;by default the link built for the row would point to the current page and 
+include the paginator page variable, so again for the above the full link
+would be for admin&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd=somepage&amp;amp;page=1&amp;amp;status=0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;columns&#34;&gt;columns&lt;/h2&gt;
+&lt;p&gt;A description of the columns that are to be displayed.&lt;/p&gt;
+&lt;p&gt;The query result for a table will generally return all the fields for
+that table, however we may not want to show all those fields, and further
+may want to add columns that display data that is derived from the database
+table.&lt;/p&gt;
+&lt;p&gt;The definition consists of an entry for each column we want to display in the table.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   &amp;#39;columns&amp;#39; = [
+        &amp;#39;name&amp;#39; =&amp;gt; []
+    ]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The &lt;code&gt;key&lt;/code&gt;,in this case &lt;code&gt;name&lt;/code&gt; refers to the field in the database for the 
+table (unless this is a derived item)&lt;/p&gt;
+&lt;p&gt;For an entry that refers to a database field, there would be 2 possible entries.&lt;/p&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   &amp;#39;columns&amp;#39; = [
+        &amp;#39;name&amp;#39; =&amp;gt; [
+             &amp;#39;title&amp;#39; =&amp;gt; ,
+              &amp;#39;class&amp;#39; =&amp;gt; 
+        ]
+    ]
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;class-methods&#34;&gt;Class Methods&lt;/h1&gt;
+&lt;p&gt;There are various class methods to allow for manipulation of the TableView definition&lt;/p&gt;
+&lt;h2 id=&#34;public-function-getdefinition&#34;&gt;public function getDefinition()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-setparameterstring-name-value&#34;&gt;public function setParameter(string $name, $value)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addparameterstring-field-definition&#34;&gt;public function addParameter(string $field, $definition)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-getparameterstring-field&#34;&gt;public function getParameter(string $field)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addbuttonactiondefinition&#34;&gt;public function addButtonAction($definition)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addrowactiondefinition&#34;&gt;public function addRowAction($definition)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addcolumnstring-field-definition&#34;&gt;public function addColumn(string $field, $definition)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addcolumnbeforeindex-newkey-data&#34;&gt;public function addColumnBefore($index, $newKey, $data)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-addcolumnafterindex-newkey-data&#34;&gt;public function addColumnAfter($index, $newKey, $data)&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-getheaders&#34;&gt;public function getHeaders()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-ispaginated&#34;&gt;public function isPaginated()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-colkeyname&#34;&gt;public function colKeyName()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-hasrowactions&#34;&gt;public function hasRowActions()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-getrowactions&#34;&gt;public function getRowActions()&lt;/h2&gt;
+&lt;h2 id=&#34;public-function-getbuttonactions&#34;&gt;public function getButtonActions()&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Data Filters</title>
+      <link>/dev/code/view_builders/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/filters/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;filters&#34;&gt;Filters&lt;/h1&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Data Formatters</title>
+      <link>/dev/code/view_builders/dataformatters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/dataformatters/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Data Sources</title>
+      <link>/dev/code/view_builders/datasources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/datasources/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Derived Items Manager</title>
+      <link>/dev/code/view_builders/deriveditems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/deriveditems/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dev: Table Controllers</title>
+      <link>/dev/code/view_builders/tablecontrollers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/code/view_builders/tablecontrollers/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
